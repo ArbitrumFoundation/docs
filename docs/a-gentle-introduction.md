@@ -1,6 +1,10 @@
 ---
+title: A Gentle Introduction to Arbitrum DAO
+sidebar_label: A Gentle Introduction
+description: todo
 sidebar_position: 1
 ---
+
 
 **In a nutshell:**
 
