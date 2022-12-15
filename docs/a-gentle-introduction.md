@@ -17,7 +17,10 @@ sidebar_position: 1
 - **To become an Arbitrum DAO delegate**, review the below material and then **submit your application** (todo).
 - **To build apps using Arbitrum,** check out our [developer docs](https://developer.arbitrum.io/intro/).
 
-**Q: Hello! What’s Arbitrum again?**
+<br/>
+
+
+### Q: Hello! What’s Arbitrum again?
 
 Arbitrum Rollup is an optimistic rollup protocol that makes Ethereum transactions cheaper and faster. Developers use Arbitrum to build user-friendly decentralized apps.
 
