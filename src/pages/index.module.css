@@ -3,6 +3,14 @@
  * and scoped locally.
  */
 
+:root {
+  --space-l: 20px;
+  --space-m: 14px;
+  --space-s: 10px;
+  --space-xs: 6px;
+  --blue: #28a0f0;
+}
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;

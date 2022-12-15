@@ -1,0 +1,18 @@
+.horizontal-rule {
+  display: flex;
+  align-items: center;
+}
+
+.horizontal-rule::before,
+.horizontal-rule::after {
+  content: "";
+  display: inline-block;
+  flex: 1 1 auto;
+  height: 1px;
+  background-color: var(--ifm-color-primary-dark);
+}
+
+.horizontal-rule span {
+  display: inline-flex;
+  margin: var(--space-s);
+}
