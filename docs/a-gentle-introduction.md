@@ -20,7 +20,7 @@ sidebar_position: 1
 <br/>
 
 
-### Q: Hello! What’s Arbitrum again?
+### Hello! What’s Arbitrum again?
 
 Arbitrum Rollup is an optimistic rollup protocol that makes Ethereum transactions cheaper and faster. Developers use Arbitrum to build user-friendly decentralized apps.
 
@@ -29,7 +29,7 @@ Our flagship chain, Arbitrum One, was [launched in 2021](https://offchain.medium
 Governance of the Arbitrum Rollup protocol is now being decentralized through the distribution of $ARB governance tokens.
 
 
-**Q: What? What's governance? What year is it?**
+## What? What's governance? What year is it?
 
 Governance is the way that decisions get made. To understand what this means, let’s compare traditional web2 governance to web3 governance.
 
