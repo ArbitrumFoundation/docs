@@ -1,4 +1,6 @@
 ---
+title: A Gentle Introduction to Arbitrum DAO
+slug: /
 sidebar_position: 1
 ---
 
