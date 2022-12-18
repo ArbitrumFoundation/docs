@@ -48,8 +48,7 @@ It’s 2023.
 
 ---
 
-
+**Footnotes:**
 
 <a id='footnote-1'>1.</a> See our <a href='https://gas.arbitrum.io/'>gas cost estimator</a> and <a href='https://l2fees.info/'>L2Fees</a> for more information.
 
----
