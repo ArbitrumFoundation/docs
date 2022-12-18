@@ -15,7 +15,7 @@ module.exports = {
     },
     {
       type: 'doc',
-      id: 'airdrop-eligibility-specs',
+      id: 'airdrop-eligibility-distribution',
     },
     {
       type: 'doc',
