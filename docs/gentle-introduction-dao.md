@@ -155,9 +155,11 @@ If this target date changes, we’ll update this document and we’ll TODO - sta
 
 You’re in the right place! The following docs elaborate on the finer details of Arbitrum DAO and its underlying governance mechanisms:
 
+<!--
 - ***Arbitrum DAO: Concepts, principles, and mechanisms***: A beginner-friendly overview of Arbitrum’s governance mechanisms - both on-chain and off-chain.
 - ***Arbitrum DAO: Governance contracts***: A more technical overview of Arbitrum’s governance mechanisms and off-chain protocols. Targeted at developers and researchers.
 - ***The lifecycle and anatomy of a DAO proposal***: Walks you through the guts of governance. First in terms of beginner-friendly conceptual abstractions, and then in terms of smart contracts and concrete state-changes.
+-->
 - ***Airdrop eligibility and token distribution details***: Tells you how $ARB eligibility is determined, and how $ARB tokens are being distributed.
 - ***Constitution of the Arbitrum DAO***: The human-readable governance protocol that our DAO’s smart contracts implement.
 - ***Arbitrum DAO FAQ***: Frequently asked questions, succinctly answered.
