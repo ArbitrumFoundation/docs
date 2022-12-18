@@ -114,6 +114,24 @@ There are a lot of people who don’t have time to actively participate in proto
 Delegates are a critical component of Arbitrum’s decentralization because they allow our community members to passively participate in the governance of our technology. Although becoming a delegate is a serious responsibility that requires a significant time commitment, it allows you to ensure that Ethereum’s values (and those of the delegators who have entrusted you with their voting power) are forever enshrined within our decisions and decision-making protocols.
 
 
+### How are disagreements handled?
+
+TODO
+
+
+### Let's say I propose a change to the Arbitrum DAO and/or underlying governance protocol. How is consensus reached?
+
+TODO
+
+
+
+### I’d like to participate! What are my options?
+
+1. **Select a delegate** to vote on your behalf. Choose this option if you’re too busy to regularly vote on Arbitrum DAO proposals. See *How to select a delegate* (todo).
+2. **Self-delegate** to vote directly on DAO proposals. Great for studious fans of direct democracy. See *How to self-delegate* (todo).
+3. **Become a delegate** to vote on behalf of token holders who entrust you with their voting power. Great for our most passionate community members. See *How to become a delegate.*
+
+
 
 
 <br />
