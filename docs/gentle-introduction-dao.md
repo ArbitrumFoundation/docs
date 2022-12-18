@@ -128,7 +128,7 @@ TODO
 ### I’d like to participate! What are my options?
 
 1. **Select a delegate** to vote on your behalf. Choose this option if you’re too busy to regularly vote on Arbitrum DAO proposals. See *How to select a delegate* (todo).
-2. **Self-delegate** to vote directly on DAO proposals. Great for studious fans of direct democracy. See *How to self-delegate* (todo).
+2. **Self-delegate** to vote directly on DAO proposals. Great for studious fans of direct democracy. See *Vote on proposals* (todo).
 3. **Become a delegate** to vote on behalf of token holders who entrust you with their voting power. Great for our most passionate community members. See *How to become a delegate.*
 
 
