@@ -74,6 +74,15 @@ More generally, possession of $ARB tokens places you at the cutting edge of gove
 If you’ve used Arbitrum at any time before the the snapshot date (August 31st, 2022 - [block 22207817](https://arbiscan.io/block/22207817) on Arbitrum One), you’re probably entitled to some $ARB tokens. The easiest way to find out if you’re eligible is to visit [gov.arbitrum.io](http://gov.arbitrum.io/) and follow the prompts.
 
 
+### How does Arbitrum’s governance work?
+
+Governance of the Arbitrum Rollup protocol is driven by two governing bodies: the **Security Council** and the **Arbitrum DAO**.
+
+- The **Security Council** is a 12-member council of publicly known entities elected by members of the Arbitrum DAO. This council is responsible for maintaining Arbitrum’s security and performance through the selective application of **emergency upgrades**.
+- The **Arbitrum DAO** is the worldwide community of $ARB token holders and the delegates that they select. The DAO is responsible for governing Arbitrum and its Security Council. The DAO can use constitutional proposals to modify the Security Council’s powers, or even to eliminate the Security Council entirely. The Security Council’s powers are delegated to the Security Council by the DAO, and are to be exercised in the best interests of the DAO.
+
+
+
 
 <br />
 
