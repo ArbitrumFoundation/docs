@@ -16,8 +16,6 @@ description: todo
 - **To become an Arbitrum DAO delegate**, review the below material and then **submit your application** (todo).
 - **To build decentralized apps on Arbitrum,** check out our [developer docs](https://developer.arbitrum.io/intro/).
 
-<br/>
-
 
 ### Hello! What’s Arbitrum again?
 
