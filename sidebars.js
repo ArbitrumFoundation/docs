@@ -19,11 +19,32 @@ module.exports = {
     },
     {
       type: 'doc',
-      id: 'create-submit-proposals',
+      id: 'decentralization-roadmap',
     },
     {
-      type: 'doc',
-      id: 'decentralization-roadmap',
+      type: 'category',
+      label: 'Governance actions',
+      items: [
+        {
+          type: 'doc',
+          id: 'create-submit-proposals',
+        },
+        {
+          type: 'link',
+          label: 'Select a delegate',
+          href: 'https://github.com/OffchainLabs/governance/blob/main/docs/overview.md',
+        },
+        {
+          type: 'link',
+          label: 'Become a delegate',
+          href: 'https://github.com/OffchainLabs/governance/blob/main/docs/overview.md',
+        },
+        {
+          type: 'link',
+          label: 'Vote on proposals',
+          href: 'https://github.com/OffchainLabs/governance/blob/main/docs/overview.md',
+        },
+      ],
     },
     {
       type: 'category',
@@ -45,7 +66,6 @@ module.exports = {
         },
       ],
     },
-
     {
       type: 'doc',
       id: 'dao-glossary',
