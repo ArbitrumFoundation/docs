@@ -44,6 +44,24 @@ When a corporate decision needs to be made, members of the board meet and vote. 
 
 It’s 2023.
 
+### So $ARB is a token, kind of like $ETH?
+
+Kind of! Let’s compare them:
+
+**How $ETH and $ARB are similar**:
+
+- Both are powered by decentralized blockchain technology.
+- Both can be owned by any cryptocurrency wallet that supports $ETH.
+- Both can be bought, sold, and traded.
+
+**How $ETH and $ARB are different**:
+
+- $ETH is a transactional token, while $ARB is a governance token.
+- $ETH is used to pay for transaction fees, while $ARB is not.
+- Governance of the Arbitrum Rollup protocol is facilitated by $ARB and governance smart contracts, while [Ethereum’s governance](https://ethereum.org/en/governance/) is handled socially.
+- Holding $ARB makes you a partial owner of the Arbitrum Rollup protocol, while holding $ETH does not make you a partial owner of the Ethereum’s protocol.
+
+
 
 
 ---
