@@ -47,7 +47,7 @@ export const HeaderBadges = ({ commaDelimitedContributors, lastVerifiedDateStrin
 				<div class="header-badges">
 					{(commaDelimitedContributors != null ? commaDelimitedContributors.split(',').map(buildAuthorBadge) : null)}
 					{buildLastVerifiedBadge(lastVerifiedDateString, lastVerifiedVersionString)}
-					<a class="header-badge" href={`https://github.com/prysmaticlabs/documentation/issues/new?title=Docs update request: ${new URL(window.location.href).pathname}&body=Source: ${window.location.href}%0A%0ARequest: (how can we help?)`}>
+					<a class="header-badge" href={`https://github.com/CoolChainCo/docs/issues/new?title=Docs update request: ${new URL(window.location.href).pathname}&body=Source: ${window.location.href}%0A%0ARequest: (how can we help?)`}>
 						<span class="badge-avatar emoji-avatar">✏️</span>
 						<span class="badge-label">Request an update</span>
 					</a>
