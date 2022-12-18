@@ -28,21 +28,19 @@ Our flagship chain, Arbitrum One, was [launched in 2021](https://offchain.medium
 Governance of the Arbitrum Rollup protocol is now being decentralized through the distribution of $ARB governance tokens.
 
 
-### What? What's governance? What year is it?
+### What's governance?
 
 Governance is the way that decisions get made. To understand what this means, let’s compare traditional web2 governance to web3 governance.
 
 **Web2 technologies** are traditionally built by corporations governed by a board of directors. This board is usually a small group of people elected by shareholders. 
 
-When a corporate decision needs to be made, members of the board meet and vote. The board’s decision-making protocols aren’t always visible to shareholders. Although the board has a fiduciary duty to its shareholders, shareholders must trust the board. This is a sort of social contract expressed as corporate legalese and enforced by law.
+When a corporate decision needs to be made, members of the board meet and vote. The board’s decision-making protocols aren’t always visible to shareholders. Although the board has a fiduciary duty to its shareholders, shareholders must trust the board. This is a sort of *social contract* expressed as *corporate legalese* and enforced by *law*.
 
 **Web3 technologies** (like Arbitrum) are often built by corporation governed *initially* by a board of directors. Once these technologies achieve product-market fit, the board can gradually decentralize its decision-making authority. This is called [progressive decentralization](https://a16z.com/2020/01/09/progressive-decentralization-crypto-product-management/), and it’s what Arbitrum is doing. Progressive decentralization is usually facilitated by three key ingredients:
 
 1. **DAO formation**: DAO = [Decentralized autonomous organization](https://vitalik.ca/general/2022/09/20/daos.html). The DAO gradually absorbs the board’s decision-making authority. Arbitrum’s DAO is the **Arbitrum DAO**.
 2. **Governance token launch**: Ownership of governance tokens represents membership within the DAO. Token holders can vote on DAO proposals. Arbitrum’s governance token is **$ARB**, and will be distributed to eligible wallet addresses via an upcoming airdrop.
 3. **Code**: DAO governance is usually facilitated by a series of open source [smart contracts](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html) that enforce a specific decision-making protocol. These *trustless* smart contracts are used to gradually replace the traditional board’s *trusted* social contract. Arbitrum DAO uses smart contracts to codify the decision-making protocol articulated within the Constitution of the Arbitrum DAO.
-
-It’s 2023.
 
 ### So $ARB is a token, kind of like $ETH?
 
