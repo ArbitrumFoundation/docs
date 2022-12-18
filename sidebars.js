@@ -32,17 +32,17 @@ module.exports = {
         {
           type: 'link',
           label: 'Select a delegate',
-          href: 'https://github.com/OffchainLabs/governance/blob/main/docs/overview.md',
+          href: '#todo',
         },
         {
           type: 'link',
           label: 'Become a delegate',
-          href: 'https://github.com/OffchainLabs/governance/blob/main/docs/overview.md',
+          href: '#todo',
         },
         {
           type: 'link',
           label: 'Vote on proposals',
-          href: 'https://github.com/OffchainLabs/governance/blob/main/docs/overview.md',
+          href: '#todo',
         },
       ],
     },
