@@ -30,6 +30,7 @@ article .markdown h1:first-child {
   font-size: 30px;
 }
 article .markdown > h3 {
+  font-size: 21px;
   margin-top: 55px;
   margin-bottom: 15px;
 }
@@ -38,6 +39,7 @@ article .markdown > h3 {
     font-size: 24px;
   }
   .markdown > h3 {
+    font-size: 18px;
     margin-top: 35px;
     margin-bottom: 10px;
   }
