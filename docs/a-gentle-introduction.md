@@ -1,8 +1,8 @@
 ---
+id: gentle-introduction
 title: A Gentle Introduction to Arbitrum DAO
 sidebar_label: A Gentle Introduction
 description: todo
-sidebar_position: 1
 ---
 
 
@@ -14,7 +14,7 @@ sidebar_position: 1
 - Token holders will be able to delegate voting power to trusted individuals. These individuals are called delegates.
 - **To determine your airdrop eligibility**, connect your wallet to the Arbitrum One network on [gov.arbitrum.io](http://gov.arbitrum.io) and follow the prompts. Do this by (todo).
 - **To become an Arbitrum DAO delegate**, review the below material and then **submit your application** (todo).
-- **To build apps using Arbitrum,** check out our [developer docs](https://developer.arbitrum.io/intro/).
+- **To build decentralized apps on Arbitrum,** check out our [developer docs](https://developer.arbitrum.io/intro/).
 
 <br/>
 
@@ -34,7 +34,7 @@ Governance is the way that decisions get made. To understand what this means, le
 
 **Web2 technologies** are traditionally built by corporations governed by a board of directors. This board is usually a small group of people elected by shareholders. 
 
-When a big corporate decision needs to be made, members of the board meet and vote. The board’s decision-making protocols aren’t always visible to shareholders. Although the board has a fiduciary duty to its shareholders, shareholders must trust the board. This is a sort of social contract expressed as corporate legalese and enforced by law.
+When a corporate decision needs to be made, members of the board meet and vote. The board’s decision-making protocols aren’t always visible to shareholders. Although the board has a fiduciary duty to its shareholders, shareholders must trust the board. This is a sort of social contract expressed as corporate legalese and enforced by law.
 
 **Web3 technologies** (like Arbitrum) are often built by corporation governed *initially* by a board of directors. Once these technologies achieve product-market fit, the board can gradually decentralize its decision-making authority. This is called [progressive decentralization](https://a16z.com/2020/01/09/progressive-decentralization-crypto-product-management/), and it’s what Arbitrum is doing. Progressive decentralization is usually facilitated by three key ingredients:
 
