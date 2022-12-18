@@ -119,7 +119,7 @@ Delegates are a critical component of Arbitrum’s decentralization because they
 TODO
 
 
-### Let's say I propose a change to the Arbitrum DAO and/or underlying governance protocol. How is consensus reached?
+### How is consensus reached on DAO proposals?
 
 TODO
 
