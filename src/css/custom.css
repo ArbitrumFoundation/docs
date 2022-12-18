@@ -29,7 +29,6 @@
 /* sticking it here for now. todo: experiment with different file/less structures, could simplify this without bloating file structure */
 .header-badges {
   display: block;
-  margin-top: -50px !important;
   margin-bottom: 15px;
   min-height: 35px;
   /*pragmatism over perfection*/
