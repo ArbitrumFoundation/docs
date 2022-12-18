@@ -1,0 +1,1 @@
+We're using LESS as a CSS precompiler, so make changes to the LESS file, not the css file. If you need a hand, ping Mick :)
