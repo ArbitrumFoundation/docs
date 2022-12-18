@@ -3,7 +3,7 @@ title: Why Governance?
 description: todo
 ---
 
-import {HeaderBadgesWidget} from '@site/src/components/HeaderBadges.js';
+import {HeaderBadgesWidget} from '@site/src/components/HeaderBadges';
 
 <HeaderBadges/>
 
