@@ -97,6 +97,25 @@ You can think of our stakeholder groups as a stack of layers. At the top of the 
 
 
 
+### All of these people can govern Arbitrum’s Rollup protocol?
+
+Yep! As long as they either hold $ARB or are a delegate.
+
+
+### What’s a delegate again?
+
+A delegate is like an elected representative. $ARB token holders can delegate their voting power to delegates.
+
+
+### Why would I want to become a delegate?
+
+There are a lot of people who don’t have time to actively participate in protocol governance. Delegates help these people by offering to vote on their behalf.
+
+Delegates are a critical component of Arbitrum’s decentralization because they allow our community members to passively participate in the governance of our technology. Although becoming a delegate is a serious responsibility that requires a significant time commitment, it allows you to ensure that Ethereum’s values (and those of the delegators who have entrusted you with their voting power) are forever enshrined within our decisions and decision-making protocols.
+
+
+
+
 <br />
 
 
