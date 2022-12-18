@@ -83,6 +83,19 @@ Governance of the Arbitrum Rollup protocol is driven by two governing bodies: th
 
 
 
+### Who cares about this stuff?
+
+You can think of our stakeholder groups as a stack of layers. At the top of the stack, we have our **web3 user layer**. All other layers work together to support the web3 user layer:
+
+- **Web3 user layer:** Includes decentralized app (dApp) users - users of web3 applications.
+- **Web3 app layer:** Includes all of the dreamers, hackers, and makers who are building decentralized apps and tooling to support dApp development.
+- **Layer 2 (L2):** Includes Offchain Labs, Arbitrum DAO, the Arbitrum community, node operators, sequencers, and other L2 builders who are working hard to fulfill Ethereum’s [rollup-centric roadmap](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698).
+- **Layer 1 (L1)**: Includes consensus & execution layers.
+    - **Consensus layer (CL):** Includes Prysm and other CL teams who support Ethereum’s beacon chain with CL client software.
+    - **Execution layer (EL):** Includes Geth and other EL teams building execution-layer client software.
+- **Research layer:** Includes academic researchers, citizen scientists, and product managers who are working on the cutting edge of cryptography, mechanism design, and product development.
+
+
 
 <br />
 
