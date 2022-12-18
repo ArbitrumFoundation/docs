@@ -11,7 +11,36 @@ module.exports = {
     },
     {
       type: 'doc',
+      id: 'why-governance',
+    },
+    {
+      type: 'doc',
       id: 'airdrop-eligibility-specs',
+    },
+    {
+      type: 'doc',
+      id: 'dao-constitution',
+    },
+    {
+      type: 'doc',
+      id: 'create-submit-proposals',
+    },
+    {
+      type: 'doc',
+      id: 'decentralization-roadmap',
+    },
+    {
+      type: 'link',
+      label: 'Smart contract architecture',
+      href: 'https://github.com/OffchainLabs/governance/blob/main/docs/overview.md',
+    },
+    {
+      type: 'doc',
+      id: 'dao-glossary',
+    },
+    {
+      type: 'doc',
+      id: 'dao-faq',
     }
   ],
 };

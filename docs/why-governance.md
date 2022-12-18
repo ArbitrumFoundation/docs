@@ -1,5 +1,7 @@
 ---
-title: Why Governance?
+id: why-governance
+title: Why governance?
+sidebar_label: Why governance?
 description: todo
 ---
 

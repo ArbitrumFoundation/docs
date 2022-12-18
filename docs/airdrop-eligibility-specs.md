@@ -1,6 +1,6 @@
 ---
 id: airdrop-eligibility-specs
-title: $ARB Token Airdrop & Eligibility Specifications
+title: $ARB airdrop eligibility specifications
 sidebar_label: Airdrop eligibility
 description: todo
 ---
