@@ -31,12 +31,12 @@ export const HeaderBadges = ({ commaDelimitedContributors, lastVerifiedDateStrin
 		}
 	}
 
-	let buildLastVerifiedBadge = function (dateString, versionString) {
-		if (dateString != null && versionString != null) {
+	let buildLastVerifiedBadge = function (dateString) {
+		if (dateString != null) {
 			return (
 				<a class="header-badge">
 					<span class="badge-avatar emoji-avatar">✔️</span>
-					<span class="badge-label">Last verified on <strong>{dateString}</strong> using Prysm {versionString}</span>
+					<span class="badge-label">Last verified on <strong>{dateString}</strong></span>
 				</a>
 			)
 		}
