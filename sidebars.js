@@ -24,6 +24,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Governance actions',
+      collapsed: false,
       items: [
         {
           type: 'doc',
