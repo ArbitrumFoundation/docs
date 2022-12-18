@@ -218,6 +218,7 @@ We’re moving fast and meeting needs. The specter of Ethereum’s rollup-centri
 **Footnotes:**
 
 <a id='footnote-1'>1.</a> See our <a href='https://gas.arbitrum.io/'>gas cost estimator</a> and <a href='https://l2fees.info/'>L2Fees</a> for more information.
+<a id='footnote-2'>2.</a> TODO
 
 
 ---

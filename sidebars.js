@@ -63,7 +63,7 @@ module.exports = {
         {
           type: 'link',
           label: 'Sybil detection',
-          href: 'https://github.com/OffchainLabs/governance/blob/main/docs/overview.md',
+          href: '#todo',
         },
       ],
     },
