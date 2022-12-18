@@ -1,7 +1,7 @@
 ---
-id: gentle-introduction
-title: A Gentle Introduction to Arbitrum DAO
-sidebar_label: A Gentle Introduction
+id: gentle-introduction-dao
+title: A gentle introduction to Arbitrum DAO
+sidebar_label: A gentle introduction
 description: todo
 ---
 

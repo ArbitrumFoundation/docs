@@ -62,7 +62,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'gentle-introduction',
+            docId: 'gentle-introduction-dao',
             position: 'left',
             label: 'Arbitrum DAO',
           },
@@ -81,7 +81,7 @@ const config = {
             items: [
               {
                 label: 'Get started',
-                to: 'gentle-introduction',
+                to: 'gentle-introduction-dao',
               },
             ],
           },
