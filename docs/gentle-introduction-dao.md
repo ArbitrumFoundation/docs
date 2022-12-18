@@ -60,6 +60,19 @@ Kind of! Let’s compare them:
 - Holding $ARB makes you a partial owner of the Arbitrum Rollup protocol, while holding $ETH does not make you a partial owner of the Ethereum’s protocol.
 
 
+### Why is this important? Why should I care?
+
+**In short:** You can use $ARB tokens to defend our shared values of decentralization, self-sovereignty, and sustainable economics.
+
+**Elaborating**: The Arbitrum Rollup protocol inherits Ethereum’s base-layer security guarantees along with its values. Decentralization of the Arbitrum Rollup protocol's governance represents an important step towards community ownership of Ethereum’s scaling technologies, and further aligns our incentives with those of the Ethereum community at large.
+
+$ARB tokens represent stake in Arbitrum’s - and by proxy, Ethereum’s - decentralized future. You can use them to help us collectively determine how to scale Ethereum’s [infinite garden](https://ethereum.foundation/infinitegarden) into the future. 
+
+
+
+
+<br />
+
 
 
 ---
