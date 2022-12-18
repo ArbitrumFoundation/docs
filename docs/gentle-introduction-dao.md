@@ -17,6 +17,13 @@ description: todo
 - **To build decentralized apps on Arbitrum,** check out our [developer docs](https://developer.arbitrum.io/intro/).
 
 
+:::caution An important reminder
+
+The only official website for the $ARB airdrop is TODO. There is no presale. We won’t ever ask for your seed phrase. If you’re ever unsure of anything related to Arbitrum, join our Discord and a member of our team will be happy to help.
+
+:::
+
+
 ### Hello! What’s Arbitrum again?
 
 Arbitrum Rollup is an optimistic rollup protocol that makes Ethereum transactions faster and cheaper. Developers use Arbitrum to build user-friendly decentralized apps.
@@ -189,11 +196,7 @@ We’re moving fast and meeting needs. The specter of Ethereum’s rollup-centri
 An important reminder: The only official website for the $ARB airdrop is __________ (insert fqdn). There is no presale. We won’t ever ask for your seed phrase. If you’re ever unsure of anything related to Arbitrum, don’t hesitate to ____________.
 
 
-:::caution An important reminder
 
-The only official website for the $ARB airdrop is __________ (insert fqdn). There is no presale. We won’t ever ask for your seed phrase. If you’re ever unsure of anything related to Arbitrum, don’t hesitate to ____________.
-
-:::
 
 
 
