@@ -17,6 +17,8 @@ description: todo
 - **To build decentralized apps on Arbitrum,** check out our [developer docs](https://developer.arbitrum.io/intro/).
 
 
+<br />
+
 :::caution An important reminder
 
 The only official website for the $ARB airdrop is TODO. There is no presale. We won’t ever ask for your seed phrase. If you’re ever unsure of anything related to Arbitrum, join our Discord and a member of our team will be happy to help.
@@ -192,11 +194,6 @@ At the same time, diverse communities are organically emerging from within our a
 In 2022 we saw Arbitrum’s Nitro upgrade, Ethereum’s Merge, our merge with Prysmatic Labs, and the formation of Arbitrum DAO. Without skipping a beat, 2023 has opened with a highly anticipated airdrop and call for delegates.
 
 We’re moving fast and meeting needs. The specter of Ethereum’s rollup-centric future is upon us. Cheap, fast, and secure transactions are here. New economic games are being unlocked, quietly for now. Thanks for playing - we’re looking forward to a bright future ahead as we decentralize Arbitrum, scale Ethereum, and build a better world together. 💙🌱
-
-An important reminder: The only official website for the $ARB airdrop is __________ (insert fqdn). There is no presale. We won’t ever ask for your seed phrase. If you’re ever unsure of anything related to Arbitrum, don’t hesitate to ____________.
-
-
-
 
 
 
