@@ -130,12 +130,85 @@ TODO
 1. **Select a delegate** to vote on your behalf. Choose this option if you’re too busy to regularly vote on Arbitrum DAO proposals. See *How to select a delegate* (todo).
 2. **Self-delegate** to vote directly on DAO proposals. Great for studious fans of direct democracy. See *Vote on proposals* (todo).
 3. **Become a delegate** to vote on behalf of token holders who entrust you with their voting power. Great for our most passionate community members. See *How to become a delegate.*
+4. **Participate in governance discussions** on the Arbitrum DAO forum (todo).
+5. **Join the community of Arbinauts** on our Discord server (todo).
 
+
+### Why can’t I claim my $ARB tokens right now?
+
+We’re as excited as you are for the airdrop! We also want to ensure that token recipients and DAO delegates have the best possible experience, so we’re using a two-step process:
+
+1. **Call for delegates**. We are here. As delegates are onboarded, we’ll get closer to the second, more exciting step…
+2. **$ARB airdrop**. At this point, you’ll be able to claim $ARB tokens and then use your voting power to shape Arbitrum’s future.
+
+This two-step process lets us prepare a smooth airdrop experience for you.
+
+
+### Wen airdrop? What’s next?
+
+We’re currently targeting _________ for the airdrop - this is when you’ll be able to claim your tokens on the [governance portal](http://gov.arbitrum.io) - the same portal used to check eligibility. You’ll then be able to select a delegate (link) or delegate to yourself (link).
+
+If this target date changes, we’ll update this document and we’ll ________ - stay tuned!
+
+
+### Where can I learn more?
+
+You’re in the right place! The following docs elaborate on the finer details of Arbitrum DAO and its underlying governance mechanisms:
+
+- ***Arbitrum DAO: Concepts, principles, and mechanisms***: A beginner-friendly overview of Arbitrum’s governance mechanisms - both on-chain and off-chain.
+- ***Arbitrum DAO: Governance contracts***: A more technical overview of Arbitrum’s governance mechanisms and off-chain protocols. Targeted at developers and researchers.
+- ***The lifecycle and anatomy of a DAO proposal***: Walks you through the guts of governance. First in terms of beginner-friendly conceptual abstractions, and then in terms of smart contracts and concrete state-changes.
+- ***Airdrop eligibility and token distribution details***: Tells you how $ARB eligibility is determined, and how $ARB tokens are being distributed.
+- ***Constitution of the Arbitrum DAO***: The human-readable governance protocol that our DAO’s smart contracts implement.
+- ***Arbitrum DAO FAQ***: Frequently asked questions, succinctly answered.
+- ***Arbitrum DAO Glossary***: An index of governance terms and definitions.
+- (todo - index all publishable docs here, make it clear that some of these are stretch docs)
+
+
+
+### Where can I ask for help?
+
+- TODO
+
+
+
+### Thank you!
+
+Thank *you*. Developers are using Arbitrum to power the next generation of web experiences partly because of our technology, but mostly because of our community of builders and believers. You’re giving us a lot to look forward to.
+
+And to think that we’re just getting started! Just over a year ago, it was commonly believed that scaling Ethereum was impossible. Today, Arbitrum powers the world’s most popular web3 experiences (check out that [TVL](https://l2beat.com/scaling/tvl/)). Our team is relentlessly reducing the cost of web3 application development while making it easy for our most beloved web2 apps to progressively decentralize.
+
+At the same time, diverse communities are organically emerging from within our app ecosystem. Developers are using Arbitrum to run their experiments across all major app categories, including DeFi, gaming, social, art, and NFTs. Who knows what new categories will emerge as the world’s hackers, makers, and dreamers use Arbitrum to tinker at scale.
+
+In 2022 we saw Arbitrum’s Nitro upgrade, Ethereum’s Merge, our merge with Prysmatic Labs, and the formation of Arbitrum DAO. Without skipping a beat, 2023 has opened with a highly anticipated airdrop and call for delegates.
+
+We’re moving fast and meeting needs. The specter of Ethereum’s rollup-centric future is upon us. Cheap, fast, and secure transactions are here. New economic games are being unlocked. Thanks again for playing! We’re looking forward to a bright future ahead as we decentralize Arbitrum, scale Ethereum, and build a better world together. 💙🌱
+
+An important reminder: The only official website for the $ARB airdrop is __________ (insert fqdn). There is no presale. We won’t ever ask for your seed phrase. If you’re ever unsure of anything related to Arbitrum, don’t hesitate to ____________.
+
+
+:::caution An important reminder
+
+The only official website for the $ARB airdrop is __________ (insert fqdn). There is no presale. We won’t ever ask for your seed phrase. If you’re ever unsure of anything related to Arbitrum, don’t hesitate to ____________.
+
+:::
 
 
 
 <br />
 
+
+---
+
+**Glossary:**
+
+ - todo, injected from base and linked throughout
+
+---
+
+**FAQ:**
+
+ - todo, injected from base and linked throughout
 
 
 ---
@@ -144,3 +217,10 @@ TODO
 
 <a id='footnote-1'>1.</a> See our <a href='https://gas.arbitrum.io/'>gas cost estimator</a> and <a href='https://l2fees.info/'>L2Fees</a> for more information.
 
+
+---
+
+**Credits:**
+
+1. Bob for x
+2. Alice for y
