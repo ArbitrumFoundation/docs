@@ -3,7 +3,7 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 import styles from './styles.module.css';
 
 
-export const HeaderBadgesWidget = ({ commaDelimitedContributors, lastVerifiedDateString, lastVerifiedVersionString }) => {
+export const HeaderBadges = ({ commaDelimitedContributors, lastVerifiedDateString, lastVerifiedVersionString }) => {
 	let githubUsernames = {
 		Mick: "mick-prysm",
 		Raul: "rauljordan",
