@@ -64,8 +64,12 @@ Kind of! Let’s compare them:
 
 **Elaborating**: The Arbitrum Rollup protocol inherits Ethereum’s base-layer security guarantees along with its values. Decentralization of the Arbitrum Rollup protocol's governance represents an important step towards community ownership of Ethereum’s scaling technologies, and further aligns our incentives with those of the Ethereum community at large.
 
-$ARB tokens represent stake in Arbitrum’s - and by proxy, Ethereum’s - decentralized future. You can use them to help us collectively determine how to scale Ethereum’s [infinite garden](https://ethereum.foundation/infinitegarden) into the future. 
+$ARB tokens represent stake in Arbitrum’s - and by proxy, Ethereum’s - decentralized future. You can use $ARB to collectively determine how we scale Ethereum’s [infinite garden](https://ethereum.foundation/infinitegarden) into the future. Possession of $ARB tokens places you at the cutting edge of corporate governance architecture and mechanism design. This is a new frontier with society-scale implications, so your voice matters. $ARB tokens give you an immutable voice :).
 
+
+### Cool beans. Am I eligible for the airdrop?
+
+If you’ve used Arbitrum at any time before the the snapshot date (August 31st, 2022 - [block 22207817](https://arbiscan.io/block/22207817) on Arbitrum One), you’re probably entitled to some $ARB tokens. The easiest way to find out if you’re eligible is to visit [gov.arbitrum.io](http://gov.arbitrum.io/) and follow the prompts.
 
 
 
