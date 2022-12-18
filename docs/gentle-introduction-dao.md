@@ -146,9 +146,9 @@ This two-step process lets us prepare a smooth airdrop experience for you.
 
 ### Wen airdrop? What’s next?
 
-We’re currently targeting _________ for the airdrop - this is when you’ll be able to claim your tokens on the [governance portal](http://gov.arbitrum.io) - the same portal used to check eligibility. You’ll then be able to select a delegate (link) or delegate to yourself (link).
+We’re currently targeting TODO for the airdrop - this is when you’ll be able to claim your tokens on the [governance portal](http://gov.arbitrum.io) - the same portal used to check eligibility. You’ll then be able to select a delegate (link) or delegate to yourself (link).
 
-If this target date changes, we’ll update this document and we’ll ________ - stay tuned!
+If this target date changes, we’ll update this document and we’ll TODO - stay tuned!
 
 
 ### Where can I learn more?
