@@ -19,10 +19,6 @@ module.exports = {
     },
     {
       type: 'doc',
-      id: 'dao-constitution',
-    },
-    {
-      type: 'doc',
       id: 'create-submit-proposals',
     },
     {
@@ -30,10 +26,26 @@ module.exports = {
       id: 'decentralization-roadmap',
     },
     {
-      type: 'link',
-      label: 'Smart contract architecture',
-      href: 'https://github.com/OffchainLabs/governance/blob/main/docs/overview.md',
+      type: 'category',
+      label: 'Governance architecture',
+      items: [
+        {
+          type: 'doc',
+          id: 'dao-constitution',
+        },
+        {
+          type: 'link',
+          label: 'Smart contract architecture',
+          href: 'https://github.com/OffchainLabs/governance/blob/main/docs/overview.md',
+        },
+        {
+          type: 'link',
+          label: 'Sybil detection',
+          href: 'https://github.com/OffchainLabs/governance/blob/main/docs/overview.md',
+        },
+      ],
     },
+
     {
       type: 'doc',
       id: 'dao-glossary',
