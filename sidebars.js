@@ -23,7 +23,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Governance actions',
+      label: 'How-to guides',
       collapsed: false,
       items: [
         {
