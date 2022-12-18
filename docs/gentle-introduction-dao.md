@@ -66,7 +66,7 @@ Kind of! Let’s compare them:
 
 $ARB tokens represent stake in Arbitrum’s - and by proxy, Ethereum’s - decentralized future. You can use $ARB to collectively determine how we scale Ethereum’s [infinite garden](https://ethereum.foundation/infinitegarden) into the future. 
 
-More generally, p ossession of $ARB tokens places you at the cutting edge of corporate governance architecture and mechanism design. This is a new frontier with society-scale implications, and **your voice matters**. $ARB tokens give you an immutable voice :).
+More generally, possession of $ARB tokens places you at the cutting edge of corporate governance architecture and mechanism design. This is a new frontier with society-scale implications, and **your voice matters**. $ARB tokens give you an immutable voice :).
 
 
 ### Cool beans. Am I eligible for the airdrop?
