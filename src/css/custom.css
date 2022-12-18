@@ -29,7 +29,7 @@
 article .markdown h1:first-child {
   font-size: 30px;
 }
-article h3 {
+article .markdown > h3 {
   margin-top: 55px;
   margin-bottom: 15px;
 }
