@@ -1,5 +1,7 @@
 ---
-title: How to Create and Submit Proposals
+id: create-submit-proposals
+title: How to submit a DAO proposal
+sidebar_label: Submit a DAO proposal
 description: todo
 ---
 
