@@ -1,5 +1,7 @@
 ---
-title: Decentralization Roadmap
+id: decentralization-roadmap
+title: Decentralization roadmap
+sidebar_label: Decentralization roadmap
 description: todo
 ---
 
