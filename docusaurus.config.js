@@ -75,7 +75,7 @@ const config = {
             items: [
               {
                 label: 'Get started',
-                to: '/gentle-introduction-dao',
+                to: '/gentle-introduction-dao-governance',
               },
             ],
           },
