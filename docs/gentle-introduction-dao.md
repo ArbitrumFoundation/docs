@@ -195,7 +195,7 @@ In 2022 we saw Arbitrum’s Nitro upgrade, Ethereum’s Merge, our merge with Pr
 
 We’re moving fast and meeting needs. The specter of Ethereum’s rollup-centric future is upon us. Cheap, fast, and secure transactions are here. New economic games are being unlocked, quietly for now. Thanks for playing! We’re looking forward to a bright future ahead as we decentralize Arbitrum, scale Ethereum, and build a better world together. 💙🌱
 
-
+ 
 
 <br />
 
