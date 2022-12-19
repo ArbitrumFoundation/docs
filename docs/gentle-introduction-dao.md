@@ -1,5 +1,6 @@
 ---
 id: gentle-intro-dao-governance
+slug: /
 title: A gentle introduction to Arbitrum DAO
 sidebar_label: A gentle introduction
 description: todo

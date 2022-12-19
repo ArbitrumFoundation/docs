@@ -26,38 +26,25 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
-
-  plugins: [
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        redirects: [
-          {
-            from: '/',
-            to: '/gentle-intro-dao-governance',
-          },
-        ]
-      },
-    ],
-  ],
-
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          // This tells Docusaurus to find content in the /docs folder, but set the route to /
+          // q: why is it configured this way?
+          // a: we originally tried to use "docs only mode" by setting the `routeBasePath` to `/`, but this prevents the landing page from displaying the`/gentle-intro-dao-governance` slug, which is important for SEO.
+          //    this doc elaborates: https://docusaurus.io/docs/docs-introduction#docs-only-mode
+          //    todo...
           path: 'docs',
           routeBasePath: '/',
-          //
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/', // todo
         },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -90,7 +77,7 @@ const config = {
             items: [
               {
                 label: 'Get started',
-                to: '/gentle-intro-dao-governance',
+                to: '/',
               },
             ],
           },
