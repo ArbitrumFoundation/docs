@@ -27,6 +27,21 @@ const config = {
     locales: ['en'],
   },
 
+
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            from: '/',
+            to: '/gentle-intro-dao-governance',
+          },
+        ]
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
