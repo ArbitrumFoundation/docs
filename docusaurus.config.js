@@ -101,10 +101,6 @@ const config = {
               {
                 label: 'Telegram',
                 href: 'https://t.me/arbitrum',
-              },
-              {
-                label: 'Email',
-                href: 'info@offchainlabs.com',
               }
             ],
           },
