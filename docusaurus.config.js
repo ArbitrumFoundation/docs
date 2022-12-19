@@ -9,7 +9,7 @@ const config = {
   title: 'Arbitrum DAO - Governance docs',
   tagline: 'Dinosaurs are cool', // todo
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/gentle-introduction-dao-governance',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico', // todo
