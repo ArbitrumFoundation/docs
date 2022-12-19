@@ -16,7 +16,7 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg"
-            to="/gentle-introduction-dao">
+            to="/gentle-introduction-dao-governance">
             A Gentle Introduction to Arbitrum DAO
           </Link>
         </div>
