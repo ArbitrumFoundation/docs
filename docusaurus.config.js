@@ -81,7 +81,7 @@ const config = {
             items: [
               {
                 label: 'Get started',
-                to: '/',
+                to: '/gentle-introduction-dao-governance',
               },
             ],
           },
@@ -89,16 +89,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/arbitrum',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/arbitrum',
               },
             ],
           },
@@ -106,13 +102,14 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Links',
+                href: 'https://barracuda.io/arbitrum',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        // todo: verify
+        copyright: `Copyright © ${new Date().getFullYear()} Arbitrum Foundation`,
       },
       prism: {
         theme: lightCodeTheme,
