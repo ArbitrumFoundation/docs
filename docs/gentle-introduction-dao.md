@@ -129,7 +129,6 @@ TODO
 
 
 ### How is consensus reached on DAO proposals?
-
 TODO
 
 
