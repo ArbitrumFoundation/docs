@@ -36,7 +36,6 @@ const config = {
           // This tells Docusaurus to find content in the /docs folder, but set the route to /
           path: 'docs',
           routeBasePath: '/',
-          homePageId: 'gentle-intro-dao-governance',
           //
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
