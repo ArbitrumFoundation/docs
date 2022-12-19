@@ -6,18 +6,18 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Arbitrum DAO - Governance docs',
+  tagline: 'Dinosaurs are cool', // todo
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  baseUrl: '/gentle-introduction-dao-governance',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.ico', // todo
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'facebook', // Usually your GitHub org/user name. // todo
+  projectName: 'docusaurus', // Usually your repo name. // todo
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -41,7 +41,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/', // todo
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -54,14 +54,14 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Arbitrum DAO - Governance docs',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'My Site Logo', // todo
           src: 'img/logo.svg',
         },
         items: [
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/facebook/docusaurus', // todo
             label: 'GitHub',
             position: 'right',
           },
@@ -75,7 +75,7 @@ const config = {
             items: [
               {
                 label: 'Get started',
-                to: 'gentle-introduction-dao-governance',
+                to: '/gentle-introduction-dao-governance',
               },
             ],
           },
@@ -84,16 +84,28 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                href: 'https://ethereum.stackexchange.com/questions/tagged/arbitrum',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/arbitrum',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/arbitrum',
               },
+              {
+                label: 'YouTube',
+                href: 'https://www.youtube.com/arbitrum',
+              },
+              {
+                label: 'Telegram',
+                href: 'https://t.me/arbitrum',
+              },
+              {
+                label: 'Email',
+                href: 'info@offchainlabs.com',
+              }
             ],
           },
           {
@@ -101,12 +113,12 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/facebook/docusaurus', // todo
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Arbitrum Foundation.`, // todo: verify
       },
       prism: {
         theme: lightCodeTheme,
