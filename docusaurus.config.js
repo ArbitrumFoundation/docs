@@ -61,12 +61,6 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'gentle-introduction-dao',
-            position: 'left',
-            label: 'Arbitrum DAO',
-          },
-          {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
@@ -81,7 +75,7 @@ const config = {
             items: [
               {
                 label: 'Get started',
-                to: 'gentle-introduction-dao',
+                to: '/',
               },
             ],
           },
