@@ -5,7 +5,7 @@
 
 .horizontal-rule::before,
 .horizontal-rule::after {
-  content: "";
+  content: '';
   display: inline-block;
   flex: 1 1 auto;
   height: 1px;
