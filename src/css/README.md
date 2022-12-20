@@ -1,2 +1,2 @@
- - We're using LESS as a CSS precompiler, so make changes to the LESS file, not the css file. 
- - LESS compilation isn't part of the build process, so this type of change needs to be made via eg VS Code with a LESS extension enabled.
+- We're using LESS as a CSS precompiler, so make changes to the LESS file, not the css file.
+- LESS compilation isn't part of the build process, so this type of change needs to be made via eg VS Code with a LESS extension enabled.
