@@ -144,7 +144,9 @@ You’re in the right place! The following docs elaborate on the finer details o
 
 ### Where can I ask for help?
 
-- TODO
+ - [Discord](https://discord.gg/arbitrum)
+ - [Telegram](https://t.me/arbitrum)
+ - [Governance forum](#todo)
 
 ### Thank you!
 
