@@ -7,7 +7,7 @@ module.exports = {
   sidebar: [
     {
       type: 'doc',
-      id: 'gentle-introduction-dao',
+      id: 'gentle-intro-dao-governance',
     },
     {
       type: 'doc',
