@@ -9,14 +9,17 @@ description: todo:qqq
 
 ### Token details summary
 
-The ARB token is an ERC-20 token native to Arbitrum One rollup chain. Token properties at Launch:
+The $ARB token is an ERC-20 token native to Arbitrum One rollup chain. Token properties at launch:
 
- - Initial Supply cap: 10 Billion
- - Inflation: Set at max 2% per year. The DAO can adjust this parameter.This parameter can be added and adjusted by the DAO if desired
- - Minting/Burning: Will take place via the L2 smart contract, but will be bridgeable to L1
- - Initial set of tokens will launch on Arbitrum One 
-   - Afterwards users will be able to bridge to Ethereum L1 and other chains
-   - On-chain governance (voting) will only take place on Arbitrum
+| Property                        | Value                                                                          |
+| ------------------------------- | ------------------------------------------------------------------------------ |
+| Initial supply cap              | 10 Billion                                                                     |
+| Inflation                       | Max 2% per year. The DAO can adjust this parameter through a todo:qqq proposal |
+| Minting/burning mechanism       | L2 smart contract                                                              |
+| Bridgeable to Ethereum L1?      | Yes                                                                            |
+| Tokens launch on...             | Arbitrum One                                                                   |
+| On-chain governance (voting) on | Arbitrum One                                                                   |
+
 
 ### Distribution info
 
@@ -134,3 +137,4 @@ The goal and intention of these tokens is to align the future of the Arbitrum pr
 
 todo
  - add links
+ - footnotes
