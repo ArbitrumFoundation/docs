@@ -26,20 +26,6 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  plugins: [
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        redirects: [
-          // /docs/oldDoc -> /docs/newDoc
-          {
-            from: '/',
-            to: '/gentle-intro-dao-governance'
-          }
-        ]
-      },
-    ],
-  ],
   presets: [
     [
       'classic',
