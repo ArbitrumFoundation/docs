@@ -1,7 +1,7 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Any CSS included here will be global.
+ * Uses Infima. Infima docs -> https://infima.dev/
+ * If you're updating this, make sure you're updating the LESS file.
  */
 /* You can override the default Infima variables here. */
 :root {
@@ -96,4 +96,25 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+article .markdown h1:first-child {
+  font-size: 30px;
+}
+article .markdown > h3 {
+  font-size: 21px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+article .markdown li li {
+  margin-top: 4px;
+}
+@media (max-width: 736px) {
+  .markdown h1:first-child {
+    font-size: 24px;
+  }
+  .markdown > h3 {
+    font-size: 18px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
 }
