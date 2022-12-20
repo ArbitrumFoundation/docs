@@ -109,14 +109,6 @@ There are a lot of people who don’t have time to actively participate in proto
 
 Delegates are a critical component of Arbitrum’s decentralization because they allow our community members to passively participate in the governance of our technology. Although becoming a delegate is a serious responsibility that requires a significant time commitment, it allows you to ensure that Ethereum’s values (and those of the delegators who have entrusted you with their voting power) are forever enshrined within our decisions and decision-making protocols.
 
-### How are disagreements handled?
-
-TODO
-
-### How is consensus reached on DAO proposals?
-
-TODO
-
 ### I’d like to participate! What are my options?
 
 1. **Select a delegate** to vote on your behalf. Choose this option if you’re too busy to regularly vote on Arbitrum DAO proposals. See _How to select a delegate_ (todo).
@@ -143,12 +135,6 @@ If this target date changes, we’ll update this document and we’ll TODO - sta
 ### Where can I learn more?
 
 You’re in the right place! The following docs elaborate on the finer details of Arbitrum DAO and its underlying governance mechanisms:
-
-<!--
-- ***Arbitrum DAO: Concepts, principles, and mechanisms***: A beginner-friendly overview of Arbitrum’s governance mechanisms - both on-chain and off-chain.
-- ***Arbitrum DAO: Governance contracts***: A more technical overview of Arbitrum’s governance mechanisms and off-chain protocols. Targeted at developers and researchers.
-- ***The lifecycle and anatomy of a DAO proposal***: Walks you through the guts of governance. First in terms of beginner-friendly conceptual abstractions, and then in terms of smart contracts and concrete state-changes.
--->
 
 - **_Airdrop eligibility and token distribution details_**: Tells you how $ARB eligibility is determined, and how $ARB tokens are being distributed.
 - **_Constitution of the Arbitrum DAO_**: The human-readable governance protocol that our DAO’s smart contracts implement.
