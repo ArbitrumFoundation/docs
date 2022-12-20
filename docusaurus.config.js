@@ -60,6 +60,7 @@ const config = {
         logo: {
           alt: 'My Site Logo', // todo
           src: 'img/logo.svg',
+          href: '/gentle-intro-dao-governance',
         },
         items: [
           {
@@ -77,7 +78,7 @@ const config = {
             items: [
               {
                 label: 'Get started',
-                to: '/',
+                to: '/gentle-intro-dao-governance',
               },
             ],
           },
@@ -103,7 +104,7 @@ const config = {
               {
                 label: 'Telegram',
                 href: 'https://t.me/arbitrum',
-              }
+              },
             ],
           },
           {
