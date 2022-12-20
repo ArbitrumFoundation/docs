@@ -33,17 +33,17 @@ module.exports = {
         {
           type: 'link',
           label: 'Select a delegate',
-          href: '#todo',
+          href: '#todo:qqq',
         },
         {
           type: 'link',
           label: 'Become a delegate',
-          href: '#todo',
+          href: '#todo:qqq',
         },
         {
           type: 'link',
           label: 'Vote on proposals',
-          href: '#todo',
+          href: '#todo:qqq',
         },
       ],
     },
@@ -63,7 +63,7 @@ module.exports = {
         {
           type: 'link',
           label: 'Sybil detection',
-          href: '#todo',
+          href: '#todo:qqq',
         },
       ],
     },

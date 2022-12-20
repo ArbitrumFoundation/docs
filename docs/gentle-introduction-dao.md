@@ -2,7 +2,7 @@
 id: gentle-intro-dao-governance
 title: A gentle introduction to Arbitrum DAO
 sidebar_label: A gentle introduction
-description: todo
+description: todo:qqq
 ---
 
 **In a nutshell:**
@@ -11,15 +11,15 @@ description: todo
 - Governance of the Arbitrum Rollup protocol is now being decentralized through the distribution of the $ARB governance token.
 - $ARB tokens can be used to vote on Arbitrum DAO governance proposals, allowing $ARB holders to shape Arbitrum’s future together.
 - Token holders will be able to delegate voting power to any individual they trust. These individuals are called delegates.
-- **To determine your airdrop eligibility**, connect your wallet to the Arbitrum One network on [gov.arbitrum.io](http://gov.arbitrum.io) and follow the prompts. Do this by (todo).
-- **To become an Arbitrum DAO delegate**, review the below material and then **submit your application** (todo).
+- **To determine your airdrop eligibility**, connect your wallet to the Arbitrum One network on [gov.arbitrum.io](http://gov.arbitrum.io) and follow the prompts. Do this by (todo:qqq).
+- **To become an Arbitrum DAO delegate**, review the below material and then **submit your application** (todo:qqq).
 - **To build decentralized apps on Arbitrum,** check out the [developer docs](https://developer.arbitrum.io/intro/).
 
 <br />
 
 :::caution An important reminder
 
-The only official website for the $ARB airdrop is TODO. There is no presale. We won’t ever ask for your seed phrase. If you’re ever unsure of anything related to Arbitrum, join our [Discord](#TODO_link) and a member of our team will be happy to help.
+The only official website for the $ARB airdrop is todo:qqq. There is no presale. We won’t ever ask for your seed phrase. If you’re ever unsure of anything related to Arbitrum, join our [Discord](#todo:qqq) and a member of our team will be happy to help.
 
 :::
 
@@ -111,11 +111,11 @@ Delegates are a critical component of Arbitrum’s decentralization because they
 
 ### I’d like to participate! What are my options?
 
-1. **Select a delegate** to vote on your behalf. Choose this option if you’re too busy to regularly vote on Arbitrum DAO proposals. See _How to select a delegate_ (todo).
-2. **Self-delegate** to vote directly on DAO proposals. Great for studious fans of direct democracy. See _Vote on proposals_ (todo).
+1. **Select a delegate** to vote on your behalf. Choose this option if you’re too busy to regularly vote on Arbitrum DAO proposals. See _How to select a delegate_ (todo:qqq).
+2. **Self-delegate** to vote directly on DAO proposals. Great for studious fans of direct democracy. See _Vote on proposals_ (todo:qqq).
 3. **Become a delegate** to vote on behalf of token holders who entrust you with their voting power. Great for our most passionate community members. See _How to become a delegate._
-4. **Participate in governance discussions** on the Arbitrum DAO forum (todo).
-5. **Join the community of Arbinauts** on our Discord server (todo).
+4. **Participate in governance discussions** on the Arbitrum DAO forum (todo:qqq).
+5. **Join the community of Arbinauts** on our Discord server (todo:qqq).
 
 ### Why can’t I claim my $ARB tokens right now?
 
@@ -128,9 +128,9 @@ This two-step process lets us prepare a smooth airdrop experience for you.
 
 ### Wen airdrop? What’s next?
 
-We’re currently targeting TODO for the airdrop - this is when you’ll be able to claim your tokens on the [governance portal](http://gov.arbitrum.io) - the same portal used to check eligibility. You’ll then be able to select a delegate (link) or delegate to yourself (link).
+We’re currently targeting todo:qqq for the airdrop - this is when you’ll be able to claim your tokens on the [governance portal](http://gov.arbitrum.io) - the same portal used to check eligibility. You’ll then be able to select a delegate (link) or delegate to yourself (link).
 
-If this target date changes, we’ll update this document and we’ll TODO - stay tuned!
+If this target date changes, we’ll update this document and we’ll todo:qqq - stay tuned!
 
 ### Where can I learn more?
 
@@ -140,13 +140,13 @@ You’re in the right place! The following docs elaborate on the finer details o
 - **_Constitution of the Arbitrum DAO_**: The human-readable governance protocol that our DAO’s smart contracts implement.
 - **_Arbitrum DAO FAQ_**: Frequently asked questions, succinctly answered.
 - **_Arbitrum DAO Glossary_**: An index of governance terms and definitions.
-- (todo - index all publishable docs here, make it clear that some of these are stretch docs)
+- (todo:qqq - index all publishable docs here, make it clear that some of these are stretch docs)
 
 ### Where can I ask for help?
 
  - [Discord](https://discord.gg/arbitrum)
  - [Telegram](https://t.me/arbitrum)
- - [Governance forum](#todo)
+ - [Governance forum](#todo:qqq)
 
 ### Thank you!
 
@@ -166,20 +166,20 @@ We’re moving fast and meeting needs. The specter of Ethereum’s rollup-centri
 
 **Glossary:**
 
-- todo, injected from base and linked throughout
+- todo:qqq, injected from base and linked throughout
 
 ---
 
 **FAQ:**
 
-- todo, injected from base and linked throughout
+- todo:qqq, injected from base and linked throughout
 
 ---
 
 **Footnotes:**
 
 <a id='footnote-1'>1.</a> See our <a href='https://gas.arbitrum.io/'>gas cost estimator</a> and <a href='https://l2fees.info/'>L2Fees</a> for more information.<br/>
-<a id='footnote-2'>2.</a> TODO
+<a id='footnote-2'>2.</a> todo:qqq
 
 ---
 
@@ -187,3 +187,4 @@ We’re moving fast and meeting needs. The specter of Ethereum’s rollup-centri
 
 1. Bob for x
 2. Alice for y
+3. todo:qqq
