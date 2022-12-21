@@ -5,7 +5,7 @@ sidebar_label: A gentle introduction
 description: todo
 ---
 
-**In a nutshell:**
+**In a nutshell:** 
 
 - Arbitrum Rollup is an optimistic rollup protocol that makes Ethereum transactions faster and cheaper while inheriting Ethereum's security guarantees [[1]](#footnote-1). Developers use Arbitrum to build user-friendly decentralized apps.
 - Governance of the Arbitrum Rollup protocol is now being decentralized through the distribution of the $ARB governance token.
@@ -17,13 +17,13 @@ description: todo
 
 <br />
 
-:::caution An important reminder
+:::caution An important reminder 
 
 The only official website for the $ARB airdrop is TODO. There is no presale. We won’t ever ask for your seed phrase. If you’re ever unsure of anything related to Arbitrum, join our [Discord](#TODO_link) and a member of our team will be happy to help.
 
 :::
 
-### Hello! What’s Arbitrum again?
+### Hello! What’s Arbitrum again? 
 
 Arbitrum Rollup is an optimistic rollup protocol that makes Ethereum transactions faster and cheaper. Developers use Arbitrum to build user-friendly decentralized apps.
 
@@ -31,7 +31,7 @@ Our flagship chain, Arbitrum One, was [launched in 2021](https://offchain.medium
 
 Governance of Arbitrum One and Arbitrum Nova is now being decentralized through the distribution of $ARB governance tokens.
 
-### What's governance?
+### What's governance? 
 
 Governance is the way that decisions get made. To understand what this means, let’s compare traditional web2 governance to web3 governance.
 
@@ -45,24 +45,24 @@ When a corporate decision needs to be made, members of the board meet and vote. 
 2. **Governance token launch**: Ownership of governance tokens represents membership within the DAO. Token holders can vote on DAO proposals. Arbitrum’s governance token is **$ARB**, and will be distributed to eligible wallet addresses via an upcoming airdrop.
 3. **Code**: DAO governance is usually facilitated by a series of open source [smart contracts](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html) that enforce a specific decision-making protocol. These _trustless_ smart contracts are used to gradually replace the traditional board’s _trusted_ social contract. Arbitrum DAO uses smart contracts to codify the decision-making protocol articulated within the Constitution of the Arbitrum DAO.
 
-### So $ARB is a token, kind of like $ETH?
+### So $ARB is a token, kind of like $ETH? 
 
 Kind of! Let’s compare them:
 
-**How $ETH and $ARB are similar**:
+**How $ETH and $ARB are similar**: 
 
 - Both are powered by decentralized blockchain technology.
 - Both can be owned by any cryptocurrency wallet that supports $ETH.
 - Both can be bought, sold, and traded.
 
-**How $ETH and $ARB are different**:
+**How $ETH and $ARB are different**: 
 
 - $ETH is a transactional token, while $ARB is a governance token.
 - $ETH is used to pay for transaction fees, while $ARB is not.
 - Governance of the Arbitrum Rollup protocol is facilitated by $ARB and governance smart contracts, while [Ethereum’s governance](https://ethereum.org/en/governance/) is handled socially.
 - Holding $ARB makes you a partial owner of the Arbitrum Rollup protocol, while holding $ETH does not make you a partial owner of the Ethereum’s protocol.
 
-### Why is this important? Why should I care?
+### Why is this important? Why should I care? 
 
 **In short:** You can use $ARB tokens to defend our shared values of decentralization, self-sovereignty, and sustainable economics.
 
@@ -72,18 +72,18 @@ $ARB tokens represent stake in Arbitrum’s - and by proxy, Ethereum’s - decen
 
 More generally, possession of $ARB tokens places you at the cutting edge of governance mechanism design. This is a new frontier with society-scale implications, and **your voice matters**. $ARB tokens give you an immutable voice.
 
-### Cool beans. Am I eligible for the airdrop?
+### Cool beans. Am I eligible for the airdrop? 
 
 If you’ve used Arbitrum at any time before the the snapshot date (August 31st, 2022 - [block 22207817](https://arbiscan.io/block/22207817) on Arbitrum One), you’re probably entitled to some $ARB tokens. The easiest way to find out if you’re eligible is to visit [gov.arbitrum.io](http://gov.arbitrum.io/) and follow the prompts.
 
-### How does Arbitrum’s governance work?
+### How does Arbitrum’s governance work? 
 
 Governance of the Arbitrum Rollup protocol is driven by two governing bodies: the **Security Council** and the **Arbitrum DAO**.
 
 - The **Security Council** is a 12-member council of publicly known entities elected by members of the Arbitrum DAO. This council is responsible for ensuring Arbitrum’s security and performance through the selective application of **emergency upgrades** when/if necessary.
 - The **Arbitrum DAO** is the worldwide community of $ARB token holders and the delegates that they select. The DAO is responsible for governing Arbitrum and its Security Council. The DAO can use constitutional proposals to modify the Security Council’s powers, or even to eliminate the Security Council entirely. The Security Council’s powers are delegated to the Security Council by the DAO, and are to be exercised in the best interests of the DAO.
 
-### Who cares about this stuff?
+### Who cares about this stuff? 
 
 You can think of our stakeholder groups as a stack of layers. At the top of the stack, we have our **web3 user layer**. All other layers work together to support the web3 user layer:
 
@@ -95,29 +95,29 @@ You can think of our stakeholder groups as a stack of layers. At the top of the 
   - **Execution layer (EL):** Includes Geth and other EL teams building execution-layer client software.
 - **Research layer:** Includes academic researchers, citizen scientists, and product managers who are working on the cutting edge of cryptography, mechanism design, and product development.
 
-### All of these people can govern Arbitrum’s Rollup protocol?
+### All of these people can govern Arbitrum’s Rollup protocol? 
 
 Yep! As long as they either hold $ARB or are a delegate.
 
-### What’s a delegate again?
+### What’s a delegate again? 
 
 A delegate is like an elected representative. $ARB token holders can delegate their voting power to anyone they choose.
 
-### Why would I want to become a delegate?
+### Why would I want to become a delegate? 
 
 There are a lot of people who don’t have time to actively participate in protocol governance. Delegates help these people by offering to vote on their behalf.
 
 Delegates are a critical component of Arbitrum’s decentralization because they allow our community members to passively participate in the governance of our technology. Although becoming a delegate is a serious responsibility that requires a significant time commitment, it allows you to ensure that Ethereum’s values (and those of the delegators who have entrusted you with their voting power) are forever enshrined within our decisions and decision-making protocols.
 
-### How are disagreements handled?
+### How are disagreements handled? 
 
 TODO
 
-### How is consensus reached on DAO proposals?
+### How is consensus reached on DAO proposals? 
 
 TODO
 
-### I’d like to participate! What are my options?
+### I’d like to participate! What are my options? 
 
 1. **Select a delegate** to vote on your behalf. Choose this option if you’re too busy to regularly vote on Arbitrum DAO proposals. See _How to select a delegate_ (todo).
 2. **Self-delegate** to vote directly on DAO proposals. Great for studious fans of direct democracy. See _Vote on proposals_ (todo).
@@ -125,7 +125,7 @@ TODO
 4. **Participate in governance discussions** on the Arbitrum DAO forum (todo).
 5. **Join the community of Arbinauts** on our Discord server (todo).
 
-### Why can’t I claim my $ARB tokens right now?
+### Why can’t I claim my $ARB tokens right now? 
 
 We’re as excited as you are for the airdrop! We also want to ensure that token recipients and DAO delegates have the best possible experience, so we’re using a two-step process:
 
@@ -134,13 +134,13 @@ We’re as excited as you are for the airdrop! We also want to ensure that token
 
 This two-step process lets us prepare a smooth airdrop experience for you.
 
-### Wen airdrop? What’s next?
+### Wen airdrop? What’s next? 
 
 We’re currently targeting TODO for the airdrop - this is when you’ll be able to claim your tokens on the [governance portal](http://gov.arbitrum.io) - the same portal used to check eligibility. You’ll then be able to select a delegate (link) or delegate to yourself (link).
 
 If this target date changes, we’ll update this document and we’ll TODO - stay tuned!
 
-### Where can I learn more?
+### Where can I learn more? 
 
 You’re in the right place! The following docs elaborate on the finer details of Arbitrum DAO and its underlying governance mechanisms:
 
@@ -156,11 +156,11 @@ You’re in the right place! The following docs elaborate on the finer details o
 - **_Arbitrum DAO Glossary_**: An index of governance terms and definitions.
 - (todo - index all publishable docs here, make it clear that some of these are stretch docs)
 
-### Where can I ask for help?
+### Where can I ask for help? 
 
 - TODO
 
-### Thank you!
+### Thank you! 
 
 Thank _you_. Developers are using Arbitrum to power the next generation of web experiences partly because of our technology, but mostly because of our community of builders and believers. You’re giving us a lot to look forward to.
 
@@ -176,19 +176,19 @@ We’re moving fast and meeting needs. The specter of Ethereum’s rollup-centri
 
 ---
 
-**Glossary:**
+**Glossary:** 
 
 - todo, injected from base and linked throughout
 
 ---
 
-**FAQ:**
+**FAQ:** 
 
 - todo, injected from base and linked throughout
 
 ---
 
-**Footnotes:**
+**Footnotes:** 
 
 <a id='footnote-1'>1.</a> See our <a href='https://gas.arbitrum.io/'>gas cost estimator</a> and <a href='https://l2fees.info/'>L2Fees</a> for more information.<br/>
 <a id='footnote-2'>2.</a> TODO
