@@ -108,6 +108,12 @@ article .markdown > h3 {
 article .markdown li li {
   margin-top: 4px;
 }
+article .markdown .small-table {
+  font-size: 12px;
+}
+article .markdown .small-table td {
+  padding: 10px;
+}
 @media (max-width: 736px) {
   .markdown h1:first-child {
     font-size: 24px;

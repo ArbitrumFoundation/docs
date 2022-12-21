@@ -11,14 +11,36 @@ description: todo:qqq
 
 The $ARB token is an ERC-20 token native to Arbitrum One rollup chain. Token properties at launch:
 
-| Property                        | Value                                                                          |
-| ------------------------------- | ------------------------------------------------------------------------------ |
-| Initial supply cap              | 10 Billion                                                                     |
-| Inflation                       | Max 2% per year. The DAO can adjust this parameter through a todo:qqq proposal |
-| Minting/burning mechanism       | L2 smart contract                                                              |
-| Bridgeable to Ethereum L1?      | Yes                                                                            |
-| Tokens launch on...             | Arbitrum One                                                                   |
-| On-chain governance (voting) on | Arbitrum One                                                                   |
+<table class='small-table'>
+    <tr>
+        <td><strong>Property</strong></td>
+        <td>Value</td>
+    </tr>
+    <tr>
+        <td><strong>Initial supply cap</strong></td>
+        <td>10 Billion</td>
+    </tr>
+    <tr>
+        <td><strong>Inflation</strong></td>
+        <td>Max 2% per year. The DAO can adjust this parameter through a todo:qqq proposal</td>
+    </tr>
+    <tr>
+        <td><strong>Minting/burning mechanism</strong></td>
+        <td>L2 smart contract</td>
+    </tr>
+    <tr>
+        <td><strong>Bridgeable to Ethereum L1?</strong></td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td><strong>Tokens launch on...</strong></td>
+        <td>Arbitrum One</td>
+    </tr>
+    <tr>
+        <td><strong>On-chain governance (voting) on</strong></td>
+        <td>Arbitrum One</td>
+    </tr>
+</table>
 
 
 ### Distribution info
@@ -38,10 +60,13 @@ The initial allocation of the token will be as follows:
  - Snapshot: Nitro Block = August 31, 2022 at Block Number [Insert Number]
 
 #### User Airdrop
+
 Users will receive a certain number of points to satisfy various thresholds. The total number of points earned will dictate the size of the airdrop such users receive. 
 
 **Points Criteria**
+
 Users who have conducted any of the actions laid below will receive one point for each distinct points criteria:
+
  - Has bridged funds into Arbitrum One
  - Has conducted transactions during two distinct months
  - Has conducted transactions during six distinct months
@@ -83,9 +108,11 @@ To prevent bots from taking advantage of the airdrop, we have laid out point ded
 See here for further details on our Sybil detection criteria. 
 
 #### DAO Airdrop 
+
 The goal and intention of these tokens is to align the future of the Arbitrum protocol with the vast number of different communities that exist at the application level. We want to align on the future of Arbitrum with early supporters of the project. 
 
 **Prerequisites**
+
  - Live on Arbitrum as of the snapshot date and listed on the Arbitrum portal as of such date.
  - Such a project has an on-chain treasury that is controlled by its DAO for the benefit of its community. 
  - 50% of funds must be used for growth on Arbitrum of the recipient’s project(s). On the one-year anniversary of the distribution, the project in question must submit to the Arbitrum DAO a report showcasing how the initially distributed funds were used. Should the DAO find the report to be unsatisfactory, the DAO shall have the right to vote to burn the unvested tokens rather than distributing them to the project. 
@@ -136,5 +163,6 @@ The goal and intention of these tokens is to align the future of the Arbitrum pr
 -------
 
 todo
+
  - add links
  - footnotes
