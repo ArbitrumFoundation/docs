@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 export const Hasher = ({ targetElementId }) => {
   
@@ -30,11 +31,15 @@ export const Hasher = ({ targetElementId }) => {
   }; 
 
   return (
+    <BrowserOnly>
+      {() => (
         <div className="header-badges">
           <a className="header-badge">
             <span className="badge-avatar emoji-avatar"> </span>
             <span className="badge-label">hash ->   {calculateHash(targetElementId)}</span>
           </a>
-        </div>
+      </div>
+      )}
+    </BrowserOnly>
   );
 };
