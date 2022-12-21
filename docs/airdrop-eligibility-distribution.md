@@ -81,7 +81,7 @@ Users who have conducted any of the actions laid below will receive one point fo
 **Points Eligibility for Token Drop**
 
  - <3 points = Not eligible to receive any tokens
- - 3 points = 
+ - 3 points = [qqq fill in] 
  - 4 points =
  - 5 points =
  - 6 points = 
