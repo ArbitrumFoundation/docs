@@ -2,7 +2,7 @@
 id: dao-constitution
 title: The Constitution of the Arbitrum DAO
 sidebar_label: Constitution
-description: todo
+description: todo:qqq
 ---
 
 import {Hasher} from '@site/src/components/Hasher';
