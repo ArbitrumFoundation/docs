@@ -118,3 +118,21 @@ article .markdown li li {
     margin-bottom: 10px;
   }
 }
+/* temp location to avoid merge conflicts */
+#constitution {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 2px solid #28a0f0;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 30px;
+  display: block;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
