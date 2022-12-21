@@ -1,4 +1,4 @@
----
+--- 
 id: gentle-intro-dao-governance
 title: A gentle introduction to Arbitrum DAO
 sidebar_label: A gentle introduction
