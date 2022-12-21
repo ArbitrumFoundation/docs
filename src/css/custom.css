@@ -118,3 +118,7 @@ article .markdown li li {
     margin-bottom: 10px;
   }
 }
+/* temp location to avoid merge conflicts */
+.ciphertext {
+  padding: 10px;
+}
