@@ -58,7 +58,7 @@ export const HeaderBadges = ({
     if (dateString != null) {
       return (
         <a class="header-badge">
-          <span class="badge-avatar emoji-avatar">✔️</span>
+          <span class="badge-avatar emoji-avatar">✔️</span> 
           <span class="badge-label">
             Last verified on <strong>{dateString}</strong>
           </span>
@@ -70,7 +70,7 @@ export const HeaderBadges = ({
   return (
     <BrowserOnly>
       {() => (
-        <div class="header-badges">
+        <div className="header-badges">
           {commaDelimitedContributors != null
             ? commaDelimitedContributors.split(',').map(buildAuthorBadge)
             : null}
