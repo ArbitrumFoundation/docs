@@ -31,6 +31,7 @@
   display: block;
   margin-bottom: 15px;
   min-height: 35px;
+  text-align: right;
   /*pragmatism over perfection*/
 }
 .header-badges .header-badge {
