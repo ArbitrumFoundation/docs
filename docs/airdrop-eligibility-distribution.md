@@ -241,8 +241,10 @@ To qualify for our DAO airdrop, your project's DAO must meet the following five 
 
 todo
 
- - add links
- - footnotes
+ - add links to resources & glossary definitions
+ - add faq
+ - add footnotes
+
 
 -------
 
