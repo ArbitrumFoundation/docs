@@ -29,11 +29,11 @@ The $ARB token is an ERC-20 token native to Arbitrum One rollup chain. Token pro
         <td>Yes</td>
     </tr>
     <tr>
-        <td><strong>Tokens launch on...</strong></td>
+        <td><strong>Tokens launch on</strong></td>
         <td>Arbitrum One</td>
     </tr>
     <tr>
-        <td><strong>On-chain governance (voting) on</strong></td>
+        <td><strong>On-chain governance (voting) happens on</strong></td>
         <td>Arbitrum One</td>
     </tr>
 </table>
@@ -48,6 +48,39 @@ The initial allocation of the token will be as follows:
  - **19%** to Offchain Labs investors
  - **5%** airdropped to the community
  - **3%** airdropped to DAOs in the Arbitrum ecosystem
+
+<table class='small-table'>
+   <thead>
+        <tr>
+            <th>Percentage of initial supply</th>
+            <th>Allocated to</th>
+        </tr>
+    </thead>
+    <tr>
+        <td><strong>48%</strong></td>
+        <td>Arbitrum DAO treasury</td>
+    </tr>
+    <tr>
+        <td><strong>25%</strong></td>
+        <td>Employees of Offchain Labs (the team building Arbitrum)</td>
+    </tr>
+    <tr>
+        <td><strong>19%</strong></td>
+        <td>Offchain Labs investors</td>
+    </tr>
+    <tr>
+        <td><strong>5%</strong></td>
+        <td>Arbitrum community via airdrop</td>
+    </tr>
+    <tr>
+        <td><strong>3%</strong></td>
+        <td>DAOs in the Arbitrum ecosystem via airdrop</td>
+    </tr>
+</table>
+
+
+
+
 
 ### Airdrop Information and Criteria:
 
