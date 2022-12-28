@@ -111,6 +111,7 @@ article .markdown li li {
 }
 article .markdown .small-table {
   font-size: 12px;
+  margin-top: 20px;
 }
 article .markdown .small-table td {
   padding: 10px;
