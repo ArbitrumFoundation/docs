@@ -6,3 +6,7 @@ description: todo:qqq
 ---
 
 todo: pull from notion when stabilized
+
+import GlossaryPartial from '@site/docs/partials/_glossary-partial.md';
+
+<GlossaryPartial />
