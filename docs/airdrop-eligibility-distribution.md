@@ -55,27 +55,27 @@ description: todo:qqq
         <td><strong>Allocated to</strong></td>
     </tr>
     <tr>
-        <td><strong>48%</strong></td>
+        <td>48%</td>
         <td>4.8 billion</td>
         <td>Arbitrum DAO treasury</td>
     </tr>
     <tr>
-        <td><strong>25%</strong></td>
+        <td>25%</td>
         <td>2.5 billion</td>
         <td>Employees of Offchain Labs (the team building Arbitrum)</td>
     </tr>
     <tr>
-        <td><strong>19%</strong></td>
+        <td>19%</td>
         <td>1.9 billion</td>
         <td>Offchain Labs investors</td>
     </tr>
     <tr>
-        <td><strong>5%</strong></td>
+        <td>5%</td>
         <td>500 million</td>
         <td><strong>Users</strong> of the Arbitrum platform (via airdrop to user wallet addresses)</td>
     </tr>
     <tr>
-        <td><strong>3%</strong></td>
+        <td>3%</td>
         <td>300 million</td>
         <td><strong>DAOs</strong> building apps on Arbitrum (via airdrop to DAO treasury addresses)</td>
     </tr>
