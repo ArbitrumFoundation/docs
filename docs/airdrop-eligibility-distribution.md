@@ -5,6 +5,7 @@ sidebar_label: Airdrop eligibility and distribution
 description: todo:qqq
 ---
 
+<!--todo:qqq: author some crawl-walk-run frontmatter, point to gentle intro & website -->
 
 <a href='#todo'>$ARB</a> is an ERC-20 token native to Arbitrum One rollup chain. Token properties at launch:
 
@@ -20,7 +21,7 @@ description: todo:qqq
     </tr>
     <tr>
         <td><strong>Inflation</strong></td>
-        <td>Max 2% per year <a href='#todo'>[1]</a></td>
+        <td>Max 2% per year <a href='#footnote-1'>[1]</a></td>
     </tr>
     <tr>
         <td><strong>Minting/burning mechanism</strong></td>
@@ -105,6 +106,7 @@ We use a points system to determine the number of tokens that airdrop recipients
  13. Deposited more than $50,000 of liquidity into Arbitrum
  14. Deposited more than $250,000 of liquidity into Arbitrum
 
+<br />
 
 **Converting points to tokens:**
 
@@ -159,6 +161,7 @@ We use a points system to determine the number of tokens that airdrop recipients
     </tr>
 </table>
 
+<br />
 
 **User protections:**
 
@@ -183,6 +186,7 @@ To qualify for our DAO airdrop, your project's DAO must meet the following five 
  4. The project's DAO must agree to invest at least 50% of the airdropped funds into growth on Arbitrum (todo:qqq - how to be more concrete about this?).
  5. The project's DAO must agree to submit a fund utilization report to the Arbitrum DAO on the one-year anniversary of the airdropped token distribution. This report should showcase how the initially distributed funds were used. The Arbitrum DAO reserves the right to burn unvested project DAO tokens via a (todo: type of proposal) if this condition isn't satisfied.
 
+<br />
 
 **Distribution structure**
 
