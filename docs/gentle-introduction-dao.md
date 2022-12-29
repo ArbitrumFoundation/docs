@@ -8,7 +8,7 @@ description: todo:qqq
 **In a nutshell:**
 
 - Arbitrum Rollup is an optimistic rollup protocol that makes Ethereum transactions faster and cheaper while inheriting Ethereum's security guarantees [[1]](#footnote-1). Developers use Arbitrum to build user-friendly decentralized apps.
-- Governance of the Arbitrum Rollup protocol is now being decentralized through the distribution of the $ARB governance token.
+- Governance of the Arbitrum Rollup protocol is now being decentralized through the distribution of the <a data-quicklook-from='arb'>$ARB</a> governance token.
 - $ARB tokens can be used to vote on Arbitrum DAO governance proposals, allowing $ARB holders to shape Arbitrum’s future together.
 - Token holders will be able to delegate voting power to any individual they trust. These individuals are called delegates.
 - **To determine your airdrop eligibility**, connect your wallet to the Arbitrum One network on [gov.arbitrum.io](http://gov.arbitrum.io) and follow the prompts. Do this by (todo:qqq).
@@ -164,12 +164,6 @@ We’re moving fast and meeting needs. The specter of Ethereum’s rollup-centri
 
 ---
 
-**Glossary:**
-
-- todo:qqq, injected from base and linked throughout
-
----
-
 **FAQ:**
 
 - todo:qqq, injected from base and linked throughout
@@ -188,3 +182,13 @@ We’re moving fast and meeting needs. The specter of Ethereum’s rollup-centri
 1. Bob for x
 2. Alice for y
 3. todo:qqq
+
+<!--todo: hide this with css, clean up the implementation & add comments -->
+
+---
+
+**Glossary:**
+
+import GlossaryPartial from '@site/docs/partials/_glossary-partial.md';
+
+<GlossaryPartial />

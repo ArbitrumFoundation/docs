@@ -150,3 +150,6 @@ article .markdown .glossary-list dd {
   word-wrap: break-word;
   white-space: pre-wrap;
 }
+#tooltip {
+  display: none;
+}
