@@ -20,11 +20,13 @@ export const Quicklooks = () => {
        }
     });
   };
-
-  // todo:qqq - figure out how to not use timeouts, maybe hooks or event listeners?
-  setTimeout(() => {
-    renderQuicklooks();
-  }, 100)
   
-  return;
+  return (
+    <BrowserOnly>
+      {() => {
+        renderQuicklooks();
+        return;
+      }}
+    </BrowserOnly>
+  )
 };
