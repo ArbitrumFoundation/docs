@@ -40,7 +40,3 @@
   <dt>Votable tokens</dt>
   <dd data-quicklook-key="votable-tokens">$ARB tokens claimed through our airdrop. More precisely, all $ARB tokens in existence, except for: <ul> <li>tokens owned by the Arbitrum DAO</li> <li>tokens owned by the Arbitrum Foundation</li> <li>airdrop tokens not yet claimed</li> </ul> Votable tokens give their holders voting power in direct proportion to the quantity of tokens held. More $ARB == more voting power.</dd>
 </dl>
-
-import {Quicklooks} from '@site/src/components/Quicklooks';
-
-<Quicklooks />
