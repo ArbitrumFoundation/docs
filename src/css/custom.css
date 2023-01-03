@@ -128,6 +128,12 @@ article .markdown .hidden-glossary-list dd {
 article .markdown .show-hidden-glossary-list > .hidden-glossary-list {
   display: block;
 }
+[data-tippy-root] ul,
+.hidden-glossary-list ul,
+[data-tippy-root] li,
+.hidden-glossary-list li {
+  margin: 5px 0 5px 0;
+}
 @media (max-width: 736px) {
   .markdown h1:first-child {
     font-size: 24px;
