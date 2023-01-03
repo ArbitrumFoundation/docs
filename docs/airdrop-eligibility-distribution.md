@@ -5,20 +5,23 @@ sidebar_label: Airdrop eligibility and distribution
 description: todo:qqq
 ---
 
+<!--todo:qqq: author some crawl-walk-run frontmatter, point to gentle intro & website -->
 
+<a href='#todo'>$ARB</a> is an ERC-20 token native to Arbitrum One rollup chain. Token properties at launch:
 
-### Token details summary
-
-The $ARB token is an ERC-20 token native to Arbitrum One rollup chain. Token properties at launch:
 
 <table class='small-table'>
     <tr>
+        <td><strong>Property</strong></td>
+        <td><strong>Value</strong></td>
+    </tr>
+    <tr>
         <td><strong>Initial supply cap</strong></td>
-        <td>10 Billion</td>
+        <td>10 billion</td>
     </tr>
     <tr>
         <td><strong>Inflation</strong></td>
-        <td>Max 2% per year. The DAO can adjust this parameter through a todo:qqq proposal</td>
+        <td>Max 2% per year <a href='#footnote-1'>[1]</a></td>
     </tr>
     <tr>
         <td><strong>Minting/burning mechanism</strong></td>
@@ -29,93 +32,167 @@ The $ARB token is an ERC-20 token native to Arbitrum One rollup chain. Token pro
         <td>Yes</td>
     </tr>
     <tr>
-        <td><strong>Tokens launch on...</strong></td>
+        <td><strong>Tokens launch on</strong></td>
         <td>Arbitrum One</td>
     </tr>
     <tr>
-        <td><strong>On-chain governance (voting) on</strong></td>
+        <td><strong>On-chain governance (voting) happens on</strong></td>
         <td>Arbitrum One</td>
+    </tr>
+    <tr>
+        <td><strong>Airdrop snapshot</strong></td>
+        <td>Nitro Block = August 31, 2022 at block no. [Insert Number]</td>
     </tr>
 </table>
 
 
-### Distribution info
+### Initial token allocation & airdrop distribution
 
-The initial allocation of the token will be as follows:
+<table class='small-table'>
+    <tr>
+        <td><strong>Percentage of initial supply</strong></td>
+        <td><strong>Number of tokens</strong></td>
+        <td><strong>Allocated to</strong></td>
+    </tr>
+    <tr>
+        <td>48%</td>
+        <td>4.8 billion</td>
+        <td>Arbitrum DAO treasury</td>
+    </tr>
+    <tr>
+        <td>25%</td>
+        <td>2.5 billion</td>
+        <td>Employees of Offchain Labs (the team building Arbitrum)</td>
+    </tr>
+    <tr>
+        <td>19%</td>
+        <td>1.9 billion</td>
+        <td>Offchain Labs investors</td>
+    </tr>
+    <tr>
+        <td>5%</td>
+        <td>500 million</td>
+        <td><strong>Users</strong> of the Arbitrum platform (via airdrop to user wallet addresses)</td>
+    </tr>
+    <tr>
+        <td>3%</td>
+        <td>300 million</td>
+        <td><strong>DAOs</strong> building apps on Arbitrum (via airdrop to DAO treasury addresses)</td>
+    </tr>
+</table>
 
- - **48%** to the Arbitrum DAO treasury
- - **25%** to the employees of Offchain Labs (the team building Arbitrum)
- - **19%** to Offchain Labs investors
- - **5%** airdropped to the community
- - **3%** airdropped to DAOs in the Arbitrum ecosystem
 
-### Airdrop Information and Criteria:
 
- - 500 million tokens will be airdropped to users of the platform 
- - 300 million tokens will be airdropped to the treasuries of DAOs whose applications are built on top of Arbitrum
- - Snapshot: Nitro Block = August 31, 2022 at Block Number [Insert Number]
 
-#### User Airdrop
 
-Users will receive a certain number of points to satisfy various thresholds. The total number of points earned will dictate the size of the airdrop such users receive. 
+### User airdrop eligibility details
 
-**Points Criteria**
+We use a points system to determine the number of tokens that airdrop recipients can claim. You earn maximum one point per qualifying action performed before the snapshot date. There are 14 total qualifying actions, so you can earn up to 14 points.
 
-Users who have conducted any of the actions laid below will receive one point for each distinct points criteria:
+**Qualifying actions:**
 
- - Has bridged funds into Arbitrum One
- - Has conducted transactions during two distinct months
- - Has conducted transactions during six distinct months
- - Has conducted transactions during nine months
- - Has conducted more than four transactions or interacted with more than four different smart contracts
- - Has conducted more than ten transactions or interacted with more than ten different smart contracts
- - Has conducted more than 25 transactions or interacted with more than 25 different smart contracts
- - Has conducted more than 100 transactions or interacted with more than 100 different smart contracts
- - Has conducted transactions exceeding in the aggregate $10,000 in value
- - Has conducted transactions exceeding in the aggregate $50,000 in value
- - Has conducted transactions exceeding in the aggregate $250,000 in value
- - Has deposited more than $10,000 of liquidity into Arbitrum 
- - Has deposited more than $50,000 of liquidity into Arbitrum
- - Has deposited more than $250,000 of liquidity into Arbitrum
+ 1. Bridged funds into Arbitrum One
+ 2. Conducted transactions during two distinct months
+ 3. Conducted transactions during six distinct months
+ 4. Conducted transactions during nine months
+ 5. Conducted more than four transactions or interacted with more than four different smart contracts
+ 6. Conducted more than ten transactions or interacted with more than ten different smart contracts
+ 7. Conducted more than 25 transactions or interacted with more than 25 different smart contracts
+ 8. Conducted more than 100 transactions or interacted with more than 100 different smart contracts
+ 9. Conducted transactions exceeding in the aggregate $10,000 in value
+ 10. Conducted transactions exceeding in the aggregate $50,000 in value
+ 11. Conducted transactions exceeding in the aggregate $250,000 in value
+ 12. Deposited more than $10,000 of liquidity into Arbitrum 
+ 13. Deposited more than $50,000 of liquidity into Arbitrum
+ 14. Deposited more than $250,000 of liquidity into Arbitrum
 
-**Points Eligibility for Token Drop**
+<br />
 
- - <3 points = Not eligible to receive any tokens
- - 3 points = [qqq fill in] 
- - 4 points =
- - 5 points =
- - 6 points = 
- - 7 points = 
- - 8 points =
- - 9 points = 
- - 10 points =
- - 11 points = 
- - 12+ points = 
+**Converting points to tokens:**
 
-**User Protections**
+<table class='small-table'>
+    <tr>
+        <td><strong>Points earned</strong></td>
+        <td><strong>Airdrop entitlement</strong></td>
+    </tr>
+    <tr>
+        <td>Less than 3</td>
+        <td>Not eligible</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>TODO:qqq</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>TODO:qqq</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>TODO:qqq</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>TODO:qqq</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>TODO:qqq</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>TODO:qqq</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>TODO:qqq</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>TODO:qqq</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>TODO:qqq</td>
+    </tr>
+    <tr>
+        <td>12 or more</td>
+        <td>TODO:qqq</td>
+    </tr>
+</table>
 
-To prevent bots from taking advantage of the airdrop, we have laid out point dedication rules. These Sybil Protections are:
+<br />
 
- - All wallet transactions occurred within a 48-hour period = -1 point
- - Has a balance of < .01 ETH and has not interacted with more than one smart contract = -1 point 
- - Has been identified as a sybil address during the Hop protocol bounty program as listed here. 
- - “Parent” and children” addresses where the parent has funded more than 25 children addresses = collapsed into one “user” 
+**User protections:**
 
-See here for further details on our Sybil detection criteria. 
+To prevent bots from taking advantage of the airdrop, we've established a number of anti-sybil rules.
 
-#### DAO Airdrop 
+ - If an airdrop recipient's wallet transactions have all occurred within a 48-hour period, **one point is subtracted**.
+ - If an airdrop recipient's wallet balance is less than .01 ETH, **and** if the wallat hasn't interacted with more than one smart contract, **one point is subtracted**.
+ - If an airdrop recipient's wallet address has been identified as a sybil address during the Hop protocol bounty program (footnote), (todo:qqq - disqualified?). 
+ - If an airdrop recipient's wallet address is part of a parent/children wallet arrangement whereby the parent has funded more than 25 children addresses, all addresses are collapsed into a single user wallet address. 
 
-The goal and intention of these tokens is to align the future of the Arbitrum protocol with the vast number of different communities that exist at the application level. We want to align on the future of Arbitrum with early supporters of the project. 
+Refer to our <a href='#todo'>Sybil detection</a> documentation for more detailed information. 
 
-**Prerequisites**
 
- - Live on Arbitrum as of the snapshot date and listed on the Arbitrum portal as of such date.
- - Such a project has an on-chain treasury that is controlled by its DAO for the benefit of its community. 
- - 50% of funds must be used for growth on Arbitrum of the recipient’s project(s). On the one-year anniversary of the distribution, the project in question must submit to the Arbitrum DAO a report showcasing how the initially distributed funds were used. Should the DAO find the report to be unsatisfactory, the DAO shall have the right to vote to burn the unvested tokens rather than distributing them to the project. 
 
-**Distribution Structure**
+### DAO airdrop eligibility details
 
- - Vesting Schedule
+To qualify for our DAO airdrop, your project's DAO must meet the following five criteria:
+
+ 1. The project's DAO must be live (must have deployed a smart contract to an Arbitrum chain? todo:qqq) on Arbitrum on or before the snapshot date.
+ 2. The project's DAO must have been listed on the Arbitrum portal on or before the snapshot date.
+ 3. The project's DAO must have an on-chain treasury controlled by the DAO for the benefit of its community.
+ 4. The project's DAO must agree to invest at least 50% of the airdropped funds into growth on Arbitrum (todo:qqq - how to be more concrete about this?).
+ 5. The project's DAO must agree to submit a fund utilization report to the Arbitrum DAO on the one-year anniversary of the airdropped token distribution. This report should showcase how the initially distributed funds were used. The Arbitrum DAO reserves the right to burn unvested project DAO tokens via a (todo: type of proposal) if this condition isn't satisfied.
+
+<br />
+
+**Distribution structure**
+
+(todo:qqq - clarify these bits before publishing)
+
+ - Vesting schedule
    - 50% vested upfront 
    - 50% vested (quarterly) over the course of one year anniversary - two-year anniversary of distribution.
    - How to lose unvested tokens: 
@@ -156,9 +233,26 @@ The goal and intention of these tokens is to align the future of the Arbitrum pr
    - Average value of recipient DAOs tokens on Arbitrum is greater than $10Ms
 
 
+
+
+
+<br/>
+<br/>
+<br/>
+
 -------
+
 
 todo
 
- - add links
- - footnotes
+ - add links to resources & glossary definitions
+ - add faq
+ - add footnotes
+
+
+-------
+
+
+#### Footnotes
+
+<a id='footnote-1'>1.</a> The DAO can adjust this parameter through a todo:qqq proposal.
