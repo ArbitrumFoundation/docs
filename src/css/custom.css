@@ -116,23 +116,23 @@ article .markdown .small-table {
 article .markdown .small-table td {
   padding: 10px;
 }
-article .markdown .hidden-glossary-list {
-  display: none;
-}
-article .markdown .hidden-glossary-list dt {
+article .markdown .definition-list dt {
   font-weight: 700;
   margin-top: 20px;
 }
-article .markdown .hidden-glossary-list dd {
+article .markdown .definition-list dd {
   margin-left: 0;
 }
-article .markdown .show-hidden-glossary-list > .hidden-glossary-list {
+article .markdown .definition-list.hidden-definition-list {
+  display: none;
+}
+article .markdown .show-hidden-definition-list > .hidden-definition-list {
   display: block;
 }
 [data-tippy-root] ul,
-.hidden-glossary-list ul,
+.definition-list ul,
 [data-tippy-root] li,
-.hidden-glossary-list li {
+.definition-list li {
   margin: 5px 0 5px 0;
 }
 @media (max-width: 736px) {

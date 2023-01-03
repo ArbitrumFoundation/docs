@@ -134,9 +134,7 @@ article {
       }
     }
 
-    .hidden-glossary-list {
-      display: none;
-
+    .definition-list {
       dt {
         font-weight: 700;
         margin-top: 20px;
@@ -146,11 +144,13 @@ article {
         margin-left: 0;
       }
 
-
+      &.hidden-definition-list {
+        display: none;
+      }
     }
 
-    .show-hidden-glossary-list {
-      >.hidden-glossary-list {
+    .show-hidden-definition-list {
+      >.hidden-definition-list {
         display: block;
       }
     }
@@ -158,7 +158,7 @@ article {
 }
 
 [data-tippy-root],
-.hidden-glossary-list {
+.definition-list {
 
   ul,
   li {

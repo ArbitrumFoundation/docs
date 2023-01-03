@@ -1,4 +1,4 @@
-<dl class="hidden-glossary-list">
+<dl class="definition-list hidden-definition-list">
   <dt>$ARB</dt>
   <dd data-quicklook-key="arb">Arbitrum's governance token, an ERC-20 token native to the Arbitrum One chain. Owning $ARB makes you a member of the Arbitrum DAO and gives you the right to participate in Arbitrum's decentralized governance.</dd>
   <dt>Arbitrum DAO</dt>
