@@ -175,17 +175,6 @@ We’re moving fast and meeting needs. The specter of Ethereum’s rollup-centri
 <a id='footnote-1'>1.</a> See our <a href='https://gas.arbitrum.io/'>gas cost estimator</a> and <a href='https://l2fees.info/'>L2Fees</a> for more information.<br/>
 <a id='footnote-2'>2.</a> todo:qqq
 
----
-
-**Credits:**
-
-1. Bob for x
-2. Alice for y
-3. todo:qqq
-
-<!--todo: hide this with css, clean up the implementation & add comments -->
-
----
 
 import GlossaryPartial from '@site/docs/partials/_glossary-partial.md';
 
