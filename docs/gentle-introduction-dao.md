@@ -126,7 +126,7 @@ We’re as excited as you are for the airdrop! We also want to ensure that token
 
 This two-step process lets us prepare a smooth airdrop experience for you.
 
-### Wen airdrop? What’s next?
+### Wen airdrop?
 
 We’re currently targeting todo:qqq for the airdrop - this is when you’ll be able to claim your tokens on the [governance portal](http://gov.arbitrum.io) - the same portal used to check eligibility. You’ll then be able to select a delegate (link) or delegate to yourself (link).
 
@@ -186,8 +186,6 @@ We’re moving fast and meeting needs. The specter of Ethereum’s rollup-centri
 <!--todo: hide this with css, clean up the implementation & add comments -->
 
 ---
-
-**Glossary:**
 
 import GlossaryPartial from '@site/docs/partials/_glossary-partial.md';
 

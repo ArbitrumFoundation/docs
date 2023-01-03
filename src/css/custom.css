@@ -115,6 +115,9 @@ article .markdown .small-table {
 article .markdown .small-table td {
   padding: 10px;
 }
+article .markdown .glossary-list {
+  display: hidden;
+}
 article .markdown .glossary-list dt {
   font-weight: 700;
   margin-top: 20px;

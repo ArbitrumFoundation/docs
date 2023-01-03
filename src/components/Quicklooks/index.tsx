@@ -13,11 +13,15 @@ export const Quicklooks = () => {
       theme: 'light-border',
       allowHTML: true,
       content: (reference) => {
-        let contentSourceKey = reference.getAttribute('data-quicklook-from');
-        let sourceContentElement = document.querySelectorAll(`[data-quicklook-key="${contentSourceKey}"]`)[0];
-        let html = sourceContentElement.innerHTML;
-        return html;
-       }
+        try {
+          let contentSourceKey = reference.getAttribute('data-quicklook-from');
+          let sourceContentElement = document.querySelectorAll(`[data-quicklook-key="${contentSourceKey}"]`)[0];
+          let html = sourceContentElement.innerHTML;
+          return html;
+        } catch (e) {
+          return null;
+        }
+      }
     });
   };
   
