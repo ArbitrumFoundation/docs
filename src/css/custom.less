@@ -133,7 +133,7 @@ article {
       }
     }
 
-    .glossary-list {
+    .hidden-glossary-list {
       display: none;
 
       dt {
@@ -143,6 +143,12 @@ article {
 
       dd {
         margin-left: 0;
+      }
+    }
+
+    .show-hidden-glossary-list {
+      >.hidden-glossary-list {
+        display: block;
       }
     }
   }
