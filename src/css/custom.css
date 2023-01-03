@@ -116,6 +116,25 @@ article .markdown .small-table {
 article .markdown .small-table td {
   padding: 10px;
 }
+article .markdown .hidden-glossary-list {
+  display: none;
+}
+article .markdown .hidden-glossary-list dt {
+  font-weight: 700;
+  margin-top: 20px;
+}
+article .markdown .hidden-glossary-list dd {
+  margin-left: 0;
+}
+article .markdown .show-hidden-glossary-list > .hidden-glossary-list {
+  display: block;
+}
+[data-tippy-root] ul,
+.hidden-glossary-list ul,
+[data-tippy-root] li,
+.hidden-glossary-list li {
+  margin: 5px 0 5px 0;
+}
 @media (max-width: 736px) {
   .markdown h1:first-child {
     font-size: 24px;
