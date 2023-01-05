@@ -86,21 +86,27 @@ async function lookupProjectDefinitions(
   return definitions
 }
 
+function stripCurlyQuotes(input: string): string {
+  return input
+  .replace(/[\u2018\u2019]/g, "'")
+  .replace(/[\u201C\u201D]/g, '"');
+}
+
 function formatDefinitions(definitions: Definition[]) {
   // sort the array alphabetically by term
   definitions.sort((a, b) => a.term.localeCompare(b.term))
 
   const htmlArray = definitions.map(item => {
     // remove all non-alphanumeric and non-space characters except for "$" from term
-    const formattedTerm = item.term.replace(/[^a-z0-9\s$]/gi, '')
+    const formattedTerm = stripCurlyQuotes(item.term).replace(/[^a-z0-9\s$]/gi, '')
     // remove all non-alphanumeric and non-space characters except for "$", convert to lowercase, and replace spaces with hyphens
-    const termKey = item.term
+    const termKey = stripCurlyQuotes(item.term)
       .toLowerCase()
       .replace(/[^a-z0-9\s]/gi, '')
       .split(' ')
       .join('-')
     // replace all attribute values surrounded by single quotes with double quotes
-    const definition = item.definition.replace(/'/g, "'")
+    const definition = item.definition.replace(/’/g, "'")
     return `\n  <dt>${formattedTerm}</dt>\n  <dd data-quicklook-key="${termKey}">${definition}</dd>`
   })
 
