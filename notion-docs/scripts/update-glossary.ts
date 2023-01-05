@@ -49,7 +49,7 @@ async function lookupProjectDefinitions(
         {
           property: 'Status',
           status: {
-            does_not_equal: '1 - Drafting',
+            equals: '4 - Continuously publishing',
           },
         },
         {
@@ -99,15 +99,13 @@ function formatDefinitions(definitions: Definition[]) {
       .replace(/[^a-z0-9\s]/gi, '')
       .split(' ')
       .join('-')
-    // replace all attribute values surrounded by single quotes with double quotes
-    const definition = item.definition.replace(/'/g, "'")
+    // replace all attribute values surrounded by curly single quotes with double quotes
+    const definition = item.definition.replace(/’/g, "'")
     return `\n  <dt>${formattedTerm}</dt>\n  <dd data-quicklook-key="${termKey}">${definition}</dd>`
   })
 
-  // wrap the HTML strings in a <dl> element with a class of "hidden-glossary-list"
-  return `<dl class="definition-list hidden-definition-list">${htmlArray.join(
-    ''
-  )}\n</dl>`
+  // wrap the HTML strings in a <dl> element with a class of "definition-list hidden-definition-list"
+  return `<dl class="definition-list hidden-definition-list">${htmlArray.join('')}\n</dl>`
 }
 
 async function main() {
