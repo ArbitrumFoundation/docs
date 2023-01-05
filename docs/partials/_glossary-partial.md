@@ -1,4 +1,4 @@
-<dl class="hidden-glossary-list">
+<dl class="definition-list hidden-definition-list">
   <dt>$ARB</dt>
   <dd data-quicklook-key="arb">Arbitrum's governance token, an ERC-20 token native to the Arbitrum One chain. Owning $ARB makes you a member of the Arbitrum DAO and gives you the right to participate in Arbitrum's decentralized governance.</dd>
   <dt>Arbitrum DAO</dt>
@@ -8,9 +8,11 @@
   <dt>Arbitrum Improvement Proposal AIP</dt>
   <dd data-quicklook-key="arbitrum-improvement-proposal-aip">A governance proposal as outlined in the Arbitrum Constitution.</dd>
   <dt>Claimed airdrop tokens</dt>
-  <dd data-quicklook-key="claimed-airdrop-tokens">Tokens claimed from the Token Distributor contract during the claimable airdrop period (TODO:QQQ: dates / time).</dd>
+  <dd data-quicklook-key="claimed-airdrop-tokens">Tokens claimed from the Token Distributor contract during the claimable airdrop period (TODO:QQQ: dates / time). </dd>
   <dt>Constitutional proposal</dt>
-  <dd data-quicklook-key="constitutional-proposal">A governance proposal that either 1) modifies the text of the constitution 2) installs or modifies software on any governed Arbitrum chain, or 3) takes any action that requires “chain owner” permission on any governed chain. Refer to the <a href='#todo'>Constitution</a> for a more precise definition.</dd>
+  <dd data-quicklook-key="constitutional-proposal">A governance proposal that either 1) modifies the text of the constitution
+2) installs or modifies software on any governed Arbitrum chain, or 
+3) takes any action that requires “chain owner” permission on any governed chain. Refer to the <a href='#todo'>Constitution</a> for a more precise definition.</dd>
   <dt>DAO Treasury</dt>
   <dd data-quicklook-key="dao-treasury">A smart contract on the Arbitrum One chain that contains tokens collectively owned by the Arbitrum DAO.</dd>
   <dt>Delegate</dt>
@@ -20,7 +22,7 @@
   <dt>Multisignature wallet</dt>
   <dd data-quicklook-key="multisignature-wallet">Aka multi-sig wallet. A wallet that requires multiple private keys to sign transactions. Used by the Security Council to trigger emergency upgrades.</dd>
   <dt>Nonconstitutional proposal</dt>
-  <dd data-quicklook-key="nonconstitutional-proposal">Any governance proposal that doesn't meet the criteria to be considered “constitutional”; requires a lower threshold to pass.</dd>
+  <dd data-quicklook-key="nonconstitutional-proposal">Any governance proposal that doesn't meet the criteria to be considered “constitutional”; requires a lower threshold to pass. </dd>
   <dt>Offchain governance action</dt>
   <dd data-quicklook-key="offchain-governance-action">One of two types of governance actions allowed by the Constitution of the Arbitrum DAO. Off-chain actions are actions that are executed without smart contracts. Updating the text of the Constitution of the Arbitrum DAO is an example of an off-chain action. Note that in this example, the governance action is facilitated by on-chain Constitutional proposal. It's just the execution of the action that happens off-chain.</dd>
   <dt>Onchain governance action</dt>
@@ -32,11 +34,17 @@
   <dt>Security Council</dt>
   <dd data-quicklook-key="security-council">A 12-member council of publicly known entities who hold the private keys to a 12-member multisignature wallet. Members of the council use this wallet to vote on emergency upgrades.</dd>
   <dt>Security Council election</dt>
-  <dd data-quicklook-key="security-council-election">Biannual process by which the DAO can reelect the members of the Security Council.</dd>
+  <dd data-quicklook-key="security-council-election">Biannual process by which the DAO can reelect the members of the Security Council. </dd>
   <dt>Tokenbased governance</dt>
   <dd data-quicklook-key="tokenbased-governance">A protocol governance system in which voting weigh is proportional to ownership of a governance token.</dd>
   <dt>Unclaimed airdrop tokens</dt>
   <dd data-quicklook-key="unclaimed-airdrop-tokens">Tokens in the Token Distributor airdrop contract not claimed by their potential owners. After [TODO:QQQ], all unclaimed tokens will be sent to the [TODO:QQQ treasury…?].</dd>
   <dt>Votable tokens</dt>
-  <dd data-quicklook-key="votable-tokens">$ARB tokens claimed through our airdrop. More precisely, all $ARB tokens in existence, except for: <ul> <li>tokens owned by the Arbitrum DAO</li> <li>tokens owned by the Arbitrum Foundation</li> <li>airdrop tokens not yet claimed</li> </ul> Votable tokens give their holders voting power in direct proportion to the quantity of tokens held. More $ARB == more voting power.</dd>
+  <dd data-quicklook-key="votable-tokens">$ARB tokens claimed through our airdrop. More precisely, all $ARB tokens in existence, except for:
+<ul>
+    <li>tokens owned by the Arbitrum DAO</li>
+   <li>tokens owned by the Arbitrum Foundation</li>
+   <li>airdrop tokens not yet claimed</li>
+</ul>
+Votable tokens give their holders voting power in direct proportion to the quantity of tokens held. More $ARB == more voting power.</dd>
 </dl>
