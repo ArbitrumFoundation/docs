@@ -52,4 +52,7 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 - to run locally, setup a `.env` file inside the notion-docs folder. The format is like an INI file.
 - the github action is using a package called dotenv which autoloads that and then process.env.NOTION_TOKEN is defined in the file
 - in it you can put NOTION_TOKEN=secret_ask_via_content_os_channel_in_slack in the with NOTION_TOKEN defined and run `yarn update-glossary` in the notion-docs it should work
+- todo:qqq: clone this into our wiki
+
+##### Troubleshooting
 - if you see `'ts-node' is not recognized as an internal or external command`....
