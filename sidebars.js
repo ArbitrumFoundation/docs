@@ -28,7 +28,7 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          id: 'create-submit-proposals',
+          id: 'create-submit-dao-proposal',
         },
         {
           type: 'link',
