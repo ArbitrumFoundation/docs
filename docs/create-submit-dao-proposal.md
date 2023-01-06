@@ -72,7 +72,7 @@ If the proposal passes, congratulations! After a short delay (depending on the p
 
 If the proposal doesn’t pass, but there's interest in submitting it, refer to the resubmission guidelines outlined within the Constitution (todo:dedicated doc) and continue iterating on your proposal with the support of forum members.
 
-This system is in its early days and will likely evolve and change shape over time – all facilitated through proposals. For any other questions related to proposals, or to get started in the process, visit the forum. 
+This system is in its early days and will likely evolve in response to your feedback. Changes made to this process will be facilitated through proposals that follow the above procedue. For any other questions related to proposals, or to get started in the process, visit us on the forum, on Discord, or TODO. 
 
 Welcome to the future of governance!
 
@@ -102,3 +102,6 @@ A: todo
 ## Footnotes
 
 - TODO
+
+TODOs:
+- images / screenshots as things stabilize
