@@ -126,7 +126,7 @@ article .markdown .hidden-definition-list dt {
 article .markdown .hidden-definition-list dd {
   margin-left: 0;
 }
-article .markdown .show-hidden-definition-list > .hidden-glossary-list {
+article .markdown .show-hidden-definition-list > .hidden-definition-list {
   display: block;
 }
 [data-tippy-root] ul,
