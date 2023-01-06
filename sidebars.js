@@ -19,7 +19,7 @@ module.exports = {
     },
     {
       type: 'doc',
-      id: 'decentralization-roadmap',
+      id: 'state-of-decentralization',
     },
     {
       type: 'category',
