@@ -7,7 +7,7 @@ description: todo:qqq
 
 In this how-to, you'll learn how to submit proposals to the Arbitrum DAO. It assumes familiarity with Arbitrum, DAOs, Ethereum, and smart contracts, but otherwise makes no assumptions about your experience with governance protocols.
 
-## Prerequisites
+### Prerequisites
 
 Before you get started, make sure you have the following:
 
@@ -15,7 +15,7 @@ Before you get started, make sure you have the following:
 - If you're interested in submitting on-chain proposals using Tally, you'll need at least 5,000,000 tokens in your wallet.
 
 
-## Key terms
+### Key terms
 
 - <a data-quicklook-from='todo'>DAO</a>: Decentralized Autonomous Organization. DAOs generally use smart contracts to facilitate decentralized decision-making.
 - <a data-quicklook-from='todo'>Ethereum smart contract</a>: A self-executing program that lives on the Ethereum blockchain. The Constitution of the Arbitrum DAO is codified throughout a number of smart contracts.
@@ -27,7 +27,7 @@ Before you get started, make sure you have the following:
 - <a data-quicklook-from='todo'>Off-chain action</a>: An action executed without smart contracts. Updating the text of the Constitution of the Arbitrum DAO is an example of an off-chain action.
 
 
-## Step 1: Submit your proposal to the DAO governance forum
+### Step 1: Submit your proposal to the DAO governance forum
 
 The [DAO governance forum](https://forum.arbitrum.io/) facilitates discussions about Arbitrum DAO and governance proposals that are submitted by eligible token-holders. To submit your proposal:
 
@@ -37,7 +37,7 @@ The [DAO governance forum](https://forum.arbitrum.io/) facilitates discussions a
 
 If you feel confident about your proposal after a week's worth of discussion, you can conduct a temperature check via a Snapshot poll. Note that temperature checks can only be created by $ARB token holders who have at least 0.01% of votable $ARB tokens. If you don't have enough voting power to create a Snapshot poll, consider asking for support from delegates and/or the rest of the Arbitrum community.
 
-## Step 2: Conduct a temperature check with a Snapshot poll
+### Step 2: Conduct a temperature check with a Snapshot poll
 
 If you have at least 0.01% of votable $ARB tokens, you can create a poll on Snapshot to more formally gauge the community's interest in your proposal. To create a poll on Snapshot:
 
@@ -50,7 +50,7 @@ Your proposal will pass the temperature check if it receives support from more t
 
 If your proposal passes the temperature check, then you can move to the third and final step: an on-chain vote facilitated by Tally. Before proceeding, be sure to incorporate any feedback that you've received. Note that on-chain proposals can only be created by $ARB token holders who have at least TODO:qqq of votable $ARB tokens. If you don't have enough voting power to create an on-chain proposal, TODO.
 
-## Step 3: Submit your on-chain proposal using Tally
+### Step 3: Submit your on-chain proposal using Tally
 
 If you have at least 5,000,000 tokens in your wallet, or token-votes delegated to your address, you can create an on-chain proposal using Tally. Ensure that you've incorporated feedback brought up during relevant forum discussions and temperature checks into the your formal on-chain proposal. To submit your proposal on Tally:
 
@@ -75,6 +75,11 @@ If the proposal doesn’t pass, but there's interest in submitting it, refer to 
 This system is in its early days and will likely evolve and change shape over time – all facilitated through proposals. For any other questions related to proposals, or to get started in the process, visit the forum. 
 
 Welcome to the future of governance!
+
+
+### Next steps
+
+ - todo
 
 
 ## FAQ
