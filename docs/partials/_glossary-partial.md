@@ -1,8 +1,14 @@
 <dl class="definition-list hidden-definition-list">
   <dt>$ARB</dt>
   <dd data-quicklook-key="arb">Arbitrum's governance token, an ERC-20 token native to the Arbitrum One chain. Owning $ARB makes you a member of the Arbitrum DAO and gives you the right to participate in Arbitrum's decentralized governance.</dd>
+  <dt>$ARB Reverse Gateway</dt>
+  <dd data-quicklook-key="arb-reverse-gateway">Contracts for bridging $ARB between Ethereum and Arbitrum One. Since $ARB is native to Arbitrum One, the “reverse” gateway keep the full $ARB supply escrowed in Arbitrum One, and mint or burn the L1 token representation upon deposits/withdrawals (compare to the “standard gateway”, which mints/burns on L2). </dd>
+  <dt>Arbitrum Constitution</dt>
+  <dd data-quicklook-key="arbitrum-constitution">A document which lays out the rules, procedures, and community values by which the Arbitrum DAO operates. The hash of the canonical constitution is stored at TODO and updatable via governance. </dd>
   <dt>Arbitrum DAO</dt>
   <dd data-quicklook-key="arbitrum-dao">The worldwide community of $ARB token holders and delegates. Governs the Arbitrum One chain, the Arbitrum Nova chain, the Constitution of the Arbitrum DAO, and the Security Council.</dd>
+  <dt>Arbitrum Foundation</dt>
+  <dd data-quicklook-key="arbitrum-foundation">A legal entity that represents the </dd>
   <dt>Arbitrum Foundation tokens</dt>
   <dd data-quicklook-key="arbitrum-foundation-tokens">$ARB tokens owned by the DAO Treasury.</dd>
   <dt>Arbitrum Improvement Proposal AIP</dt>
@@ -19,14 +25,16 @@
   <dd data-quicklook-key="delegate">A party that votes on Arbitrum governance proposals. Could be an $ARB token holder or someone who other $ARB token holders have delegated their voting power to.</dd>
   <dt>Emergency upgrade</dt>
   <dd data-quicklook-key="emergency-upgrade">A specific type of protocol upgrade used by the Security Council in emergency situations, such as fixing a critical vulnerability.</dd>
+  <dt>Governor contract</dt>
+  <dd data-quicklook-key="governor-contract">Core governance contract in which proposals are submitted, voted on by the DAO, and sent off for execution.</dd>
   <dt>Multisignature wallet</dt>
   <dd data-quicklook-key="multisignature-wallet">Aka multi-sig wallet. A wallet that requires multiple private keys to sign transactions. Used by the Security Council to trigger emergency upgrades.</dd>
-  <dt>Nonconstitutional proposal</dt>
+  <dt>Non-constitutional proposal</dt>
   <dd data-quicklook-key="nonconstitutional-proposal">Any governance proposal that doesn't meet the criteria to be considered “constitutional”; requires a lower threshold to pass. </dd>
-  <dt>Offchain governance action</dt>
+  <dt>Off-chain governance action</dt>
   <dd data-quicklook-key="offchain-governance-action">One of two types of governance actions allowed by the Constitution of the Arbitrum DAO. Off-chain actions are actions that are executed without smart contracts. Updating the text of the Constitution of the Arbitrum DAO is an example of an off-chain action. Note that in this example, the governance action is facilitated by on-chain Constitutional proposal. It's just the execution of the action that happens off-chain.</dd>
-  <dt>Onchain governance action</dt>
-  <dd data-quicklook-key="onchain-governance-action">One of two types of governance actions allowed by the Constitution of the Arbitrum DAO. On-chain actions are executed as transactions submitted to the Arbitrum DAO's governance smart contracts. Updating the rate of $ARB inflation is an example of an on-chain action.</dd>
+  <dt>On-chain governance action</dt>
+  <dd data-quicklook-key="onchain-governance-action">One of two types of governance actions allowed by the Constitution of the Arbitrum DAO. On-chain actions are executed as transactions submitted to the Arbitrum DAO's governance smart contracts. Submitting a proposal on Tally and updating the rate of $ARB inflation are examples of on-chain actions.</dd>
   <dt>Proposal waiting period</dt>
   <dd data-quicklook-key="proposal-waiting-period">Contract-enforced delay period of roughly two weeks that begins after a proposal is accepted, and after which the proposal takes effect. The proposal waiting period is intended to give users the option of opting out (for example, by withdrawing their funds).</dd>
   <dt>Protocol governance</dt>
@@ -35,7 +43,9 @@
   <dd data-quicklook-key="security-council">A 12-member council of publicly known entities who hold the private keys to a 12-member multisignature wallet. Members of the council use this wallet to vote on emergency upgrades.</dd>
   <dt>Security Council election</dt>
   <dd data-quicklook-key="security-council-election">Biannual process by which the DAO can reelect the members of the Security Council. </dd>
-  <dt>Tokenbased governance</dt>
+  <dt>Timelock</dt>
+  <dd data-quicklook-key="timelock">Smart contract which restricts an action from taking place before a specified future time. Used at various stages in the governance proposal process.</dd>
+  <dt>Token-based governance</dt>
   <dd data-quicklook-key="tokenbased-governance">A protocol governance system in which voting weigh is proportional to ownership of a governance token.</dd>
   <dt>Unclaimed airdrop tokens</dt>
   <dd data-quicklook-key="unclaimed-airdrop-tokens">Tokens in the Token Distributor airdrop contract not claimed by their potential owners. After [TODO:QQQ], all unclaimed tokens will be sent to the [TODO:QQQ treasury…?].</dd>
@@ -47,4 +57,6 @@
    <li>airdrop tokens not yet claimed</li>
 </ul>
 Votable tokens give their holders voting power in direct proportion to the quantity of tokens held. More $ARB == more voting power.</dd>
+  <dt>Voting period</dt>
+  <dd data-quicklook-key="voting-period">After a proposal is successfully submitted via Tally, members of the Arbitrum DAO have a certain number of days to debate and vote. This is referred to as the voting period, and is currently 14-16 days. The voting period is determined by TODO.</dd>
 </dl>
