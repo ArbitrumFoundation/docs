@@ -11,10 +11,10 @@ Progressive decentralization is todo. This document outlines the state of progre
 
 The following components determine the degree of decentralization for Arbitrum rollup chains like Arbitrum One and Arbitrum Nova:
 
-1. Chain ownership: todo
-2. Validator ownership: todo
-3. Sequencer ownership: todo
-4. Data Availability Committee (DAC): todo - applies only to Arbitrum AnyTrust chains like Arbitrum Nova.
+1. **Chain ownership**: todo
+2. **Validator ownership**: todo
+3. **Sequencer ownership**: todo
+4. **Data Availability Committee (DAC) ownership**: todo - applies only to Arbitrum AnyTrust chains like Arbitrum Nova.
 
 Here's the current status of these components for both Arbitrum One and Arbitrum Nova:
 
@@ -41,7 +41,9 @@ Here's the current status of these components for both Arbitrum One and Arbitrum
   - **Risks**: The sequencer has the ability to delay the inclusion of a user's transaction by up to 24 hours and reorder transactions over short time-horizons. The sequencer cannot compromise the system's safety.
   - **Future**: The Arbitrum governance system (see #1) can elect a new entity as the sequencer, such as a more distributed/decentralized system.
 
-### 4. Data Availability Committee (DAC - applies to Arbitrum Nova only)
+### 4. Data Availability Committee (DAC) ownership
+
+This applies only to Arbitrum AnyTrust chains like Arbitrum Nova.
 
   - **Description**: AnyTrust chains like Arbitrum Nova rely on a permissioned committee to store the chain's data and provide it on demand.
   - **Current status**: 7-member committee. The Arbitrum Nova chain has a 7-party DAC, whose members can be seen [here](QQQ link).
