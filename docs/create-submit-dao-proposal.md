@@ -5,15 +5,14 @@ sidebar_label: Submit a DAO proposal
 description: todo:qqq
 ---
 
-This how-to will teach you how to submit proposals to the Arbitrum DAO. It assumes familiarity with Arbitrum, DAOs, Ethereum, and smart contracts, but otherwise makes no assumptions about your experience with governance protocols or tooling.
+In this how-to, you'll learn how to submit proposals to the Arbitrum DAO. It assumes familiarity with Arbitrum, DAOs, Ethereum, and smart contracts, but otherwise makes no assumptions about your experience with governance protocols.
 
 ## Prerequisites
 
 Before you get started, make sure you have the following:
 
 - An Ethereum wallet that holds at least 0.01% of votable $ARB tokens. This lets you submit and vote on proposals using Snapshot.
-- If you're submitting a Non-Constitutional proposal, you'll need TBD.
-- If you're submitting a Constitutional proposal, you'll need TBD.
+- If you're interested in submitting on-chain proposals using Tally, you'll need at least 5,000,000 tokens in your wallet.
 
 
 ## Key terms
@@ -87,6 +86,9 @@ Q: How much voting power do I need to vote on proposals?
 A: todo
 
 Q: How are sybils detected?
+A: todo
+
+Q: What if I get through step 1, but I don't hold enough voting power for steps 2 or 3?
 A: todo
 
 Q: What if I get through steps 1 and 2, but I don't hold enough voting power for step 3?
