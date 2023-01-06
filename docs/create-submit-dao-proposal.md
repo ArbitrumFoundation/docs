@@ -5,7 +5,7 @@ sidebar_label: Submit a DAO proposal
 description: todo:qqq
 ---
 
-In this how-to, you'll learn how to submit proposals to the Arbitrum DAO. It assumes familiarity with Arbitrum, DAOs, Ethereum, and smart contracts, but otherwise makes no assumptions about your experience with governance protocols.
+In this how-to, you'll learn how to submit proposals to the Arbitrum DAO. Familiarity with Arbitrum, DAOs, Ethereum, and smart contracts is expected. Otherwise, this how-to makes no assumptions about your experience with governance protocols.
 
 ### Prerequisites
 
