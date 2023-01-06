@@ -85,7 +85,7 @@ Welcome to the future of governance!
 ---
 
 
-### FAQ
+**FAQ:**
 
 Q: Is there a minimum number of voters required?
 A: todo
@@ -102,7 +102,7 @@ A: todo
 Q: What if I get through steps 1 and 2, but I don't hold enough voting power for step 3?
 A: todo
 
-### Footnotes
+**Footnotes:**
 
 - TODO
 
