@@ -32,6 +32,11 @@ module.exports = {
         },
         {
           type: 'link',
+          label: 'Resubmit a DAO proposal',
+          href: '#todo:qqq',
+        },
+        {
+          type: 'link',
           label: 'Select a delegate',
           href: '#todo:qqq',
         },
