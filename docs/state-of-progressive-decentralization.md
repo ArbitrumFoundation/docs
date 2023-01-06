@@ -43,7 +43,12 @@ Here's the current status of these components for both Arbitrum One and Arbitrum
 
 ### 4. Data Availability Committee (DAC) ownership
 
+:::note
+
 This applies only to Arbitrum AnyTrust chains like Arbitrum Nova.
+
+:::
+
 
   - **Description**: AnyTrust chains like Arbitrum Nova rely on a permissioned committee to store the chain's data and provide it on demand.
   - **Current status**: 7-member committee. The Arbitrum Nova chain has a 7-party DAC, whose members can be seen [here](QQQ link).
