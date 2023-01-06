@@ -108,3 +108,12 @@ A: todo
 
 TODOs:
 - images / screenshots as things stabilize
+
+
+import GlossaryPartial from '@site/docs/partials/_glossary-partial.md';
+
+<GlossaryPartial />
+
+import {Quicklooks} from '@site/src/components/Quicklooks';
+
+<Quicklooks />
