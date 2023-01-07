@@ -5,7 +5,6 @@ sidebar_label: Why decentralize governance?
 description: todo:qqq
 ---
 
-### Why decentralize Arbitrum governance with $ARB?
 
 $ARB is the governance token for the Arbitrum ecosystem created on [TODO], roughly [TODO] after Arbitrum One had been live on mainnet. Here we explain the rationale behind introducing the $ARB governance token, and how it plays a necessary role in the progressive decentralization of the Arbitrum protocol.
 
