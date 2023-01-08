@@ -97,8 +97,10 @@ function formatDefinitions(definitions: Definition[]) {
   definitions.sort((a, b) => a.term.localeCompare(b.term))
 
   const htmlArray = definitions.map(item => {
+    // strip curlies
+    const curliesStripped = stripCurlyQuotes(item.term);
     // remove all non-alphanumeric, non-space, and non-parentheses characters except for "$" and "-" from term
-    const formattedTerm = stripCurlyQuotes(item.term).replace(/[^a-z0-9\s$-()]/gi, '')
+    const formattedTerm = curliesStripped.replace(/[^a-z0-9\s$-()-]/gi, '');
     // remove all non-alphanumeric and non-space characters, convert to lowercase, and replace spaces with hyphens
     const dashDelimitedTermKey = stripCurlyQuotes(item.term)
       .toLowerCase()

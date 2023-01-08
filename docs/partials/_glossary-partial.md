@@ -11,7 +11,7 @@
   <dd data-quicklook-key="arbitrum-foundation">A legal entity that represents the </dd>
   <dt>Arbitrum Foundation tokens</dt>
   <dd data-quicklook-key="arbitrum-foundation-tokens">$ARB tokens owned by the DAO Treasury.</dd>
-  <dt>Arbitrum Improvement Proposal AIP</dt>
+  <dt>Arbitrum Improvement Proposal (AIP)</dt>
   <dd data-quicklook-key="arbitrum-improvement-proposal-aip">A governance proposal as outlined in the Arbitrum Constitution.</dd>
   <dt>Arbitrum Rollup</dt>
   <dd data-quicklook-key="arbitrum-rollup">Trustless Arbitrum L2 protocol. Participation is permissionless. Uses Ethereum L1 for data availability. This protocol is implemented by our Arbitrum One and Arbitrum Nova chains.</dd>
@@ -23,6 +23,8 @@
 3) takes any action that requires “chain owner” permission on any governed chain. Refer to the <a href='#todo'>Constitution</a> for a more precise definition.</dd>
   <dt>DAO Treasury</dt>
   <dd data-quicklook-key="dao-treasury">A smart contract on the Arbitrum One chain that contains tokens collectively owned by the Arbitrum DAO.</dd>
+  <dt>Decentralized app (dApp)</dt>
+  <dd data-quicklook-key="decentralized-app-dapp">An application that combines blockchain-based smart contracts with frontend user interfaces. Arbitrum makes it easy for you to build fast Ethereum dApps that inherit Ethereum's security guarantees while keeping costs low for end-users.</dd>
   <dt>Delegate</dt>
   <dd data-quicklook-key="delegate">A party that votes on Arbitrum governance proposals. Could be an $ARB token holder or someone who other $ARB token holders have delegated their voting power to.</dd>
   <dt>Emergency upgrade</dt>
