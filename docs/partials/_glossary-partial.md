@@ -13,6 +13,8 @@
   <dd data-quicklook-key="arbitrum-foundation-tokens">$ARB tokens owned by the DAO Treasury.</dd>
   <dt>Arbitrum Improvement Proposal AIP</dt>
   <dd data-quicklook-key="arbitrum-improvement-proposal-aip">A governance proposal as outlined in the Arbitrum Constitution.</dd>
+  <dt>Arbitrum Rollup</dt>
+  <dd data-quicklook-key="arbitrum-rollup">Trustless Arbitrum L2 protocol. Participation is permissionless. Uses Ethereum L1 for data availability. This protocol is implemented by our Arbitrum One and Arbitrum Nova chains.</dd>
   <dt>Claimed airdrop tokens</dt>
   <dd data-quicklook-key="claimed-airdrop-tokens">Tokens claimed from the Token Distributor contract during the claimable airdrop period (TODO:QQQ: dates / time). </dd>
   <dt>Constitutional proposal</dt>
