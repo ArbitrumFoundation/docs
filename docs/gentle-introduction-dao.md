@@ -7,7 +7,7 @@ description: todo:qqq
 
 **In a nutshell:**
 
-- <a data-quicklook-from='arbitrum-rollup'>Arbitrum Rollup</a> is an optimistic rollup protocol that makes Ethereum transactions faster and cheaper while inheriting Ethereum's security guarantees [[1]](#footnote-1). Developers use Arbitrum to build user-friendly decentralized apps.
+- <a data-quicklook-from='arbitrum-rollup'>Arbitrum Rollup</a> is an optimistic rollup protocol that makes Ethereum transactions faster and cheaper <a href="#footnote-1" name="footnote-1">[1]</a> while inheriting Ethereum's security guarantees. Developers use Arbitrum to build user-friendly <a data-quicklook-from='decentralized-app-dapp'>decentralized apps</a>.
 - Governance of the Arbitrum Rollup protocol is now being decentralized through the distribution of the <a data-quicklook-from='arb'>$ARB</a> governance token.
 - $ARB tokens can be used to vote on Arbitrum DAO governance proposals, allowing $ARB holders to shape Arbitrum's future together.
 - Token holders will be able to delegate voting power to any individual they trust. These individuals are called delegates.
