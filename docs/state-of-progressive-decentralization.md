@@ -1,22 +1,22 @@
 ---
 id: state-of-progressive-decentralization
-title: State of progressive decentralization
+title: The state of Arbitrum Rollup's progressive decentralization
 sidebar_label: State of decentralization
 description: todo:qqq
 ---
 
-Progressive decentralization is todo. This document outlines the state of progressive decentralization for Arbitrum's rollup chains (Arbitrum One and Arbitrum Nova).
+<a data-quicklook-from='progressive-decentralization'>Progressive decentralization</a> is the process of gradually increasing the decentralization of a system over time. This document outlines the state of progressive decentralization for Arbitrum's Rollup chains (Arbitrum One and Arbitrum Nova).
 
 ### The components of Arbitrum's progressive decentralization
 
-The following components determine the degree of decentralization for Arbitrum rollup chains like Arbitrum One and Arbitrum Nova:
+The following components determine the degree of decentralization for Arbitrum Rollup chains (Arbitrum One and Arbitrum Nova):
 
 1. **Chain ownership**: todo
 2. **Validator ownership**: todo
 3. **Sequencer ownership**: todo
 4. **Data Availability Committee (DAC) ownership**: todo - applies only to Arbitrum AnyTrust chains like Arbitrum Nova.
 
-Here's the current status of these components for both Arbitrum One and Arbitrum Nova:
+Let's evaluate the current status of these components for both Arbitrum One and Arbitrum Nova, beginning with chain ownership.
 
 ### 1. Chain ownership
 
