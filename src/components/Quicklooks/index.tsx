@@ -12,6 +12,7 @@ export const Quicklooks = () => {
       duration: [100, 200],
       theme: 'light-border',
       allowHTML: true,
+      interactive: true,
       content: (reference) => {
         try {
           reference.setAttribute('data-quicklook-enabled', true);
