@@ -135,6 +135,9 @@ article .markdown .show-hidden-definition-list > .hidden-definition-list {
 .hidden-definition-list li {
   margin: 5px 0 5px 0;
 }
+.tippy-box {
+  padding: 8px;
+}
 @media (max-width: 736px) {
   .markdown h1:first-child {
     font-size: 24px;
