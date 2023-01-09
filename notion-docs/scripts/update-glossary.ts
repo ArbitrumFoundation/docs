@@ -74,7 +74,7 @@ async function lookupProjectDefinitions(
       throw new Error('Expected title')
     }
 
-    const definition = page.properties['Glossary definition']
+    const definition = page.properties['Definition (HTML)']
     if (definition.type != 'rich_text') {
       throw new Error('Expected definition')
     }
