@@ -1,12 +1,17 @@
-import React from 'react';
-import BrowserOnly from '@docusaurus/BrowserOnly';
+import React, { useEffect } from 'react';
+import useIsBrowser from '@docusaurus/useIsBrowser';
 import Tippy from 'tippy.js';
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/themes/light-border.css';
 
 export const Quicklooks = () => {
   // todo:qqq - document usage of this component for nontechnical content contributors
-  let renderQuicklooks = function () {
+  const isBrowser = useIsBrowser();
+
+  useEffect(() => {
+    if (!isBrowser) {
+      return;
+    }
     Tippy('a[data-quicklook-from]:not([data-quicklook-enabled])', {
       trigger: 'mouseenter',
       duration: [100, 200],
@@ -15,24 +20,19 @@ export const Quicklooks = () => {
       interactive: true,
       content: (reference) => {
         try {
-          reference.setAttribute('data-quicklook-enabled', true);
+          reference.setAttribute('data-quicklook-enabled', 'true');
           let contentSourceKey = reference.getAttribute('data-quicklook-from');
-          let sourceContentElement = document.querySelectorAll(`[data-quicklook-key="${contentSourceKey}"]`)[0];
+          let sourceContentElement = document.querySelectorAll(
+            `[data-quicklook-key="${contentSourceKey}"]`
+          )[0];
           let html = sourceContentElement.innerHTML;
           return html;
         } catch (e) {
-          return null;
+          return undefined;
         }
-      }
+      },
     });
-  };
-  
-  return (
-    <BrowserOnly>
-      {() => {
-        renderQuicklooks();
-        return;
-      }}
-    </BrowserOnly>
-  )
+  }, [isBrowser]);
+
+  return <></>;
 };
