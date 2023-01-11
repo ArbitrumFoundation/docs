@@ -15,24 +15,19 @@ export const Quicklooks = () => {
       interactive: true,
       content: (reference) => {
         try {
-          reference.setAttribute('data-quicklook-enabled', true);
+          reference.setAttribute('data-quicklook-enabled', 'true');
           let contentSourceKey = reference.getAttribute('data-quicklook-from');
-          let sourceContentElement = document.querySelectorAll(`[data-quicklook-key="${contentSourceKey}"]`)[0];
+          let sourceContentElement = document.querySelectorAll(
+            `[data-quicklook-key="${contentSourceKey}"]`
+          )[0];
           let html = sourceContentElement.innerHTML;
           return html;
         } catch (e) {
-          return null;
+          return undefined;
         }
-      }
+      },
     });
   };
-  
-  return (
-    <BrowserOnly>
-      {() => {
-        renderQuicklooks();
-        return;
-      }}
-    </BrowserOnly>
-  )
+
+  return <BrowserOnly>{renderQuicklooks}</BrowserOnly>;
 };
