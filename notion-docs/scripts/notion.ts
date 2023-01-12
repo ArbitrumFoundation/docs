@@ -102,7 +102,7 @@ function renderRichText(texts: RichTextItemResponse[]): string {
       throw new Error('unsupported rich text type')
     }
     if (text.text.link) {
-      out += `<a href='${text.text.link.url}'>${text.text.content}</a>`
+      out += ` <a href='${text.text.link.url}'>${text.text.content}</a> `
     } else {
       out += text.text.content.replace('\n', '</p><p>')
     }
