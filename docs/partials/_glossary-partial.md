@@ -2,15 +2,15 @@
   <dt>$ARB</dt>
   <dd data-quicklook-key="arb">Arbitrum's governance token, an ERC-20 token native to the Arbitrum One chain. Owning $ARB makes you a member of the Arbitrum DAO and gives you the right to participate in Arbitrum's decentralized governance.</dd>
   <dt>$ARB Reverse Gateway</dt>
-  <dd data-quicklook-key="arb-reverse-gateway">Contracts for bridging $ARB between Ethereum and Arbitrum One. Since $ARB is native to Arbitrum One, the “reverse” gateway keep the full $ARB supply escrowed in Arbitrum One, and mint or burn the L1 token representation upon deposits/withdrawals (compare to the “standard gateway”, which mints/burns on L2). </dd>
+  <dd data-quicklook-key="arb-reverse-gateway">Contracts for bridging $ARB between Ethereum and Arbitrum One. Since $ARB is native to Arbitrum One, the “reverse” gateway keeps the full $ARB supply escrowed in Arbitrum One, and mints or burns the L1 token representation upon deposits/withdrawals (compare to the “standard gateway”, which mints/burns on L2).</dd>
   <dt>Airdrop</dt>
-  <dd data-quicklook-key="airdrop">A mechanism that rewards early adopters with tokens. The number of tokens rewarded to a particular user's wallet address is usually determined by an analysis of their wallet's on-chain activity. <br/><br/> The Arbitrum Foundation airdrop will distribute $ARB tokens to eligible wallet addresses on TODO according to the airdrop eligibility and distribution criteria outlined here (TODO).</dd>
+  <dd data-quicklook-key="airdrop">A mechanism that distributes tokens to qualifying wallet addresses. <br/><br/> The Arbitrum Foundation airdrop will distribute $ARB tokens to eligible wallet addresses on TODO according to the airdrop eligibility and distribution criteria outlined here (TODO).</dd>
   <dt>AnyTrust chain</dt>
-  <dd data-quicklook-key="anytrust-chain">An Arbitrum chain that implements the Arbitrum AnyTrust protocol, a protocol that trades trustless data availability for low transaction costs. Arbitrum Nova is an example of an AnyTrust chain. Arbitrum One is not an AnyTrust chain; it's an Arbitrum Rollup chain.</dd>
+  <dd data-quicklook-key="anytrust-chain">An Arbitrum chain that implements the Arbitrum AnyTrust protocol, a protocol that trades trustless data availability for low transaction costs. Arbitrum Nova is an example of an AnyTrust chain. Arbitrum One is not an AnyTrust chain; it's an Arbitrum Rollup chain. (TODO → trades into tradeoff)</dd>
   <dt>Arbitrum AnyTrust</dt>
-  <dd data-quicklook-key="arbitrum-anytrust">An Arbitrum protocol in which data availability is managed by a permissioned set of parties, giving developers a way to reduce transaction fees by compromising with trustlessness. Arbitrum Nova is an example of an AnyTrust chain. <br/><br/> Developers who don't want to compromise with trustlessness can use Arbitrum One, a chain that implements the Arbitrum Rollup protocol.</dd>
+  <dd data-quicklook-key="arbitrum-anytrust">An Arbitrum protocol in which data availability is managed by a permissioned set of parties, reducing transaction fees by compromising (make this clearer - introducing a trust assumption) with trustlessness. Arbitrum Nova is an example of an AnyTrust chain. <br/><br/> Developers who don't want to compromise with trustlessness can use Arbitrum One, a chain that implements the Arbitrum Rollup protocol. (Developers and users - note to self - don't refer to this split)</dd>
   <dt>Arbitrum chain</dt>
-  <dd data-quicklook-key="arbitrum-chain">A Layer 2 EVM environment running on Ethereum using Arbitrum technologies. Arbitrum Chains come in two forms: Rollup and AnyTrust. Rollup is trustless; AnyTrust is cheap.</dd>
+  <dd data-quicklook-key="arbitrum-chain">A Layer 2 EVM environment running on Ethereum using Arbitrum technologies. Arbitrum Chains come in two forms: Rollup and AnyTrust. Rollup is trustless; AnyTrust is cheaper. (EVM-compatible - normalize this - EVM-equivalent is an icky buzzword)</dd>
   <dt>Arbitrum DAO</dt>
   <dd data-quicklook-key="arbitrum-dao">The worldwide community of $ARB token holders and delegates. Governs the Arbitrum One chain, the Arbitrum Nova chain, the Constitution of the Arbitrum DAO, and the Security Council.</dd>
   <dt>Arbitrum Foundation</dt>
@@ -18,41 +18,33 @@
   <dt>Arbitrum Foundation tokens</dt>
   <dd data-quicklook-key="arbitrum-foundation-tokens">$ARB tokens owned by the DAO Treasury.</dd>
   <dt>Arbitrum Improvement Proposal (AIP)</dt>
-  <dd data-quicklook-key="arbitrum-improvement-proposal-aip">A governance proposal as defined by The Constitution of the Arbitrum DAO.</dd>
+  <dd data-quicklook-key="arbitrum-improvement-proposal-aip">A governance proposal as defined by The Constitution of the Arbitrum DAO. (need to align on consistency)</dd>
   <dt>Arbitrum Nova</dt>
-  <dd data-quicklook-key="arbitrum-nova">The first Arbitrum AnyTrust chain running on Ethereum mainnet. Currently in Beta.</dd>
+  <dd data-quicklook-key="arbitrum-nova">The first Arbitrum AnyTrust chain running on Ethereum mainnet. Currently in Beta. (Will we keep calling it Beta after governance? todo)</dd>
   <dt>Arbitrum Rollup</dt>
-  <dd data-quicklook-key="arbitrum-rollup">A trustless, permissionless Arbitrum layer-2 protocol that uses Ethereum's base layer for data availability. This protocol is implemented by our Arbitrum One and Arbitrum Nova chains. (TODO - other definitions imply that it's one or the other - can a chain implement both Arbitrum Rollup and Arbitrum AnyTrust?)</dd>
-  <dt>Call for delegates</dt>
-  <dd data-quicklook-key="call-for-delegates">Before the $ARB airdrop, the Arbitrum Foundation launched its governance forum and Arbitrum DAO delegate application process. The call for delegates was an invitation to the Arbitrum community to participate in this process leading up to the $ARB airdrop.</dd>
+  <dd data-quicklook-key="arbitrum-rollup">A trustless, permissionless Arbitrum layer-2 protocol that uses Ethereum's base layer for data availability. This protocol is implemented by our Arbitrum One chain. (TODO - other definitions imply that it's one or the other - can a chain implement both Arbitrum Rollup and Arbitrum AnyTrust? No → Rollup means data availability is enforced by layer 1. Strictly trustless == Rollup == on-chain data availability without any DAC - is DAC involved with Rollup strict definition? there are three ways that nova can operate - happy (committee is honest, all participate, DAC keeps data off-chain), then less happy (a few committee members that are honest, rest are offline or malicious, if 2 are honest, it rolls back into rollup mode, we don't get benefits of keeping data off-chain, but allows it to stay online), then horrible case (entire committee, is colluding, can steal funds, which is why we should not say that rollup) ) </dd>
   <dt>Claimed airdrop tokens</dt>
-  <dd data-quicklook-key="claimed-airdrop-tokens">Tokens claimed from the Token Distributor contract during the claimable airdrop period (TODO:QQQ: dates / time). </dd>
-  <dt>Consensus layer</dt>
-  <dd data-quicklook-key="consensus-layer">Facilitates staking, peer-to-peer consensus, block creation, and attestations for Ethereum's Layer 1 network. Powered by consensus-layer clients like Prysm, Teku, and Lighthouse.</dd>
+  <dd data-quicklook-key="claimed-airdrop-tokens">Tokens claimed from the Token Distributor contract during the claimable airdrop period (TODO:QQQ: dates / time).</dd>
   <dt>Constitutional proposal</dt>
-  <dd data-quicklook-key="constitutional-proposal">A governance proposal that<br/>
-<ol>
-<li>modifies the text of the constitution</li>
-<li>installs or modifies software on any governed Arbitrum chain, or</li>
-<li>takes any action that requires “chain owner” permission on any governed chain.</li>
-</ol>
-Refer to <a href='#todo'>The Constitution of the Arbitrum DAO</a> for a more precise definition.</dd>
+  <dd data-quicklook-key="constitutional-proposal">As opposed to non-constitutional proposal. The most ______ type of proposal that has the highest threshhold for consensus etc (todo clean up this garbage). Refer to <a href='#todo'>The Constitution of the Arbitrum DAO</a> for a more precise definition. (todo - ensure aligned with constitution - and/or reference constitution - ensure that these are updated because they're wrong - also ensure that we want to use this term - align with </dd>
   <dt>DAO Treasury</dt>
   <dd data-quicklook-key="dao-treasury">A smart contract on the Arbitrum One chain that contains tokens collectively owned by the Arbitrum DAO.</dd>
   <dt>Decentralized app (dApp)</dt>
   <dd data-quicklook-key="decentralized-app-dapp">An application that combines blockchain-based smart contracts with frontend user interfaces. Arbitrum makes it easy for you to build fast Ethereum dApps that inherit Ethereum's security guarantees while keeping costs low for end-users.</dd>
   <dt>Delegate</dt>
-  <dd data-quicklook-key="delegate">A party that votes on Arbitrum governance proposals. Could be an $ARB token holder or someone who other $ARB token holders have delegated their voting power to.</dd>
-  <dt>Emergency upgrade</dt>
-  <dd data-quicklook-key="emergency-upgrade">A specific type of protocol upgrade used by the Security Council in emergency situations, such as fixing a critical vulnerability.</dd>
-  <dt>Execution layer</dt>
-  <dd data-quicklook-key="execution-layer">Facilitates smart contract logic and execution and transaction pooling for Ethereum's Layer 1 network. Powered by execution-layer clients like Geth, Nethermind, and Besu.</dd>
+  <dd data-quicklook-key="delegate">A party that has the ability to vote on Arbitrum governance proposals. Could be an $ARB token holder or someone whom other $ARB token holders have delegated their voting power to.</dd>
+  <dt>Emergency action</dt>
+  <dd data-quicklook-key="emergency-action">A specific type of protocol upgrade used by the Security Council in emergency situations, such as fixing a critical vulnerability. (todo - ensure aligned with constitution)</dd>
+  <dt>Ethereum consensus layer (CL)</dt>
+  <dd data-quicklook-key="ethereum-consensus-layer-cl">Facilitates staking, peer-to-peer consensus, block creation, and attestations for Ethereum's Layer 1 network. Powered by consensus-layer clients like Prysm, Teku, and Lighthouse.</dd>
+  <dt>Ethereum execution layer (EL)</dt>
+  <dd data-quicklook-key="ethereum-execution-layer-el">Facilitates smart contract logic and execution for Ethereum's Layer 1 network. Powered by execution-layer clients like Geth, Nethermind, and Besu. (clean up)</dd>
   <dt>Geth</dt>
-  <dd data-quicklook-key="geth">An execution-layer client. A fork of Geth powers Arbitrum TODO. </dd>
+  <dd data-quicklook-key="geth">An execution-layer client that defines the Ethereum state transition function and handles network-layer logic like transaction memory pooling. Nitro (the __) utilizes a fork of Geth. </dd>
   <dt>Governance</dt>
   <dd data-quicklook-key="governance">The way that decisions get made. Governance of web2 technologies traditionally depends on a board of directors abiding by trusted social contracts, while governance of web3 technologies depends on decentralized autonomous organizations (DAOs) that implement trustless smart contracts. </dd>
-  <dt>Governance proposal</dt>
-  <dd data-quicklook-key="governance-proposal">A proposal to change some aspect of Arbitrum DAO's governance protocol. There are two types of Arbitrum DAO governance proposals: constitutional and non-constitutional.</dd>
+  <dt>Governance proposal (paused here)</dt>
+  <dd data-quicklook-key="governance-proposal-paused-here">A proposal to change some aspect of Arbitrum DAO's governance protocol. There are two types of Arbitrum DAO governance proposals: constitutional and non-constitutional.</dd>
   <dt>Governance token</dt>
   <dd data-quicklook-key="governance-token">A particular type of token that allows token-holders to vote on governance proposals. $ARB is an example of a governance token; it allows token-holders to create and vote on Arbitrum DAO governance proposals.</dd>
   <dt>Governor contract</dt>
