@@ -1,5 +1,6 @@
 import { lookupProject, lookupProjectFAQ } from './notion'
 import type { FAQ } from './notion'
+import { stripCurlyQuotes } from './format'
 
 import fs from 'fs'
 
@@ -20,8 +21,8 @@ function organizeFAQ(questions: FAQ[]): Record<string, FAQ[]> {
 function renderFAQs(faqs: FAQ[]): string {
   let out = '<dl class="definition-list">\n'
   for (let faq of faqs) {
-    out += `<dt data-displayed-on='dao-glossary'>${faq.question}</dt>\n`
-    out += `<dd data-displayed-on='dao-glossary'>${faq.answer}</dd>\n`
+    out += `<dt data-displayed-on='dao-glossary'>${stripCurlyQuotes(faq.question)}</dt>\n`
+    out += `<dd data-displayed-on='dao-glossary'>${stripCurlyQuotes(faq.answer)}</dd>\n`
   }
   out += '</dl>\n'
   return out
@@ -30,7 +31,7 @@ function renderFAQs(faqs: FAQ[]): string {
 function renderSections(sections: Record<string, FAQ[]>): string {
   let out = ''
   for (let section in sections) {
-      out += `<h3 class="faq-section-title">${section}</h3>\n`
+      out += `<h3 class="faq-section-title">${stripCurlyQuotes(section)}</h3>\n`
       out += renderFAQs(sections[section])
   }
   return out

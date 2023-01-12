@@ -1,13 +1,9 @@
 import { lookupProject, lookupProjectDefinitions } from './notion'
 import type { Definition } from './notion'
+import { stripCurlyQuotes } from './format'
 
 import fs from 'fs'
 
-function stripCurlyQuotes(input: string): string {
-  return input
-  .replace(/[\u2018\u2019]/g, "'")
-  .replace(/[\u201C\u201D]/g, '"');
-}
 
 function formatDefinitions(definitions: Definition[]) {
   // sort the array alphabetically by term
