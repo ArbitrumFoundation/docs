@@ -19,7 +19,7 @@ description: todo:qqq
 
 :::caution An important reminder
 
-The only official website for the $ARB airdrop is todo:qqq. There is no presale. We won't ever ask for your seed phrase. If you're ever unsure of anything related to Arbitrum, join our [Discord](#todo:qqq) and a member of our team will be happy to help.
+The only official website for the $ARB airdrop is todo:qqq. There is no presale. We won't ever ask for your seed phrase. When in doubt, join our [Discord](#todo:qqq) and ask away; a member of our team will be happy to help.
 
 :::
 
@@ -164,9 +164,15 @@ We're moving fast and meeting needs. The specter of Ethereum's rollup-centric fu
 
 ---
 
+
 **FAQ:**
 
-- todo:qqq, injected from base and linked throughout
+import FaqPartial from '@site/docs/partials/_faq-partial.md';
+
+<div data-faq-origin-slug='gentle-introduction-dao'>
+    <FaqPartial />
+</div>
+
 
 ---
 
