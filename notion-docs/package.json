@@ -6,7 +6,9 @@
   "private": true,
   "scripts": {
     "build": "tsc",
-    "update-glossary": "ts-node ./scripts/update-glossary.ts",
+    "update:all": "yarn update:glossary && yarn update:faq",
+    "update:glossary": "ts-node ./scripts/update-glossary.ts",
+    "update:faq": "ts-node ./scripts/update-faq.ts",
     "format": "prettier --config .prettierrc.js 'scripts/**/*.ts' --write",
     "lint": "eslint . --ext .ts"
   },

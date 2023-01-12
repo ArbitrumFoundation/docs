@@ -119,11 +119,11 @@ article .markdown .small-table td {
 article .markdown .hidden-definition-list {
   display: none;
 }
-article .markdown .hidden-definition-list dt {
+article .markdown .definition-list dt {
   font-weight: 700;
   margin-top: 20px;
 }
-article .markdown .hidden-definition-list dd {
+article .markdown .definition-list dd {
   margin-left: 0;
 }
 article .markdown .show-hidden-definition-list > .hidden-definition-list {
