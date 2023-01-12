@@ -164,9 +164,15 @@ We're moving fast and meeting needs. The specter of Ethereum's rollup-centric fu
 
 ---
 
+
 **FAQ:**
 
-- todo:qqq, injected from base and linked throughout
+import FaqPartial from '@site/docs/partials/_faq-partial.md';
+
+<div data-faq-origin-slug='gentle-introduction-dao'>
+    <FaqPartial />
+</div>
+
 
 ---
 
