@@ -19,7 +19,7 @@ description: todo:qqq
 
 :::caution An important reminder
 
-The only official website for the $ARB airdrop is todo:qqq. There is no presale. We won't ever ask for your seed phrase. If you're ever unsure of anything related to Arbitrum, join our [Discord](#todo:qqq) and a member of our team will be happy to help.
+The only official website for the $ARB airdrop is todo:qqq. There is no presale. We won't ever ask for your seed phrase. When in doubt, join our [Discord](#todo:qqq) and ask away; a member of our team will be happy to help.
 
 :::
 
