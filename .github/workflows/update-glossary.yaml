@@ -25,10 +25,10 @@ jobs:
       run: echo $NOTION_DOTENV > .env
       env:
         NOTION_DOTENV: ${{ secrets.NOTION_DOTENV }}
-    - run: yarn update-glossary
+    - run: yarn update:all
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v4
       with:
-        title: Glossary updates
-        branch: glossary-update
+        title: Notion updates
+        branch: notion-update
         delete-branch: true

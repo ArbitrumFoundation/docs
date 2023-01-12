@@ -1,66 +1,7 @@
-import { notion, lookupProject, glossaryDatabaseId } from './notion'
-
-import { isFullPage } from '@notionhq/client'
+import { lookupProject, lookupProjectDefinitions } from './notion'
+import type { Definition } from './notion'
 
 import fs from 'fs'
-
-interface Definition {
-  term: string
-  definition: string
-}
-
-async function lookupProjectDefinitions(
-  projectId: string
-): Promise<Definition[]> {
-  const fullOrPartialPages = await notion.databases.query({
-    database_id: glossaryDatabaseId,
-    filter: {
-      and: [
-        {
-          property: 'Project(s)',
-          relation: {
-            contains: projectId,
-          },
-        },
-        {
-          property: 'Status',
-          status: {
-            does_not_equal: '1 - Drafting',
-          },
-        },
-        {
-          property: 'Publishable?',
-          select: {
-            equals: 'Publishable',
-          },
-        },
-      ],
-    },
-  })
-  const results = fullOrPartialPages.results
-  const definitions: Definition[] = []
-  for (const page of results) {
-    if (!isFullPage(page)) {
-      throw new Error('Found non-full page')
-      continue
-    }
-
-    const title = page.properties['Term']
-    if (title.type != 'title') {
-      throw new Error('Expected title')
-    }
-
-    const definition = page.properties['Definition (HTML)']
-    if (definition.type != 'rich_text') {
-      throw new Error('Expected definition')
-    }
-    definitions.push({
-      term: title.title[0].plain_text,
-      definition: definition.rich_text[0].plain_text,
-    })
-  }
-  return definitions
-}
 
 function stripCurlyQuotes(input: string): string {
   return input
