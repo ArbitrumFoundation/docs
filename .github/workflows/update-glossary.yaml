@@ -13,22 +13,22 @@ jobs:
         shell: bash
         working-directory: notion-docs
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 16.x
-        cache: 'yarn'
-    - run: npm i -g yarn
-    - run: yarn
-    - name: Create .env file
-      run: echo $NOTION_DOTENV > .env
-      env:
-        NOTION_DOTENV: ${{ secrets.NOTION_DOTENV }}
-    - run: yarn update:all
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v4
-      with:
-        title: Notion updates
-        branch: notion-update
-        delete-branch: true
+      - uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          cache: 'yarn'
+      - run: npm i -g yarn
+      - run: yarn
+      - name: Create .env file
+        run: echo $NOTION_DOTENV > .env
+        env:
+          NOTION_DOTENV: ${{ secrets.NOTION_DOTENV }}
+      - run: yarn update:all
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          title: Notion updates
+          branch: notion-update
+          delete-branch: true
