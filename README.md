@@ -63,5 +63,5 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 ##### Troubleshooting
 
-- if you see `'ts-node' is not recognized as an internal or external command`, you need to install/update ts-node globally with `npm install -g ts-node`.
-- if you see `Cannot find module '@notionhq/client/build/src/api-endpoints' or its corresponding type declarations.`, you need to install/update the notion client library via `npm update @notionhq/client`
+- if you see `'ts-node' is not recognized as an internal or external command`, you need to install/update ts-node globally with `npm install -g ts-node` (todo - this isn't right, update with what's right, something to do with working directory)
+- if you see `Cannot find module '@notionhq/client/build/src/api-endpoints' or its corresponding type declarations.`, you need to install/update the notion client library via `npm update @notionhq/client` (todo - this isn't right, update with what's right, something to do with working directory)
