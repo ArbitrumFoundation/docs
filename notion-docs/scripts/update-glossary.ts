@@ -1,36 +1,12 @@
-import { Client, isFullPage } from '@notionhq/client'
-import dotenv from 'dotenv'
+import { notion, lookupProject, glossaryDatabaseId } from './notion'
+
+import { isFullPage } from '@notionhq/client'
+
 import fs from 'fs'
-
-dotenv.config()
-
-const projectDatabaseId = 'f96a33aa166046d1b323a553344e5ac4'
-const glossaryDatabaseId = '3bad2594574f476f917d8080a6ec5ce7'
-
-const notion = new Client({
-  auth: process.env.NOTION_TOKEN,
-})
 
 interface Definition {
   term: string
   definition: string
-}
-
-async function lookupProject(name: string): Promise<string> {
-  const fullOrPartialPages = await notion.databases.query({
-    database_id: projectDatabaseId,
-    filter: {
-      property: 'Project name',
-      rich_text: {
-        equals: name,
-      },
-    },
-  })
-
-  for (const page of fullOrPartialPages.results) {
-    return page.id
-  }
-  throw new Error('Project not found')
 }
 
 async function lookupProjectDefinitions(
