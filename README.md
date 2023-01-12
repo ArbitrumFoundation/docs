@@ -40,20 +40,27 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
 
-#### Glossary CMS
+#### Glossary & FAQ CMS
 
-- glossary entries are published and maintained via Notion-as-a-CMS
-- this page is the source content for generated glossary html -> https://www.notion.so/arbitrum/Glossary-CMS-0718756f84b44dcfa8907a72854550cf 
-- we generally don't modify the glossary markdown/html directly - instead, we make changes in notion - treating notion as "content source control" for our glossary
-- we're using a remote github action to run a piece of typescript that pulls content from notion, generates quicklook-enabled HTML, and issues a PR with these changes 
-- if you're reviewing a PR and notice issues related to the script or content, you can make your fix and then rerun the script from the branch you're using.
-- the default config for the action is to just replace the open pr with a new one when it runs
-- to run locally, setup a `.env` file inside the notion-docs folder. The format is like an INI file.
-- the github action is using a package called dotenv which autoloads that and then process.env.NOTION_TOKEN is defined in the file
-- in it you can put NOTION_TOKEN=secret_ask_via_content_os_channel_in_slack in the with NOTION_TOKEN defined and run `yarn update-glossary` in the notion-docs it should work
-- to run remotely, you need to manually trigger the action. to trigger the action you go to https://github.com/CoolChainCo/docs/actions/workflows/update-glossary.yaml and then hit the "run workflow" button
-- you can select a different branch to run the workflow from so it's easier to iterate on the action
+- Glossary and FAQ entries are published and maintained via Notion-as-a-CMS.
+  - The Notion page that contains the source content for generated Glossary HTML -> https://www.notion.so/arbitrum/Glossary-CMS-0718756f84b44dcfa8907a72854550cf
+  - The Notion page that contains the source content for generated FAQ HTML -> https://www.notion.so/arbitrum/Governance-FAQ-fbfc0a81d99b46eca2cbc30c51752af0
+- We generally don't modify the glossary markdown/html directly - instead, we make changes to one of the above Notion pages - treating notion as "content source control" for our glossary.
+- We're using a Github action to run a piece of typescript that pulls content from the above Notion databases, generates HTML, and issues a PR with the latest content (if source and target are different).
+- If you're reviewing a PR and notice issues related to the script or content, you can make your fix (if content, update in Notion) and then rerun the script from the branch you're using.
+- The default config for the action is to just replace the open pr with a new one when it runs
+- To run locally:
+  - setup a `.env` file inside the notion-docs folder. The format is like an INI file.
+  - the github action is using a package called dotenv which autoloads that and then process.env.NOTION_TOKEN is defined in the file
+  - in it you can put NOTION_TOKEN=secret_ask_via_content_os_channel_in_slack in the with NOTION_TOKEN defined
+  - run `yarn update:glossary` in the notion-docs folder and glossary will be updated
+  - run `yarn update:faq` in the notion-docs folder and faq will be updated
+- To run remotely:
+  - you need to manually trigger the action
+  - to trigger the action you go to https://github.com/CoolChainCo/docs/actions/workflows/update-glossary.yaml and then hit the "run workflow" button
+  - you can select a different branch to run the workflow from so it's easier to iterate on the action
 - todo:qqq: clone this into our wiki
 
 ##### Troubleshooting
+
 - if you see `'ts-node' is not recognized as an internal or external command`....
