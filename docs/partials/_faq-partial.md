@@ -1,8 +1,7 @@
 <h3 class="faq-section-title">Airdrop</h3>
 <dl class="definition-list">
 <dt data-displayed-on='dao-glossary'>Am I eligible for the airdrop?</dt>
-<dd data-displayed-on='dao-glossary'><p>As of the date of this publication, airdrop criteria, recipients, and amounts have been finalized and will in no way be altered prior to airdrop, with the exception of removing any further sybil accounts discovered. You can check  the details here < <a href='https://docs.google.com/document/d/17vBXZooclTpmH00q9UCVkyE-zvn1FHuFb1uff8QrQnU/edit'>link to landing page</a> >. </p><p>
-You can check the official eligibility requirements here <link to token landing page>, we know that not everyone that has used Arbitrum will be eligible to claim their share in governance, and it wasn't an easy decision to make considering the number of Sybils that were present. Nonetheless, it was determined to be the best balance we found between the number of active users and share in governance.</p></dd>
+<dd data-displayed-on='dao-glossary'><p>As of the date of this publication, airdrop criteria, recipients, and amounts have been finalized and will in no way be altered prior to airdrop, with the exception of removing any further sybil accounts discovered. You can check the details here <link to landing page>. You can check the official eligibility requirements here <link to token landing page>, we know that not everyone that has used Arbitrum will be eligible to claim their share in governance, and it wasn't an easy decision to make considering the number of Sybils that were present. Nonetheless, it was determined to be the best balance we found between the number of active users and share in governance.</p></dd>
 <dt data-displayed-on='dao-glossary'>Will there be multiple airdrops?</dt>
 <dd data-displayed-on='dao-glossary'><p>No, this will be the only airdrop.</p></dd>
 </dl>
