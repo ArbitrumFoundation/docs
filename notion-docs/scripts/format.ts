@@ -1,5 +1,6 @@
 import { RichTextItemResponse, BlockObjectResponse } from '@notionhq/client/build/src/api-endpoints'
 import type { Block, Definition } from './notion'
+import { notion } from './notion'
 
 interface Reference {
   text: string
@@ -50,6 +51,9 @@ export function renderRichText(res: RichTextItemResponse, linkableTerms: Linkabl
     case 'page':
       const link = linkableTerms[mention.page.id]
       if (!link) {
+        notion.pages.retrieve({page_id: mention.page.id}).then(page => {
+          console.log("Missing page: ", page)
+        })
         throw new Error(`Link to unsupported page ${mention.page.id}`)
       }
       let anchor = ''

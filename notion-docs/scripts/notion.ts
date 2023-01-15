@@ -15,7 +15,7 @@ const faqDatabaseId = 'a8a9af20f33d4cc1b32bbd2be8459733'
 type RecordValue<T extends Record<any,any>> = T extends Record<any,infer U>  ? U: never;
 export type PageObjectProperty = RecordValue<PageObjectResponse['properties']>
 
-const notion = new Client({
+export const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 })
 
