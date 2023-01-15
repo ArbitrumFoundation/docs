@@ -1,9 +1,16 @@
 import { lookupProject, lookupProjectDefinitions } from './notion'
-import type { Definition } from './notion'
-import { stripCurlyQuotes } from './format'
+import type { Definition, PageObjectProperty } from './notion'
+import { stripCurlyQuotes, renderRichTexts } from './format'
+import { PageObjectResponse } from '@notionhq/client/build/src/api-endpoints'
 
 import fs from 'fs'
 
+function renderDefinition(definition: PageObjectProperty): string {
+  if (definition.type != 'rich_text') {
+    throw new Error('Expected definition')
+  }
+  return renderRichTexts(definition.rich_text)
+}
 
 function formatDefinitions(definitions: Definition[]) {
   // sort the array alphabetically by term
@@ -16,7 +23,7 @@ function formatDefinitions(definitions: Definition[]) {
     const formattedTerm = curliesStripped.replace(/[^a-z0-9\s$-()-]/gi, '');
     // remove all non-alphanumeric and non-space characters, convert to lowercase, and replace spaces with hyphens
     // replace all attribute values surrounded by single quotes with double quotes
-    const definition = stripCurlyQuotes(item.definition)
+    const definition = renderDefinition(item.definition)
     return `### ${formattedTerm}\n${definition}\n\n`
   })
 

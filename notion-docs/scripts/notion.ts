@@ -1,7 +1,9 @@
 import dotenv from 'dotenv'
 
 import { Client, isFullPage, isFullBlock } from '@notionhq/client'
-import { RichTextItemResponse } from '@notionhq/client/build/src/api-endpoints'
+import { RichTextItemResponse, GetPageResponse, PageObjectResponse, BlockObjectResponse } from '@notionhq/client/build/src/api-endpoints'
+
+import { stripCurlyQuotes, renderRichTexts } from './format'
 
 dotenv.config()
 
@@ -9,13 +11,17 @@ const projectDatabaseId = 'f96a33aa166046d1b323a553344e5ac4'
 const glossaryDatabaseId = '3bad2594574f476f917d8080a6ec5ce7'
 const faqDatabaseId = 'a8a9af20f33d4cc1b32bbd2be8459733'
 
+
+type RecordValue<T extends Record<any,any>> = T extends Record<any,infer U>  ? U: never;
+export type PageObjectProperty = RecordValue<PageObjectResponse['properties']>
+
 const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 })
 
 export interface Definition {
   term: string
-  definition: string
+  definition: PageObjectProperty
 }
 
 export interface FAQ {
@@ -23,6 +29,12 @@ export interface FAQ {
   question: string
   answer: string
   order: number
+  blocks: Block[]
+}
+
+export interface Block {
+  block: BlockObjectResponse
+  children: Block[]
 }
 
 export async function lookupProject(name: string): Promise<string> {
@@ -83,38 +95,67 @@ export async function lookupProjectDefinitions(
       throw new Error('Expected title')
     }
 
-    const definition = page.properties['Definition (HTML)']
-    if (definition.type != 'rich_text') {
-      throw new Error('Expected definition')
-    }
     definitions.push({
       term: title.title[0].plain_text,
-      definition: definition.rich_text[0].plain_text,
+      definition: page.properties['Definition (HTML)'],
     })
   }
   return definitions
 }
 
-function renderRichText(texts: RichTextItemResponse[]): string {
-  let out = '<p>'
-  for (let text of texts) {
-    if (text.type != 'text') {
-      throw new Error('unsupported rich text type')
+function resolvePages(pages: GetPageResponse[]): PageObjectResponse[] {
+  const fullPages = []
+  for (let page of pages) {
+    if (!isFullPage(page)) {
+      throw new Error('Found non-full page')
     }
-    if (text.text.link) {
-      out += ` <a href='${text.text.link.url}'>${text.text.content}</a> `
-    } else {
-      out += text.text.content.replace('\n', '</p><p>')
-    }
+    fullPages.push(page)
   }
-  out += '</p>'
-  return out
+  return fullPages
+}
+
+async function parseFAQPage(page: PageObjectResponse): Promise<FAQ> {
+  const blocks = await getBlockChildren(page.id)
+  console.log(blocks)
+  const question = page.properties['Question']
+  if (question.type != 'title') {
+    throw new Error('Expected title')
+  }
+
+  const answer = page.properties['Short answer (HTML)']
+  if (answer.type != 'rich_text') {
+    throw new Error('Expected definition')
+  }
+
+  const section = page.properties['FAQ section']
+  if (section.type != 'select') {
+    throw new Error('Expected select')
+  }
+  if (!section.select) {
+    throw new Error("All questions must have faq section")
+  }
+
+  const order = page.properties['FAQ order index']
+  if (order.type != 'number') {
+    throw new Error('Expected number')
+  }
+  if (!order.number) {
+    throw new Error('All questions must have an order')
+  }
+
+  return {
+    section: section.select.name,
+    question: question.title[0].plain_text,
+    answer: renderRichTexts(answer.rich_text),
+    order: order.number,
+    blocks: blocks,
+  }
 }
 
 export async function lookupProjectFAQ(
   projectId: string
 ): Promise<FAQ[]> {
-  const fullOrPartialPages = await notion.databases.query({
+  const pages = await notion.databases.query({
     database_id: faqDatabaseId,
     filter: {
       and: [
@@ -139,46 +180,22 @@ export async function lookupProjectFAQ(
       ],
     },
   })
-  const results = fullOrPartialPages.results
-  const faqs: FAQ[] = []
-  for (const page of results) {
-    if (!isFullPage(page)) {
-      throw new Error('Found non-full page')
-      continue
-    }
+  return Promise.all(resolvePages(pages.results).map(parseFAQPage))
+}
 
-    const question = page.properties['Question']
-    if (question.type != 'title') {
-      throw new Error('Expected title')
+export async function getBlockChildren(block_id: string): Promise<Block[]> {
+  const blocks = await notion.blocks.children.list({block_id})
+  let fullBlocks: Block[] = []
+  for (let block of blocks.results) {
+    if (!isFullBlock(block)) {
+      console.log("non full", block)
+      throw new Error('Found non-full block')
     }
-
-    const answer = page.properties['Short answer (HTML)']
-    if (answer.type != 'rich_text') {
-      throw new Error('Expected definition')
+    let children: Block[] = []
+    if (block.has_children) {
+      children = await getBlockChildren(block.id)
     }
-
-    const section = page.properties['FAQ section']
-    if (section.type != 'select') {
-      throw new Error('Expected select')
-    }
-    if (!section.select) {
-      throw new Error("All questions must have sections")
-    }
-
-    const order = page.properties['FAQ order index']
-    if (order.type != 'number') {
-      throw new Error('Expected number')
-    }
-    if (!order.number) {
-      throw new Error('All questions must have an order')
-    }
-
-    faqs.push({
-      section: section.select.name,
-      question: question.title[0].plain_text,
-      answer: renderRichText(answer.rich_text),
-      order: order.number,
-    })
+    fullBlocks.push({block, children})
   }
-  return faqs
+  return fullBlocks
 }
