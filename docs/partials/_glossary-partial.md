@@ -1,7 +1,7 @@
 <div class="hidden-glossary">
 
 ### $ARB {#arb}
-Arbitrum's governance token, an ERC-20 token native to the Arbitrum One chain. Owning $ARB makes you a member of the Arbitrum DAO and allows you to participate in Arbitrum's on-chain governance.
+Arbitrum's governance token, an ERC-20 token native to the Arbitrum One chain. Owning $ARB makes you a member of the [Arbitrum DAO](../dao-glossary.md#arbitrum-dao) and allows you to participate in Arbitrum's on-chain governance.
 
 ### $ARB reverse gateway {#arb-reverse-gateway}
 A series of smart contracts responsible for bridging $ARB between Ethereum and Arbitrum One. The $ARB token is native to Arbitrum One, meaning it's minted within a smart contract that lives on the Arbitrum One chain.<br />

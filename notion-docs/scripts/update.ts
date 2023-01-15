@@ -1,18 +1,12 @@
 import { lookupProject, lookupProjectFAQ, lookupProjectDefinitions } from './notion'
 import type { Definition, FAQ, PageObjectProperty } from './notion'
+import type { LinkableTerms } from './format'
 import { stripCurlyQuotes, renderBlocks, renderRichTexts, formatGlossaryTermKey } from './format'
 import { PageObjectResponse } from '@notionhq/client/build/src/api-endpoints'
 
 import fs from 'fs'
 
-function renderDefinition(definition: PageObjectProperty): string {
-  if (definition.type != 'rich_text') {
-    throw new Error('Expected definition')
-  }
-  return renderRichTexts(definition.rich_text)
-}
-
-function formatDefinitions(definitions: Definition[]) {
+function formatDefinitions(definitions: Definition[], linkableTerms: LinkableTerms) {
   // sort the array alphabetically by term
   definitions.sort((a, b) => a.term.localeCompare(b.term))
 
@@ -24,7 +18,10 @@ function formatDefinitions(definitions: Definition[]) {
     // remove all non-alphanumeric and non-space characters, convert to lowercase, and replace spaces with hyphens
     // replace all attribute values surrounded by single quotes with double quotes
     const dashDelimitedTermKey = formatGlossaryTermKey(item.term)
-    const definition = renderDefinition(item.definition)
+    if (item.definition.type != 'rich_text') {
+      throw new Error('Expected definition')
+    }
+    const definition = renderRichTexts(item.definition.rich_text, linkableTerms)
     return `### ${formattedTerm} {#${dashDelimitedTermKey}}\n${definition}\n\n`
   })
 
@@ -74,11 +71,20 @@ async function main() {
   const governanceProject = await lookupProject('Governance docs')
 
   const faqs = await lookupProjectFAQ(governanceProject)
+  const definitions = await lookupProjectDefinitions(governanceProject)
+  const linkableTerms: LinkableTerms = {}
+  for (let definition of definitions) {
+    linkableTerms[definition.pageId] = {
+      text: definition.term,
+      anchor: formatGlossaryTermKey(definition.term),
+      page: '../dao-glossary.md'
+    }
+  }
+
   const sections = organizeFAQ(faqs)
   const sectionsHTML = renderSections(sections)
 
-  const definitions = await lookupProjectDefinitions(governanceProject)
-  const definitionsHTML = formatDefinitions(definitions)
+  const definitionsHTML = formatDefinitions(definitions, linkableTerms)
 
   fs.writeFileSync('../docs/partials/_glossary-partial.md', definitionsHTML)
   fs.writeFileSync('../docs/partials/_faq-partial.md', sectionsHTML)

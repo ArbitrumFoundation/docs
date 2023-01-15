@@ -1,5 +1,12 @@
 import { RichTextItemResponse, BlockObjectResponse } from '@notionhq/client/build/src/api-endpoints'
-import type { Block } from './notion'
+import type { Block, Definition } from './notion'
+
+interface Reference {
+  text: string
+  anchor: string | undefined
+  page: string
+}
+export type LinkableTerms = Record<string, Reference>
 
 export function stripCurlyQuotes(input: string): string {
   return input
@@ -15,7 +22,7 @@ export function formatGlossaryTermKey(term: string) {
       .join('-')
 }
 
-export function renderRichText(res: RichTextItemResponse, startOfLine=true): string {
+export function renderRichText(res: RichTextItemResponse, linkableTerms: LinkableTerms, startOfLine=true): string {
   switch (res.type) {
   case 'text':
     let text = stripCurlyQuotes(res.text.content)
@@ -40,6 +47,16 @@ export function renderRichText(res: RichTextItemResponse, startOfLine=true): str
       } else {
         throw new Error(`Unhandled user: ${user}`)
       }
+    case 'page':
+      const link = linkableTerms[mention.page.id]
+      if (!link) {
+        throw new Error(`Link to unsupported page ${mention.page.id}`)
+      }
+      let anchor = ''
+      if (link.anchor) {
+        anchor = `#${link.anchor}`
+      }
+      return `[${link.text}](${link.page}${anchor})`
     default:
       throw new Error(`Unhandled mention type: ${mention.type}`)
     }
@@ -49,14 +66,14 @@ export function renderRichText(res: RichTextItemResponse, startOfLine=true): str
   }
 }
 
-export function renderRichTexts(texts: RichTextItemResponse[]): string {
+export function renderRichTexts(texts: RichTextItemResponse[], linkableTerms: LinkableTerms): string {
   let out = ''
   for (let text of texts) {
     let startOfLine = false
     if (out.length == 0 || out.slice(-1) == "\n") {
       startOfLine = true
     }
-    out += renderRichText(text, startOfLine)
+    out += renderRichText(text, linkableTerms, startOfLine)
   }
   return out
 }
@@ -90,13 +107,13 @@ export function renderBlock(block: Block, prevType?: string, last=false): string
   let body = (() => {
     switch (blockResponse.type) {
     case 'paragraph':
-      return `<p>${renderRichTexts(blockResponse.paragraph.rich_text)}${child}</p>\n`
+      return `<p>${renderRichTexts(blockResponse.paragraph.rich_text, {})}${child}</p>\n`
     case 'numbered_list_item':
-      return `<li>${renderRichTexts(blockResponse.numbered_list_item.rich_text)}${child}</li>`
+      return `<li>${renderRichTexts(blockResponse.numbered_list_item.rich_text, {})}${child}</li>`
     case 'bulleted_list_item':
-      return `<li>${renderRichTexts(blockResponse.bulleted_list_item.rich_text)}${child}</li>`
+      return `<li>${renderRichTexts(blockResponse.bulleted_list_item.rich_text, {})}${child}</li>`
     case 'code':
-      return `\`\`\`${blockResponse.code.language}\n${renderRichTexts(blockResponse.code.rich_text)}${child}\n\`\`\``
+      return `\`\`\`${blockResponse.code.language}\n${renderRichTexts(blockResponse.code.rich_text, {})}${child}\n\`\`\``
     default:
       console.log(blockResponse)
       throw new Error(`Found block of unknown type ${blockResponse.type}`)
