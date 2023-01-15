@@ -25,9 +25,10 @@ export const Quicklooks = () => {
         if (!termItem) {
           return undefined
         }
+        let termTag = termItem.tagName
         let defItem = termItem.nextElementSibling
         let def = document.createElement('div')
-        while (defItem && defItem.tagName != 'H3') {
+        while (defItem && defItem.tagName != termTag) {
           def.appendChild(defItem.cloneNode(true))
           defItem = defItem.nextElementSibling
         }
