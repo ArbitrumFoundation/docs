@@ -1,6 +1,6 @@
 import { lookupProject, lookupProjectDefinitions } from './notion'
 import type { Definition, PageObjectProperty } from './notion'
-import { stripCurlyQuotes, renderRichTexts } from './format'
+import { stripCurlyQuotes, renderRichTexts, formatGlossaryTermKey } from './format'
 import { PageObjectResponse } from '@notionhq/client/build/src/api-endpoints'
 
 import fs from 'fs'
@@ -23,8 +23,9 @@ function formatDefinitions(definitions: Definition[]) {
     const formattedTerm = curliesStripped.replace(/[^a-z0-9\s$-()-]/gi, '');
     // remove all non-alphanumeric and non-space characters, convert to lowercase, and replace spaces with hyphens
     // replace all attribute values surrounded by single quotes with double quotes
+    const dashDelimitedTermKey = formatGlossaryTermKey(item.term)
     const definition = renderDefinition(item.definition)
-    return `### ${formattedTerm}\n${definition}\n\n`
+    return `### ${formattedTerm} {#${dashDelimitedTermKey}}\n${definition}\n\n`
   })
 
   // wrap the HTML strings in a <dl> element with a class of "hidden-glossary-list"

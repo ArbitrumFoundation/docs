@@ -7,7 +7,13 @@ export function stripCurlyQuotes(input: string): string {
   .replaceAll(/[\u201C\u201D]/g, '"');
 }
 
-
+export function formatGlossaryTermKey(term: string) {
+  return stripCurlyQuotes(term)
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/gi, '')
+      .split(' ')
+      .join('-')
+}
 
 export function renderRichText(res: RichTextItemResponse, startOfLine=true): string {
   switch (res.type) {
