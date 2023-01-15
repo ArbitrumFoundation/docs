@@ -20,6 +20,7 @@ const notion = new Client({
 })
 
 export interface Definition {
+  pageId: string
   term: string
   definition: PageObjectProperty
 }
@@ -96,6 +97,7 @@ export async function lookupProjectDefinitions(
     }
 
     definitions.push({
+      pageId: page.id,
       term: title.title[0].plain_text,
       definition: page.properties['Definition (HTML)'],
     })
@@ -145,7 +147,7 @@ async function parseFAQPage(page: PageObjectResponse): Promise<FAQ> {
   return {
     section: section.select.name,
     question: question.title[0].plain_text,
-    answer: renderRichTexts(answer.rich_text),
+    answer: renderRichTexts(answer.rich_text, {}),
     order: order.number,
     blocks: blocks,
   }
