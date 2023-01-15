@@ -21,6 +21,7 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  plugins: ["docusaurus-plugin-less"],
   presets: [
     [
       'classic',
@@ -42,7 +43,7 @@ const config = {
         },
         blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.less'),
         },
       }),
     ],
