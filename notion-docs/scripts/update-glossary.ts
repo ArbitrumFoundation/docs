@@ -22,13 +22,11 @@ function formatDefinitions(definitions: Definition[]) {
       .join('-')
     // replace all attribute values surrounded by single quotes with double quotes
     const definition = item.definition.replace(/’/g, "'")
-    return `\n  <dt>${formattedTerm}</dt>\n  <dd data-quicklook-key="${dashDelimitedTermKey}">${definition}</dd>`
+    return `### ${formattedTerm}\n<p data-quicklook-key="${dashDelimitedTermKey}">${definition}</p>\n\n`
   })
 
   // wrap the HTML strings in a <dl> element with a class of "hidden-glossary-list"
-  return `<dl class="definition-list hidden-definition-list">${htmlArray.join(
-    ''
-  )}\n</dl>`
+  return `<div class="hidden-glossary">\n\n${htmlArray.join('')}\n</div>\n`
 }
 
 async function main() {
