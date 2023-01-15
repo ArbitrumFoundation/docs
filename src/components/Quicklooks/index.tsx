@@ -19,17 +19,20 @@ export const Quicklooks = () => {
       allowHTML: true,
       interactive: true,
       content: (reference) => {
-        try {
-          reference.setAttribute('data-quicklook-enabled', 'true');
-          let contentSourceKey = reference.getAttribute('data-quicklook-from');
-          let sourceContentElement = document.querySelectorAll(
-            `[data-quicklook-key="${contentSourceKey}"]`
-          )[0];
-          let html = sourceContentElement.innerHTML;
-          return html;
-        } catch (e) {
-          return undefined;
+        reference.setAttribute('data-quicklook-enabled', 'true');
+        let contentSourceKey = reference.getAttribute('data-quicklook-from');
+        let termItem = document.getElementById(contentSourceKey)
+        if (!termItem) {
+          return undefined
         }
+        let termTag = termItem.tagName
+        let defItem = termItem.nextElementSibling
+        let def = document.createElement('div')
+        while (defItem && defItem.tagName != termTag) {
+          def.appendChild(defItem.cloneNode(true))
+          defItem = defItem.nextElementSibling
+        }
+        return def
       },
     });
   }, [isBrowser]);
