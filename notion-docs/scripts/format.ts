@@ -105,9 +105,7 @@ export function renderBlocks(blocks: Block[]): string {
   let prevType: string | undefined
   let i = 0
   for (let block of blocks) {
-    // console.log("block", block)
     const renderedBlock = renderBlock(block, prevType, i == blocks.length - 1)
-    // console.log(renderedBlock)
     out += renderedBlock
     out += '\n'
     prevType = block.block.type

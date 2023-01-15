@@ -116,7 +116,6 @@ function resolvePages(pages: GetPageResponse[]): PageObjectResponse[] {
 
 async function parseFAQPage(page: PageObjectResponse): Promise<FAQ> {
   const blocks = await getBlockChildren(page.id)
-  console.log(blocks)
   const question = page.properties['Question']
   if (question.type != 'title') {
     throw new Error('Expected title')
