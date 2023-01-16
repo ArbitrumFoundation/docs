@@ -10,7 +10,7 @@ export enum DefinitionValidity {
 }
 
 export function validDefinitionToPublish(def: Definition, project: string): DefinitionValidity {
-  if (def.status != '4 - Continuously publishing' && def.status == '2 - Pending peer review') {
+  if (def.status != '4 - Continuously publishing' && def.status != '2 - Pending peer review') {
     return DefinitionValidity.NotReady
   }
   if (def.publishable != 'Publishable') {
