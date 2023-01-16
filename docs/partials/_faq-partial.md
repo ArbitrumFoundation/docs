@@ -68,10 +68,10 @@ No, this will be the only airdrop.
 ### When was the snapshot for the airdrop?
 The cutoff day to be eligible for the airdrop was August 31st, 2022 before the Nitro upgrade took place.
 
-### The token eligibility check says I’m not eligible for the airdrop. What do I do?
+### The token eligibility check says I'm not eligible for the airdrop. What do I do?
 Please submit a request here [maybe link to Zendesk? see if it makes sense w/ consensys and engineering]
 
-### Where do Arbitrum Odyssey and 
+### Where do Arbitrum Odyssey and <a href='http://Guild.xyz'>Guild.xyz</a> fit into all this?
 From the beginning, the Arbitrum Odyssey has been about introducing users to protocols in a fun and interactive way while also rewarding them in NFTs! While Guild.XYZ roles are simply to show off your favorite projects in our Discord community. Neither of these activities were themselves airdrop qualifications, but hopefully, they introduced you to Arbitrum and protocols that gave you eligibility!
 
 ### Did you identify any Sybils?
@@ -99,7 +99,7 @@ TODO: (don't use the word roadmap) The ultimate goal is to have distributed sequ
 
 ## Governance architecture
 
-### [Demo] Where can I find the smart contracts that power Arbitrum DAO’s governance mechanisms?
+### [Demo] Where can I find the smart contracts that power Arbitrum DAO's governance mechanisms?
 <p>Candidate target output schema:</p>
 
 <p></p>

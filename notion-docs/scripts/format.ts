@@ -1,5 +1,6 @@
 import { RichTextItemResponse, BlockObjectResponse } from '@notionhq/client/build/src/api-endpoints'
-import type { Block, Definition } from './notion'
+import type { Block } from './notion'
+import type { Definition } from './glossary'
 import { notion } from './notion'
 
 export enum DefinitionValidity {
@@ -37,14 +38,6 @@ export function stripCurlyQuotes(input: string): string {
   .replaceAll(/[\u201C\u201D]/g, '"');
 }
 
-export function formatGlossaryTermKey(term: RichTextItemResponse[], linkableTerms: LinkableTerms) {
-  return renderRichTexts(term, linkableTerms)
-      .toLowerCase()
-      .replace(/[^a-z0-9\s]/gi, '')
-      .split(' ')
-      .join('-')
-}
-
 function renderPageLink(page: string, linkableTerms: LinkableTerms) {
   const link = linkableTerms[page]
   if (!link) {
@@ -64,7 +57,7 @@ function renderPageLink(page: string, linkableTerms: LinkableTerms) {
   return `<a href="${link.page}${anchor}">${link.text}</a>`
 }
 
-export function renderRichText(res: RichTextItemResponse, linkableTerms: LinkableTerms, startOfLine=true): string {
+function renderRichText(res: RichTextItemResponse, linkableTerms: LinkableTerms, startOfLine=true): string {
   switch (res.type) {
   case 'text':
     let text = stripCurlyQuotes(res.text.content)
@@ -112,7 +105,7 @@ export function renderRichTexts(texts: RichTextItemResponse[], linkableTerms: Li
   return out
 }
 
-export function renderBlock(block: Block, linkableTerms: LinkableTerms, prevType?: string, last=false): string {
+function renderBlock(block: Block, linkableTerms: LinkableTerms, prevType?: string, last=false): string {
   const blockResponse = block.block
   let prefix = ''
   let postfix = ''
