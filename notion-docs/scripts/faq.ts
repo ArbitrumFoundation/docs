@@ -1,4 +1,4 @@
-import { queryDatabase } from './notion'
+import { queryDatabaseWithBlocks } from './notion'
 import { renderBlocks, renderRichTexts } from './format'
 
 import type { RichTextItemResponse } from '@notionhq/client/build/src/api-endpoints'
@@ -65,7 +65,7 @@ function parseFAQPage(page: Page): FAQ | undefined {
 export async function lookupProjectFAQ(
   projectId: string
 ): Promise<FAQ[]> {
-  const pages = await queryDatabase({
+  const pages = await queryDatabaseWithBlocks({
     database_id: faqDatabaseId,
     filter: {
       and: [

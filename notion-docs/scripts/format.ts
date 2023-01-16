@@ -1,26 +1,11 @@
-import { RichTextItemResponse, BlockObjectResponse } from '@notionhq/client/build/src/api-endpoints'
+import { RichTextItemResponse } from '@notionhq/client/build/src/api-endpoints'
 import type { Block } from './notion'
-import type { Definition } from './glossary'
-import { notion } from './notion'
 
 export enum DefinitionValidity {
     Valid,
     NotReady,
     NotPublishable,
     WrongProject
-}
-
-export function validDefinitionToPublish(def: Definition, project: string): DefinitionValidity {
-  if (def.status != '4 - Continuously publishing' && def.status != '2 - Pending peer review') {
-    return DefinitionValidity.NotReady
-  }
-  if (def.publishable != 'Publishable') {
-    return DefinitionValidity.NotPublishable
-  }
-  if (!def.projects.has(project)) {
-    return DefinitionValidity.WrongProject
-  }
-  return DefinitionValidity.Valid
 }
 
 interface Reference {
@@ -38,13 +23,17 @@ export function stripCurlyQuotes(input: string): string {
   .replaceAll(/[\u201C\u201D]/g, '"');
 }
 
+class MissingPageError extends Error {
+  constructor(public page: string) {
+    super(`Link to unsupported page: ${page}`)
+    this.name = "MissingPageError"
+  }
+}
+
 function renderPageLink(page: string, linkableTerms: LinkableTerms) {
   const link = linkableTerms[page]
   if (!link) {
-    notion.pages.retrieve({page_id: page}).then(page => {
-      console.log("Missing page: ", page)
-    })
-    throw new Error(`Link to unsupported page ${page}`)
+    throw new MissingPageError(page)
   }
   if (link.valid != DefinitionValidity.Valid) {
     console.warn(`Ignoring link to doc with reason ${DefinitionValidity[link.valid]}: ${link.notionURL}`)

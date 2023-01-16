@@ -1,12 +1,11 @@
-import type { LinkableTerms } from './format'
-
-import { lookupProject } from './notion'
-import { renderRichTexts, validDefinitionToPublish, DefinitionValidity } from './format'
+import { lookupProject } from './project'
 import { formatGlossaryTermKey, lookupGlossaryTerms, renderDefinition } from './glossary'
 import { lookupProjectFAQ, organizeFAQ, renderFAQ } from './faq'
+import { renderRichTexts, DefinitionValidity } from './format'
 
 import type { FAQ } from './faq'
 import type { Definition } from './glossary'
+import type { LinkableTerms } from './format'
 
 import fs from 'fs'
 
@@ -36,6 +35,19 @@ function renderSections(sections: Record<string, FAQ[]>, linkableTerms: Linkable
   return out
 }
 
+export function validDefinitionToPublish(def: Definition, project: string): DefinitionValidity {
+  if (def.status != '4 - Continuously publishing' && def.status != '2 - Pending peer review') {
+    return DefinitionValidity.NotReady
+  }
+  if (def.publishable != 'Publishable') {
+    return DefinitionValidity.NotPublishable
+  }
+  if (!def.projects.has(project)) {
+    return DefinitionValidity.WrongProject
+  }
+  return DefinitionValidity.Valid
+}
+
 async function main() {
   const governanceProject = await lookupProject('Governance docs')
   console.log("Looking up FAQs")
@@ -46,7 +58,7 @@ async function main() {
   const linkableTerms: LinkableTerms = {}
   for (let definition of definitions) {
     linkableTerms[definition.pageId] = {
-      text: renderRichTexts(definition.term, linkableTerms),
+      text: renderRichTexts(definition.term, {}),
       anchor: formatGlossaryTermKey(definition.term),
       page: '/dao-glossary',
       valid: validDefinitionToPublish(definition, governanceProject),

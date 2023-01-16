@@ -1,5 +1,5 @@
 import { renderRichTexts, renderBlocks } from './format'
-import { queryDatabase } from './notion'
+import { queryDatabaseWithBlocks } from './notion'
 
 import type { RichTextItemResponse } from '@notionhq/client/build/src/api-endpoints'
 import type { Block, Page } from './notion'
@@ -82,7 +82,7 @@ function parseGlossaryPage(page: Page): Definition | undefined {
 }
 
 export async function lookupGlossaryTerms(): Promise<Definition[]> {
-  const pages = await queryDatabase({
+  const pages = await queryDatabaseWithBlocks({
     database_id: glossaryDatabaseId,
   })
   return pages.map(parseGlossaryPage).filter(isDefinition)
