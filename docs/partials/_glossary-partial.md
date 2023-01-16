@@ -10,7 +10,11 @@ A series of smart contracts responsible for bridging [$ARB](../dao-glossary.md#a
 A series of smart contracts responsible for bridging [$ARB](../dao-glossary.md#arb) between Ethereum and [Arbitrum One](../dao-glossary.md#arbitrum-one). The $ARB token is native to Arbitrum One, meaning it's minted within a smart contract that lives on the Arbitrum One chain. The "standard" gateway (todo - follow the pattern within reverse gateway)
 
 ### Airdrop {#airdrop}
-(see body)
+<p>A mechanism that distributes tokens to qualifying wallet addresses, usually based on on-chain activity. The [Arbitrum Foundation](../dao-glossary.md#arbitrum-foundation) airdrop will distribute [$ARB](../dao-glossary.md#arb) tokens to eligible wallet addresses on TODO according to the airdrop eligibility and distribution criteria specified in our <a href='/airdrop-eligibility-distribution'>overview of airdrop eligibility and specifications</a>.</p>
+
+<p></p>
+
+
 
 ### AnyTrust chain {#anytrust-chain}
 An Arbitrum chain that implements the [Arbitrum AnyTrust](../dao-glossary.md#arbitrum-anytrust) protocol, a protocol that significantly reduces transaction costs by using a trusted [Data Availability Committee (DAC)](../dao-glossary.md#data-availability-committee-dac) to expedite Ethereum's [Trustless](../dao-glossary.md#trustless) data availability mechanism. [Arbitrum Nova](../dao-glossary.md#arbitrum-nova) is an example of an AnyTrust chain; [Arbitrum One](../dao-glossary.md#arbitrum-one) is not an AnyTrust chain; it's an [Arbitrum Rollup](../dao-glossary.md#arbitrum-rollup) chain.
@@ -55,7 +59,9 @@ The time period in which eligible [$ARB](../dao-glossary.md#arb) token recipient
 As opposed to Non-constitutional proposal. The stricter of the two types of proposals. Refer to <a href='#todo'>The Constitution of the Arbitrum DAO</a> for a more precise definition. (todo - ensure aligned with constitution - and/or reference constitution - ensure that these are updated because they're wrong - also ensure that we want to use this term - align with @Matt Pearring - could just refer to these as AIPs).
 
 ### Data Availability Committee (DAC) {#data-availability-committee-dac}
-(see body)
+<p>A permissioned set of parties responsible for enforcing data availability in an [Arbitrum AnyTrust](../dao-glossary.md#arbitrum-anytrust) chain. See <a href='https://medium.com/offchainlabs/introducing-anytrust-chains-cheaper-faster-l2-chains-with-minimal-trust-assumptions-31def59eb8d7'>Introducing AnyTrust Chains: Cheaper, Faster L2 Chains with Minimal Trust Assumptions</a> to learn more.</p>
+
+
 
 ### Decentralized apps (dApps) {#decentralized-apps-dapps}
 Apps that combine blockchain-based smart contracts with frontend user interfaces. Arbitrum makes it easy for you to build fast Ethereum dApps that inherit Ethereum's security guarantees while keeping costs low for end-users.
@@ -85,9 +91,19 @@ A proposal to change some aspect of [Arbitrum DAO](../dao-glossary.md#arbitrum-d
 A particular type of token that allows token-holders to vote on governance proposals. [$ARB](../dao-glossary.md#arb) is an example of a governance token; it allows token-holders to create and vote on [Arbitrum DAO](../dao-glossary.md#arbitrum-dao) [Governance proposal](../dao-glossary.md#governance-proposal)s.
 
 ### Governor contract {#governor-contract}
-Core governance contract in which proposals are submitted, voted on by the [Arbitrum DAO](../dao-glossary.md#arbitrum-dao), and sent off for execution. (todo - clarify this - what does "and sent off for execution" mean)
+<p>Internal only? Talking about the contract itself feels "implementation detail" to me</p>
+
+<p></p>
+
+
 
 ### Immutable {#immutable}
+<p>In the context of Ethereum, immutability refers to the inability to change the data recorded in the blockchain. You can think of Ethereum's blockchain as a decentralized, distributed linked-list data structure that stores the entire history of transactions within a globally distributed network of computers running Ethereum client software.<br />
+<br />
+The client software implements a protocol that stores transaction history within a data structure known as a "block"; blocks are linked to other blocks in chronological order. Because each block contains a cryptographic hash of the previous block, it's extremely difficult to change transaction data after it's been recorded as canonical by the network.<br />
+<br />
+This is why we call the Ethereum blockchain immutable. Chains that implement the [Arbitrum Rollup](../dao-glossary.md#arbitrum-rollup) protocol (like [Arbitrum One](../dao-glossary.md#arbitrum-one)) are also immutable, as they inherit Ethereum's security guarantees.</p>
+
 
 
 ### Layer 1 (L1) {#layer-1-l1}
@@ -154,13 +170,28 @@ A smart contract that restricts an action from taking place before a specified f
 A protocol governance system in which voting weight is proportional to ownership of a governance token. The [Arbitrum DAO](../dao-glossary.md#arbitrum-dao) implements token-weighted governance.
 
 ### Trustless {#trustless}
-see body
+<p>In the context of Ethereum, trustless refers to the ability of a system to operate without the need for users to place trust in a central authority or intermediary. Instead, users place their trust in math and protocols.<br />
+<br />
+This is achieved through the use of cryptographic techniques and decentralized consensus mechanisms that let users verify the integrity of network transactions using open-source software. Trustless systems are considered to be more secure and resistant to fraud or tampering because they don't rely on a single point of failure that can be exploited by attackers.</p>
+
+
 
 ### Unclaimed airdrop tokens {#unclaimed-airdrop-tokens}
 Claimable [$ARB](../dao-glossary.md#arb) tokens in the Token distributor contract not claimed by their potential owners. After TODO, all unclaimed tokens will be sent to the TODO.
 
 ### Votable tokens {#votable-tokens}
-see body
+<p>[$ARB](../dao-glossary.md#arb) tokens claimed through our [Airdrop](../dao-glossary.md#airdrop). More precisely, all $ARB tokens in existence, except for:</p>
+
+<p></p>
+
+<ul><li>tokens owned by the [Arbitrum DAO](../dao-glossary.md#arbitrum-dao)</li>
+<li>tokens owned by the [Arbitrum Foundation](../dao-glossary.md#arbitrum-foundation)</li>
+<li>airdrop tokens not yet claimed</li>
+</ul>
+<p><br />
+Votable tokens give their holders voting power in direct proportion to the quantity of tokens held. More $ARB == more voting power.</p>
+
+
 
 ### Voting period {#voting-period}
 After a proposal is successfully submitted via Tally, members of the [Arbitrum DAO](../dao-glossary.md#arbitrum-dao) have a certain number of days to debate and vote. This is referred to as the [Voting period](../dao-glossary.md#voting-period), and is currently 14-16 days. The voting period is determined by TODO.
