@@ -2,10 +2,32 @@ import { RichTextItemResponse, BlockObjectResponse } from '@notionhq/client/buil
 import type { Block, Definition } from './notion'
 import { notion } from './notion'
 
+export enum DefinitionValidity {
+    Valid,
+    NotReady,
+    NotPublishable,
+    WrongProject
+}
+
+export function validDefinitionToPublish(def: Definition, project: string): DefinitionValidity {
+  if (def.status != '4 - Continuously publishing' && def.status == '2 - Pending peer review') {
+    return DefinitionValidity.NotReady
+  }
+  if (def.publishable != 'Publishable') {
+    return DefinitionValidity.NotPublishable
+  }
+  if (!def.projects.has(project)) {
+    return DefinitionValidity.WrongProject
+  }
+  return DefinitionValidity.Valid
+}
+
 interface Reference {
   text: string
   anchor: string | undefined
   page: string
+  valid: DefinitionValidity
+  notionURL: string
 }
 export type LinkableTerms = Record<string, Reference>
 
@@ -15,8 +37,8 @@ export function stripCurlyQuotes(input: string): string {
   .replaceAll(/[\u201C\u201D]/g, '"');
 }
 
-export function formatGlossaryTermKey(term: string) {
-  return stripCurlyQuotes(term)
+export function formatGlossaryTermKey(term: RichTextItemResponse[], linkableTerms: LinkableTerms) {
+  return renderRichTexts(term, linkableTerms)
       .toLowerCase()
       .replace(/[^a-z0-9\s]/gi, '')
       .split(' ')
@@ -56,6 +78,10 @@ export function renderRichText(res: RichTextItemResponse, linkableTerms: Linkabl
         })
         throw new Error(`Link to unsupported page ${mention.page.id}`)
       }
+      if (link.valid != DefinitionValidity.Valid) {
+        console.warn(`Ignoring link to doc with reason ${DefinitionValidity[link.valid]}: ${link.notionURL}`)
+        return link.text
+      }
       let anchor = ''
       if (link.anchor) {
         anchor = `#${link.anchor}`
@@ -82,7 +108,7 @@ export function renderRichTexts(texts: RichTextItemResponse[], linkableTerms: Li
   return out
 }
 
-export function renderBlock(block: Block, prevType?: string, last=false): string {
+export function renderBlock(block: Block, linkableTerms: LinkableTerms, prevType?: string, last=false): string {
   const blockResponse = block.block
   let prefix = ''
   let postfix = ''
@@ -106,18 +132,18 @@ export function renderBlock(block: Block, prevType?: string, last=false): string
   }
   let child = ''
   if (block.children.length > 0) {
-    child = renderBlocks(block.children)
+    child = renderBlocks(block.children, linkableTerms)
   }
   let body = (() => {
     switch (blockResponse.type) {
     case 'paragraph':
-      return `<p>${renderRichTexts(blockResponse.paragraph.rich_text, {})}${child}</p>\n`
+      return `<p>${renderRichTexts(blockResponse.paragraph.rich_text, linkableTerms)}${child}</p>\n`
     case 'numbered_list_item':
-      return `<li>${renderRichTexts(blockResponse.numbered_list_item.rich_text, {})}${child}</li>`
+      return `<li>${renderRichTexts(blockResponse.numbered_list_item.rich_text, linkableTerms)}${child}</li>`
     case 'bulleted_list_item':
-      return `<li>${renderRichTexts(blockResponse.bulleted_list_item.rich_text, {})}${child}</li>`
+      return `<li>${renderRichTexts(blockResponse.bulleted_list_item.rich_text, linkableTerms)}${child}</li>`
     case 'code':
-      return `\`\`\`${blockResponse.code.language}\n${renderRichTexts(blockResponse.code.rich_text, {})}${child}\n\`\`\``
+      return `\`\`\`${blockResponse.code.language}\n${renderRichTexts(blockResponse.code.rich_text, linkableTerms)}${child}\n\`\`\``
     default:
       console.log(blockResponse)
       throw new Error(`Found block of unknown type ${blockResponse.type}`)
@@ -127,12 +153,12 @@ export function renderBlock(block: Block, prevType?: string, last=false): string
 }
 
 
-export function renderBlocks(blocks: Block[]): string {
+export function renderBlocks(blocks: Block[], linkableTerms: LinkableTerms): string {
   let out = ''
   let prevType: string | undefined
   let i = 0
   for (let block of blocks) {
-    const renderedBlock = renderBlock(block, prevType, i == blocks.length - 1)
+    const renderedBlock = renderBlock(block, linkableTerms, prevType, i == blocks.length - 1)
     out += renderedBlock
     out += '\n'
     prevType = block.block.type
