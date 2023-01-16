@@ -12,8 +12,10 @@ The only official website for the $ARB airdrop is todo:qqq. There is no presale.
 :::
 
 
-import FaqPartial from '@site/docs/partials/_faq-partial.md';
+import FaqPartial, {toc as FAQTOC} from '@site/docs/partials/_faq-partial.md';
 
 <div data-faq-origin-slug='dao-faq'>
     <FaqPartial />
 </div>
+
+export const toc = FAQTOC
