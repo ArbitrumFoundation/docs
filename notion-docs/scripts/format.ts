@@ -61,7 +61,7 @@ function renderPageLink(page: string, linkableTerms: LinkableTerms) {
   if (link.anchor) {
     anchor = `#${link.anchor}`
   }
-  return `[${link.text}](${link.page}${anchor})`
+  return `<a href="${link.page}${anchor}">${link.text}</a>`
 }
 
 export function renderRichText(res: RichTextItemResponse, linkableTerms: LinkableTerms, startOfLine=true): string {

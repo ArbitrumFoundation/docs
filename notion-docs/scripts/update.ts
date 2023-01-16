@@ -95,7 +95,7 @@ async function main() {
     linkableTerms[definition.pageId] = {
       text: renderRichTexts(definition.term, linkableTerms),
       anchor: formatGlossaryTermKey(definition.term, linkableTerms),
-      page: '../dao-glossary.md',
+      page: '/dao-glossary',
       valid: validDefinitionToPublish(definition, governanceProject),
       notionURL: definition.url,
     }
