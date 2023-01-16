@@ -1,13 +1,5 @@
-import dotenv from 'dotenv'
-
 import { Client, isFullPage, isFullBlock, collectPaginatedAPI } from '@notionhq/client'
 import { PageObjectResponse, BlockObjectResponse, QueryDatabaseParameters } from '@notionhq/client/build/src/api-endpoints'
-
-dotenv.config()
-
-const notion = new Client({
-  auth: process.env.NOTION_TOKEN,
-})
 
 export interface Page {
   page: PageObjectResponse
@@ -19,8 +11,8 @@ export interface Block {
   children: Block[]
 }
 
-export async function queryDatabase(params: QueryDatabaseParameters): Promise<PageObjectResponse[]> {
-  const pages = await collectPaginatedAPI(notion.databases.query, params)
+export async function queryDatabase(client: Client, params: QueryDatabaseParameters): Promise<PageObjectResponse[]> {
+  const pages = await collectPaginatedAPI(client.databases.query, params)
   const fullPages: PageObjectResponse[] = []
   for (let page of pages) {
     if (!isFullPage(page)) {
@@ -31,9 +23,9 @@ export async function queryDatabase(params: QueryDatabaseParameters): Promise<Pa
   return fullPages
 }
 
-export async function queryDatabaseWithBlocks(params: QueryDatabaseParameters): Promise<Page[]> {
-  const fullPages = await queryDatabase(params)
-  const children = await Promise.all(fullPages.map((page) => { return getBlockChildren(notion, page.id) }))
+export async function queryDatabaseWithBlocks(client: Client, params: QueryDatabaseParameters): Promise<Page[]> {
+  const fullPages = await queryDatabase(client, params)
+  const children = await Promise.all(fullPages.map((page) => { return getBlockChildren(client, page.id) }))
   return fullPages.map((page, i) => {
     return {
       page: page,

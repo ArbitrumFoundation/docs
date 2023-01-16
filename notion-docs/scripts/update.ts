@@ -1,13 +1,21 @@
+import { Client } from '@notionhq/client'
 import { lookupProject } from './project'
 import { formatGlossaryTermKey, lookupGlossaryTerms, renderDefinition } from './glossary'
-import { lookupProjectFAQ, organizeFAQ, renderFAQ } from './faq'
+import { lookupFAQs, organizeFAQ, renderFAQ } from './faq'
 import { renderRichTexts, DefinitionValidity } from './format'
+import dotenv from 'dotenv'
 
 import type { FAQ } from './faq'
 import type { Definition } from './glossary'
 import type { LinkableTerms } from './format'
 
 import fs from 'fs'
+
+dotenv.config()
+
+const notion = new Client({
+  auth: process.env.NOTION_TOKEN,
+})
 
 function formatDefinitions(definitions: Definition[], linkableTerms: LinkableTerms) {
   const renderedDefs = definitions.map(def => renderDefinition(def, linkableTerms))
@@ -49,11 +57,34 @@ export function validDefinitionToPublish(def: Definition, project: string): Defi
 }
 
 async function main() {
-  const governanceProject = await lookupProject('Governance docs')
+  const governanceProject = await lookupProject(notion, 'Governance docs')
   console.log("Looking up FAQs")
-  const faqs = await lookupProjectFAQ(governanceProject)
+  const faqs = await lookupFAQs(notion, {
+    filter: {
+      and: [
+        {
+          property: 'Project(s)',
+          relation: {
+            contains: governanceProject,
+          },
+        },
+        {
+          property: 'Status',
+          status: {
+            does_not_equal: '1 - Drafting',
+          },
+        },
+        {
+          property: 'Publishable?',
+          select: {
+            equals: 'Publishable',
+          },
+        },
+      ],
+    },
+  })
   console.log("Looking up Glossary")
-  let definitions = await lookupGlossaryTerms()
+  let definitions = await lookupGlossaryTerms(notion, {})
   console.log("Rendering contents")
   const linkableTerms: LinkableTerms = {}
   for (let definition of definitions) {

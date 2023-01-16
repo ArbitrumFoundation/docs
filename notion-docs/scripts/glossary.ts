@@ -1,7 +1,8 @@
+import { Client } from '@notionhq/client'
 import { renderRichTexts, renderBlocks } from './format'
 import { queryDatabaseWithBlocks } from './notion'
 
-import type { RichTextItemResponse } from '@notionhq/client/build/src/api-endpoints'
+import type { RichTextItemResponse, QueryDatabaseParameters } from '@notionhq/client/build/src/api-endpoints'
 import type { Block, Page } from './notion'
 import type { LinkableTerms } from './format'
 
@@ -81,9 +82,10 @@ function parseGlossaryPage(page: Page): Definition | undefined {
   }
 }
 
-export async function lookupGlossaryTerms(): Promise<Definition[]> {
-  const pages = await queryDatabaseWithBlocks({
+export async function lookupGlossaryTerms(client: Client, query: Omit<QueryDatabaseParameters, 'database_id'>): Promise<Definition[]> {
+  const pages = await queryDatabaseWithBlocks(client, {
     database_id: glossaryDatabaseId,
+    ...query,
   })
   return pages.map(parseGlossaryPage).filter(isDefinition)
 }

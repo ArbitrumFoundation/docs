@@ -1,7 +1,8 @@
+import { Client } from '@notionhq/client'
 import { queryDatabaseWithBlocks } from './notion'
 import { renderBlocks, renderRichTexts } from './format'
 
-import type { RichTextItemResponse } from '@notionhq/client/build/src/api-endpoints'
+import type { RichTextItemResponse, QueryDatabaseParameters } from '@notionhq/client/build/src/api-endpoints'
 import type { Block, Page } from './notion'
 import type { LinkableTerms } from './format'
 
@@ -62,33 +63,10 @@ function parseFAQPage(page: Page): FAQ | undefined {
   }
 }
 
-export async function lookupProjectFAQ(
-  projectId: string
-): Promise<FAQ[]> {
-  const pages = await queryDatabaseWithBlocks({
+export async function lookupFAQs(client: Client, query: Omit<QueryDatabaseParameters, 'database_id'>): Promise<FAQ[]> {
+  const pages = await queryDatabaseWithBlocks(client, {
     database_id: faqDatabaseId,
-    filter: {
-      and: [
-        {
-          property: 'Project(s)',
-          relation: {
-            contains: projectId,
-          },
-        },
-        {
-          property: 'Status',
-          status: {
-            does_not_equal: '1 - Drafting',
-          },
-        },
-        {
-          property: 'Publishable?',
-          select: {
-            equals: 'Publishable',
-          },
-        },
-      ],
-    },
+    ...query,
   })
   return pages.map(parseFAQPage).filter(isFAQ)
 }
