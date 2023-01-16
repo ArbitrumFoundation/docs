@@ -1,9 +1,9 @@
 import dotenv from 'dotenv'
 
-import { Client, isFullPage, isFullBlock } from '@notionhq/client'
+import { Client, isFullPage, isFullBlock, collectPaginatedAPI } from '@notionhq/client'
 import { RichTextItemResponse, GetPageResponse, PageObjectResponse, BlockObjectResponse } from '@notionhq/client/build/src/api-endpoints'
 
-import { stripCurlyQuotes, renderRichTexts } from './format'
+import { stripCurlyQuotes } from './format'
 
 dotenv.config()
 
@@ -15,20 +15,24 @@ const faqDatabaseId = 'a8a9af20f33d4cc1b32bbd2be8459733'
 type RecordValue<T extends Record<any,any>> = T extends Record<any,infer U>  ? U: never;
 export type PageObjectProperty = RecordValue<PageObjectResponse['properties']>
 
-const notion = new Client({
+export const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 })
 
 export interface Definition {
   pageId: string
-  term: string
-  definition: PageObjectProperty
+  term: RichTextItemResponse[]
+  definition: RichTextItemResponse[]
+  status: string | undefined
+  publishable: string | undefined
+  url: string
+  projects: Set<string>
 }
 
 export interface FAQ {
   section: string
   question: string
-  answer: string
+  answer: RichTextItemResponse[]
   order: number
   blocks: Block[]
 }
@@ -58,32 +62,9 @@ export async function lookupProject(name: string): Promise<string> {
 export async function lookupProjectDefinitions(
   projectId: string
 ): Promise<Definition[]> {
-  const fullOrPartialPages = await notion.databases.query({
+  const results = await collectPaginatedAPI(notion.databases.query, {
     database_id: glossaryDatabaseId,
-    filter: {
-      and: [
-        {
-          property: 'Project(s)',
-          relation: {
-            contains: projectId,
-          },
-        },
-        {
-          property: 'Status',
-          status: {
-            does_not_equal: '1 - Drafting',
-          },
-        },
-        {
-          property: 'Publishable?',
-          select: {
-            equals: 'Publishable',
-          },
-        },
-      ],
-    },
   })
-  const results = fullOrPartialPages.results
   const definitions: Definition[] = []
   for (const page of results) {
     if (!isFullPage(page)) {
@@ -96,10 +77,39 @@ export async function lookupProjectDefinitions(
       throw new Error('Expected title')
     }
 
+    const definition = page.properties['Definition (HTML)']
+    if (definition.type != 'rich_text') {
+      throw new Error('Expected definition to be rich text')
+    }
+
+    const status = page.properties['Status']
+    if (status.type != 'status') {
+      throw new Error('Expected status to be status')
+    }
+
+    const publishable = page.properties['Publishable?']
+    if (publishable.type != 'select') {
+      throw new Error('Expected Publishable? to be select')
+    }
+
+    const projectsProp = page.properties['Project(s)']
+    if (projectsProp.type != 'relation') {
+      throw new Error('Expected Project(s) to be a relation')
+    }
+    const projectRelation = projectsProp.relation
+    const projects = new Set<string>()
+    for (let project of projectRelation) {
+      projects.add(project.id)
+    }
+
     definitions.push({
       pageId: page.id,
-      term: title.title[0].plain_text,
-      definition: page.properties['Definition (HTML)'],
+      term: title.title,
+      definition: definition.rich_text,
+      status: status.status?.name,
+      publishable: publishable.select?.name,
+      url: page.url,
+      projects: projects,
     })
   }
   return definitions
@@ -116,7 +126,7 @@ function resolvePages(pages: GetPageResponse[]): PageObjectResponse[] {
   return fullPages
 }
 
-async function parseFAQPage(page: PageObjectResponse): Promise<FAQ> {
+async function parseFAQPage(page: PageObjectResponse): Promise<FAQ | undefined> {
   const blocks = await getBlockChildren(page.id)
   const question = page.properties['Question']
   if (question.type != 'title') {
@@ -141,22 +151,27 @@ async function parseFAQPage(page: PageObjectResponse): Promise<FAQ> {
     throw new Error('Expected number')
   }
   if (!order.number) {
-    throw new Error('All questions must have an order')
+    console.warn(`Ignoring question without order: ${page.url}`)
+    return undefined
   }
 
   return {
     section: section.select.name,
     question: question.title[0].plain_text,
-    answer: renderRichTexts(answer.rich_text, {}),
+    answer: answer.rich_text,
     order: order.number,
     blocks: blocks,
   }
 }
 
+const isFAQ = (item: FAQ | undefined): item is FAQ => {
+  return !!item
+}
+
 export async function lookupProjectFAQ(
   projectId: string
 ): Promise<FAQ[]> {
-  const pages = await notion.databases.query({
+  const pages = await collectPaginatedAPI(notion.databases.query, {
     database_id: faqDatabaseId,
     filter: {
       and: [
@@ -169,7 +184,7 @@ export async function lookupProjectFAQ(
         {
           property: 'Status',
           status: {
-            equals: '4 - Continuously publishing',
+            does_not_equal: '1 - Drafting',
           },
         },
         {
@@ -181,7 +196,8 @@ export async function lookupProjectFAQ(
       ],
     },
   })
-  return Promise.all(resolvePages(pages.results).map(parseFAQPage))
+  const parsedPages = await Promise.all(resolvePages(pages).map(parseFAQPage))
+  return parsedPages.filter(isFAQ)
 }
 
 export async function getBlockChildren(block_id: string): Promise<Block[]> {
