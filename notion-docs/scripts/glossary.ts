@@ -1,6 +1,9 @@
-import { RichTextItemResponse } from '@notionhq/client/build/src/api-endpoints'
-import { renderRichTexts } from './format'
-import { Block, Page, queryDatabase } from './notion'
+import { renderRichTexts, renderBlocks } from './format'
+import { queryDatabase } from './notion'
+
+import type { RichTextItemResponse } from '@notionhq/client/build/src/api-endpoints'
+import type { Block, Page } from './notion'
+import type { LinkableTerms } from './format'
 
 const glossaryDatabaseId = '3bad2594574f476f917d8080a6ec5ce7'
 
@@ -13,6 +16,12 @@ export interface Definition {
   url: string
   projects: Set<string>
   blocks: Block[]
+}
+
+interface RenderedDefinition {
+  term: string
+  definition: string
+  key: string
 }
 
 const isDefinition = (item: Definition | undefined): item is Definition => {
@@ -77,4 +86,23 @@ export async function lookupGlossaryTerms(): Promise<Definition[]> {
     database_id: glossaryDatabaseId,
   })
   return pages.map(parseGlossaryPage).filter(isDefinition)
+}
+
+export function renderDefinition(def: Definition, linkableTerms: LinkableTerms): RenderedDefinition {
+  const term = renderRichTexts(def.term, linkableTerms)
+  // remove all non-alphanumeric, non-space, and non-parentheses characters except for "$" and "-" from term
+  const formattedTerm = term.replace(/[^a-z0-9\s$-()-]/gi, '');
+  // remove all non-alphanumeric and non-space characters, convert to lowercase, and replace spaces with hyphens
+  // replace all attribute values surrounded by single quotes with double quotes
+  const dashDelimitedTermKey = formatGlossaryTermKey(def.term)
+
+  let renderedDef = renderBlocks(def.blocks, linkableTerms)
+  if (renderedDef.length == 0) {
+    renderedDef = renderRichTexts(def.definition, linkableTerms)
+  }
+  return {
+    term: formattedTerm,
+    definition: renderedDef,
+    key: dashDelimitedTermKey,
+  }
 }

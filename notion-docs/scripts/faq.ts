@@ -1,5 +1,9 @@
-import { RichTextItemResponse } from '@notionhq/client/build/src/api-endpoints'
-import { Block, Page, queryDatabase } from './notion'
+import { queryDatabase } from './notion'
+import { renderBlocks, renderRichTexts, stripCurlyQuotes } from './format'
+
+import type { RichTextItemResponse } from '@notionhq/client/build/src/api-endpoints'
+import type { Block, Page } from './notion'
+import type { LinkableTerms } from './format'
 
 const faqDatabaseId = 'a8a9af20f33d4cc1b32bbd2be8459733'
 
@@ -9,6 +13,11 @@ export interface FAQ {
   answer: RichTextItemResponse[]
   order: number
   blocks: Block[]
+}
+
+interface RenderedFAQ {
+  question: string
+  answer: string
 }
 
 const isFAQ = (item: FAQ | undefined): item is FAQ => {
@@ -82,4 +91,29 @@ export async function lookupProjectFAQ(
     },
   })
   return pages.map(parseFAQPage).filter(isFAQ)
+}
+
+export function organizeFAQ(questions: FAQ[]): Record<string, FAQ[]> {
+  let sections: Record<string, FAQ[]> = {}
+  for (let question of questions) {
+    if (!sections[question.section]) {
+      sections[question.section] = []
+    }
+    sections[question.section].push(question)
+  }
+  for (let section in sections) {
+    sections[section].sort((question1, question2): number => question1.order - question2.order)
+  }
+  return sections
+}
+
+export function renderFAQ(faq: FAQ, linkableTerms: LinkableTerms): RenderedFAQ {
+  let renderedAnswer = renderBlocks(faq.blocks, linkableTerms)
+  if (renderedAnswer.length == 0) {
+    renderedAnswer = renderRichTexts(faq.answer, linkableTerms)
+  }
+  return {
+    question: faq.question,
+    answer: renderedAnswer,
+  }
 }
