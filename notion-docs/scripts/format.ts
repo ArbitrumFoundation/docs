@@ -23,6 +23,15 @@ export function stripCurlyQuotes(input: string): string {
   .replaceAll(/[\u201C\u201D]/g, '"');
 }
 
+export function formatAnchor(text: RichTextItemResponse[]) {
+  // Safe to render without links since glossary terms can't have links
+  return renderRichTexts(text, {})
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/gi, '')
+      .split(' ')
+      .join('-')
+}
+
 class MissingPageError extends Error {
   constructor(public page: string) {
     super(`Link to unsupported page: ${page}`)

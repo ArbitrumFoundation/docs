@@ -1,5 +1,5 @@
 import { Client } from '@notionhq/client'
-import { renderRichTexts, renderBlocks } from './format'
+import { renderRichTexts, renderBlocks, formatAnchor } from './format'
 import { queryDatabaseWithBlocks } from './notion'
 
 import type { RichTextItemResponse, QueryDatabaseParameters } from '@notionhq/client/build/src/api-endpoints'
@@ -27,15 +27,6 @@ interface RenderedDefinition {
 
 const isDefinition = (item: Definition | undefined): item is Definition => {
   return !!item
-}
-
-export function formatGlossaryTermKey(term: RichTextItemResponse[]) {
-  // Safe to render without links since glossary terms can't have links
-  return renderRichTexts(term, {})
-      .toLowerCase()
-      .replace(/[^a-z0-9\s]/gi, '')
-      .split(' ')
-      .join('-')
 }
 
 function parseGlossaryPage(page: Page): Definition | undefined {
@@ -96,7 +87,7 @@ export function renderDefinition(def: Definition, linkableTerms: LinkableTerms):
   const formattedTerm = term.replace(/[^a-z0-9\s$-()-]/gi, '');
   // remove all non-alphanumeric and non-space characters, convert to lowercase, and replace spaces with hyphens
   // replace all attribute values surrounded by single quotes with double quotes
-  const dashDelimitedTermKey = formatGlossaryTermKey(def.term)
+  const dashDelimitedTermKey = formatAnchor(def.term)
 
   let renderedDef = renderBlocks(def.blocks, linkableTerms)
   if (renderedDef.length == 0) {
