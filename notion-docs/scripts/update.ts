@@ -1,7 +1,12 @@
-import { lookupProject, lookupProjectFAQ, lookupProjectDefinitions } from './notion'
-import type { Definition, FAQ, PageObjectProperty } from './notion'
+import type { Definition } from './glossary'
+import type { FAQ } from './faq'
+import type { PageObjectProperty } from './notion'
 import type { LinkableTerms } from './format'
-import { stripCurlyQuotes, renderBlocks, renderRichTexts, formatGlossaryTermKey, validDefinitionToPublish, DefinitionValidity } from './format'
+
+import { lookupProject } from './notion'
+import { stripCurlyQuotes, renderBlocks, renderRichTexts, validDefinitionToPublish, DefinitionValidity } from './format'
+import { formatGlossaryTermKey, lookupGlossaryTerms } from './glossary'
+import { lookupProjectFAQ } from './faq'
 import { PageObjectResponse } from '@notionhq/client/build/src/api-endpoints'
 
 import fs from 'fs'
@@ -18,7 +23,7 @@ function renderDefinition(def: Definition, linkableTerms: LinkableTerms): Render
   const formattedTerm = term.replace(/[^a-z0-9\s$-()-]/gi, '');
   // remove all non-alphanumeric and non-space characters, convert to lowercase, and replace spaces with hyphens
   // replace all attribute values surrounded by single quotes with double quotes
-  const dashDelimitedTermKey = formatGlossaryTermKey(def.term, linkableTerms)
+  const dashDelimitedTermKey = formatGlossaryTermKey(def.term)
 
   let renderedDef = renderBlocks(def.blocks, linkableTerms)
   if (renderedDef.length == 0) {
@@ -81,13 +86,13 @@ async function main() {
   console.log("Looking up FAQs")
   const faqs = await lookupProjectFAQ(governanceProject)
   console.log("Looking up Glossary")
-  let definitions = await lookupProjectDefinitions(governanceProject)
+  let definitions = await lookupGlossaryTerms()
   console.log("Rendering contents")
   const linkableTerms: LinkableTerms = {}
   for (let definition of definitions) {
     linkableTerms[definition.pageId] = {
       text: renderRichTexts(definition.term, linkableTerms),
-      anchor: formatGlossaryTermKey(definition.term, linkableTerms),
+      anchor: formatGlossaryTermKey(definition.term),
       page: '/dao-glossary',
       valid: validDefinitionToPublish(definition, governanceProject),
       notionURL: definition.url,
