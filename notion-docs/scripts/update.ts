@@ -64,21 +64,14 @@ function renderFAQ(faq: FAQ, linkableTerms: LinkableTerms): string {
   if (renderedAnswer.length == 0) {
     renderedAnswer = renderRichTexts(answer, linkableTerms)
   }
-  let out = ''
-  out += `<dt data-displayed-on='dao-glossary'>${stripCurlyQuotes(question)}</dt>\n`
-  out += `<dd data-displayed-on='dao-glossary'>${stripCurlyQuotes(renderedAnswer)}</dd>\n`
-  return out
-}
-
-function renderFAQs(faqs: FAQ[], linkableTerms: LinkableTerms): string {
-  return`<dl class="definition-list">\n${faqs.map(faq => renderFAQ(faq, linkableTerms)).join('')}</dl>\n`
+  return `### ${question}\n${renderedAnswer}\n\n`
 }
 
 function renderSections(sections: Record<string, FAQ[]>, linkableTerms: LinkableTerms): string {
   let out = ''
   for (let section in sections) {
-      out += `<h3 class="faq-section-title">${stripCurlyQuotes(section)}</h3>\n`
-      out += renderFAQs(sections[section], linkableTerms)
+      out += `## ${stripCurlyQuotes(section)}\n\n`
+      out += sections[section].map(faq => renderFAQ(faq, linkableTerms)).join('')
   }
   return out
 }
