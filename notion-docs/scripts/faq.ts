@@ -1,5 +1,5 @@
 import { queryDatabase } from './notion'
-import { renderBlocks, renderRichTexts, stripCurlyQuotes } from './format'
+import { renderBlocks, renderRichTexts } from './format'
 
 import type { RichTextItemResponse } from '@notionhq/client/build/src/api-endpoints'
 import type { Block, Page } from './notion'
@@ -9,7 +9,7 @@ const faqDatabaseId = 'a8a9af20f33d4cc1b32bbd2be8459733'
 
 export interface FAQ {
   section: string
-  question: string
+  question: RichTextItemResponse[]
   answer: RichTextItemResponse[]
   order: number
   blocks: Block[]
@@ -55,7 +55,7 @@ function parseFAQPage(page: Page): FAQ | undefined {
 
   return {
     section: section.select.name,
-    question: question.title[0].plain_text,
+    question: question.title,
     answer: answer.rich_text,
     order: order.number,
     blocks: page.blocks,
@@ -113,7 +113,7 @@ export function renderFAQ(faq: FAQ, linkableTerms: LinkableTerms): RenderedFAQ {
     renderedAnswer = renderRichTexts(faq.answer, linkableTerms)
   }
   return {
-    question: faq.question,
+    question: renderRichTexts(faq.question, linkableTerms),
     answer: renderedAnswer,
   }
 }
