@@ -134,9 +134,7 @@ article {
       }
     }
 
-    .hidden-glossary {
-      display: none;
-    }
+    
 
     .definition-list {
       dt {
@@ -148,12 +146,16 @@ article {
         margin-left: 0;
       }
     }
+  }
+}
 
-    .show-hidden-glossary {
-      >.hidden-glossary {
-        display: block;
-      }
-    }
+.hidden-glossary {
+  display: none;
+}
+
+.show-hidden-glossary {
+  >.hidden-glossary {
+    display: block;
   }
 }
 
