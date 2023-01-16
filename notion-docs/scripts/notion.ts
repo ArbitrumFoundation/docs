@@ -27,6 +27,7 @@ export interface Definition {
   publishable: string | undefined
   url: string
   projects: Set<string>
+  blocks: Block[]
 }
 
 export interface FAQ {
@@ -59,60 +60,62 @@ export async function lookupProject(name: string): Promise<string> {
   throw new Error('Project not found')
 }
 
+async function parseGlossaryPage(page: PageObjectResponse): Promise<Definition | undefined> {
+  const blocks = await getBlockChildren(page.id)
+  const title = page.properties['Term']
+  if (title.type != 'title') {
+    throw new Error('Expected title')
+  }
+
+  const definition = page.properties['Definition (HTML)']
+  if (definition.type != 'rich_text') {
+    throw new Error('Expected definition to be rich text')
+  }
+
+  const status = page.properties['Status']
+  if (status.type != 'status') {
+    throw new Error('Expected status to be status')
+  }
+
+  const publishable = page.properties['Publishable?']
+  if (publishable.type != 'select') {
+    throw new Error('Expected Publishable? to be select')
+  }
+
+  const projectsProp = page.properties['Project(s)']
+  if (projectsProp.type != 'relation') {
+    throw new Error('Expected Project(s) to be a relation')
+  }
+  const projectRelation = projectsProp.relation
+  const projects = new Set<string>()
+  for (let project of projectRelation) {
+    projects.add(project.id)
+  }
+
+  return {
+    pageId: page.id,
+    term: title.title,
+    definition: definition.rich_text,
+    status: status.status?.name,
+    publishable: publishable.select?.name,
+    url: page.url,
+    projects: projects,
+    blocks: blocks
+  }
+}
+
+const isDefinition = (item: Definition | undefined): item is Definition => {
+  return !!item
+}
+
 export async function lookupProjectDefinitions(
   projectId: string
 ): Promise<Definition[]> {
-  const results = await collectPaginatedAPI(notion.databases.query, {
+  const pages = await collectPaginatedAPI(notion.databases.query, {
     database_id: glossaryDatabaseId,
   })
-  const definitions: Definition[] = []
-  for (const page of results) {
-    if (!isFullPage(page)) {
-      throw new Error('Found non-full page')
-      continue
-    }
-
-    const title = page.properties['Term']
-    if (title.type != 'title') {
-      throw new Error('Expected title')
-    }
-
-    const definition = page.properties['Definition (HTML)']
-    if (definition.type != 'rich_text') {
-      throw new Error('Expected definition to be rich text')
-    }
-
-    const status = page.properties['Status']
-    if (status.type != 'status') {
-      throw new Error('Expected status to be status')
-    }
-
-    const publishable = page.properties['Publishable?']
-    if (publishable.type != 'select') {
-      throw new Error('Expected Publishable? to be select')
-    }
-
-    const projectsProp = page.properties['Project(s)']
-    if (projectsProp.type != 'relation') {
-      throw new Error('Expected Project(s) to be a relation')
-    }
-    const projectRelation = projectsProp.relation
-    const projects = new Set<string>()
-    for (let project of projectRelation) {
-      projects.add(project.id)
-    }
-
-    definitions.push({
-      pageId: page.id,
-      term: title.title,
-      definition: definition.rich_text,
-      status: status.status?.name,
-      publishable: publishable.select?.name,
-      url: page.url,
-      projects: projects,
-    })
-  }
-  return definitions
+  const parsedPages = await Promise.all(resolvePages(pages).map(parseGlossaryPage))
+  return parsedPages.filter(isDefinition)
 }
 
 function resolvePages(pages: GetPageResponse[]): PageObjectResponse[] {

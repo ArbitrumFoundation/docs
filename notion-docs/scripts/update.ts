@@ -19,9 +19,14 @@ function renderDefinition(def: Definition, linkableTerms: LinkableTerms): Render
   // remove all non-alphanumeric and non-space characters, convert to lowercase, and replace spaces with hyphens
   // replace all attribute values surrounded by single quotes with double quotes
   const dashDelimitedTermKey = formatGlossaryTermKey(def.term, linkableTerms)
+
+  let renderedDef = renderBlocks(def.blocks, linkableTerms)
+  if (renderedDef.length == 0) {
+    renderedDef = renderRichTexts(def.definition, linkableTerms)
+  }
   return {
     term: formattedTerm,
-    definition: renderRichTexts(def.definition, linkableTerms),
+    definition: renderedDef,
     key: dashDelimitedTermKey,
   }
 }
@@ -55,9 +60,9 @@ function organizeFAQ(questions: FAQ[]): Record<string, FAQ[]> {
 
 function renderFAQ(faq: FAQ, linkableTerms: LinkableTerms): string {
   let {question, answer} = faq
-  let renderedAnswer = renderRichTexts(answer, linkableTerms)
-  if (faq.blocks.length > 0) {
-    renderedAnswer = renderBlocks(faq.blocks, linkableTerms)
+  let renderedAnswer = renderBlocks(faq.blocks, linkableTerms)
+  if (renderedAnswer.length == 0) {
+    renderedAnswer = renderRichTexts(answer, linkableTerms)
   }
   let out = ''
   out += `<dt data-displayed-on='dao-glossary'>${stripCurlyQuotes(question)}</dt>\n`
@@ -80,14 +85,17 @@ function renderSections(sections: Record<string, FAQ[]>, linkableTerms: Linkable
 
 async function main() {
   const governanceProject = await lookupProject('Governance docs')
+  console.log("Looking up FAQs")
   const faqs = await lookupProjectFAQ(governanceProject)
+  console.log("Looking up Glossary")
   let definitions = await lookupProjectDefinitions(governanceProject)
+  console.log("Rendering contents")
   const linkableTerms: LinkableTerms = {}
   for (let definition of definitions) {
     linkableTerms[definition.pageId] = {
       text: renderRichTexts(definition.term, linkableTerms),
       anchor: formatGlossaryTermKey(definition.term, linkableTerms),
-      page: '../dao-glossary.md',
+      page: '/dao-glossary',
       valid: validDefinitionToPublish(definition, governanceProject),
       notionURL: definition.url,
     }

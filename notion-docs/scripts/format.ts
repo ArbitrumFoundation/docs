@@ -45,6 +45,25 @@ export function formatGlossaryTermKey(term: RichTextItemResponse[], linkableTerm
       .join('-')
 }
 
+function renderPageLink(page: string, linkableTerms: LinkableTerms) {
+  const link = linkableTerms[page]
+  if (!link) {
+    notion.pages.retrieve({page_id: page}).then(page => {
+      console.log("Missing page: ", page)
+    })
+    throw new Error(`Link to unsupported page ${page}`)
+  }
+  if (link.valid != DefinitionValidity.Valid) {
+    console.warn(`Ignoring link to doc with reason ${DefinitionValidity[link.valid]}: ${link.notionURL}`)
+    return link.text
+  }
+  let anchor = ''
+  if (link.anchor) {
+    anchor = `#${link.anchor}`
+  }
+  return `<a href="${link.page}${anchor}">${link.text}</a>`
+}
+
 export function renderRichText(res: RichTextItemResponse, linkableTerms: LinkableTerms, startOfLine=true): string {
   switch (res.type) {
   case 'text':
@@ -71,22 +90,7 @@ export function renderRichText(res: RichTextItemResponse, linkableTerms: Linkabl
         throw new Error(`Unhandled user: ${user}`)
       }
     case 'page':
-      const link = linkableTerms[mention.page.id]
-      if (!link) {
-        notion.pages.retrieve({page_id: mention.page.id}).then(page => {
-          console.log("Missing page: ", page)
-        })
-        throw new Error(`Link to unsupported page ${mention.page.id}`)
-      }
-      if (link.valid != DefinitionValidity.Valid) {
-        console.warn(`Ignoring link to doc with reason ${DefinitionValidity[link.valid]}: ${link.notionURL}`)
-        return link.text
-      }
-      let anchor = ''
-      if (link.anchor) {
-        anchor = `#${link.anchor}`
-      }
-      return `[${link.text}](${link.page}${anchor})`
+      return renderPageLink(mention.page.id, linkableTerms)
     default:
       throw new Error(`Unhandled mention type: ${mention.type}`)
     }
@@ -144,6 +148,14 @@ export function renderBlock(block: Block, linkableTerms: LinkableTerms, prevType
       return `<li>${renderRichTexts(blockResponse.bulleted_list_item.rich_text, linkableTerms)}${child}</li>`
     case 'code':
       return `\`\`\`${blockResponse.code.language}\n${renderRichTexts(blockResponse.code.rich_text, linkableTerms)}${child}\n\`\`\``
+    case 'link_to_page':
+      const link = blockResponse.link_to_page
+      switch (link.type) {
+      case 'page_id':
+        return renderPageLink(link.page_id, linkableTerms)
+      default:
+        throw new Error(`Unhandled link_to_page type: ${link.type}`)
+      }
     default:
       console.log(blockResponse)
       throw new Error(`Found block of unknown type ${blockResponse.type}`)
