@@ -53,8 +53,7 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
   - setup a `.env` file inside the notion-docs folder. The format is like an INI file.
   - the github action is using a package called dotenv which autoloads that and then process.env.NOTION_TOKEN is defined in the file
   - in it you can put NOTION_TOKEN=secret_ask_via_content_os_channel_in_slack in the with NOTION_TOKEN defined
-  - run `yarn update:glossary` in the notion-docs folder and glossary will be updated
-  - run `yarn update:faq` in the notion-docs folder and faq will be updated
+  - run `yarn update:all` in the `notion-docs` folder and both FAQ and Glossary will be updated
 - To run remotely:
   - you need to manually trigger the action
   - to trigger the action you go to https://github.com/CoolChainCo/docs/actions/workflows/update-glossary.yaml and then hit the "run workflow" button
