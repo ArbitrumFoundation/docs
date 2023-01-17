@@ -37,7 +37,7 @@ function renderSections(sections: Record<string, FAQ[]>, linkableTerms: Linkable
       out += sections[section]
         .map(faq => renderItem(faq, linkableTerms))
         .map(faq => {
-          return `### ${faq.title} ${faq.key}\n${faq.text}\n\n`
+          return `### ${faq.title} {#${faq.key}}\n${faq.text}\n\n`
         }).join('')
   }
   return out
@@ -89,8 +89,8 @@ async function generateFiles() {
   const linkableTerms: LinkableTerms = {}
   for (let definition of definitions) {
     linkableTerms[definition.pageId] = {
-      text: renderRichTexts(definition.title, {}),
-      anchor: formatAnchor(definition.title),
+      text: renderRichTexts(definition.title, linkableTerms, true),
+      anchor: formatAnchor(definition.title, linkableTerms),
       page: '/dao-glossary',
       valid: validDefinitionToPublish(definition, governanceProject),
       notionURL: definition.url,

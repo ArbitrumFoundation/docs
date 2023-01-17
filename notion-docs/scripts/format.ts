@@ -19,19 +19,17 @@ interface RenderedItem {
 
 export function renderItem(item: Item, linkableTerms: LinkableTerms): RenderedItem {
   try {
-    const title = renderRichTexts(item.title, linkableTerms)
-    // remove all non-alphanumeric, non-space, and non-parentheses characters except for "$" and "-" from term
-    const formattedTitle = title.replace(/[^a-z0-9\s$-()-]/gi, '');
+    const title = renderRichTexts(item.title, linkableTerms, false)
     // remove all non-alphanumeric and non-space characters, convert to lowercase, and replace spaces with hyphens
     // replace all attribute values surrounded by single quotes with double quotes
-    const dashDelimitedKey = formatAnchor(item.title)
+    const dashDelimitedKey = formatAnchor(item.title, linkableTerms)
 
     let renderedText = renderBlocks(item.blocks, linkableTerms)
     if (renderedText.length == 0) {
-      renderedText = renderRichTexts(item.text, linkableTerms)
+      renderedText = renderRichTexts(item.text, linkableTerms, true)
     }
     return {
-      title: formattedTitle,
+      title: title,
       text: renderedText,
       key: dashDelimitedKey,
     }
@@ -62,9 +60,9 @@ export function stripCurlyQuotes(input: string): string {
   .replaceAll(/[\u201C\u201D]/g, '"');
 }
 
-export function formatAnchor(text: RichTextItemResponse[]) {
+export function formatAnchor(text: RichTextItemResponse[], linkableTerms: LinkableTerms) {
   // Safe to render without links since glossary terms can't have links
-  return renderRichTexts(text, {})
+  return renderRichTexts(text, linkableTerms, false)
       .toLowerCase()
       .replace(/[^a-z0-9\s]/gi, '')
       .split(' ')
@@ -103,7 +101,15 @@ export async function handleRenderError(e: unknown, client: Client): Promise<boo
   return true
 }
 
-function renderPageLink(page: string, linkableTerms: LinkableTerms) {
+function renderLink(text: string, url: string, anchor: string, html: boolean) {
+  if (html) {
+    return `<a href="${url}${anchor}">${text}</a>`
+  } else {
+    return `[${text}](${url}${anchor})`
+  }
+}
+
+function renderPageLink(page: string, linkableTerms: LinkableTerms, html: boolean) {
   const link = linkableTerms[page]
   if (!link) {
     throw new MissingPageError(page)
@@ -116,24 +122,31 @@ function renderPageLink(page: string, linkableTerms: LinkableTerms) {
   if (link.anchor) {
     anchor = `#${link.anchor}`
   }
-  return `<a href="${link.page}${anchor}">${link.text}</a>`
+  return renderLink(link.text, link.page, anchor, html)
 }
 
-function renderRichText(res: RichTextItemResponse, linkableTerms: LinkableTerms, startOfLine=true): string {
+function renderRichText(res: RichTextItemResponse, linkableTerms: LinkableTerms, html: boolean, startOfLine: boolean): string {
   switch (res.type) {
   case 'text':
     let text = stripCurlyQuotes(res.text.content)
     if (res.text.link) {
-      text = `<a href='${res.text.link.url}'>${text}</a>`
+      text = renderLink(text, res.text.link.url, '', html)
     }
     if (res.annotations.code) {
-      if (startOfLine) {
-        text = `<code>{'${text}'}</code>`
+      if (html) {
+        if (startOfLine) {
+          text = `<code>{'${text}'}</code>`
+        } else {
+          text = `<code>${text}</code>`
+        }
       } else {
-        text = `<code>${text}</code>`
+        text = `\`${text}\``
       }
     }
-    return text.replaceAll('\n','<br />\n')
+    if (html) {
+      text = text.replaceAll('\n','<br />\n')
+    }
+    return text
   case 'mention':
     const mention = res.mention
     switch (mention.type) {
@@ -145,7 +158,7 @@ function renderRichText(res: RichTextItemResponse, linkableTerms: LinkableTerms,
         throw new Error(`Unhandled user: ${user}`)
       }
     case 'page':
-      return renderPageLink(mention.page.id, linkableTerms)
+      return renderPageLink(mention.page.id, linkableTerms, html)
     default:
       throw new Error(`Unhandled mention type: ${mention.type}`)
     }
@@ -155,14 +168,14 @@ function renderRichText(res: RichTextItemResponse, linkableTerms: LinkableTerms,
   }
 }
 
-export function renderRichTexts(texts: RichTextItemResponse[], linkableTerms: LinkableTerms): string {
+export function renderRichTexts(texts: RichTextItemResponse[], linkableTerms: LinkableTerms, html: boolean): string {
   let out = ''
   for (let text of texts) {
     let startOfLine = false
     if (out.length == 0 || out.slice(-1) == "\n") {
       startOfLine = true
     }
-    out += renderRichText(text, linkableTerms, startOfLine)
+    out += renderRichText(text, linkableTerms, html, startOfLine)
   }
   return out
 }
@@ -196,18 +209,18 @@ function renderBlock(block: Block, linkableTerms: LinkableTerms, prevType?: stri
   let body = (() => {
     switch (blockResponse.type) {
     case 'paragraph':
-      return `<p>${renderRichTexts(blockResponse.paragraph.rich_text, linkableTerms)}${child}</p>\n`
+      return `<p>${renderRichTexts(blockResponse.paragraph.rich_text, linkableTerms, true)}${child}</p>\n`
     case 'numbered_list_item':
-      return `<li>${renderRichTexts(blockResponse.numbered_list_item.rich_text, linkableTerms)}${child}</li>`
+      return `<li>${renderRichTexts(blockResponse.numbered_list_item.rich_text, linkableTerms, true)}${child}</li>`
     case 'bulleted_list_item':
-      return `<li>${renderRichTexts(blockResponse.bulleted_list_item.rich_text, linkableTerms)}${child}</li>`
+      return `<li>${renderRichTexts(blockResponse.bulleted_list_item.rich_text, linkableTerms, true)}${child}</li>`
     case 'code':
-      return `\`\`\`${blockResponse.code.language}\n${renderRichTexts(blockResponse.code.rich_text, linkableTerms)}${child}\n\`\`\``
+      return `\`\`\`${blockResponse.code.language}\n${renderRichTexts(blockResponse.code.rich_text, linkableTerms, true)}${child}\n\`\`\``
     case 'link_to_page':
       const link = blockResponse.link_to_page
       switch (link.type) {
       case 'page_id':
-        return renderPageLink(link.page_id, linkableTerms)
+        return renderPageLink(link.page_id, linkableTerms, true)
       default:
         throw new Error(`Unhandled link_to_page type: ${link.type}`)
       }
