@@ -62,7 +62,7 @@ The time period in which eligible <a href="/dao-glossary#arb">$ARB</a> token rec
 As opposed to Non-constitutional proposal. The stricter of the two types of proposals. Refer to <a href='#todo'>The Constitution of the Arbitrum DAO</a> for a more precise definition. (todo - ensure aligned with constitution - and/or reference constitution - ensure that these are updated because they're wrong - also ensure that we want to use this term - align with @Matt Pearring - could just refer to these as AIPs).
 
 ### Data Availability Committee (DAC) {#data-availability-committee-dac}
-<p>A permissioned set of parties responsible for enforcing data availability in an <a href="/dao-glossary#arbitrum-anytrust">Arbitrum AnyTrust</a> chain. See <a href='https://medium.com/offchainlabs/introducing-anytrust-chains-cheaper-faster-l2-chains-with-minimal-trust-assumptions-31def59eb8d7'>Introducing AnyTrust Chains: Cheaper, Faster L2 Chains with Minimal Trust Assumptions</a> to learn more.</p>
+<p>A permissioned set of parties responsible for enforcing data availability in an <a href="/dao-glossary#arbitrum-anytrust">Arbitrum AnyTrust</a> chain. See <a href="https://medium.com/offchainlabs/introducing-anytrust-chains-cheaper-faster-l2-chains-with-minimal-trust-assumptions-31def59eb8d7">Introducing AnyTrust Chains: Cheaper, Faster L2 Chains with Minimal Trust Assumptions</a> to learn more.</p>
 
 
 
