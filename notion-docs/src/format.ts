@@ -5,6 +5,7 @@ import type { Block } from './notion'
 export type LinkableTerms = Record<string, Reference>
 
 export interface Item {
+  pageId: string
   url: string
   title: RichTextItemResponse[]
   text: RichTextItemResponse[]

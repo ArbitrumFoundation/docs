@@ -8,7 +8,6 @@ import type { Item } from './format'
 const glossaryDatabaseId = '3bad2594574f476f917d8080a6ec5ce7'
 
 export interface Definition extends Item {
-  pageId: string
   status: string | undefined
   publishable: string | undefined
   projects: Set<string>

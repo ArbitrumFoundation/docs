@@ -46,6 +46,7 @@ function parseFAQPage(page: Page): FAQ | undefined {
   }
 
   return {
+    pageId: page.page.id,
     section: section.select.name,
     title: question.title,
     text: answer.rich_text,

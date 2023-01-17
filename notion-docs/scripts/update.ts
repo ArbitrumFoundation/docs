@@ -1,17 +1,16 @@
 import { Client } from '@notionhq/client'
-import { lookupProject } from '../src/project'
-import { lookupGlossaryTerms } from '../src/glossary'
-import { lookupFAQs, organizeFAQ } from '../src/faq'
 import {
+  lookupProject,
+  lookupGlossaryTerms,
+  lookupFAQs,
+  organizeFAQ,
   DefinitionValidity,
   renderItem,
   handleRenderError,
-} from '../src/format'
+} from '../src'
 import dotenv from 'dotenv'
 
-import type { FAQ } from '../src/faq'
-import type { Definition } from '../src/glossary'
-import type { LinkableTerms, RenderedItem } from '../src/format'
+import type { FAQ, Definition, LinkableTerms, RenderedItem } from '../src'
 
 import fs from 'fs'
 
