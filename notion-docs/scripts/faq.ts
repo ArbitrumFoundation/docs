@@ -18,7 +18,7 @@ interface RenderedFAQ {
 }
 
 const isFAQ = (item: FAQ | undefined): item is FAQ => {
-  return !!item
+  return Boolean(item)
 }
 
 function parseFAQPage(page: Page): FAQ | undefined {
@@ -38,7 +38,7 @@ function parseFAQPage(page: Page): FAQ | undefined {
     throw new Error('Expected select')
   }
   if (!section.select) {
-    throw new Error("All questions must have faq section")
+    throw new Error('All questions must have faq section')
   }
 
   const order = properties['FAQ order index']
@@ -60,7 +60,10 @@ function parseFAQPage(page: Page): FAQ | undefined {
   }
 }
 
-export async function lookupFAQs(client: Client, query: Omit<QueryDatabaseParameters, 'database_id'>): Promise<FAQ[]> {
+export async function lookupFAQs(
+  client: Client,
+  query: Omit<QueryDatabaseParameters, 'database_id'>
+): Promise<FAQ[]> {
   const pages = await queryDatabaseWithBlocks(client, {
     database_id: faqDatabaseId,
     ...query,
@@ -69,15 +72,17 @@ export async function lookupFAQs(client: Client, query: Omit<QueryDatabaseParame
 }
 
 export function organizeFAQ(questions: FAQ[]): Record<string, FAQ[]> {
-  let sections: Record<string, FAQ[]> = {}
-  for (let question of questions) {
+  const sections: Record<string, FAQ[]> = {}
+  for (const question of questions) {
     if (!sections[question.section]) {
       sections[question.section] = []
     }
     sections[question.section].push(question)
   }
-  for (let section in sections) {
-    sections[section].sort((question1, question2): number => question1.order - question2.order)
+  for (const section in sections) {
+    sections[section].sort(
+      (question1, question2): number => question1.order - question2.order
+    )
   }
   return sections
 }

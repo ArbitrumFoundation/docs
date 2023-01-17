@@ -21,7 +21,7 @@ interface RenderedDefinition {
 }
 
 const isDefinition = (item: Definition | undefined): item is Definition => {
-  return !!item
+  return Boolean(item)
 }
 
 function parseGlossaryPage(page: Page): Definition | undefined {
@@ -52,7 +52,7 @@ function parseGlossaryPage(page: Page): Definition | undefined {
   }
   const projectRelation = projectsProp.relation
   const projects = new Set<string>()
-  for (let project of projectRelation) {
+  for (const project of projectRelation) {
     projects.add(project.id)
   }
 
@@ -64,11 +64,14 @@ function parseGlossaryPage(page: Page): Definition | undefined {
     publishable: publishable.select?.name,
     url: page.page.url,
     projects: projects,
-    blocks: page.blocks
+    blocks: page.blocks,
   }
 }
 
-export async function lookupGlossaryTerms(client: Client, query: Omit<QueryDatabaseParameters, 'database_id'>): Promise<Definition[]> {
+export async function lookupGlossaryTerms(
+  client: Client,
+  query: Omit<QueryDatabaseParameters, 'database_id'>
+): Promise<Definition[]> {
   const pages = await queryDatabaseWithBlocks(client, {
     database_id: glossaryDatabaseId,
     ...query,

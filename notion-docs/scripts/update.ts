@@ -17,7 +17,10 @@ const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 })
 
-function formatDefinitions(definitions: Definition[], linkableTerms: LinkableTerms) {
+function formatDefinitions(
+  definitions: Definition[],
+  linkableTerms: LinkableTerms
+) {
   const renderedDefs = definitions.map(def => renderItem(def, linkableTerms))
   // sort the array alphabetically by term
   renderedDefs.sort((a, b) => a.title.localeCompare(b.title))
@@ -30,21 +33,31 @@ function formatDefinitions(definitions: Definition[], linkableTerms: LinkableTer
   return `<div class="hidden-glossary">\n\n${htmlArray.join('')}\n</div>\n`
 }
 
-function renderSections(sections: Record<string, FAQ[]>, linkableTerms: LinkableTerms): string {
+function renderSections(
+  sections: Record<string, FAQ[]>,
+  linkableTerms: LinkableTerms
+): string {
   let out = ''
-  for (let section in sections) {
-      out += `## ${section}\n\n`
-      out += sections[section]
-        .map(faq => renderItem(faq, linkableTerms))
-        .map(faq => {
-          return `### ${faq.title} {#${faq.key}}\n${faq.text}\n\n`
-        }).join('')
+  for (const section in sections) {
+    out += `## ${section}\n\n`
+    out += sections[section]
+      .map(faq => renderItem(faq, linkableTerms))
+      .map(faq => {
+        return `### ${faq.title} {#${faq.key}}\n${faq.text}\n\n`
+      })
+      .join('')
   }
   return out
 }
 
-export function validDefinitionToPublish(def: Definition, project: string): DefinitionValidity {
-  if (def.status != '4 - Continuously publishing' && def.status != '2 - Pending peer review') {
+export function validDefinitionToPublish(
+  def: Definition,
+  project: string
+): DefinitionValidity {
+  if (
+    def.status != '4 - Continuously publishing' &&
+    def.status != '2 - Pending peer review'
+  ) {
     return DefinitionValidity.NotReady
   }
   if (def.publishable != 'Publishable') {
@@ -58,7 +71,7 @@ export function validDefinitionToPublish(def: Definition, project: string): Defi
 
 async function generateFiles() {
   const governanceProject = await lookupProject(notion, 'Governance docs')
-  console.log("Looking up FAQs")
+  console.log('Looking up FAQs')
   const faqs = await lookupFAQs(notion, {
     filter: {
       and: [
@@ -83,11 +96,11 @@ async function generateFiles() {
       ],
     },
   })
-  console.log("Looking up Glossary")
-  let definitions = await lookupGlossaryTerms(notion, {})
-  console.log("Rendering contents")
+  console.log('Looking up Glossary')
+  const definitions = await lookupGlossaryTerms(notion, {})
+  console.log('Rendering contents')
   const linkableTerms: LinkableTerms = {}
-  for (let definition of definitions) {
+  for (const definition of definitions) {
     linkableTerms[definition.pageId] = {
       text: definition.title,
       anchor: definition.title,
@@ -99,7 +112,10 @@ async function generateFiles() {
   const sections = organizeFAQ(faqs)
   const sectionsHTML = renderSections(sections, linkableTerms)
   const publishedDefinitions = definitions.filter(def => {
-    return validDefinitionToPublish(def, governanceProject) == DefinitionValidity.Valid
+    return (
+      validDefinitionToPublish(def, governanceProject) ==
+      DefinitionValidity.Valid
+    )
   })
   const definitionsHTML = formatDefinitions(publishedDefinitions, linkableTerms)
   fs.writeFileSync('../docs/partials/_glossary-partial.md', definitionsHTML)
