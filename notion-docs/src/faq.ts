@@ -1,5 +1,6 @@
 import { Client } from '@notionhq/client'
 import { queryDatabaseWithBlocks } from './notion'
+import { parseItemPage } from './item'
 
 import type { QueryDatabaseParameters } from '@notionhq/client/build/src/api-endpoints'
 import type { Page } from './notion'
@@ -17,37 +18,9 @@ const isFAQ = (item: FAQ | undefined): item is FAQ => {
 }
 
 function parseFAQPage(page: Page): FAQ | undefined {
+  const item = parseItemPage(page, 'Question', 'Short answer (HTML)')
   const properties = page.page.properties
-  const question = properties['Question']
-  if (question.type != 'title') {
-    throw new Error('Expected title')
-  }
-
-  const answer = properties['Short answer (HTML)']
-  if (answer.type != 'rich_text') {
-    throw new Error('Expected definition')
-  }
-
-  const status = properties['Status']
-  if (status.type != 'status') {
-    throw new Error('Expected status to be status')
-  }
-
-  const publishable = properties['Publishable?']
-  if (publishable.type != 'select') {
-    throw new Error('Expected Publishable? to be select')
-  }
-
-  const projectsProp = properties['Project(s)']
-  if (projectsProp.type != 'relation') {
-    throw new Error('Expected Project(s) to be a relation')
-  }
-  const projectRelation = projectsProp.relation
-  const projects = new Set<string>()
-  for (const project of projectRelation) {
-    projects.add(project.id)
-  }
-
+  
   const section = properties['FAQ section']
   if (section.type != 'select') {
     throw new Error('Expected select')
@@ -66,16 +39,9 @@ function parseFAQPage(page: Page): FAQ | undefined {
   }
 
   return {
-    pageId: page.page.id,
+    ...item,
     section: section.select.name,
-    title: question.title,
-    text: answer.rich_text,
-    status: status.status?.name,
-    publishable: publishable.select?.name,
     order: order.number,
-    url: page.page.url,
-    projects: projects,
-    blocks: page.blocks,
   }
 }
 

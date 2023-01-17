@@ -8,7 +8,7 @@ import {
   renderBlocks,
   MissingPageError,
 } from './format'
-import type { Block } from './notion'
+import type { Block, Page } from './notion'
 
 export interface KnowledgeItem {
   pageId: string
@@ -81,4 +81,48 @@ export async function handleRenderError(
     )
   }
   return true
+}
+
+export function parseItemPage(page: Page, titleTerm: string, textTerm: string): KnowledgeItem {
+  const properties = page.page.properties
+  const title = properties[titleTerm]
+  if (title.type != 'title') {
+    throw new Error('Expected title')
+  }
+
+  const definition = properties[textTerm]
+  if (definition.type != 'rich_text') {
+    throw new Error('Expected text term to be rich text')
+  }
+
+  const status = properties['Status']
+  if (status.type != 'status') {
+    throw new Error('Expected status to be status')
+  }
+
+  const publishable = properties['Publishable?']
+  if (publishable.type != 'select') {
+    throw new Error('Expected Publishable? to be select')
+  }
+
+  const projectsProp = properties['Project(s)']
+  if (projectsProp.type != 'relation') {
+    throw new Error('Expected Project(s) to be a relation')
+  }
+  const projectRelation = projectsProp.relation
+  const projects = new Set<string>()
+  for (const project of projectRelation) {
+    projects.add(project.id)
+  }
+
+  return {
+    pageId: page.page.id,
+    title: title.title,
+    text: definition.rich_text,
+    status: status.status?.name,
+    publishable: publishable.select?.name,
+    url: page.page.url,
+    projects: projects,
+    blocks: page.blocks,
+  }
 }
