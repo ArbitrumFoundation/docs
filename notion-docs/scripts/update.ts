@@ -17,6 +17,10 @@ const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 })
 
+function renderItem(item: RenderedItem): string {
+  return `### ${item.title} {#${item.key}}\n${item.text}\n\n`
+}
+
 function formatDefinitions(
   definitions: Definition[],
   linkableTerms: LinkableTerms
@@ -25,9 +29,7 @@ function formatDefinitions(
   // sort the array alphabetically by term
   renderedDefs.sort((a, b) => a.title.localeCompare(b.title))
 
-  const htmlArray = renderedDefs.map(item => {
-    return `### ${item.title} {#${item.key}}\n${item.text}\n\n`
-  })
+  const htmlArray = renderedDefs.map(renderItem)
 
   // wrap the HTML strings in a <dl> element with a class of "hidden-glossary-list"
   return `<div class="hidden-glossary">\n\n${htmlArray.join('')}\n</div>\n`
@@ -42,9 +44,7 @@ function renderSections(
     out += `## ${section}\n\n`
     out += sections[section]
       .map(faq => renderItem(faq, linkableTerms))
-      .map(faq => {
-        return `### ${faq.title} {#${faq.key}}\n${faq.text}\n\n`
-      })
+      .map(renderItem)
       .join('')
   }
   return out
