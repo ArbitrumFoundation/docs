@@ -13,6 +13,7 @@ import dotenv from 'dotenv'
 import type {
   FAQ,
   Definition,
+  KnowledgeItem,
   LinkableTerms,
   RenderedKnowledgeItem,
 } from '../src'
@@ -60,20 +61,20 @@ function renderSections(
   return out
 }
 
-export function validDefinitionToPublish(
-  def: Definition,
+export function validKnowledgeItemToPublish(
+  item: KnowledgeItem,
   project: string
 ): DefinitionValidity {
   if (
-    def.status != '4 - Continuously publishing' &&
-    def.status != '2 - Pending peer review'
+    item.status != '4 - Continuously publishing' &&
+    item.status != '2 - Pending peer review'
   ) {
     return DefinitionValidity.NotReady
   }
-  if (def.publishable != 'Publishable') {
+  if (item.publishable != 'Publishable') {
     return DefinitionValidity.NotPublishable
   }
-  if (!def.projects.has(project)) {
+  if (!item.projects.has(project)) {
     return DefinitionValidity.WrongProject
   }
   return DefinitionValidity.Valid
@@ -115,7 +116,7 @@ async function generateFiles() {
       text: definition.title,
       anchor: definition.title,
       page: '/dao-glossary',
-      valid: validDefinitionToPublish(definition, governanceProject),
+      valid: validKnowledgeItemToPublish(definition, governanceProject),
       notionURL: definition.url,
     }
   }
@@ -123,7 +124,7 @@ async function generateFiles() {
   const sectionsHTML = renderSections(sections, linkableTerms)
   const publishedDefinitions = definitions.filter(def => {
     return (
-      validDefinitionToPublish(def, governanceProject) ==
+      validKnowledgeItemToPublish(def, governanceProject) ==
       DefinitionValidity.Valid
     )
   })
