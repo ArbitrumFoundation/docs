@@ -1,13 +1,17 @@
 import { Client } from '@notionhq/client'
-import { lookupProject } from './project'
-import { lookupGlossaryTerms } from './glossary'
-import { lookupFAQs, organizeFAQ } from './faq'
-import { DefinitionValidity, renderItem, handleRenderError } from './format'
+import { lookupProject } from '../src/project'
+import { lookupGlossaryTerms } from '../src/glossary'
+import { lookupFAQs, organizeFAQ } from '../src/faq'
+import {
+  DefinitionValidity,
+  renderItem,
+  handleRenderError,
+} from '../src/format'
 import dotenv from 'dotenv'
 
-import type { FAQ } from './faq'
-import type { Definition } from './glossary'
-import type { LinkableTerms } from './format'
+import type { FAQ } from '../src/faq'
+import type { Definition } from '../src/glossary'
+import type { LinkableTerms, RenderedItem } from '../src/format'
 
 import fs from 'fs'
 
@@ -17,7 +21,7 @@ const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 })
 
-function renderItem(item: RenderedItem): string {
+function printItem(item: RenderedItem): string {
   return `### ${item.title} {#${item.key}}\n${item.text}\n\n`
 }
 
@@ -29,7 +33,7 @@ function formatDefinitions(
   // sort the array alphabetically by term
   renderedDefs.sort((a, b) => a.title.localeCompare(b.title))
 
-  const htmlArray = renderedDefs.map(renderItem)
+  const htmlArray = renderedDefs.map(printItem)
 
   // wrap the HTML strings in a <dl> element with a class of "hidden-glossary-list"
   return `<div class="hidden-glossary">\n\n${htmlArray.join('')}\n</div>\n`
@@ -44,7 +48,7 @@ function renderSections(
     out += `## ${section}\n\n`
     out += sections[section]
       .map(faq => renderItem(faq, linkableTerms))
-      .map(renderItem)
+      .map(printItem)
       .join('')
   }
   return out

@@ -11,7 +11,7 @@ export interface Item {
   blocks: Block[]
 }
 
-interface RenderedItem {
+export interface RenderedItem {
   title: string
   text: string
   key: string

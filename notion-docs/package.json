@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "update:all": "ts-node ./scripts/update.ts",
-    "format": "prettier --config .prettierrc.js 'scripts/**/*.ts' --write",
+    "format": "prettier --config .prettierrc.js 'src/**/*.ts' 'scripts/**/*.ts' --write",
     "lint": "eslint . --ext .ts"
   },
   "dependencies": {
