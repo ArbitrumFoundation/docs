@@ -4,16 +4,13 @@ import { renderBlocks, renderRichTexts } from './format'
 
 import type { RichTextItemResponse, QueryDatabaseParameters } from '@notionhq/client/build/src/api-endpoints'
 import type { Block, Page } from './notion'
-import type { LinkableTerms } from './format'
+import type { LinkableTerms, Item } from './format'
 
 const faqDatabaseId = 'a8a9af20f33d4cc1b32bbd2be8459733'
 
-export interface FAQ {
+export interface FAQ extends Item {
   section: string
-  question: RichTextItemResponse[]
-  answer: RichTextItemResponse[]
   order: number
-  blocks: Block[]
 }
 
 interface RenderedFAQ {
@@ -56,10 +53,11 @@ function parseFAQPage(page: Page): FAQ | undefined {
 
   return {
     section: section.select.name,
-    question: question.title,
-    answer: answer.rich_text,
+    title: question.title,
+    text: answer.rich_text,
     order: order.number,
     blocks: page.blocks,
+    url: page.page.url,
   }
 }
 
@@ -83,15 +81,4 @@ export function organizeFAQ(questions: FAQ[]): Record<string, FAQ[]> {
     sections[section].sort((question1, question2): number => question1.order - question2.order)
   }
   return sections
-}
-
-export function renderFAQ(faq: FAQ, linkableTerms: LinkableTerms): RenderedFAQ {
-  let renderedAnswer = renderBlocks(faq.blocks, linkableTerms)
-  if (renderedAnswer.length == 0) {
-    renderedAnswer = renderRichTexts(faq.answer, linkableTerms)
-  }
-  return {
-    question: renderRichTexts(faq.question, linkableTerms),
-    answer: renderedAnswer,
-  }
 }

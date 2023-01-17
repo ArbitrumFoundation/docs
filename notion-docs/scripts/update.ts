@@ -1,8 +1,8 @@
 import { Client } from '@notionhq/client'
 import { lookupProject } from './project'
-import { lookupGlossaryTerms, renderDefinition } from './glossary'
-import { lookupFAQs, organizeFAQ, renderFAQ } from './faq'
-import { renderRichTexts, formatAnchor, DefinitionValidity } from './format'
+import { lookupGlossaryTerms } from './glossary'
+import { lookupFAQs, organizeFAQ } from './faq'
+import { renderRichTexts, formatAnchor, DefinitionValidity, renderItem, handleRenderError } from './format'
 import dotenv from 'dotenv'
 
 import type { FAQ } from './faq'
@@ -18,12 +18,12 @@ const notion = new Client({
 })
 
 function formatDefinitions(definitions: Definition[], linkableTerms: LinkableTerms) {
-  const renderedDefs = definitions.map(def => renderDefinition(def, linkableTerms))
+  const renderedDefs = definitions.map(def => renderItem(def, linkableTerms))
   // sort the array alphabetically by term
-  renderedDefs.sort((a, b) => a.term.localeCompare(b.term))
+  renderedDefs.sort((a, b) => a.title.localeCompare(b.title))
 
   const htmlArray = renderedDefs.map(item => {
-    return `### ${item.term} {#${item.key}}\n${item.definition}\n\n`
+    return `### ${item.title} {#${item.key}}\n${item.text}\n\n`
   })
 
   // wrap the HTML strings in a <dl> element with a class of "hidden-glossary-list"
@@ -35,9 +35,9 @@ function renderSections(sections: Record<string, FAQ[]>, linkableTerms: Linkable
   for (let section in sections) {
       out += `## ${section}\n\n`
       out += sections[section]
-        .map(faq => renderFAQ(faq, linkableTerms))
+        .map(faq => renderItem(faq, linkableTerms))
         .map(faq => {
-          return `### ${faq.question}\n${faq.answer}\n\n`
+          return `### ${faq.title} ${faq.key}\n${faq.text}\n\n`
         }).join('')
   }
   return out
@@ -56,7 +56,7 @@ export function validDefinitionToPublish(def: Definition, project: string): Defi
   return DefinitionValidity.Valid
 }
 
-async function main() {
+async function generateFiles() {
   const governanceProject = await lookupProject(notion, 'Governance docs')
   console.log("Looking up FAQs")
   const faqs = await lookupFAQs(notion, {
@@ -89,8 +89,8 @@ async function main() {
   const linkableTerms: LinkableTerms = {}
   for (let definition of definitions) {
     linkableTerms[definition.pageId] = {
-      text: renderRichTexts(definition.term, {}),
-      anchor: formatAnchor(definition.term),
+      text: renderRichTexts(definition.title, {}),
+      anchor: formatAnchor(definition.title),
       page: '/dao-glossary',
       valid: validDefinitionToPublish(definition, governanceProject),
       notionURL: definition.url,
@@ -106,9 +106,20 @@ async function main() {
   fs.writeFileSync('../docs/partials/_faq-partial.md', sectionsHTML)
 }
 
+async function main() {
+  try {
+    await generateFiles()
+  } catch (e: unknown) {
+    if (await handleRenderError(e, notion)) {
+      process.exit(1)
+    }
+    throw e
+  }
+}
+
 main()
   .then(() => process.exit(0))
   .catch(err => {
     console.error(err)
-    process.exitCode = 1
+    process.exit(1)
   })

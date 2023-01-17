@@ -1,5 +1,44 @@
 import { RichTextItemResponse } from '@notionhq/client/build/src/api-endpoints'
+import { Client, isFullPage } from '@notionhq/client'
 import type { Block } from './notion'
+
+export type LinkableTerms = Record<string, Reference>
+
+export interface Item {
+  url: string
+  title: RichTextItemResponse[]
+  text: RichTextItemResponse[]
+  blocks: Block[]
+}
+
+interface RenderedItem {
+  title: string
+  text: string
+  key: string
+}
+
+export function renderItem(item: Item, linkableTerms: LinkableTerms): RenderedItem {
+  try {
+    const title = renderRichTexts(item.title, linkableTerms)
+    // remove all non-alphanumeric, non-space, and non-parentheses characters except for "$" and "-" from term
+    const formattedTitle = title.replace(/[^a-z0-9\s$-()-]/gi, '');
+    // remove all non-alphanumeric and non-space characters, convert to lowercase, and replace spaces with hyphens
+    // replace all attribute values surrounded by single quotes with double quotes
+    const dashDelimitedKey = formatAnchor(item.title)
+
+    let renderedText = renderBlocks(item.blocks, linkableTerms)
+    if (renderedText.length == 0) {
+      renderedText = renderRichTexts(item.text, linkableTerms)
+    }
+    return {
+      title: formattedTitle,
+      text: renderedText,
+      key: dashDelimitedKey,
+    }
+  } catch(e) {
+    throw new RenderItemError(item, e)
+  }
+}
 
 export enum DefinitionValidity {
     Valid,
@@ -15,7 +54,7 @@ interface Reference {
   valid: DefinitionValidity
   notionURL: string
 }
-export type LinkableTerms = Record<string, Reference>
+
 
 export function stripCurlyQuotes(input: string): string {
   return input
@@ -32,11 +71,36 @@ export function formatAnchor(text: RichTextItemResponse[]) {
       .join('-')
 }
 
-class MissingPageError extends Error {
+export class MissingPageError extends Error {
   constructor(public page: string) {
     super(`Link to unsupported page: ${page}`)
     this.name = "MissingPageError"
   }
+}
+
+export class RenderItemError extends Error {
+  constructor(public item: Item, public error: any) {
+    super('Failed rendering item')
+    this.name = "RenderItemError"
+  }
+}
+
+export async function handleRenderError(e: unknown, client: Client): Promise<boolean> {
+  if (!(e instanceof RenderItemError)) {
+    return false
+  }
+  console.error(`Error while rendering item: ${e.item.url}`)
+  const wrappedError = e.error
+  if (!(wrappedError instanceof MissingPageError)) {
+    return false
+  }
+  const page = await client.pages.retrieve({page_id: wrappedError.page})
+  if (!isFullPage(page)) {
+    console.error(`Failed due to missing page ${page.id} which is unaccessable`)
+  } else {
+    console.error(`Failed due to missing page ${page.id} at url ${page.url} being unaccessable`)
+  }
+  return true
 }
 
 function renderPageLink(page: string, linkableTerms: LinkableTerms) {

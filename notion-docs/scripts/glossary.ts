@@ -4,19 +4,15 @@ import { queryDatabaseWithBlocks } from './notion'
 
 import type { RichTextItemResponse, QueryDatabaseParameters } from '@notionhq/client/build/src/api-endpoints'
 import type { Block, Page } from './notion'
-import type { LinkableTerms } from './format'
+import type { LinkableTerms, Item } from './format'
 
 const glossaryDatabaseId = '3bad2594574f476f917d8080a6ec5ce7'
 
-export interface Definition {
+export interface Definition extends Item {
   pageId: string
-  term: RichTextItemResponse[]
-  definition: RichTextItemResponse[]
   status: string | undefined
   publishable: string | undefined
-  url: string
   projects: Set<string>
-  blocks: Block[]
 }
 
 interface RenderedDefinition {
@@ -63,8 +59,8 @@ function parseGlossaryPage(page: Page): Definition | undefined {
 
   return {
     pageId: page.page.id,
-    term: title.title,
-    definition: definition.rich_text,
+    title: title.title,
+    text: definition.rich_text,
     status: status.status?.name,
     publishable: publishable.select?.name,
     url: page.page.url,
@@ -79,23 +75,4 @@ export async function lookupGlossaryTerms(client: Client, query: Omit<QueryDatab
     ...query,
   })
   return pages.map(parseGlossaryPage).filter(isDefinition)
-}
-
-export function renderDefinition(def: Definition, linkableTerms: LinkableTerms): RenderedDefinition {
-  const term = renderRichTexts(def.term, linkableTerms)
-  // remove all non-alphanumeric, non-space, and non-parentheses characters except for "$" and "-" from term
-  const formattedTerm = term.replace(/[^a-z0-9\s$-()-]/gi, '');
-  // remove all non-alphanumeric and non-space characters, convert to lowercase, and replace spaces with hyphens
-  // replace all attribute values surrounded by single quotes with double quotes
-  const dashDelimitedTermKey = formatAnchor(def.term)
-
-  let renderedDef = renderBlocks(def.blocks, linkableTerms)
-  if (renderedDef.length == 0) {
-    renderedDef = renderRichTexts(def.definition, linkableTerms)
-  }
-  return {
-    term: formattedTerm,
-    definition: renderedDef,
-    key: dashDelimitedTermKey,
-  }
 }
