@@ -3,11 +3,11 @@ import { queryDatabaseWithBlocks } from './notion'
 
 import type { QueryDatabaseParameters } from '@notionhq/client/build/src/api-endpoints'
 import type { Page } from './notion'
-import type { Item } from './format'
+import type { KnowledgeItem } from './format'
 
 const glossaryDatabaseId = '3bad2594574f476f917d8080a6ec5ce7'
 
-export interface Definition extends Item {
+export interface Definition extends KnowledgeItem {
   status: string | undefined
   publishable: string | undefined
   projects: Set<string>

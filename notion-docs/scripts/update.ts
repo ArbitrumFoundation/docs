@@ -5,12 +5,17 @@ import {
   lookupFAQs,
   organizeFAQ,
   DefinitionValidity,
-  renderItem,
+  renderKnowledgeItem,
   handleRenderError,
 } from '../src'
 import dotenv from 'dotenv'
 
-import type { FAQ, Definition, LinkableTerms, RenderedItem } from '../src'
+import type {
+  FAQ,
+  Definition,
+  LinkableTerms,
+  RenderedKnowledgeItem,
+} from '../src'
 
 import fs from 'fs'
 
@@ -20,7 +25,7 @@ const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 })
 
-function printItem(item: RenderedItem): string {
+function printItem(item: RenderedKnowledgeItem): string {
   return `### ${item.title} {#${item.key}}\n${item.text}\n\n`
 }
 
@@ -28,7 +33,9 @@ function formatDefinitions(
   definitions: Definition[],
   linkableTerms: LinkableTerms
 ) {
-  const renderedDefs = definitions.map(def => renderItem(def, linkableTerms))
+  const renderedDefs = definitions.map(def =>
+    renderKnowledgeItem(def, linkableTerms)
+  )
   // sort the array alphabetically by term
   renderedDefs.sort((a, b) => a.title.localeCompare(b.title))
 
@@ -46,7 +53,7 @@ function renderSections(
   for (const section in sections) {
     out += `## ${section}\n\n`
     out += sections[section]
-      .map(faq => renderItem(faq, linkableTerms))
+      .map(faq => renderKnowledgeItem(faq, linkableTerms))
       .map(printItem)
       .join('')
   }

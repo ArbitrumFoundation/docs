@@ -4,7 +4,7 @@ import type { Block } from './notion'
 
 export type LinkableTerms = Record<string, Reference>
 
-export interface Item {
+export interface KnowledgeItem {
   pageId: string
   url: string
   title: RichTextItemResponse[]
@@ -12,7 +12,7 @@ export interface Item {
   blocks: Block[]
 }
 
-export interface RenderedItem {
+export interface RenderedKnowledgeItem {
   title: string
   text: string
   key: string
@@ -31,10 +31,10 @@ enum RenderMode {
   Plain,
 }
 
-export function renderItem(
-  item: Item,
+export function renderKnowledgeItem(
+  item: KnowledgeItem,
   linkableTerms: LinkableTerms
-): RenderedItem {
+): RenderedKnowledgeItem {
   try {
     const title = renderRichTexts(
       item.title,
@@ -53,7 +53,7 @@ export function renderItem(
       key: dashDelimitedKey,
     }
   } catch (e) {
-    throw new RenderItemError(item, e)
+    throw new RenderKnowledgeItemError(item, e)
   }
 }
 
@@ -90,10 +90,10 @@ export class MissingPageError extends Error {
   }
 }
 
-export class RenderItemError extends Error {
-  constructor(public item: Item, public error: any) {
+export class RenderKnowledgeItemError extends Error {
+  constructor(public item: KnowledgeItem, public error: any) {
     super('Failed rendering item')
-    this.name = 'RenderItemError'
+    this.name = 'RenderKnowledgeItemError'
   }
 }
 
@@ -101,7 +101,7 @@ export async function handleRenderError(
   e: unknown,
   client: Client
 ): Promise<boolean> {
-  if (!(e instanceof RenderItemError)) {
+  if (!(e instanceof RenderKnowledgeItemError)) {
     return false
   }
   console.error(`Error while rendering item: ${e.item.url}`)
