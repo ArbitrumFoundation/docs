@@ -3,18 +3,13 @@ import { queryDatabaseWithBlocks } from './notion'
 
 import type { QueryDatabaseParameters } from '@notionhq/client/build/src/api-endpoints'
 import type { Page } from './notion'
-import type { LinkableTerms, Item } from './format'
+import type { Item } from './format'
 
 const faqDatabaseId = 'a8a9af20f33d4cc1b32bbd2be8459733'
 
 export interface FAQ extends Item {
   section: string
   order: number
-}
-
-interface RenderedFAQ {
-  question: string
-  answer: string
 }
 
 const isFAQ = (item: FAQ | undefined): item is FAQ => {

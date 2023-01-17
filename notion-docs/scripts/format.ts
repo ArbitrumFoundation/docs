@@ -169,7 +169,7 @@ function renderRichText(
   startOfLine: boolean
 ): string {
   switch (res.type) {
-    case 'text':
+    case 'text': {
       let text = stripCurlyQuotes(res.text.content)
       if (res.text.link) {
         text = renderLink(text, res.text.link.url, '', renderMode)
@@ -194,22 +194,24 @@ function renderRichText(
         text = text.replaceAll('\n', '<br />\n')
       }
       return text
-    case 'mention':
+    }
+    case 'mention': {
       const mention = res.mention
       switch (mention.type) {
-        case 'user':
+        case 'user': {
           const user = mention.user
           if ('type' in user) {
             return `@${user.name}`
           } else {
             throw new Error(`Unhandled user: ${user}`)
           }
+        }
         case 'page':
           return renderPageLink(mention.page.id, linkableTerms, renderMode)
         default:
           throw new Error(`Unhandled mention type: ${mention.type}`)
       }
-
+    }
     default:
       throw new Error(`Unhandled rich text type: ${res.type}`)
   }
@@ -300,7 +302,7 @@ function renderBlock(
           linkableTerms,
           RenderMode.HTML
         )}${child}\n\`\`\``
-      case 'link_to_page':
+      case 'link_to_page': {
         const link = blockResponse.link_to_page
         switch (link.type) {
           case 'page_id':
@@ -308,6 +310,7 @@ function renderBlock(
           default:
             throw new Error(`Unhandled link_to_page type: ${link.type}`)
         }
+      }
       default:
         console.log(blockResponse)
         throw new Error(`Found block of unknown type ${blockResponse.type}`)
