@@ -180,12 +180,3 @@ import FaqPartial from '@site/docs/partials/_faq-partial.md';
 
 <a id='footnote-1'>1.</a> See our <a href='https://gas.arbitrum.io/'>gas cost estimator</a> and <a href='https://l2fees.info/'>L2Fees</a> for more information.<br/>
 <a id='footnote-2'>2.</a> todo:qqq
-
-
-import GlossaryPartial from '@site/docs/partials/_glossary-partial.md';
-
-<GlossaryPartial />
-
-import {Quicklooks} from '@site/src/components/Quicklooks';
-
-<Quicklooks />
