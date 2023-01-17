@@ -60,13 +60,13 @@ interface Reference {
 }
 
 
-export function stripCurlyQuotes(input: string): string {
+function stripCurlyQuotes(input: string): string {
   return input
   .replaceAll(/[\u2018\u2019]/g, "'")
   .replaceAll(/[\u201C\u201D]/g, '"');
 }
 
-export function formatAnchor(text: RichTextItemResponse[], linkableTerms: LinkableTerms) {
+function formatAnchor(text: RichTextItemResponse[], linkableTerms: LinkableTerms) {
   // Safe to render without links since glossary terms can't have links
   return renderRichTexts(text, linkableTerms, RenderMode.Plain)
       .toLowerCase()
@@ -183,7 +183,7 @@ function renderRichText(res: RichTextItemResponse, linkableTerms: LinkableTerms,
   }
 }
 
-export function renderRichTexts(texts: RichTextItemResponse[], linkableTerms: LinkableTerms, renderMode: RenderMode): string {
+function renderRichTexts(texts: RichTextItemResponse[], linkableTerms: LinkableTerms, renderMode: RenderMode): string {
   let out = ''
   for (let text of texts) {
     let startOfLine = false
@@ -248,7 +248,7 @@ function renderBlock(block: Block, linkableTerms: LinkableTerms, prevType?: stri
 }
 
 
-export function renderBlocks(blocks: Block[], linkableTerms: LinkableTerms): string {
+function renderBlocks(blocks: Block[], linkableTerms: LinkableTerms): string {
   let out = ''
   let prevType: string | undefined
   let i = 0
