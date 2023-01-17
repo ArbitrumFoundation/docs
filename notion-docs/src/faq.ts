@@ -26,7 +26,8 @@ function parseFAQPage(page: Page): FAQ | undefined {
     throw new Error('Expected select')
   }
   if (!section.select) {
-    throw new Error('All questions must have faq section')
+    console.warn(`Ignoring question without section: ${page.page.url}`)
+    return undefined
   }
 
   const order = properties['FAQ order index']

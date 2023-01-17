@@ -7,6 +7,7 @@ import {
   DefinitionValidity,
   renderKnowledgeItem,
   handleRenderError,
+  knowledgeItemValidity,
 } from '../src'
 import dotenv from 'dotenv'
 
@@ -61,25 +62,6 @@ function renderSections(
   return out
 }
 
-export function validKnowledgeItemToPublish(
-  item: KnowledgeItem,
-  project: string
-): DefinitionValidity {
-  if (
-    item.status != '4 - Continuously publishing' &&
-    item.status != '2 - Pending peer review'
-  ) {
-    return DefinitionValidity.NotReady
-  }
-  if (item.publishable != 'Publishable') {
-    return DefinitionValidity.NotPublishable
-  }
-  if (!item.projects.has(project)) {
-    return DefinitionValidity.WrongProject
-  }
-  return DefinitionValidity.Valid
-}
-
 async function generateFiles() {
   const governanceProject = await lookupProject(notion, 'Governance docs')
   console.log('Looking up FAQs')
@@ -90,12 +72,6 @@ async function generateFiles() {
           property: 'Project(s)',
           relation: {
             contains: governanceProject,
-          },
-        },
-        {
-          property: 'Status',
-          status: {
-            does_not_equal: '1 - Drafting',
           },
         },
         {
@@ -111,23 +87,30 @@ async function generateFiles() {
   const definitions = await lookupGlossaryTerms(notion, {})
   console.log('Rendering contents')
   const linkableTerms: LinkableTerms = {}
-  for (const definition of definitions) {
-    linkableTerms[definition.pageId] = {
-      text: definition.title,
-      anchor: definition.title,
-      page: '/dao-glossary',
-      valid: validKnowledgeItemToPublish(definition, governanceProject),
-      notionURL: definition.url,
+  const addItems = (items: KnowledgeItem[], page: string) => {
+    for (const item of items) {
+      linkableTerms[item.pageId] = {
+        text: item.title,
+        anchor: item.title,
+        page: page,
+        valid: knowledgeItemValidity(item, governanceProject),
+        notionURL: item.url,
+      }
     }
   }
-  const sections = organizeFAQ(faqs)
-  const sectionsHTML = renderSections(sections, linkableTerms)
-  const publishedDefinitions = definitions.filter(def => {
+  const isValid = (item: KnowledgeItem) => {
     return (
-      validKnowledgeItemToPublish(def, governanceProject) ==
+      knowledgeItemValidity(item, governanceProject) ==
       DefinitionValidity.Valid
     )
-  })
+  }
+
+  addItems(definitions, '/dao-glossary')
+  addItems(faqs, '/dao-faq')
+  const publishedFAQs = faqs.filter(isValid)
+  const publishedDefinitions = definitions.filter(isValid)
+  const sections = organizeFAQ(publishedFAQs)
+  const sectionsHTML = renderSections(sections, linkableTerms)
   const definitionsHTML = formatDefinitions(publishedDefinitions, linkableTerms)
   fs.writeFileSync('../docs/partials/_glossary-partial.md', definitionsHTML)
   fs.writeFileSync('../docs/partials/_faq-partial.md', sectionsHTML)
