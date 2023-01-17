@@ -40,8 +40,6 @@ export function renderItem(
       linkableTerms,
       RenderMode.Markdown
     )
-    // remove all non-alphanumeric and non-space characters, convert to lowercase, and replace spaces with hyphens
-    // replace all attribute values surrounded by single quotes with double quotes
     const dashDelimitedKey = formatAnchor(item.title, linkableTerms)
 
     let renderedText = renderBlocks(item.blocks, linkableTerms)
@@ -242,66 +240,54 @@ function renderBlock(
   const blockResponse = block.block
   let prefix = ''
   let postfix = ''
-  if (
-    prevType == 'numbered_list_item' &&
-    blockResponse.type != 'numbered_list_item'
-  ) {
-    prefix = '</ol>\n'
+  if (prevType != blockResponse.type) {
+    if (prevType == 'numbered_list_item') {
+      prefix = '</ol>\n'
+    }
+    if (prevType == 'bulleted_list_item') {
+      prefix = '</ul>\n'
+    }
+    if (blockResponse.type == 'numbered_list_item') {
+      prefix += '<ol>'
+    }
+    if (blockResponse.type == 'bulleted_list_item') {
+      prefix += '<ul>'
+    }
   }
-  if (
-    prevType == 'bulleted_list_item' &&
-    blockResponse.type != 'bulleted_list_item'
-  ) {
-    prefix = '</ul>\n'
+  if (last) {
+    if (blockResponse.type == 'numbered_list_item') {
+      postfix += '</ol>\n'
+    }
+    if (blockResponse.type == 'bulleted_list_item') {
+      postfix += '</ul>\n'
+    }
   }
-  if (
-    prevType != 'numbered_list_item' &&
-    blockResponse.type == 'numbered_list_item'
-  ) {
-    prefix += '<ol>'
-  }
-  if (
-    prevType != 'bulleted_list_item' &&
-    blockResponse.type == 'bulleted_list_item'
-  ) {
-    prefix += '<ul>'
-  }
-  if (last && blockResponse.type == 'numbered_list_item') {
-    postfix += '</ol>\n'
-  }
-  if (last && blockResponse.type == 'bulleted_list_item') {
-    postfix += '</ul>\n'
-  }
+
   let child = ''
   if (block.children.length > 0) {
     child = renderBlocks(block.children, linkableTerms)
   }
+  const renderRich = (text: RichTextItemResponse[]): string => {
+    return `${renderRichTexts(text, linkableTerms, RenderMode.HTML)}${child}`
+  }
   const body = (() => {
     switch (blockResponse.type) {
-      case 'paragraph':
-        return `<p>${renderRichTexts(
-          blockResponse.paragraph.rich_text,
-          linkableTerms,
-          RenderMode.HTML
-        )}${child}</p>\n`
-      case 'numbered_list_item':
-        return `<li>${renderRichTexts(
-          blockResponse.numbered_list_item.rich_text,
-          linkableTerms,
-          RenderMode.HTML
-        )}${child}</li>`
-      case 'bulleted_list_item':
-        return `<li>${renderRichTexts(
-          blockResponse.bulleted_list_item.rich_text,
-          linkableTerms,
-          RenderMode.HTML
-        )}${child}</li>`
-      case 'code':
-        return `\`\`\`${blockResponse.code.language}\n${renderRichTexts(
-          blockResponse.code.rich_text,
-          linkableTerms,
-          RenderMode.HTML
-        )}${child}\n\`\`\``
+      case 'paragraph': {
+        const text = renderRich(blockResponse.paragraph.rich_text)
+        return `<p>${text}</p>\n`
+      }
+      case 'numbered_list_item': {
+        const text = renderRich(blockResponse.numbered_list_item.rich_text)
+        return `<li>${text}</li>`
+      }
+      case 'bulleted_list_item': {
+        const text = renderRich(blockResponse.bulleted_list_item.rich_text)
+        return `<li>${text}</li>`
+      }
+      case 'code': {
+        const text = renderRich(blockResponse.code.rich_text)
+        return `\`\`\`${blockResponse.code.language}\n${text}\n\`\`\``
+      }
       case 'link_to_page': {
         const link = blockResponse.link_to_page
         switch (link.type) {
