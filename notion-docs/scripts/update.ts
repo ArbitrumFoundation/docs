@@ -2,7 +2,7 @@ import { Client } from '@notionhq/client'
 import { lookupProject } from './project'
 import { lookupGlossaryTerms } from './glossary'
 import { lookupFAQs, organizeFAQ } from './faq'
-import { renderRichTexts, formatAnchor, DefinitionValidity, renderItem, handleRenderError } from './format'
+import { DefinitionValidity, renderItem, handleRenderError } from './format'
 import dotenv from 'dotenv'
 
 import type { FAQ } from './faq'
@@ -89,8 +89,8 @@ async function generateFiles() {
   const linkableTerms: LinkableTerms = {}
   for (let definition of definitions) {
     linkableTerms[definition.pageId] = {
-      text: renderRichTexts(definition.title, linkableTerms, true),
-      anchor: formatAnchor(definition.title, linkableTerms),
+      text: definition.title,
+      anchor: definition.title,
       page: '/dao-glossary',
       valid: validDefinitionToPublish(definition, governanceProject),
       notionURL: definition.url,
