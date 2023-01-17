@@ -7,11 +7,7 @@ import type { KnowledgeItem } from './format'
 
 const glossaryDatabaseId = '3bad2594574f476f917d8080a6ec5ce7'
 
-export interface Definition extends KnowledgeItem {
-  status: string | undefined
-  publishable: string | undefined
-  projects: Set<string>
-}
+export type Definition = KnowledgeItem
 
 const isDefinition = (item: Definition | undefined): item is Definition => {
   return Boolean(item)

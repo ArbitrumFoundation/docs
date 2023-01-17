@@ -10,6 +10,9 @@ export interface KnowledgeItem {
   title: RichTextItemResponse[]
   text: RichTextItemResponse[]
   blocks: Block[]
+  status: string | undefined
+  publishable: string | undefined
+  projects: Set<string>
 }
 
 export interface RenderedKnowledgeItem {

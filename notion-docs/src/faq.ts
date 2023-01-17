@@ -28,6 +28,26 @@ function parseFAQPage(page: Page): FAQ | undefined {
     throw new Error('Expected definition')
   }
 
+  const status = properties['Status']
+  if (status.type != 'status') {
+    throw new Error('Expected status to be status')
+  }
+
+  const publishable = properties['Publishable?']
+  if (publishable.type != 'select') {
+    throw new Error('Expected Publishable? to be select')
+  }
+
+  const projectsProp = properties['Project(s)']
+  if (projectsProp.type != 'relation') {
+    throw new Error('Expected Project(s) to be a relation')
+  }
+  const projectRelation = projectsProp.relation
+  const projects = new Set<string>()
+  for (const project of projectRelation) {
+    projects.add(project.id)
+  }
+
   const section = properties['FAQ section']
   if (section.type != 'select') {
     throw new Error('Expected select')
@@ -50,9 +70,12 @@ function parseFAQPage(page: Page): FAQ | undefined {
     section: section.select.name,
     title: question.title,
     text: answer.rich_text,
+    status: status.status?.name,
+    publishable: publishable.select?.name,
     order: order.number,
-    blocks: page.blocks,
     url: page.page.url,
+    projects: projects,
+    blocks: page.blocks,
   }
 }
 
