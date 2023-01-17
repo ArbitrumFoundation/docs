@@ -3,7 +3,7 @@ import { queryDatabaseWithBlocks } from './notion'
 
 import type { QueryDatabaseParameters } from '@notionhq/client/build/src/api-endpoints'
 import type { Page } from './notion'
-import type { KnowledgeItem } from './format'
+import type { KnowledgeItem } from './item'
 
 const glossaryDatabaseId = '3bad2594574f476f917d8080a6ec5ce7'
 

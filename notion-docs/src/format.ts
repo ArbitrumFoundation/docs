@@ -1,25 +1,7 @@
 import { RichTextItemResponse } from '@notionhq/client/build/src/api-endpoints'
-import { Client, isFullPage } from '@notionhq/client'
 import type { Block } from './notion'
 
 export type LinkableTerms = Record<string, Reference>
-
-export interface KnowledgeItem {
-  pageId: string
-  url: string
-  title: RichTextItemResponse[]
-  text: RichTextItemResponse[]
-  blocks: Block[]
-  status: string | undefined
-  publishable: string | undefined
-  projects: Set<string>
-}
-
-export interface RenderedKnowledgeItem {
-  title: string
-  text: string
-  key: string
-}
 
 export enum DefinitionValidity {
   Valid,
@@ -28,36 +10,10 @@ export enum DefinitionValidity {
   WrongProject,
 }
 
-enum RenderMode {
+export enum RenderMode {
   HTML,
   Markdown,
   Plain,
-}
-
-export function renderKnowledgeItem(
-  item: KnowledgeItem,
-  linkableTerms: LinkableTerms
-): RenderedKnowledgeItem {
-  try {
-    const title = renderRichTexts(
-      item.title,
-      linkableTerms,
-      RenderMode.Markdown
-    )
-    const dashDelimitedKey = formatAnchor(item.title, linkableTerms)
-
-    let renderedText = renderBlocks(item.blocks, linkableTerms)
-    if (renderedText.length == 0) {
-      renderedText = renderRichTexts(item.text, linkableTerms, RenderMode.HTML)
-    }
-    return {
-      title: title,
-      text: renderedText,
-      key: dashDelimitedKey,
-    }
-  } catch (e) {
-    throw new RenderKnowledgeItemError(item, e)
-  }
 }
 
 interface Reference {
@@ -74,7 +30,7 @@ function stripCurlyQuotes(input: string): string {
     .replaceAll(/[\u201C\u201D]/g, '"')
 }
 
-function formatAnchor(
+export function formatAnchor(
   text: RichTextItemResponse[],
   linkableTerms: LinkableTerms
 ) {
@@ -91,36 +47,6 @@ export class MissingPageError extends Error {
     super(`Link to unsupported page: ${page}`)
     this.name = 'MissingPageError'
   }
-}
-
-export class RenderKnowledgeItemError extends Error {
-  constructor(public item: KnowledgeItem, public error: any) {
-    super('Failed rendering item')
-    this.name = 'RenderKnowledgeItemError'
-  }
-}
-
-export async function handleRenderError(
-  e: unknown,
-  client: Client
-): Promise<boolean> {
-  if (!(e instanceof RenderKnowledgeItemError)) {
-    return false
-  }
-  console.error(`Error while rendering item: ${e.item.url}`)
-  const wrappedError = e.error
-  if (!(wrappedError instanceof MissingPageError)) {
-    return false
-  }
-  const page = await client.pages.retrieve({ page_id: wrappedError.page })
-  if (!isFullPage(page)) {
-    console.error(`Failed due to missing page ${page.id} which is unaccessable`)
-  } else {
-    console.error(
-      `Failed due to missing page ${page.id} at url ${page.url} being unaccessable`
-    )
-  }
-  return true
 }
 
 function renderLink(
@@ -219,7 +145,7 @@ function renderRichText(
   }
 }
 
-function renderRichTexts(
+export function renderRichTexts(
   texts: RichTextItemResponse[],
   linkableTerms: LinkableTerms,
   renderMode: RenderMode
@@ -309,7 +235,10 @@ function renderBlock(
   return `${prefix}${body}${postfix}`
 }
 
-function renderBlocks(blocks: Block[], linkableTerms: LinkableTerms): string {
+export function renderBlocks(
+  blocks: Block[],
+  linkableTerms: LinkableTerms
+): string {
   let out = ''
   let prevType: string | undefined
   let i = 0
