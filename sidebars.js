@@ -95,6 +95,10 @@ module.exports = {
         {
           type: 'doc',
           id: 'concepts/security-council-election',
+        },
+        {
+          type: 'doc',
+          id: 'concepts/content-public-preview',
         }
       ],
     },
