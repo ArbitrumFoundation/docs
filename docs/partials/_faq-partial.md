@@ -1,3 +1,17 @@
+## Arbitrum protocols
+
+### Is it possible for one <a href="/dao-glossary#arbitrum-chain">Arbitrum chain</a> to implement both <a href="/dao-glossary#arbitrum-rollup">Arbitrum Rollup</a> and <a href="/dao-glossary#arbitrum-anytrust">Arbitrum AnyTrust</a> protocols at the same time?
+<p>No. Chains that implement <a href="/dao-glossary#arbitrum-rollup">Arbitrum Rollup</a> depend entirely on Ethereum's <a href="/dao-glossary#layer-1-l1">Layer 1 (L1)</a> to enforce data availability; it's Arbitrum's strictly <a href="/dao-glossary#trustless">Trustless</a> protocol; it utilizes Ethereum's on-chain data availability mechanism without any <a href="/dao-glossary#data-availability-committee-dac">Data Availability Committee (DAC)</a>. <br />
+<br />
+Note that there are three ways for <a href="/dao-glossary#arbitrum-anytrust">Arbitrum AnyTrust</a> protocols (like <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a>) to operate: <br />
+</p>
+
+<ol><li><strong>Happy path</strong>: The DAC is honest, all committee members participate with charitable intent; the DAC maintains off-chain data availability. </li>
+<li>Less happy path: At least two committee members are honest; the rest are offline or malicious. As long as at least two are honest, the protocol "rolls back" into <a href="/dao-glossary#arbitrum-rollup">Arbitrum Rollup</a> mode. In this case, we don't get performance and cost benefits of keeping data off-chain, but the fallback mechanism keeps the chain online and available.</li>
+<li>Sad path: The entire committee is corrupt and colluding. In this case, it's technically possible for the DAC to steal funds. This is why we don't claim that the <a href="/dao-glossary#arbitrum-anytrust">Arbitrum AnyTrust</a> protocol (or chains that implement the protocol, like <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a>) are fully trustless.</li></ol>
+
+
+
 ## Security council
 
 ### What is the purpose of the security council?
