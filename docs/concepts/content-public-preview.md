@@ -7,9 +7,9 @@ description: todo:qqq
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
 
-The content that you're reading right now is owned by the Arbitrum Foundation. To ensure that we maintain a high quality bar for our governance content, we treat our documentation as an extension of the protocol it supports. From the DAO's perspective, docs are product. 
+The Arbitrum DAO treats docs like product. **Every governance document (excluding the [Constitution](../architecture/dao-constitution)) is a product of its own.** Individual documents begin in "public preview" and transition to "stable" as we iterate and validate. 
 
-In fact, **every governance document (excluding the [Constitution](../architecture/dao-constitution)) is a product** that begins in public preview. Public preview docs begin with a disclaimer that looks like this:
+Public preview docs begin with a disclaimer that looks like this:
 
 <DraftExpectationsPartial />
 
