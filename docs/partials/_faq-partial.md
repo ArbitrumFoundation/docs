@@ -1,163 +1,43 @@
-## Arbitrum protocols
-
-### Is it possible for one <a href="/dao-glossary#arbitrum-chain">Arbitrum chain</a> to implement both <a href="/dao-glossary#arbitrum-rollup">Arbitrum Rollup</a> and <a href="/dao-glossary#arbitrum-anytrust">Arbitrum AnyTrust</a> protocols at the same time?
-<p>No. Chains that implement <a href="/dao-glossary#arbitrum-rollup">Arbitrum Rollup</a> depend entirely on Ethereum's <a href="/dao-glossary#layer-1-l1">Layer 1 (L1)</a> to enforce data availability; it's Arbitrum's strictly <a href="/dao-glossary#trustless">Trustless</a> protocol; it utilizes Ethereum's on-chain data availability mechanism without any <a href="/dao-glossary#data-availability-committee-dac">Data Availability Committee (DAC)</a>. <br />
-<br />
-Note that there are three ways for <a href="/dao-glossary#arbitrum-anytrust">Arbitrum AnyTrust</a> protocols (like <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a>) to operate: <br />
-</p>
-
-<ol><li><strong>Happy path</strong>: The DAC is honest, all committee members participate with charitable intent; the DAC maintains off-chain data availability. </li>
-<li>Less happy path: At least two committee members are honest; the rest are offline or malicious. As long as at least two are honest, the protocol "rolls back" into <a href="/dao-glossary#arbitrum-rollup">Arbitrum Rollup</a> mode. In this case, we don't get performance and cost benefits of keeping data off-chain, but the fallback mechanism keeps the chain online and available.</li>
-<li>Sad path: The entire committee is corrupt and colluding. In this case, it's technically possible for the DAC to steal funds. This is why we don't claim that the <a href="/dao-glossary#arbitrum-anytrust">Arbitrum AnyTrust</a> protocol (or chains that implement the protocol, like <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a>) are fully trustless.</li></ol>
-
-
-
 ## Security council
 
-### What is the purpose of the security council?
-The purpose of the Security Council is to, essentially, ensure the security of the chain, including all of its assets and information. For more detail visit the docs here [link to docs].
-
-### Who is part of the security council?
-Currently, the Security Council is a 12-member multisig of publicly known blockchain community members.
-
-### How can someone be added to the security council?
-Members of the security council are determined by elections that happen multiple times a year.
-
-## Delegation
-
-### Can delegates submit themselves for elections? How does this work under the hood?
-<p>delegate that wants to submit themselves for election - this is controlled by a governor contract? unclear right now - would have to be voted on, not security council, doesn't fit within normal governor etc etc.</p>
-
-<p></p>
+### How does Arbitrum's governance mechanism mitigate the risk of Security Council members abusing their power through Emergency Actions?
 
 
+### What qualifies as an Emergency Action?
 
-### What does a Delegate do?
-Delegates will be expected to vote on proposals that pass through the Arbitrum DAO in a way that fairly represents the token-holders who have delegated their voting power to them. This is significant because Arbitrum DAO has the power to control all technical and financial decisions at the core protocol level, from how we protect the chain from hacks as well as where all the revenue from the chain can be distributed across the ecosystem. (Governance Process here). Delegates will be expected to take on thoughtful stances and vote for the future of the Arbitrum protocol and ecosystem.
 
-### Why Delegate Your Votes?
-Participating actively in governance can be a laborious and time-consuming process. You can actively choose to delegate your votes [HERE].
+### Doesn't the presence of a permissioned Security Council defeat the purpose of permissionless decentralization?
+<p>The <a href="/dao-glossary#arbitrum-rollup">Arbitrum Rollup</a> protocol is undergoing Progressive decentralization. The <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>, governance <a href="/dao-glossary#smart-contract">Smart contract</a>s, and <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a> are all components of this progressive and incomplete process. The <a href="/dao-glossary#security-council">Security Council</a> does introduce a permissioned, centralized power structure within our governance <a href="/dao-glossary#mechanism-design">Mechanism design</a>, but for good reasons: it allows a permissioned set of elected parties to handle <a href="/dao-glossary#emergency-action">Emergency action</a>s - actions that let the employees of Offchain Labs quickly address sensitive vulnerabilities. <br />
+<br />
+Without the Security Council, we'd be forced to expose exploitable vulnerabilities to adversaries in the form of governance proposals. This introduces a democratically managed centralization of power. This is an example of a tactical compromise with our shared values - a pragmatic check on ideals. Similar to Ethereum's <a href="/dao-glossary#offchain-governance">Off-chain governance</a> mechanism.<br />
+<br />
+As we continue building confidence through iteration and experimentation, the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> will democratically determine the manner in which the Security Council's role changes, and the rate at which the remaining centralized components of our governance mechanism design become decentralized.</p>
 
-### How to Choose the Right Delegate to Represent You and Your Votes?
-Through the Delegation Submission process, delegates will be asked for their thoughts on a number of key hypothetical issues that span our whole ecosystem, as well as communicating how they plan to best serve their delegation. You can access the complete list of delegate candidates and understand their plans [HERE].
 
-### How do I become a delegate?
-[Delegate Submission Form here]
-
-### If i assign my voting power to a delegate, do I lose my tokens?
-Nope, by assigning your voting power to a delegate, you're simply allowing them to vote on your behalf with the same amount of weight as the amount of tokens you have. You will still have full control over your tokens.
-
-### What can I do now?
-If you would like to participate as a delegate in Arbitrum governance, send in your proposal to the community here [link to governance forum]. Once the token claim is live, users will be able to assign their voting power (tokens) to you if they wish.
-
-### What are the requirements for being a delegate?
-There are none (technically)! You just have to appeal to the community on why they should choose you to represent them when voting on proposals in governance.
-
-### How do I assign voting power to a delegate?
-Visit this page [link to gov forum], find the delegate you want to have to represent you, and follow the prompts!
-
-### Are there any monetary incentives for being a delegate?
-Nope, just the great feeling of representing the Arbitrum DAO. 😊
-
-### How can I see the proposals?
-Visit the governance forum [link to gov forum]!
-
-## Airdrop
-
-### Am I eligible for the airdrop?
-As of the date of this publication, airdrop criteria, recipients, and amounts have been finalized and will in no way be altered prior to airdrop, with the exception of removing any further sybil accounts discovered. You can check the details here (link to landing page). You can check the official eligibility requirements here (link to token landing page), we know that not everyone that has used Arbitrum will be eligible to claim their share in governance, and it wasn't an easy decision to make considering the number of Sybils that were present. Nonetheless, it was determined to be the best balance we found between the number of active users and share in governance.
-
-### When can I claim my tokens?
-We're aiming to have claiming functionality live soon. In the meantime, visit our governance forum to review delegate applications and/or submit an application to be a delegate yourself! 
-
-### What utility does $ARB have?
-The Arbitrum token is designed to serve as a governance token, controlling the upgradeability of the Arbitrum One and Arbitrum Nova chains. When you claim your tokens, you'll be able to assign tokens to a delegate of your choice to vote on your behalf on governance proposals (including yourself)! When you claim your tokens you'll be able to assign your voting power (tokens) to a delegate who will be able to vote on your behalf. You can find delegates here [link to governance forum]. Governance votes can range from simple things like allocating a certain amount of tokens within the Arbitrum treasury to a project, to more complex things like protocol upgrades. You can take a look at governance proposals here [link to governance forum].
-
-### Will there be an airdrop for Arbitrum Nova?
-There will not be an airdrop taking place on Nova, however, early users of Arbitrum Nova are eligible to receive an airdrop of the Arbitrum token, as it is designed to govern both Arbitrum One and Nova.
-
-### Will there be multiple airdrops?
-No, this will be the only airdrop.
-
-### When was the snapshot for the airdrop?
-The cutoff day to be eligible for the airdrop was August 31st, 2022 before the Nitro upgrade took place.
-
-### The token eligibility check says I'm not eligible for the airdrop. What do I do?
-Please submit a request here [maybe link to Zendesk? see if it makes sense w/ consensys and engineering]
-
-### Where do Arbitrum Odyssey and <a href='http://Guild.xyz'>Guild.xyz</a> fit into all this?
-From the beginning, the Arbitrum Odyssey has been about introducing users to protocols in a fun and interactive way while also rewarding them in NFTs! While Guild.XYZ roles are simply to show off your favorite projects in our Discord community. Neither of these activities were themselves airdrop qualifications, but hopefully, they introduced you to Arbitrum and protocols that gave you eligibility!
-
-### Did you identify any Sybils?
-Yup! You can find a list of blacklisted addresses we identified as Sybils here [link to github or something]
-
-### What were the criteria for catching Sybils?
-We identified a set of criteria that, after rigorous evaluation, appear to identify a number of accounts on Arbitrum that carried out activity associated with Sybiling. That being said, as mentioned above, we have an open call for Sybil hunters and welcome the community to add criteria to the list for review so we can ensure airdrop recipients are fairly identified. You can view the criteria that we used to identify Sybils, here.
-
-### How was the token distributed?
-TODO
-
-### Does $ARB give me a share in governance for Arbitrum Nova?
-Yes, details will be released at a later date
-
-### Does $ARB give me a share in governance for Arbitrum One?
-Yes, each token represents one vote 
-
-## Progressive decentralization
-
-### Why is Arbitrum issuing a token?
-The Arbitrum governance token exists to decentralize ownership of the protocol; i.e., to hand control over protocol upgrades from Offchain Labs to the Arbitrum community at large. 
-
-### How will Arbitrum Decentralize over time?
-TODO: (don't use the word roadmap) The ultimate goal is to have distributed sequencing alongside decentralizing validation. On token launch, the DAO will have the ability to submit proposals that can impact the protocol, alongside the allocation of treasury funds to ecosystem partners. Next on the path to greater decentralization is giving DAO participants the ability to decide who can run validators on the Arbitrum One network.
 
 ## Governance architecture
 
-### [Demo] Where can I find the smart contracts that power Arbitrum DAO's governance mechanisms?
-<p>Candidate target output schema:</p>
+### What kinds of governance "principles" have been codified into this mechanism design?
+<p>A few that come to mind:</p>
 
 <p></p>
 
-```html
-<!-- pulled from getAllFAQs().groupBy(s => s["FAQ section"]).forEach(s => { s.key }) --><br />
-<h3 class="faq-section-title">Governance smart contracts</h3><br />
-<br />
-<dl class="definition-list"><br />
-	<!-- keys pulled from ["Target document slugs"] --><br />
-  <dt data-displayed-on='dao-glossary,gentle-intro-arbitrum-dao'>Where can I find the smart contracts that power Arbitrum DAO's governance mechanisms?</dt><br />
-  <!-- content pulled from page body --><br />
-  <dd>Candidate target output schema: [...] Glossary path?</dd><br />
-</dl><br />
-<!-- see below for details / rationale -->
-```
-<p></p>
-
-<p></p>
-
-<ul><li>Envisioning this HTML being generated into <code>_faq.md</code>, and then we can follow the glossary CMS pattern of embedding this partial into all docs, & hiding everything irrelevant. </li>
-<li>differences between this & glossary CMS:<ul><li>some of the embedded FAQs would be visible on some of the pages (glossary hides all, depending on Quicklooks widget to consume & reveal).</li>
-<li>grouping & ordering</li>
-<li>pulling <code>dd</code> content from page body instead of page property<ul><li>FAQ answers tend to contain more structure & media than glossary definitions, will need to figure out<ul><li>how to convert Notion page body into HTML (we could get this for free via notion API response…) &</li>
-<li>how to handle media (eventually)…</li></ul>
-
-</li></ul>
-
-</li></ul>
-
-</li>
-<li>pattern allows the script to reflect on page slug and hide all FAQs that don't have the slug within <code>data-displayed-on</code></li>
-<li>this makes it ez for some of the more context-specific FAQs to be visible on interior pages (how-tos etc), but not visible in root page</li>
-<li>for now, FAQ authors can assume that "sections" are only displayed on root faq, can use CSS to hide section HTML from other interior pages</li>
-<li>considerations that come to mind:<ul><li>rename <code>Quicklooks</code> component into <code>InjectContentFromNotion</code> & parameterize, so github action passes parameters to determine which code flow to use?<ul><li>Might want to keep the column definitions in the script for now, so if we update Notion schema, don't need Github action permissions to reconcile</li>
-<li>So the only parameter is to choose between FAQ path and Glossary path?</li></ul>
-
-</li>
-</ul>
-<p></p>
-
-</li>
-</ul>
+<ol><li>Changes to Arbitrum's governance should be sufficiently debated on the Arbitrum DAO governance forum.</li>
+<li><a href="/dao-glossary#governance-proposal">Governance proposal</a>s should give DAO members enough time to solicit feedback from peers and experts. This time period is called TODO.</li>
+<li>If someone disagrees with the direction that an approved proposal is taking <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> (and the protocols it governs), they should be able to exit the system before the proposed changes take effect. See TODO to learn more about this mechanism.</li>
+</ol>
 <p></p>
 
 
+
+### Could Arbitrum's protocol governance become enshrined within Ethereum's L1 social consensus mechanism, removing the notion of "chain ownership"?
+It's technically possible. For this to happen, the change would have to be initiated through a governance proposal, then discussed by members of the Arbitrum DAO, then approved through a temperature check, and then formally approved by $ARB token-holders through an on-chain vote. It's largely out of our hands.
+
+## $ARB token and airdrop
+
+### Have you identified any Sybils?
+Yes. You can find a list of denylisted addresses we identified as Sybils here [link to github or something]
+
+### Will there be multiple airdrops?
+No, this will be the only airdrop.
 
