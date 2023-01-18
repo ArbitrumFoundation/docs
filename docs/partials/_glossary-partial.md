@@ -40,6 +40,9 @@ A legal entity that represents the <a href="/dao-glossary#arbitrum-dao">Arbitrum
 ### Arbitrum Improvement Proposal (AIP) {#arbitrum-improvement-proposal-aip}
 A <a href="/dao-glossary#governance-proposal">Governance proposal</a> as defined by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a>.
 
+### Arbitrum Nitro {#arbitrum-nitro}
+Current Arbitrum tech stack; runs a fork of <a href="/dao-glossary#geth">Geth</a> directly on <a href="/dao-glossary#layer-2-l2">Layer 2 (L2)</a> and uses WebAssembly as its underlying VM for fraud proofs.
+
 ### Arbitrum Nova {#arbitrum-nova}
 The first <a href="/dao-glossary#arbitrum-anytrust">Arbitrum AnyTrust</a> chain running on Ethereum mainnet. Introduces faster and cheaper transactions; great for gaming and social use-cases. Currently in Beta. (TODO - align on retaining Beta after Governance launch)
 
@@ -79,7 +82,7 @@ Facilitates staking, peer-to-peer consensus, block creation, and attestations fo
 Facilitates <a href="/dao-glossary#smart-contract">Smart contract</a> logic and execution for Ethereum's <a href="/dao-glossary#layer-1-l1">Layer 1 (L1)</a>  network. Powered by execution-layer clients like <a href="/dao-glossary#geth">Geth</a>, Nethermind, and Besu.
 
 ### Geth {#geth}
-An execution-layer client that defines the Ethereum state transition function and handles network-layer logic like transaction memory pooling. Arbitrum Nitro  utilizes a fork of Geth to ________. 
+An execution-layer client that defines the Ethereum state transition function and handles network-layer logic like transaction memory pooling. <a href="/dao-glossary#arbitrum-nitro">Arbitrum Nitro</a>  utilizes a fork of Geth to ________. 
 
 ### Governance {#governance}
 The way that decisions get made. Governance of web2 technologies traditionally depends on a board of directors abiding by trusted social contracts, while governance of web3 technologies depends on Decentralized Autonomous Organizations (DAOs) governed through <a href="/dao-glossary#trustless">Trustless</a> <a href="/dao-glossary#smart-contract">Smart contract</a>s. 

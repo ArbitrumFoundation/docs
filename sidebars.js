@@ -28,28 +28,66 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          id: 'create-submit-dao-proposal',
+          id: 'how-tos/create-submit-dao-proposal',
         },
         {
-          type: 'link',
-          label: 'Resubmit a DAO proposal',
-          href: '#todo:qqq',
+          type: 'doc',
+          id: 'how-tos/resubmit-dao-proposal',
         },
         {
-          type: 'link',
-          label: 'Select a delegate',
-          href: '#todo:qqq',
+          type: 'doc',
+          id: 'how-tos/select-delegate',
         },
         {
-          type: 'link',
-          label: 'Become a delegate',
-          href: '#todo:qqq',
+          type: 'doc',
+          id: 'how-tos/apply-become-delegate',
         },
         {
-          type: 'link',
-          label: 'Vote on proposals',
-          href: '#todo:qqq',
+          type: 'doc',
+          id: 'how-tos/build-strong-delegate-platform',
         },
+        {
+          type: 'doc',
+          id: 'how-tos/vote-dao-proposals',
+        },
+        {
+          type: 'doc',
+          id: 'how-tos/hash-constitution',
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Governance concepts',
+      items: [
+        {
+          type: 'doc',
+          id: 'concepts/arb-token',
+        },
+        {
+          type: 'doc',
+          id: 'concepts/arbitrum-dao',
+        },
+        {
+          type: 'doc',
+          id: 'concepts/delegate-delegation',
+        },
+        {
+          type: 'doc',
+          id: 'concepts/lifecycle-anatomy-proposal',
+        },
+        {
+          type: 'doc',
+          id: 'concepts/progressive-decentralization',
+        },
+        {
+          type: 'doc',
+          id: 'concepts/sybil-account',
+        },
+        {
+          type: 'doc',
+          id: 'concepts/dao-vote',
+        }
       ],
     },
     {
@@ -58,17 +96,15 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          id: 'dao-constitution',
+          id: 'architecture/dao-constitution',
         },
         {
-          type: 'link',
-          label: 'Smart contract architecture',
-          href: 'https://github.com/OffchainLabs/governance/blob/main/docs/overview.md',
+          type: 'doc',
+          id: 'architecture/smart-contract-architecture',
         },
         {
-          type: 'link',
-          label: 'Sybil detection',
-          href: '#todo:qqq',
+          type: 'doc',
+          id: 'architecture/sybil-detection-algorithm',
         },
       ],
     },
