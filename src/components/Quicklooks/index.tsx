@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import useIsBrowser from '@docusaurus/useIsBrowser';
+import {useLocation} from '@docusaurus/router';
 import Tippy from 'tippy.js';
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/themes/light-border.css';
@@ -7,6 +8,7 @@ import 'tippy.js/themes/light-border.css';
 export const Quicklooks = () => {
   // todo:qqq - document usage of this component for nontechnical content contributors
   const isBrowser = useIsBrowser();
+  const location = useLocation();
 
   useEffect(() => {
     if (!isBrowser) {
@@ -35,7 +37,8 @@ export const Quicklooks = () => {
         return def
       },
     });
-  }, [isBrowser]);
+    // re-render tippys when location (page) changes
+  }, [isBrowser, location]);
 
   return <></>;
 };
