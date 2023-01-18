@@ -1,7 +1,7 @@
 ---
-id: content-public-preview
-title: "Content public preview"
-sidebar_label: Content public preview
+id: public-preview-content
+title: "Public preview content"
+sidebar_label: Public preview content
 description: todo:qqq
 ---
 
