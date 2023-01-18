@@ -98,7 +98,7 @@ module.exports = {
         },
         {
           type: 'doc',
-          id: 'concepts/content-public-preview',
+          id: 'concepts/public-preview-content',
         }
       ],
     },
