@@ -5,6 +5,10 @@ sidebar_label: Submit a DAO proposal
 description: todo:qqq
 ---
 
+import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+
+<DraftExpectationsPartial />
+
 In this how-to, you'll learn how to submit proposals to the Arbitrum DAO. Familiarity with Arbitrum, DAOs, Ethereum, and smart contracts is expected. Otherwise, this how-to makes no assumptions about your experience with governance protocols.
 
 ### Prerequisites

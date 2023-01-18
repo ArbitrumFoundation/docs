@@ -5,6 +5,11 @@ sidebar_label: Constitution
 description: todo:qqq
 ---
 
+import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+
+<DraftExpectationsPartial />
+
+
 <div id="constitution">
    <p>This Constitution of the Arbitrum DAO takes effect on the date upon which the Arbitrum DAO approves Arbitrum Improvement Proposal – 1: Arbitrum Proposal Framework (“AIP-1”), located at todo:qqq.</p>
 

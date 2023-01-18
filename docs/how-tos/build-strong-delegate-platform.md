@@ -4,3 +4,7 @@ title: How to build a strong delegate platform
 sidebar_label: Build a delegate platform
 description: todo:qqq
 ---
+
+import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+
+<DraftExpectationsPartial />

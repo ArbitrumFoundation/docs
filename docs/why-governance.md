@@ -5,6 +5,9 @@ sidebar_label: Why decentralize governance?
 description: todo:qqq
 ---
 
+import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+
+<DraftExpectationsPartial />
 
 $ARB is the governance token for the Arbitrum ecosystem created on [TODO], roughly [TODO] after Arbitrum One had been live on mainnet. Here we explain the rationale behind introducing the $ARB governance token, and how it plays a necessary role in the progressive decentralization of the Arbitrum protocol.
 

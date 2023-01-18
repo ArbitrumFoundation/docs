@@ -5,6 +5,11 @@ sidebar_label: A gentle introduction
 description: todo:qqq
 ---
 
+import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+
+<DraftExpectationsPartial />
+
+
 **In a nutshell:**
 
 - <a data-quicklook-from='arbitrum-rollup'>Arbitrum Rollup</a> is an optimistic rollup protocol that makes Ethereum transactions faster and cheaper <a href="#footnote-1" name="footnote-1">[1]</a> while inheriting Ethereum's security guarantees. Developers use Arbitrum to build user-friendly <a data-quicklook-from='decentralized-app-dapp'>decentralized apps</a>.
