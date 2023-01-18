@@ -87,6 +87,14 @@ module.exports = {
         {
           type: 'doc',
           id: 'concepts/dao-vote',
+        },
+        {
+          type: 'doc',
+          id: 'concepts/security-council',
+        },
+        {
+          type: 'doc',
+          id: 'concepts/security-council-election',
         }
       ],
     },
