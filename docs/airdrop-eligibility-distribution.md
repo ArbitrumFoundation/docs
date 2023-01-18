@@ -12,7 +12,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 :::caution THERE IS NO PRESALE
 
-The only official website for the $ARB airdrop is todo:qqq. There is no presale. We won't ever ask for your seed phrase. When in doubt, join our [Discord](#todo:qqq) and ask away; a member of our team will be happy to help.
+The only official website for the $ARB airdrop is todo:qqq. There is no presale. We won't ever ask for your seed phrase. When in doubt, [join our Discord](#todo:qqq) and ask away; a member of our team will be happy to help.
 
 :::
 

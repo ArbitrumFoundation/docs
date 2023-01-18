@@ -15,7 +15,10 @@
   --ifm-color-content: #000;
   --ifm-link-color: #007bdd;
   --ifm-code-font-size: 95%;
+  --ifm-global-radius: 2px;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-color-info-dark: #359aec;
+  --ifm-color-info-contrast-background: #f0f8ff;
 }
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
@@ -134,6 +137,12 @@ article .markdown a:hover {
 }
 article .markdown strong {
   font-weight: 600;
+}
+article .markdown .theme-admonition {
+  margin-bottom: 2em;
+}
+article .markdown .theme-admonition .todo {
+  display: none;
 }
 .hidden-glossary {
   display: none;
