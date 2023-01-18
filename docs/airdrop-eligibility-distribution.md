@@ -5,6 +5,17 @@ sidebar_label: Airdrop eligibility and distribution
 description: todo:qqq
 ---
 
+import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+
+<DraftExpectationsPartial />
+
+
+:::caution THERE IS NO PRESALE
+
+The only official website for the $ARB airdrop is todo:qqq. There is no presale. We won't ever ask for your seed phrase. When in doubt, join our [Discord](#todo:qqq) and ask away; a member of our team will be happy to help.
+
+:::
+
 <!--todo:qqq: author some crawl-walk-run frontmatter, point to gentle intro & website -->
 
 <a href='#todo'>$ARB</a> is an ERC-20 token native to Arbitrum One rollup chain. Token properties at launch:

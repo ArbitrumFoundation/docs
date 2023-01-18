@@ -1,8 +1,10 @@
 ---
 id: dao-vote
 title: "DAO votes: A conceptual overview"
-sidebar_label: Vote
+sidebar_label: DAO vote
 description: todo:qqq
 ---
 
-todo
+import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+
+<DraftExpectationsPartial />

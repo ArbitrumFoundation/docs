@@ -5,6 +5,11 @@ sidebar_label: State of decentralization
 description: todo:qqq
 ---
 
+import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+
+<DraftExpectationsPartial />
+
+
 <a data-quicklook-from='progressive-decentralization'>Progressive decentralization</a> is the process of gradually increasing the decentralization of a system over time. This document details the current state of progressive decentralization for Arbitrum's Rollup chains (Arbitrum One and Arbitrum Nova).
 
 ### The components of Arbitrum's progressive decentralization

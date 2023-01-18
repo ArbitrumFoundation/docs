@@ -1,7 +1,7 @@
 ---
-id: hash-constitution
-title: How to hash the Constitution of the Arbitrum DAO
-sidebar_label: Hash the constitution
+id: security-council
+title: "Security Council: A conceptual overview"
+sidebar_label: Security Council
 description: todo:qqq
 ---
 

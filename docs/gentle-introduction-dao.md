@@ -5,6 +5,11 @@ sidebar_label: A gentle introduction
 description: todo:qqq
 ---
 
+import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+
+<DraftExpectationsPartial />
+
+
 **In a nutshell:**
 
 - <a data-quicklook-from='arbitrum-rollup'>Arbitrum Rollup</a> is an optimistic rollup protocol that makes Ethereum transactions faster and cheaper <a href="#footnote-1" name="footnote-1">[1]</a> while inheriting Ethereum's security guarantees. Developers use Arbitrum to build user-friendly <a data-quicklook-from='decentralized-app-dapp'>decentralized apps</a>.
@@ -17,11 +22,6 @@ description: todo:qqq
 
 <br />
 
-:::caution An important reminder
-
-The only official website for the $ARB airdrop is todo:qqq. There is no presale. We won't ever ask for your seed phrase. When in doubt, join our [Discord](#todo:qqq) and ask away; a member of our team will be happy to help.
-
-:::
 
 ### Hello! What's Arbitrum again?
 

@@ -5,4 +5,6 @@ sidebar_label: $ARB token
 description: todo:qqq
 ---
 
-todo
+import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+
+<DraftExpectationsPartial />
