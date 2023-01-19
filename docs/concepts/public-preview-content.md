@@ -18,7 +18,7 @@ We use this disclaimer to **set expectations** and to **invite feedback** from r
 
 ### How do you know when a public preview document is ready to have its disclaimer lifted?
 
-In general, if a document 1) is viewed a lot, 2) doesn't have a high bounce rate, and 3) doesn't have any outstanding GitHub issues, we consider it to be validated. This is an informal process that we're currently experimenting with; we'll update this document if our approach changes.
+In general, a document is considered validated if it's 1) frequently viewed, 2) has a low bounce rate, and 3) doesn't have any open issues on GitHub/Discord. This heuristic isn't supported by precise threshholds; it's a loose and informal model that we're currently experimenting with. We'll update this document as our approach matures.
 
 ### Does this mechanism apply to The Constitution of the Arbitrum DAO?
 
@@ -30,11 +30,11 @@ Readers generally interpret drafts as "not ready for public consumption". Arbitr
 
 ### Does this mean that the Arbitrum DAO isn't committed to its governance documentation?
 
-No. We're committed to our documentation, just not in the same way that we're committed to the Constitution.
+No. We're committed to our documentation, just not in the same way that we're committed to the Constitution:
 
-Our governance docs are derived from a combination of 1) the Constitution and 2) reader feedback. These docs frequently change via traditional pull requests issued against our governance docs repository. This is an informal, continuous, iterative process.
+ - **The Constitution** is the Arbitrum DAO's highest-order governance document. It's the only document that's subject to the formal governance proposal mechanism. In order for the Constitution to change, a proposal must be submitted to the Arbitrum DAO and approved by a majority of the Arbitrum DAO's voting power. This is a formal process that only the Arbitrum DAO can initiate and execute.
+ - **Other governance documents** are derived from a combination of 1) the Constitution and 2) reader feedback. These docs frequently change via traditional pull requests issued against our governance docs repository. This is an informal, continuous, iterative process that anyone can participate in. Pull requests are reviewed and approved through judgment calls made by employees of the Arbitrum Foundation.
 
-Updates to the Constitution must be proposed and approved through Arbitrum DAO's formal governance proposal mechanism; updates to all other governance documentation aren't subject to this formal process.
 
 ### Is the governance protocol itself in public preview?
 
