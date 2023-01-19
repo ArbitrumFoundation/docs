@@ -7,20 +7,22 @@ description: todo:qqq
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
 
-The Arbitrum DAO treats docs like products. Every governance document (excluding the [Constitution](../architecture/dao-constitution)) is initially published as a "public preview" document that begins with the following disclaimer:
+
+The Arbitrum DAO treats docs like products: we start with minimum-viable content and then use feedback loops to iterate our way towards validated value.
+
+Every governance document (excluding the [Constitution](../architecture/dao-constitution)) is initially published with the following "public preview" disclaimer:
 
 <DraftExpectationsPartial />
 
 We use this disclaimer to **set expectations** and to **invite feedback** from readers like you. As soon as we can convince ourselves that a given document is meeting our readers' needs, we lift the disclaimer.
 
-
 ### How do you know when a public preview document is ready to have its disclaimer lifted?
 
-In general, if a document is 1) heavily utilized, 2) doesn't generate bounces, and 3) doesn't have any outstanding GitHub issues, we consider it to be validated. This is a minimum-viable, informal process that we're currently iterating on; we'll update this document if our approach changes.
+In general, if a document 1) is viewed a lot, 2) doesn't have a high bounce rate, and 3) doesn't have any outstanding GitHub issues, we consider it to be validated. This is an informal process that we're currently experimenting with; we'll update this document if our approach changes.
 
-### Does this apply to The Constitution of the Arbitrum DAO?
+### Does this mechanism apply to The Constitution of the Arbitrum DAO?
 
-No. This disclaimer does **not** apply to [The Constitution of the Arbitrum DAO](../architecture/arbitrum-dao-constitution.md).
+No. The private preview mechanism does **not** apply to [The Constitution of the Arbitrum DAO](../architecture/arbitrum-dao-constitution.md).
 
 ### What's the difference between a draft and a public preview?
 
