@@ -7,6 +7,7 @@ description: todo:qqq
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
 
+
 The Arbitrum DAO treats docs like products: we start with minimum-viable content and then use feedback loops to iterate our way towards validated value.
 
 Every governance document (excluding the [Constitution](../architecture/dao-constitution)) is initially published with the following "public preview" disclaimer:
@@ -14,7 +15,6 @@ Every governance document (excluding the [Constitution](../architecture/dao-cons
 <DraftExpectationsPartial />
 
 We use this disclaimer to **set expectations** and to **invite feedback** from readers like you. As soon as we can convince ourselves that a given document is meeting our readers' needs, we lift the disclaimer.
-
 
 ### How do you know when a public preview document is ready to have its disclaimer lifted?
 
