@@ -222,20 +222,27 @@ article {
 }
 
 /* temp location to avoid merge conflicts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
 #constitution {
   background: #f4f4f4;
   border: 1px solid #ddd;
   border-left: 2px solid #28a0f0;
   color: #666;
   page-break-inside: avoid;
-  font-family: monospace;
-  font-size: 15px;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
   line-height: 1.6;
   margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
-  padding: 30px;
+  padding: 50px;
   display: block;
   word-wrap: break-word;
   white-space: pre-wrap;
+
+  h3 {
+    font-family: 'Fira Code', monospace;
+    margin-top: 40px;
+  }
 }

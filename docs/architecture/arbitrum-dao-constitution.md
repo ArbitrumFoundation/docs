@@ -5,6 +5,7 @@ sidebar_label: Constitution
 description: todo:qqq
 ---
 
+<div id='constitution'>
 <p>This Constitution of the Arbitrum DAO takes effect on the date upon which AIP-1 is posted, located at <a href="#todo">TODO</a>.</p>
 <p>Some of the rules and procedures of this Constitution will be enforced directly by smart contracts on a blockchain, and some will not. All rules are equally binding. Actions taken under this Constitution may be on-chain or off-chain actions. On-chain actions are those that are actuated directly by the governance smart contracts of the DAO as transactions on a blockchain. Off-chain actions are those that are actuated by other means.</p>
 <p>This Constitution also includes some &quot;recommended guidelines&quot; which are non-binding but strongly recommended as good governance practice.</p>
@@ -63,7 +64,7 @@ description: todo:qqq
     </li>
     <li>
         <p><strong>Phase 3: DAO votes on AIP, on Arbitrum One (14-16 days): During this Phase 3, the Arbitrum DAO will be able to vote directly on-chain on a submitted AIP.</strong></p>
-        <p> An AIP passes if the following 2 conditions are met:</p>
+        <p>An AIP passes if the following 2 conditions are met:</p>
         <ol class='a-b-list'>
             <li>More Votable Tokens have casted votes &quot;in favor&quot; than have casted votes &quot;against&quot; (&quot;<strong>Threshold 1</strong>&quot;); and</li>
             <li>
@@ -85,9 +86,9 @@ description: todo:qqq
     <li>
         <p><strong>Phase 4: L2 Waiting Period (3 days):</strong> After an AIP has passed Phase 3, a 3 day waiting period occurs. This gives users who object to the AIP time to initiate withdrawal of their funds or take other action on L2.</p>
     </li>
-    <li><strong>Phase 5: Initiate and Finalize an L2-to-L1 Message (at least 1 challenge period of the rollup protocol):</strong> After the 3 day waiting period in Phase 4 has passed, an L2-to-L1 message is sent indicating that the AIP was passed. When this message is finalized on L1, anyone can redeem it to complete this step and initiate the next step. This step ensures that the completion of the L2 waiting period will be recognized on L1 after any withdrawals initiated during or soon after the voting period have been recognized on L1.</li>
-    <li><strong>Phase 6: L1 Waiting Period (3 days):</strong> Following the completion of Phase 5, there will be an additional 3 day waiting period. This ensures that users who initiated withdrawals or other L2-to-L1 messages have time to execute them on L1 before the AIP takes effect.</li>
-    <li><strong>Phase 7: Implementation:</strong> The AIP is fully executed and implemented. This may happen on L1 or via a transaction sent from L1 to one or more chains that are governed by the Arbitrum DAO.</li>
+    <li><p><strong>Phase 5: Initiate and Finalize an L2-to-L1 Message (at least 1 challenge period of the rollup protocol):</strong> After the 3 day waiting period in Phase 4 has passed, an L2-to-L1 message is sent indicating that the AIP was passed. When this message is finalized on L1, anyone can redeem it to complete this step and initiate the next step. This step ensures that the completion of the L2 waiting period will be recognized on L1 after any withdrawals initiated during or soon after the voting period have been recognized on L1.</p></li>
+    <li><p><strong>Phase 6: L1 Waiting Period (3 days):</strong> Following the completion of Phase 5, there will be an additional 3 day waiting period. This ensures that users who initiated withdrawals or other L2-to-L1 messages have time to execute them on L1 before the AIP takes effect.</p></li>
+    <li><p><strong>Phase 7: Implementation:</strong> The AIP is fully executed and implemented. This may happen on L1 or via a transaction sent from L1 to one or more chains that are governed by the Arbitrum DAO.</p></li>
 </ol>
 <p>This AIP process as specified will typically require 34 days from the beginning of the temperature check in Phase 1 until an AIP is finally executed in Phase 7 for a Constitutional AIP, or 21 days for a Non-Constitutional AIP. An AIP may optionally specify further delay before its implementation.</p>
 <h3 id="section-3-the-security-council">Section 3: The Security Council</h3>
@@ -141,7 +142,7 @@ description: todo:qqq
     <li><strong>User-focused:</strong> The Arbitrum ecosystem should be managed for the benefit of all Arbitrum users.</li>
     <li><strong>Neutral and open:</strong> Arbitrum governance should not pick winners and losers, but should foster open innovation, interoperation, user choice, and healthy competition on Arbitrum chains.</li>
 </ul>
-
+</div>
 
 
 
