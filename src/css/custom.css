@@ -147,6 +147,9 @@ article .markdown .theme-admonition svg {
   height: 1.3rem;
   width: 1.3rem;
 }
+article .markdown .a-b-list {
+  list-style-type: lower-alpha;
+}
 .hidden-glossary {
   display: none;
 }
