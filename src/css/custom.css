@@ -147,6 +147,9 @@ article .markdown .theme-admonition svg {
   height: 1.3rem;
   width: 1.3rem;
 }
+article .markdown .a-b-list {
+  list-style-type: lower-alpha;
+}
 .hidden-glossary {
   display: none;
 }
@@ -176,20 +179,59 @@ article .markdown .theme-admonition svg {
   }
 }
 /* temp location to avoid merge conflicts */
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v21/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_GNsFVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v21/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sFVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v21/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_A9sFVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v21/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_ONrFVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v21/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_NprFVc.ttf) format('truetype');
+}
 #constitution {
   background: #f4f4f4;
   border: 1px solid #ddd;
   border-left: 2px solid #28a0f0;
   color: #666;
   page-break-inside: avoid;
-  font-family: monospace;
-  font-size: 15px;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
   line-height: 1.6;
   margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
-  padding: 30px;
+  padding: 50px;
   display: block;
   word-wrap: break-word;
   white-space: pre-wrap;
+}
+#constitution h3 {
+  font-family: 'Fira Code', monospace;
+  margin-top: 40px;
 }
