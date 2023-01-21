@@ -94,10 +94,6 @@ module.exports = {
         },
         {
           type: 'doc',
-          id: 'concepts/security-council-election',
-        },
-        {
-          type: 'doc',
           id: 'concepts/public-preview-content',
         }
       ],
@@ -119,6 +115,10 @@ module.exports = {
           id: 'architecture/sybil-detection-algorithm',
         },
       ],
+    },
+    {
+      type: 'doc',
+      id: 'dao-comprehension-check',
     },
     {
       type: 'doc',

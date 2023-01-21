@@ -1,9 +1,10 @@
 ---
 id: dao-constitution
 title: The Constitution of the Arbitrum DAO
-sidebar_label: Constitution
+sidebar_label: The Constitution of the Arbitrum DAO
 description: todo:qqq
 ---
+
 
 <div id='constitution'>
 <p>This Constitution of the Arbitrum DAO takes effect on the date upon which AIP-1 is posted, located at <a href="#todo">TODO</a>.</p>

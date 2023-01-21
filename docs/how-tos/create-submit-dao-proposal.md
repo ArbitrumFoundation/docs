@@ -19,18 +19,6 @@ Before you get started, make sure you have the following:
 - If you're interested in submitting on-chain proposals using Tally, you'll need at least 5,000,000 tokens in your wallet.
 
 
-### Key terms
-
-- <a data-quicklook-from='todo'>DAO</a>: Decentralized Autonomous Organization. DAOs generally use smart contracts to facilitate decentralized decision-making.
-- <a data-quicklook-from='todo'>Ethereum smart contract</a>: A self-executing program that lives on the Ethereum blockchain. The Constitution of the Arbitrum DAO is codified throughout a number of smart contracts.
-- <a data-quicklook-from='todo'>Snapshot</a>: A tool that lets you conduct informal temperature checks on proposals via polls.
-- <a data-quicklook-from='todo'>Tally</a>: A DAO operations platform that lets you submit and vote on DAO proposals.
-- <a data-quicklook-from='todo'>Constitutional proposal</a>: A proposal that seeks to amend or add to the Arbitrum Constitution.
-- <a data-quicklook-from='todo'>Non-Constitutional proposal</a>: A proposal that doesn't seek to amend or add to the Arbitrum Constitution.
-- <a data-quicklook-from='todo'>On-chain action</a>: An action executed as transactions submitted to the Arbitrum DAO's governance smart contracts. Submitting a proposal on Tally and updating the rate of $ARB inflation are examples of on-chain actions.
-- <a data-quicklook-from='todo'>Off-chain action</a>: An action executed without smart contracts. Updating the text of the Constitution of the Arbitrum DAO is an example of an off-chain action.
-
-
 ### Step 1: Submit your proposal to the DAO governance forum
 
 The [DAO governance forum](https://forum.arbitrum.io/) facilitates discussions about Arbitrum DAO and governance proposals that are submitted by eligible token-holders. To submit your proposal:
@@ -50,7 +38,7 @@ If you have at least 0.01% of votable $ARB tokens, you can create a poll on Snap
 3. Open the Arbitrum DAO Snapshot space.
 4. Create a poll that points to your forum post. Your poll should run for one week and should be decided by a simple majority.
 
-Your proposal will pass the temperature check if it receives support from more than 50% of voters. If your proposal doesn't pass the temperature check, don't submit it for an on-chain vote. Instead, head back to your forum post and engage with the community to address any concerns that they have.
+Your proposal will pass the temperature check if it receives support from more than 50% of votable tokens. If your proposal doesn't pass the temperature check, don't submit it for an on-chain vote. Instead, head back to your forum post and engage with the community to address any concerns that they have.
 
 If your proposal passes the temperature check, then you can move to the third and final step: an on-chain vote facilitated by Tally. Before proceeding, be sure to incorporate any feedback that you've received. Note that on-chain proposals can only be created by $ARB token holders who have at least TODO:qqq of votable $ARB tokens. If you don't have enough voting power to create an on-chain proposal, TODO.
 
@@ -81,34 +69,23 @@ This system is in its early days and will likely evolve in response to your feed
 Welcome to the future of governance!
 
 
-### Next steps
+### Important notes
 
- - todo
+ 1. Note that the Security Council has the power to execute certain Emergency Actions and Non-Emergency Actions, as delegated to it by the Arbitrum DAO and Arbitrum Foundation. Proposals that fall under the category of Non-Emergency Actions can be approved by the Security Council without going through the full AIP process.
+ 2. The threshold of support required for a proposal to pass can vary depending on the type of proposal and the quorum requirements specified in the Constitution.
+ 3. You can delegate your voting power to another address whether or not you have enough tokens to submit on-chain proposals. If you hold $ARB tokens, you can still participate in Arbitrum DAO's governance.
+ 4. The Arbitrum Foundation plays an important role in maintaining the Arbitrum DAO and its protocols - it's responsible for funding and supporting the development of the Arbitrum DAO, and it also has the power to make certain decisions related to the Arbitrum DAO's operations and governance (TODO)
 
 
----
 
-
-**FAQ:**
-
-Q: Is there a minimum number of voters required?
-A: todo
-
-Q: How much voting power do I need to vote on proposals?
-A: todo
-
-Q: How are sybils detected?
-A: todo
-
-Q: What if I get through step 1, but I don't hold enough voting power for steps 2 or 3?
-A: todo
-
-Q: What if I get through steps 1 and 2, but I don't hold enough voting power for step 3?
-A: todo
-
-**Footnotes:**
-
-- TODO
-
-TODOs:
-- images / screenshots as things stabilize
+<!-- todos: 
+How long are proposals open for voting?
+various inline todos
+things not specified:
+In step 1, the Constitution doesn't specify where the proposal should be submitted. The guide suggests the DAO governance forum, but it is not clear if this is the official place for proposal submissions.
+In step 2, the Constitution doesn't specify where proposals need to pass a temperature check before being submitted for an on-chain vote.
+In step 3, the Constitution doesn't specify the minimum amount of tokens required to create an on-chain proposal using Tally. Also, it is not specified the percentage of votable tokens required for a proposal to pass.
+In step 3, the Constitution doesn't specify what constitutes a vote in favor or against a proposal.
+In step 3, the Constitution doesn't specify what types of actions can be included in a proposal.
+In step 3, the Constitution doesn't specify the time frame for a proposal to be voted on, and if there is a quorum required for the vote to be valid.
+-->
