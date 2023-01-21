@@ -11,17 +11,17 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 When participating in the Arbitrum DAO, token holders have the option to either vote directly on proposals or to delegate their voting power to a delegate. In this concept doc, we'll explore the concept of delegates and delegation within the context of the Arbitrum DAO.
 
-## What is a delegate?
+### What is a delegate?
 
 A delegate is a member of the Arbitrum DAO community who has been elected to represent other token holders and vote on their behalf. Delegates are elected by token holders who choose to delegate their voting power to them. Delegates are required to follow the Constitution of the Arbitrum DAO and must act in the best interest of the token holders they represent.
 
-## Why delegate?
+### Why delegate?
 
 Delegation allows token holders to participate in the governance of the Arbitrum DAO without having to actively keep track of every proposal and vote. By delegating their voting power to a delegate, token holders can trust that their vote will be cast in a way that aligns with their own beliefs and values.
 
 Additionally, token holders who delegate their voting power are still able to vote on proposals directly if they choose to (?). This allows for added flexibility and the ability to "override" a delegate's vote if necessary (?).
 
-## How to delegate
+### How to delegate
 
 Delegating your voting power is easy and can be done through the Tally platform. Here's the basic process:
 

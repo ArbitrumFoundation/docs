@@ -9,11 +9,9 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
-# How to vote on Arbitrum DAO proposals
-
 As a member of the Arbitrum DAO, it's important to be an active participant in the DAO's decision-making process by voting on governance proposals that other DAO members submit. The voting process can vary depending on the given proposal's stage; in this how-to, you'll learn how to locate, evaluate, and vote on proposals at each of the possible stages.
 
-## Proposal stages
+### Proposal stages
 
 1. **Forum discussion:** Proposals are first submitted to the DAO governance forum (todo) for community discussion and debate. As a member, you can participate in the discussion and provide feedback to the proposal creator. (todo, not a member?)
 
@@ -21,22 +19,22 @@ As a member of the Arbitrum DAO, it's important to be an active participant in t
 
 3. **On-chain vote:** If the proposal passes the temperature check, it will move on to an on-chain vote facilitated by Tally. The proposal must receive more votes in favor than against; constitutional proposals must receive votes from at least 5% of Votable Tokens; non-constitutional proposals must receive votes from at least 3% of Votable Tokens.
 
-## How to vote on a proposal
+### How to vote on a proposal
 
-### Forum discussion
+#### Forum discussion
 
 1. Go to the [DAO governance forum](https://forum.arbitrum.io/).
 2. Locate the proposal you'd like to vote on and read through the proposal and the discussion thread.
 3. Provide feedback and participate in the discussion to help shape the proposal.
 
-### Temperature check
+#### Temperature check
 
 1. Navigate to [Snapshot](https://snapshot.org/#/).
 2. Connect your wallet.
 3. Open the Arbitrum DAO Snapshot space.
 4. Locate the proposal you'd like to vote on and cast your vote.
 
-### On-chain vote
+#### On-chain vote
 
 1. Log in to [Tally](https://www.tally.xyz/) using the wallet that holds your $ARB tokens.
 2. Navigate to the "explore DAOs" section or click on "My DAOs" within your Tally profile and select the page for either constitutional or non-constitutional proposals.
