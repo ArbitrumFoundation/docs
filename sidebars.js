@@ -22,6 +22,10 @@ module.exports = {
       id: 'state-of-progressive-decentralization',
     },
     {
+      type: 'doc',
+      id: 'dao-constitution',
+    },
+    {
       type: 'category',
       label: 'How-to guides',
       collapsed: false,
@@ -74,10 +78,6 @@ module.exports = {
         },
         {
           type: 'doc',
-          id: 'concepts/lifecycle-anatomy-proposal',
-        },
-        {
-          type: 'doc',
           id: 'concepts/progressive-decentralization',
         },
         {
@@ -103,16 +103,14 @@ module.exports = {
       label: 'Governance architecture',
       items: [
         {
-          type: 'doc',
-          id: 'architecture/dao-constitution',
+          type: 'link',
+          label: 'Sybil detection',
+          href: 'https://github.com/OffchainLabs/arb-sybil/tree/master/v2',
         },
         {
-          type: 'doc',
-          id: 'architecture/smart-contract-architecture',
-        },
-        {
-          type: 'doc',
-          id: 'architecture/sybil-detection-algorithm',
+          type: 'link',
+          label: 'Smart contract architecture',
+          href: 'https://github.com/OffchainLabs/governance/blob/main/docs/overview.md',
         },
       ],
     },
