@@ -7,10 +7,9 @@ description: todo:qqq
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
 
-
 The Arbitrum DAO treats docs like products: we start with minimum-viable content and then use feedback loops to iterate our way towards validated value.
 
-Every governance document (excluding the [Constitution](../architecture/dao-constitution)) is initially published with the following "public preview" disclaimer:
+Every governance document (excluding the [Constitution](../dao-constitution)) is initially published with the following "public preview" disclaimer:
 
 <DraftExpectationsPartial />
 
@@ -22,7 +21,7 @@ In general, a document is considered validated if it's 1) frequently viewed, 2) 
 
 ### Does this mechanism apply to The Constitution of the Arbitrum DAO?
 
-No. The private preview mechanism does **not** apply to [The Constitution of the Arbitrum DAO](../architecture/arbitrum-dao-constitution.md).
+No. The private preview mechanism does **not** apply to [The Constitution of the Arbitrum DAO](../dao-constitution.md).
 
 ### What's the difference between a draft and a public preview?
 
