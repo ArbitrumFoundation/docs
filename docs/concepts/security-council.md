@@ -1,5 +1,5 @@
 ---
-id: security-council-election
+id: security-council
 title: "Security Council: A conceptual overview"
 sidebar_label: Security Council election
 description: todo:qqq
