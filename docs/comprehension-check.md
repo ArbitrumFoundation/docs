@@ -9,6 +9,8 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
+todo - clean this up, possibly use the spoiler styles to hide answers, consider squishing the Scenario / Question into a single line.
+
 Use the following scenarios to test your comprehension of the different components of the Arbitrum DAO protocol, such as the Security Council, AIPs, on-chain and off-chain actions. By exercising your understanding of these scenarios, you'll be better equipped to confidently navigate the process, technology, and governance proposals that support the Arbitrum DAO.
 
 
