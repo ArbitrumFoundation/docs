@@ -1,7 +1,7 @@
 ---
 id: security-council
 title: "Security Council: A conceptual overview"
-sidebar_label: Security Council election
+sidebar_label: Security Council
 description: todo:qqq
 ---
 
@@ -11,7 +11,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 The Constitution of the Arbitrum DAO outlines the process for electing members to the Security Council, a group of individuals who are responsible for managing the risk of the Arbitrum ecosystem through the selective application of Emergency Actions. The Security Council is made up of 12 members who are elected by the community through a democratic process.
 
-## The role of the security council
+### The role of the security council
 
 The Security Council is an important part of the Arbitrum DAO's governance structure. Its main role is to manage risks associated with the Arbitrum protocol and its ecosystem. The council is responsible for making decisions that protect the interests of the DAO, its members, and the broader Arbitrum community.
 
@@ -19,7 +19,7 @@ The Security Council is composed of 12 members, divided into two groups: the Jul
 
 It is important to note that the Security Council is subject to the oversight and control of the DAO's members, who have the power to remove council members if they are not acting in the best interests of the DAO. The council's decisions can also be overridden by a vote of the DAO's members (?).
 
-## How the elections work
+### How the elections work
 
 The Security Council is made up of 12 members, who are divided into two groups called the "July Cohort" and the "January Cohort" (todo - pronouns?). Every year, on July 15th and January 15th, there are elections to fill the seats in these two groups.
 
@@ -37,14 +37,14 @@ The rules for the Security Council elections can be changed by the members of th
 
 In summary, the Security Council elections are important because they decide who will make important decisions about the security and integrity of the Arbitrum DAO. The process is democratic and allows members of the organization to have a say in who is elected to the Security Council. It's important to have a diverse group of candidates to ensure that the Security Council is acting in the best interests of the Arbitrum DAO.
 
-## Why elections are important
+### Why elections are important
 
 The Security Council is responsible for making important decisions that affect the entire Arbitrum network. By holding regular elections, the community can ensure that the Council is made up of members who truly represent the community's interests.
 
 In addition, the election process allows for the removal of Council members who are not acting in the best interests of the network. This helps to ensure that the Council always has the best interests of the network in mind.
 
 
-## On perceptions of centralization
+### On perceptions of centralization
 
 Progressive decentralization (todo) is the process of gradually transferring control and decision-making power from a central authority to a decentralized community. This is a common approach used in the blockchain and cryptocurrency space, where the ultimate goal is for a protocol or organization to be fully owned and operated by its community of users.
 
@@ -55,7 +55,7 @@ Additionally, the Security Council is designed to operate in a way that prevents
 However, it's important to note that the Security Council is just one step along the journey of progressive decentralization. There is still work to be done to fully decentralize the Arbitrum network and ensure that it is fully owned and operated by its community of users. But by starting with the Security Council and other steps such as the use of progressive decentralization, the Arbitrum DAO is working towards this goal in a strategic and methodical way.
 
 
-## Conclusion
+### Conclusion
 
 The Security Council elections are an important part of the governance of the Arbitrum DAO. By participating in the elections, community members can ensure that the Council is made up of members who truly represent their interests.
 
