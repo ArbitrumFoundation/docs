@@ -10,7 +10,7 @@ As we continue building confidence through iteration and experimentation, the <a
 
 
 ### How are people elected to the Security Council? {#how-are-people-elected-to-the-security-council}
-<a href="/dao-glossary#security-council">Security Council</a> membership is determined by a <a href="/dao-glossary#security-council-election">Security Council election</a> that happens every six months, or twice a year. See TODO for more detailed information on this election's <a href="/dao-glossary#mechanism-design">Mechanism design</a>.
+<p><a href="/dao-glossary#security-council">Security Council</a> membership is determined by a <a href="/dao-glossary#security-council-election">Security Council election</a> that happens every six months, or twice a year. See TODO for more detailed information on this election's <a href="/dao-glossary#mechanism-design">Mechanism design</a>.</p>
 
 ## Governance architecture
 
@@ -28,10 +28,10 @@ As we continue building confidence through iteration and experimentation, the <a
 
 
 ### Could Arbitrum's protocol governance become enshrined within Ethereum's L1 social consensus mechanism, removing the notion of "chain ownership"? {#could-arbitrums-protocol-governance-become-enshrined-within-ethereums-l1-social-consensus-mechanism-removing-the-notion-of-chain-ownership}
-It's technically possible. For this to happen, the change would have to be initiated through a governance proposal, then discussed by members of the Arbitrum DAO, then approved through a temperature check, and then formally approved by $ARB token-holders through an on-chain vote. It's largely out of our hands.
+<p>It's technically possible. For this to happen, the change would have to be initiated through a governance proposal, then discussed by members of the Arbitrum DAO, then approved through a temperature check, and then formally approved by $ARB token-holders through an on-chain vote. It's largely out of our hands.</p>
 
 ## $ARB token and airdrop
 
 ### Have you identified any Sybils? {#have-you-identified-any-sybils}
-Yes. You can find a list of denylisted addresses we identified as Sybils here [link to github or something]
+<p>Yes. You can find a list of denylisted addresses we identified as Sybils here [link to github or something]</p>
 
