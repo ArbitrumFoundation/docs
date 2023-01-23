@@ -73,6 +73,10 @@ export function renderKnowledgeItem(
   }
 }
 
+export function printItem(item: RenderedKnowledgeItem): string {
+  return `### ${item.title} {#${item.key}}\n${item.text}\n\n`
+}
+
 export class RenderKnowledgeItemError extends Error {
   constructor(public item: KnowledgeItem, public error: any) {
     super('Failed rendering item')

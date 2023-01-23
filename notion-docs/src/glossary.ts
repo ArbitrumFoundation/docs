@@ -1,10 +1,11 @@
 import { Client } from '@notionhq/client'
 import { queryDatabaseWithBlocks } from './notion'
-import { parseItemPage } from './item'
+import { parseItemPage, printItem, renderKnowledgeItem } from './item'
 
 import type { QueryDatabaseParameters } from '@notionhq/client/build/src/api-endpoints'
 import type { Page } from './notion'
 import type { KnowledgeItem } from './item'
+import type { LinkableTerms } from './format'
 
 const glossaryDatabaseId = '3bad2594574f476f917d8080a6ec5ce7'
 
@@ -27,4 +28,17 @@ export async function lookupGlossaryTerms(
     ...query,
   })
   return pages.map(parseGlossaryPage).filter(isDefinition)
+}
+
+export function renderGlossary(
+  definitions: Definition[],
+  linkableTerms: LinkableTerms
+) {
+  const renderedDefs = definitions.map(def =>
+    renderKnowledgeItem(def, linkableTerms)
+  )
+  // sort the array alphabetically by term
+  renderedDefs.sort((a, b) => a.title.localeCompare(b.title))
+
+  return renderedDefs.map(printItem).join('')
 }

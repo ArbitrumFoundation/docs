@@ -1,10 +1,11 @@
 import { Client } from '@notionhq/client'
 import { queryDatabaseWithBlocks } from './notion'
-import { parseItemPage } from './item'
+import { parseItemPage, printItem, renderKnowledgeItem } from './item'
 
 import type { QueryDatabaseParameters } from '@notionhq/client/build/src/api-endpoints'
 import type { Page } from './notion'
 import type { KnowledgeItem } from './item'
+import type { LinkableTerms } from './format'
 
 const faqDatabaseId = 'a8a9af20f33d4cc1b32bbd2be8459733'
 
@@ -57,18 +58,38 @@ export async function lookupFAQs(
   return pages.map(parseFAQPage).filter(isFAQ)
 }
 
-export function organizeFAQ(questions: FAQ[]): Record<string, FAQ[]> {
-  const sections: Record<string, FAQ[]> = {}
+function organizeFAQ(questions: FAQ[]): Map<string, FAQ[]> {
+  const sections = new Map<string, FAQ[]>()
   for (const question of questions) {
-    if (!sections[question.section]) {
-      sections[question.section] = []
+    if (!sections.has(question.section)) {
+      sections.set(question.section, [])
     }
-    sections[question.section].push(question)
+    sections.get(question.section)?.push(question)
   }
-  for (const section in sections) {
-    sections[section].sort(
+  for (const [section, faqs] of sections) {
+    faqs.sort(
       (question1, question2): number => question1.order - question2.order
     )
   }
   return sections
+}
+
+export function renderSimpleFAQs(faqs: FAQ[], linkableTerms: LinkableTerms): string {
+  return faqs
+      .map(faq => renderKnowledgeItem(faq, linkableTerms))
+      .map(printItem)
+      .join('')
+}
+
+export function renderFAQs(faqs: FAQ[], linkableTerms: LinkableTerms): string {
+  const sections = organizeFAQ(faqs)
+  if (sections.size > 1) {
+    let out = ''
+    for (const [section, faqs] of sections) {
+      out += `## ${section}\n\n${renderSimpleFAQs(faqs, linkableTerms)}`
+    }
+    return out
+  } else {
+    return renderSimpleFAQs(faqs, linkableTerms)
+  }
 }
