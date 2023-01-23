@@ -1,71 +1,135 @@
-import type { LinkableTerms } from './format'
+import { Client } from '@notionhq/client'
+import {
+  lookupProject,
+  lookupGlossaryTerms,
+  lookupFAQs,
+  organizeFAQ,
+  DefinitionValidity,
+  renderKnowledgeItem,
+  handleRenderError,
+  knowledgeItemValidity,
+} from '../src'
+import dotenv from 'dotenv'
 
-import { lookupProject } from './notion'
-import { renderRichTexts, validDefinitionToPublish, DefinitionValidity } from './format'
-import { formatGlossaryTermKey, lookupGlossaryTerms, renderDefinition } from './glossary'
-import { lookupProjectFAQ, organizeFAQ, renderFAQ } from './faq'
-
-import type { FAQ } from './faq'
-import type { Definition } from './glossary'
+import type {
+  FAQ,
+  Definition,
+  KnowledgeItem,
+  LinkableTerms,
+  RenderedKnowledgeItem,
+} from '../src'
 
 import fs from 'fs'
 
-function formatDefinitions(definitions: Definition[], linkableTerms: LinkableTerms) {
-  const renderedDefs = definitions.map(def => renderDefinition(def, linkableTerms))
-  // sort the array alphabetically by term
-  renderedDefs.sort((a, b) => a.term.localeCompare(b.term))
+dotenv.config()
 
-  const htmlArray = renderedDefs.map(item => {
-    return `### ${item.term} {#${item.key}}\n${item.definition}\n\n`
-  })
+const notion = new Client({
+  auth: process.env.NOTION_TOKEN,
+})
+
+function printItem(item: RenderedKnowledgeItem): string {
+  return `### ${item.title} {#${item.key}}\n${item.text}\n\n`
+}
+
+function formatDefinitions(
+  definitions: Definition[],
+  linkableTerms: LinkableTerms
+) {
+  const renderedDefs = definitions.map(def =>
+    renderKnowledgeItem(def, linkableTerms)
+  )
+  // sort the array alphabetically by term
+  renderedDefs.sort((a, b) => a.title.localeCompare(b.title))
+
+  const htmlArray = renderedDefs.map(printItem)
 
   // wrap the HTML strings in a <dl> element with a class of "hidden-glossary-list"
   return `<div class="hidden-glossary">\n\n${htmlArray.join('')}\n</div>\n`
 }
 
-function renderSections(sections: Record<string, FAQ[]>, linkableTerms: LinkableTerms): string {
+function renderSections(
+  sections: Record<string, FAQ[]>,
+  linkableTerms: LinkableTerms
+): string {
   let out = ''
-  for (let section in sections) {
-      out += `## ${section}\n\n`
-      out += sections[section]
-        .map(faq => renderFAQ(faq, linkableTerms))
-        .map(faq => {
-          return `### ${faq.question}\n${faq.answer}\n\n`
-        }).join('')
+  for (const section in sections) {
+    out += `## ${section}\n\n`
+    out += sections[section]
+      .map(faq => renderKnowledgeItem(faq, linkableTerms))
+      .map(printItem)
+      .join('')
   }
   return out
 }
 
-async function main() {
-  const governanceProject = await lookupProject('Governance docs')
-  console.log("Looking up FAQs")
-  const faqs = await lookupProjectFAQ(governanceProject)
-  console.log("Looking up Glossary")
-  let definitions = await lookupGlossaryTerms()
-  console.log("Rendering contents")
+async function generateFiles() {
+  const governanceProject = await lookupProject(notion, 'Governance docs')
+  console.log('Looking up FAQs')
+  const faqs = await lookupFAQs(notion, {
+    filter: {
+      and: [
+        {
+          property: 'Project(s)',
+          relation: {
+            contains: governanceProject,
+          },
+        },
+        {
+          property: 'Publishable?',
+          select: {
+            equals: 'Publishable',
+          },
+        },
+      ],
+    },
+  })
+  console.log('Looking up Glossary')
+  const definitions = await lookupGlossaryTerms(notion, {})
+  console.log('Rendering contents')
   const linkableTerms: LinkableTerms = {}
-  for (let definition of definitions) {
-    linkableTerms[definition.pageId] = {
-      text: renderRichTexts(definition.term, linkableTerms),
-      anchor: formatGlossaryTermKey(definition.term),
-      page: '/dao-glossary',
-      valid: validDefinitionToPublish(definition, governanceProject),
-      notionURL: definition.url,
+  const addItems = (items: KnowledgeItem[], page: string) => {
+    for (const item of items) {
+      linkableTerms[item.pageId] = {
+        text: item.title,
+        anchor: item.title,
+        page: page,
+        valid: knowledgeItemValidity(item, governanceProject),
+        notionURL: item.url,
+      }
     }
   }
-  const sections = organizeFAQ(faqs)
+  const isValid = (item: KnowledgeItem) => {
+    return (
+      knowledgeItemValidity(item, governanceProject) ==
+      DefinitionValidity.Valid
+    )
+  }
+
+  addItems(definitions, '/dao-glossary')
+  addItems(faqs, '/dao-faq')
+  const publishedFAQs = faqs.filter(isValid)
+  const publishedDefinitions = definitions.filter(isValid)
+  const sections = organizeFAQ(publishedFAQs)
   const sectionsHTML = renderSections(sections, linkableTerms)
-  const publishedDefinitions = definitions.filter(def => {
-    return validDefinitionToPublish(def, governanceProject) == DefinitionValidity.Valid
-  })
   const definitionsHTML = formatDefinitions(publishedDefinitions, linkableTerms)
   fs.writeFileSync('../docs/partials/_glossary-partial.md', definitionsHTML)
   fs.writeFileSync('../docs/partials/_faq-partial.md', sectionsHTML)
+}
+
+async function main() {
+  try {
+    await generateFiles()
+  } catch (e: unknown) {
+    if (await handleRenderError(e, notion)) {
+      process.exit(1)
+    }
+    throw e
+  }
 }
 
 main()
   .then(() => process.exit(0))
   .catch(err => {
     console.error(err)
-    process.exitCode = 1
+    process.exit(1)
   })
