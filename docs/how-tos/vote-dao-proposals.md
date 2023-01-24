@@ -11,7 +11,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 As a member of the Arbitrum DAO, it's important to be an active participant in the DAO's decision-making process by voting on governance proposals that other DAO members submit. The voting process can vary depending on the given proposal's stage; in this how-to, you'll learn how to locate, evaluate, and vote on proposals at each of the possible stages.
 
-#### Proposals in the "forum discussion" stage
+### Proposals in the "forum discussion" stage
 
 Proposals are first submitted to the DAO governance forum (todo) for community discussion and debate. As a member of the governance forum, you can participate in the discussion and provide feedback to the proposal creator. (todo)
 
@@ -19,7 +19,7 @@ Proposals are first submitted to the DAO governance forum (todo) for community d
 2. Locate the proposal you'd like to vote on and read through the proposal and the discussion thread.
 3. Provide feedback and participate in the discussion to help shape the proposal.
 
-#### Proposals in the "temperature check" stage
+### Proposals in the "temperature check" stage
 
  After a week of discussion, the proposal creator may conduct a temperature check via a Snapshot poll. This is a way to more formally gauge the community's interest in the proposal.
 
@@ -28,7 +28,7 @@ Proposals are first submitted to the DAO governance forum (todo) for community d
 3. Open the Arbitrum DAO Snapshot space.
 4. Locate the proposal you'd like to vote on and cast your vote (todo).
 
-#### Proposals in the "on-chain vote" stage
+### Proposals in the "on-chain vote" stage
 
 If the proposal passes the temperature check, it will move on to an on-chain vote facilitated by Tally. The proposal must receive more votes in favor than against; constitutional proposals must receive votes from at least 5% of Votable Tokens; non-constitutional proposals must receive votes from at least 3% of Votable Tokens.
 
