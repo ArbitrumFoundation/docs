@@ -38,6 +38,12 @@ function renderRichText(
             break
         }
       }
+      if (res.annotations.bold) {
+        text = `<strong>${text}</strong>`
+      }
+      if (res.annotations.italic) {
+        text = `<em>${text}</em>`
+      }
       if (renderMode == RenderMode.HTML) {
         text = text.replaceAll('\n', '<br />\n')
       }

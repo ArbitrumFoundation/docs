@@ -6,7 +6,7 @@ import type { RichTextItemResponse } from '@notionhq/client/build/src/api-endpoi
 import type { Block } from '../notion'
 import type { LinkableTerms } from './link'
 
-function renderBlock(
+export function renderBlock(
   block: Block,
   linkableTerms: LinkableTerms,
   prevType?: string,
@@ -37,12 +37,11 @@ function renderBlock(
       postfix += '</ul>\n'
     }
   }
-
-  let child = ''
-  if (block.children.length > 0) {
-    child = renderBlocks(block.children, linkableTerms)
-  }
   const renderRich = (text: RichTextItemResponse[]): string => {
+    let child = ''
+    if (block.children.length > 0) {
+      child = renderBlocks(block.children, linkableTerms)
+    }
     return `${renderRichTexts(text, linkableTerms, RenderMode.HTML)}${child}`
   }
   const body = (() => {
@@ -63,6 +62,9 @@ function renderBlock(
         const text = renderRich(blockResponse.code.rich_text)
         return `\`\`\`${blockResponse.code.language}\n${text}\n\`\`\``
       }
+      case 'divider': {
+        return '<hr />'
+      }
       case 'link_to_page': {
         const link = blockResponse.link_to_page
         switch (link.type) {
@@ -72,9 +74,40 @@ function renderBlock(
             throw new Error(`Unhandled link_to_page type: ${link.type}`)
         }
       }
-      default:
+      case 'heading_1': {
+        type Heading = typeof blockResponse.heading_1 & {is_toggleable?: boolean}
+        const heading = blockResponse.heading_1 as Heading
+        if (!!heading.is_toggleable) {
+          return ''
+        }
+        const text = renderRich(heading.rich_text)
+        return `\n# ${text}`
+      }
+      case 'heading_2': {
+        type Heading = typeof blockResponse.heading_2 & {is_toggleable?: boolean}
+        const heading = blockResponse.heading_2 as Heading
+        if (!!heading.is_toggleable) {
+          return ''
+        }
+        const text = renderRich(heading.rich_text)
+        return `\n## ${text}`
+      }
+      case 'heading_3': {
+        type Heading = typeof blockResponse.heading_3 & {is_toggleable?: boolean}
+        const heading = blockResponse.heading_3 as Heading
+        if (!!heading.is_toggleable) {
+          return ''
+        }
+        const text = renderRich(heading.rich_text)
+        return `\n### ${text}`
+      }
+      case 'divider': {
+
+      }
+      default: {
         console.log(blockResponse)
         throw new Error(`Found block of unknown type ${blockResponse.type}`)
+      }
     }
   })()
   return `${prefix}${body}${postfix}`

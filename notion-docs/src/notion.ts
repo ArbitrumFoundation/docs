@@ -53,6 +53,20 @@ export async function queryDatabaseWithBlocks(
   })
 }
 
+export async function getPageWithBlocks(
+  client: Client,
+  pageId: string
+): Promise<Page> {
+  const page = await client.pages.retrieve({page_id: pageId})
+  if (!isFullPage(page)) {
+      throw new Error('Found non-full page')
+    }
+  return {
+    page: page,
+    blocks: await getBlockChildren(client, page.id),
+  }
+}
+
 async function getBlockChildren(
   client: Client,
   block_id: string

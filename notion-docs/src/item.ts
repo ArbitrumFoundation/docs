@@ -7,44 +7,19 @@ import {
   formatAnchor,
   renderBlocks,
   MissingPageError,
-  LinkValidity,
 } from './format'
+import { parseRecordPage } from './record'
+import type { Record } from './record'
 import type { Block, Page } from './notion'
 
-export interface KnowledgeItem {
-  pageId: string
-  url: string
-  title: RichTextItemResponse[]
+export interface KnowledgeItem extends Record {
   text: RichTextItemResponse[]
-  blocks: Block[]
-  status: string | undefined
-  publishable: string | undefined
-  projects: Set<string>
 }
 
 export interface RenderedKnowledgeItem {
   title: string
   text: string
   key: string
-}
-
-export function knowledgeItemValidity(
-  item: KnowledgeItem,
-  project: string
-): LinkValidity {
-  if (
-    item.status != '4 - Continuously publishing' &&
-    item.status != '2 - Pending peer review'
-  ) {
-    return { reason: 'item not yet marked as ready' }
-  }
-  if (item.publishable != 'Publishable') {
-    return { reason: 'item not marked as publishable' }
-  }
-  if (!item.projects.has(project)) {
-    return { reason: 'item is from incorrect project' }
-  }
-  return 'Valid'
 }
 
 export function renderKnowledgeItem(
@@ -116,45 +91,16 @@ export function parseItemPage(
   titleTerm: string,
   textTerm: string
 ): KnowledgeItem {
+  const record = parseRecordPage(page, titleTerm)
   const properties = page.page.properties
-  const title = properties[titleTerm]
-  if (title.type != 'title') {
-    throw new Error('Expected title')
-  }
-
+  
   const definition = properties[textTerm]
   if (definition.type != 'rich_text') {
     throw new Error('Expected text term to be rich text')
   }
 
-  const status = properties['Status']
-  if (status.type != 'status') {
-    throw new Error('Expected status to be status')
-  }
-
-  const publishable = properties['Publishable?']
-  if (publishable.type != 'select') {
-    throw new Error('Expected Publishable? to be select')
-  }
-
-  const projectsProp = properties['Project(s)']
-  if (projectsProp.type != 'relation') {
-    throw new Error('Expected Project(s) to be a relation')
-  }
-  const projectRelation = projectsProp.relation
-  const projects = new Set<string>()
-  for (const project of projectRelation) {
-    projects.add(project.id)
-  }
-
   return {
-    pageId: page.page.id,
-    title: title.title,
+    ...record,
     text: definition.rich_text,
-    status: status.status?.name,
-    publishable: publishable.select?.name,
-    url: page.page.url,
-    projects: projects,
-    blocks: page.blocks,
   }
 }
