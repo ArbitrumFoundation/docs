@@ -36,13 +36,13 @@ export function knowledgeItemValidity(
     item.status != '4 - Continuously publishing' &&
     item.status != '2 - Pending peer review'
   ) {
-    return {reason: "item not yet marked as ready"}
+    return { reason: 'item not yet marked as ready' }
   }
   if (item.publishable != 'Publishable') {
-    return {reason: "item not marked as publishable"}
+    return { reason: 'item not marked as publishable' }
   }
   if (!item.projects.has(project)) {
-    return {reason: "item is from incorrect project"}
+    return { reason: 'item is from incorrect project' }
   }
   return 'Valid'
 }
@@ -61,7 +61,11 @@ export function renderKnowledgeItem(
 
     let renderedText = renderBlocks(item.blocks, linkableTerms)
     if (renderedText.length == 0) {
-      renderedText = `<p>${renderRichTexts(item.text, linkableTerms, RenderMode.HTML)}</p>`
+      renderedText = `<p>${renderRichTexts(
+        item.text,
+        linkableTerms,
+        RenderMode.HTML
+      )}</p>`
     }
     return {
       title: title,
@@ -107,7 +111,11 @@ export async function handleRenderError(
   return true
 }
 
-export function parseItemPage(page: Page, titleTerm: string, textTerm: string): KnowledgeItem {
+export function parseItemPage(
+  page: Page,
+  titleTerm: string,
+  textTerm: string
+): KnowledgeItem {
   const properties = page.page.properties
   const title = properties[titleTerm]
   if (title.type != 'title') {

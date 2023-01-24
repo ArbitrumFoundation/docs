@@ -2,7 +2,7 @@ import { RenderMode } from './format'
 import { renderLink, renderPageLink } from './link'
 
 import type { RichTextItemResponse } from '@notionhq/client/build/src/api-endpoints'
-import type { LinkableTerms} from './link'
+import type { LinkableTerms } from './link'
 
 function stripCurlyQuotes(input: string): string {
   return input

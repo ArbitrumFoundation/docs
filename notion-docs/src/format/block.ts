@@ -4,7 +4,7 @@ import { renderPageLink } from './link'
 
 import type { RichTextItemResponse } from '@notionhq/client/build/src/api-endpoints'
 import type { Block } from '../notion'
-import type { LinkableTerms} from './link'
+import type { LinkableTerms } from './link'
 
 function renderBlock(
   block: Block,

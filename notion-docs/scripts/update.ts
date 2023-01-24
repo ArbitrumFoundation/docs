@@ -10,13 +10,7 @@ import {
 } from '../src'
 import dotenv from 'dotenv'
 
-import type {
-  FAQ,
-  Definition,
-  KnowledgeItem,
-  LinkableTerms,
-  RenderedKnowledgeItem,
-} from '../src'
+import type { KnowledgeItem, LinkableTerms, LinkValidity } from '../src'
 
 import fs from 'fs'
 
@@ -51,7 +45,7 @@ async function generateFiles() {
   const definitions = await lookupGlossaryTerms(notion, {})
   console.log('Rendering contents')
   const linkableTerms: LinkableTerms = {}
-  const isValid = (item: KnowledgeItem): LinkValidity => {
+  const validity = (item: KnowledgeItem): LinkValidity => {
     return knowledgeItemValidity(item, governanceProject)
   }
   const addItems = (items: KnowledgeItem[], page: string) => {
@@ -60,25 +54,28 @@ async function generateFiles() {
         text: item.title,
         anchor: item.title,
         page: page,
-        valid: isValid(item),
+        valid: validity(item),
         notionURL: item.url,
       }
     }
   }
   const isValid = (item: KnowledgeItem) => {
-    return (
-      isValid(item) ==
-      'Valid'
-    )
+    return validity(item) == 'Valid'
   }
 
   addItems(definitions, '/dao-glossary')
   addItems(faqs, '/dao-faq')
   const publishedFAQs = faqs.filter(isValid)
   const publishedDefinitions = definitions.filter(isValid)
-  const definitionsHTML = `<div class="hidden-glossary">\n\n${renderGlossary(publishedDefinitions, linkableTerms)}\n</div>\n`
+  const definitionsHTML = `<div class="hidden-glossary">\n\n${renderGlossary(
+    publishedDefinitions,
+    linkableTerms
+  )}\n</div>\n`
   fs.writeFileSync('../docs/partials/_glossary-partial.md', definitionsHTML)
-  fs.writeFileSync('../docs/partials/_faq-partial.md', renderFAQs(publishedFAQs, linkableTerms))
+  fs.writeFileSync(
+    '../docs/partials/_faq-partial.md',
+    renderFAQs(publishedFAQs, linkableTerms)
+  )
 }
 
 async function main() {

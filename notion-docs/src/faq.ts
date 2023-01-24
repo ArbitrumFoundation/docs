@@ -21,7 +21,7 @@ const isFAQ = (item: FAQ | undefined): item is FAQ => {
 function parseFAQPage(page: Page): FAQ | undefined {
   const item = parseItemPage(page, 'Question', 'Short answer (HTML)')
   const properties = page.page.properties
-  
+
   const section = properties['FAQ section']
   if (section.type != 'select') {
     throw new Error('Expected select')
@@ -66,7 +66,7 @@ function organizeFAQ(questions: FAQ[]): Map<string, FAQ[]> {
     }
     sections.get(question.section)?.push(question)
   }
-  for (const [section, faqs] of sections) {
+  for (const [, faqs] of sections) {
     faqs.sort(
       (question1, question2): number => question1.order - question2.order
     )
@@ -74,15 +74,21 @@ function organizeFAQ(questions: FAQ[]): Map<string, FAQ[]> {
   return sections
 }
 
-export function renderSimpleFAQs(faqs: FAQ[], linkableTerms: LinkableTerms): string {
+export function renderSimpleFAQs(
+  faqs: FAQ[],
+  linkableTerms: LinkableTerms
+): string {
   return faqs
-      .map(faq => renderKnowledgeItem(faq, linkableTerms))
-      .map(printItem)
-      .join('')
+    .map(faq => renderKnowledgeItem(faq, linkableTerms))
+    .map(printItem)
+    .join('')
 }
 
-export function renderFAQs(faqs: FAQ[], linkableTerms: LinkableTerms): string {
-  const sections = organizeFAQ(faqs)
+export function renderFAQs(
+  allFAQs: FAQ[],
+  linkableTerms: LinkableTerms
+): string {
+  const sections = organizeFAQ(allFAQs)
   if (sections.size > 1) {
     let out = ''
     for (const [section, faqs] of sections) {
@@ -90,6 +96,6 @@ export function renderFAQs(faqs: FAQ[], linkableTerms: LinkableTerms): string {
     }
     return out
   } else {
-    return renderSimpleFAQs(faqs, linkableTerms)
+    return renderSimpleFAQs(allFAQs, linkableTerms)
   }
 }

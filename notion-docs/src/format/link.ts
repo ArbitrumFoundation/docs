@@ -65,9 +65,7 @@ export function renderPageLink(
   const text = renderRichTexts(link.text, linkableTerms, RenderMode.HTML)
   if (link.valid != 'Valid') {
     console.warn(
-      `Ignoring link to doc with reason: ${link.valid.reason}: ${
-        link.notionURL
-      }`
+      `Ignoring link to doc with reason: ${link.valid.reason}: ${link.notionURL}`
     )
     return text
   }
