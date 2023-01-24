@@ -16,7 +16,8 @@ In this how-to, you'll learn how to resubmit a proposal to the Arbitrum DAO that
 Before you get started, make sure you have the following:
 
 - An Ethereum wallet that holds at least 0.01% of votable $ARB tokens. This lets you submit and vote on proposals using Snapshot.
-- If you're interested in resubmitting on-chain proposals using Tally, you'll need at least 5,000,000 tokens in your wallet.
+- If you're interested in submitting on-chain proposals using Tally, you'll need at least 5,000,000 votes delegated to your wallet address.
+
 
 ### Step 1: Review the feedback from the previous proposal
 
@@ -28,7 +29,7 @@ Once you've identified the areas of concern, make revisions to the proposal to a
 
 ### Step 3: Conduct a temperature check with a Snapshot poll
 
-Before resubmitting the proposal to the DAO, you should conduct a temperature check with a Snapshot poll to gauge the community's interest in your proposal. To create a poll on Snapshot:
+Before resubmitting the proposal to the DAO, you should conduct another temperature check with a Snapshot poll to gauge the community's interest in your proposal. To create a poll on Snapshot:
 
 1. Navigate to [Snapshot](https://snapshot.org/#/).
 2. Connect your wallet.
@@ -39,16 +40,18 @@ Your proposal will pass the temperature check if it receives support from more t
 
 ### Step 4: Submit your on-chain proposal using Tally
 
-If your proposal passed the temperature check and you have at least 5,000,000 tokens in your wallet, or token-votes delegated to your address, you can create an on-chain proposal using Tally. To submit your proposal on Tally:
+If your proposal passed the temperature check and you have at least 5,000,000 votes delegated to your wallet address, you can recreate your on-chain proposal using Tally. To resubmit your proposal on Tally:
 
 1. Log in to [Tally](https://www.tally.xyz/) using the wallet that holds your $ARB tokens.
 2. Navigate to the "explore DAOs" section or click on "My DAOs" within your Tally profile and select one of the following pages:
     - **Arbitrum Constitution**: For Constitutional Proposals
     - **Arbitrum Treasury**: For Non-Constitutional Proposals
-3. Select "Create new proposal"
+3. Select "Create new proposal" (todo - confirm that we're creating, not updating)
 4. Give the proposal a name and description (preview image is optional). Ensure that you’re submitting the correct type of proposal to the right DAO page in Tally.
 5. Add proposal actions to be executed if passed. For example, "transfer n ETH to 0x address".
 6. Preview your proposal and either save as a draft or submit on-chain.
+
+(todo - screenshots)
 
 A proposal passes if more votes are cast in favor than against, and if the total number of votes cast in favor is at least the following fraction of the votable tokens:
 
@@ -57,7 +60,7 @@ A proposal passes if more votes are cast in favor than against, and if the total
 
 If your proposal is not passed, you can resubmit it after a certain period of time, depending on the type of proposal it is. Constitutional proposals can only be resubmitted after 3 months, while Non-Constitutional proposals can be resubmitted after 1 month.
 
-Before resubmitting your proposal, it's important to review the feedback and criticisms that you received during the previous vote. Address these concerns by editing your proposal and engaging with the community on the governance forum. After making the necessary changes, you can then conduct a new temperature check with Snapshot and resubmit your proposal on Tally.
+Before resubmitting your proposal, it's important to review the feedback that you received during the previous vote. Address these concerns by editing your proposal and engaging with the community on the governance forum. After making the necessary changes, you can then conduct a new temperature check with Snapshot and resubmit your proposal on Tally.
 
 It's worth noting that if your proposal is rejected multiple times, it may be best to reconsider the proposal altogether or to engage more extensively with the community to gather feedback and build support.
 
