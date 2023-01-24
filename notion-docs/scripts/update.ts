@@ -3,21 +3,14 @@ import {
   lookupProject,
   lookupGlossaryTerms,
   lookupFAQs,
-  organizeFAQ,
-  DefinitionValidity,
-  renderKnowledgeItem,
   handleRenderError,
-  knowledgeItemValidity,
-} from '../src'
+  recordValidity,
+  renderGlossary,
+  renderFAQs,
+} from '@offchainlabs/notion-docs-generator'
 import dotenv from 'dotenv'
 
-import type {
-  FAQ,
-  Definition,
-  KnowledgeItem,
-  LinkableTerms,
-  RenderedKnowledgeItem,
-} from '../src'
+import type { KnowledgeItem, LinkableTerms, LinkValidity } from '@offchainlabs/notion-docs-generator'
 
 import fs from 'fs'
 
@@ -26,41 +19,6 @@ dotenv.config()
 const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 })
-
-function printItem(item: RenderedKnowledgeItem): string {
-  return `### ${item.title} {#${item.key}}\n${item.text}\n\n`
-}
-
-function formatDefinitions(
-  definitions: Definition[],
-  linkableTerms: LinkableTerms
-) {
-  const renderedDefs = definitions.map(def =>
-    renderKnowledgeItem(def, linkableTerms)
-  )
-  // sort the array alphabetically by term
-  renderedDefs.sort((a, b) => a.title.localeCompare(b.title))
-
-  const htmlArray = renderedDefs.map(printItem)
-
-  // wrap the HTML strings in a <dl> element with a class of "hidden-glossary-list"
-  return `<div class="hidden-glossary">\n\n${htmlArray.join('')}\n</div>\n`
-}
-
-function renderSections(
-  sections: Record<string, FAQ[]>,
-  linkableTerms: LinkableTerms
-): string {
-  let out = ''
-  for (const section in sections) {
-    out += `## ${section}\n\n`
-    out += sections[section]
-      .map(faq => renderKnowledgeItem(faq, linkableTerms))
-      .map(printItem)
-      .join('')
-  }
-  return out
-}
 
 async function generateFiles() {
   const governanceProject = await lookupProject(notion, 'Governance docs')
@@ -87,33 +45,37 @@ async function generateFiles() {
   const definitions = await lookupGlossaryTerms(notion, {})
   console.log('Rendering contents')
   const linkableTerms: LinkableTerms = {}
+  const validity = (item: KnowledgeItem): LinkValidity => {
+    return recordValidity(item, governanceProject)
+  }
   const addItems = (items: KnowledgeItem[], page: string) => {
     for (const item of items) {
       linkableTerms[item.pageId] = {
         text: item.title,
         anchor: item.title,
         page: page,
-        valid: knowledgeItemValidity(item, governanceProject),
+        valid: validity(item),
         notionURL: item.url,
       }
     }
   }
   const isValid = (item: KnowledgeItem) => {
-    return (
-      knowledgeItemValidity(item, governanceProject) ==
-      DefinitionValidity.Valid
-    )
+    return validity(item) == 'Valid'
   }
 
   addItems(definitions, '/dao-glossary')
   addItems(faqs, '/dao-faq')
   const publishedFAQs = faqs.filter(isValid)
   const publishedDefinitions = definitions.filter(isValid)
-  const sections = organizeFAQ(publishedFAQs)
-  const sectionsHTML = renderSections(sections, linkableTerms)
-  const definitionsHTML = formatDefinitions(publishedDefinitions, linkableTerms)
+  const definitionsHTML = `<div class="hidden-glossary">\n\n${renderGlossary(
+    publishedDefinitions,
+    linkableTerms
+  )}\n</div>\n`
   fs.writeFileSync('../docs/partials/_glossary-partial.md', definitionsHTML)
-  fs.writeFileSync('../docs/partials/_faq-partial.md', sectionsHTML)
+  fs.writeFileSync(
+    '../docs/partials/_faq-partial.md',
+    renderFAQs(publishedFAQs, linkableTerms)
+  )
 }
 
 async function main() {

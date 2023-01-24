@@ -1,6 +1,0 @@
-export * from './faq'
-export * from './format'
-export * from './glossary'
-export * from './notion'
-export * from './project'
-export * from './item'
