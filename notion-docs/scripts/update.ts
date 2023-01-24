@@ -51,20 +51,23 @@ async function generateFiles() {
   const definitions = await lookupGlossaryTerms(notion, {})
   console.log('Rendering contents')
   const linkableTerms: LinkableTerms = {}
+  const isValid = (item: KnowledgeItem): LinkValidity => {
+    return knowledgeItemValidity(item, governanceProject)
+  }
   const addItems = (items: KnowledgeItem[], page: string) => {
     for (const item of items) {
       linkableTerms[item.pageId] = {
         text: item.title,
         anchor: item.title,
         page: page,
-        valid: knowledgeItemValidity(item, governanceProject),
+        valid: isValid(item),
         notionURL: item.url,
       }
     }
   }
   const isValid = (item: KnowledgeItem) => {
     return (
-      knowledgeItemValidity(item, governanceProject) ==
+      isValid(item) ==
       'Valid'
     )
   }
