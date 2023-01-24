@@ -4,13 +4,13 @@ import {
   lookupGlossaryTerms,
   lookupFAQs,
   handleRenderError,
-  knowledgeItemValidity,
+  recordValidity,
   renderGlossary,
   renderFAQs,
-} from '../src'
+} from '@offchainlabs/notion-docs-generator'
 import dotenv from 'dotenv'
 
-import type { KnowledgeItem, LinkableTerms, LinkValidity } from '../src'
+import type { KnowledgeItem, LinkableTerms, LinkValidity } from '@offchainlabs/notion-docs-generator'
 
 import fs from 'fs'
 
@@ -46,7 +46,7 @@ async function generateFiles() {
   console.log('Rendering contents')
   const linkableTerms: LinkableTerms = {}
   const validity = (item: KnowledgeItem): LinkValidity => {
-    return knowledgeItemValidity(item, governanceProject)
+    return recordValidity(item, governanceProject)
   }
   const addItems = (items: KnowledgeItem[], page: string) => {
     for (const item of items) {
