@@ -16,7 +16,7 @@ In this how-to, you'll learn how to submit proposals to the Arbitrum DAO. Famili
 Before you get started, make sure you have the following:
 
 - An Ethereum wallet that holds at least 0.01% of votable $ARB tokens. This lets you submit and vote on proposals using Snapshot.
-- If you're interested in submitting on-chain proposals using Tally, you'll need at least 5,000,000 tokens in your wallet.
+- If you're interested in submitting on-chain proposals using Tally, you'll need at least 5,000,000 votes delegated to your wallet address.
 
 
 ### Step 1: Submit your proposal to the DAO governance forum
@@ -27,7 +27,7 @@ The [DAO governance forum](https://forum.arbitrum.io/) facilitates discussions a
 2. Create a new post with your proposal using the TBD template.
 3. Allow at least one week for discussion and debate.
 
-If you feel confident about your proposal after a week's worth of discussion, you can conduct a temperature check via a Snapshot poll. Note that temperature checks can only be created by $ARB token holders who have at least 0.01% of votable $ARB tokens. If you don't have enough voting power to create a Snapshot poll, consider asking for support from delegates and/or the rest of the Arbitrum community.
+If you feel confident about your proposal after a week's worth of discussion, you can conduct a temperature check via a Snapshot poll. Note that temperature checks can only be created by $ARB token holders who have at least 0.01% of votable $ARB tokens in their wallet. If you don't have enough voting power to create a Snapshot poll, consider asking for support from delegates and/or the rest of the Arbitrum community.
 
 ### Step 2: Conduct a temperature check with a Snapshot poll
 
@@ -44,7 +44,7 @@ If your proposal passes the temperature check, then you can move to the third an
 
 ### Step 3: Submit your on-chain proposal using Tally
 
-If you have at least 5,000,000 tokens in your wallet, or token-votes delegated to your address, you can create an on-chain proposal using Tally. Ensure that you've incorporated feedback brought up during relevant forum discussions and temperature checks into the your formal on-chain proposal. To submit your proposal on Tally:
+If you have at least 5,000,000 votes delegated to your wallet address (todo - connect holding, delegating, and self-delegating), you can create an on-chain proposal using Tally. Ensure that you've incorporated feedback brought up during relevant forum discussions and temperature checks into the your formal on-chain proposal. To submit your proposal on Tally:
 
  1.	Log in to [Tally](https://www.tally.xyz/) using the wallet that holds your $ARB tokens.
  2.	Navigate to the "explore DAOs" section or click on "My DAOs" within your Tally profile and select one of the following pages:
@@ -74,7 +74,7 @@ Welcome to the future of governance!
  1. Note that the Security Council has the power to execute certain Emergency Actions and Non-Emergency Actions, as delegated to it by the Arbitrum DAO and Arbitrum Foundation. Proposals that fall under the category of Non-Emergency Actions can be approved by the Security Council without going through the full AIP process.
  2. The threshold of support required for a proposal to pass can vary depending on the type of proposal and the quorum requirements specified in the Constitution.
  3. You can delegate your voting power to another address whether or not you have enough tokens to submit on-chain proposals. If you hold $ARB tokens, you can still participate in Arbitrum DAO's governance.
- 4. The Arbitrum Foundation plays an important role in maintaining the Arbitrum DAO and its protocols - it's responsible for funding and supporting the development of the Arbitrum DAO, and it also has the power to make certain decisions related to the Arbitrum DAO's operations and governance (TODO)
+ 4. The Arbitrum Foundation plays an important role in maintaining the Arbitrum DAO and its protocols - it's responsible for funding and supporting the development of the Arbitrum DAO, and it also has the power to make certain decisions related to the Arbitrum DAO's operations and governance (TODO).
 
 
 
