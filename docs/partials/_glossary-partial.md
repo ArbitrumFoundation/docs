@@ -14,16 +14,16 @@
 
 
 ### AnyTrust chain {#anytrust-chain}
-<p>An Arbitrum chain that implements the <a href="/dao-glossary#arbitrum-anytrust-protocol">Arbitrum AnyTrust (protocol)</a> protocol, a protocol that significantly reduces transaction costs by using a trusted <a href="/dao-glossary#data-availability-committee-dac">Data Availability Committee (DAC)</a> to in lieu of Ethereum's <a href="/dao-glossary#trustless">Trustless</a> data availability mechanism. <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a> is an example of an AnyTrust chain; <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> is not an AnyTrust chain; it's an <a href="/dao-glossary#arbitrum-rollup-protocol">Arbitrum Rollup (protocol)</a> chain.</p>
+<p>An Arbitrum chain that implements the <a href="/dao-glossary#arbitrum-anytrust-protocol"><strong>Arbitrum AnyTrust (protocol)</strong></a> protocol, a protocol that significantly reduces transaction costs by using a trusted <a href="/dao-glossary#data-availability-committee-dac"><strong>Data Availability Committee (DAC)</strong></a> to in lieu of Ethereum's <a href="/dao-glossary#trustless">Trustless</a> data availability mechanism. <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a> is an example of an AnyTrust chain; <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> is not an AnyTrust chain; it's an <a href="/dao-glossary#arbitrum-rollup-protocol"><strong>Arbitrum Rollup (protocol)</strong></a> chain.</p>
 
-### Arbitrum AnyTrust (chain) {#arbitrum-anytrust-chain}
-<p>An <a href="/dao-glossary#arbitrum-chain">Arbitrum chain</a> that implements the <a href="/dao-glossary#arbitrum-anytrust-protocol">Arbitrum AnyTrust (protocol)</a>.</p>
+### **Arbitrum AnyTrust (chain)** {#arbitrum-anytrust-chain}
+<p>An <a href="/dao-glossary#arbitrum-chain">Arbitrum chain</a> that implements the <a href="/dao-glossary#arbitrum-anytrust-protocol"><strong>Arbitrum AnyTrust (protocol)</strong></a>.</p>
 
-### Arbitrum AnyTrust (protocol) {#arbitrum-anytrust-protocol}
-<p>An Arbitrum protocol that manages data availability with a permissioned set of parties known as the <a href="/dao-glossary#data-availability-committee-dac">Data Availability Committee (DAC)</a>. This protocol reduces transaction fees by introducing an additional trust assumption for data availability in lieu of Ethereum's <a href="/dao-glossary#trustless">Trustless</a> data availability mechanism. <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a> is an example of an AnyTrust chain; <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> is an alternative chain that implements the purely trustless (and more expensive) <a href="/dao-glossary#arbitrum-rollup-protocol">Arbitrum Rollup (protocol)</a>.</p>
+### **Arbitrum AnyTrust (protocol)** {#arbitrum-anytrust-protocol}
+<p>An Arbitrum protocol that manages data availability with a permissioned set of parties known as the <a href="/dao-glossary#data-availability-committee-dac"><strong>Data Availability Committee (DAC)</strong></a>. This protocol reduces transaction fees by introducing an additional trust assumption for data availability in lieu of Ethereum's <a href="/dao-glossary#trustless">Trustless</a> data availability mechanism. <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a> is an example of an AnyTrust chain; <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> is an alternative chain that implements the purely trustless (and more expensive) <a href="/dao-glossary#arbitrum-rollup-protocol"><strong>Arbitrum Rollup (protocol)</strong></a>.</p>
 
 ### Arbitrum chain {#arbitrum-chain}
-<p>A blockchain that runs on the Arbitrum protocol. Arbitrum chains are EVM compatible, and use an underlying L1 (Ethereum) for settlement and for succinct fraud-proofs (as needed).  Arbitrum chains come in two forms: <a href="/dao-glossary#arbitrum-rollup-chain">Arbitrum Rollup (chain)</a> and <a href="/dao-glossary#arbitrum-anytrust-chain">Arbitrum AnyTrust (chain)</a>. </p>
+<p>A blockchain that runs on the Arbitrum protocol. Arbitrum chains are EVM compatible, and use an underlying L1 (Ethereum) for settlement and for succinct fraud-proofs (as needed).  Arbitrum chains come in two forms: <a href="/dao-glossary#arbitrum-rollup-chain"><strong>Arbitrum Rollup (chain)</strong></a> and <a href="/dao-glossary#arbitrum-anytrust-chain"><strong>Arbitrum AnyTrust (chain)</strong></a>. </p>
 
 ### Arbitrum Chain owner {#arbitrum-chain-owner}
 <p>An entity with the affordance to upgrade Arbitrum core protocol contracts and set various system parameters. Arbitrum One has two chain owners: the Arbitrum DAO and the Security Council.</p>
@@ -47,15 +47,15 @@
 <p>Current Arbitrum tech stack; runs a fork of <a href="/dao-glossary#geth">Geth</a> directly on <a href="/dao-glossary#layer-2-l2">Layer 2 (L2)</a> and uses WebAssembly as its underlying VM for fraud proofs.</p>
 
 ### Arbitrum Nova {#arbitrum-nova}
-<p>The first <a href="/dao-glossary#arbitrum-anytrust-chain">Arbitrum AnyTrust (chain)</a> running on Ethereum mainnet. Introduces cheaper transactions; great for gaming and social use-cases. Implements the <a href="/dao-glossary#arbitrum-anytrust-protocol">Arbitrum AnyTrust (protocol)</a>, not the <a href="/dao-glossary#arbitrum-rollup-protocol">Arbitrum Rollup (protocol)</a> protocol. Currently in Beta. (TODO - align on retaining Beta after Governance launch)</p>
+<p>The first <a href="/dao-glossary#arbitrum-anytrust-chain"><strong>Arbitrum AnyTrust (chain)</strong></a> running on Ethereum mainnet. Introduces cheaper transactions; great for gaming and social use-cases. Implements the <a href="/dao-glossary#arbitrum-anytrust-protocol"><strong>Arbitrum AnyTrust (protocol)</strong></a>, not the <a href="/dao-glossary#arbitrum-rollup-protocol"><strong>Arbitrum Rollup (protocol)</strong></a> protocol. Currently in Beta. (TODO - align on retaining Beta after Governance launch)</p>
 
 ### Arbitrum One {#arbitrum-one}
-<p>The first <a href="/dao-glossary#arbitrum-rollup-chain">Arbitrum Rollup (chain)</a> running on Ethereum mainnet. Fully <a href="/dao-glossary#trustless">Trustless</a>; inherits Ethereum's base-layer security guarantees without introducing additional trust assumptions; great for decentralized finance and other use-cases that demand <a href="/dao-glossary#layer-1-l1">Layer 1 (L1)</a> trustlessness. (Currently in Beta - TODO).</p>
+<p>The first <a href="/dao-glossary#arbitrum-rollup-chain"><strong>Arbitrum Rollup (chain)</strong></a> running on Ethereum mainnet. Fully <a href="/dao-glossary#trustless">Trustless</a>; inherits Ethereum's base-layer security guarantees without introducing additional trust assumptions; great for decentralized finance and other use-cases that demand <a href="/dao-glossary#layer-1-l1">Layer 1 (L1)</a> trustlessness. (Currently in Beta - TODO).</p>
 
-### Arbitrum Rollup (chain) {#arbitrum-rollup-chain}
-<p>An <a href="/dao-glossary#arbitrum-chain">Arbitrum chain</a> that implements the <a href="/dao-glossary#arbitrum-rollup-protocol">Arbitrum Rollup (protocol)</a>.</p>
+### **Arbitrum Rollup (chain)** {#arbitrum-rollup-chain}
+<p>An <a href="/dao-glossary#arbitrum-chain">Arbitrum chain</a> that implements the <a href="/dao-glossary#arbitrum-rollup-protocol"><strong>Arbitrum Rollup (protocol)</strong></a>.</p>
 
-### Arbitrum Rollup (protocol) {#arbitrum-rollup-protocol}
+### **Arbitrum Rollup (protocol)** {#arbitrum-rollup-protocol}
 <p>A <a href="/dao-glossary#trustless">Trustless</a>, permissionless Arbitrum <a href="/dao-glossary#layer-2-l2">Layer 2 (L2)</a> protocol that uses it's underlying base layer (i.e., Ethereum) for data availability and inherits its security. This protocol is implemented by our <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> chain. </p>
 
 ### Claimable airdrop period {#claimable-airdrop-period}
@@ -67,13 +67,13 @@
 ### Constitutional AIP {#constitutional-aip}
 <p>As opposed to <a href="/dao-glossary#nonconstitutional-aip">Non-constitutional AIP</a>. The stricter of the two types of proposals. Refer to <a href='#todo'>The Constitution of the Arbitrum DAO</a> for a more precise definition. (todo - ensure aligned with constitution - and/or reference constitution - ensure that these are updated because they're wrong - also ensure that we want to use this term - align with @Matt Pearring - could just refer to these as AIPs).</p>
 
-### DAO-governed chains {#daogoverned-chains}
-<p>A permissioned set of parties responsible for enforcing data availability in an <a href="/dao-glossary#arbitrum-anytrust-protocol">Arbitrum AnyTrust (protocol)</a> chain. See <a href="https://medium.com/offchainlabs/introducing-anytrust-chains-cheaper-faster-l2-chains-with-minimal-trust-assumptions-31def59eb8d7">Introducing AnyTrust Chains: Cheaper, Faster L2 Chains with Minimal Trust Assumptions</a> to learn more.</p>
+### **DAO-governed chains** {#daogoverned-chains}
+<p>A permissioned set of parties responsible for enforcing data availability in an <a href="/dao-glossary#arbitrum-anytrust-protocol"><strong>Arbitrum AnyTrust (protocol)</strong></a> chain. See <em><a href="https://medium.com/offchainlabs/introducing-anytrust-chains-cheaper-faster-l2-chains-with-minimal-trust-assumptions-31def59eb8d7">Introducing AnyTrust Chains: Cheaper, Faster L2 Chains with Minimal Trust Assumptions</a></em> to learn more.</p>
 
 
 
-### Data Availability Committee (DAC) {#data-availability-committee-dac}
-<p>A permissioned set of parties responsible for enforcing data availability in an <a href="/dao-glossary#arbitrum-anytrust-protocol">Arbitrum AnyTrust (protocol)</a> chain. See <a href="https://medium.com/offchainlabs/introducing-anytrust-chains-cheaper-faster-l2-chains-with-minimal-trust-assumptions-31def59eb8d7">Introducing AnyTrust Chains: Cheaper, Faster L2 Chains with Minimal Trust Assumptions</a> to learn more.</p>
+### **Data Availability Committee (DAC)** {#data-availability-committee-dac}
+<p>A permissioned set of parties responsible for enforcing data availability in an <a href="/dao-glossary#arbitrum-anytrust-protocol"><strong>Arbitrum AnyTrust (protocol)</strong></a> chain. See <em><a href="https://medium.com/offchainlabs/introducing-anytrust-chains-cheaper-faster-l2-chains-with-minimal-trust-assumptions-31def59eb8d7">Introducing AnyTrust Chains: Cheaper, Faster L2 Chains with Minimal Trust Assumptions</a></em> to learn more.</p>
 
 
 
@@ -155,13 +155,13 @@ The client software implements a protocol that stores transaction history within
 <p>One of two types of governance actions allowed by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a>. On-chain actions are executed as transactions submitted to the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>'s governance smart contracts. Updating the rate of <a href="/dao-glossary#arb">$ARB</a>  inflation is an example of an on-chain governance action.</p>
 
 ### Optimistic rollup protocol {#optimistic-rollup-protocol}
-<p>Optimistic rollup protocols are <a href="/dao-glossary#layer-2-l2">Layer 2 (L2)</a> protocols that are designed to extend the throughput of Ethereum's base layer by using the base later for data availability and offloading computation to off-chain nodes. <a href="/dao-glossary#arbitrum-rollup-protocol">Arbitrum Rollup (protocol)</a> is an optimistic rollup protocol that inherits Ethereum's base-layer security guarantees.</p>
+<p>Optimistic rollup protocols are <a href="/dao-glossary#layer-2-l2">Layer 2 (L2)</a> protocols that are designed to extend the throughput of Ethereum's base layer by using the base later for data availability and offloading computation to off-chain nodes. <a href="/dao-glossary#arbitrum-rollup-protocol"><strong>Arbitrum Rollup (protocol)</strong></a> is an optimistic rollup protocol that inherits Ethereum's base-layer security guarantees.</p>
 
 ### Presale {#presale}
 <p>Also known as an initial coin offering (ICO). Presales are fundraising events in which a new cryptocurrency project sells a portion of its tokens to early backers. <strong><em>Arbitrum DAO did not and will never engage in a presale.</em></strong></p>
 
 ### Progressive decentralization {#progressive-decentralization}
-<p>The process of gradually increasing the decentralization of a system over time. In the context of the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>, and decentrlizing <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> and <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a>, progressive decentralization refers to decentralizing the ownership of the chains, validators, sequencers, and the <a href="/dao-glossary#data-availability-committee-dac">Data Availability Committee (DAC)</a>. Refer to The state of Arbitrum's progressive decentralization for more information (TODO Link).</p>
+<p>The process of gradually increasing the decentralization of a system over time. In the context of the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>, and decentrlizing <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> and <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a>, progressive decentralization refers to decentralizing the ownership of the chains, validators, sequencers, and the <a href="/dao-glossary#data-availability-committee-dac"><strong>Data Availability Committee (DAC)</strong></a>. Refer to The state of Arbitrum's progressive decentralization for more information (TODO Link).</p>
 
 ### Proposal waiting period {#proposal-waiting-period}
 <p>A contract-enforced delay period of roughly two weeks that begins after a <a href="/dao-glossary#governance-proposal">Governance proposal</a> is accepted, and after which the proposal takes effect. The proposal waiting period is intended to give users the option of opting out (for example, by withdrawing their funds).</p>
