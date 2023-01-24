@@ -3,7 +3,6 @@ import {
   lookupProject,
   lookupGlossaryTerms,
   lookupFAQs,
-  DefinitionValidity,
   handleRenderError,
   knowledgeItemValidity,
   renderGlossary,
@@ -66,7 +65,7 @@ async function generateFiles() {
   const isValid = (item: KnowledgeItem) => {
     return (
       knowledgeItemValidity(item, governanceProject) ==
-      DefinitionValidity.Valid
+      'Valid'
     )
   }
 

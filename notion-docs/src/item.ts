@@ -7,7 +7,7 @@ import {
   formatAnchor,
   renderBlocks,
   MissingPageError,
-  DefinitionValidity,
+  LinkValidity,
 } from './format'
 import type { Block, Page } from './notion'
 
@@ -31,20 +31,20 @@ export interface RenderedKnowledgeItem {
 export function knowledgeItemValidity(
   item: KnowledgeItem,
   project: string
-): DefinitionValidity {
+): LinkValidity {
   if (
     item.status != '4 - Continuously publishing' &&
     item.status != '2 - Pending peer review'
   ) {
-    return DefinitionValidity.NotReady
+    return {reason: "item not yet marked as ready"}
   }
   if (item.publishable != 'Publishable') {
-    return DefinitionValidity.NotPublishable
+    return {reason: "item not marked as publishable"}
   }
   if (!item.projects.has(project)) {
-    return DefinitionValidity.WrongProject
+    return {reason: "item is from incorrect project"}
   }
-  return DefinitionValidity.Valid
+  return 'Valid'
 }
 
 export function renderKnowledgeItem(

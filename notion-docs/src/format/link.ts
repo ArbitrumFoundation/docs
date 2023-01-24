@@ -5,18 +5,17 @@ import type { RichTextItemResponse } from '@notionhq/client/build/src/api-endpoi
 
 export type LinkableTerms = Record<string, Reference>
 
-export enum DefinitionValidity {
-  Valid,
-  NotReady,
-  NotPublishable,
-  WrongProject,
+export interface LinkFailureReason {
+  reason: string
 }
+
+export type LinkValidity = 'Valid' | LinkFailureReason
 
 interface Reference {
   text: RichTextItemResponse[]
   anchor: RichTextItemResponse[] | undefined
   page: string
-  valid: DefinitionValidity
+  valid: LinkValidity
   notionURL: string
 }
 
@@ -64,9 +63,9 @@ export function renderPageLink(
     throw new MissingPageError(page)
   }
   const text = renderRichTexts(link.text, linkableTerms, RenderMode.HTML)
-  if (link.valid != DefinitionValidity.Valid) {
+  if (link.valid != 'Valid') {
     console.warn(
-      `Ignoring link to doc with reason ${DefinitionValidity[link.valid]}: ${
+      `Ignoring link to doc with reason: ${link.valid.reason}: ${
         link.notionURL
       }`
     )
