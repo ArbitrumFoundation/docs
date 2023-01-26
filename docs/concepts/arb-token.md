@@ -9,6 +9,17 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
+```
+todos: 
+ - fact check
+ - clean up
+ - link to docs
+ - wire up quicklooks
+ - ask questions and add to FAQ
+ - continue refining term definitions
+ - reference specific sections of the constitution from each statement, whenever possible
+```
+
 The **$ARB token** is an a digital asset (more specifically, an ERC-20 token) that's used to participate in the governance and operation of the Arbitrum DAO. It's built on the Ethereum blockchain, and is used to vote on proposals and to secure the operations of the Arbitrum technology stack, including TODO.
 
 The **Arbitrum DAO** is a decentralized autonomous organization, or DAO, that's responsible for managing both the DAO's governance protocol as defined within the Constitution, and the technology assets that the DAO owns. This includes the Arbitrum One and Arbitrum Nova chains, Layer-2 scaling solutions built on the Ethereum blockchain. These chains use a technique called "optimistic rollups" to process large amounts of Ethereum transactions off-chain, while still maintaining the security guarantees of the underlying Ethereum blockchain.

@@ -9,6 +9,17 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
+```
+todos: 
+ - fact check
+ - clean up
+ - link to docs
+ - wire up quicklooks
+ - ask questions and add to FAQ
+ - continue refining term definitions
+ - reference specific sections of the constitution from each statement, whenever possible
+```
+
 $ARB is the governance token for the Arbitrum ecosystem created on [TODO], roughly [TODO] after Arbitrum One had been live on mainnet. Here we explain the rationale behind introducing the $ARB governance token, and how it plays a necessary role in the progressive decentralization of the Arbitrum protocol.
 
 ### Protocol upgrades and chain ownership

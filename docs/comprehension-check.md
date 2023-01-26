@@ -9,34 +9,52 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
-todo - clean this up, possibly use the spoiler styles to hide answers, consider squishing the Scenario / Question into a single line.
+```
+todos: 
+ - fact check
+ - clean up
+ - link to docs
+ - wire up quicklooks
+ - ask questions and add to FAQ
+ - continue refining term definitions
+ - reference specific sections of the constitution from each statement, whenever possible
+ - possibly use the spoiler CSS styles to hide answers until the reader hovers / clicks
+```
+
 
 Use the following scenarios to test your comprehension of the different components of the Arbitrum DAO protocol, such as the Security Council, AIPs, on-chain and off-chain actions. By exercising your understanding of these scenarios, you'll be better equipped to confidently navigate the process, technology, and governance proposals that support the Arbitrum DAO.
 
 
 ### Scenario 1: You have an idea that you'd like to propose to the Arbitrum DAO
 
-#### What's the first step you should take to propose an idea to the Arbitrum DAO?
-The first step is to submit the idea as an Arbitrum Improvement Proposal (AIP) on the public governance forum (todo) and discuss/debate it for 1 week. You'll then perform a "temperature check" on Tally. Although the process for submitting an AIP to the governance forum isn't explicitly outlined in the Constitution, the Constitution does specify that the DAO may approve and implement AIPs to change the rules governing the system. See [How to submit a DAO proposal](./how-tos/create-submit-dao-proposal) for more detailed instructions on how to submit an AIP.
+#### What's the first step you should take?
+The first step is to submit the idea as an Arbitrum Improvement Proposal (AIP) on the public [Arbitrum DAO governance forum](https://forum.arbitrum.io/) and discuss/debate it for 1 week. You'll then perform a more formal "temperature check" on Tally. This procedure is referred to as the Temperature Check phase within the [Constitution](dao-constitution.md) and is technically optional, but it's strongly recommended as a due-diligence governance best practice. Although the process for submitting an AIP to the governance forum isn't explicitly outlined in the Constitution, the Constitution does specify that the DAO may approve and implement AIPs to change the rules governing the system. See [How to submit a DAO proposal](./how-tos/create-submit-dao-proposal) for more detailed instructions on how to submit an AIP.
 
 
 ### Scenario 2: A security emergency arises on one of the Arbitrum DAO-governed chains
 
 #### How can the DAO respond to the security emergency?
-The Security Council, a committee of 12 members who are signers of a multi-sig wallet, should implement the software upgrade (or perform whatever other action is required) immediately in order to remedy the situation. This is known as an Emergency Action and requires a 9-of-12 approval from the Security Council. The Security Council shouldn't use its power to perform Emergency Actions except in a true security emergency, such as a critical vulnerability that could significantly compromise the integrity, confidentiality, or availability of a chain governed by the Arbitrum DAO. After performing an Emergency Action, the Security Council must issue a full transparency report to explain what was done and why the Emergency Action was justified.
+The Security Council, a committee of 12 members who are signers of a multi-sig wallet, has powers to perform certain Emergency Actions and Non-Emergency Actions, as delegated to it by the Arbitrum DAO and Arbitrum Foundation, and is responsible for upholding this Arbitrum DAO Constitution. It should handle the emergency immediately by either implementing the required software upgrade or perform whatever other mitigating action is required in order to remedy the situation. This type of Security Council action is known as an Emergency Action and requires a 9-of-12 approval from the Security Council. The Security Council shouldn't use its power to perform Emergency Actions except in a true security emergency, such as a critical vulnerability that could significantly compromise the integrity, confidentiality, or availability of a chain governed by the Arbitrum DAO. After performing an Emergency Action, the Security Council must issue a full transparency report to explain what was done and why the Emergency Action was justified. Interesting notes:
+
+- The Arbitrum DAO is able to modify the Security Council's powers or to eliminate the Security Council entirely through the submission, approval and implementation of a Constitutional AIP.
+- The Arbitrum DAO is able to curtail or eliminate the Security Council's power to perform Emergency Actions via approval and implementation of a Constitutional AIP.
+- The Security Council may also approve and implement routine software upgrades, routine maintenance and other parameter adjustments in a non-emergency setting (such actions, "Non-Emergency Actions"), which require a 7-of-12 approval in order to take effect.
+- Equivalent "copies" of the Security Council multi-sig contracts (7-of-12, in the case of Non-Emergency Actions, and 9-of-12, in the case of Emergency Actions) exist, one on Ethereum and another on each Arbitrum DAO-governed chain.
+- Any Non-Emergency Action, after approval by the Security Council, will bypass Phases 1 to 3 of the AIP process and instead directly go through Phases 4 to 7 of the AIP process, to provide a delay before any Non-Emergency Action is deployed. The Security Council may optionally specify additional delays before deployment.
 
 
 ### Scenario 3: You want to propose a change to the system parameters of one of the Arbitrum DAO-governed chains
 
 #### What's the process for proposing and implementing this change?
+
 The process for proposing and implementing changes to system parameters is as follows:
 
-1. Submit the proposal as an AIP on the public forum and discuss/debate it for 1 week (Temperature Check phase)
-2. The AIP moves on to a voting phase where token-holders can vote on the proposal
-3. If the proposal passes the vote, it moves on to a delay period before implementation
+1. Submit the proposal as an Arbitrum Improvement Proposal (AIP) on the public forum, which will be discussed and debated for 1 week (Temperature Check phase).
+2. The AIP moves to a voting phase, where token holders can vote on the proposal.
+3. If the proposal passes the vote, it moves to a delay period before implementation.
 4. After the delay period, the change can be implemented by the chain owner(s) through a transaction on the blockchain.
 
-Note that the Security Council may also approve and implement routine software upgrades, routine maintenance, and other parameter adjustments in a non-emergency setting, which require a 7-of-12 approval in order to take effect. This bypasses Phases 1 to 3 of the AIP process and instead directly goes through Phases 4 to 7. This prevents routine upgrades and maintenance from being delayed by the voting and delay phases of the AIP process.
+Note that the Security Council may also approve and implement routine software upgrades, maintenance and other parameter adjustments in a non-emergency setting. This bypasses Phases 1 to 3 of the AIP process and goes directly through Phases 4 to 7. This is done to prevent routine upgrades and maintenance from being delayed or filibustered by the temperature check, voting, and delay phases of the AIP process.
 
 
 ### Scenario 4: You want to propose a change to the Constitution of the Arbitrum DAO

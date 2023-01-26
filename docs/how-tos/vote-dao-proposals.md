@@ -9,6 +9,17 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
+```
+todos: 
+ - fact check
+ - clean up
+ - link to docs
+ - wire up quicklooks
+ - ask questions and add to FAQ
+ - continue refining term definitions
+ - reference specific sections of the constitution from each statement, whenever possible
+```
+
 As a member of the Arbitrum DAO, it's important to be an active participant in the DAO's decision-making process by voting on governance proposals that other DAO members submit. The voting process can vary depending on the given proposal's stage; in this how-to, you'll learn how to locate, evaluate, and vote on proposals at each of the possible stages.
 
 ### Proposals in the "forum discussion" stage

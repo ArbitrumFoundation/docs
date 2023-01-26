@@ -9,6 +9,17 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
+```
+todos: 
+ - fact check
+ - clean up
+ - link to docs
+ - wire up quicklooks
+ - ask questions and add to FAQ
+ - continue refining term definitions
+ - reference specific sections of the constitution from each statement, whenever possible
+```
+
 ### What are Sybil accounts?
 
 In the context of the Arbitrum DAO, a Sybil account is a fake or fraudulent account created to manipulate the voting system. These accounts can be used to influence the outcome of elections, or to gain an unfair advantage in decision-making processes. Sybil accounts are a form of centralization that is at odds with the decentralized nature of the Arbitrum DAO.
