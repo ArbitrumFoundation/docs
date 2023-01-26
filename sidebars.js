@@ -94,6 +94,10 @@ module.exports = {
         },
         {
           type: 'doc',
+          id: 'concepts/lifecycle-anatomy-aip-proposal',
+        },
+        {
+          type: 'doc',
           id: 'concepts/public-preview-content',
         }
       ],
