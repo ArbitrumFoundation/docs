@@ -96,7 +96,7 @@ Welcome to the future of governance!
 
 #### Important notes
 
- 1. The <a data-quicklook-from="security-council">Security Council</a> has the power to execute <a data-quicklook-from="emergency-action">emergency actions</a> and <a data-quicklook-from="non-emergency-action">non-emergency actions</a>, as delegated to it by the Constitution. These are unlike traditional AIPs in that they can be approved by the Security Council without going through the above process. See the [Security Council](./security-council) page for more information.
+ 1. The <a data-quicklook-from="security-council">Security Council</a> has the power to execute <a data-quicklook-from="emergency-action">emergency actions</a> and <a data-quicklook-from="non-emergency-action">non-emergency actions</a>, as delegated to it by the Constitution. These are unlike traditional AIPs in that they can be approved by the Security Council without going through the above process. See the [Security Council](../concepts/security-council) page for more information.
  2. The threshold of support required for a proposal to pass can vary depending on the type of proposal and the quorum requirements specified in the Constitution.
  3. You can delegate your voting power[^2] to another address whether or not you have enough tokens to submit on-chain proposals. If you hold any $ARB tokens whatsoever, you can participate in Arbitrum DAO's governance.
 
