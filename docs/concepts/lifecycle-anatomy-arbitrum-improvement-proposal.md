@@ -1,8 +1,8 @@
 ---
 id: arbitrum-improvement-proposal-aip
-title: "Arbitrum Improvement Proposals: A conceptual overview"
+title: "The lifecycle and anatomy of an Arbitrum Improvement Proposal (AIP)"
 sidebar_label: Proposals (AIPs)
-description: todo:qqq
+description: Learn about the process and infrastructure that supports the Arbitrum Improvement Proposal (AIP) protocol, as defined in the Constitution of the Arbitrum DAO.
 ---
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
