@@ -40,7 +40,7 @@ module.exports = {
         },
         {
           type: 'doc',
-          id: 'how-tos/select-delegate',
+          id: 'how-tos/select-delegate-voting-power',
         },
         {
           type: 'doc',

@@ -17,7 +17,7 @@ We use this disclaimer to **set expectations** and to **invite feedback** from r
 
 ### How do you know when a public preview document is ready to have its disclaimer lifted?
 
-In general, a document is considered validated if it's 1) frequently viewed, 2) has a low bounce rate, and 3) doesn't have any open issues on GitHub/Discord. This heuristic isn't supported by precise threshholds; it's a loose and informal model that we're currently experimenting with. We'll update this document as our approach matures.
+In general, a document is considered validated if it's 1) frequently viewed, 2) has a low bounce rate, and 3) doesn't have any open issues on GitHub/[Discord](https://discord.gg/arbitrum). This heuristic isn't supported by precise threshholds; it's a loose and informal model that we're currently experimenting with. We'll update this document as our approach matures.
 
 ### Does this mechanism apply to The Constitution of the Arbitrum DAO?
 

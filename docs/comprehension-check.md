@@ -139,4 +139,4 @@ What options do you have?
 
 ### Conclusion
 
-We hope that this document has been helpful as a self-assessment and study aid. If you have any questions or suggestions, please feel free to reach out to us on the community forum (TODO) or on Discord (TODO). We're always happy to help :).
+We hope that this document has been helpful as a self-assessment and study aid. If you have any questions or suggestions, please feel free to reach out to us on the [Arbitrum DAO governance forum](https://forum.arbitrum.io/) or on [Discord](https://discord.gg/arbitrum). We're always happy to help :).

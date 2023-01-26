@@ -20,10 +20,9 @@ todos:
  - reference specific sections of the constitution from each statement, whenever possible
 ```
 
-
 :::caution THERE IS NO PRESALE
 
-The only official website for the $ARB airdrop is todo:qqq. There is no presale. We won't ever ask for your seed phrase. When in doubt, [join our Discord](#todo:qqq) and ask away; a member of our team will be happy to help.
+The only official website for the $ARB airdrop is todo:qqq. There is no presale. We won't ever ask for your seed phrase. When in doubt, [join our Discord](https://discord.gg/arbitrum) and ask away; a member of our team will be happy to help.
 
 :::
 

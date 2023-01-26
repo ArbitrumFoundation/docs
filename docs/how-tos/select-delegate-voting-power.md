@@ -1,5 +1,5 @@
 ---
-id: select-delegate
+id: select-delegate-voting-power
 title: "How to delegate your voting power: A guide for $ARB token holders"
 sidebar_label: Delegate your voting power
 description: todo:qqq
