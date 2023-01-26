@@ -18,6 +18,8 @@ todos:
  - ask questions and add to FAQ
  - continue refining term definitions
  - reference specific sections of the constitution from each statement, whenever possible
+ - consistency flag:
+   - "represent at least 0.01% of the votable tokens"
 ```
 
 
@@ -29,17 +31,75 @@ An <a data-quicklook-from="arbitrum-improvement-proposal">Arbitrum Improvement P
 In this conceptual overview, we'll evaluate the lifecycle and anatomy of both types.
 
 
+### The anatomy of an Arbitrum Improvement Proposal (AIP)
+
+The Constitution of the Arbitrum DAO defines the following sections of an AIP:
+
+- **Abstract** - A short (~200 word) description of the AIP.
+- **Motivation** - The motivation is critical for AIPs that want to change the Arbitrum ecosystem. It should clearly explain why the existing protocol or implementation is inadequate to address the problem that the AIP solves. AIP submissions without sufficient motivation may be rejected outright.
+- **Rationale** - The rationale fleshes out the specification by describing what motivated the design and why particular design decisions were made. It should describe alternate designs that were considered and related work, e.g. how the feature is supported in other languages.
+-  **Key Terms** - The key terms section defines the terms used in the AIP. This section is optional, but recommended.
+- **Specifications** - The technical specification should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations for any of the current Arbitrum platforms.
+-  **Steps to Implement** - The steps to implement the AIP, including associated costs, manpower, and other resources for each step where applicable. For the avoidance of doubt, any AIPs involving transactions with third parties (such as grants) will need to ensure that applicable legal documentation and procedures are also included.
+-  **Timeline** - The timeline section should include a list of key steps along with the anticipated completion date for each of them.
+-  **Overall Cost** - The overall cost section should include a breakdown of the total cost of the AIP, including any associated costs for each step where applicable. Consider both fixed costs and recurring costs.
+
+Sometimes, AIPs aren't passed on the first try. If an AIP is not passed, the proposer may resubmit the AIP after addressing the concerns of the community. The proposer should include the following additional sections in the resubmitted AIP:
+
+- **A link to the previous AIP** - The link to the previous AIP should be included in the resubmitted AIP.
+-  **Reasons why the AIP was not passed** - The reasons why the AIP was not passed should be included in the resubmitted AIP.
+-  **Changes made to the AIP** - The changes made to the AIP should be included to address the concerns raised during the previous AIP submission.
+-  **Additional information** - More detailed intentions, specifics and implication details can help the community understand the revised AIP, increasing the chances of it being passed.
+
+### The lifecycle of an Arbitrum Improvement Proposal (AIP)
+
+#### High-level overview
+
+The proposal submission process starts with a temperature check, where the AIP is suggested on the Arbitrum DAO governance forum along with a Snapshot poll. It's discussed/debated for 1 week. If the AIP passes the temperature check, it moves on to the next phase, which is the formal AIP and call for voting. In this phase, the AIP is submitted via governance contracts on Arbitrum One via Tally's user interface. After 3 days, a voter distribution snapshot is taken and the voting period begins.
+
+Each AIP must be labeled as Constitutional or non-Constitutional, and must also clearly specify which Arbitrum DAO-governed chain(s) it will affect. If the AIP passes, it moves through a series of phases that include L2 and L1 waiting periods, and eventually, the implementation of the proposal. This process typically takes 34 days for a Constitutional AIP or 21 days for a Non-Constitutional AIP, but may take longer if specified by the AIP.
 
 
+#### Phase 1: Temperature Check (optional but recommended)
+
+This is the first phase of the Arbitrum Improvement Proposal (AIP) process. In this phase, the proposed AIP is submitted following the procedure outlined within [How to submit a DAO proposal](../how-tos/create-submit-dao-proposal) and discussed/debated for one week. This is an optional step, but it's recommended as a due-diligence governance best practice.
+
+During this phase, the AIP should be accompanied by a Snapshot poll that helps gauge the interest of Arbitrum DAO members. This poll can only be submitted by an address that can represent at least 0.01% of the votable tokens. The Snapshot poll runs for 7 days and is decided by a simple majority with no required participation threshold. If an AIP fails this temperature check, the original AIP author is encouraged to refrain from proceeding, and voters are encouraged to reject it if the author proceeds. If an AIP proposer decides to skip this step, voters should consider this as a factor in their vote. This step is important as it will allow the community to reflect on its own sentiments towards a proposal before it's formally submitted for an on-chain vote via Tally.
+
+
+#### Phase 2: Formal AIP and call for voting
+
+In this phase, the AIP is officially submitted via governance smart contracts on the Arbitrum One platform. The proposer of the AIP must have an address that can represent at least 0.1% of the votable tokens. After the AIP is submitted, there's a 3-day period for interested parties to discuss the proposal and gather votes before a voter distribution snapshot is taken. During this phase, the AIP must be labeled as either Constitutional or Non-Constitutional, with specific guidelines for each type of proposal. Additionally, the AIP must clearly specify which Arbitrum DAO-governed chain(s) it will affect. This phase is important as it defines a clear, formal protocol for proposing and voting on AIPs.
+
+
+#### Phase 3: On-chain DAO vote
+
+todo - friendly 1-3 paragraph summary
+
+
+#### Phase 4: L2 Waiting Period
+
+todo - friendly 1-3 paragraph summary
+
+#### Phase 5: Initiate and Finalize an L2-to-L1 Message
+
+todo - friendly 1-3 paragraph summary
+
+
+#### Phase 6: L1 Waiting Period
+
+todo - friendly 1-3 paragraph summary
+
+
+#### Phase 7: Implementation
+
+todo - friendly 1-3 paragraph summary
 
 
 
 ### Conclusion
 
-This conceptual overview presents a reader-friendly overview of the process detailed within the Constitution of the Arbitrum DAO. The process starts with a temperature check, where the AIP is suggested on the Arbitrum DAO governance forum and discussed/debated for 1 week. If the AIP passes the temperature check, it moves on to the next phase, which is the formal AIP and call for voting. In this phase, the AIP is submitted via governance contracts on Arbitrum One via Tally's user interface. After 3 days, a voter distribution snapshot is taken and the voting period begins.
+This conceptual overview presents a reader-friendly elaboration upon the process detailed within the Constitution of the Arbitrum DAO. The AIP process is designed to ensure that proposed changes align with the Arbitrum community's mission and guiding values, and that the community has the opportunity to discuss, debate, and vote on proposed changes before they're ultimately implemented.
 
-Each AIP must be labeled as Constitutional or non-Constitutional, and must also clearly specify which Arbitrum DAO-governed chain(s) it will affect. As a recommended guideline, an AIP should include an abstract, motivation, rationale, key terms, specifications, steps to implement, timeline, and overall cost.
 
-After the voting period, the AIP passes if more Votable Tokens have casted votes "in favor" than have casted votes "against", and a threshold of at least 5% of all Votable Tokens have casted votes "in favor" (for Constitutional AIPs) or 3% of all Votable Tokens have casted votes "in favor" (for Non-Constitutional AIPs). If the AIP passes, it moves on to Phases 4 through 7, which include L2 and L1 waiting periods, and final implementation.
 
-Overall, the AIP process is designed to ensure that proposed changes align with the Arbitrum community's mission and guiding values, and that the community has the opportunity to discuss, debate, and vote on proposed changes. The process typically takes 34 days for a Constitutional AIP or 21 days for a Non-Constitutional AIP, but may take longer if specified by the AIP.
