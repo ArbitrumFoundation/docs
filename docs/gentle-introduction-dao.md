@@ -119,8 +119,8 @@ Delegates are a critical component of Arbitrum's decentralization because they a
 1. **Select a delegate** to vote on your behalf. Choose this option if you're too busy to regularly vote on Arbitrum DAO proposals. See _How to select a delegate_ (todo:qqq).
 2. **Self-delegate** to vote directly on DAO proposals. Great for studious fans of direct democracy. See _Vote on proposals_ (todo:qqq).
 3. **Become a delegate** to vote on behalf of token holders who entrust you with their voting power. Great for our most passionate community members. See _How to become a delegate._
-4. **Participate in governance discussions** on the Arbitrum DAO forum (todo:qqq).
-5. **Join the community of Arbinauts** on our Discord server (todo:qqq).
+4. **Participate in governance discussions** on the [Arbitrum DAO governance forum](https://forum.arbitrum.io/).
+5. **Join the community of Arbinauts** on our [Discord](https://discord.gg/arbitrum).
 
 ### Why can't I claim my $ARB tokens right now?
 
@@ -151,7 +151,7 @@ You're in the right place! The following docs elaborate on the finer details of 
 
  - [Discord](https://discord.gg/arbitrum)
  - [Telegram](https://t.me/arbitrum)
- - [Governance forum](#todo:qqq)
+ - [Arbitrum DAO governance forum](https://forum.arbitrum.io/)
 
 ### Thank you!
 

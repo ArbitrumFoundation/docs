@@ -40,7 +40,7 @@ module.exports = {
         },
         {
           type: 'doc',
-          id: 'how-tos/select-delegate',
+          id: 'how-tos/select-delegate-voting-power',
         },
         {
           type: 'doc',
@@ -91,6 +91,10 @@ module.exports = {
         {
           type: 'doc',
           id: 'concepts/security-council',
+        },
+        {
+          type: 'doc',
+          id: 'concepts/lifecycle-anatomy-aip-proposal',
         },
         {
           type: 'doc',
