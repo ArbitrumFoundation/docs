@@ -1,5 +1,5 @@
 ---
-id: arbitrum-improvement-proposal-aip
+id: lifecycle-anatomy-aip-proposal
 title: "The lifecycle and anatomy of an Arbitrum Improvement Proposal (AIP)"
 sidebar_label: Proposals (AIPs)
 description: Learn about the process and infrastructure that supports the Arbitrum Improvement Proposal (AIP) protocol, as defined in the Constitution of the Arbitrum DAO.
