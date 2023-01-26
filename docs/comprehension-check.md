@@ -17,7 +17,7 @@ Use the following scenarios to test your comprehension of the different componen
 ### Scenario 1: You have an idea that you'd like to propose to the Arbitrum DAO
 
 #### What's the first step you should take to propose an idea to the Arbitrum DAO?
-The first step is to submit the idea as an Arbitrum Improvement Proposal (AIP) on the public governance forum (todo) and discuss/debate it for 1 week. This is known as the Temperature Check phase and is optional but strongly recommended as a due-diligence governance best practice.
+The first step is to submit the idea as an Arbitrum Improvement Proposal (AIP) on the public governance forum (todo) and discuss/debate it for 1 week. You'll then perform a "temperature check" on Tally (todo - link). Although the process for submitting an AIP to the governance forum isn't explicitly outlined in the Constitution, the Constitution does specify that the DAO may approve and implement AIPs to change the rules governing the system. See [How to submit a DAO proposal](./how-tos/create-submit-dao-proposal) for more detailed instructions on how to submit an AIP.
 
 
 ### Scenario 2: A security emergency arises on one of the Arbitrum DAO-governed chains
