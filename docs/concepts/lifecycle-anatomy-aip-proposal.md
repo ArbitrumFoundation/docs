@@ -20,6 +20,7 @@ todos:
  - reference specific sections of the constitution from each statement, whenever possible
  - consistency flag:
    - "represent at least 0.01% of the votable tokens"
+ - possibly elaborate briefly upon specific smart contracts
 ```
 
 
