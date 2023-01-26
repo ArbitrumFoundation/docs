@@ -9,6 +9,17 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
+```
+todos: 
+ - fact check
+ - clean up
+ - link to docs
+ - wire up quicklooks
+ - ask questions and add to FAQ
+ - continue refining term definitions
+ - reference specific sections of the constitution from each statement, whenever possible
+```
+
 Progressive decentralization is a process in which founding teams relinquish control over a decentralized autonomous organization (DAO) by degrees, over time. This approach allows teams to focus on achieving product-market fit and building a strong community, while also creating a path towards regulatory compliance and community ownership. In this concept doc, we'll elaborate upon this concept first by exploring the concept of progressive decentralization in general, and then by exploring the concept of progressive decentralization within the context of the Arbitrum DAO.
 
 ### Progressive decentralization: A general overview

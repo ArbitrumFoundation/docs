@@ -9,6 +9,17 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
+```
+todos: 
+ - fact check
+ - clean up
+ - link to docs
+ - wire up quicklooks
+ - ask questions and add to FAQ
+ - continue refining term definitions
+ - reference specific sections of the constitution from each statement, whenever possible
+```
+
 In this how-to, you'll learn how to submit proposals to the Arbitrum DAO. Familiarity with Arbitrum, DAOs, Ethereum, and smart contracts is expected. Otherwise, this how-to makes no assumptions about your experience with governance protocols.
 
 ### Prerequisites
@@ -19,7 +30,7 @@ Before you get started, make sure you have the following:
 - If you're interested in submitting on-chain proposals using Tally, you'll need at least 5,000,000 votes delegated to your wallet address.
 
 
-### Step 1: Submit your proposal to the DAO governance forum
+### Step 1: Submit your proposal to the DAO governance forum for an informal temperature check
 
 The [DAO governance forum](https://forum.arbitrum.io/) facilitates discussions about Arbitrum DAO and governance proposals that are submitted by eligible token-holders. To submit your proposal:
 
@@ -29,7 +40,7 @@ The [DAO governance forum](https://forum.arbitrum.io/) facilitates discussions a
 
 If you feel confident about your proposal after a week's worth of discussion, you can conduct a temperature check via a Snapshot poll. Note that temperature checks can only be created by $ARB token holders who have at least 0.01% of votable $ARB tokens in their wallet. If you don't have enough voting power to create a Snapshot poll, consider asking for support from delegates and/or the rest of the Arbitrum community.
 
-### Step 2: Conduct a temperature check with a Snapshot poll
+### Step 2: Conduct a formal temperature check with a Snapshot poll
 
 If you have at least 0.01% of votable $ARB tokens, you can create a poll on Snapshot to more formally gauge the community's interest in your proposal. To create a poll on Snapshot:
 

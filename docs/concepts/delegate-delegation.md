@@ -9,6 +9,17 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
+```
+todos: 
+ - fact check
+ - clean up
+ - link to docs
+ - wire up quicklooks
+ - ask questions and add to FAQ
+ - continue refining term definitions
+ - reference specific sections of the constitution from each statement, whenever possible
+```
+
 When participating in the Arbitrum DAO, token holders have the option to either vote directly on proposals or to delegate their voting power to a delegate. In this concept doc, we'll explore the concept of delegates and delegation within the context of the Arbitrum DAO.
 
 ### What is a delegate?

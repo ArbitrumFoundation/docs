@@ -9,6 +9,17 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
+```
+todos: 
+ - fact check
+ - clean up
+ - link to docs
+ - wire up quicklooks
+ - ask questions and add to FAQ
+ - continue refining term definitions
+ - reference specific sections of the constitution from each statement, whenever possible
+```
+
 The Arbitrum DAO is governed by a protocol that allows $AB governance token holders to propose and vote on different actions, such as changes to the DAO's Constitution or funding for specific projects. These votes are crucial for making decisions that shape the future of the DAO and its technology assets.
 
 ### Types of votes

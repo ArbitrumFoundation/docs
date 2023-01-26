@@ -9,6 +9,17 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
+```
+todos: 
+ - fact check
+ - clean up
+ - link to docs
+ - wire up quicklooks
+ - ask questions and add to FAQ
+ - continue refining term definitions
+ - reference specific sections of the constitution from each statement, whenever possible
+```
+
 In this how-to, you'll learn how to resubmit a proposal to the Arbitrum DAO that was previously rejected or did not reach quorum. Familiarity with Arbitrum, DAOs, Ethereum, and smart contracts is expected.
 
 ### Prerequisites

@@ -9,6 +9,17 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
+```
+todos: 
+ - fact check
+ - clean up
+ - link to docs
+ - wire up quicklooks
+ - ask questions and add to FAQ
+ - continue refining term definitions
+ - reference specific sections of the constitution from each statement, whenever possible
+```
+
 The Arbitrum DAO is a decentralized autonomous organization (DAO) built on the Ethereum blockchain. At its core, the Arbitrum DAO is a community-driven governance model that allows $ARB token holders to propose and vote on changes to the organization.
 
 The Arbitrum DAO's governance smart contracts are implemented on the Arbitrum One rollup chain, which is a Layer 2 scaling solution for the Ethereum blockchain. These smart contracts facilitate the democratic management of the DAO's governance token, $ARB. The $ARB token is the native token of the Arbitrum DAO. It serves as the currency for all transactions within the organization, including governance proposals and voting. Token holders who hold more $ARB tokens have more voting power within the organization.

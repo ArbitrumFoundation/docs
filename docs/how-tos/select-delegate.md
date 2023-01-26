@@ -9,6 +9,17 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
+```
+todos: 
+ - fact check
+ - clean up
+ - link to docs
+ - wire up quicklooks
+ - ask questions and add to FAQ
+ - continue refining term definitions
+ - reference specific sections of the constitution from each statement, whenever possible
+```
+
 Delegating your voting power is an essential part of participating in the Arbitrum DAO. As a token holder, you have the ability to vote on governance proposals and to elect members of the Security Council. However, if you don't have the time or resources to actively participate in the DAO's governance, you can still make your voice heard by delegating your voting power to a delegate. In this how-to, you'll learn how to evaluate and select a delegate.
 
 Before you delegate your voting power, it's important to understand that by delegating your voting power, you're entrusting someone else to vote on your behalf. So it's really important to choose a delegate who aligns with your values and who you trust to make decisions in the best interest of the Arbitrum DAO and its community.

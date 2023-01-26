@@ -9,6 +9,17 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
+```
+todos: 
+ - fact check
+ - clean up
+ - link to docs
+ - wire up quicklooks
+ - ask questions and add to FAQ
+ - continue refining term definitions
+ - reference specific sections of the constitution from each statement, whenever possible
+```
+
 In this how-to, you'll learn how to apply to become a delegate for the Arbitrum DAO. As a delegate, you'll have the ability to vote on proposals, including those that propose changes to the Constitution and other critical protocol parameters.
 
 Before applying to become a delegate, it's important to understand the responsibilities and requirements of the role. Delegates are expected to actively participate in the decision-making process and to act in the best interests of the network. They should also be familiar with The Constitution of the Arbitrum DAO and other relevant governance documents.
