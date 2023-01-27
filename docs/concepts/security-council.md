@@ -50,24 +50,23 @@ In summary, the Security Council elections are important because they decide who
 
 ### Why elections are important
 
-The Security Council is responsible for making important decisions that affect the entire Arbitrum network. By holding regular elections, the community can ensure that the Council is made up of members who truly represent the community's interests.
+The Security Council is responsible for making important decisions that affect the entire Arbitrum network. By holding regular elections, the community can ensure that the Council is made up of members who truly represent the values enshrined within [The Constitution of the Arbitrum DAO](../dao-constitution).
 
-In addition, the election process allows for the removal of Council members who are not acting in the best interests of the network. This helps to ensure that the Council always has the best interests of the network in mind.
-
+In addition, the election process allows for the removal of Council members who are not acting in the best interests of the network. This helps to ensure that the Council always has the best interests of the network in mind. (todo)
 
 ### On perceptions of centralization
 
-Progressive decentralization (todo) is the process of gradually transferring control and decision-making power from a central authority to a decentralized community. This is a common approach used in the blockchain and cryptocurrency space, where the ultimate goal is for a protocol or organization to be fully owned and operated by its community of users.
+Progressive decentralization (todo) is the process of gradually transferring control and decision-making power from a central authority to a decentralized community. This is a common approach used in the blockchain and cryptocurrency space, where the ultimate goal is for a technical protocol and its social organization to be managed in a democratic manner.
 
-In the case of the Arbitrum DAO, the Security Council is an important step along the journey of progressive decentralization. While it may first appear to be a centralized approach, the Security Council is democratically elected by the community, and their actions are subject to oversight and removal by the community as well. **The Security Council is a democratically managed centralization of elected experts who are responsible for managing the risk of the Arbitrum ecosystem through the selective application of Emergency Actions.** Without this component, the Arbitrum DAO would be fully decentralized, but it would be vulnerable to attacks and other risks.
+While the Security Council may first appear to represent a risky centralization of authority, its members are democratically elected by the community, and their actions are subject to oversight and removal by the community as well. **The Security Council is a democratically managed centralization of elected experts who are responsible for managing the risk of the Arbitrum ecosystem through the selective application of Emergency Actions.** Without this component, the Arbitrum DAO would be fully decentralized, but it would also be vulnerable to attacks and other, less manageable risks.
 
 Additionally, the Security Council is designed to operate in a way that prevents any single entity or group of entities from gaining too much control. For example, there are rules in place to ensure that no more than 3 candidates associated with a single entity can be elected to the Security Council at any one time. This helps to prevent any single entity or group from being able to control or veto Security Council decisions.
 
-However, it's important to note that the Security Council is just one step along the journey of progressive decentralization. There is still work to be done to fully decentralize the Arbitrum network and ensure that it is fully owned and operated by its community of users. But by starting with the Security Council and other steps such as the use of progressive decentralization, the Arbitrum DAO is working towards this goal in a strategic and methodical way.
+However, it's important to note that the Security Council is just one step along the journey of progressive decentralization. There's still work to be done to fully decentralize the Arbitrum network and ensure that it's fully owned and operated by members of the Arbitrum DAO (todo - quicklooks). But by starting with the Security Council and other steps such as the use of progressive decentralization, the Arbitrum DAO is working towards this goal in a strategic and methodical way.
 
 
 ### Conclusion
 
-The Security Council elections are an important part of the governance of the Arbitrum DAO. By participating in the elections, community members can ensure that the Council is made up of members who truly represent their interests.
+The Security Council and its elections are an important part of the governance of the Arbitrum DAO. By participating in the elections, community members can ensure that the Council is made up of members who truly represent their interests and those of the DAO - and Ethereum - at large.
 
-It's important to be informed about the process, the rules and the candidates before casting a vote, so that the network remains governed by values-aligned individuals who are committed to upholding the Constitution.
+If you're a member of the Arbitrum DAO, it's especially important for you to be aware of and support efforts towards progressive decentralization in order to ensure the long-term success and sustainability of the organization. This includes the management of expectations and perceptions within and beyond the Ethereum community.
