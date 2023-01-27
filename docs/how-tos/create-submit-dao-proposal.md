@@ -46,6 +46,17 @@ There are two types of AIPs: <a data-quicklook-from="constitutional-proposal">Co
 - **Non-Constitutional AIPs** are all other AIPs, such as those that request funds/grants or provide general guidelines or information to the community.
 
 
+### Proposal structure
+
+Although the proposal template is available TODO...
+
+
+import AnatomyAIPPartial from '@site/docs/partials/_anatomy-aip-partial.md'; 
+
+<AnatomyAIPPartial />
+
+
+
 ### Step 1: Conduct a formal temperature check with a Snapshot poll
 
 The [DAO governance forum](https://forum.arbitrum.io/) facilitates discussions about Arbitrum DAO and <a data-quicklook-from='governance-proposal'>governance proposals</a> that are submitted by eligible token-holders. To submit your proposal:
@@ -106,17 +117,3 @@ Welcome to the future of governance!
 [^1]: When we say "an Ethereum wallet address that represents at least 0.01% of votable tokens", we mean that your address must be able to vote at least 0.01% of votable tokens. This voting power can be acquired either by holding $ARB tokens directly (todo: and delegating those votes to yourself?), or by receiving delegated votes from other $ARB token holders who have decided to delegate their voting power to you.
 [^2]: Learn how to delegate your votes by visiting [How to delegate your voting power](./select-delegate-voting-power).
 [^3]: Refer to [The Constitution of the Arbitrum DAO](../dao-constitution) for additional details and conditions.
-
-
-
-<!-- todos: 
-How long are proposals open for voting?
-various inline todos
-things not specified:
-In step 1, the Constitution doesn't specify where the proposal should be submitted. The guide suggests the DAO governance forum, but it is not clear if this is the official place for proposal submissions.
-In step 2, the Constitution doesn't specify where proposals need to pass a temperature check before being submitted for an on-chain vote.
-In step 3, the Constitution doesn't specify the minimum amount of tokens required to create an on-chain proposal using Tally. Also, it is not specified the percentage of votable tokens required for a proposal to pass.
-In step 3, the Constitution doesn't specify what constitutes a vote in favor or against a proposal.
-In step 3, the Constitution doesn't specify what types of actions can be included in a proposal.
-In step 3, the Constitution doesn't specify the time frame for a proposal to be voted on, and if there is a quorum required for the vote to be valid.
--->
