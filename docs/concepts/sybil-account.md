@@ -28,25 +28,19 @@ todos:
 
 ### What are Sybil accounts?
 
-In the context of the Arbitrum DAO, a Sybil account is a fake or fraudulent account created to manipulate the voting system. These accounts can be used to influence the outcome of elections, or to gain an unfair advantage in decision-making processes. Sybil accounts are a form of centralization that is at odds with the decentralized nature of the Arbitrum DAO.
+In the context of Arbitrum Governance, Sybil accounts are Arbitrum accounts controlled by an entity trying to create the false appearance of being many entities via deceptive on chain activity in order to unfairly game the <a data-quicklook-from='arb'>$ARB</a> <a data-quicklook-from='airdrop'>airdrop</a>.
 
-### How does the Arbitrum DAO detect Sybil accounts?
 
-The Arbitrum DAO uses a process called "Sybil hunting" to detect and remove Sybil accounts. The process involves creating a graph of all transactions that have taken place on the network (?), and then partitioning this graph into different subgraphs. The subgraphs that have a large number of nodes and a high degree of connectivity are considered to be Sybil clusters. The accounts within these clusters are then removed from the voting system (?).
+### How were Sybil accounts detected prior to the airdrop?
 
-### How does the Arbitrum DAO prevent Sybil accounts?
+A process called "Sybil hunting" was used to detect and remove Sybil accounts. The process involved creating a graph of all transactions that have taken place on <a data-quicklook-from='arbitrum-one'>Arbitrum One</a>, and then partitioning this graph into different subgraphs. The subgraphs that have a large number of nodes and a high degree of connectivity were considered to be likely Sybil clusters. The accounts within these clusters were then removed from the airdrop. Entities explicitly known to by Sybils were also removed; the dataset of these known entities was created with help from our friends at [Nansen](https://www.nansen.ai/) and [Hop](https://hop.exchange/). See [Arbitrum Sybil Hunting](https://github.com/OffchainLabs/arb-sybil/tree/master/v2) for more information. 
 
-The Arbitrum DAO uses a combination of techniques to prevent Sybil accounts from being created. One method is to exclude known malicious entities from the voting system. Another method is to use a threshold for the number of connections that an account must have in order to be considered a valid voter. Additionally, the Arbitrum DAO uses a risk management system (?) to ensure that the number of Sybil accounts is kept to a minimum.
 
 ### Why is it important to prevent Sybil accounts?
 
-Sybil accounts are a form of centralization that undermines the decentralized nature of the Arbitrum DAO. They can be used to manipulate the outcome of elections, or to gain an unfair advantage in decision-making processes. By preventing Sybil accounts, the Arbitrum DAO is able to ensure that the voting system is fair and that the decisions that are made are representative of the will of the community.
+By receiving an outsized share of the $ARB aidrop, Sybil accounts can lead to concentration of voting power and undermine the decentralized nature of the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>. By preventing Sybil accounts, the Arbitrum DAO is able to ensure that the initial token distribution is as fair as possible.
 
 ### Why not use proof-of-personhood? 
 
-TODO
+Criteria for allotment of the ARB airdrop involves on-chain activity. The ability for users to interact with Arbitrum One permissionlessly and pseudonymously is a fundamental property of the system.  Requiring some sort of identity verification for airdrop-qualification would undermine this core value, and thus wasn't considered.   
 
-
-## Conclusion
-
-The Arbitrum DAO's Sybil hunting process is an important step in maintaining the integrity of the voting system and ensuring that the decisions that are made are representative of the will of the community. However, it is important to note that this is an ongoing process, and that there is still work to be done.
