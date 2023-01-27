@@ -91,6 +91,9 @@ Governance of the Arbitrum Rollup protocol is driven by two governing bodies: th
 - The **Security Council** is a 12-member council of publicly known entities elected by members of the Arbitrum DAO. This council is responsible for ensuring Arbitrum's security and performance through the selective application of **emergency actions (todo - consistent proper nouning / labeling - clarify that these are distinct bodies)** if/when necessary.
 - The **Arbitrum DAO** is the worldwide community of $ARB token holders and the delegates that they select. The DAO is responsible for governing Arbitrum and its Security Council. The DAO can use constitutional proposals to modify the Security Council's powers, or even to eliminate the Security Council entirely. The Security Council's powers are delegated to the Security Council by the DAO, and are to be exercised in the best interests of the DAO.
 
+### What sorts of decisions is Arbitrum’s Governance System responsible for making?
+Most importantly, Arbitrum Governance is in charge of upgrading Arbitrum chains’ core contracts, which define and enforce the Arbitrum protocol. There are several possible motivations behind one of these upgrades: an upgrade could improve the system in some way, like increase its decentralization or optimize its performance and lower fees; an upgrade may also be done to fix some vulnerability that’s discovered. Less critical decisions that affect the Arbitrum ecosystem at large can also be made by Governance. (See “Why Governance” for more).
+
 ### Who cares about this stuff?
 
 You can think of our stakeholder groups as a stack of layers. At the top of the stack, we have our **web3 user layer**. All other layers work together to support the web3 user layer:
@@ -103,7 +106,7 @@ You can think of our stakeholder groups as a stack of layers. At the top of the 
   - **Execution layer (EL):** Includes Geth and other execution-layer teams building execution-layer client software.
 - **Research layer:** Includes researchers and protocol engineers who are working on the cutting edge of cryptography, mechanism design, and governance protocols.
 
-### All of these people can govern Arbitrum?
+### All of these people can govern Arbitrum One and Arbitrum Nova?
 
 Yep! As long as they either hold $ARB or are a delegate.
 
