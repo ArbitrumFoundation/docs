@@ -11,13 +11,16 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 ```
 todos: 
- - fact check
- - clean up
- - link to docs
- - wire up quicklooks
- - ask questions and add to FAQ
- - continue refining term definitions
- - reference specific sections of the constitution from each statement, whenever possible
+ - fact check (we are here - once an SME signs off on the core truth, we can confidently stabilize the beauty of the truth - see the gov docs page for details: https://www.notion.so/arbitrum/Governance-docs-46934705e74b4ae096b2fcdb3755aa40)
+ - then continue with...
+   - clean up (logical and patterned sections, consistent formatting, consistency across the corpus)
+   - link to docs (wherever the reader is likely to want to read supporting docs, link to them inline, and wire up "next" and "prev" links at the bottom of each page)
+   - wire up quicklooks (wrap first-mentions of key terms in <a data-quicklook-from> tags, and ensure the definitions are in the glossary, signed off by SMEs, and rendered using Glossary CMS)
+   - ask questions and add to FAQ (wherever a given reader persona - user, dev, token-holder, delegate, proposal submitter, council member, etc) is likely to have questions, add a question to the FAQ and render it within a FAQs section by using the FAQ CMS publishing pipeline)
+   - continue refining term definitions (periodically review the Glossary CMS to drive consistency and clarity through iteration, ideally with continuous peer review and support)
+   - reference specific sections of the constitution from each statement, whenever possible (via markdown-not-html-footnotes that connect the statement to the constitution while disarming various forms of skepticism, confusion, and risk)
+   - invite peers to help with the long-tail of todos, & peer-review content experience and comment on friction points (right now we determine gov, once the switch is flipped, it will determine us, feels important to get this right for "the spirit of our work" and risk / optics reasons)
+   - confidently shift our focus to fun non-gov things together!
 ```
 
 

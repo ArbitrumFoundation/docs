@@ -11,13 +11,18 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 ```
 todos: 
- - fact check
+ - fact check (we are here - once an SME signs off on the core truth, we can confidently stabilize the beauty of the truth - see the gov docs page for details: https://www.notion.so/arbitrum/Governance-docs-46934705e74b4ae096b2fcdb3755aa40)
+ - then continue with...
+   - clean up (logical and patterned sections, consistent formatting, consistency across the corpus)
+   - link to docs (wherever the reader is likely to want to read supporting docs, link to them inline, and wire up "next" and "prev" links at the bottom of each page)
+   - wire up quicklooks (wrap first-mentions of key terms in <a data-quicklook-from> tags, and ensure the definitions are in the glossary, signed off by SMEs, and rendered using Glossary CMS)
+   - ask questions and add to FAQ (wherever a given reader persona - user, dev, token-holder, delegate, proposal submitter, council member, etc) is likely to have questions, add a question to the FAQ and render it within a FAQs section by using the FAQ CMS publishing pipeline)
+   - continue refining term definitions (periodically review the Glossary CMS to drive consistency and clarity through iteration, ideally with continuous peer review and support)
+   - reference specific sections of the constitution from each statement, whenever possible (via markdown-not-html-footnotes that connect the statement to the constitution while disarming various forms of skepticism, confusion, and risk)
+   - invite peers to help with the long-tail of todos, & peer-review content experience and comment on friction points (right now we determine gov, once the switch is flipped, it will determine us, feels important to get this right for "the spirit of our work" and risk / optics reasons)
+   - confidently shift our focus to fun non-gov things together!
    - confirm token threshholds for snapshot and tally
- - clean up
- - link to docs
- - wire up quicklooks
    - to define: snapshot, tally, temperature check
- - ask questions and add to FAQ as appropriate
    - do I need to delegate to myself, or is holding tokens enough?
    - the Constitution specifies "0.01% of the Votable Tokens" in both temperature check and Formal AIP call stages. This notion comment (https://www.notion.so/How-to-submit-a-DAO-proposal-84fb3b7995834008a20c15c0457c7cc5?d=4327ca358d554f758ad29c3ae1588e9f) and this google doc (https://docs.google.com/document/d/166Lut45pdwSI6GAGQkcD91wY8mI3rSbWYRiqkP-ThZc/edit) suggest that the threshold is 5,000,000 tokens for raising an on-chain proposal. Which is correct? Opting for Constitution specs for now.
    - can I submit an on-chain proposal without having received any delegated votes from anyone other than myself?
@@ -26,10 +31,9 @@ todos:
    - why are there different threshholds between Tally and Snapshot?
    - if I don't have enough tokens to submit my proposal on Snapshot or Tally, what are my options?
    - "Your proposal will pass the formal temperature check if it receives support from more than 50% of votable tokens." - is this true? all votable tokens, or just the votable tokens that voted?
- - continue refining term definitions
- - reference specific sections of the constitution from each statement, whenever possible
- - template location TODO below
+   - template location TODO below
 ```
+
 
 In this how-to, you'll learn how to submit an Arbitrum Improvement Proposal (AIP) to the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>. Familiarity with Arbitrum, DAOs, and Ethereum is expected. Otherwise, this how-to makes no assumptions about your experience with governance protocols.
 
