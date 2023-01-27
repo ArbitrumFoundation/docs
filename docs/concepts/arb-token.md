@@ -37,4 +37,4 @@ In summary, the $ARB token is a special-purpose digital asset that gives its hol
 
 #### Footnotes
 
-[^1]: See [Delegates and delegation: A conceptual overview](./delegate-delegation) to learn more about this concept. See [How to delegate your voting power](./select-delegate-voting-power) to learn how to transfer the voting power of your $ARB tokens to a delegate of your choosing.
+[^1]: See [Delegates and delegation: A conceptual overview](./delegate-delegation) to learn more about this concept. See [How to delegate your voting power](../how-tos/select-delegate-voting-power) to learn how to transfer the voting power of your $ARB tokens to a delegate of your choosing.
