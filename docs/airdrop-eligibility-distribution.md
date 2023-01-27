@@ -36,7 +36,7 @@ The only official website for the $ARB airdrop is todo:qqq. There is no presale.
 <a href='#todo'>$ARB</a> is an ERC-20 token native to Arbitrum One rollup chain. Token properties at launch:
 
 
-<table class='small-table'>
+<table className="small-table">
     <tr>
         <td><strong>Property</strong></td>
         <td><strong>Value</strong></td>
@@ -74,7 +74,7 @@ The only official website for the $ARB airdrop is todo:qqq. There is no presale.
 
 ### Initial token allocation & airdrop distribution
 
-<table class='small-table'>
+<table className="small-table">
     <tr>
         <td><strong>Percentage of initial supply</strong></td>
         <td><strong>Number of tokens</strong></td>
@@ -136,7 +136,7 @@ We use a points system to determine the number of tokens that airdrop recipients
 
 **Converting points to tokens:**
 
-<table class='small-table'>
+<table className="small-table">
     <tr>
         <td><strong>Points earned</strong></td>
         <td><strong>Airdrop entitlement</strong></td>
