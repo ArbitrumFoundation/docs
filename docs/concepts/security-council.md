@@ -38,7 +38,7 @@ It is important to note that the Security Council is subject to the oversight an
 
 ### How the elections work
 
-The Security Council is made up of 12 members, who are divided into two groups called the "July Cohort" and the "January Cohort" (todo - pronouns?). Every year, on July 15th and January 15th, there are elections to fill the seats in these two groups.
+The Security Council is made up of 12 members, who are divided into two groups called the "July Cohort" and the "January Cohort" (todo - proper nouns? need to align on this via Glossary CMS for all terms). Every year, on July 15th and January 15th, there are elections to fill the seats in these two groups.
 
 The July Cohort is elected every year, and their term lasts for 6 months. The January Cohort is elected every year, and their term lasts for 1 year.
 
