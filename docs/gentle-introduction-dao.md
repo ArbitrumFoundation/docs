@@ -26,7 +26,7 @@ todos:
 
 **In a nutshell:**
 
-- <a data-quicklook-from='arbitrum-rollup'>Arbitrum Rollup</a> and <a data-quicklook-from='arbitrum-anytrust'>Arbitrum AnyTrust</a> are protocols that make Ethereum transactions faster and cheaper. Developers use Arbitrum One and Arbitrum Nova, the chains that implement these protocols, respectively, to build user-friendly <a data-quicklook-from='decentralized-app-dapp'>decentralized apps</a>.
+- <a data-quicklook-from='arbitrum-rollup-protocol'>Arbitrum Rollup</a> and <a data-quicklook-from='arbitrum-anytrust-protocol'>Arbitrum AnyTrust</a> are protocols that make Ethereum transactions faster and cheaper. Developers use Arbitrum One and Arbitrum Nova, the chains that implement these protocols, respectively, to build user-friendly <a data-quicklook-from='decentralized-apps-dapps'>decentralized apps</a>.
 - Governance of this technology is now being decentralized through the distribution of <a data-quicklook-from='arb'>$ARB</a> governance tokens.
 - $ARB tokens can be used to vote on Arbitrum DAO governance proposals, allowing $ARB holders to shape Arbitrum's future together.
 - Token holders will be able to delegate voting power to any individual they trust. These individuals are called delegates.
