@@ -26,7 +26,8 @@ export const Quicklooks = () => {
         let contentSourceKey = reference.getAttribute('data-quicklook-from');
         let termItem = glossary[contentSourceKey]
         if (!termItem) {
-          return "undefined"
+          console.warn(`WARNING: No quicklook entry found for ${contentSourceKey}`);
+          return undefined
         }
         return termItem.text
       },
