@@ -68,10 +68,10 @@ async function generateFiles() {
   addItems(faqs, '/dao-faq')
   const publishedFAQs = faqs.filter(isValid)
   const publishedDefinitions = definitions.filter(isValid)
-  const definitionsHTML = `<div class="hidden-glossary">\n\n${renderGlossary(
+  const definitionsHTML = `\n\n${renderGlossary(
     publishedDefinitions,
     linkableTerms
-  )}\n</div>\n`
+  )}\n`
   const glossaryJSON = renderGlossaryJSON(publishedDefinitions, linkableTerms)
   fs.writeFileSync('../docs/partials/_glossary-partial.md', definitionsHTML)
   fs.writeFileSync('../static/glossary.json', glossaryJSON)
