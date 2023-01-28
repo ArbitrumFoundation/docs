@@ -23,7 +23,7 @@ export const Quicklooks = () => {
       content: (reference) => {
         reference.setAttribute('data-quicklook-enabled', 'true');
         let contentSourceKey = reference.getAttribute('data-quicklook-from');
-        let termItem = document.getElementById(contentSourceKey)
+        let termItem = document.getElementById('glossary-'+contentSourceKey)
         if (!termItem) {
           return undefined
         }
