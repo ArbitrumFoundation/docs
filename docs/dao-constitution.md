@@ -73,7 +73,7 @@ todos:
     <li>
         <p><strong>Phase 3: DAO votes on AIP, on Arbitrum One (14-16 days): During this Phase 3, the Arbitrum DAO will be able to vote directly on-chain on a submitted AIP.</strong></p>
         <p>An AIP passes if the following 2 conditions are met:</p>
-        <ol class='a-b-list'>
+        <ol className="a-b-list">
             <li>More Votable Tokens have casted votes &quot;in favor&quot; than have casted votes &quot;against&quot; (&quot;<strong>Threshold 1</strong>&quot;); and</li>
             <li>
                In the case of a:
