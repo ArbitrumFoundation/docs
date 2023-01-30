@@ -6,6 +6,7 @@ import {
   handleRenderError,
   recordValidity,
   renderGlossary,
+  renderGlossaryJSON,
   renderFAQs,
 } from '@offchainlabs/notion-docs-generator'
 import dotenv from 'dotenv'
@@ -67,11 +68,13 @@ async function generateFiles() {
   addItems(faqs, '/dao-faq')
   const publishedFAQs = faqs.filter(isValid)
   const publishedDefinitions = definitions.filter(isValid)
-  const definitionsHTML = `<div class="hidden-glossary">\n\n${renderGlossary(
+  const definitionsHTML = `\n\n${renderGlossary(
     publishedDefinitions,
     linkableTerms
-  )}\n</div>\n`
+  )}\n`
+  const glossaryJSON = renderGlossaryJSON(publishedDefinitions, linkableTerms)
   fs.writeFileSync('../docs/partials/_glossary-partial.md', definitionsHTML)
+  fs.writeFileSync('../static/glossary.json', glossaryJSON)
   fs.writeFileSync(
     '../docs/partials/_faq-partial.md',
     renderFAQs(publishedFAQs, linkableTerms)

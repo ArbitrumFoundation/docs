@@ -1,4 +1,4 @@
-<div class="hidden-glossary">
+
 
 ### $ARB {#arb}
 <p>Arbitrum's governance token, an ERC-20 token native to the <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> chain. Owning $ARB makes you a member of the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> and allows you to participate in Arbitrum's on-chain governance.</p>
@@ -7,9 +7,9 @@
 <p>A series of smart contracts responsible for bridging <a href="/dao-glossary#arb">$ARB</a> between <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> and Ethereum. The $ARB token is native to Arbitrum One, meaning it's minted within a smart contract that lives on the Arbitrum One chain. The "reverse" gateway keeps the full $ARB supply escrowed in Arbitrum One, and mints or burns the <a href="/dao-glossary#layer-1-l1">Layer 1 (L1)</a> token representation upon deposits/withdrawals. The reverse gateway is often compared to the <a href="/dao-glossary#standard-token-gateway">Standard Token gateway</a>", which mints/burns on <a href="/dao-glossary#layer-2-l2">Layer 2 (L2)</a>.</p>
 
 ### Airdrop {#airdrop}
-<p>A mechanism that distributes tokens to qualifying wallet addresses, usually based on on-chain activity. The <a href="/dao-glossary#arbitrum-foundation">Arbitrum Foundation</a> airdrop will distribute <a href="/dao-glossary#arb">$ARB</a> tokens to eligible wallet addresses on TODO according to the airdrop eligibility and distribution criteria specified in our <a href='/airdrop-eligibility-distribution'>overview of airdrop eligibility and specifications</a>.</p>
-
 <p></p>
+
+<p>A mechanism that distributes tokens to qualifying wallet addresses, usually based on on-chain activity. The <a href="/dao-glossary#arbitrum-foundation">Arbitrum Foundation</a> airdrop will distribute <a href="/dao-glossary#arb">$ARB</a> tokens to eligible wallet addresses on TODO according to the airdrop eligibility and distribution criteria specified in our <a href='/airdrop-eligibility-distribution'>overview of airdrop eligibility and specifications</a>.</p>
 
 
 
@@ -237,4 +237,3 @@ Votable tokens give their holders voting power in direct proportion to the quant
 </p>
 
 
-</div>

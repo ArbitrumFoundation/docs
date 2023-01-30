@@ -72,7 +72,7 @@ Several important properties are preserved in a decentralized upgrade process, a
 
 ### Security Council
 
-The second protocol upgrade path doesn't involve the Arbitrum DAO directly. Along this path, a permissioned group of publicly named entities called the Security Council has the ability to upgrade the protocol directly and without delays in case of emergency.
+The second protocol upgrade path doesn't involve the Arbitrum DAO directly. Along this path, a permissioned group of publicly named entities called the <a data-quicklook-from='security-council'>Security Council</a> has the ability to upgrade the protocol directly and without delays in case of emergency.
 
 This is a critically necessary role to protect against emergencies like the discovery of exploitable vulnerabilities, in which case the typical slow governance path is not viable for two reasons:
 
