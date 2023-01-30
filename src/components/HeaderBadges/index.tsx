@@ -21,11 +21,11 @@ export const HeaderBadges = ({
     if (authorNickname != 'Clarin') {
       return (
         <a
-          class="header-badge"
+          className="header-badge"
           href={`https://github.com/${githubUsernames[authorNickname]}`}
         >
           <span
-            class="badge-avatar"
+            className="badge-avatar"
             style={{
               backgroundImage:
                 "url('https://avatars.githubusercontent.com/" +
@@ -33,22 +33,22 @@ export const HeaderBadges = ({
                 "')",
             }}
           ></span>
-          <span class="badge-label">{authorNickname}</span>
+          <span className="badge-label">{authorNickname}</span>
         </a>
       );
     } else {
       return (
         <a
-          class="header-badge"
+          className="header-badge"
           href="https://www.linkedin.com/in/clarin-dy-239b5616a/"
         >
           <span
-            class="badge-avatar"
+            className="badge-avatar"
             style={{
               backgroundImage: "url('https://i.imgur.com/vhht8qs.jpg')",
             }}
           ></span>
-          <span class="badge-label">{authorNickname}</span>
+          <span className="badge-label">{authorNickname}</span>
         </a>
       );
     }
@@ -57,9 +57,9 @@ export const HeaderBadges = ({
   let buildLastVerifiedBadge = function (dateString) {
     if (dateString != null) {
       return (
-        <a class="header-badge">
-          <span class="badge-avatar emoji-avatar">✔️</span> 
-          <span class="badge-label">
+        <a className="header-badge">
+          <span className="badge-avatar emoji-avatar">✔️</span> 
+          <span className="badge-label">
             Last verified on <strong>{dateString}</strong>
           </span>
         </a>
@@ -70,7 +70,7 @@ export const HeaderBadges = ({
   return (
     <BrowserOnly>
       {() => (
-        <div class="header-badges">
+        <div className="header-badges">
           {commaDelimitedContributors != null
             ? commaDelimitedContributors.split(',').map(buildAuthorBadge)
             : null}
@@ -78,9 +78,9 @@ export const HeaderBadges = ({
             lastVerifiedDateString,
             lastVerifiedVersionString
           )}
-          <a class="header-badge" href={`https://github.com/CoolChainCo/docs/issues/new?title=Docs update request: ${new URL(window.location.href).pathname}&body=Source: ${window.location.href}%0A%0ARequest: (how can we help?)`}>
-            <span class="badge-avatar emoji-avatar">✏️</span>
-            <span class="badge-label">Request an update</span>
+          <a className="header-badge" href={`https://github.com/CoolChainCo/docs/issues/new?title=Docs update request: ${new URL(window.location.href).pathname}&body=Source: ${window.location.href}%0A%0ARequest: (how can we help?)`}>
+            <span className="badge-avatar emoji-avatar">✏️</span>
+            <span className="badge-label">Request an update</span>
           </a>
         </div>
       )}
