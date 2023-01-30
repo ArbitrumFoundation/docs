@@ -95,7 +95,7 @@ Governance of the Arbitrum Rollup protocol is driven by two governing bodies: th
 - The **Arbitrum DAO** is the worldwide community of $ARB token holders and the delegates that they select. The DAO is responsible for governing Arbitrum and its Security Council. The DAO can use constitutional proposals to modify the Security Council's powers, or even to eliminate the Security Council entirely. The Security Council's powers are delegated to the Security Council by the DAO, and are to be exercised in the best interests of the DAO.
 
 ### What sorts of decisions is Arbitrum’s Governance System responsible for making?
-Most importantly, Arbitrum Governance is in charge of upgrading Arbitrum chains’ core contracts, which define and enforce the Arbitrum protocol. There are several possible motivations behind one of these upgrades: an upgrade could improve the system in some way, like increase its decentralization or optimize its performance and lower fees; an upgrade may also be done to fix some vulnerability that’s discovered. Less critical decisions that affect the Arbitrum ecosystem at large can also be made by Governance. (See “Why Governance” for more).
+Most importantly, Arbitrum Governance is in charge of upgrading Arbitrum chains’ core contracts, which define and enforce the Arbitrum protocol. There are several possible motivations behind one of these upgrades: an upgrade could improve the system in some way, like increase its decentralization or optimize its performance and lower fees; an upgrade may also be done to fix some vulnerability that’s discovered. Less security-critical decisions that affect the Arbitrum ecosystem at large can also be made by Governance. (See “Why Governance” for more).
 
 ### Who cares about this stuff?
 
