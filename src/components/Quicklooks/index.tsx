@@ -25,6 +25,7 @@ export const Quicklooks = () => {
         let contentSourceKey = reference.getAttribute('data-quicklook-from');
         let termItem = document.getElementById(contentSourceKey)
         if (!termItem) {
+          console.warn(`WARNING: No quicklook entry found for ${contentSourceKey}`);
           return undefined
         }
         let termTag = termItem.tagName
