@@ -28,12 +28,12 @@ todos:
 
 ### What are Sybil accounts?
 
-In the context of Arbitrum Governance, Sybil accounts are Arbitrum accounts controlled by an entity trying to create the false appearance of being many entities via deceptive on chain activity in order to unfairly game the <a data-quicklook-from='arb'>$ARB</a> <a data-quicklook-from='airdrop'>airdrop</a>.
+In the context of Arbitrum Governance, Sybil accounts are Arbitrum accounts controlled by an entity trying to create the false appearance of being many entities via deceptive on-chain activity in order to unfairly game the <a data-quicklook-from='arb'>$ARB</a> <a data-quicklook-from='airdrop'>airdrop</a>.
 
 
 ### How were Sybil accounts detected prior to the airdrop?
 
-A process called "Sybil hunting" was used to detect and remove Sybil accounts. The process involved creating a graph of all transactions that have taken place on <a data-quicklook-from='arbitrum-one'>Arbitrum One</a>, and then partitioning this graph into different subgraphs. The subgraphs that have a large number of nodes and a high degree of connectivity were considered to be likely Sybil clusters. The accounts within these clusters were then removed from the airdrop. Entities explicitly known to by Sybils were also removed; the dataset of these known entities was created with help from our friends at [Nansen](https://www.nansen.ai/) and [Hop](https://hop.exchange/). See [Arbitrum Sybil Hunting](https://github.com/OffchainLabs/arb-sybil/tree/master/v2) for more information. 
+A process called "Sybil hunting" was used to detect and remove Sybil accounts. The process involved creating a graph of all transactions that have taken place on <a data-quicklook-from='arbitrum-one'>Arbitrum One</a>, and then partitioning this graph into different subgraphs. The subgraphs that have a large number of nodes and a high degree of connectivity were considered to be likely Sybil clusters. The accounts within these clusters were collapsed into a single recipient account for the airdrop. Entities explicitly known to by Sybils were also removed; the dataset of these known entities was created with help from our friends at [Nansen](https://www.nansen.ai/) and [Hop](https://hop.exchange/). See [Arbitrum Sybil Hunting](https://github.com/OffchainLabs/arb-sybil/tree/master/v2) for more information. 
 
 
 ### Why is it important to prevent Sybil accounts?
