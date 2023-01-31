@@ -13,9 +13,6 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 import GlossaryPartial, {toc as GlossaryTOC} from '@site/docs/partials/_glossary-partial.md';
 
-<!--override hiding in one place instead of hiding in every subpage where we embed the glossary for quicklooks -->
-<div className="show-hidden-glossary">
-    <GlossaryPartial />
-</div>
+<GlossaryPartial />
 
 export const toc = GlossaryTOC

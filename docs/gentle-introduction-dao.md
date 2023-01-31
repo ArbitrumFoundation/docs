@@ -29,7 +29,7 @@ todos:
 
 **In a nutshell:**
 
-- <a data-quicklook-from='arbitrum-rollup'>Arbitrum Rollup</a> and <a data-quicklook-from='arbitrum-anytrust'>Arbitrum AnyTrust</a> are optimistic rollup protocols that make Ethereum transactions faster and cheaper. Developers use Arbitrum One and Arbitrum Nova, the chains that implement these protocols, respectively, to build user-friendly <a data-quicklook-from='decentralized-app-dapp'>decentralized apps</a>.
+- <a data-quicklook-from='arbitrum-rollup-protocol'>Arbitrum Rollup</a> and <a data-quicklook-from='arbitrum-anytrust-protocol'>Arbitrum AnyTrust</a> are protocols that make Ethereum transactions faster and cheaper. Developers use Arbitrum One and Arbitrum Nova, the chains that implement these protocols, respectively, to build user-friendly <a data-quicklook-from='decentralized-apps-dapps'>decentralized apps</a>.
 - Governance of this technology is now being decentralized through the distribution of <a data-quicklook-from='arb'>$ARB</a> governance tokens.
 - $ARB tokens can be used to vote on Arbitrum DAO governance proposals, allowing $ARB holders to shape Arbitrum's future together.
 - Token holders will be able to delegate voting power to any individual they trust. These individuals are called delegates.
@@ -42,7 +42,7 @@ todos:
 
 ### Hello! What's Arbitrum again?
 
-Arbitrum Rollup is an optimistic rollup protocol that makes Ethereum transactions faster and cheaper. Developers use Arbitrum to build user-friendly decentralized apps (dApps) that can take advantage of the scalability benefits of the Arbitrum Rollup and AnyTrust protocols.
+Arbitrum is a protocol that makes Ethereum transactions faster and cheaper. Developers use Arbitrum to build user-friendly decentralized apps (dApps) that can take advantage of the scalability benefits of the Arbitrum Rollup and AnyTrust protocols.
 
 Our flagship chain, Arbitrum One, was [launched in 2021](https://offchain.medium.com/introducing-arbitrum-one-our-mainet-beta-ed0e9b63b435). This was quickly followed by the launch of [Arbitrum Nova](https://medium.com/offchainlabs/introducing-nova-arbitrum-anytrust-mainnet-is-open-for-developers-9a54692f345e), a separate [AnyTrust chain](https://medium.com/offchainlabs/introducing-anytrust-chains-cheaper-faster-l2-chains-with-minimal-trust-assumptions-31def59eb8d7) built for ultra low-cost transactions. In August 2022, Arbitrum One was [upgraded to the Arbitrum Nitro stack](https://medium.com/offchainlabs/arbitrum-nitro-one-small-step-for-l2-one-giant-leap-for-ethereum-bc9108047450), bringing a 7-10x upgrade to its scaling capabilities.
 
@@ -58,7 +58,7 @@ When a corporate decision needs to be made, members of the board meet and vote. 
 
 **Web3 technologies** (like Arbitrum's protocols and chains) are often built by corporations governed _initially_ by a board of directors. Once these technologies achieve product-market fit, the board can gradually decentralize its decision-making authority. This is called [progressive decentralization](./concepts/progressive-decentralization.md). There are three key components to our current step in this process:
 
-1. **DAO formation**: The Arbitrum DAO (decentralized autonomous organization) is a new entity that will own the Arbitrum Rollup protocol, Arbitrum AnyTrust protocol, Arbitrum One chain, and Arbitrum Nova chain. This DAO is governed by The Constitution of the Arbitrum DAO, which is a set of rules that describe how the DAO will operate. The Constitution is enshrined within a number of social contracts that are used by the Arbitrum DAO to govern itself and its technology assets.
+1. **DAO formation**: The Arbitrum DAO (decentralized autonomous organization) is a new entity that will own the Arbitrum One chain and Arbitrum Nova chain. This DAO is governed by The Constitution of the Arbitrum DAO, which is a set of rules that describe how the DAO will operate. The Constitution is enshrined within a number of social contracts that are used by the Arbitrum DAO to govern itself and its technology assets.
 2. **Governance token launch**: Ownership of governance tokens represents membership within the DAO. Token holders can vote on DAO proposals. Arbitrum's governance token is **$ARB**, and will be distributed to eligible wallet addresses via an upcoming airdrop.
 3. **Code**: DAO governance is usually facilitated by a series of open source [smart contracts](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html) that enforce a specific decision-making protocol. These _trustless_ smart contracts are used to gradually replace the traditional board's _trusted_ social contract. Arbitrum DAO uses smart contracts to codify the decision-making protocol articulated within the Constitution of the Arbitrum DAO.
 
@@ -76,8 +76,8 @@ Kind of! Let's compare them:
 
 - $ETH is a transactional token, while $ARB is a governance token.
 - $ETH is used to pay for transaction fees, while $ARB is not.
-- Governance of the Arbitrum Rollup protocol is facilitated by $ARB and governance smart contracts, while [Ethereum's governance](https://ethereum.org/en/governance/) is handled socially.
-- Holding $ARB makes you a partial owner of the Arbitrum Rollup protocol, while holding $ETH does not make you a partial owner of the Ethereum's protocol.
+- Governance of Arbitrum is facilitated by $ARB and governance smart contracts, while [Ethereum's governance](https://ethereum.org/en/governance/) is handled socially.
+- Holding $ARB makes you a partial owner of Arbitrum, while holding $ETH does not make you a partial owner of the Ethereum's protocol.
 
 ### Why is this important?
 
@@ -94,6 +94,9 @@ Governance of the Arbitrum Rollup protocol is driven by two governing bodies: th
 - The **Security Council** is a 12-member council of publicly known entities elected by members of the Arbitrum DAO. This council is responsible for ensuring Arbitrum's security and performance through the selective application of **emergency actions (todo - consistent proper nouning / labeling - clarify that these are distinct bodies)** if/when necessary.
 - The **Arbitrum DAO** is the worldwide community of $ARB token holders and the delegates that they select. The DAO is responsible for governing Arbitrum and its Security Council. The DAO can use constitutional proposals to modify the Security Council's powers, or even to eliminate the Security Council entirely. The Security Council's powers are delegated to the Security Council by the DAO, and are to be exercised in the best interests of the DAO.
 
+### What sorts of decisions is Arbitrum’s Governance System responsible for making?
+Most importantly, Arbitrum Governance is in charge of upgrading Arbitrum chains’ core contracts, which define and enforce the Arbitrum protocol. There are several possible motivations behind one of these upgrades: an upgrade could improve the system in some way, like increase its decentralization or optimize its performance and lower fees; an upgrade may also be done to fix some vulnerability that’s discovered. Less security-critical decisions that affect the Arbitrum ecosystem at large can also be made by Governance. (See “Why Governance” for more).
+
 ### Who cares about this stuff?
 
 You can think of our stakeholder groups as a stack of layers. At the top of the stack, we have our **web3 user layer**. All other layers work together to support the web3 user layer:
@@ -106,7 +109,7 @@ You can think of our stakeholder groups as a stack of layers. At the top of the 
   - **Execution layer (EL):** Includes Geth and other execution-layer teams building execution-layer client software.
 - **Research layer:** Includes researchers and protocol engineers who are working on the cutting edge of cryptography, mechanism design, and governance protocols.
 
-### All of these people can govern Arbitrum's Rollup protocol?
+### All of these people can govern Arbitrum One and Arbitrum Nova?
 
 Yep! As long as they either hold $ARB or are a delegate.
 
