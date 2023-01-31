@@ -26,19 +26,19 @@ todos:
    - confidently shift our focus to fun non-gov things together!
 ```
 
-The Arbitrum DAO is governed by a protocol that allows $AB governance token holders to propose and vote on different actions, such as changes to the DAO's Constitution or funding for specific projects. These votes are crucial for making decisions that shape the future of the DAO and its technology assets.
+The <a data-quicklook-from='arbitrum-dao '>Arbitrum DAO </a>is governed by a protocol that allows <a data-quicklook-from='arb'>$ARB</a> governance token holders to propose and vote on different actions, such as changes to the DAO's [Constitution](../dao-constitution.md) or funding for specific projects. These votes are crucial for making decisions that shape the future of Arbitrum and its technology assets.
 
 ### Types of votes
 
 There are two types of votes in the Arbitrum DAO:
 
-1. **Temperature check:** This is a preliminary vote that gauges the community's interest in a proposal before it moves on to the next stage. Temperature checks are conducted on the Snapshot platform and are only open to $ARB token holders who hold at least 0.01% of votable tokens.
+1. **Temperature check:** This is a preliminary vote that gauges the community's interest in a proposal before it moves on to the next stage. Temperature checks are conducted on the Snapshot platform and are only open to $ARB token holders who hold at least 0.01% of <a data-quicklook-from='votable-tokens'>votable tokens</a>.
 
-2. **On-chain vote:** If the proposal passes the temperature check, it will move on to an on-chain vote facilitated by Tally. The proposal must receive support from more Votable Tokens in favor than against; constitutional proposals must receive votes from at least 5% of votable tokens; non-constitutional proposal must receive votes from at least 3% of votable tokens.
+2. **On-chain vote:** If the proposal passes the temperature check, it will move on to an on-chain vote facilitated by Tally. The proposal must receive support from more votable tokens in favor than against; <a data-quicklook-from='constitutional-aip'>constitutional proposals</a> must receive votes from at least 5% of votable tokens; <a data-quicklook-from='nonconstitutional-aip'>non-constitutional proposal</a> must receive votes from at least 3% of votable tokens.
 
 ### Voting power
 
-The amount of voting power you have is determined by the number of $ARB tokens you hold. However, you also have the option to delegate your voting power to a delegate, who can vote on your behalf. This is a great option for those who may not have the time or resources to actively participate in the DAO's governance. (todo)
+The amount of voting power you have is determined by the number of $ARB tokens you hold. However, you also have the option to grant your voting power to a <a data-quicklook-from='delegate'>delegate</a>, who can vote on your behalf. This is a great option for token holders who may not have the time or resources to actively participate in the DAO's governance.
 
 ### Values-based voting
 
