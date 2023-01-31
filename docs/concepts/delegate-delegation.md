@@ -26,17 +26,17 @@ todos:
    - confidently shift our focus to fun non-gov things together!
 ```
 
-When participating in the Arbitrum DAO, token holders have the option to either vote directly on proposals or to delegate their voting power to a delegate. In this concept doc, we'll explore the concept of delegates and delegation within the context of the Arbitrum DAO.
+When participating in the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>, token holders have the option to either vote directly on proposals or to give their voting power to a delegate. In this concept doc, we'll explore the concept of delegates and delegation within the context of the Arbitrum DAO.
 
 ### What is a delegate?
 
-A delegate is a member of the Arbitrum DAO community who has been elected to represent other token holders and vote on their behalf. Delegates are elected by token holders who choose to delegate their voting power to them. Delegates are required to follow the Constitution of the Arbitrum DAO and must act in the best interest of the token holders they represent.
+A delegate is a member of the Arbitrum DAO community who has been elected to represent other token holders and vote on their behalf. Delegates are elected by token holders who choose to grant their voting power to them. Delegates are required to follow the [Constitution](../dao-constitution.md) of the Arbitrum DAO and must act in the best interest of the token holders they represent.
 
 ### Why delegate?
 
-Delegation allows token holders to participate in the governance of the Arbitrum DAO without having to actively keep track of every proposal and vote. By delegating their voting power to a delegate, token holders can trust that their vote will be cast in a way that aligns with their own beliefs and values.
+Delegation allows token holders to participate in the <a data-quicklook-from='governance'>governance</a> of the Arbitrum DAO without having to actively keep track of every proposal and vote. By granting their voting power to a delegate, token holders can trust that their vote will be cast in a way that aligns with their own beliefs and values.
 
-Additionally, token holders who delegate their voting power are still able to vote on proposals directly if they choose to (?). This allows for added flexibility and the ability to "override" a delegate's vote if necessary (?).
+Additionally, token holders who delegate their voting power are able to revoke this delegation and reclaim voting power back to themselves at any time. They may want to do this if, for example, there is an important proposal that they themselves want to vote on directly.
 
 ### How to delegate
 
@@ -46,7 +46,7 @@ Delegating your voting power is easy and can be done through the Tally platform.
 2. Select the "delegate" button.
 3. Search for the delegate you would like to delegate your voting power to and confirm the delegation.
 
-Note that you can change or revoke your delegation at any time. You can also delegate your voting power to multiple delegates if you choose (?). For more detailed how-to guidance, see TODO.
+Note that through Tally, you can change or revoke your delegation at any time. You can also proportionally delegate your voting power to multiple delegates. For more detailed how-to guidance, see TODO.
 
 ## Conclusion
 
