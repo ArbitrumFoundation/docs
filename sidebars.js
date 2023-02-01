@@ -116,6 +116,10 @@ module.exports = {
           label: 'Smart contract architecture',
           href: 'https://github.com/OffchainLabs/governance/blob/main/docs/overview.md',
         },
+        {
+          type: 'doc',
+          id: 'deployment-addresses'
+        }
       ],
     },
     {
