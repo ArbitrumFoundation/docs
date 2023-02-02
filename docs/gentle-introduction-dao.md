@@ -2,7 +2,7 @@
 id: gentle-intro-dao-governance
 title: A gentle introduction to Arbitrum DAO
 sidebar_label: A gentle introduction
-description: Learn about the Arbitrum DAO, the governance token $ARB, the role of delegates in the Arbitrum DAO, 
+description: Learn about the Arbitrum DAO, the governance token $ARB, the role of delegates in the Arbitrum DAO, and more.
 ---
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
