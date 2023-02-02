@@ -30,7 +30,7 @@ Once the <a data-quicklook-from='arb'>$ARB</a> token is circulating, $ARB token 
 
 
 ### Apply to be an early delegate
-Before applying to become a delegate, it's important to understand the responsibilities and requirements of the role. Delegates are expected to actively participate in the decision-making process and to act in the best interests of the network. They should also be familiar with The Constitution of the Arbitrum DAO and other relevant governance documents.
+Before applying to become a delegate, it's important to understand the responsibilities and requirements of the role. Delegates are expected to actively participate in the decision-making process and to act in the best interests of the network. They should also be familiar with [The Constitution of the Arbitrum DAO](../dao-constitution) and other relevant governance documents.
 
 To apply to become an early delegate for the Arbitrum DAO, complete the following steps:
 
