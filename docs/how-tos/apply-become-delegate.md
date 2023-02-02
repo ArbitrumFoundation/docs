@@ -11,10 +11,6 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 ```
 todos: 
- 1. Editing for technical precision and completeness (we are here - once an SME signs off on this "core truth", we can edit for structure / clarity / brevity / consistency - see the gov docs page for details: https://www.notion.so/arbitrum/Governance-docs-46934705e74b4ae096b2fcdb3755aa40)
-   - This unblocks other types of editing 
-   - Other editorial feedback is welcome of course, but the most important feedback at this point is editing for technical precision and completeness. SME-signoff signals that from the SME's perspective, it looks truthful and complete.
- 2. Other things that we need to do (can parallelize, but confidence will increase as we have SME signoffs on technical accuracy and completeness)
    - Editing for structure / clarity / brevity / consistency / metadata
       - Examples of things in this step: logical and patterned sections, consistent formatting, consistency across the corpus, consistent usage of proper nouns, thoughtful SEO-friendly descriptions
    - link to docs (wherever the reader is likely to want to read supporting docs, link to them inline, and wire up "next" and "prev" links at the bottom of each page)
@@ -25,13 +21,12 @@ todos:
    - invite peers to help with the long-tail of todos, & peer-review content experience and comment on friction points (right now we determine gov, once the switch is flipped, it will determine us, feels important to get this right for "the spirit of our work" and risk / optics reasons)
    - confidently shift our focus to fun non-gov things together!
 ```
+
 ### Background
 
-Delegates are members of the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a> that have the ability to vote on <a data-quicklook-from='governance-proposal'>proposals</a>.
+We're currently in the **call for delegates** stage of Arbitrum DAO's launch. This stage allows prospective DAO delegates to submit <a data-quicklook-from='delegate'>delegate</a> applications before users are able to claim and delegate their tokens. 
 
-Once the <a data-quicklook-from='arb'>$ARB</a> token is circulating, anybody can become a delegate by having a token holder delegate votes to them (see ["How to delegate your voting power"](./select-delegate-voting-power.md)).
-
-When users are initially claiming their tokens from the <a data-quicklook-from='airdrop'>airdop</a>, they will be given the option to delegate their votes to any parties in a list of candidate "early delegates." In this how-to, you'll learn how to apply to become one of these early delegates!
+Once the <a data-quicklook-from='arb'>$ARB</a> token is circulating, $ARB token holders will be able to delegate their votes to approved delegates (see [How to delegate your voting power](./select-delegate-voting-power.md)). Delegation happens when users initially claim their $ARB tokens from the <a data-quicklook-from='airdrop'>airdop</a>. The token claiming portal gives claimants the option to delegate their votes to any parties in a list of candidate "early delegates." In this how-to, you'll learn how to apply to become one of these early delegates.
 
 
 ### Apply to be an early delegate
@@ -42,8 +37,8 @@ To apply to become an early delegate for the Arbitrum DAO, complete the followin
  1. Review the [Constitution](../dao-constitution.md) and other relevant governance documents to ensure that you understand the role of a delegate and the responsibilities and requirements associated with it.
  2. Review the [comprehension check](../comprehension-check.md) to self-assess your understanding of the protocol.
  3. [Build a strong delegate platform](build-strong-delegate-platform.md). This includes creating a website or social media account that outlines your qualifications, experience, and vision for the Arbitrum DAO. It's also important to demonstrate your understanding of the protocol and the issues facing the network.
- 4. Submit an application to the Arbitrum DAO's governance forum  following the structure of the template posted in the [this thread](https://forum.arbitrum.io/t/delegation-submission-template/16) (TODO: ensure link is fr correct).
- 5. Once your application is received, it will be reviewed by Arbitrum team, and if accepted, you'll become a delegate.
+ 4. Submit an application to the Arbitrum DAO's governance forum following the structure of the template posted in the [this thread](https://forum.arbitrum.io/t/delegation-submission-template/16) (TODO: ensure link is fr correct).
+ 5. Once your application is received, it will be reviewed by the Arbitrum team, and if accepted, you'll become a delegate.
 
 Remember, regardless of this initial application process, any party can become a delegate at any time by simply having votes delegated to them; the community may still wish to hold additional "elections" similar to this application process in the future.
 
