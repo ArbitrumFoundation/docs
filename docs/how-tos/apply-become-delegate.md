@@ -24,7 +24,7 @@ todos:
 
 ### Background
 
-We're currently in the **call for delegates** stage of Arbitrum DAO's launch. This stage allows prospective DAO delegates to submit <a data-quicklook-from='delegate'>delegate</a> applications before users are able to claim and delegate their tokens. 
+We're currently in the **call for delegates** stage of Arbitrum DAO's launch. This stage allows prospective DAO delegates to submit <a data-quicklook-from='delegate'>delegate</a> applications before users are able to claim their tokens and delegate the voting power of those tokens (see ["How to delegate your voting power"](./select-delegate-voting-power.md) to learn how to delegate your voting power). 
 
 Once the <a data-quicklook-from='arb'>$ARB</a> token is circulating, $ARB token holders will be able to delegate their votes to approved delegates (see [How to delegate your voting power](./select-delegate-voting-power.md)). Delegation happens when users initially claim their $ARB tokens from the <a data-quicklook-from='airdrop'>airdop</a>. The token claiming portal gives claimants the option to delegate their votes to any parties in a list of candidate "early delegates." In this how-to, you'll learn how to apply to become one of these early delegates.
 
