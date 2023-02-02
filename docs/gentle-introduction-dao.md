@@ -11,10 +11,6 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 ```
 todos: 
- 1. Editing for technical precision and completeness (we are here - once an SME signs off on this "core truth", we can edit for structure / clarity / brevity / consistency - see the gov docs page for details: https://www.notion.so/arbitrum/Governance-docs-46934705e74b4ae096b2fcdb3755aa40)
-   - This unblocks other types of editing 
-   - Other editorial feedback is welcome of course, but the most important feedback at this point is editing for technical precision and completeness. SME-signoff signals that from the SME's perspective, it looks truthful and complete.
- 2. Other things that we need to do (can parallelize, but confidence will increase as we have SME signoffs on technical accuracy and completeness)
    - Editing for structure / clarity / brevity / consistency / metadata
       - Examples of things in this step: logical and patterned sections, consistent formatting, consistency across the corpus, consistent usage of proper nouns, thoughtful SEO-friendly descriptions
    - link to docs (wherever the reader is likely to want to read supporting docs, link to them inline, and wire up "next" and "prev" links at the bottom of each page)
@@ -30,10 +26,10 @@ todos:
 **In a nutshell:**
 
 - <a data-quicklook-from='arbitrum-rollup-protocol'>Arbitrum Rollup</a> and <a data-quicklook-from='arbitrum-anytrust-protocol'>Arbitrum AnyTrust</a> are protocols that make Ethereum transactions faster and cheaper. Developers use Arbitrum One and Arbitrum Nova, the chains that implement these protocols, respectively, to build user-friendly <a data-quicklook-from='decentralized-apps-dapps'>decentralized apps</a>.
-- Governance of this technology is now being decentralized through the distribution of <a data-quicklook-from='arb'>$ARB</a> governance tokens.
+- Governance of these chains and their protocols is now being decentralized through the distribution of <a data-quicklook-from='arb'>$ARB</a> governance tokens.
 - $ARB tokens can be used to vote on Arbitrum DAO governance proposals, allowing $ARB holders to shape Arbitrum's future together.
-- Token holders will be able to delegate voting power to any individual they trust. These individuals are called delegates.
-- **To determine your airdrop eligibility**, connect your wallet to the Arbitrum One network on [gov.arbitrum.io](http://gov.arbitrum.io) and follow the prompts. Do this by (todo:qqq).
+- Token holders will be able to delegate their voting power to <a data-quicklook-from='delegate'>delegates</a>.
+- **To determine your airdrop eligibility**, connect your wallet to the Arbitrum One network on [gov.arbitrum.foundation](http://gov.arbitrum.foundation) and follow the prompts. Do this by (todo:qqq).
 - **To become an Arbitrum DAO delegate**, review the below material and then **submit your application** (todo:qqq).
 - **To build decentralized apps on Arbitrum,** check out the [developer docs](https://developer.arbitrum.io/intro/).
 
@@ -85,7 +81,7 @@ Decentralization of Arbitrum's technology governance represents an important ste
 
 ### Cool beans. Am I eligible for the airdrop?
 
-If you've used Arbitrum at any time before the the snapshot date (August 31st, 2022 - [block 22207817](https://arbiscan.io/block/22207817) on Arbitrum One), you're probably entitled to some $ARB tokens. The easiest way to find out if you're eligible is to visit [gov.arbitrum.io](http://gov.arbitrum.io/) and follow the prompts.
+If you've used Arbitrum at any time before the the snapshot date (August 31st, 2022 - [block 22207817](https://arbiscan.io/block/22207817) on Arbitrum One), you're probably entitled to some $ARB tokens. The easiest way to find out if you're eligible is to visit [gov.arbitrum.foundation](http://gov.arbitrum.foundation/) and follow the prompts.
 
 ### How does Arbitrum's governance work?
 
@@ -142,7 +138,7 @@ This two-step process lets us prepare a smooth airdrop experience for you.
 
 ### Wen airdrop?
 
-We're currently targeting todo:qqq for the airdrop - this is when you'll be able to claim your tokens on the [governance portal](http://gov.arbitrum.io) - the same portal used to check eligibility. You'll then be able to select a delegate (link) or delegate to yourself (link).
+We're currently targeting todo:qqq for the airdrop - this is when you'll be able to claim your tokens on the [governance portal](http://gov.arbitrum.foundation) - the same portal used to check eligibility. You'll then be able to select a delegate (link) or delegate to yourself (link).
 
 If this target date changes, we'll update this document and we'll todo:qqq - stay tuned!
 
