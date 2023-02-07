@@ -5,7 +5,7 @@ sidebar_label: $ARB token
 description: Learn about the $ARB token, a special-purpose digital asset that gives its holders the ability to vote on on-chain proposals that affect the operation and evolution of the Arbitrum DAO and the technology assets it owns.
 voice: Arbitrum DAO
 tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Eg "The DAO is responsible for..." instead of "The DAO is currently responsible for..." and "The DAO is implementing...".
+tense: Present - avoid present progressive. Past tense as needed.
 person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 ---
 

@@ -5,7 +5,7 @@ sidebar_label: Why decentralize governance?
 description: Learn about the rationale behind introducing the $ARB governance token, and the important role it plays in the progressive decentralization of the Arbitrum protocol.
 voice: Arbitrum DAO
 tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Eg "The DAO is responsible for..." instead of "The DAO is currently responsible for..." and "The DAO is implementing...".
+tense: Present - avoid present progressive. Past tense as needed.
 person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 ---
 

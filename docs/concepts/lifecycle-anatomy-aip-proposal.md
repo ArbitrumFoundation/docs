@@ -5,7 +5,7 @@ sidebar_label: Lifecycle and anatomy of an AIP
 description: Learn about the process and infrastructure that supports the Arbitrum Improvement Proposal (AIP) protocol, as defined in the Constitution of the Arbitrum DAO.
 voice: Arbitrum DAO
 tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Eg "The DAO is responsible for..." instead of "The DAO is currently responsible for..." and "The DAO is implementing...".
+tense: Present - avoid present progressive. Past tense as needed.
 person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 ---
 
