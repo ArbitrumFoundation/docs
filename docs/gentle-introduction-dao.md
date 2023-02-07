@@ -160,17 +160,6 @@ You're in the right place! The following docs elaborate on the finer details of 
  - [Telegram](https://t.me/arbitrum)
  - [Arbitrum DAO governance forum](https://forum.arbitrum.io/)
 
-### Thank you!
-
-Thank _you_. Developers are using Arbitrum to power the next generation of web experiences partly because of our technology, but mostly because of our community of builders and believers. You're giving us a lot to look forward to.
-
-And to think that we're just getting started! Just over a year ago, it was commonly believed that scaling Ethereum was impossible. Today, Arbitrum powers the world's most popular web3 experiences (check out that [TVL](https://l2beat.com/scaling/tvl/)). Our team is relentlessly reducing the cost of web3 application development while making it easy for our most beloved web2 apps to progressively decentralize.
-
-At the same time, diverse communities are organically emerging from within our app ecosystem. Developers are using Arbitrum to run their experiments across all major app categories, including DeFi, gaming, social, art, and NFTs. Who knows what new categories will emerge as the world's hackers, makers, and dreamers use Arbitrum to tinker at scale.
-
-In 2022 we saw Arbitrum's Nitro upgrade, Ethereum's Merge, our merge with Prysmatic Labs, and the formation of Arbitrum DAO. Without skipping a beat, 2023 has opened with a highly anticipated airdrop and call for delegates.
-
-We're moving fast and meeting needs. The specter of Ethereum's rollup-centric future is upon us. Cheap, fast, and secure transactions are here. New economic games are being unlocked, quietly for now. Thanks for playing! We're looking forward to a bright future ahead as we decentralize Arbitrum, scale Ethereum, and build a better world together. 💙🌱
 
 <br />
 
