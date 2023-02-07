@@ -9,39 +9,6 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
-```
-todos: 
- 1. Editing for technical precision and completeness (we are here - once an SME signs off on this "core truth", we can edit for structure / clarity / brevity / consistency - see the gov docs page for details: https://www.notion.so/arbitrum/Governance-docs-46934705e74b4ae096b2fcdb3755aa40)
-   - This unblocks other types of editing 
-   - Other editorial feedback is welcome of course, but the most important feedback at this point is editing for technical precision and completeness. SME-signoff signals that from the SME's perspective, it looks truthful and complete.
- 2. Other things that we need to do (can parallelize, but confidence will increase as we have SME signoffs on technical accuracy and completeness)
-   - Editing for structure / clarity / brevity / consistency / metadata
-      - Examples of things in this step: logical and patterned sections, consistent formatting, consistency across the corpus, consistent usage of proper nouns, thoughtful SEO-friendly descriptions
-   - link to docs (wherever the reader is likely to want to read supporting docs, link to them inline, and wire up "next" and "prev" links at the bottom of each page)
-   - wire up quicklooks (wrap first-mentions of key terms in <a data-quicklook-from> tags, and ensure the definitions are in the glossary, signed off by SMEs, and rendered using Glossary CMS)
-   - ask questions and add to FAQ (wherever a given reader persona - user, dev, token-holder, delegate, proposal submitter, council member, etc) is likely to have questions, add a question to the FAQ and render it within a FAQs section by using the FAQ CMS publishing pipeline)
-   - continue refining term definitions (periodically review the Glossary CMS to drive consistency and clarity through iteration, ideally with continuous peer review and support)
-   - reference specific sections of the constitution from each statement, whenever possible (via markdown-not-html-footnotes that connect the statement to the constitution while disarming various forms of skepticism, confusion, and risk)
-   - invite peers to help with the long-tail of todos, & peer-review content experience and comment on friction points (right now we determine gov, once the switch is flipped, it will determine us, feels important to get this right for "the spirit of our work" and risk / optics reasons)
-   - confidently shift our focus to fun non-gov things together!
-   - confirm token threshholds for snapshot and tally
-   - to define: snapshot, tally, temperature check
-   - do I need to delegate to myself, or is holding tokens enough?
-   - the Constitution specifies "0.01% of the Votable Tokens" in both temperature check and Formal AIP call stages. This notion comment (https://www.notion.so/How-to-submit-a-DAO-proposal-84fb3b7995834008a20c15c0457c7cc5?d=4327ca358d554f758ad29c3ae1588e9f) and this google doc (https://docs.google.com/document/d/166Lut45pdwSI6GAGQkcD91wY8mI3rSbWYRiqkP-ThZc/edit) suggest that the threshold is 5,000,000 tokens for raising an on-chain proposal. Which is correct? Opting for Constitution specs for now.
-      -A: updated constitution;  5,000,000 for proposal submission is cannon (not that this is deferent than off chain temp-check, which is 0.01%)
-   - can I submit an on-chain proposal without having received any delegated votes from anyone other than myself?
-      - A: yes; votes are votes, regardless of where they came from
-   - why do I need to take the extra step to delegate to myself?
-      - A: This is a gas optimization / implementation detail; it should be clear when using Tally. 
-   - see Prereqs -> second bullet point
-   - why are there different threshholds between Tally and Snapshot?
-      - A:  the design different steps have increasingly high bars to pass
-   - if I don't have enough tokens to submit my proposal on Snapshot or Tally, what are my options?
-      - A: gotta get the votes somehow! 
-   - "Your proposal will pass the formal temperature check if it receives support from more than 50% of votable tokens." - is this true? all votable tokens, or just the votable tokens that voted?
-      - A: just those that voted
-   - template location TODO below
-```
 
 In this how-to, you'll learn how to submit an Arbitrum Improvement Proposal (AIP) to the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>. Familiarity with Arbitrum, DAOs, and Ethereum is expected. Otherwise, this how-to makes no assumptions about your experience with governance protocols.
 

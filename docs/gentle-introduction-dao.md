@@ -2,7 +2,7 @@
 id: gentle-intro-dao-governance
 title: A gentle introduction to Arbitrum DAO
 sidebar_label: A gentle introduction
-description: Learn about the Arbitrum DAO, the governance token $ARB, the role of delegates in the Arbitrum DAO, and more.
+description: Learn about the Arbitrum DAO, the $ARB governance token, how to claim $ARB tokens as an eligible airdrop recipient, the role of delegates in the Arbitrum DAO, and more.
 ---
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
@@ -10,10 +10,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 <DraftExpectationsPartial />
 
 ```
-todos:
-   - ask questions and add to FAQ (wherever a given reader persona - user, dev, token-holder, delegate, proposal submitter, council member, etc) is likely to have questions, add a question to the FAQ and render it within a FAQs section by using the FAQ CMS publishing pipeline)
-   - reference specific sections of the constitution from each statement, whenever possible (via markdown-not-html-footnotes that connect the statement to the constitution while disarming various forms of skepticism, confusion, and risk)
-   - invite peers to help with the long-tail of todos, & peer-review content experience and comment on friction points (right now we determine gov, once the switch is flipped, it will determine us, feels important to get this right for "the spirit of our work" and risk / optics reasons)
+ - todo: align on whether or not we want to use the term "democratic" to describe the governance model
 ```
 
 
