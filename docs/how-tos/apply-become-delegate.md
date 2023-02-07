@@ -11,11 +11,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 ### Background
 
-We're currently in the **call for delegates** stage of Arbitrum DAO's launch. Throughout this stage, prospective DAO delegates can submit <a data-quicklook-from='delegate'>delegate</a> applications on the [Arbitrum DAO governance forum](https://forum.arbitrum.io/t/delegation-submission-template/16). After this stage, $ARB token holders will be able to delegate the voting power[^1] to eligible delegates immediately after claiming their airdropped tokens.
-
-
-In this how-to, you'll learn how to apply to become a delegate for the Arbitrum DAO. As a delegate, you'll have the ability to vote on proposals, including those that propose changes to [The Constitution of the Arbitrum DAO](../dao-constitution) and critical protocol parameters.
-
+We're currently in the **call for delegates** stage of Arbitrum DAO's launch. Throughout this stage, prospective DAO delegates can submit <a data-quicklook-from='delegate'>delegate</a> applications on the [Arbitrum DAO governance forum](https://forum.arbitrum.io/t/delegation-submission-template/16). After this stage, <a data-quicklook-from='airdrop'>airdop</a> recipients will be able to claim their $ARB governance tokens and optionally delegate the voting power[^1] of their tokens to eligible "early delegates". In this how-to, you'll learn how to apply to become one of these early delegates.
 
 ### Apply to be an early delegate
 
