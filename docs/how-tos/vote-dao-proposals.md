@@ -23,15 +23,15 @@ The forum submission for any given proposal will usually include a link to a Sna
 
 1. Navigate to [Snapshot](https://snapshot.org/#/).
 2. Connect your wallet.
-3. Open the Arbitrum DAO Snapshot space and locate the proposal you'd like to vote on (or click the Snapshot link in the forum submission)
-4. Cast your vote (TODO - detail this, ideally with screenshots).
+3. Open the Arbitrum DAO Snapshot space and locate the proposal you'd like to vote on (or click the Snapshot link in the forum submission).
+4. Cast your vote by following the prompts within Snapshot's UI.
 
 ### Proposals in the "on-chain vote" stage
 
 If the proposal passes the temperature check, it will move on to an on-chain vote facilitated by Tally. To pass this stage, the proposal must meet two thresholds:
 
    1. The proposal must receive more votes in favor than against; and
-   2. Constitutional proposals must receive votes from at least 5% of Votable Tokens; non-Constitutional proposals must receive votes from at least 3% of Votable Tokens.
+   2. Constitutional proposals must receive votes from at least 5% of votable tokens; non-Constitutional proposals must receive votes from at least 3% of votable tokens.
 
 To vote on proposals in the "on-chain vote" stage:
 

@@ -45,13 +45,13 @@ The July Cohort is elected every year, and their term lasts for 6 months. The Ja
 
 The initial members of the Security Council were chosen randomly (?), with 3 members being affiliated with OffChain Labs, and the remaining 9 members being chosen from other candidates (?).
 
-To become a candidate for the Security Council, you must be a member of the Arbitrum DAO, and you can't be a member of the current Security Council. You must also have support from at least 0.2% of all Votable Tokens, which are the tokens that can be used to vote in the election.
+To become a candidate for the Security Council, you must be a member of the Arbitrum DAO, and you can't be a member of the current Security Council. You must also have support from at least 0.2% of all votable tokens, which are the tokens that can be used to vote in the election.
 
 Once the candidates have been chosen, all members of the Arbitrum DAO can vote for the candidates. The 6 candidates who receive the most votes will be elected to the Security Council.
 
 It's important to note that no single organization should have too much control over the Security Council, so no more than 3 candidates from the same organization can be elected. Also, candidates should not have any conflicts of interest that would prevent them from acting in the best interests of the Arbitrum DAO.
 
-The rules for the Security Council elections can be changed by the members of the Arbitrum DAO, but these changes cannot be made during an ongoing election. Security Council members can also be removed from their position if at least 10% of all Votable Tokens vote in favor of removal, and at least 5/6 of the votes are in favor of removal. They can also be removed if at least 9 members of the Security Council vote in favor of removal.
+The rules for the Security Council elections can be changed by the members of the Arbitrum DAO, but these changes cannot be made during an ongoing election. Security Council members can also be removed from their position if at least 10% of all votable tokens vote in favor of removal, and at least 5/6 of the votes are in favor of removal. They can also be removed if at least 9 members of the Security Council vote in favor of removal.
 
 In summary, the Security Council elections are important because they decide who will make important decisions about the security and integrity of the Arbitrum DAO. The process is democratic and allows members of the organization to have a say in who is elected to the Security Council. It's important to have a diverse group of candidates to ensure that the Security Council is acting in the best interests of the Arbitrum DAO.
 

@@ -66,14 +66,14 @@ Note that the Security Council may also approve and implement routine software u
 
 #### What's the process for proposing and implementing this change?
 
-The process for proposing and implementing changes to the Constitution is as described in the Constitution itself. It involves submitting the proposal as an AIP, and then going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority of Votable Tokens being voted in favor of the change. Changes to the Constitution must also be ratified by the Security Council with a 7-of-12 approval in order to take effect.
+The process for proposing and implementing changes to the Constitution is as described in the Constitution itself. It involves submitting the proposal as an AIP, and then going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority of votable tokens being voted in favor of the change. Changes to the Constitution must also be ratified by the Security Council with a 7-of-12 approval in order to take effect.
 
 
 ### Scenario 5: You want to propose a new Arbitrum DAO-governed chain
 
 #### What's the process for proposing and implementing this change?
 
-The process for proposing and implementing a new Arbitrum DAO-governed chain involves submitting the proposal as an AIP, and then going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority of Votable Tokens being voted in favor of the change. The new chain must also be authorized by the Arbitrum DAO through a corresponding AIP. The new chain must be governed solely by the Constitution and the procedures as described in TODO.
+The process for proposing and implementing a new Arbitrum DAO-governed chain involves submitting the proposal as an AIP, and then going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority of votable tokens being voted in favor of the change. The new chain must also be authorized by the Arbitrum DAO through a corresponding AIP. The new chain must be governed solely by the Constitution and the procedures as described in TODO.
 
 
 ### Scenario 6: You want to become a member of the Security Council
@@ -87,7 +87,7 @@ The Security Council has 12 members, who are divided into a July cohort of 6 mem
 
 #### What's the process for upgrading the Arbitrum One chain?
 
-The process for upgrading the Arbitrum One chain involves submitting a proposal as an AIP and going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority of Votable Tokens being voted in favor of the change. The upgrade must also be approved by the Security Council with a 7-of-12 approval in order to take effect. The chain owner(s) will then perform the upgrade by updating the contract implementation of any of Arbitrum's core protocol [Transparent Upgradeable Proxy contracts](https://developer.arbitrum.io/useful-addresses), and adjusting system parameters (for example: through `setter` methods in the [ArbOwner precompile](https://github.com/OffchainLabs/nitro/blob/master/contracts/src/precompiles/ArbOwner.sol)).
+The process for upgrading the Arbitrum One chain involves submitting a proposal as an AIP and going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority of votable tokens being voted in favor of the change. The upgrade must also be approved by the Security Council with a 7-of-12 approval in order to take effect. The chain owner(s) will then perform the upgrade by updating the contract implementation of any of Arbitrum's core protocol [Transparent Upgradeable Proxy contracts](https://developer.arbitrum.io/useful-addresses), and adjusting system parameters (for example: through `setter` methods in the [ArbOwner precompile](https://github.com/OffchainLabs/nitro/blob/master/contracts/src/precompiles/ArbOwner.sol)).
 
 It's important to note that the upgrade should be thoroughly tested and reviewed by the community and experts in the field before being proposed and implemented. Any upgrade should also be compliant with the applicable laws, in particular sanctions-related regulations.
 
@@ -118,16 +118,16 @@ While participating in governance is an important aspect of being a DAO member, 
 
 #### What's the process for proposing and implementing this change?
 
-The process for proposing and implementing changes to the distribution of unclaimed airdropped $ARB tokens involves submitting a proposal as an AIP and going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority of Votable Tokens being voted in favor of the change. Additionally, the change must also be approved by the Security Council with a 7-of-12 approval in order to take effect. The distribution of unclaimed airdropped $ARB tokens should be thoroughly evaluated and reviewed by the community and experts in the field before being proposed and implemented.
+The process for proposing and implementing changes to the distribution of unclaimed airdropped $ARB tokens involves submitting a proposal as an AIP and going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority of votable tokens being voted in favor of the change. Additionally, the change must also be approved by the Security Council with a 7-of-12 approval in order to take effect. The distribution of unclaimed airdropped $ARB tokens should be thoroughly evaluated and reviewed by the community and experts in the field before being proposed and implemented.
 
 
-### Scenario 11: A malicious whale purchases a majority of Votable Tokens.
+### Scenario 11: A malicious whale purchases a majority of votable tokens.
 
 #### Can the whale destroy the DAO?
 
-A malicious whale purchasing a majority of Votable Tokens doesn't necessarily mean that the DAO can be destroyed. The Constitution has built-in mechanisms to prevent any single entity from having too much control over the DAO. For example, the Security Council can perform Emergency Actions that require a 9-of-12 approval, which can be used to address critical issues that cannot wait for voter approval. The Constitution also allows for off-chain actions to be taken, which don't require the approval of token holders.
+A malicious whale purchasing a majority of votable tokens doesn't necessarily mean that the DAO can be destroyed. The Constitution has built-in mechanisms to prevent any single entity from having too much control over the DAO. For example, the Security Council can perform Emergency Actions that require a 9-of-12 approval, which can be used to address critical issues that cannot wait for voter approval. The Constitution also allows for off-chain actions to be taken, which don't require the approval of token holders.
 
-It's worth noting that this theoretical malicious whale's ownership of the majority of Votable Tokens will give them significant influence over the governance of the Arbitrum DAO, and might make it harder for the other members to pass their proposals. In such cases, the community should consider different ways to mitigate the influence of a single entity such as token-curbing mechanisms, or implementing a cap on the maximum percentage of tokens an individual or an entity can own. Please note that this scenario is a risk for any decentralized autonomous organization (DAO) and it's important for the community to be aware of it and have measures in place to mitigate it.
+It's worth noting that this theoretical malicious whale's ownership of the majority of votable tokens will give them significant influence over the governance of the Arbitrum DAO, and might make it harder for the other members to pass their proposals. In such cases, the community should consider different ways to mitigate the influence of a single entity such as token-curbing mechanisms, or implementing a cap on the maximum percentage of tokens an individual or an entity can own. Please note that this scenario is a risk for any decentralized autonomous organization (DAO) and it's important for the community to be aware of it and have measures in place to mitigate it.
 
 
 ### Scenario 12: A governance proposal passes that you voted against.
@@ -139,7 +139,7 @@ What options do you have?
  1. You can accept the outcome and continue to participate in the DAO. 
  2. You can engage in further discussions and debates on the community forum to express your dissenting opinion and try to sway others to your point of view. 
  3. You can propose a new AIP that addresses the issues you have with the proposal that passed and try to get it passed through the voting process. 
- 4. You can choose to disengage from the DAO altogether and sell your Votable Tokens before the proposal takes effect. This is facilitated by the time delay between the proposal passing and the proposal taking effect.
+ 4. You can choose to disengage from the DAO altogether and sell your votable tokens before the proposal takes effect. This is facilitated by the time delay between the proposal passing and the proposal taking effect.
 
 
 ### Conclusion
