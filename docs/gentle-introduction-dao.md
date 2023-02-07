@@ -15,6 +15,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 ```
  - todo: align on whether or not we want to use the term "democratic" to describe the governance model
+ - todo: review all instances of the words "own" and "stake" - ensure we're being careful / precise about this
 ```
 
 
@@ -68,11 +69,11 @@ Kind of! Let's compare them:
 - $ETH is a transactional token, while $ARB is a <a data-quicklook-from='governance-token'>governance token</a>.
 - $ETH is used to pay for transaction fees, while $ARB is not.
 - Governance of Arbitrum is facilitated by $ARB and governance smart contracts, while [Ethereum's governance](https://ethereum.org/en/governance/) is handled socially.
-- Holding $ARB makes you a partial owner of Arbitrum, while holding $ETH does not make you a partial owner of the Ethereum's protocol.
+- Holding $ARB gives you the ability to govern Arbitrum, while holding $ETH doesn't impact your ability to govern Ethereum's protocol.
 
 ### Why is this important?
 
-Decentralization of Arbitrum's technology governance represents an important step towards community ownership of Ethereum's scaling technologies, and further aligns our incentives with those of the Ethereum community at large. This is a big deal because it means that the Arbitrum DAO will be able to democratically make decisions that are in the best interest of the Arbitrum and Ethereum communities, rather than having faith in the good will of a small group of people. See [Progressive decentralization](./concepts/progressive-decentralization) to learn more about the mechanics and philosophy underlying this incremental shift towards collective ownership. See [State of decentralization](./state-of-progressive-decentralization) for a more in-depth overview of Arbitrum's decentralization journey.
+Decentralization of Arbitrum's technology governance represents an important step towards community governance of Ethereum's scaling technologies, and further aligns our incentives with those of the Ethereum community at large. This is a big deal because it means that the Arbitrum DAO will be able to democratically make decisions that are in the best interest of the Arbitrum and Ethereum communities, rather than having faith in the good will of a small group of people. See [Progressive decentralization](./concepts/progressive-decentralization) to learn more about the mechanics and philosophy underlying this incremental shift towards collective ownership. See [State of decentralization](./state-of-progressive-decentralization) for a more in-depth overview of Arbitrum's decentralization journey.
 
 ### Cool beans. Am I eligible for the airdrop?
 
