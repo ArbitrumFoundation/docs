@@ -2,7 +2,7 @@
 id: progressive-decentralization
 title: "Progressive decentralization: A conceptual overview"
 sidebar_label: Progressive decentralization
-description: todo:qqq
+description: Learn about the concept of progressive decentralization and how it applies to the Arbitrum DAO.
 voice: Arbitrum DAO
 tone: Objective, succinct, precise.
 tense: Present - avoid present progressive. Past tense as needed.
@@ -19,10 +19,12 @@ Progressive decentralization is a process in which founding teams relinquish con
 
 The concept of progressive decentralization is particularly relevant for crypto startups building scaling solutions. These projects face a unique challenge of balancing the need for product leadership, rapid iteration, and a managed go-to-market strategy with the goal of community ownership and regulatory compliance.
 
-Progressive decentralization is a way to resolve this tension by gradually transitioning control from the founding team to the community. This process is divided into three stages:
+Progressive decentralization resolves this tension by gradually transitioning control from the founding team to the community. This process can be divided into three stages:
 
  1. **Product-market fit**: The first stage of progressive decentralization is focused on achieving product/market fit. This means that the team is focused on building a product that people want and that addresses a specific market need. This stage is often characterized by a high degree of centralization, as the founding team is responsible for making key decisions about the product roadmap and go-to-market strategy.
+
  2. **Community participation**: The second stage of progressive decentralization is focused on building a strong and engaged community. This includes creating mechanisms for community participation, such as governance forums and token-based incentives. This stage is characterized by a moderate degree of centralization, as the founding team is still responsible for making key decisions about the product roadmap and go-to-market strategy, but the community is able to provide input and influence the direction of the project.
+
  3. **Decentralization**: The final stage of progressive decentralization is focused on achieving sufficient decentralization and community ownership. This includes implementing on-chain governance mechanisms and distributing control over the protocol to the community. This stage is characterized by a low degree of centralization, as the founding team no longer has control over the direction of the project.
 
 Progressive decentralization is important for crypto startups because it helps to limit platform risk (the risk that the rules of a platform will change against the will of its users). User-owned networks, such as DAOs, can benefit from a cooperative economic model that helps ensure that crypto services remain aligned with their users, even as they scale.
