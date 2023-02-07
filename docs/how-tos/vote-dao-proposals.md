@@ -46,7 +46,7 @@ To vote on proposals in the "on-chain vote" stage:
 
 ### On proposal evaluation
 
-It's important to evaluate proposals based on their alignment with the values and goals of the Arbitrum DAO as outlined in the [Constitution](../dao-constitution). Remember that the ultimate goal of the DAO is to create a decentralized and transparent platform that benefits all members, including those who aren't yet members.
+It's important to evaluate proposals based on their alignment with the values and goals of the Arbitrum DAO as outlined in the [Constitution](../dao-constitution.md). Remember that the ultimate goal of the DAO is to create a decentralized and transparent platform that benefits all members, including those who aren't yet members.
 
 
 ### On delegation
