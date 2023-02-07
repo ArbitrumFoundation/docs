@@ -24,7 +24,7 @@ Before applying to become a delegate, it's important to understand the responsib
 To apply to become a delegate for the Arbitrum DAO, complete the following steps:
 
  1. Review [The Constitution of the Arbitrum DAO](../dao-constitution) and each of the documents within this content set to ensure that you understand the scope of delegate responsibilities and the mechanisms by which the Arbitrum DAO operates.
- 2. Review the [comprehension check](../comprehension-check.md) to self-assess your understanding of the Arbitrum DAO governance protocol.
+ 2. Review the [comprehension check](../dao-comprehension-check.md) to self-assess your understanding of the Arbitrum DAO governance protocol.
  3. [Build a strong delegate platform](./build-strong-delegate-platform). This includes establishing an online presence that outlines your qualifications, experience, and vision for the Arbitrum DAO. You can use your platform to demonstrate your understanding of the protocol and the highest-priority challenges that we're facing as a community.
  4. Submit an application to the Arbitrum DAO's governance forum, following the structure of the template posted in the [delegate submission template thread](https://forum.arbitrum.io/t/delegation-submission-template/16). (todo - verify)
  5. Once your application is received, it will be reviewed by the Arbitrum team. If approved, you'll become a delegate.
