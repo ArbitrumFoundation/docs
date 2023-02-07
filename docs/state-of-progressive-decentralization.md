@@ -3,6 +3,10 @@ id: state-of-progressive-decentralization
 title: The state of Arbitrum's progressive decentralization
 sidebar_label: State of decentralization
 description: Learn about the state of Arbitrum's progressive decentralization.
+voice: Arbitrum DAO
+tone: Objective, succinct, precise.
+tense: Present - avoid present progressive. Eg "The DAO is responsible for..." instead of "The DAO is currently responsible for..." and "The DAO is implementing...".
+person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 ---
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
