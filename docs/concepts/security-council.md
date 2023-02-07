@@ -2,7 +2,7 @@
 id: security-council
 title: "Security Council: A conceptual overview"
 sidebar_label: Security Council
-description: todo:qqq
+description: Learn about the Security Council, a group of individuals who are responsible for managing the risk of the Arbitrum ecosystem through the selective application of emergency actions.
 voice: Arbitrum DAO
 tone: Objective, succinct, precise.
 tense: Present - avoid present progressive. Past tense as needed.
@@ -13,7 +13,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
-The Constitution of the Arbitrum DAO outlines the process for electing members to the Security Council, a group of individuals who are responsible for managing the risk of the Arbitrum ecosystem through the selective application of emergency actions. The Security Council is made up of 12 members who are elected by the community through a democratic process.
+[The Constitution of the Arbitrum DAO](../dao-constitution) outlines the process for electing members to the <a data-quicklook-from='security-council'>Security Council</a>, a group of individuals who are responsible for managing the risk of the Arbitrum ecosystem through the selective application of <a data-quicklook-from='emergency-action'>emergency actions</a> and <a data-quicklook-from='non-emergeny-action'>non-emergency actions</a>. The Security Council is made up of 12 members who are elected by the community through a democratic process.
 
 ### The role of the security council
 
@@ -49,13 +49,13 @@ In addition, the election process allows for the removal of Council members who 
 
 ### On perceptions of centralization
 
-Progressive decentralization (todo) is the process of gradually transferring control and decision-making power from a central authority to a decentralized community. This is a common approach used in the blockchain and cryptocurrency space, where the ultimate goal is for a technical protocol and its social organization to be managed in a democratic manner.
+[Progressive decentralization](./progressive-decentralization) is the process of gradually transferring decision-making power from a central authority to a decentralized community. This is a common approach used in the blockchain and cryptocurrency space, where the ultimate goal of technology innovation is to empower communities to democratically govern their technology assets.
 
-While the Security Council may first appear to represent a risky centralization of authority, its members are democratically elected by the community, and their actions are subject to oversight and removal by the community as well. **The Security Council is a democratically managed centralization of elected experts who are responsible for managing the risk of the Arbitrum ecosystem through the selective application of emergency actions.** Without this component, the Arbitrum DAO would be fully decentralized, but it would also be vulnerable to attacks and other, less manageable risks.
+While the Security Council may first appear to represent a risky centralization of authority, its members are democratically elected by the community. Its members and their actions are subject to oversight, and Security Council members can be removed by the DAO. **The Security Council is a democratically managed centralization of elected experts who are responsible for managing the risk of the Arbitrum ecosystem through the selective application of emergency actions.** Without this mechanism component, the Arbitrum DAO would be more "purely" decentralized, but it would also be vulnerable to attacks and other, less manageable risks.
 
-Additionally, the Security Council is designed to operate in a way that prevents any single entity or group of entities from gaining too much control. For example, there are rules in place to ensure that no more than 3 candidates associated with a single entity can be elected to the Security Council at any one time. This helps to prevent any single entity or group from being able to control or veto Security Council decisions.
+Additionally, the Security Council is designed to operate in a way that prevents any single entity or group of entities from gaining too much control. For example, there are rules in place to ensure that no more than three Security Council membership candidates associated with a single entity can be elected to the Security Council at any one time. This helps to prevent any single entity or group from being able to control or veto Security Council decisions.
 
-However, it's important to note that the Security Council mechanism a step along the journey of progressive decentralization. There's still work to be done to fully decentralize the Arbitrum network and ensure that it's fully owned and operated by members of the Arbitrum DAO (todo - quicklooks). But by starting with the Security Council and other steps such as the use of progressive decentralization, the Arbitrum DAO is working towards this goal in a strategic and methodical way.
+However, it's important to note that the Security Council mechanism is just one step along the journey of progressive decentralization. There's still work to be done to fully decentralize the Arbitrum network and ensure that it's governed by members of the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>. By starting with the Security Council, the Arbitrum DAO is working towards this goal in a strategic and methodical way.
 
 ### Conclusion
 
