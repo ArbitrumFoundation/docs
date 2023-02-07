@@ -21,7 +21,7 @@ There are two types of votes in the Arbitrum DAO:
 
 1. **Temperature check:** This is a preliminary vote that gauges the community's interest in a proposal before it moves on to the next stage. Temperature checks are conducted on the Snapshot platform and are only open to $ARB token holders who hold at least 0.01% of <a data-quicklook-from='votable-tokens'>votable tokens</a>.
 
-2. **On-chain vote:** If the proposal passes the temperature check, it will move on to an on-chain vote facilitated by Tally. This "call for votes" can be initiated by $ARB token holders who hold at least 5,000,000 votable tokens. To be approved, nore than 50% of the votable tokens that voted on the proposal must have voted in favor of the proposal; <a data-quicklook-from='constitutional-aip'>constitutional proposals</a> must receive votes from at least 5% of all votable tokens in existence; <a data-quicklook-from='nonconstitutional-aip'>non-constitutional proposal</a> must receive votes from at least 3% of all votable tokens in existence.
+2. **On-chain vote:** If the proposal passes the temperature check, it will move on to an on-chain vote facilitated by Tally. This "call for votes" can be initiated by $ARB token holders who hold (or represent) at least 5,000,000 votable tokens. To be approved, more than 50% of the votable tokens that voted on the proposal must have voted in favor of the proposal; <a data-quicklook-from='constitutional-aip'>constitutional proposals</a> must receive votes from at least 5% of all votable tokens in existence; <a data-quicklook-from='nonconstitutional-aip'>non-constitutional proposal</a> must receive votes from at least 3% of all votable tokens in existence.
 
 ### Token-weighted voting
 
