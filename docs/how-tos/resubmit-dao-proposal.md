@@ -3,6 +3,10 @@ id: resubmit-dao-proposal
 title: How to resubmit a DAO proposal
 sidebar_label: Resubmit a proposal
 description: Learn how to resubmit a proposal to the Arbitrum DAO that was previously rejected or did not reach quorum.
+voice: Arbitrum DAO
+tone: Objective, succinct, precise.
+tense: Present - avoid present progressive. Eg "The DAO is responsible for..." instead of "The DAO is currently responsible for..." and "The DAO is implementing...".
+person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 ---
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
