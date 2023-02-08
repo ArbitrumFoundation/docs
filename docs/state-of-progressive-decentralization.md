@@ -38,7 +38,7 @@ Let's evaluate the current status of these components for both Arbitrum One and 
 ### 2. Validator ownership
 
   - **Description**: Validators are responsible for updating the state of the <a data-quicklook-from='arbitrum-chain'>Arbitrum chains</a> and ensuring that all updates are valid.
-  - **Current status**: **Permissioned** Validation on both Arbitrum One and Arbitrum Nova is currently allow-listed to TODO public entities. You can see the list of validators [here](TODO link). Governance currently has the power to change this status.
+  - **Current status**: **Permissioned** Validation on both Arbitrum One and Arbitrum Nova is currently allow-listed to a committee of public entities. You can see the list of validators [here](TODO link). Governance currently has the power to change this status.
   - **Risks**: If all X Arbitrum validators behave maliciously, the system's safety could be compromised.
   - **Changes to Current status**: The Arbitrum governance system (see #1) currently has the power to modify the Validator allow-list, such as by adding or removing members or removing the allow-list entirely.
 
