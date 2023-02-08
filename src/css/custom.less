@@ -187,6 +187,23 @@ article {
     .footnote-backref {
       display: none;
     }
+
+    .footnotes {
+      border-top: 1px solid #ddd;
+      margin-top: 50px;
+
+      &:before {
+        content: "Footnotes:";
+        font-weight: 600;
+        margin-top: 30px;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      hr {
+        display: none;
+      }
+    }
   }
 }
 
@@ -240,6 +257,6 @@ article {
   }
 }
 
-article a:not([data-quicklook-from]) {
+article a:not([data-quicklook-from]):not(.footnote-ref) {
   text-decoration: underline;
 }

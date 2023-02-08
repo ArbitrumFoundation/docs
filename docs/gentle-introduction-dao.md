@@ -2,7 +2,11 @@
 id: gentle-intro-dao-governance
 title: A gentle introduction to Arbitrum DAO
 sidebar_label: A gentle introduction
-description: Learn about the Arbitrum DAO, the governance token $ARB, the role of delegates in the Arbitrum DAO, and more.
+description: Learn about the Arbitrum DAO, the $ARB governance token, how to claim $ARB tokens as an eligible airdrop recipient, the role of delegates in the Arbitrum DAO, and more.
+voice: Arbitrum DAO
+tone: Objective, succinct, precise.
+tense: Present - avoid present progressive. Past tense as needed.
+person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 ---
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
@@ -10,10 +14,9 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 <DraftExpectationsPartial />
 
 ```
-todos:
-   - ask questions and add to FAQ (wherever a given reader persona - user, dev, token-holder, delegate, proposal submitter, council member, etc) is likely to have questions, add a question to the FAQ and render it within a FAQs section by using the FAQ CMS publishing pipeline)
-   - reference specific sections of the constitution from each statement, whenever possible (via markdown-not-html-footnotes that connect the statement to the constitution while disarming various forms of skepticism, confusion, and risk)
-   - invite peers to help with the long-tail of todos, & peer-review content experience and comment on friction points (right now we determine gov, once the switch is flipped, it will determine us, feels important to get this right for "the spirit of our work" and risk / optics reasons)
+ - todo: align on whether or not we want to use the term "democratic" to describe the governance model
+ - todo: review all instances of the words "own" and "stake" - ensure we're being careful / precise about this
+ - todo: fix or remove footnotes
 ```
 
 
@@ -67,11 +70,11 @@ Kind of! Let's compare them:
 - $ETH is a transactional token, while $ARB is a <a data-quicklook-from='governance-token'>governance token</a>.
 - $ETH is used to pay for transaction fees, while $ARB is not.
 - Governance of Arbitrum is facilitated by $ARB and governance smart contracts, while [Ethereum's governance](https://ethereum.org/en/governance/) is handled socially.
-- Holding $ARB makes you a partial owner of Arbitrum, while holding $ETH does not make you a partial owner of the Ethereum's protocol.
+- Holding $ARB gives you the ability to govern Arbitrum, while holding $ETH doesn't impact your ability to govern Ethereum's protocol.
 
 ### Why is this important?
 
-Decentralization of Arbitrum's technology governance represents an important step towards community ownership of Ethereum's scaling technologies, and further aligns our incentives with those of the Ethereum community at large. This is a big deal because it means that the Arbitrum DAO will be able to democratically make decisions that are in the best interest of the Arbitrum and Ethereum communities, rather than having faith in the good will of a small group of people. See [Progressive decentralization](./concepts/progressive-decentralization) to learn more about the mechanics and philosophy underlying this incremental shift towards collective ownership. See [State of decentralization](./state-of-progressive-decentralization) for a more in-depth overview of Arbitrum's decentralization journey.
+Decentralization of Arbitrum's technology governance represents an important step towards community governance of Ethereum's scaling technologies, and further aligns our incentives with those of the Ethereum community at large. This is a big deal because it means that the Arbitrum DAO will be able to democratically make decisions that are in the best interest of the Arbitrum and Ethereum communities, rather than having faith in the good will of a small group of people. See [Progressive decentralization](./concepts/progressive-decentralization) to learn more about the mechanics and philosophy underlying this incremental shift towards collective ownership. See [State of decentralization](./state-of-progressive-decentralization) for a more in-depth overview of Arbitrum's decentralization journey.
 
 ### Cool beans. Am I eligible for the airdrop?
 
@@ -81,7 +84,7 @@ If you've used Arbitrum at any time before the the snapshot date (August 31st, 2
 
 Governance of the Arbitrum Rollup protocol is driven by two governing bodies: the <a data-quicklook-from='security-council'>Security Council</a> and the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>.
 
-- The **Security Council** is a 12-member council of publicly known entities elected by members of the Arbitrum DAO. This council is responsible for ensuring Arbitrum's security and performance through the selective application of <a data-quicklook-from='emergency-action'>Emergency Actions</a> **(todo - consistent proper nouning / labeling - clarify that these are distinct bodies)** if/when necessary. See [Delegates and delegation](./concepts/delegate-delegation) for a conceptual overview of Arbitrum DAO's delegation mechanics.
+- The **Security Council** is a 12-member council of publicly known entities elected by members of the Arbitrum DAO. This council is responsible for ensuring Arbitrum's security and performance through the selective application of <a data-quicklook-from='emergency-action'>emergency actions</a> **(todo - consistent proper nouning / labeling - clarify that these are distinct bodies)** if/when necessary. See [Delegates and delegation](./concepts/delegate-delegation) for a conceptual overview of Arbitrum DAO's delegation mechanics.
 - The **Arbitrum DAO** is the worldwide community of $ARB token holders and the <a data-quicklook-from='delegate'>delegates</a> that they select. The DAO is responsible for governing Arbitrum and its Security Council. The DAO can use constitutional proposals to modify the Security Council's powers, or even to eliminate the Security Council entirely. The Security Council's powers are delegated to the Security Council by the DAO, and are to be exercised in the best interests of the DAO. See [Arbitrum DAO](./concepts/arbitrum-dao) for an introductory overview of the DAO's various components.
 
 ### What sorts of decisions is Arbitrum’s governance system responsible for making?
@@ -158,17 +161,6 @@ You're in the right place! The following docs elaborate on the finer details of 
  - [Telegram](https://t.me/arbitrum)
  - [Arbitrum DAO governance forum](https://forum.arbitrum.io/)
 
-### Thank you!
-
-Thank _you_. Developers are using Arbitrum to power the next generation of web experiences partly because of our technology, but mostly because of our community of builders and believers. You're giving us a lot to look forward to.
-
-And to think that we're just getting started! Just over a year ago, it was commonly believed that scaling Ethereum was impossible. Today, Arbitrum powers the world's most popular web3 experiences (check out that [TVL](https://l2beat.com/scaling/tvl/)). Our team is relentlessly reducing the cost of web3 application development while making it easy for our most beloved web2 apps to progressively decentralize.
-
-At the same time, diverse communities are organically emerging from within our app ecosystem. Developers are using Arbitrum to run their experiments across all major app categories, including DeFi, gaming, social, art, and NFTs. Who knows what new categories will emerge as the world's hackers, makers, and dreamers use Arbitrum to tinker at scale.
-
-In 2022 we saw Arbitrum's Nitro upgrade, Ethereum's Merge, our merge with Prysmatic Labs, and the formation of Arbitrum DAO. Without skipping a beat, 2023 has opened with a highly anticipated airdrop and call for delegates.
-
-We're moving fast and meeting needs. The specter of Ethereum's rollup-centric future is upon us. Cheap, fast, and secure transactions are here. New economic games are being unlocked, quietly for now. Thanks for playing! We're looking forward to a bright future ahead as we decentralize Arbitrum, scale Ethereum, and build a better world together. 💙🌱
 
 <br />
 
