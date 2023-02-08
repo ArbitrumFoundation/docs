@@ -73,7 +73,3 @@ This applies only to Arbitrum AnyTrust chains like Arbitrum Nova.
 
 ---
 
-**Footnotes:**
-
-<a id='footnote-1'>1.</a> See our <a href='https://gas.arbitrum.io/'>gas cost estimator</a> and <a href='https://l2fees.info/'>L2Fees</a> for more information.<br/>
-<a id='footnote-2'>2.</a> todo:qqq
