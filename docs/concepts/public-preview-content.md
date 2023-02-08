@@ -17,7 +17,7 @@ Every governance document (excluding the [Constitution](../dao-constitution)) is
 
 <DraftExpectationsPartial />
 
-This disclaimer is used to **set expectations** and to **invite feedback** from readers like you. It's removed whenever there's evidence that a document is meeting readers' needs.
+This disclaimer is used to **set expectations** and to **invite feedback** from readers like you. Whenever there's evidence that a given document is meeting readers' needs, its public preview disclaimer is lifted. When a document's public preview disclaimer is lifted, it's considered "validated", but it's still subject to change based on reader feedback.
 
 ### How do you know when a public preview document is ready to have its disclaimer lifted?
 
