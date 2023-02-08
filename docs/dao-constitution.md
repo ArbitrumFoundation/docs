@@ -155,11 +155,3 @@ todos:
     <li><strong>Neutral and open:</strong> Arbitrum governance should not pick winners and losers, but should foster open innovation, interoperation, user choice, and healthy competition on Arbitrum chains.</li>
 </ul>
 </div>
-
-
-
---
-
-TODO: articulate within faqs:
-
- - Updates to the text of our Constitution must be approved by the Arbitrum DAO through a formal governance proposal. To validate the integrity of the text on this page, see <a href='/how-tos/hash-constitution'>How to hash The Constitution of the Arbitrum DAO</a>

@@ -16,7 +16,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 ```
  - todo: align on whether or not we want to use the term "democratic" to describe the governance model
  - todo: review all instances of the words "own" and "stake" - ensure we're being careful / precise about this
- - todo: fix or remove footnotes
+ - todo: apply other principled feedback
 ```
 
 
@@ -160,25 +160,3 @@ You're in the right place! The following docs elaborate on the finer details of 
  - [Discord](https://discord.gg/arbitrum)
  - [Telegram](https://t.me/arbitrum)
  - [Arbitrum DAO governance forum](https://forum.arbitrum.io/)
-
-
-<br />
-
----
-
-
-**FAQ:**
-
-import FaqPartial from '@site/docs/partials/_faq-partial.md';
-
-<div data-faq-origin-slug='gentle-introduction-dao'>
-    <FaqPartial />
-</div>
-
-
----
-
-**Footnotes:**
-
-<a id='footnote-1'>1.</a> See our <a href='https://gas.arbitrum.io/'>gas cost estimator</a> and <a href='https://l2fees.info/'>L2Fees</a> for more information.<br/>
-<a id='footnote-2'>2.</a> todo:qqq
