@@ -82,7 +82,7 @@ The initial governance launch provides the community with the tools it needs: a 
 
 These don't have easy answers and will continue to be the topic of lively discussion within the community as the Arbitrum technology continues to mature, and as the perceived risk profiles of various states of decentralization change along with it. But crucially, the Arbitrum governance system controls *all* aspects of the Arbitrum protocol, including the governance process itself.
 
-With the DAO in control, decisions about how  governance should evolve over time— including the governance process itself— are in the hands of the Arbitrum community.
+With the DAO in control, decisions about how Arbitrum should evolve over time — including the governance process itself — are in the hands of the Arbitrum community.
 
 
 ---
