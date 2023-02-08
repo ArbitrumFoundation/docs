@@ -16,7 +16,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 ```
  - todo: align on whether or not we want to use the term "democratic" to describe the governance model
  - todo: review all instances of the words "own" and "stake" - ensure we're being careful / precise about this
- - todo: fix or remove footnotes
+ - todo: apply other principled feedback
 ```
 
 
