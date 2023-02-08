@@ -21,7 +21,7 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  plugins: ["docusaurus-plugin-less"],
+  plugins: ["docusaurus-plugin-less",require.resolve('docusaurus-lunr-search')],
   presets: [
     [
       'classic',
