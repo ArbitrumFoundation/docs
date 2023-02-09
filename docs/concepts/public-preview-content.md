@@ -19,7 +19,7 @@ This disclaimer is used to **set expectations** and to **invite feedback** from 
 
 ### What types of documents does this apply to?
 
-This pattern applies to all Arbitrum DAO governance documents that are published here on the Arbitrum DAO docs portal, excluding [The Constituton of the Arbitrum DAO](../dao-constitution.md). Examples include:
+This pattern applies to all Arbitrum DAO governance documents that are published here on the Arbitrum DAO docs portal, excluding [The Constitution of the Arbitrum DAO](../dao-constitution.md). Examples include:
 
  - Conceptual documentation
    - [Delegates and delegation](./delegate-delegation.md)
