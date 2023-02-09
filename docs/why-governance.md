@@ -66,11 +66,11 @@ This is a critically necessary role to protect against emergencies like the disc
 1. If there's a critical vulnerability that can be exploited, it's counterproductive to broadcast it on the public governance forum before it has been mitigated.
 2. The fix to such a vulnerability should go into effect immediately and not have the several weeks' delay of typical governance changes.
 
-The Security Council is bound by the Arbitrum DAO Constitution to only use its powers when necessary for these sorts of emergencies, and to issue a transparency report when appropriate whenever its powers are used. To keep the Security Council in check, the DAO votes in semi-annual elections (split by cohorts) for the Security Council's members.
+The Security Council is bound by [The Constitution of the Arbitrum DAO](./dao-constitution.md) to only use its powers when necessary for these sorts of emergencies, and to issue a <a data-quicklook-from='transparency-report'>transparency report</a> when appropriate whenever its powers are used. To keep the Security Council in check, the DAO votes in semi-annual elections (split by cohorts) for the Security Council's members.
 
 The Security Council can also trigger non-emergency upgrades, such as routine software upgrades and maintenance. These upgrades don't require a DAO vote to pass; they instead go through a delay period before taking effect, giving users time to opt out by withdrawing (as with decentralized DAO upgrades).
 
-For details about both the decentralized governance process and the Security Council's role, see the [Arbitrum DAO Constitution](./dao-constitution).
+To learn more about the Security Council, refer to the [Security Council](./concepts/security-council.md) concept doc. For a formal articulation of the Security Council's role within Arbitrum DAO's governance process, refer to [The Constitution of the Arbitrum DAO](./dao-constitution).
 
 
 ### The future of Arbitrum governance
@@ -83,13 +83,3 @@ The initial governance launch provides the community with the tools it needs: a 
 These don't have easy answers and will continue to be the topic of lively discussion within the community as the Arbitrum technology continues to mature, and as the perceived risk profiles of various states of decentralization change along with it. But crucially, the Arbitrum governance system controls *all* aspects of the Arbitrum protocol, including the governance process itself.
 
 With the DAO in control, decisions about how Arbitrum should evolve over time — including the governance process itself — are in the hands of the Arbitrum community.
-
-
----
-
-
-**FAQ:**
-
-- todo:qqq, injected from base and linked throughout
-
----
