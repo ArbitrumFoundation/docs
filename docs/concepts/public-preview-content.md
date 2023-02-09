@@ -35,7 +35,7 @@ In general, a document is considered validated if it's 1) frequently viewed, 2) 
 
 ### Does this mechanism apply to The Constitution of the Arbitrum DAO?
 
-No. The private preview mechanism does **not** apply to [The Constitution of the Arbitrum DAO](../dao-constitution.md).
+No. The private preview content pattern does **not** apply to [The Constitution of the Arbitrum DAO](../dao-constitution.md).
 
 ### What's the difference between a draft and a public preview?
 
