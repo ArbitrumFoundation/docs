@@ -49,7 +49,7 @@ Governance is the way that decisions get made. To understand what this means, le
 
 When a corporate decision needs to be made, members of the board meet and vote. The board's decision-making protocols aren't always visible to shareholders. Although the board has a fiduciary duty to its shareholders, shareholders must trust the board. This is a sort of _social contract_ expressed as _corporate legalese_ and enforced by _law_.
 
-**Web3 technologies** (like Arbitrum's protocols and chains) are often built by corporations governed _initially_ by a board of directors. Once these technologies achieve product-market fit, the board can gradually decentralize its decision-making authority. This is called [progressive decentralization](./concepts/progressive-decentralization.md). There are three key components to our current step in this process:
+**Web3 technologies** (like Arbitrum's protocols and chains) are often built by corporations governed _initially_ by a board of directors. Once these technologies achieve product-market fit, the board can gradually decentralize its decision-making authority. This is called **progressive decentralization**. There are three key components to our current step in this process:
 
 1. **DAO formation**: The <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a> (decentralized autonomous organization) is a new entity that will own the Arbitrum One and Arbitrum Nova chains. This DAO is governed by [The Constitution of the Arbitrum DAO](./dao-constitution), which is a set of rules that describe how the DAO will operate. The Constitution is enshrined within a number of social contracts that are used by the Arbitrum DAO to govern itself and its technology assets.
 2. **Governance token launch**: Ownership of governance tokens represents membership within the DAO. Token holders can vote on DAO proposals. Arbitrum's governance token is **$ARB**, and will be distributed to eligible wallet addresses via an upcoming airdrop.
@@ -74,7 +74,7 @@ Kind of! Let's compare them:
 
 ### Why is this important?
 
-Decentralization of Arbitrum's technology governance represents an important step towards community governance of Ethereum's scaling technologies, and further aligns our incentives with those of the Ethereum community at large. This is a big deal because it means that the Arbitrum DAO will be able to democratically make decisions that are in the best interest of the Arbitrum and Ethereum communities, rather than having faith in the good will of a small group of people. See [Progressive decentralization](./concepts/progressive-decentralization) to learn more about the mechanics and philosophy underlying this incremental shift towards collective ownership. See [State of decentralization](./state-of-progressive-decentralization) for a more in-depth overview of Arbitrum's decentralization journey.
+Decentralization of Arbitrum's technology governance represents an important step towards community governance of Ethereum's scaling technologies, and further aligns our incentives with those of the Ethereum community at large. This is a big deal because it means that the Arbitrum DAO will be able to democratically make decisions that are in the best interest of the Arbitrum and Ethereum communities, rather than having faith in the good will of a small group of people. See [State of decentralization](./state-of-progressive-decentralization) for a more in-depth overview of Arbitrum's decentralization journey.
 
 ### Cool beans. Am I eligible for the airdrop?
 

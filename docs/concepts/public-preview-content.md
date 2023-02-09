@@ -11,21 +11,31 @@ person: Second/third - address reader directly as "you" when appropriate, refer 
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
 
-The Arbitrum DAO treats docs like products. Minimum-viable content is published, and then feedback loops are used to iterate towards validated value.
-
-Every governance document (excluding the [Constitution](../dao-constitution)) is initially published with the following "public preview" disclaimer:
+Every Arbitrum DAO governance document (excluding the [Constitution](../dao-constitution)) is initially published with the following "public preview" disclaimer:
 
 <DraftExpectationsPartial />
 
 This disclaimer is used to **set expectations** and to **invite feedback** from readers like you. Whenever there's evidence that a given document is meeting readers' needs, its public preview disclaimer is lifted. When a document's public preview disclaimer is lifted, it's considered "validated", but it's still subject to change based on reader feedback.
 
+### What types of documents does this apply to?
+
+This pattern applies to all Arbitrum DAO governance documents that are published here on the Arbitrum DAO docs portal, excluding [The Constitution of the Arbitrum DAO](../dao-constitution.md). Examples include:
+
+ - Conceptual documentation
+   - [Delegates and delegation](./delegate-delegation.md)
+   - [Lifecycle and anatomy of an AIP](./lifecycle-anatomy-aip-proposal.md)
+ - How-to documentation
+   - [Apply to become a delegate](../how-tos/apply-become-delegate.md)
+   - [Submit an AIP](../how-tos/create-submit-dao-proposal.md)
+
+
 ### How do you know when a public preview document is ready to have its disclaimer lifted?
 
-In general, a document is considered validated if it's 1) frequently viewed, 2) has a low bounce rate, and 3) doesn't have any open issues on GitHub/[Discord](https://discord.gg/arbitrum). This heuristic isn't supported by precise threshholds; it's an informal and experimental process. This document will be updated if the process changes.
+In general, a document is considered validated if it's 1) frequently viewed, 2) has a low bounce rate, and 3) doesn't have any open issues on GitHub/[Discord](https://discord.gg/arbitrum). This heuristic isn't supported by precise thresholds; it's an informal and experimental process. This document will be updated if the process changes.
 
 ### Does this mechanism apply to The Constitution of the Arbitrum DAO?
 
-No. The private preview mechanism does **not** apply to [The Constitution of the Arbitrum DAO](../dao-constitution.md).
+No. The private preview content pattern does **not** apply to [The Constitution of the Arbitrum DAO](../dao-constitution.md).
 
 ### What's the difference between a draft and a public preview?
 

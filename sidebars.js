@@ -74,10 +74,6 @@ module.exports = {
         },
         {
           type: 'doc',
-          id: 'concepts/progressive-decentralization',
-        },
-        {
-          type: 'doc',
           id: 'concepts/sybil-account',
         },
         {
