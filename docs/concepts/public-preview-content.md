@@ -17,6 +17,18 @@ Every Arbitrum DAO governance document (excluding the [Constitution](../dao-cons
 
 This disclaimer is used to **set expectations** and to **invite feedback** from readers like you. Whenever there's evidence that a given document is meeting readers' needs, its public preview disclaimer is lifted. When a document's public preview disclaimer is lifted, it's considered "validated", but it's still subject to change based on reader feedback.
 
+### What types of documents does this apply to?
+
+This pattern applies to all Arbitrum DAO governance documents that are published here on the Arbitrum DAO docs portal, excluding [The Constituton of the Arbitrum DAO](../dao-constitution.md). Examples include:
+
+ - Conceptual documentation
+   - [Delegates and delegation](./delegate-delegation.md)
+   - [Lifecycle and anatomy of an AIP](./lifecycle-anatomy-aip-proposal.md)
+ - How-to documentation
+   - [Apply to become a delegate](../how-tos/apply-become-delegate.md)
+   - [Submit an AIP](../how-tos/create-submit-dao-proposal.md)
+
+
 ### How do you know when a public preview document is ready to have its disclaimer lifted?
 
 In general, a document is considered validated if it's 1) frequently viewed, 2) has a low bounce rate, and 3) doesn't have any open issues on GitHub/[Discord](https://discord.gg/arbitrum). This heuristic isn't supported by precise threshholds; it's an informal and experimental process. This document will be updated if the process changes.
