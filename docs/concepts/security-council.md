@@ -29,11 +29,9 @@ No more than 3 candidates from the same organization can be elected into the Sec
 
 The rules for the Security Council elections can be changed by the members of the Arbitrum DAO, but these changes can't be made during an ongoing election. Security Council members can also be removed from their position if at least 10% of all votable tokens vote in favor of removal, and at least 5/6 of the votes are in favor of removal. They can also be removed if at least 9 members of the Security Council vote in favor of removal.
 
-In summary, the Security Council elections are important because they decide who will make important decisions about the security and integrity of the Arbitrum DAO. The process is democratic and allows members of the organization to have a say in who is elected to the Security Council.
-
 ### Why elections are important
 
-The Security Council is responsible for making important decisions that affect the entire Arbitrum network. By holding regular elections, the community can ensure that the Council is made up of members who truly represent the values enshrined within [The Constitution of the Arbitrum DAO](../dao-constitution).
+The Security Council elections are important because they democratically determine who will be responsible for making important decisions about the security and integrity of the Arbitrum DAO. By holding regular elections, the community can ensure that the Council is made up of members who truly represent the values enshrined within [The Constitution of the Arbitrum DAO](../dao-constitution).
 
 In addition, the election process allows for the removal of Council members who are not acting in the best interests of the network. This helps to ensure that the Council always has the best interests of the network in mind.
 
