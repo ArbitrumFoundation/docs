@@ -21,7 +21,7 @@ The primary role of the Security Council is to manage risks associated with the 
 
 ### How the elections work
 
-The Security Council is made up of 12 members, who are divided into two groups called the "July Cohort" and the "January Cohort". Every year, on July 15th and January 15th, there are elections to fill the seats in these two groups, respectively. The July Cohort is elected every year, and their term lasts for 6 months. The January Cohort is elected every year, and their term lasts for 1 year. This system allows for a balance of continuity and fresh perspectives.
+The Security Council is a 12-member council divided into two groups: the "July Cohort" and the "January Cohort". Every year, on July 15th and January 15th, there are elections to fill the seats in these two groups, respectively. The July Cohort is elected every year, and their term lasts for 6 months. The January Cohort is elected every year, and their term lasts for 1 year. This system allows for a balance of continuity and fresh perspectives.
 
 To become a candidate for the Security Council, you must be a member of the Arbitrum DAO. You must also have support from at least 0.2% of all votable tokens. Once the candidates have been chosen, all members of the Arbitrum DAO can vote for the candidates. The 6 candidates who receive the most votes will be elected to the Security Council.
 
