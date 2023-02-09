@@ -13,7 +13,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
-<a data-quicklook-from="arb">$ARB</a> is the governance token for the Arbitrum ecosystem created on [TODO], roughly [TODO] after <a data-quicklook-from="arbitrum-one">Arbitrum One</a> had been live on mainnet. This document aims to explain the rationale behind introducing the $ARB <a data-quicklook-from="governance-token">governance token</a> , and how it plays a necessary role in the <a data-quicklook-from="progressive-decentralization">progressive decentralization</a> of the Arbitrum protocol.
+<a data-quicklook-from="arb">$ARB</a> is the governance token for the Arbitrum ecosystem created on [TODO], roughly [TODO] after <a data-quicklook-from="arbitrum-one">Arbitrum One</a> had been live on mainnet. This document aims to explain the rationale behind introducing the $ARB <a data-quicklook-from="governance-token">governance token</a>, and how it plays a necessary role in the <a data-quicklook-from="progressive-decentralization">progressive decentralization</a> of the Arbitrum protocol.
 
 ### Protocol upgrades and "chain ownership"
 

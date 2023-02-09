@@ -15,50 +15,30 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 [The Constitution of the Arbitrum DAO](../dao-constitution) outlines the process for electing members to the <a data-quicklook-from='security-council'>Security Council</a>, a group of individuals who are responsible for managing the risk of the Arbitrum ecosystem through the selective application of <a data-quicklook-from='emergency-action'>emergency actions</a> and <a data-quicklook-from='non-emergeny-action'>non-emergency actions</a>. The Security Council is made up of 12 members who are elected by the community through a democratic process.
 
-### The role of the security council
+### The role of the Security Council
 
-The Security Council is an important part of the Arbitrum DAO's governance structure. Its main role is to manage risks associated with the Arbitrum protocol and its ecosystem. The council is responsible for making decisions that protect the interests of the DAO, its members, and the broader Arbitrum community.
-
-The Security Council is composed of 12 members, divided into two groups: the July Cohort and the January Cohort. Each year, on July 15th and January 15th, elections are held to fill the seats of the outgoing members of each cohort. This system allows for a balance of continuity and fresh perspectives, as well as a regular inflow of new ideas and innovations. 
-
-It is important to note that the Security Council is subject to the oversight and control of the DAO's members, who have the power to remove council members if they are not acting in the best interests of the DAO.
+The primary role of the Security Council is to manage risks associated with the Arbitrum protocol and its ecosystem. The council is responsible for making decisions that protect the interests of the DAO, its members, and the broader Arbitrum community. The Security Council is subject to the oversight and control of the DAO's members, who have the power to remove council members if they're not acting in the best interests of the DAO.
 
 ### How the elections work
 
-The Security Council is made up of 12 members, who are divided into two groups called the "July Cohort" and the "January Cohort" (todo - proper nouns? need to align on this via Glossary CMS for all terms). Every year, on July 15th and January 15th, there are elections to fill the seats in these two groups.
+The Security Council is made up of 12 members, who are divided into two groups called the "July Cohort" and the "January Cohort". Every year, on July 15th and January 15th, there are elections to fill the seats in these two groups, respectively. The July Cohort is elected every year, and their term lasts for 6 months. The January Cohort is elected every year, and their term lasts for 1 year. This system allows for a balance of continuity and fresh perspectives.
 
-The July Cohort is elected every year, and their term lasts for 6 months. The January Cohort is elected every year, and their term lasts for 1 year.
+To become a candidate for the Security Council, you must be a member of the Arbitrum DAO. You must also have support from at least 0.2% of all votable tokens. Once the candidates have been chosen, all members of the Arbitrum DAO can vote for the candidates. The 6 candidates who receive the most votes will be elected to the Security Council.
 
-The initial members of the Security Council were chosen randomly (?), with 3 members being affiliated with OffChain Labs, and the remaining 9 members being chosen from other candidates (?).
+No more than 3 candidates from the same organization can be elected into the Security Council. Also, candidates shouldn't have any conflicts of interest that would prevent them from acting in the best interests of the Arbitrum DAO.
 
-To become a candidate for the Security Council, you must be a member of the Arbitrum DAO. You must also have support from at least 0.2% of all votable tokens.
+The rules for the Security Council elections can be changed by the members of the Arbitrum DAO, but these changes can't be made during an ongoing election. Security Council members can also be removed from their position if at least 10% of all votable tokens vote in favor of removal, and at least 5/6 of the votes are in favor of removal. They can also be removed if at least 9 members of the Security Council vote in favor of removal.
 
-Once the candidates have been chosen, all members of the Arbitrum DAO can vote for the candidates. The 6 candidates who receive the most votes will be elected to the Security Council.
-
-It's important to note that no single organization should have too much control over the Security Council, so no more than 3 candidates from the same organization can be elected. Also, candidates should not have any conflicts of interest that would prevent them from acting in the best interests of the Arbitrum DAO.
-
-The rules for the Security Council elections can be changed by the members of the Arbitrum DAO, but these changes cannot be made during an ongoing election. Security Council members can also be removed from their position if at least 10% of all votable tokens vote in favor of removal, and at least 5/6 of the votes are in favor of removal. They can also be removed if at least 9 members of the Security Council vote in favor of removal.
-
-In summary, the Security Council elections are important because they decide who will make important decisions about the security and integrity of the Arbitrum DAO. The process is democratic and allows members of the organization to have a say in who is elected to the Security Council. It's important to have a diverse group of candidates to ensure that the Security Council is acting in the best interests of the Arbitrum DAO.
+In summary, the Security Council elections are important because they decide who will make important decisions about the security and integrity of the Arbitrum DAO. The process is democratic and allows members of the organization to have a say in who is elected to the Security Council.
 
 ### Why elections are important
 
 The Security Council is responsible for making important decisions that affect the entire Arbitrum network. By holding regular elections, the community can ensure that the Council is made up of members who truly represent the values enshrined within [The Constitution of the Arbitrum DAO](../dao-constitution).
 
-In addition, the election process allows for the removal of Council members who are not acting in the best interests of the network. This helps to ensure that the Council always has the best interests of the network in mind. (todo)
-
-### On perceptions of centralization
-
-[Progressive decentralization](./progressive-decentralization) is the process of gradually transferring decision-making power from a central authority to a decentralized community. This is a common approach used in the blockchain and cryptocurrency space, where the ultimate goal of technology innovation is to empower communities to democratically govern their technology assets.
-
-While the Security Council may first appear to represent a risky centralization of authority, its members are democratically elected by the community. Its members and their actions are subject to oversight, and Security Council members can be removed by the DAO. **The Security Council is a democratically managed centralization of elected experts who are responsible for managing the risk of the Arbitrum ecosystem through the selective application of emergency actions.** Without this mechanism, the Arbitrum DAO would be more "purely" decentralized, but it would also be vulnerable to attacks and other, less manageable risks.
-
-Additionally, the Security Council is designed to operate in a way that prevents any single entity or group of entities from gaining too much control. For example, there are rules in place to ensure that no more than three Security Council membership candidates associated with a single entity can be elected to the Security Council at any one time. This helps to prevent any single entity or group from being able to control or veto Security Council decisions.
-
-However, it's important to note that the Security Council mechanism is just one step along the journey of progressive decentralization. There's still work to be done to fully decentralize the Arbitrum network and ensure that it's governed by members of the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>. By starting with the Security Council, the Arbitrum DAO is working towards this goal in a strategic and methodical way.
+In addition, the election process allows for the removal of Council members who are not acting in the best interests of the network. This helps to ensure that the Council always has the best interests of the network in mind.
 
 ### Conclusion
 
 The Security Council and its elections are an important part of the governance of the Arbitrum DAO. By participating in the elections, community members can ensure that the Council is made up of members who truly represent their interests and those of the DAO at large.
 
-If you're a member of the Arbitrum DAO, it's especially important for you to be aware of and support efforts towards progressive decentralization in order to ensure the long-term success and sustainability of the organization. This includes the management of expectations and perceptions within and beyond the Ethereum community.
+If you're a member of the Arbitrum DAO, it's especially important for you to be aware of and support efforts towards risk management and progressive decentralization in order to ensure the long-term success and sustainability of the organization. This includes the management of expectations and perceptions within and beyond the Ethereum community.
