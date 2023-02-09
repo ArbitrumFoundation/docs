@@ -11,9 +11,7 @@ person: Second/third - address reader directly as "you" when appropriate, refer 
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
 
-The Arbitrum DAO treats docs like products. Minimum-viable content is published, and then feedback loops are used to iterate towards validated value.
-
-Every governance document (excluding the [Constitution](../dao-constitution)) is initially published with the following "public preview" disclaimer:
+Every Arbitrum DAO governance document (excluding the [Constitution](../dao-constitution)) is initially published with the following "public preview" disclaimer:
 
 <DraftExpectationsPartial />
 
