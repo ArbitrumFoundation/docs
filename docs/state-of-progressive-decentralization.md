@@ -39,7 +39,7 @@ Let's evaluate the current status of these components for both Arbitrum One and 
   - **Risks**:
     - If 9 of the Security Council members are compromised or behave maliciously, the system and users' funds could be compromised.
     - If a malicious proposal is successfully put through DAO governance, or if 7 of the Security Council members are compromised or behave maliciously, the system's safety could be compromised. In either of these case, users will have several weeks to withdraw their funds back to Ethereum before the proposal takes effect.
-  - **Changes To Current Status**: The governance system currently has the ability to alter the role of governance itself.
+  - **Changes To Current Status**: The governance system currently has the ability to alter governance itself.
 
 ### 2. Validator ownership
 
