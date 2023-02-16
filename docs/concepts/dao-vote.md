@@ -7,21 +7,23 @@ voice: Arbitrum DAO
 tone: Objective, succinct, precise.
 tense: Present - avoid present progressive. Past tense as needed.
 person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
+dao_author: symbolpunk
+dao_sme: dzgoldman
 ---
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
 
 <DraftExpectationsPartial />
 
-The <a data-quicklook-from='arbitrum-dao '>Arbitrum DAO </a>is governed by a protocol that allows <a data-quicklook-from='arb'>$ARB</a> governance token holders to propose and vote on different actions, such as changes to the DAO's [Constitution](../dao-constitution.md) or funding for specific projects. These votes are crucial for making decisions that shape the future of Arbitrum and its technology assets.
+The <a data-quicklook-from='arbitrum-dao '>Arbitrum DAO </a>is governed by a protocol that allows <a data-quicklook-from='arb'>$ARB</a> governance token holders to propose and vote on different actions, such as changes to the DAO's [Constitution](../dao-constitution.md) or funding for specific projects. These votes are crucial for making decisions that shape the future of Arbitrum and the technology assets it governs.
 
 ### Types of votes
 
 There are two types of votes in the Arbitrum DAO:
 
-1. **Temperature check:** This is a preliminary vote that gauges the community's interest in a proposal before it moves on to the next stage. Temperature checks are conducted on the Snapshot platform and are only open to $ARB token holders who hold at least 0.01% of <a data-quicklook-from='votable-tokens'>votable tokens</a>.
+1. **Temperature check:** This is a preliminary vote that gauges the community's interest in a proposal before it moves on to the next stage. Temperature checks are conducted on the Snapshot platform and are only open to $ARB token holders who hold (or represent) at least 0.01% of <a data-quicklook-from='votable-tokens'>votable tokens</a>.
 
-2. **On-chain vote:** If the proposal passes the temperature check, it will move on to an on-chain vote facilitated by Tally. This "call for votes" can be initiated by $ARB token holders who hold (or represent) at least 5,000,000 votable tokens. To be approved, more than 50% of the votable tokens that voted on the proposal must have voted in favor of the proposal; <a data-quicklook-from='constitutional-aip'>constitutional proposals</a> must receive votes from at least 5% of all votable tokens in existence; <a data-quicklook-from='nonconstitutional-aip'>non-constitutional proposal</a> must receive votes from at least 3% of all votable tokens in existence.
+2. **On-chain vote:** If the proposal passes the temperature check, it will move on to an on-chain vote facilitated by Tally. This "call for votes" can be initiated by $ARB token holders who hold (or represent) at least 5,000,000 votable tokens. To be approved, more than 50% of the votable tokens that voted on the proposal must have voted in favor of the proposal; <a data-quicklook-from='constitutional-aip'>constitutional proposals</a> must receive votes from at least 5% of all votable tokens in existence; <a data-quicklook-from='nonconstitutional-aip'>non-constitutional proposal</a> must receive votes from at least 3% of all votable tokens in existence. Refer to the [Constitution](../dao-constitution.md) for a more precise description of Arbitrum DAO's governance protocol.
 
 ### Token-weighted voting
 
@@ -33,4 +35,4 @@ It's important to note that the Arbitrum DAO operates on a set of values outline
 
 ### Conclusion
 
-Voting is an important aspect of the Arbitrum DAO's governance and allows token holders to make decisions that shape the future of the DAO. By understanding the different types of votes, your voting power, and the values that guide the DAO, you can make informed decisions when voting on proposals.
+Voting is an important aspect of the Arbitrum DAO's governance and allows token holders to make decisions that shape the future of the DAO. By understanding the different types of votes, your voting power, and the values that guide the DAO, you can help the DAO make collectively informed and incentives-aligned decisions.

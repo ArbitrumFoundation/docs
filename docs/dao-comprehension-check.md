@@ -7,6 +7,8 @@ voice: Arbitrum DAO
 tone: Objective, succinct, precise.
 tense: Present - avoid present progressive. Past tense as needed.
 person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
+dao_author: symbolpunk
+dao_sme: dzgoldman
 ---
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
@@ -19,7 +21,7 @@ Review the following scenarios to test your comprehension of the different compo
 
 #### What's the first step you should take?
 
-The first step is to submit the idea as an <a data-quicklook-from='arbitrum-improvement-proposal-aip'>Arbitrum Improvement Proposal (AIP)</a> on the public [Arbitrum DAO governance forum](https://forum.arbitrum.io/) and discuss/debate it for 1 week. You'll then perform a more formal "temperature check" on Tally. This procedure is referred to as the Temperature Check phase within the [Constitution](dao-constitution.md) and is technically optional, but it's strongly recommended as a due-diligence governance best practice. Although the process for submitting an AIP to the governance forum isn't explicitly outlined in the Constitution, the Constitution does specify that the DAO may approve and implement AIPs to change the rules governing the system. See [How to submit a DAO proposal](./how-tos/create-submit-dao-proposal) for more detailed instructions on how to submit an AIP.
+The first step is to submit the idea as an <a data-quicklook-from='arbitrum-improvement-proposal-aip'>Arbitrum Improvement Proposal (AIP)</a> on the public [Arbitrum DAO governance forum](https://forum.arbitrum.io/) and discuss/debate it for 1 week before submitting an informal temperature check using Snapshot. You'll then perform a more formal temperature check on Tally. This procedure is referred to as the Temperature Check phase within the [Constitution](dao-constitution.md) and is technically optional, but it's strongly recommended as a due-diligence governance best practice. Although the process for submitting an AIP to the governance forum isn't explicitly outlined in the Constitution, the Constitution does specify that the DAO may approve and implement AIPs to change the rules governing the system. See [How to submit a DAO proposal](./how-tos/create-submit-dao-proposal) for more detailed instructions on how to submit an AIP.
 
 
 ### Scenario 2: A security emergency arises on one of the Arbitrum DAO-governed chains

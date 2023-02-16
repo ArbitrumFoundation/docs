@@ -7,13 +7,19 @@ voice: Arbitrum DAO
 tone: Objective, succinct, precise.
 tense: Present - avoid present progressive. Past tense as needed.
 person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
+dao_author: dzgoldman
+dao_sme: dzgoldman
 ---
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
 
 <DraftExpectationsPartial />
 
-<a data-quicklook-from='progressive-decentralization'>Progressive decentralization</a> is the process of gradually increasing the decentralization of a system over time. This document details the current state of progressive decentralization for the<a data-quicklook-from='arbitrum-one'> Arbitrum One</a> and <a data-quicklook-from='arbitrum-nova'>Arbitrum Nova</a> chains.
+```
+ - FINAL-TODO: List of validators
+```
+
+<a data-quicklook-from='progressive-decentralization'>Progressive decentralization</a> is the process of gradually increasing the decentralization of a system over time. This document details the current state of progressive decentralization for the<a data-quicklook-from='arbitrum-one'>Arbitrum One</a> and <a data-quicklook-from='arbitrum-nova'>Arbitrum Nova</a> chains.
 
 ### The components of Arbitrum's progressive decentralization
 
@@ -38,7 +44,7 @@ Let's evaluate the current status of these components for both Arbitrum One and 
 ### 2. Validator ownership
 
   - **Description**: Validators are responsible for updating the state of the <a data-quicklook-from='arbitrum-chain'>Arbitrum chains</a> and ensuring that all updates are valid.
-  - **Current status**: **Permissioned** Validation on both Arbitrum One and Arbitrum Nova is currently allow-listed to a committee of public entities. You can see the list of validators [here](TODO link). Governance currently has the power to change this status.
+  - **Current status**: **Permissioned** Validation on both Arbitrum One and Arbitrum Nova is currently allow-listed to a committee of public entities. You can see the list of validators [here](FINAL-TODO). Governance currently has the power to change this status.
   - **Risks**: If all X Arbitrum validators behave maliciously, the system's safety could be compromised.
   - **Changes to Current status**: The Arbitrum governance system (see #1) currently has the power to modify the Validator allow-list, such as by adding or removing members or removing the allow-list entirely.
 
@@ -62,14 +68,4 @@ This applies only to Arbitrum AnyTrust chains like Arbitrum Nova.
   - **Current status**: 7-member committee. The Arbitrum Nova chain has a 7-party DAC, whose members can be seen [here](https://developer.arbitrum.io/public-chains#arbitrum-chains-summary). The list of committee members is maintained by governance.
   - **Risks**: If 6 of the 7 committee members in conjunction with the Sequencer behave maliciously and collude, the safety of the system can be compromised.
   - **Changes to Current status**: The Arbitrum governance system (see #1) currently has the power to change the DAC, such as by adding or removing members or modifying the power it has over the system.
-
-
----
-
-
-**FAQ:**
-
-- todo:qqq, injected from base and linked throughout
-
----
 
