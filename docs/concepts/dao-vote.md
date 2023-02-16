@@ -15,7 +15,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
-The <a data-quicklook-from='arbitrum-dao '>Arbitrum DAO </a>is governed by a protocol that allows <a data-quicklook-from='arb'>$ARB</a> governance token holders to propose and vote on different actions, such as changes to the DAO's [Constitution](../dao-constitution.md) or funding for specific projects. These votes are crucial for making decisions that shape the future of Arbitrum and the technologies it governs.
+The <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO </a>is governed by a protocol that allows <a data-quicklook-from='arb'>$ARB</a> governance token holders to propose and vote on different actions, such as changes to the DAO's [Constitution](../dao-constitution.md) or funding for specific projects. These votes are crucial for making decisions that shape the future of Arbitrum and the technologies it governs.
 
 ### Types of votes
 
