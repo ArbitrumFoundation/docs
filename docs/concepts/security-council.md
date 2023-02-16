@@ -15,7 +15,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
-[The Constitution of the Arbitrum DAO](../dao-constitution) outlines the process for electing members to the <a data-quicklook-from='security-council'>Security Council</a>, a group of individuals who are responsible for addressing risks to the Arbitrum ecosystem through the selective application of <a data-quicklook-from='emergency-action'>emergency actions</a> and <a data-quicklook-from='nonemergeny-action'>non-emergency actions</a>. The Security Council is made up of 12 members who are elected by the members of the Arbitrum DAO through a democratic process.
+[The Constitution of the Arbitrum DAO](../dao-constitution) outlines the process for electing members to the <a data-quicklook-from='security-council'>Security Council</a>, a group of individuals who are responsible for addressing risks to the Arbitrum ecosystem through the selective application of <a data-quicklook-from='emergency-action'>emergency actions</a> and <a data-quicklook-from='nonemergency-action'>non-emergency actions</a>. The Security Council is made up of 12 members who are elected by the members of the Arbitrum DAO through a democratic process.
 
 ### The role of the Security Council
 
