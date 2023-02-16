@@ -29,18 +29,22 @@ Every elected Security Council member’s term lasts one year, excluding the fir
 
 To become a candidate for the Security Council, you must be a member of the Arbitrum DAO. You must also have support from at least 0.2% of all votable tokens. Once the candidates have been chosen, all members of the Arbitrum DAO can vote for the candidates. The 6 candidates who receive the most votes will be elected to the Security Council.  Additionally, the Arbitrum Foundation may set forth further guidelines and procedures for ensuring a fair, transparent and effective elections process.
 
-No more than 3 candidates from the same organization can be elected into the Security Council. Also, candidates shouldn't have any conflicts of interest that would prevent them from acting in the best interests of the Arbitrum DAO.
+No more than 3 candidates from the same organization should be elected into the Security Council. Also, candidates shouldn't have any conflicts of interest that would prevent them from acting in the best interests of the Arbitrum DAO.
 
-The rules for the Security Council elections can be changed by the members of the Arbitrum DAO, but these changes can't be made during an ongoing election. Security Council members can also be removed from their position if at least 10% of all votable tokens vote in favor of removal, and at least 5/6 of the votes are in favor of removal. They can also be removed if at least 9 members of the Security Council vote in favor of removal.
+The rules for the Security Council elections can be changed by the members of the Arbitrum DAO, but these changes can't be made during an ongoing election. Security Council members can also be removed from their position prior to their term ending if at least 10% of all votable tokens participate in a removal vote, and at least 5/6 of the votes are in favor of removal. They can also be removed if at least 9 members of the Security Council vote in favor of removal.
+
 
 ### Why elections are important
 
-The Security Council elections are important because they democratically determine who will be responsible for making important decisions about the security and integrity of the Arbitrum DAO. By holding regular elections, the community can ensure that the Council is made up of members who truly represent the values enshrined within [The Constitution of the Arbitrum DAO](../dao-constitution).
+The Security Council elections are important because they democratically determine who will be responsible for being vigilant about the security and integrity of the Arbitrum DAO. By holding regular elections, the community can ensure that the Council is made up of members who truly represent the values enshrined within [The Constitution of the Arbitrum DAO](../dao-constitution).
 
-In addition, the election process allows for the removal of Council members who are not acting in the best interests of the network. This helps to ensure that the Council always has the best interests of the network in mind.
+In addition, the election process allows for the removal of Council members who are not acting in the best interests of the DAO. This helps to ensure that the Council always has the best interests of the network in mind.
+
 
 ### Conclusion
 
-The Security Council and its elections are an important part of the governance of the Arbitrum DAO. By participating in the elections, community members can ensure that the Council is made up of members who truly represent their interests and those of the DAO at large.
+The Security Council and its elections are an important part of the governance of the Arbitrum DAO. By participating in the elections, community members can ensure that the Security Council is made up of members who are trusted to represent the Arbitrum community’s values and to offer subject-matter expertise the community thinks relevant for the Council.
 
-If you're a member of the Arbitrum DAO, it's especially important for you to be aware of and support efforts towards risk management and progressive decentralization in order to ensure the long-term success and sustainability of the organization. This includes the management of expectations and perceptions within and beyond the Ethereum community.
+These needs will generally demand expert-level technical proficiency and experience across a variety of technical domains, but the Arbitrum DAO’s values and needs are likely to evolve over time. Developing an understanding of the Security Council mechanism and its purpose is very important, especially if you’re a delegate or are otherwise active in Arbitrum DAO’s governance.
+
+If you're a member of the Arbitrum DAO, it's especially important for you to be aware of and support efforts towards risk management and progressive decentralization in order to ensure the long-term success and sustainability of the Arbitrum DAO and the technologies it governs. This includes the management of expectations and perceptions within and beyond the Ethereum community. It also includes continuous, collaborative self-education.
