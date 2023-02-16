@@ -34,14 +34,14 @@ The forum submission for any given proposal will usually include a link to a Sna
 
 ### Proposals in the "on-chain vote" stage
 
-If the proposal passes the temperature check, it will move on to an on-chain vote facilitated by Tally. To pass this stage, the proposal must meet two thresholds:
+If the proposal passes the temperature check, it will move on to an on-chain vote facilitated by [Tally](https://tally.xyz/gov/arbitrum). To pass this stage, the proposal must meet two thresholds:
 
    1. The proposal must receive more votes in favor than against; and
    2. <a data-quicklook-from='constitutional-aip'>Constitutional AIPs</a> must receive votes from at least 5% of votable tokens; <a data-quicklook-from='nonconstitutional-aip'>non-Constitutional AIPs</a> must receive votes from at least 3% of votable tokens.
 
 To vote on proposals in the "on-chain vote" stage:
 
-1. Log in to [Tally](https://www.tally.xyz/) using the wallet that holds your $ARB tokens.
+1. Log in to [Tally](https://tally.xyz/gov/arbitrum) using the wallet that holds your $ARB tokens.
 2. Navigate to the "explore DAOs" section or click on "My DAOs" within your Tally profile and select the page for either Constitutional or non-Constitutional AIPs.
 3. Locate the proposal you'd like to vote on and cast your vote.
 
