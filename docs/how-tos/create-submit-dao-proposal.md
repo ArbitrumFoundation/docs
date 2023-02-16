@@ -24,7 +24,7 @@ In this how-to, you'll learn how to submit an Arbitrum Improvement Proposal (AIP
 
 ### Prerequisites
 
-To submit a temperature check using <a data-quicklook-from='snapshot-poll'>Snapshot</a> you must have an Ethereum wallet address that represents at least 0.01% of votable tokens[^1]; to submit a proposal on-chain using [Tally](https://www.tally.xyz/), you must have an Ethereum wallet address that represents at least 5,000,000 tokens (about 0.1% of votable tokens).
+To submit a temperature check using <a data-quicklook-from='snapshot-poll'>Snapshot</a> you must have an Ethereum wallet address that represents at least 0.01% of votable tokens[^1]; to submit a proposal on-chain using [Tally](https://tally.xyz/gov/arbitrum), you must have an Ethereum wallet address that represents at least 5,000,000 tokens (about 0.1% of votable tokens).
 
 If you don't have enough voting power, consider delegating your votes to a delegate who can create a proposal on your behalf[^2]. Note that anyone holding $ARB (regardless of the amount) is able to vote on both Snapshot and Tally proposals.
 
@@ -68,11 +68,11 @@ If your proposal passes the temperature check, then you can move to the second a
 
 ### Step 2: Submit your on-chain proposal using Tally
 
-If your wallet can represent at least 5,000,000 tokens (about 0.1% of votable $ARB tokens), you can create an on-chain proposal using Tally. 
+If your wallet can represent at least 5,000,000 tokens (about 0.1% of votable $ARB tokens), you can create an on-chain proposal using [Tally](https://tally.xyz/gov/arbitrum). 
 
 To submit your proposal on Tally:
 
- 1.	Log in to [Tally](https://www.tally.xyz/) using the wallet that holds your $ARB tokens.
+ 1.	Log in to [Tally](https://tally.xyz/gov/arbitrum) using the wallet that holds your $ARB tokens.
  2.	Navigate to the "explore DAOs" section or click on "My DAOs" within your Tally profile and select one of the following pages:
     - **Arbitrum Constitution**: For Constitutional Proposals
     - **Arbitrum Treasury**: For Non-Constitutional Proposals

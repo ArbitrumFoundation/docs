@@ -29,9 +29,9 @@ Token holders who delegate their voting power are able to revoke this delegation
 
 ### How to delegate
 
-The Arbitrum DAO uses Tally to facilitate delegation. The process in a nutshell:
+The Arbitrum DAO uses [Tally](https://tally.xyz/gov/arbitrum) to facilitate delegation. The process in a nutshell:
 
-1. Connect your Ethereum wallet to Tally and navigate to the Arbitrum DAO page.
+1. Connect your Ethereum wallet to [Tally](https://tally.xyz/gov/arbitrum) and navigate to the Arbitrum DAO page.
 2. Select the "delegate" button.
 3. Search for the delegate you'd like to delegate your voting power to and confirm the delegation by following Tally's prompts.
 

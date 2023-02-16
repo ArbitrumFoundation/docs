@@ -51,9 +51,9 @@ Let's evaluate the current status of these components for both Arbitrum One and 
 ### 3. Sequencer ownership
 
   - **Description**: The Sequencer is typically responsible for collecting and ordering users' transactions.
-  - **Current status**: **Centralized**. The Sequencers for both Arbitrum One and Arbitrum Nova are currently centralized and maintained by Offchain Labs. Governance currently has the power to change this status.
+  - **Current status**: **Centralized**. The Sequencers for both Arbitrum One and Arbitrum Nova are currently maintained by the Arbitrum Foundation. Governance currently has the power to select new Sequencers.
   - **Risks**: The Sequencer has the ability to delay the inclusion of a user's transaction by up to 24 hours and reorder transactions over short time-horizons. The Sequencer, however, cannot compromise the system's safety or prevent a transaction from ultimately being executed.
-  - **Changes to Current status**: The Arbitrum governance system (see #1) currently has the power elect a new entity as the Sequencer, such as a more distributed/decentralized system.
+  - **Changes to Current status**: The Arbitrum governance system (see #1) currently has the power elect a new entity as the Sequencer.
 
 ### 4. Data Availability Committee (DAC) ownership
 
@@ -65,7 +65,7 @@ This applies only to Arbitrum AnyTrust chains like Arbitrum Nova.
 
 
   - **Description**: AnyTrust chains like Arbitrum Nova rely on a permissioned committee to store the chain's data and provide it on demand.
-  - **Current status**: 7-member committee. The Arbitrum Nova chain has a 7-party DAC, whose members can be seen [here](https://developer.arbitrum.io/public-chains#arbitrum-chains-summary). The list of committee members is maintained by governance.
+  - **Current status**: 7-member committee. The Arbitrum Nova chain has a 7-party DAC, whose members can be seen [here](https://developer.arbitrum.io/public-chains#arbitrum-chains-summary). Governance has the ability to remove or add members to the committee.
   - **Risks**: If 6 of the 7 committee members in conjunction with the Sequencer behave maliciously and collude, the safety of the system can be compromised.
   - **Changes to Current status**: The Arbitrum governance system (see #1) currently has the power to change the DAC, such as by adding or removing members or modifying the power it has over the system.
 
