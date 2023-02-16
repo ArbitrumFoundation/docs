@@ -23,7 +23,7 @@ A <a data-quicklook-from='delegate'>delegate</a> is a member of the Arbitrum DAO
 
 ### Why delegate?
 
-Delegation allows token holders to participate in the <a data-quicklook-from='governance'>governance</a> of the Arbitrum DAO without having to actively keep track of every proposal and vote. By granting their voting power to a delegate, token holders can passively participate by entrusting a reprentative to vote on proposals in a way that aligns with their own beliefs and values.
+Delegation allows token holders to participate in the <a data-quicklook-from='governance'>governance</a> of the Arbitrum DAO without having to actively keep track of every proposal and vote. By granting their voting power to a delegate, token holders can passively participate by entrusting a representative to vote on proposals in a way that aligns with their own beliefs and values.
 
 Token holders who delegate their voting power are able to revoke this delegation and reclaim voting power back to themselves at any time. They may want to do this if, for example, there's an important proposal that they themselves want to vote on directly.
 
