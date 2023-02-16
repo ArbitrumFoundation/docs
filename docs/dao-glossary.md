@@ -2,7 +2,7 @@
 id: dao-glossary
 title: Arbitrum DAO glossary
 sidebar_label: Glossary
-description: todo:qqq
+description: Review the Arbitrum DAO's key terms and definitions.
 voice: Arbitrum DAO
 tone: Objective, succinct, precise.
 tense: Present - avoid present progressive. Past tense as needed.
