@@ -95,11 +95,11 @@ Note that voter apathy could have an impact on the governance of the DAO, and ce
 
 If you've claimed $ARB tokens but don't have time to actively participate in the Arbitrum DAO's governance, you have a few options:
 
-1. You can delegate your voting rights to another member of the community who you trust to make decisions that align with your interests. See TODO
+1. You can delegate your tokens' voting power to another member of the community who you trust to make decisions that align with your interests. See [How to delegate your voting power](./how-tos/select-delegate-voting-power.md) for more information.
 2. You can hold onto your $ARB tokens and vote when you have the time, but please note that some important decisions may have already been made.
 3. You can sell or transfer your $ARB tokens to another member of the community who is more active.
 
-While participating in governance is an important aspect of being a DAO member, it's not mandatory. As long as you hold $ARB tokens, you have a right to participate in the Arbitrum DAO's governance protocol, but you also have the right to choose not to participate. No pressure :).
+While participating in governance is an important aspect of being a DAO member, it's not mandatory. As long as you hold $ARB tokens, you can participate in the Arbitrum DAO's governance protocol, but there aren't any consequences if you decide to not participate.
 
 
 ### Scenario 9: You want to propose a change to the way that unclaimed airdropped $ARB tokens are distributed
