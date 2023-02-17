@@ -7,35 +7,38 @@ voice: Arbitrum DAO
 tone: Objective, succinct, precise.
 tense: Present - avoid present progressive. Past tense as needed.
 person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
+dao_author: pearring
+dao_sme: pearring
 ---
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
 
 <DraftExpectationsPartial />
 
+```
+ - FINAL-TODO: strategy inputs
+ - FINAL-TODO: hop protocol bounty program notes below
+ - FINAL-TODO: point-to-token numbers
+```
+
+
 :::caution THERE IS NO PRESALE
 
-The only official website for the $ARB airdrop is todo:qqq. There is no presale. We won't ever ask for your seed phrase. When in doubt, [join our Discord](https://discord.gg/arbitrum) and ask away; a member of our team will be happy to help.
+The only official website for the $ARB airdrop is [https://gov.arbitrum.foundation](https://gov.arbitrum.foundation). There is no presale. Don't ever share your seed phrase. When in doubt, [join the Discord](https://discord.gg/arbitrum) to ask for clarification.
 
 :::
 
-<!--todo:qqq: author some crawl-walk-run frontmatter, point to gentle intro & website -->
-
-<a href='#todo'>$ARB</a> is an ERC-20 token native to Arbitrum One rollup chain. Token properties at launch:
+<a data-quicklook-from='arb'>$ARB</a> is an ERC-20 <a data-quicklook-from='governance-token'>governance token</a> native to the <a data-quicklook-from='arbitrum-one'>Arbitrum One</a> rollup chain. Token properties at launch:
 
 
 <table className="small-table">
-    <tr>
-        <td><strong>Property</strong></td>
-        <td><strong>Value</strong></td>
-    </tr>
     <tr>
         <td><strong>Initial supply cap</strong></td>
         <td>10 billion</td>
     </tr>
     <tr>
         <td><strong>Inflation</strong></td>
-        <td>Max 2% per year <a href='#footnote-1'>[1]</a></td>
+        <td>Max 2% per year</td>
     </tr>
     <tr>
         <td><strong>Minting/burning mechanism</strong></td>
@@ -55,7 +58,7 @@ The only official website for the $ARB airdrop is todo:qqq. There is no presale.
     </tr>
     <tr>
         <td><strong>Airdrop snapshot</strong></td>
-        <td>Nitro Block = August 31, 2022 at block no. [Insert Number]</td>
+        <td><a href='https://arbiscan.io/block/22207817'>Block 22207817</a> on Arbitrum One = August 31, 2022</td>
     </tr>
 </table>
 
@@ -76,7 +79,7 @@ The only official website for the $ARB airdrop is todo:qqq. There is no presale.
     <tr>
         <td>25%</td>
         <td>2.5 billion</td>
-        <td>Employees of Offchain Labs (the team building Arbitrum)</td>
+        <td>Employees of Offchain Labs (the team that built the initial version of Arbitrum)</td>
     </tr>
     <tr>
         <td>19%</td>
@@ -101,7 +104,7 @@ The only official website for the $ARB airdrop is todo:qqq. There is no presale.
 
 ### User airdrop eligibility details
 
-We use a points system to determine the number of tokens that airdrop recipients can claim. You earn maximum one point per qualifying action performed before the snapshot date. There are 14 total qualifying actions, so you can earn up to 14 points.
+A points systems was used to determine the number of tokens that airdrop recipients can claim. You earn maximum one point per qualifying action performed before the snapshot date. There were 14 total qualifying actions, so it was possible to earn up to 14 points.
 
 **Qualifying actions:**
 
@@ -135,43 +138,43 @@ We use a points system to determine the number of tokens that airdrop recipients
     </tr>
     <tr>
         <td>3</td>
-        <td>TODO:qqq</td>
+        <td>FINAL-TODO</td>
     </tr>
     <tr>
         <td>4</td>
-        <td>TODO:qqq</td>
+        <td>FINAL-TODO</td>
     </tr>
     <tr>
         <td>5</td>
-        <td>TODO:qqq</td>
+        <td>FINAL-TODO</td>
     </tr>
     <tr>
         <td>6</td>
-        <td>TODO:qqq</td>
+        <td>FINAL-TODO</td>
     </tr>
     <tr>
         <td>7</td>
-        <td>TODO:qqq</td>
+        <td>FINAL-TODO</td>
     </tr>
     <tr>
         <td>8</td>
-        <td>TODO:qqq</td>
+        <td>FINAL-TODO</td>
     </tr>
     <tr>
         <td>9</td>
-        <td>TODO:qqq</td>
+        <td>FINAL-TODO</td>
     </tr>
     <tr>
         <td>10</td>
-        <td>TODO:qqq</td>
+        <td>FINAL-TODO</td>
     </tr>
     <tr>
         <td>11</td>
-        <td>TODO:qqq</td>
+        <td>FINAL-TODO</td>
     </tr>
     <tr>
         <td>12 or more</td>
-        <td>TODO:qqq</td>
+        <td>FINAL-TODO</td>
     </tr>
 </table>
 
@@ -179,94 +182,11 @@ We use a points system to determine the number of tokens that airdrop recipients
 
 **User protections:**
 
-To prevent bots from taking advantage of the airdrop, we've established a number of anti-sybil rules.
+To prevent bots from taking advantage of the airdrop, a number of anti-Sybil rules were established:
 
  - If an airdrop recipient's wallet transactions have all occurred within a 48-hour period, **one point is subtracted**.
  - If an airdrop recipient's wallet balance is less than .01 ETH, **and** if the wallat hasn't interacted with more than one smart contract, **one point is subtracted**.
- - If an airdrop recipient's wallet address has been identified as a sybil address during the Hop protocol bounty program (footnote), (todo:qqq - disqualified?). 
+ - If an airdrop recipient's wallet address has been identified as a Sybil address during the Hop protocol bounty program (FINAL-TODO: footnote), (FINAL-TODO: disqualified?). 
  - If an airdrop recipient's wallet address is part of a parent/children wallet arrangement whereby the parent has funded more than 25 children addresses, all addresses are collapsed into a single user wallet address. 
 
-Refer to our <a href='#todo'>Sybil detection</a> documentation for more detailed information. 
-
-
-
-### DAO airdrop eligibility details
-
-To qualify for our DAO airdrop, your project's DAO must meet the following five criteria:
-
- 1. The project's DAO must be live (must have deployed a smart contract to an Arbitrum chain? todo:qqq) on Arbitrum on or before the snapshot date.
- 2. The project's DAO must have been listed on the Arbitrum portal on or before the snapshot date.
- 3. The project's DAO must have an on-chain treasury controlled by the DAO for the benefit of its community.
- 4. The project's DAO must agree to invest at least 50% of the airdropped funds into growth on Arbitrum (todo:qqq - how to be more concrete about this?).
- 5. The project's DAO must agree to submit a fund utilization report to the Arbitrum DAO on the one-year anniversary of the airdropped token distribution. This report should showcase how the initially distributed funds were used. The Arbitrum DAO reserves the right to burn unvested project DAO tokens via a (todo: type of proposal) if this condition isn't satisfied.
-
-<br />
-
-**Distribution structure**
-
-(todo:qqq - clarify these bits before publishing)
-
- - Vesting schedule
-   - 50% vested upfront 
-   - 50% vested (quarterly) over the course of one year anniversary - two-year anniversary of distribution.
-   - How to lose unvested tokens: 
-     - Project no longer supports Arbitrum deployment
-     - Project no longer exists 
-     - Does not complete mandate of 50% of tokens being used for growing protocol on Arbitrum
- - Lockup: 
-   - Immediately released: 25%
-   - 9-month anniversary: 25%
-   - 1/12 monthly thereafter for the next 12 months
- - Distribution Amounts:
-   - Deployed Q4 2021 = 7 points
-   - Deployed Q1 2022 = 5 points
-   - Deployed Q2 2022 = 3 points
-   - Deployed Q3 2022
-   - Arbitrum Native = 5 points
-   - Arbitrum/Ethereum Native = 3 points
-   - Multichain Protocol 
-   - More than 1,000,000 transaction = 10 points
-   - More than 500,000 transactions = 5 points
-   - More than 400,000 transactions = 4 points
-   - More than 300,000 transactions = 3 points
-   - More than 200,000 transactions = 2 points
-   - More than 100,000 transactions
-   - More than 5,000 tx/day average = 5 points
-   - More than 2,500 tx/day average = 3 points
-   - More than 1,000 tx/day average
-   - Aggregate Value of transactions is greater than [$1,000,000,000] = 10 points
-   - Aggregate Value of transactions is greater than [$500,000,000] = 5 points
-   - Aggregate Value of transactions is greater than [$400,000,000] = 4 points
-   - Aggregate Value of transactions is greater than [$300,000,000] = 3 points
-   - Aggregate Value of transactions is greater than [$200,000,000] = 2 points
-   - Aggregate Value of transactions is greater than [$100,000,000]s
-   - Average value of recipient DAO’s tokens on Arbitrum is greater than $50M = 5 points
-   - Average value of recipient DAOs tokens on Arbitrum is greater than $40M = 4 points
-   - Average value of recipient DAOs tokens on Arbitrum is greater than $30M = 3 points
-   - Average value of recipient DAOs tokens on Arbitrum is greater than $20M = 2 points
-   - Average value of recipient DAOs tokens on Arbitrum is greater than $10Ms
-
-
-
-
-
-<br/>
-<br/>
-<br/>
-
--------
-
-
-todo
-
- - add links to resources & glossary definitions
- - add faq
- - add footnotes
-
-
--------
-
-
-#### Footnotes
-
-<a id='footnote-1'>1.</a> The DAO can adjust this parameter through a todo:qqq proposal.
+Refer to [Arbitrum Sybil Hunting](https://github.com/OffchainLabs/arb-sybil/tree/master/v2) to learn more about our Sybil mitigation methodology. Refer to our [Sybil accounts](./concepts/sybil-account.md) concept document t for a conceptual introduction to Sybil accounts.

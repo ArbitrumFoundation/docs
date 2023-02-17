@@ -7,13 +7,20 @@ voice: Arbitrum DAO
 tone: Objective, succinct, precise.
 tense: Present - avoid present progressive. Past tense as needed.
 person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
+dao_author: dzgoldman
+dao_sme: dzgoldman
 ---
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
 
 <DraftExpectationsPartial />
 
-<a data-quicklook-from="arb">$ARB</a> is the governance token for the Arbitrum ecosystem created on [TODO], roughly [TODO] after <a data-quicklook-from="arbitrum-one">Arbitrum One</a> had been live on mainnet. This document aims to explain the rationale behind introducing the $ARB <a data-quicklook-from="governance-token">governance token</a>, and how it plays a necessary role in the <a data-quicklook-from="progressive-decentralization">progressive decentralization</a> of the Arbitrum protocol.
+```
+ - FINAL-TODO - two dates below
+```
+
+
+<a data-quicklook-from="arb">$ARB</a> is the governance token for the Arbitrum ecosystem created on [FINAL-TODO], roughly [FINAL-TODO] after <a data-quicklook-from="arbitrum-one">Arbitrum One</a> had been live on mainnet. This document aims to explain the rationale behind introducing the $ARB <a data-quicklook-from="governance-token">governance token</a>, and how it plays a necessary role in the <a data-quicklook-from="progressive-decentralization">progressive decentralization</a> of the Arbitrum protocol.
 
 ### Protocol upgrades and "chain ownership"
 
@@ -46,7 +53,7 @@ So given that there's a need for a path towards protocol upgrades, and that ensh
 
 The introduction of the $ARB governance token provides the ability to propose and carry out protocol upgrades in a decentralized manner.
 
-Tokens were initially <a data-quicklook-from='airdrop'>airdropped</a> via transparent criteria meant to be as fair as possible [TODO link]. The goal was to spread out ownership to a large set of parties with stake in the Arbitrum ecosystem who are geographically distributed and have diverse backgrounds and affiliations. The chain ownership role is given to this <a data-quicklook-from='arbitrum-dao'>“Arbitrum DAO”</a>, a shorthand for the collective of all holders of the ARB token (and those delegated voting rights by token holders). 
+Tokens were initially <a data-quicklook-from='airdrop'>airdropped</a> via transparent criteria meant to be as fair as possible[^1]. The goal was to spread out ownership to a large set of parties with stake in the Arbitrum ecosystem who are geographically distributed and have diverse backgrounds and affiliations. The chain ownership role is given to this <a data-quicklook-from='arbitrum-dao'>“Arbitrum DAO”</a>, a shorthand for the collective of all holders of the ARB token (and those delegated voting rights by token holders). 
 
 There are two paths through which a protocol upgrade can take place. The first is a **decentralized** upgrade path that allows the DAO (and only the DAO) to carry out every step in the process: proposing an upgrade, publicly debating it, voting on it, and ultimately activating it.
 
@@ -83,3 +90,6 @@ The initial governance launch provides the community with the tools it needs: a 
 These don't have easy answers and will continue to be the topic of lively discussion within the community as the Arbitrum technology continues to mature, and as the perceived risk profiles of various states of decentralization change along with it. But crucially, the Arbitrum governance system controls *all* aspects of the Arbitrum protocol, including the governance process itself.
 
 With the DAO in control, decisions about how Arbitrum should evolve over time — including the governance process itself — are in the hands of the Arbitrum community.
+
+
+[^1]: Refer to [$ARB airdrop eligibility and distribution specifications](./airdrop-eligibility-distribution.md) to learn more about the airdrop specifications. Refer to [Arbitrum Sybil Hunting](https://github.com/OffchainLabs/arb-sybil/tree/master/v2) for an overview of our Sybil mitigation methodology.

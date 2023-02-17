@@ -7,12 +7,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Arbitrum DAO - Governance docs',
-  tagline: 'Dinosaurs are cool', // todo:qqq
+  tagline: 'Decentralized governance is cool',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico', // todo:qqq
+  favicon: 'img/favicon.ico',
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -21,9 +21,9 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  plugins: ["docusaurus-plugin-less",[require.resolve('docusaurus-lunr-search'), {
+  plugins: ["docusaurus-plugin-less", [require.resolve('docusaurus-lunr-search'), {
     indexBaseUrl: true
-}]],
+  }]],
   presets: [
     [
       'classic',
@@ -33,7 +33,6 @@ const config = {
           // q: why is it configured this way?
           // a: we originally tried to use "docs only mode" by setting the `routeBasePath` to `/`, but this prevents the landing page from displaying the`/gentle-intro-dao-governance` slug, which is important for SEO.
           //    this doc elaborates: https://docusaurus.io/docs/docs-introduction#docs-only-mode
-          //    todo:qqq...
           path: 'docs',
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
@@ -41,7 +40,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/', // todo:qqq
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/', // FINAL-TODO
         },
         blog: false,
         theme: {
@@ -57,13 +56,13 @@ const config = {
       navbar: {
         title: 'Arbitrum DAO - Governance docs',
         logo: {
-          alt: 'My Site Logo', // todo:qqq
+          alt: 'Arbitrum DAO',
           src: 'img/logo.svg',
           href: '/gentle-intro-dao-governance',
         },
         items: [
           {
-            href: 'https://github.com/facebook/docusaurus', // todo:qqq
+            href: 'https://github.com/facebook/docusaurus', // FINAL-TODO
             label: 'GitHub',
             position: 'right',
           },
@@ -82,7 +81,7 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Community', // FINAL-TODO
             items: [
               {
                 label: 'Stack Overflow',
@@ -111,12 +110,12 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus', // todo:qqq
+                href: 'https://github.com/facebook/docusaurus', // FINAL-TODO
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Arbitrum Foundation.`, // todo:qqq: verify
+        copyright: `Copyright © ${new Date().getFullYear()} Arbitrum Foundation.`,
       },
       prism: {
         theme: lightCodeTheme,

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import useIsBrowser from '@docusaurus/useIsBrowser';
-import {useLocation} from '@docusaurus/router';
+import { useLocation } from '@docusaurus/router';
 import Tippy from 'tippy.js';
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/themes/light-border.css';

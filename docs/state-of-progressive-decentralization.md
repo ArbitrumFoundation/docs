@@ -7,13 +7,19 @@ voice: Arbitrum DAO
 tone: Objective, succinct, precise.
 tense: Present - avoid present progressive. Past tense as needed.
 person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
+dao_author: dzgoldman
+dao_sme: dzgoldman
 ---
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
 
 <DraftExpectationsPartial />
 
-<a data-quicklook-from='progressive-decentralization'>Progressive decentralization</a> is the process of gradually increasing the decentralization of a system over time. This document details the current state of progressive decentralization for the<a data-quicklook-from='arbitrum-one'> Arbitrum One</a> and <a data-quicklook-from='arbitrum-nova'>Arbitrum Nova</a> chains.
+```
+ - FINAL-TODO: List of validators
+```
+
+<a data-quicklook-from='progressive-decentralization'>Progressive decentralization</a> is the process of gradually increasing the decentralization of a system over time. This document details the current state of progressive decentralization for the<a data-quicklook-from='arbitrum-one'>Arbitrum One</a> and <a data-quicklook-from='arbitrum-nova'>Arbitrum Nova</a> chains.
 
 ### The components of Arbitrum's progressive decentralization
 
@@ -33,21 +39,21 @@ Let's evaluate the current status of these components for both Arbitrum One and 
   - **Risks**:
     - If 9 of the Security Council members are compromised or behave maliciously, the system and users' funds could be compromised.
     - If a malicious proposal is successfully put through DAO governance, or if 7 of the Security Council members are compromised or behave maliciously, the system's safety could be compromised. In either of these case, users will have several weeks to withdraw their funds back to Ethereum before the proposal takes effect.
-  - **Changes To Current Status**: The governance system currently has the ability to alter the role of governance itself.
+  - **Changes To Current Status**: The governance system currently has the ability to alter governance itself.
 
 ### 2. Validator ownership
 
   - **Description**: Validators are responsible for updating the state of the <a data-quicklook-from='arbitrum-chain'>Arbitrum chains</a> and ensuring that all updates are valid.
-  - **Current status**: **Permissioned** Validation on both Arbitrum One and Arbitrum Nova is currently allow-listed to a committee of public entities. You can see the list of validators [here](TODO link). Governance currently has the power to change this status.
+  - **Current status**: **Permissioned** Validation on both Arbitrum One and Arbitrum Nova is currently allow-listed to a committee of public entities. You can see the list of validators [here](#FINAL-TODO). Governance currently has the power to change this status.
   - **Risks**: If all X Arbitrum validators behave maliciously, the system's safety could be compromised.
   - **Changes to Current status**: The Arbitrum governance system (see #1) currently has the power to modify the Validator allow-list, such as by adding or removing members or removing the allow-list entirely.
 
 ### 3. Sequencer ownership
 
   - **Description**: The Sequencer is typically responsible for collecting and ordering users' transactions.
-  - **Current status**: **Centralized**. The Sequencers for both Arbitrum One and Arbitrum Nova are currently centralized and maintained by Offchain Labs. Governance currently has the power to change this status.
+  - **Current status**: **Centralized**. The Sequencers for both Arbitrum One and Arbitrum Nova are currently maintained by the Arbitrum Foundation. Governance currently has the power to select new Sequencers.
   - **Risks**: The Sequencer has the ability to delay the inclusion of a user's transaction by up to 24 hours and reorder transactions over short time-horizons. The Sequencer, however, cannot compromise the system's safety or prevent a transaction from ultimately being executed.
-  - **Changes to Current status**: The Arbitrum governance system (see #1) currently has the power elect a new entity as the Sequencer, such as a more distributed/decentralized system.
+  - **Changes to Current status**: The Arbitrum governance system (see #1) currently has the power elect a new entity as the Sequencer.
 
 ### 4. Data Availability Committee (DAC) ownership
 
@@ -59,17 +65,7 @@ This applies only to Arbitrum AnyTrust chains like Arbitrum Nova.
 
 
   - **Description**: AnyTrust chains like Arbitrum Nova rely on a permissioned committee to store the chain's data and provide it on demand.
-  - **Current status**: 7-member committee. The Arbitrum Nova chain has a 7-party DAC, whose members can be seen [here](https://developer.arbitrum.io/public-chains#arbitrum-chains-summary). The list of committee members is maintained by governance.
+  - **Current status**: 7-member committee. The Arbitrum Nova chain has a 7-party DAC, whose members can be seen [here](https://developer.arbitrum.io/public-chains#arbitrum-chains-summary). Governance has the ability to remove or add members to the committee.
   - **Risks**: If 6 of the 7 committee members in conjunction with the Sequencer behave maliciously and collude, the safety of the system can be compromised.
   - **Changes to Current status**: The Arbitrum governance system (see #1) currently has the power to change the DAC, such as by adding or removing members or modifying the power it has over the system.
-
-
----
-
-
-**FAQ:**
-
-- todo:qqq, injected from base and linked throughout
-
----
 
