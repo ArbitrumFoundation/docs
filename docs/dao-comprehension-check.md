@@ -28,7 +28,7 @@ The first step is to submit the idea as an <a data-quicklook-from='arbitrum-impr
 
 #### How can the DAO respond to the security emergency?
 
-The <a data-quicklook-from='security-council'>Security Council</a> is a committee of 12 democratically elected members who are signers of a multi-sig wallet. This committee is afforded by the Arbitrum DAO the power to perform <a data-quicklook-from='emergency-action'>emergency actions</a> and <a data-quicklook-from='non-emergency-action'>non-emergency actions</a>, as delegated to it by the Arbitrum DAO and Arbitrum Foundation, and is responsible for upholding the [Constitution of the Arbitrum DAO](dao-constitution.md). 
+The <a data-quicklook-from='security-council'>Security Council</a> is a committee of 12 democratically elected members who are signers of a multi-sig wallet. This committee is afforded by the Arbitrum DAO the power to perform <a data-quicklook-from='emergency-action'>emergency actions</a> and <a data-quicklook-from='nonemergency-action'>non-emergency actions</a>, as delegated to it by the Arbitrum DAO and Arbitrum Foundation, and is responsible for upholding the [Constitution of the Arbitrum DAO](dao-constitution.md). 
 
 In this scenario, the Security Council should handle the emergency immediately by either implementing the required software upgrade or performing whatever other mitigating action is required in order to remedy the situation on behalf of the DAO and its members. This type of Security Council action is known as an emergency action and requires a 9-of-12 approval from the Security Council to execute. 
 
@@ -82,7 +82,7 @@ It's important to note that the upgrade should be thoroughly tested and reviewed
 
 #### Will this prevent work from being done on the chains that the Arbitrum DAO owns?
 
- No, voter apathy won't prevent work from being done on the chains that the Arbitrum DAO owns. The Constitution allows for <a data-quicklook-from='non-emergency-action'>non-emergency actions</a> to be taken, which don't require the approval of token holders. The Security Council has the power to perform emergency actions with a 9-of-12 approval, which can be used to address critical issues that cannot wait for voter approval. While voter participation is important for the proper functioning of the DAO, the Constitution has built-in mechanisms to ensure that work can continue to be done even in the event of low voter turnout.
+ No, voter apathy won't prevent work from being done on the chains that the Arbitrum DAO owns. The Constitution allows for <a data-quicklook-from='nonemergency-action'>non-emergency actions</a> to be taken, which don't require the approval of token holders. The Security Council has the power to perform emergency actions with a 9-of-12 approval, which can be used to address critical issues that cannot wait for voter approval. While voter participation is important for the proper functioning of the DAO, the Constitution has built-in mechanisms to ensure that work can continue to be done even in the event of low voter turnout.
 
 Note that voter apathy could have an impact on the governance of the DAO, and certain decisions and actions might not be as representative of the community's collective will if voter turnout is low.
 
