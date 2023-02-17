@@ -121,4 +121,4 @@ If a governance proposal passes that you voted against, you have a few options:
 
 ### Conclusion
 
-We hope that this document has been helpful as a self-assessment and study aid. If you have any questions or suggestions, please feel free to reach out to us on the [Arbitrum DAO governance forum](https://forum.arbitrum.io/) or on [Discord](https://discord.gg/arbitrum). We're always happy to help :).
+This comprehension check has been provided as an optional study aid that token holders and prospective delegates are encouraged to periodically review, share, and build upon. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.io/) or [Discord](https://www.discord.gg/arbitrum).
