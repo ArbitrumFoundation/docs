@@ -103,7 +103,7 @@ Arbitrum's governance system is responsible for making many types of decisions. 
  2. An upgrade could fix a critical vulnerability. 
  3. An upgrade could address a non-critical decision that affects the Arbitrum ecosystem at large. 
 
-Refer to the [Constitution](./dao-constitution.md) for a precise overview of the scope of the DAO's decision-making responsibility. See [Why governance?](./why-governance) to learn more about the importance of governance. See [Comprehension check](./dao-comprehension-check) to test your understanding of the Constitution's protocol.
+Refer to the [Constitution](./dao-constitution.md) for a precise overview of the scope of the DAO's decision-making responsibilities. See [Why governance?](./why-governance) to learn more about the importance of governance. See [Comprehension check](./dao-comprehension-check) to test your understanding of the Constitution's protocol.
 
 ### Who cares about this stuff?
 
