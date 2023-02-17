@@ -15,7 +15,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
-An <a data-quicklook-from="arbitrum-improvement-proposal">Arbitrum Improvement Proposal (AIP)</a> is a proposal submitted by a member of the Arbitrum DAO that proposes a change to the Arbitrum ecosystem. There are two types of AIPs: <a data-quicklook-from="constitutional-proposal">Constitutional</a> and <a data-quicklook-from="non-constitutional-proposal">non-Constitutional</a>:
+An <a data-quicklook-from="arbitrum-improvement-proposal-aip">Arbitrum Improvement Proposal (AIP)</a> is a proposal submitted by a member of the Arbitrum DAO that proposes a change to the Arbitrum ecosystem. There are two types of AIPs: <a data-quicklook-from="constitutional-aip">Constitutional</a> and <a data-quicklook-from="nonconstitutional-aip">non-Constitutional</a>:
 
 - **Constitutional AIPs** are those that modify the text or procedures of the Constitution or AIP-1, install or modify software on any chain, or take any action that requires "chain owner" permission on any chain. 
 - **Non-Constitutional AIPs** are all other AIPs, such as those that request funds/grants or provide general guidelines or information to the community.
