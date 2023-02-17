@@ -53,7 +53,7 @@ So given that there's a need for a path towards protocol upgrades, and that ensh
 
 The introduction of the $ARB governance token provides the ability to propose and carry out protocol upgrades in a decentralized manner.
 
-Tokens were initially <a data-quicklook-from='airdrop'>airdropped</a> via transparent criteria meant to be as fair as possible[^1]. The goal was to spread out ownership to a large set of parties with stake in the Arbitrum ecosystem who are geographically distributed and have diverse backgrounds and affiliations. The chain ownership role is given to this <a data-quicklook-from='arbitrum-dao'>“Arbitrum DAO”</a>, a shorthand for the collective of all holders of the ARB token (and those delegated voting rights by token holders). 
+Tokens were initially <a data-quicklook-from='qqqairdrop'>airdropped</a> via transparent criteria meant to be as fair as possible[^1]. The goal was to spread out ownership to a large set of parties with stake in the Arbitrum ecosystem who are geographically distributed and have diverse backgrounds and affiliations. The chain ownership role is given to this <a data-quicklook-from='arbitrum-dao'>“Arbitrum DAO”</a>, a shorthand for the collective of all holders of the ARB token (and those delegated voting rights by token holders). 
 
 There are two paths through which a protocol upgrade can take place. The first is a **decentralized** upgrade path that allows the DAO (and only the DAO) to carry out every step in the process: proposing an upgrade, publicly debating it, voting on it, and ultimately activating it.
 
