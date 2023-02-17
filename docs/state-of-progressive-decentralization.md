@@ -17,9 +17,11 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 ```
  - FINAL-TODO: List of validators
+ - FINAL-TODO: number of validators
+ - FINAL-TODO: component descriptions (or remove colons)
 ```
 
-<a data-quicklook-from='progressive-decentralization'>Progressive decentralization</a> is the process of gradually increasing the decentralization of a system over time. This document details the current state of progressive decentralization for the<a data-quicklook-from='arbitrum-one'>Arbitrum One</a> and <a data-quicklook-from='arbitrum-nova'>Arbitrum Nova</a> chains.
+<a data-quicklook-from='progressive-decentralization'>Progressive decentralization</a> is the process of gradually increasing the decentralization of a system over time. This document details the current state of progressive decentralization for the <a data-quicklook-from='arbitrum-one'>Arbitrum One</a> and <a data-quicklook-from='arbitrum-nova'>Arbitrum Nova</a> chains.
 
 ### The components of Arbitrum's progressive decentralization
 
@@ -45,7 +47,7 @@ Let's evaluate the current status of these components for both Arbitrum One and 
 
   - **Description**: Validators are responsible for updating the state of the <a data-quicklook-from='arbitrum-chain'>Arbitrum chains</a> and ensuring that all updates are valid.
   - **Current status**: **Permissioned** Validation on both Arbitrum One and Arbitrum Nova is currently allow-listed to a committee of public entities. You can see the list of validators [here](#FINAL-TODO). Governance currently has the power to change this status.
-  - **Risks**: If all X Arbitrum validators behave maliciously, the system's safety could be compromised.
+  - **Risks**: If all FINAL-TODO Arbitrum validators behave maliciously, the system's safety could be compromised.
   - **Changes to Current status**: The Arbitrum governance system (see #1) currently has the power to modify the Validator allow-list, such as by adding or removing members or removing the allow-list entirely.
 
 ### 3. Sequencer ownership
@@ -53,7 +55,7 @@ Let's evaluate the current status of these components for both Arbitrum One and 
   - **Description**: The Sequencer is typically responsible for collecting and ordering users' transactions.
   - **Current status**: **Centralized**. The Sequencers for both Arbitrum One and Arbitrum Nova are currently maintained by the Arbitrum Foundation. Governance currently has the power to select new Sequencers.
   - **Risks**: The Sequencer has the ability to delay the inclusion of a user's transaction by up to 24 hours and reorder transactions over short time-horizons. The Sequencer, however, cannot compromise the system's safety or prevent a transaction from ultimately being executed.
-  - **Changes to Current status**: The Arbitrum governance system (see #1) currently has the power elect a new entity as the Sequencer.
+  - **Changes to Current status**: The Arbitrum governance system (see #1) currently has the power to elect a new entity as the Sequencer.
 
 ### 4. Data Availability Committee (DAC) ownership
 
