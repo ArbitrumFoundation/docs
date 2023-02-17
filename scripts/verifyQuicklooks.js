@@ -2,6 +2,9 @@ const fs = require('fs');
 const glob = require('glob');
 const quicklookKeysJSON = require('../static/glossary.json');
 
+
+const QUICKLOOKS_PREFIX = 'data-quicklook-from='
+
 function findQuotedTextAfter(string, input) {
   const regex = new RegExp(`${string}[\\s]*(['"])(.*?)\\1`, 'g');
   const matches = [];
@@ -21,7 +24,7 @@ glob('./docs/**/*', function (err, res) {
       if (!path.endsWith('.md')) continue;
       const data = fs.readFileSync(path, 'utf8');
       quicklookKeys = quicklookKeys.concat(
-        findQuotedTextAfter('data-quicklook-from=', data)
+        findQuotedTextAfter(QUICKLOOKS_PREFIX, data)
       );
     }
     const notFoundKeys = quicklookKeys.filter((key) => !quicklookKeysJSON[key]);
