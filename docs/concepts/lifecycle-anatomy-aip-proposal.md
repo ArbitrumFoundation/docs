@@ -53,15 +53,15 @@ In this phase, the AIP is officially submitted via governance smart contracts on
 
 #### Phase 3: On-chain DAO vote
 
-During this phase, members of the Arbitrum DAO can vote directly on-chain for a submitted AIP. For the AIP to pass, more Votable Tokens must vote in favor than against, and a certain percentage of all Votable Tokens must vote in favor. This percentage is 5% for Constitutional AIPs and 3% for Non-Constitutional AIPs, and is referred to as "Threshold 2" within the [Constitution](../dao-constitution.md).
+During this phase, members of the Arbitrum DAO can vote directly on-chain for (or against) a submitted AIP. For the AIP to pass, more Votable Tokens must vote in favor than against, and a certain percentage of all Votable Tokens must vote in favor. This percentage is 5% for Constitutional AIPs and 3% for Non-Constitutional AIPs, and is referred to as "Threshold 2" within the [Constitution](../dao-constitution.md).
 
 The voting period for an AIP ends 14 days after it starts. However, if Threshold 2 is reached within the last 2 days of the voting period, the voting period is extended by 2 days. If the AIP fails to pass, the process ends after this Phase 3. If it does pass, Constitutional AIPs move on to Phases 4 through 7, while Non-Constitutional AIPs skip Phases 4 through 6 and go straight to Phase 7.
 
 #### Phase 4: L2 waiting period
 
-After an AIP passes Phase 3 of the voting process, there is a 3 day waiting period known as Phase 4. During this time, people who do not agree with the AIP have the chance to withdraw their funds or take other action on L2. This period is meant to give everyone time to consider the decision and make any necessary adjustments to their investments or actions.
+After an AIP passes Phase 3 of the voting process, there is a 3-day waiting period known as Phase 4. During this time, people who do not agree with the AIP have the chance to withdraw their funds or take other action on L2. This period is meant to give everyone time to consider the decision and make any necessary adjustments to their investments or actions.
 
-Once the 3 day waiting period is over, the AIP will move on to the next phase of the voting process, as long as no major issues arise. This waiting period is important because it ensures that everyone has an opportunity to voice their concerns and recalibrate their participation before the AIP is finalized.
+Once the 3-day waiting period is over, the AIP will move on to the next phase of the voting process, as long as no major issues arise. This waiting period is important because it ensures that everyone has an opportunity to voice their concerns and recalibrate their participation before the AIP is finalized.
 
 #### Phase 5: L2-to-L1 message
 
@@ -91,4 +91,4 @@ To ensure that the owners of these downstream dependencies have enough time to a
 
 The entire AIP voting process, including all seven phases, typically takes 34 days to complete for Constitutional AIPs, or 21 days for Non-Constitutional AIPs, from the start of the temperature check in Phase 1. This process is designed to allow for thorough consideration and voting, ensuring that everyone has a fair chance to voice their opinions and concerns.
 
-This conceptual overview presents a beginner-friendly elaboration upon the AIP process detailed within [The Constitution of the Arbitrum DAO](../dao-constitution.md). This process is designed to ensure that proposed changes align with the Arbitrum community's mission and guiding values, and that the community's various stakeholders have the opportunity to discuss, debate, vote on, and prepare for proposed changes before they're ultimately implemented.
+This conceptual overview presents a beginner-friendly elaboration upon the AIP process detailed within The Constitution of the Arbitrum DAO. This process is designed to ensure that proposed changes align with the Arbitrum community's mission and guiding values, and that the community's various stakeholders have the opportunity to discuss, debate, vote on, and prepare for proposed changes before they're ultimately implemented.

@@ -38,9 +38,9 @@ The Security Council shouldn't use its power to perform emergency actions except
 
 - The Arbitrum DAO is able to modify the Security Council's powers or to eliminate the Security Council entirely through the submission, approval and implementation of a <a data-quicklook-from='constitutional-aip'>Constitutional AIP</a>.
 - The Arbitrum DAO is able to curtail or eliminate the Security Council's power to perform emergency actions via approval and implementation of a Constitutional AIP.
-- The Security Council may also approve and implement routine software upgrades, routine maintenance and other parameter adjustments in a non-emergency setting (such actions are referred to as "Non-emergency actions"), which require a 7-of-12 approval in order to take effect.
-- Equivalent "copies" of the Security Council multi-sig contracts (7-of-12, in the case of Non-emergency actions, and 9-of-12, in the case of emergency actions) exist, one on Ethereum and another on each Arbitrum DAO-governed chain.
-- Any Non-emergency action, after approval by the Security Council, will bypass Phases 1 to 3 of the AIP process and instead directly go through Phases 4 to 7 of the AIP process, to provide a delay before any Non-emergency action is deployed. The Security Council may optionally specify additional delays before deployment.
+- The Security Council may also approve and implement routine software upgrades, routine maintenance and other parameter adjustments in a non-emergency setting (such actions are referred to as "non-emergency actions"), which require a 7-of-12 approval in order to take effect.
+- Equivalent "copies" of the Security Council multi-sig contracts (7-of-12, in the case of non-emergency actions, and 9-of-12, in the case of emergency actions) exist, one on Ethereum and another on each Arbitrum DAO-governed chain.
+- Any non-emergency action, after approval by the Security Council, will bypass Phases 1 to 3 of the AIP process and instead directly go through Phases 4 to 7 of the AIP process, to provide a delay before any non-emergency action is deployed. The Security Council may optionally specify additional delays before deployment.
 
 
 ### Scenario 3: You want to propose a change to the system parameters of one of the Arbitrum DAO-governed chains
