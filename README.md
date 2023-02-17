@@ -56,6 +56,6 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
   - run `yarn update:all` in the `notion-docs` folder and both FAQ and Glossary will be updated
 - To run remotely:
   - you need to manually trigger the action
-  - to trigger the action you go to https://github.com/CoolChainCo/docs/actions/workflows/update-glossary.yaml and then hit the "run workflow" button
+  - to trigger the action you go to https://github.com/ArbitrumFoundation/docs/actions/workflows/update-glossary.yaml and then hit the "run workflow" button
   - you can select a different branch to run the workflow from so it's easier to iterate on the action
 - FINAL-TODO: clean this up, prep for launch
