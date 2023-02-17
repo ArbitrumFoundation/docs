@@ -18,7 +18,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 ```
  - FINAL-TODO: link audit
  - FINAL-TODO: feedback nudged us to update "your" to "the" throughout - unless this has legal implications, recommend addressing reader directly
- - FINAL-TODO: sweep for forum.arbitrum.io vs forum.arbitrum.foundation
+ - FINAL-TODO: sweep for forum.arbitrum.foundation vs forum.arbitrum.foundation
 ```
 
 In this how-to, you'll learn how to submit an Arbitrum Improvement Proposal (AIP) to the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>. Familiarity with Arbitrum, DAOs, and Ethereum is expected. Otherwise, this how-to makes no assumptions about your experience with governance protocols.
@@ -41,7 +41,7 @@ See [Constitution](../dao-constitution.md) for further details.
 
 ### Proposal structure
 
-Although the proposal template is available [here](https://forum.arbitrum.io/t/delegation-submission-template/16) (FINAL-TODO)
+Although the proposal template is available [here](https://forum.arbitrum.foundation/t/delegation-submission-template/16) (FINAL-TODO)
 
 
 import AnatomyAIPPartial from '@site/docs/partials/_anatomy-aip-partial.md'; 
@@ -52,10 +52,10 @@ import AnatomyAIPPartial from '@site/docs/partials/_anatomy-aip-partial.md';
 
 ### Step 1: Conduct a formal temperature check with a Snapshot poll
 
-The [DAO governance forum](https://forum.arbitrum.io/) facilitates discussions about Arbitrum DAO and <a data-quicklook-from='governance-proposal'>governance proposals</a> that are submitted by eligible token-holders. To submit your proposal:
+The [DAO governance forum](https://forum.arbitrum.foundation/) facilitates discussions about Arbitrum DAO and <a data-quicklook-from='governance-proposal'>governance proposals</a> that are submitted by eligible token-holders. To submit your proposal:
 
-1. Go to the [DAO governance forum](https://forum.arbitrum.io/).
-2. Create a new post with your proposal using the template located [here](https://forum.arbitrum.io/t/delegation-submission-template/16). You can add additional fields to this template to provide more context for your proposal if you'd like.
+1. Go to the [DAO governance forum](https://forum.arbitrum.foundation/).
+2. Create a new post with your proposal using the template located [here](https://forum.arbitrum.foundation/t/delegation-submission-template/16). You can add additional fields to this template to provide more context for your proposal if you'd like.
 3. Allow at least one week for discussion and debate. Iterate on your proposal based on feedback from the community.
 4. Navigate to [Snapshot](https://snapshot.org/#/). This is where you can create a poll that will gauge the community's interest in your proposal.
 5. Connect your wallet.
@@ -93,7 +93,7 @@ If the proposal passes, congratulations! After a delay, the proposal’s actions
 
 If the proposal doesn’t pass, but there's interest in improving and resubmitting it, refer to [How to resubmit your proposal](./resubmit-dao-proposal).
 
-This protocol is in its early days and will likely evolve in response to your feedback. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.io/) or [Discord](https://www.discord.gg/arbitrum).
+This protocol is in its early days and will likely evolve in response to your feedback. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/) or [Discord](https://www.discord.gg/arbitrum).
 
 Welcome to the future of governance!
 

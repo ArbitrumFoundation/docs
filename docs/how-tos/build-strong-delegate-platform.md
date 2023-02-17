@@ -24,11 +24,11 @@ The first step in building a strong delegate platform is to develop a thorough u
 
 ### Tip 2: Communicate with token holders
 
-As a delegate, it's important to maintain an open and transparent line of communication with the token holders you represent. This can include creating a website or social media presence where you can provide updates on your activities, answer questions, and solicit feedback. Ensure that your voters are informed of any important developments or changes related to the DAO by staying tuned in to the [Arbitrum DAO governance forum](https://forum.arbitrum.io/) and [Discord](https://www.discord.gg/arbitrum). Continuously relaying important information to the token holders that you represent can help you build trust and credibility while positioning yourself as a valuable representative of the Arbitrum DAO community.
+As a delegate, it's important to maintain an open and transparent line of communication with the token holders you represent. This can include creating a website or social media presence where you can provide updates on your activities, answer questions, and solicit feedback. Ensure that your voters are informed of any important developments or changes related to the DAO by staying tuned in to the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/) and [Discord](https://www.discord.gg/arbitrum). Continuously relaying important information to the token holders that you represent can help you build trust and credibility while positioning yourself as a valuable representative of the Arbitrum DAO community.
 
 ### Tip 3: Stay active in the community
 
-Another key aspect of building a strong delegate platform is staying active in the community. This can include participating in discussions on the [Arbitrum DAO governance forum](https://forum.arbitrum.io/), attending community events, participating in online discussions wherever relevant conversations are happening on social media, and contributing to the development of the DAO.
+Another key aspect of building a strong delegate platform is staying active in the community. This can include participating in discussions on the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/), attending community events, participating in online discussions wherever relevant conversations are happening on social media, and contributing to the development of the DAO.
 
 ### Tip 4: Be transparent and accountable
 
@@ -40,4 +40,4 @@ Building a strong support system is essential for success as a delegate. This ca
 
 ### Conclusion
 
-As a delegate, you play a vital role in the governance and decision-making process of the DAO; a strong platform can help you be more effective in that role. Remember to stay informed, be transparent and accountable, and build a strong support system. And always try to stay in touch with your voters so you can meet their needs. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.io/) or [Discord](https://www.discord.gg/arbitrum).
+As a delegate, you play a vital role in the governance and decision-making process of the DAO; a strong platform can help you be more effective in that role. Remember to stay informed, be transparent and accountable, and build a strong support system. And always try to stay in touch with your voters so you can meet their needs. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/) or [Discord](https://www.discord.gg/arbitrum).

@@ -21,7 +21,7 @@ Review the following scenarios to test your comprehension of the different compo
 
 #### What's the first step you should take?
 
-The first step is to submit the idea as an <a data-quicklook-from='arbitrum-improvement-proposal-aip'>Arbitrum Improvement Proposal (AIP)</a> on the public [Arbitrum DAO governance forum](https://forum.arbitrum.io/) and discuss/debate it for 1 week before submitting an informal temperature check using Snapshot. You'll then perform a more formal temperature check on [Tally](https://tally.xyz/gov/arbitrum). 
+The first step is to submit the idea as an <a data-quicklook-from='arbitrum-improvement-proposal-aip'>Arbitrum Improvement Proposal (AIP)</a> on the public [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/) and discuss/debate it for 1 week before submitting an informal temperature check using Snapshot. You'll then perform a more formal temperature check on [Tally](https://tally.xyz/gov/arbitrum). 
 
 This procedure is referred to as the Temperature Check phase within the [Constitution](dao-constitution.md) and is technically optional, but it's strongly recommended as a due-diligence governance best practice. Although the process for submitting an AIP to the governance forum isn't explicitly outlined in the Constitution, the Constitution does specify that the DAO may approve and implement AIPs to change the rules governing the system. See [How to submit a DAO proposal](./how-tos/create-submit-dao-proposal) for more detailed instructions on how to submit an AIP.
 
@@ -123,4 +123,4 @@ If a governance proposal passes that you voted against, you have a few options:
 
 ### Conclusion
 
-This comprehension check has been provided as an optional study aid that token holders and prospective delegates are encouraged to periodically review, share, and build upon. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.io/) or [Discord](https://www.discord.gg/arbitrum).
+This comprehension check has been provided as an optional study aid that token holders and prospective delegates are encouraged to periodically review, share, and build upon. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/) or [Discord](https://www.discord.gg/arbitrum).

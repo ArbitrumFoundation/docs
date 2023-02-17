@@ -87,6 +87,14 @@ When an AIP is passed, it means that changes are going to be made to the Arbitru
 
 To ensure that the owners of these downstream dependencies have enough time to adjust to these types of changes, proposal submitters may optionally specify an extra waiting period that needs to be honored before the AIP's changes take effect. This is recommended for AIPs that require Arbitrum DAO's stakeholders to spend some time preparing for the AIP's proposed changes. This mechanism helps ensure that both Arbitrum DAO's systems and third-party systems can remain available and stable during and after any given AIP's implementation.
 
+
+### AIP voting process diagram
+
+```mermaid
+todo
+```
+
+
 ### Conclusion
 
 The entire AIP voting process, including all seven phases, typically takes 34 days to complete for Constitutional AIPs, or 21 days for Non-Constitutional AIPs, from the start of the temperature check in Phase 1. This process is designed to allow for thorough consideration and voting, ensuring that everyone has a fair chance to voice their opinions and concerns.

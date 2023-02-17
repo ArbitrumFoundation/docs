@@ -17,7 +17,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 ### Background
 
-Arbitrum DAO's launch is currently in the **call for delegates** stage. Throughout this stage, prospective DAO delegates can submit <a data-quicklook-from='delegate'>delegate</a> applications on the [Arbitrum DAO governance forum](https://forum.arbitrum.io/t/delegation-submission-template/16). After this stage, <a data-quicklook-from='airdrop'>airdop</a> recipients will be able to claim their $ARB governance tokens and optionally delegate the voting power[^1] of their tokens to eligible "early delegates". In this how-to, you'll learn how to apply to become one of these early delegates.
+Arbitrum DAO's launch is currently in the **call for delegates** stage. Throughout this stage, prospective DAO delegates can submit <a data-quicklook-from='delegate'>delegate</a> applications on the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/t/delegation-submission-template/16). After this stage, <a data-quicklook-from='airdrop'>airdop</a> recipients will be able to claim their $ARB governance tokens and optionally delegate the voting power[^1] of their tokens to eligible "early delegates". In this how-to, you'll learn how to apply to become one of these early delegates.
 
 ### Apply to be an early delegate
 
@@ -28,9 +28,9 @@ To apply to become a delegate for the Arbitrum DAO, complete the following steps
  1. Review [The Constitution of the Arbitrum DAO](../dao-constitution) and each of the documents within this content set to ensure that you understand the scope of delegate responsibilities and the mechanisms by which the Arbitrum DAO operates.
  2. Review the [comprehension check](../dao-comprehension-check.md) to self-assess your understanding of the Arbitrum DAO governance protocol.
  3. [Build a strong delegate platform](./build-strong-delegate-platform). This includes establishing an online presence that outlines your qualifications, experience, and vision for the Arbitrum DAO. You can use your platform to demonstrate your understanding of the protocol and the highest-priority challenges that we're facing as a community.
- 4. Submit an application to the Arbitrum DAO's governance forum, following the structure of the template posted in the [delegate submission template thread](https://forum.arbitrum.io/t/delegation-submission-template/16).
+ 4. Submit an application to the Arbitrum DAO's governance forum, following the structure of the template posted in the [delegate submission template thread](https://forum.arbitrum.foundation/t/delegation-submission-template/16).
  5. Once your application is received, it will be reviewed by the Arbitrum team. If approved, you'll become a delegate.
 
-Becoming a delegate is a significant responsibility and should not be taken lightly. Delegates should have a solid foundational technical understanding of the Arbitrum protocol, a sense of the Ethereum ecosystem at large, and a desire to continuously engage with the Arbitrum community as it grows and evolves. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.io/) or [Discord](https://www.discord.gg/arbitrum).
+Becoming a delegate is a significant responsibility and should not be taken lightly. Delegates should have a solid foundational technical understanding of the Arbitrum protocol, a sense of the Ethereum ecosystem at large, and a desire to continuously engage with the Arbitrum community as it grows and evolves. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/) or [Discord](https://www.discord.gg/arbitrum).
 
 [^1]: See ["How to delegate your voting power"](./select-delegate-voting-power.md) for instructions.
