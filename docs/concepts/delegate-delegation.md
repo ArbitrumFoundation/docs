@@ -37,6 +37,6 @@ The Arbitrum DAO uses [Tally](https://tally.xyz/gov/arbitrum) to facilitate dele
 
 Note that through Tally, you can change or revoke your delegation at any time. You can also proportionally delegate your voting power to multiple delegates. For more detailed how-to guidance, see [How to delegate your voting power](../how-tos/select-delegate-voting-power).
 
-## Conclusion
+### Conclusion
 
 The Arbitrum DAO's delegation mechanism lets $ARB token holders passively participate in Arbitrum DAO's governance by facilitating the transfer of their token-weighted voting power to values-aligned representatives of the Arbitrum DAO's values, as defined by [The Constitution of the Arbitrum DAO](../dao-constitution.md). 

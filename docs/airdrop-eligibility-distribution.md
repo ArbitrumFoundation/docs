@@ -189,4 +189,4 @@ To prevent bots from taking advantage of the airdrop, a number of anti-Sybil rul
  - If an airdrop recipient's wallet address has been identified as a Sybil address during the Hop protocol bounty program (FINAL-TODO: footnote), (FINAL-TODO: disqualified?). 
  - If an airdrop recipient's wallet address is part of a parent/children wallet arrangement whereby the parent has funded more than 25 children addresses, all addresses are collapsed into a single user wallet address. 
 
-Refer to [Arbitrum Sybil Hunting](https://github.com/OffchainLabs/arb-sybil/tree/master/v2) to learn more about our Sybil mitigation methodology. Refer to our [Sybil accounts](./concepts/sybil-account.md) concept document t for a conceptual introduction to Sybil accounts.
+Refer to [Arbitrum Sybil Hunting](https://github.com/OffchainLabs/arb-sybil/tree/master/v2) to learn more about our Sybil mitigation methodology. Refer to our [Sybil accounts](./concepts/sybil-account.md) concept document for a conceptual introduction to Sybil accounts.
