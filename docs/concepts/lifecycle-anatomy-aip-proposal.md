@@ -32,11 +32,26 @@ import AnatomyAIPPartial from '@site/docs/partials/_anatomy-aip-partial.md';
 
 ### The lifecycle of an Arbitrum Improvement Proposal
 
+
 #### High-level overview
 
 The proposal submission process starts with a temperature check, where the AIP is suggested on the Arbitrum DAO governance forum along with a Snapshot poll. It's discussed/debated for 1 week. If the AIP passes the temperature check, it moves on to the next phase, which is the formal AIP and call for voting. In this phase, the AIP is submitted via governance contracts on Arbitrum One via [Tally](https://tally.xyz/gov/arbitrum)'s user interface. After 3 days, a voter distribution snapshot is taken and the voting period begins.
 
 Each AIP must be labeled as Constitutional or non-Constitutional, and must also clearly specify which Arbitrum DAO-governed chain(s) it will affect. If the AIP passes, it moves through a series of phases that include L2 and L1 waiting periods, and eventually, the implementation of the proposal. This process typically takes 34 days for a Constitutional AIP or 21 days for a Non-Constitutional AIP, but may take longer if specified by the AIP.
+
+
+```mermaid
+graph TD;
+  B["<a href='#phase-1-temperature-check-optional-but-recommended' style='text-decoration:none;'><b>Phase 1: Temperature check</b></a><br/><span style='font-size:smaller'>(1 week)</span>"];
+  B -->|"<span style='padding: 3px;'>Passes</span>"| C["<a href='#phase-2-formal-aip-and-call-for-voting' style='text-decoration:none;'><b>Phase 2: Formal AIP and call for voting</b></a><br/><span style='font-size:smaller'>(3 days)</span>"];
+  C -->|"<span style='padding: 3px;'>Passes</span>"| D["<a href='#phase-3-on-chain-dao-vote' style='text-decoration:none;'><b>Phase 3: On-chain DAO vote</b></a><br/><span style='font-size:smaller'>(14 days, extendable by 2 days)</span>"];
+  D -->|"<span style='padding: 3px;'>Passes, Constitutional AIP</span>"| E["<a href='#phase-4-l2-waiting-period' style='text-decoration:none;'><b>Phase 4: L2 waiting period</b></a><br/><span style='font-size:smaller'>(3 days)</span>"];
+  E --> F["<a href='#phase-5-l2-to-l1-message' style='text-decoration:none;'><b>Phase 5: L2-to-L1 message</b></a>"];
+  F --> G["<a href='#phase-6-l1-waiting-period' style='text-decoration:none;'><b>Phase 6: L1 waiting period</b></a><br/><span style='font-size:smaller'>(3 days)</span>"];
+  G --> H["<a href='#additional-waiting-periods-optional' style='text-decoration:none;'><b>Optional Waiting Period</b></a>"];
+  D -->|"<span style='padding: 3px;'>Passes, Non-Constitutional AIP</span>"| H["<a href='#additional-waiting-periods-optional' style='text-decoration:none;'><b>Optional Waiting Period</b></a>"];
+  H --> I["<a href='#phase-7-implementation' style='text-decoration:none;'><b>Phase 7: Implementation</b></a>"];
+```
 
 
 #### Phase 1: Temperature check (optional but recommended)
@@ -86,13 +101,6 @@ Phase 7 is the final step in the voting process in which an approved AIP is full
 When an AIP is passed, it means that changes are going to be made to the Arbitrum DAO's governance system. These changes can be "breaking changes" - changes that cause other parts of the governance system (or third-party systems) to stop working or behave differently. 
 
 To ensure that the owners of these downstream dependencies have enough time to adjust to these types of changes, proposal submitters may optionally specify an extra waiting period that needs to be honored before the AIP's changes take effect. This is recommended for AIPs that require Arbitrum DAO's stakeholders to spend some time preparing for the AIP's proposed changes. This mechanism helps ensure that both Arbitrum DAO's systems and third-party systems can remain available and stable during and after any given AIP's implementation.
-
-
-### AIP voting process diagram
-
-```mermaid
-todo
-```
 
 
 ### Conclusion
