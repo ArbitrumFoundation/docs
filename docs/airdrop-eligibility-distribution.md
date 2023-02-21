@@ -87,13 +87,13 @@ The only official website for the $ARB airdrop is [https://gov.arbitrum.foundati
         <td>Offchain Labs investors</td>
     </tr>
     <tr>
-        <td>5%</td>
-        <td>500 million</td>
+        <td>6.89%</td>
+        <td>689 million</td>
         <td><strong>Users</strong> of the Arbitrum platform (via airdrop to user wallet addresses)</td>
     </tr>
     <tr>
-        <td>3%</td>
-        <td>300 million</td>
+        <td>1.11%</td>
+        <td>111 million</td>
         <td><strong>DAOs</strong> building apps on Arbitrum (via airdrop to DAO treasury addresses)</td>
     </tr>
 </table>
@@ -138,43 +138,43 @@ A points systems was used to determine the number of tokens that airdrop recipie
     </tr>
     <tr>
         <td>3</td>
-        <td>FINAL-TODO</td>
+        <td>1,200</td>
     </tr>
     <tr>
         <td>4</td>
-        <td>FINAL-TODO</td>
+        <td>1,700</td>
     </tr>
     <tr>
         <td>5</td>
-        <td>FINAL-TODO</td>
+        <td>2,200</td>
     </tr>
     <tr>
         <td>6</td>
-        <td>FINAL-TODO</td>
+        <td>3,200</td>
     </tr>
     <tr>
         <td>7</td>
-        <td>FINAL-TODO</td>
+        <td>3,700</td>
     </tr>
     <tr>
         <td>8</td>
-        <td>FINAL-TODO</td>
+        <td>4,200</td>
     </tr>
     <tr>
         <td>9</td>
-        <td>FINAL-TODO</td>
+        <td>6,200</td>
     </tr>
     <tr>
         <td>10</td>
-        <td>FINAL-TODO</td>
+        <td>6,700</td>
     </tr>
     <tr>
         <td>11</td>
-        <td>FINAL-TODO</td>
+        <td>7,200</td>
     </tr>
     <tr>
         <td>12 or more</td>
-        <td>FINAL-TODO</td>
+        <td>10,200</td>
     </tr>
 </table>
 
