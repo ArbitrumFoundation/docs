@@ -7,20 +7,26 @@ voice: Arbitrum DAO
 tone: Objective, succinct, precise.
 tense: Present - avoid present progressive. Past tense as needed.
 person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
+dao_author: amarrazza
+dao_sme: amarrazza
 ---
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
 
 <DraftExpectationsPartial />
 
+```
+ - FINAL-TODO: link audit
+ - FINAL-TODO: feedback nudged us to update "your" to "the" throughout - unless this has legal implications, recommend addressing reader directly
+```
 
 In this how-to, you'll learn how to submit an Arbitrum Improvement Proposal (AIP) to the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>. Familiarity with Arbitrum, DAOs, and Ethereum is expected. Otherwise, this how-to makes no assumptions about your experience with governance protocols.
 
 ### Prerequisites
 
-To submit a temperature check using <a data-quicklook-from='snapshot-poll'>Snapshot</a> you must have an Ethereum wallet address that represents at least 0.01% of votable tokens;[^1] to submit a proposal on-chain using [Tally](https://www.tally.xyz/), you must have an Ethereum wallet address that represents at least 5,000,000 tokens (about 0.1% of votable tokens). 
+To submit a temperature check using <a data-quicklook-from='snapshot-poll'>Snapshot</a> you must have an Ethereum wallet address that represents at least 0.01% of votable tokens[^1]; to submit a proposal on-chain using [Tally](https://tally.xyz/gov/arbitrum), you must have an Ethereum wallet address that represents at least 5,000,000 tokens (about 0.1% of votable tokens).
 
-If you don't have enough voting power, consider delegating your votes to a delegate who can create a proposal on your behalf[^2].
+If you don't have enough voting power, consider delegating your votes to a delegate who can create a proposal on your behalf[^2]. Note that anyone holding $ARB (regardless of the amount) is able to vote on both Snapshot and Tally proposals.
 
 
 ### Proposal types
@@ -34,7 +40,7 @@ See [Constitution](../dao-constitution.md) for further details.
 
 ### Proposal structure
 
-Although the proposal template is available [here](https://forum.arbitrum.io/t/delegation-submission-template/16) (TODO: ensure valid link)...
+Although the proposal template is available [here](https://forum.arbitrum.io/t/delegation-submission-template/16) (FINAL-TODO)
 
 
 import AnatomyAIPPartial from '@site/docs/partials/_anatomy-aip-partial.md'; 
@@ -49,24 +55,24 @@ The [DAO governance forum](https://forum.arbitrum.io/) facilitates discussions a
 
 1. Go to the [DAO governance forum](https://forum.arbitrum.io/).
 2. Create a new post with your proposal using the template located [here](https://forum.arbitrum.io/t/delegation-submission-template/16). You can add additional fields to this template to provide more context for your proposal if you'd like.
-3. Navigate to [Snapshot](https://snapshot.org/#/) to create a poll that will gauge the community's interest in your proposal.
-4. Connect your wallet.
-5. Open the Arbitrum DAO Snapshot space.
-6. Create a poll that points to your forum post. Your poll should run for one week and should be decided by a simple majority.
-7. Navigate back to your forum post and share the link to your Snapshot poll with the community.
-8. Allow at least one week for discussion and debate.
+3. Allow at least one week for discussion and debate. Iterate on your proposal based on feedback from the community.
+4. Navigate to [Snapshot](https://snapshot.org/#/). This is where you can create a poll that will gauge the community's interest in your proposal.
+5. Connect your wallet.
+6. Open the Arbitrum DAO Snapshot space.
+7. Create a poll that points to your forum post. The poll should run for one week and should be decided by a simple majority.
+8. Navigate back to your forum post and share the link to your Snapshot poll with the community.
 
-If your proposal doesn't pass the temperature check, don't submit it for an on-chain vote. Instead, head back to your forum post and engage with the community to address any concerns that they have.
+If your proposal doesn't pass the temperature check, you shouldn't submit it for an on-chain vote. Instead, head back to your forum post and engage with the community to address any concerns that they have.
 
 If your proposal passes the temperature check, then you can move to the second and final step: an on-chain vote facilitated by Tally. Ensure that you've incorporated feedback brought up during relevant forum discussions and temperature checks before proceeding. 
 
 ### Step 2: Submit your on-chain proposal using Tally
 
-If your wallet can represent at least 5,000,000 tokens (about 0.1% of votable $ARB tokens), you can create an on-chain proposal using Tally. 
+If your wallet can represent at least 5,000,000 tokens (about 0.1% of votable $ARB tokens), you can create an on-chain proposal using [Tally](https://tally.xyz/gov/arbitrum). 
 
 To submit your proposal on Tally:
 
- 1.	Log in to [Tally](https://www.tally.xyz/) using the wallet that holds your $ARB tokens.
+ 1.	Log in to [Tally](https://tally.xyz/gov/arbitrum) using the wallet that holds your $ARB tokens.
  2.	Navigate to the "explore DAOs" section or click on "My DAOs" within your Tally profile and select one of the following pages:
     - **Arbitrum Constitution**: For Constitutional Proposals
     - **Arbitrum Treasury**: For Non-Constitutional Proposals
@@ -78,7 +84,7 @@ To submit your proposal on Tally:
 A proposal passes if two conditions are met: 
 
   1. More votes are cast in favor than against
-  2. The total number of votes cast in favor is at least the following fraction of the votable tokens:
+  2. The total number of votes cast in favor is at least the following percentage of the votable tokens:
      1. **5%**, for a <a data-quicklook-from="constitutional-aip">Constitutional AIP</a>
      2. **3%**, for a <a data-quicklook-from="nonconstitutional-aip">non-Constitutional AIP</a>
 
@@ -86,7 +92,7 @@ If the proposal passes, congratulations! After a delay, the proposal’s actions
 
 If the proposal doesn’t pass, but there's interest in improving and resubmitting it, refer to [How to resubmit your proposal](./resubmit-dao-proposal).
 
-This protocol is in its early days and will likely evolve in response to your feedback. If you have any questions, come visit us on the [Arbitrum DAO governance forum](https://forum.arbitrum.io/) or on [Discord](https://www.discord.gg/arbitrum).
+This protocol is in its early days and will likely evolve in response to your feedback. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.io/) or [Discord](https://www.discord.gg/arbitrum).
 
 Welcome to the future of governance!
 
@@ -97,8 +103,6 @@ Welcome to the future of governance!
  2. The threshold of support required for a proposal to pass can vary depending on the type of proposal and the quorum requirements specified in the Constitution.
  3. You can delegate your voting power[^2] to another address whether or not you have enough tokens to submit on-chain proposals. If you hold any $ARB tokens whatsoever, you can participate in Arbitrum DAO's governance.
 
-
-#### Footnotes
 
 [^1]: When we say "an Ethereum wallet address that represents at least 0.01% of votable tokens", we mean that your address must be able to vote at least 0.01% of votable tokens. This voting power can be acquired either by holding $ARB tokens directly or by receiving delegated votes from other $ARB token holders who have decided to delegate their voting power to you.
 [^2]: Learn how to delegate your votes by visiting [How to delegate your voting power](./select-delegate-voting-power).

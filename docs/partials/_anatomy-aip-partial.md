@@ -1,10 +1,10 @@
 The Constitution of the Arbitrum DAO defines the following sections of an AIP:
 
 - **Abstract** - Two or three sentences that summarize the AIP.
-- **Motivation** - A statement on why the Arbitrum community should implement the AIP. (todo - friendly elaboration)
-- **Rationale** - An explanation of how the AIP aligns with the Arbitrum community's mission and guiding values. (todo - friendly elaboration)
+- **Motivation** - A statement on why the Arbitrum community should implement the AIP.
+- **Rationale** - An explanation of how the AIP aligns with the Arbitrum community's mission and guiding values.
 - **Key Terms** - Definitions of any terms within the proposal that are unique to the proposal, new to the Arbitrum community, and/or industry-specific. This section is optional, but recommended.
-- **Specifications** - A detailed breakdown of the platforms and technologies that will be used. This is where you can elaborate on the "why" of your design decisions. You can also use this section to describe alternate designs that were considered and related work, e.g. how similar specifications been successfully (or unsuccessfully) implemented in other chains or languages.
+- **Specifications** - A detailed breakdown of the platforms and technologies that will be used. This is where you can elaborate on the "why" of your design decisions. You can also use this section to describe alternate designs that were considered and related work, e.g. how similar specifications have been successfully (or unsuccessfully) implemented in other chains or languages.
 - **Steps to Implement** - The steps to implement the AIP, including associated costs, manpower, and other resources for each step where applicable. For the avoidance of doubt, any AIPs involving transactions with third parties (such as grants) will need to ensure that applicable legal documentation and procedures are also included.
 - **Timeline** - Relevant timing details, including but not limited to start date, milestones, and completion dates.
 - **Overall Cost** - The total cost to implement the AIP. The overall cost section should include a breakdown of the total cost of the AIP, including any associated costs for each step where applicable. Consider both fixed costs and recurring costs.

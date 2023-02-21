@@ -53,11 +53,7 @@ module.exports = {
         {
           type: 'doc',
           id: 'how-tos/vote-dao-proposals',
-        },
-        {
-          type: 'doc',
-          id: 'how-tos/hash-constitution',
-        },
+        }
       ],
     },
     {
@@ -75,10 +71,6 @@ module.exports = {
         {
           type: 'doc',
           id: 'concepts/delegate-delegation',
-        },
-        {
-          type: 'doc',
-          id: 'concepts/progressive-decentralization',
         },
         {
           type: 'doc',
@@ -129,10 +121,6 @@ module.exports = {
     {
       type: 'doc',
       id: 'dao-glossary',
-    },
-    {
-      type: 'doc',
-      id: 'dao-faq',
-    },
+    }
   ],
 };

@@ -7,6 +7,8 @@ voice: Arbitrum DAO
 tone: Objective, succinct, precise.
 tense: Present - avoid present progressive. Past tense as needed.
 person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
+dao_author: symbolpunk
+dao_sme: dzgoldman
 ---
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
@@ -19,14 +21,16 @@ Review the following scenarios to test your comprehension of the different compo
 
 #### What's the first step you should take?
 
-The first step is to submit the idea as an <a data-quicklook-from='arbitrum-improvement-proposal-aip'>Arbitrum Improvement Proposal (AIP)</a> on the public [Arbitrum DAO governance forum](https://forum.arbitrum.io/) and discuss/debate it for 1 week. You'll then perform a more formal "temperature check" on Tally. This procedure is referred to as the Temperature Check phase within the [Constitution](dao-constitution.md) and is technically optional, but it's strongly recommended as a due-diligence governance best practice. Although the process for submitting an AIP to the governance forum isn't explicitly outlined in the Constitution, the Constitution does specify that the DAO may approve and implement AIPs to change the rules governing the system. See [How to submit a DAO proposal](./how-tos/create-submit-dao-proposal) for more detailed instructions on how to submit an AIP.
+The first step is to submit the idea as an <a data-quicklook-from='arbitrum-improvement-proposal-aip'>Arbitrum Improvement Proposal (AIP)</a> on the public [Arbitrum DAO governance forum](https://forum.arbitrum.io/) and discuss/debate it for 1 week before submitting an informal temperature check using Snapshot. You'll then perform a more formal temperature check on [Tally](https://tally.xyz/gov/arbitrum). 
+
+This procedure is referred to as the Temperature Check phase within the [Constitution](dao-constitution.md) and is technically optional, but it's strongly recommended as a due-diligence governance best practice. Although the process for submitting an AIP to the governance forum isn't explicitly outlined in the Constitution, the Constitution does specify that the DAO may approve and implement AIPs to change the rules governing the system. See [How to submit a DAO proposal](./how-tos/create-submit-dao-proposal) for more detailed instructions on how to submit an AIP.
 
 
 ### Scenario 2: A security emergency arises on one of the Arbitrum DAO-governed chains
 
 #### How can the DAO respond to the security emergency?
 
-The <a data-quicklook-from='security-council'>Security Council</a> is a committee of 12 democratically elected members who are signers of a multi-sig wallet. This committee is afforded by the Arbitrum DAO the power to perform <a data-quicklook-from='emergency-action'>emergency actions</a> and <a data-quicklook-from='non-emergency-action'>non-emergency actions</a>, as delegated to it by the Arbitrum DAO and Arbitrum Foundation, and is responsible for upholding the [Constitution of the Arbitrum DAO](dao-constitution.md). 
+The <a data-quicklook-from='security-council'>Security Council</a> is a committee of 12 democratically elected members who are signers of a multi-sig wallet. This committee is afforded by the Arbitrum DAO the power to perform <a data-quicklook-from='emergency-action'>emergency actions</a> and <a data-quicklook-from='nonemergency-action'>non-emergency actions</a>, as delegated to it by the Arbitrum DAO and Arbitrum Foundation, and is responsible for upholding the [Constitution of the Arbitrum DAO](dao-constitution.md). 
 
 In this scenario, the Security Council should handle the emergency immediately by either implementing the required software upgrade or performing whatever other mitigating action is required in order to remedy the situation on behalf of the DAO and its members. This type of Security Council action is known as an emergency action and requires a 9-of-12 approval from the Security Council to execute. 
 
@@ -80,7 +84,7 @@ It's important to note that the upgrade should be thoroughly tested and reviewed
 
 #### Will this prevent work from being done on the chains that the Arbitrum DAO owns?
 
- No, voter apathy won't prevent work from being done on the chains that the Arbitrum DAO owns. The Constitution allows for <a data-quicklook-from='non-emergency-action'>non-emergency actions</a> to be taken, which don't require the approval of token holders. The Security Council has the power to perform emergency actions with a 9-of-12 approval, which can be used to address critical issues that cannot wait for voter approval. While voter participation is important for the proper functioning of the DAO, the Constitution has built-in mechanisms to ensure that work can continue to be done even in the event of low voter turnout.
+ No, voter apathy won't prevent work from being done on the chains that the Arbitrum DAO owns. The Constitution allows for <a data-quicklook-from='nonemergency-action'>non-emergency actions</a> to be taken, which don't require the approval of token holders. The Security Council has the power to perform emergency actions with a 9-of-12 approval, which can be used to address critical issues that cannot wait for voter approval. While voter participation is important for the proper functioning of the DAO, the Constitution has built-in mechanisms to ensure that work can continue to be done even in the event of low voter turnout.
 
 Note that voter apathy could have an impact on the governance of the DAO, and certain decisions and actions might not be as representative of the community's collective will if voter turnout is low.
 
@@ -119,4 +123,4 @@ If a governance proposal passes that you voted against, you have a few options:
 
 ### Conclusion
 
-We hope that this document has been helpful as a self-assessment and study aid. If you have any questions or suggestions, please feel free to reach out to us on the [Arbitrum DAO governance forum](https://forum.arbitrum.io/) or on [Discord](https://discord.gg/arbitrum). We're always happy to help :).
+This comprehension check has been provided as an optional study aid that token holders and prospective delegates are encouraged to periodically review, share, and build upon. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.io/) or [Discord](https://www.discord.gg/arbitrum).

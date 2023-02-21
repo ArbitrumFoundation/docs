@@ -58,9 +58,4 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
   - you need to manually trigger the action
   - to trigger the action you go to https://github.com/CoolChainCo/docs/actions/workflows/update-glossary.yaml and then hit the "run workflow" button
   - you can select a different branch to run the workflow from so it's easier to iterate on the action
-- todo:qqq: clone this into our wiki
-
-##### Troubleshooting
-
-- if you see `'ts-node' is not recognized as an internal or external command`, you need to install/update ts-node globally with `npm install -g ts-node` (todo - this isn't right, update with what's right, something to do with working directory)
-- if you see `Cannot find module '@notionhq/client/build/src/api-endpoints' or its corresponding type declarations.`, you need to install/update the notion client library via `npm update @notionhq/client` (todo - this isn't right, update with what's right, something to do with working directory)
+- FINAL-TODO: clean this up, prep for launch

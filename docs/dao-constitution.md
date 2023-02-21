@@ -2,23 +2,17 @@
 id: dao-constitution
 title: The Constitution of the Arbitrum DAO
 sidebar_label: The Constitution of the Arbitrum DAO
-description: todo:qqq
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
+description: Read the Constitution of the Arbitrum DAO, the ultimate governing document of the Arbitrum DAO. Arbitrum DAO's smart contracts implement the protocols described in this document.
 ---
 
 
 ```
-todos: 
- - fact check
- - ask questions and add to FAQ
- - continue refining term definitions
+ - FINAL-TODO: link to AIP-1
+ - FINAL-TODO: snapshot link
 ```
 
 <div id='constitution'>
-<p>This Constitution of the Arbitrum DAO takes effect on the date upon which AIP-1 is posted, located at <a href="#todo">TODO</a>.</p>
+<p>This Constitution of the Arbitrum DAO takes effect on the date upon which AIP-1 is posted, located at <a href="#FINAL-TODO">FINAL-TODO</a>.</p>
 <p>Some of the rules and procedures of this Constitution will be enforced directly by smart contracts on a blockchain, and some will not. All rules are equally binding. Actions taken under this Constitution may be on-chain or off-chain actions. On-chain actions are those that are actuated directly by the governance smart contracts of the DAO as transactions on a blockchain. Off-chain actions are those that are actuated by other means.</p>
 <p>This Constitution also includes some &quot;recommended guidelines&quot; which are non-binding but strongly recommended as good governance practice.</p>
 <p>This Constitution describes the procedures by which it may be amended. For more information regarding the governance framework of the Arbitrum DAO and Arbitrum Foundation, please see AIP-1.</p>
@@ -36,9 +30,9 @@ todos:
 <h3 id="section-2-dao-proposals-and-voting-procedures">Section 2: DAO Proposals and Voting Procedures</h3>
 <p>The following process governs the rules and procedures by which the Arbitrum DAO may propose, vote on and implement Arbitrum Improvement Proposals (AIPs). No AIP may be in violation of applicable laws, in particular sanctions-related regulations.</p>
 <ol>
-    <li><strong>Phase 1: Temperature Check (1 week) (Optional but Recommended):</strong> The AIP is suggested on the public forum and discussed/debated for <strong>1 week</strong>. The AIP should be accompanied by a Snapshot poll or other method as determined pursuant to the governance process, which can only be submitted by an address that can vote at least 0.01% of the Votable Tokens. The Snapshot poll runs for 7 days, and is decided by a simple majority with no required participation threshold. An AIP that fails the temperature check should not be submitted for a vote. If an AIP fails the temperature check, or has not undergone a temperature check, as a matter of good governance practice, it is recommended that voters strongly consider voting to reject it.</li>
+    <li><strong>Phase 1: Temperature Check (1 week) (Optional but Recommended):</strong> The AIP is suggested on the <a href='https://forum.arbitrum.io/'>public forum</a> and discussed/debated for <strong>1 week</strong>. The AIP should be accompanied by a <a href="#FINAL-TODO">Snapshot poll</a> or other method as determined pursuant to the governance process, which can only be submitted by an address that can vote at least 0.01% of the Votable Tokens. The Snapshot poll runs for 7 days, and is decided by a simple majority with no required participation threshold. An AIP that fails the temperature check should not be submitted for a vote. If an AIP fails the temperature check, or has not undergone a temperature check, as a matter of good governance practice, it is recommended that voters strongly consider voting to reject it.</li>
     <li>
-        <p><strong>Phase 2: Formal AIP and call for voting (3 days):</strong> The AIP is submitted via governance contracts on Arbitrum One, with a user interface available on [TODO:Tally]. The AIP proposer is required to have an address that contains or is delegated at least 5,000,000 of the Votable Tokens. All votes controlled by the AIP proposer will be counted as voting in favor of the AIP.</p>
+        <p><strong>Phase 2: Formal AIP and call for voting (3 days):</strong> The AIP is submitted via governance contracts on Arbitrum One, with a user interface available on <a href='https://tally.xyz/gov/arbitrum'>Tally</a>. The AIP proposer is required to have an address that contains or is delegated at least 5,000,000 of the Votable Tokens. All votes controlled by the AIP proposer will be counted as voting in favor of the AIP.</p>
         <p>After 3 days, a voter distribution snapshot will be taken and the voting period will begin; this gives interested parties time to discuss the AIP and gather votes before the voter distribution snapshot is taken.</p>
         <p>Each AIP must be labeled as Constitutional or non-Constitutional.</p>
         <p>A Constitutional AIP is one that:</p>
@@ -155,11 +149,3 @@ todos:
     <li><strong>Neutral and open:</strong> Arbitrum governance should not pick winners and losers, but should foster open innovation, interoperation, user choice, and healthy competition on Arbitrum chains.</li>
 </ul>
 </div>
-
-
-
---
-
-TODO: articulate within faqs:
-
- - Updates to the text of our Constitution must be approved by the Arbitrum DAO through a formal governance proposal. To validate the integrity of the text on this page, see <a href='/how-tos/hash-constitution'>How to hash The Constitution of the Arbitrum DAO</a>
