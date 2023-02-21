@@ -48,8 +48,8 @@ graph TD;
   D -->|"<span style='padding: 3px;'>Passes, Constitutional AIP</span>"| E["<a href='#phase-4-l2-waiting-period' style='text-decoration:none;'><b>Phase 4: L2 waiting period</b></a><br/><span style='font-size:smaller'>(3 days)</span>"];
   E --> F["<a href='#phase-5-l2-to-l1-message' style='text-decoration:none;'><b>Phase 5: L2-to-L1 message</b></a>"];
   F --> G["<a href='#phase-6-l1-waiting-period' style='text-decoration:none;'><b>Phase 6: L1 waiting period</b></a><br/><span style='font-size:smaller'>(3 days)</span>"];
-  G --> H["<a href='#additional-waiting-periods-optional' style='text-decoration:none;'><b>Optional Waiting Period</b></a>"];
-  D -->|"<span style='padding: 3px;'>Passes, Non-Constitutional AIP</span>"| H["<a href='#additional-waiting-periods-optional' style='text-decoration:none;'><b>Optional Waiting Period</b></a>"];
+  G --> H["<a href='#additional-waiting-periods-optional' style='text-decoration:none;'><b>Optional waiting period</b></a>"];
+  D -->|"<span style='padding: 3px;'>Passes, Non-Constitutional AIP</span>"| H["<a href='#additional-waiting-periods-optional' style='text-decoration:none;'><b>Optional waiting period</b></a>"];
   H --> I["<a href='#phase-7-implementation' style='text-decoration:none;'><b>Phase 7: Implementation</b></a>"];
 ```
 
