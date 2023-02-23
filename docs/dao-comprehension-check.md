@@ -21,7 +21,7 @@ Review the following scenarios to test your comprehension of the different compo
 
 #### What's the first step you should take?
 
-The first step is to submit the idea as an <a data-quicklook-from='arbitrum-improvement-proposal-aip'>Arbitrum Improvement Proposal (AIP)</a> on the public [Arbitrum DAO governance forum](https://forum.arbitrum.io/) and discuss/debate it for 1 week before submitting an informal temperature check using Snapshot. You'll then perform a more formal temperature check on [Tally](https://tally.xyz/gov/arbitrum). 
+The first step is to submit the idea as an <a data-quicklook-from='arbitrum-improvement-proposal-aip'>Arbitrum Improvement Proposal (AIP)</a> on the public [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/) and discuss/debate it for 1 week before submitting an informal temperature check using Snapshot. You'll then perform a more formal temperature check on [Tally](https://tally.xyz/gov/arbitrum). 
 
 This procedure is referred to as the Temperature Check phase within the [Constitution](dao-constitution.md) and is technically optional, but it's strongly recommended as a due-diligence governance best practice. Although the process for submitting an AIP to the governance forum isn't explicitly outlined in the Constitution, the Constitution does specify that the DAO may approve and implement AIPs to change the rules governing the system. See [How to submit a DAO proposal](./how-tos/create-submit-dao-proposal) for more detailed instructions on how to submit an AIP.
 
@@ -38,9 +38,9 @@ The Security Council shouldn't use its power to perform emergency actions except
 
 - The Arbitrum DAO is able to modify the Security Council's powers or to eliminate the Security Council entirely through the submission, approval and implementation of a <a data-quicklook-from='constitutional-aip'>Constitutional AIP</a>.
 - The Arbitrum DAO is able to curtail or eliminate the Security Council's power to perform emergency actions via approval and implementation of a Constitutional AIP.
-- The Security Council may also approve and implement routine software upgrades, routine maintenance and other parameter adjustments in a non-emergency setting (such actions are referred to as "Non-emergency actions"), which require a 7-of-12 approval in order to take effect.
-- Equivalent "copies" of the Security Council multi-sig contracts (7-of-12, in the case of Non-emergency actions, and 9-of-12, in the case of emergency actions) exist, one on Ethereum and another on each Arbitrum DAO-governed chain.
-- Any Non-emergency action, after approval by the Security Council, will bypass Phases 1 to 3 of the AIP process and instead directly go through Phases 4 to 7 of the AIP process, to provide a delay before any Non-emergency action is deployed. The Security Council may optionally specify additional delays before deployment.
+- The Security Council may also approve and implement routine software upgrades, routine maintenance and other parameter adjustments in a non-emergency setting (such actions are referred to as "non-emergency actions"), which require a 7-of-12 approval in order to take effect.
+- Equivalent "copies" of the Security Council multi-sig contracts (7-of-12, in the case of non-emergency actions, and 9-of-12, in the case of emergency actions) exist, one on Ethereum and another on each Arbitrum DAO-governed chain.
+- Any non-emergency action, after approval by the Security Council, will bypass Phases 1 to 3 of the AIP process and instead directly go through Phases 4 to 7 of the AIP process, to provide a delay before any non-emergency action is deployed. The Security Council may optionally specify additional delays before deployment.
 
 
 ### Scenario 3: You want to propose a change to the system parameters of one of the Arbitrum DAO-governed chains
@@ -95,11 +95,11 @@ Note that voter apathy could have an impact on the governance of the DAO, and ce
 
 If you've claimed $ARB tokens but don't have time to actively participate in the Arbitrum DAO's governance, you have a few options:
 
-1. You can delegate your voting rights to another member of the community who you trust to make decisions that align with your interests. See TODO
+1. You can delegate your tokens' voting power to another member of the community who you trust to make decisions that align with your interests. See [How to delegate your voting power](./how-tos/select-delegate-voting-power.md) for more information.
 2. You can hold onto your $ARB tokens and vote when you have the time, but please note that some important decisions may have already been made.
 3. You can sell or transfer your $ARB tokens to another member of the community who is more active.
 
-While participating in governance is an important aspect of being a DAO member, it's not mandatory. As long as you hold $ARB tokens, you have a right to participate in the Arbitrum DAO's governance protocol, but you also have the right to choose not to participate. No pressure :).
+While participating in governance is an important aspect of being a DAO member, it's not mandatory. As long as you hold $ARB tokens, you can participate in the Arbitrum DAO's governance protocol, but there aren't any consequences if you decide to not participate.
 
 
 ### Scenario 9: You want to propose a change to the way that unclaimed airdropped $ARB tokens are distributed
@@ -123,4 +123,4 @@ If a governance proposal passes that you voted against, you have a few options:
 
 ### Conclusion
 
-This comprehension check has been provided as an optional study aid that token holders and prospective delegates are encouraged to periodically review, share, and build upon. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.io/) or [Discord](https://www.discord.gg/arbitrum).
+This comprehension check has been provided as an optional study aid that token holders and prospective delegates are encouraged to periodically review, share, and build upon. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/) or [Discord](https://www.discord.gg/arbitrum).

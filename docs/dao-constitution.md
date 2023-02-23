@@ -9,6 +9,8 @@ description: Read the Constitution of the Arbitrum DAO, the ultimate governing d
 ```
  - FINAL-TODO: link to AIP-1
  - FINAL-TODO: snapshot link
+ - FINAL-TODO: sweep for cohort references - ensure all docs are updated to reflect new cohort timelines (feb/aug)
+ - FINAL-TODO: once constitution is finalized, update this page and all other downstream pages
 ```
 
 <div id='constitution'>
@@ -30,7 +32,7 @@ description: Read the Constitution of the Arbitrum DAO, the ultimate governing d
 <h3 id="section-2-dao-proposals-and-voting-procedures">Section 2: DAO Proposals and Voting Procedures</h3>
 <p>The following process governs the rules and procedures by which the Arbitrum DAO may propose, vote on and implement Arbitrum Improvement Proposals (AIPs). No AIP may be in violation of applicable laws, in particular sanctions-related regulations.</p>
 <ol>
-    <li><strong>Phase 1: Temperature Check (1 week) (Optional but Recommended):</strong> The AIP is suggested on the <a href='https://forum.arbitrum.io/'>public forum</a> and discussed/debated for <strong>1 week</strong>. The AIP should be accompanied by a <a href="#FINAL-TODO">Snapshot poll</a> or other method as determined pursuant to the governance process, which can only be submitted by an address that can vote at least 0.01% of the Votable Tokens. The Snapshot poll runs for 7 days, and is decided by a simple majority with no required participation threshold. An AIP that fails the temperature check should not be submitted for a vote. If an AIP fails the temperature check, or has not undergone a temperature check, as a matter of good governance practice, it is recommended that voters strongly consider voting to reject it.</li>
+    <li><strong>Phase 1: Temperature Check (1 week) (Optional but Recommended):</strong> The AIP is suggested on the <a href='https://forum.arbitrum.foundation/'>public forum</a> and discussed/debated for <strong>1 week</strong>. The AIP should be accompanied by a <a href="#FINAL-TODO">Snapshot poll</a> or other method as determined pursuant to the governance process, which can only be submitted by an address that can vote at least 0.01% of the Votable Tokens. The Snapshot poll runs for 7 days, and is decided by a simple majority with no required participation threshold. An AIP that fails the temperature check should not be submitted for a vote. If an AIP fails the temperature check, or has not undergone a temperature check, as a matter of good governance practice, it is recommended that voters strongly consider voting to reject it.</li>
     <li>
         <p><strong>Phase 2: Formal AIP and call for voting (3 days):</strong> The AIP is submitted via governance contracts on Arbitrum One, with a user interface available on <a href='https://tally.xyz/gov/arbitrum'>Tally</a>. The AIP proposer is required to have an address that contains or is delegated at least 5,000,000 of the Votable Tokens. All votes controlled by the AIP proposer will be counted as voting in favor of the AIP.</p>
         <p>After 3 days, a voter distribution snapshot will be taken and the voting period will begin; this gives interested parties time to discuss the AIP and gather votes before the voter distribution snapshot is taken.</p>

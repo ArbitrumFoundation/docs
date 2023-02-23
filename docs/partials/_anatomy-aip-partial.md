@@ -1,4 +1,4 @@
-The Constitution of the Arbitrum DAO defines the following sections of an AIP:
+The Constitution of the Arbitrum DAO encourages proposers to include the following sections within Arbitrum Improvement Proposals:
 
 - **Abstract** - Two or three sentences that summarize the AIP.
 - **Motivation** - A statement on why the Arbitrum community should implement the AIP.
