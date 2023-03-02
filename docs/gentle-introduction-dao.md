@@ -4,7 +4,7 @@ title: A gentle introduction to Arbitrum DAO
 sidebar_label: A gentle introduction
 description: Learn about the Arbitrum DAO, the $ARB governance token, how to claim $ARB tokens as an eligible airdrop recipient, the role of delegates in the Arbitrum DAO, and more.
 dao_author: symbolpunk
-dao_sme: dzgoldman
+dao_sme: symbolpunk
 ---
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
@@ -86,7 +86,7 @@ If you've used Arbitrum at any time before the the snapshot date (August 31st, 2
 
 Governance of the Arbitrum Rollup protocol is driven by two governing bodies: the <a data-quicklook-from='security-council'>Security Council</a> and the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>.
 
-- The **Security Council** is a 12-member council of publicly known entities elected by members of the Arbitrum DAO. This council is responsible for ensuring Arbitrum's security and performance through the selective application of <a data-quicklook-from='emergency-action'>emergency actions</a> if/when necessary. See [Delegates and delegation](./concepts/delegate-delegation) for a conceptual overview of Arbitrum DAO's delegation mechanics.
+- The **Security Council** is a 12-member council of entities elected by members of the Arbitrum DAO. This council is responsible for ensuring Arbitrum's security and performance through the selective application of <a data-quicklook-from='emergency-action'>emergency actions</a> if/when necessary. See [Delegates and delegation](./concepts/delegate-delegation) for a conceptual overview of Arbitrum DAO's delegation mechanics.
 - The **Arbitrum DAO** is the worldwide community of $ARB token holders and the <a data-quicklook-from='delegate'>delegates</a> that they select. The DAO is responsible for governing Arbitrum and its Security Council. The DAO can use constitutional proposals to modify the Security Council's powers, or even to eliminate the Security Council entirely. The Security Council's powers are delegated to the Security Council by the DAO, and are to be exercised in the best interests of the DAO. See [Arbitrum DAO](./concepts/arbitrum-dao) for an introductory overview of the DAO's various components.
 
 ### What sorts of decisions is Arbitrum’s governance system responsible for making?
@@ -104,7 +104,7 @@ Refer to the [Constitution](./dao-constitution.md) for a precise overview of the
 You can think of Arbitrum stakeholder groups as a stack of layers. The **web3 user layer** is at the top of the stack. All other layers work together to support the web3 user layer:
 
 - **Web3 user layer:** Includes decentralized app (dApp) users - users of web3 applications.
-- **Web3 app layer:** Includes all of the dreamers, hackers, and makers who are building decentralized apps and tooling to support dApp development.
+- **Web3 app layer:** Includes all of the developers, dreamers, and makers who are building decentralized apps and tooling to support dApp development.
 - **Layer 2 (L2):** Includes Arbitrum DAO, the Arbitrum community, node operators, sequencers, and other Layer-2 builders (including Offchain Labs) who are working hard to fulfill Ethereum's [rollup-centric roadmap](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698).
 - **Layer 1 (L1)**: Includes consensus & execution layers.
   - **Consensus layer (CL):** Includes Prysm and other consensus-layer teams who support Ethereum's beacon chain with consensus-layer client software.
