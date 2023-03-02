@@ -3,10 +3,6 @@ id: dao-vote
 title: "Arbitrum DAO votes: A conceptual overview"
 sidebar_label: DAO vote
 description: Learn about the different types of votes that take place in the Arbitrum DAO.
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 dao_author: symbolpunk
 dao_sme: dzgoldman
 ---

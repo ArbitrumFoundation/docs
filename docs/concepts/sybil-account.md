@@ -3,10 +3,6 @@ id: sybil-account
 title: "Sybil accounts: A conceptual overview"
 sidebar_label: Sybil accounts
 description: Learn about Sybil accounts and how they were detected prior to the $ARB airdrop.
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 dao_author: dzgoldman
 dao_sme: dzgoldman
 ---

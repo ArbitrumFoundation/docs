@@ -3,10 +3,6 @@ id: arbitrum-dao
 title: "Arbitrum DAO: A conceptual overview"
 sidebar_label: Arbitrum DAO
 description: Learn about the Arbitrum DAO, its governance token, and its built-in treasury and security mechanisms.
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 dao_author: symbolpunk
 dao_sme: dzgoldman
 ---

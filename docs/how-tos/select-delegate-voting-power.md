@@ -3,10 +3,6 @@ id: select-delegate-voting-power
 title: "How to delegate your voting power: A guide for $ARB token holders"
 sidebar_label: Delegate your voting power
 description: Learn how to delegate your voting power to a values-aligned Arbitrum DAO delegate.
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 dao_author: symbolpunk
 dao_sme: amarrazza
 ---

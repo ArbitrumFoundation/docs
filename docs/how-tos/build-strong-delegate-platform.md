@@ -3,10 +3,6 @@ id: build-strong-delegate-platform
 title: How to build a strong delegate platform
 sidebar_label: Build a delegate platform
 description: Learn how to build a strong delegate platform as a delegate of the Arbitrum DAO.
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 dao_author: symbolpunk
 dao_sme: amarrazza
 ---

@@ -3,10 +3,6 @@ id: dao-comprehension-check
 title: "Arbitrum DAO: Comprehension check"
 sidebar_label: Comprehension check
 description: Self-assess your understanding of the Arbitrum DAO and its governance mechanisms.
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 dao_author: symbolpunk
 dao_sme: dzgoldman
 ---
@@ -68,8 +64,7 @@ The process for proposing and implementing changes to the Constitution is as des
 
 #### How can you become a member of the Security Council?
 
-The Security Council has 12 members, who are divided into a July cohort of 6 members, and a January cohort of 6 members. Every year on July 15th, 12:00 UTC, an election starts for the July 6th cohort seats; and every year on January 15th, 12:00 UTC, an election starts for the January 6th cohort seats. To become a member of the Security Council, you'd need to be elected through this process.
-
+The Security Council has 12 members, who are divided into two cohorts of 6 members each. Every 6 months, an election occurs. Refer to the [Constitution](dao-constitution.md) for more details on the election process.
 
 ### Scenario 6: You want to upgrade the Arbitrum One chain
 
