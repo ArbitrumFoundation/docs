@@ -7,10 +7,9 @@ description: Read the Constitution of the Arbitrum DAO, the ultimate governing d
 
 
 ```
- - FINAL-TODO: link to AIP-1
- - FINAL-TODO: snapshot link
- - FINAL-TODO: sweep for cohort references - ensure all docs are updated to reflect new cohort timelines (feb/aug)
- - FINAL-TODO: once constitution is finalized, update this page and all other downstream pages
+ - FINAL-TODO: link to AIP-1 below - Matt?
+ - FINAL-TODO: snapshot link below - Matt?
+ - FINAL-TODO: once constitution is finalized, update this page and all other downstream pages - Matt -> Mick
 ```
 
 <div id='constitution'>

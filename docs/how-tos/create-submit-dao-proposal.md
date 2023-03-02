@@ -3,10 +3,6 @@ id: create-submit-dao-proposal
 title: How to submit a DAO proposal
 sidebar_label: Submit a DAO proposal
 description: Learn how to submit a proposal to the Arbitrum DAO's governance forum by using Snapshot to conduct a temperature check, and then Tally to facilitate an on-chain vote.
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 dao_author: amarrazza
 dao_sme: amarrazza
 ---
@@ -16,9 +12,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 <DraftExpectationsPartial />
 
 ```
- - FINAL-TODO: link audit
- - FINAL-TODO: feedback nudged us to update "your" to "the" throughout - unless this has legal implications, recommend addressing reader directly
- - FINAL-TODO: sweep for forum.arbitrum.foundation vs forum.arbitrum.foundation
+ - FINAL-TODO: link audit for forum, tally, and snapshot bits - Matt/Austin?
 ```
 
 In this how-to, you'll learn how to submit an Arbitrum Improvement Proposal (AIP) to the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>. Familiarity with Arbitrum, DAOs, and Ethereum is expected. Otherwise, this how-to makes no assumptions about your experience with governance protocols.

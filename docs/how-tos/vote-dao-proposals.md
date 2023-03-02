@@ -3,10 +3,6 @@ id: vote-dao-proposals
 title: How to vote on Arbitrum DAO governance proposals
 sidebar_label: Vote on proposals
 description: Learn how to vote on Arbitrum DAO governance proposals.
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 dao_author: symbolpunk
 dao_sme: amarrazza
 ---
