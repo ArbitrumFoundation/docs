@@ -3,10 +3,6 @@ id: airdrop-eligibility-distribution
 title: $ARB airdrop eligibility and distribution specifications
 sidebar_label: Airdrop eligibility and distribution
 description: Learn about the $ARB airdrop eligibility and distribution specifications.
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 dao_author: pearring
 dao_sme: pearring
 ---
@@ -16,9 +12,8 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 <DraftExpectationsPartial />
 
 ```
- - FINAL-TODO: strategy inputs
- - FINAL-TODO: hop protocol bounty program notes below
- - FINAL-TODO: point-to-token numbers
+ - FINAL-TODO: strategy inputs - Matt?
+ - FINAL-TODO: hop protocol bounty program notes below - Matt?
 ```
 
 

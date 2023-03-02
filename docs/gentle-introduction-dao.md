@@ -3,10 +3,6 @@ id: gentle-intro-dao-governance
 title: A gentle introduction to Arbitrum DAO
 sidebar_label: A gentle introduction
 description: Learn about the Arbitrum DAO, the $ARB governance token, how to claim $ARB tokens as an eligible airdrop recipient, the role of delegates in the Arbitrum DAO, and more.
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 dao_author: symbolpunk
 dao_sme: dzgoldman
 ---
@@ -16,10 +12,8 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 <DraftExpectationsPartial />
 
 ```
- - FINAL-TODO: align on whether or not we want to use the term "democratic" to describe the governance model
- - FINAL-TODO: is there a deadline for determining eligibility? if so, what is it?
- - FINAL-TODO: do we want to advertise the planned airdrop date of February 28th?
- - FINAL-TODO: ok to include `dao_author` and `dao_sme` in frontmatter? thought -> issues can be auto-assigned to these two github ids via the "request an update" widget, and then we can auto-distribute / rotate sme ownership
+ - FINAL-TODO: is there a deadline for determining eligibility (see below)? if so, what is it? - Matt?
+ - FINAL-TODO: wen airdrop guidance (see below)? - Matt?
 ```
 
 
@@ -150,9 +144,8 @@ To ensure that token recipients and DAO delegates have the best possible experie
 
 ### Wen airdrop?
 
-The $ARB airdrop is currently scheduled for February 28th (FINAL-TODO) - this is when you'll be able to claim your tokens on the [governance portal](http://gov.arbitrum.foundation) - the same portal used to check eligibility. You'll then be able to [select a delegate](./how-tos/select-delegate-voting-power.md) or [vote directly on proposals](./how-tos/vote-dao-proposals.md).
+You'll soon be able to claim your tokens on the [governance portal](http://gov.arbitrum.foundation) - the same portal used to check eligibility. You'll then be able to [select a delegate](./how-tos/select-delegate-voting-power.md) or [vote directly on proposals](./how-tos/vote-dao-proposals.md). Stay tuned on [Discord](https://discord.gg/arbitrum) and [Telegram](https://t.me/arbitrum) for updates.
 
-If this target date changes, this document will be updated.
 
 ### Where can I learn more?
 

@@ -3,10 +3,6 @@ id: state-of-progressive-decentralization
 title: The state of Arbitrum's progressive decentralization
 sidebar_label: State of decentralization
 description: Learn about the state of Arbitrum's progressive decentralization.
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 dao_author: dzgoldman
 dao_sme: dzgoldman
 ---
@@ -16,9 +12,9 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 <DraftExpectationsPartial />
 
 ```
- - FINAL-TODO: List of validators
- - FINAL-TODO: number of validators
- - FINAL-TODO: component descriptions (or remove colons)
+ - FINAL-TODO: List of validators - Daniel?
+ - FINAL-TODO: number of validators - Daniel?
+ - FINAL-TODO: component descriptions (or remove colons) - Daniel?
 ```
 
 <a data-quicklook-from='progressive-decentralization'>Progressive decentralization</a> is the process of gradually increasing the decentralization of a system over time. This document details the current state of progressive decentralization for the <a data-quicklook-from='arbitrum-one'>Arbitrum One</a> and <a data-quicklook-from='arbitrum-nova'>Arbitrum Nova</a> chains.
