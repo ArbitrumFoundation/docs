@@ -9,7 +9,7 @@
 ### Airdrop {#airdrop}
 <p></p>
 
-<p>A mechanism that distributes tokens to qualifying wallet addresses, usually based on on-chain activity. The <a href="/dao-glossary#arbitrum-foundation">Arbitrum Foundation</a> airdrop will distribute <a href="/dao-glossary#arb">$ARB</a> tokens to eligible wallet addresses on TODO according to the airdrop eligibility and distribution criteria specified in our <a href='/airdrop-eligibility-distribution'>overview of airdrop eligibility and specifications</a>.</p>
+<p>A mechanism that distributes tokens to qualifying wallet addresses, usually based on on-chain activity. The <a href="/dao-glossary#arbitrum-foundation">Arbitrum Foundation</a> airdrop will distribute <a href="/dao-glossary#arb">$ARB</a> tokens to eligible wallet addresses according to the airdrop eligibility and distribution criteria specified in our <a href='/airdrop-eligibility-distribution'>overview of airdrop eligibility and specifications</a>.</p>
 
 
 
