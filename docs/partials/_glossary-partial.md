@@ -174,10 +174,10 @@ The client software implements a protocol that stores transaction history within
 <p>A consensus-layer client that powers Ethereum <a href="/dao-glossary#layer-1-l1">Layer 1 (L1)</a>. Originally created by Prysmatic Labs; acquired by Offchain Labs in 2022.</p>
 
 ### Security Council {#security-council}
-<p>A 12-member council of publicly known entities who hold the private keys to a 12-member <a href="/dao-glossary#multisignature-wallet">Multisignature wallet</a>. Members of the council use this wallet to perform <a href="/dao-glossary#emergency-action">Emergency action</a>s and <a href="/dao-glossary#nonemergency-action">Non-emergency action</a>s.</p>
+<p>A 12-member council of entities who hold the private keys to a 12-member <a href="/dao-glossary#multisignature-wallet">Multisignature wallet</a>. Members of the council use this wallet to perform <a href="/dao-glossary#emergency-action">Emergency action</a>s and <a href="/dao-glossary#nonemergency-action">Non-emergency action</a>s.</p>
 
 ### Security Council election {#security-council-election}
-<p>A process by which the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> can reelect the members of the <a href="/dao-glossary#security-council">Security Council</a>. Happens twice a year.</p>
+<p>A process by which the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> can elect the members of the <a href="/dao-glossary#security-council">Security Council</a>. Happens twice a year.</p>
 
 ### Seed phrase {#seed-phrase}
 <p>Also referred to as "recovery phrase" or "backup phrase". A highly sensitive, deterministic sequence of words that you can use to recover your Ethereum wallet's private keys if you lose your credentials or device.</p>
@@ -186,7 +186,7 @@ The client software implements a protocol that stores transaction history within
 <p>Self-executing code that's stored and executed on the Ethereum blockchain - either on <a href="/dao-glossary#layer-1-l1">Layer 1 (L1)</a> or <a href="/dao-glossary#layer-2-l2">Layer 2 (L2)</a>. Smart contracts let you automate tasks and protocols in a <a href="/dao-glossary#trustless">Trustless</a> manner. The <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> uses smart contracts to trustlessly implement the protocol defined by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a>.</p>
 
 ### Snapshot poll {#snapshot-poll}
-<p>Mechanism by which <a href="/dao-glossary#delegate">Delegate</a>s can vote off-chain; used for temperature checks.</p>
+<p>Mechanism by which <a href="/dao-glossary#delegate">Delegate</a>s can vote off-chain; used for temperature checks in conjunction with the Arbitrum DAO governance forum.</p>
 
 ### Standard Token gateway {#standard-token-gateway}
 <p></p>

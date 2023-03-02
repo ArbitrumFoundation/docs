@@ -57,7 +57,7 @@ Note that the Security Council may also approve and implement routine software u
 
 #### What process should be followed to implement this change?
 
-The process for proposing and implementing changes to the Constitution is as described in the Constitution itself. It involves submitting the proposal as an AIP, and then going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority of votable tokens being voted in favor of the change. Changes to the Constitution must also be ratified by the Security Council with a 7-of-12 approval in order to take effect.
+The process for proposing and implementing changes to the Constitution is as described in the Constitution itself. It involves submitting the proposal as an AIP, and then going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority (see: [Constitution](dao-constitution.md)) of votable tokens being voted in favor of the change. Changes to the Constitution must also be ratified by the Security Council with a 7-of-12 approval in order to take effect.
 
 
 ### Scenario 5: You want to become a member of the Security Council
@@ -70,7 +70,7 @@ The Security Council has 12 members, who are divided into two cohorts of 6 membe
 
 #### What process should be followed to execute this upgrade?
 
-The process for upgrading the Arbitrum One chain involves submitting a proposal as an AIP and going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority of votable tokens being voted in favor of the change. The upgrade must also be approved by the Security Council with a 7-of-12 approval in order to take effect. The chain owner(s) will then perform the upgrade by updating the contract implementation of any of Arbitrum's core protocol [Transparent Upgradeable Proxy contracts](https://developer.arbitrum.io/useful-addresses), and adjusting system parameters (for example: through `setter` methods in the [ArbOwner precompile](https://github.com/OffchainLabs/nitro/blob/master/contracts/src/precompiles/ArbOwner.sol)).
+The process for upgrading the Arbitrum One chain involves submitting a proposal as an AIP and going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority (see: [Constitution](dao-constitution.md)) of votable tokens being voted in favor of the change. The upgrade must also be approved by the Security Council with a 7-of-12 approval in order to take effect. The chain owner(s) will then perform the upgrade by updating the contract implementation of any of Arbitrum's core protocol [Transparent Upgradeable Proxy contracts](https://developer.arbitrum.io/useful-addresses), and adjusting system parameters (for example: through `setter` methods in the [ArbOwner precompile](https://github.com/OffchainLabs/nitro/blob/master/contracts/src/precompiles/ArbOwner.sol)).
 
 It's important to note that the upgrade should be thoroughly tested and reviewed by the community and experts in the field before being proposed and implemented. Any upgrade should also be compliant with the applicable laws, in particular sanctions-related regulations.
 
