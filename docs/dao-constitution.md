@@ -9,7 +9,6 @@ description: Read the Constitution of the Arbitrum DAO, the ultimate governing d
 ```
  - FINAL-TODO: link to AIP-1 below - Matt?
  - FINAL-TODO: snapshot link below - Matt?
- - FINAL-TODO: once constitution is finalized, update this page and all other downstream pages - Matt -> Mick
 ```
 
 <div id='constitution'>
@@ -26,9 +25,6 @@ description: Read the Constitution of the Arbitrum DAO, the ultimate governing d
     <li><strong>Votable Tokens</strong>: All $ARB tokens in existence, excluding any tokens held by The Arbitrum Foundation and any unclaimed airdrops</li>
 </ul>
 <h3 id="section-1-chain-ownership-">Section 1: Chain &quot;ownership&quot;</h3>
-
-
-
 <p>This Constitution describes the decision-making framework for the Arbitrum DAO governance of the Arbitrum DAO-governed chains. The DAO may authorize the creation of additional chains using the Arbitrum technology, but each additional chain must be authorized by a corresponding AIP (i.e., no more than one chain may be authorized in each AIP). Any chain that is so authorized must be governed by the $ARB token and solely by this Constitution and the procedures as described in AIP-1.</p>
 <p>The Arbitrum protocol allows each chain to have one or more &quot;chain owners&quot; who have the power to take administrative actions that change a chain&#39;s core protocol and code and/or alter any of its core parameters. The &quot;chain owner&quot; will also have the power to upgrade certain associated Layer 1 contracts. The &quot;chain owner&quot; will control affordances on the chain such as updating the contract implementation of any of Arbitrum&#39;s core protocol <a href="https://developer.arbitrum.io/useful-addresses">Transparent Upgradeable Proxy contracts</a>, and adjusting system parameters via, e.g., setter methods in the <a href="https://github.com/OffchainLabs/nitro/blob/master/contracts/src/precompiles/ArbOwner.sol">ArbOwner</a> precompile.</p>
 <p>With the $ARB token generation event and subsequent creation of the Arbitrum DAO having occurred, &quot;owner&quot; privileges on both chains have been given to both the Arbitrum DAO and the Security Council of The Arbitrum Foundation.</p>
