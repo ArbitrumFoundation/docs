@@ -28,6 +28,10 @@ import AnatomyAIPPartial from '@site/docs/partials/_anatomy-aip-partial.md';
 
 ### The lifecycle of an Arbitrum Improvement Proposal
 
+#### Technical overview
+
+For a technical lifecycle overview, visit [Governance Proposal Lifecyle: Example](https://github.com/OffchainLabs/governance/blob/main/docs/proposal_lifecycle_example.md).
+
 
 #### High-level overview
 

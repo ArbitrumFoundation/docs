@@ -35,14 +35,16 @@ See [Constitution](../dao-constitution.md) for further details.
 
 ### Proposal structure
 
-Although the proposal template is available [here](https://forum.arbitrum.foundation/t/delegation-submission-template/16) (FINAL-TODO)
-
-
 import AnatomyAIPPartial from '@site/docs/partials/_anatomy-aip-partial.md'; 
 
 <AnatomyAIPPartial />
 
+The proposal template is available [here](https://forum.arbitrum.foundation/t/delegation-submission-template/16) (FINAL-TODO).
 
+
+### Pre-proposal development
+
+Proposals that require code changes should include the code that will be executed when the proposal is passed. This code should handle the data structures, logic, executable data, and execution of the proposal. Refer to [Governance Proposal Lifecyle: Example](https://github.com/OffchainLabs/governance/blob/main/docs/proposal_lifecycle_example.md) for an example.
 
 ### Step 1: Conduct a formal temperature check with a Snapshot poll
 
