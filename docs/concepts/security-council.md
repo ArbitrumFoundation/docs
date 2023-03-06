@@ -19,7 +19,7 @@ The primary role of the Security Council is to address critical risks associated
 
 ### How the elections work
 
-The Security Council is a 12-member council divided into two groups: the "August Cohort" and the "February Cohort". Every year, on August 15th and February 15th, there are elections to fill the seats in these two groups, respectively.
+The Security Council is a 12-member council divided into two groups. Every six months, there are elections to fill the seats in these two groups, respectively.
 
 Every elected Security Council member’s term lasts one year, excluding the first cohort’s member terms, which are truncated by the amount of time between the date of the first election specified in the Constitution and the date of the DAO's launch.
 
