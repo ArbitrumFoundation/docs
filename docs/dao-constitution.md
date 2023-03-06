@@ -22,7 +22,7 @@ description: Read the Constitution of the Arbitrum DAO, the ultimate governing d
     <li><strong>AIP</strong>: An Arbitrum Improvement Proposal</li>
     <li><strong>AIP-1</strong>: Arbitrum Improvement Proposal - 1: Arbitrum Proposal Framework</li>
     <li><strong>Arbitrum DAO-governed chains</strong>: The Arbitrum One and Arbitrum Nova chains and any additional chains authorized by the Arbitrum DAO</li>
-    <li><strong>DAO Treasury</strong>: All $ARB tokens held in a governance smart contract governed directly by the Arbitrum DAO and The Arbitrum Foundation via on-chain voting mechanisms.
+    <li><strong>DAO Treasury</strong>: All $ARB tokens held in a governance smart contract governed directly by the Arbitrum DAO and The Arbitrum Foundation via on-chain voting mechanisms.</li>
     <li><strong>Votable Tokens</strong>: All $ARB tokens in existence, excluding any tokens held by The Arbitrum Foundation and any unclaimed airdrops</li>
 </ul>
 <h3 id="section-1-chain-ownership-">Section 1: Chain &quot;ownership&quot;</h3>
