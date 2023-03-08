@@ -1,6 +1,6 @@
 ---
 id: gentle-intro-dao-governance
-title: A gentle introduction to Arbitrum DAO
+title: A gentle introduction to the Arbitrum DAO
 sidebar_label: A gentle introduction
 description: Learn about the Arbitrum DAO, the $ARB governance token, how to claim $ARB tokens as an eligible airdrop recipient, the role of delegates in the Arbitrum DAO, and more.
 dao_author: symbolpunk
