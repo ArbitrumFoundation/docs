@@ -1,6 +1,6 @@
 ---
 id: gentle-intro-dao-governance
-title: A gentle introduction to Arbitrum DAO
+title: A gentle introduction to the Arbitrum DAO
 sidebar_label: A gentle introduction
 description: Learn about the Arbitrum DAO, the $ARB governance token, how to claim $ARB tokens as an eligible airdrop recipient, the role of delegates in the Arbitrum DAO, and more.
 dao_author: symbolpunk
@@ -20,7 +20,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 **In a nutshell:**
 
 - <a data-quicklook-from='arbitrum-rollup-protocol'>Arbitrum Rollup</a> and <a data-quicklook-from='arbitrum-anytrust-protocol'>Arbitrum AnyTrust</a> are protocols that make Ethereum transactions faster and cheaper. Developers use Arbitrum One and Arbitrum Nova, the chains that implement these protocols, respectively, to build user-friendly <a data-quicklook-from='decentralized-apps-dapps'>decentralized apps</a>.
-- The distribution of the <a data-quicklook-from='arb'>$ARB</a> governance token decentralizes governance of these protocols and their respective chains.
+- The distribution of the <a data-quicklook-from='arb'>$ARB</a> governance token decentralizes governance of these protocols and their respective chains, as well any future chains the Arbitrum DAO authorizes.
 - $ARB tokens can be used to vote on Arbitrum DAO governance proposals, allowing $ARB holders to shape Arbitrum's future together.
 - Token holders will be able to delegate their voting power to <a data-quicklook-from='delegate'>delegates</a>.
 - **To determine your airdrop eligibility**, connect your wallet to the Arbitrum One network on [gov.arbitrum.foundation](http://gov.arbitrum.foundation) and follow the prompts. Do this by FINAL-TODO.
@@ -96,6 +96,8 @@ Arbitrum's governance system is responsible for making many types of decisions. 
  1. An upgrade could improve the system in some way, like increase its decentralization or optimize its performance and lower fees. 
  2. An upgrade could fix a critical vulnerability. 
  3. An upgrade could address a non-critical decision that affects the Arbitrum ecosystem at large. 
+
+ The Arbitrum DAO is also responsible for authorization the creation of new L2 chains (see [New Chains](./new-arb-chains)).
 
 Refer to the [Constitution](./dao-constitution.md) for a precise overview of the scope of the DAO's decision-making responsibilities. See [Why governance?](./why-governance) to learn more about the importance of governance. See [Comprehension check](./dao-comprehension-check) to test your understanding of the Constitution's protocol.
 
