@@ -105,7 +105,7 @@ const config = {
                 label: 'Telegram',
                 href: 'https://t.me/arbitrum',
               },
-            ],
+            ]
           },
           {
             title: 'More',
@@ -122,6 +122,13 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      announcementBar: {
+        id: "support_us",
+         content: `Arbitrum DAO has been officially announced. The airdrop won’t be live until FINAL-TODO. Apply to be a delegate <a rel="noopener noreferrer" href="https://forum.arbitrum.foundation/t/delegation-submission-template/16">here</a>.`,
+        backgroundColor: "rgb(8 53 117)",
+        textColor: "white",
+        isCloseable: false,
       },
     }),
 };
