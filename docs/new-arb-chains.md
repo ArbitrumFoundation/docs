@@ -20,7 +20,7 @@ This is true for several reasons:
 1. **Better Scalability** While Arbitrum chains help alleviate the scaling bottlenecks of Ethereum, Arbitrum chains themselves hit their own similar scaling bottlenecks (e.g. state grown and congestion limits).
    An ecosystem with multiple chains alleviates these bottlenecks by siloing activity into opt-in environments which manage their own resources separately.
 1. **Different Security Models** Different chains can experiment with different security models and take advantage of the trade-offs they offer. This can currently be seen, for example with, Arbitrum One and Arbitrum Nova, the former which offers stronger trust-minimization, and the later which offers lower fees.
-1. **Different Execution Environments** Different chains can also experiment with different execution environments. Arbitrum chains are fully EVM compatible; app-specific chains can deliberately have more restrictive smart contract functionality to optimize for better performance; in the future, [Stylus](https://offchain.medium.com/hello-stylus-6b18fecc3a22) will add additional functionality on top of the EVM.
+1. **Different Execution Environments** Different chains can also experiment with different execution environments. Arbitrum chains are fully EVM compatible; app-specific chains can deliberately have more restrictive smart contract functionality to optimize for better performance.
 
 It's thus crucial that the Arbitrum ecosystem have a strategy for a multi-chain world.
 

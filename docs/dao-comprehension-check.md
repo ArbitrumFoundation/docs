@@ -75,7 +75,14 @@ The process for upgrading the Arbitrum One chain involves submitting a proposal 
 It's important to note that the upgrade should be thoroughly tested and reviewed by the community and experts in the field before being proposed and implemented. Any upgrade should also be compliant with the applicable laws, in particular sanctions-related regulations.
 
 
-### Scenario 7: The Arbitrum DAO experiences a season of voter apathy.
+### Scenario 7: You want to create a new Arbitrum chain.
+
+#### What do you need to do next?
+
+It depends! If you want to create a new L3 chain, you can simply go ahead and deploy it. If you want to create a new L2 chain, you need to [submit a proposal](./how-tos/create-submit-dao-proposal) to have the chain approved & authorized the Arbitrum DAO. (See [New Chains](new-arb-chains.md).)
+
+
+### Scenario 8: The Arbitrum DAO experiences a season of voter apathy.
 
 #### Will this prevent work from being done on the chains that the Arbitrum DAO owns?
 
@@ -84,7 +91,7 @@ It's important to note that the upgrade should be thoroughly tested and reviewed
 Note that voter apathy could have an impact on the governance of the DAO, and certain decisions and actions might not be as representative of the community's collective will if voter turnout is low.
 
 
-### Scenario 8: You've claimed $ARB tokens, but you don't have time to actively participate in Arbitrum DAO's governance.
+### Scenario 9: You've claimed $ARB tokens, but you don't have time to actively participate in Arbitrum DAO's governance.
 
 #### What options do you have?
 
@@ -97,14 +104,14 @@ If you've claimed $ARB tokens but don't have time to actively participate in the
 While participating in governance is an important aspect of being a DAO member, it's not mandatory. As long as you hold $ARB tokens, you can participate in the Arbitrum DAO's governance protocol, but there aren't any consequences if you decide to not participate.
 
 
-### Scenario 9: You want to propose a change to the way that unclaimed airdropped $ARB tokens are distributed
+### Scenario 10: You want to propose a change to the way that unclaimed airdropped $ARB tokens are distributed
 
 #### What's the process for proposing and implementing this change?
 
 The process for proposing and implementing changes to the distribution of unclaimed airdropped $ARB tokens involves submitting a proposal as an AIP and going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority of votable tokens being voted in favor of the change. Additionally, the change must also be approved by the Security Council with a 7-of-12 approval in order to take effect. The distribution of unclaimed airdropped $ARB tokens should be thoroughly evaluated and reviewed by the community and experts in the field before being proposed and implemented.
 
 
-### Scenario 10: A governance proposal passes that you voted against.
+### Scenario 11: A governance proposal passes that you voted against.
 
 #### What options do you have?
 
