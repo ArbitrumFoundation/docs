@@ -3,10 +3,6 @@ id: vote-dao-proposals
 title: How to vote on Arbitrum DAO governance proposals
 sidebar_label: Vote on proposals
 description: Learn how to vote on Arbitrum DAO governance proposals.
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 dao_author: symbolpunk
 dao_sme: amarrazza
 ---
@@ -19,9 +15,9 @@ As a member of the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>, it's 
 
 ### Proposals in the "temperature check" stage
 
-Proposals are first submitted to the [Arbitrum DAO governance forum](https://forum.arbitrum.io/) for community discussion and debate. These forum submissions are usually accompanied by a Snapshot poll that gauges the community's interest in the proposal. As an $ARB token holder (or delegate) you can participate in these Snapshot polls and "temperature check" discussions:
+Proposals are first submitted to the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/) for community discussion and debate. These forum submissions are usually accompanied by a Snapshot poll that gauges the community's interest in the proposal. As an $ARB token holder (or delegate) you can participate in these Snapshot polls and "temperature check" discussions:
 
-1. Go to the [DAO governance forum](https://forum.arbitrum.io/).
+1. Go to the [DAO governance forum](https://forum.arbitrum.foundation/).
 2. Locate the proposal you'd like to vote on and read through the proposal and the discussion thread.
 3. Provide feedback and participate in the discussion to help shape the proposal.
 
@@ -58,4 +54,4 @@ You can grant your voting power to a <a data-quicklook-from='delegate'>delegate<
 
 ### Conclusion
 
-This system is in its early days and will likely evolve in response to feedback from readers like you. Changes made to this process will be facilitated through proposals that follow the procedure outlined in the [Constitution](../dao-constitution.md). To learn more about proposals or the voting process, refer to the [Constitution](../dao-constitution.md) and the other documents within this content set. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.io/) or [Discord](https://www.discord.gg/arbitrum).
+This system is in its early days and will likely evolve in response to feedback from readers like you. Changes made to this process will be facilitated through proposals that follow the procedure outlined in the [Constitution](../dao-constitution.md). To learn more about proposals or the voting process, refer to the [Constitution](../dao-constitution.md) and the other documents within this content set. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/) or [Discord](https://www.discord.gg/arbitrum).

@@ -9,7 +9,7 @@
 ### Airdrop {#airdrop}
 <p></p>
 
-<p>A mechanism that distributes tokens to qualifying wallet addresses, usually based on on-chain activity. The <a href="/dao-glossary#arbitrum-foundation">Arbitrum Foundation</a> airdrop will distribute <a href="/dao-glossary#arb">$ARB</a> tokens to eligible wallet addresses on TODO according to the airdrop eligibility and distribution criteria specified in our <a href='/airdrop-eligibility-distribution'>overview of airdrop eligibility and specifications</a>.</p>
+<p>A mechanism that distributes tokens to qualifying wallet addresses, usually based on on-chain activity. The <a href="/dao-glossary#arbitrum-foundation">Arbitrum Foundation</a> airdrop will distribute <a href="/dao-glossary#arb">$ARB</a> tokens to eligible wallet addresses according to the airdrop eligibility and distribution criteria specified in our <a href='/airdrop-eligibility-distribution'>overview of airdrop eligibility and specifications</a>.</p>
 
 
 
@@ -17,10 +17,10 @@
 <p>An <a href="/dao-glossary#arbitrum-chain">Arbitrum chain</a> that implements the <a href="/dao-glossary#arbitrum-anytrust-protocol"><strong>Arbitrum AnyTrust Protocol</strong></a>.</p>
 
 ### **Arbitrum AnyTrust Protocol** {#arbitrum-anytrust-protocol}
-<p>An Arbitrum protocol that manages data availability with a permissioned set of parties known as the <a href="/dao-glossary#data-availability-committee-dac"><strong>Data Availability Committee (DAC)</strong></a>. This protocol reduces transaction fees by introducing an additional trust assumption for data availability in lieu of Ethereum's <a href="/dao-glossary#trustless">Trustless</a> data availability mechanism. <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a> is an example of an AnyTrust chain; <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> is an alternative chain that implements the purely trustless (and more expensive) <a href="/dao-glossary#arbitrum-rollup-protocol"><strong>Arbitrum Rollup Protocol</strong></a>.</p>
+<p>An Arbitrum protocol that manages data availability with a permissioned set of parties known as the <a href="/dao-glossary#data-availability-committee-dac"><strong>Data Availability Committee (DAC)</strong></a>. This protocol reduces transaction fees by introducing an additional trust assumption for data availability in lieu of Ethereum's <a href="/dao-glossary#trustless">Trustless</a> data availability mechanism. <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a> is an example of an AnyTrust chain; <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> is an alternative chain that implements the purely trustless (and more L1-gas intensive) <a href="/dao-glossary#arbitrum-rollup-protocol"><strong>Arbitrum Rollup Protocol</strong></a>.</p>
 
 ### Arbitrum chain {#arbitrum-chain}
-<p>A blockchain that runs on the Arbitrum protocol. Arbitrum chains are EVM compatible, and use an underlying L1 (Ethereum) for settlement and for succinct fraud-proofs (as needed).  Arbitrum chains come in two forms: <a href="/dao-glossary#arbitrum-rollup-chain"><strong>Arbitrum Rollup Chain</strong></a> and <a href="/dao-glossary#arbitrum-anytrust-chain"><strong>Arbitrum AnyTrust Chain</strong></a>. </p>
+<p>A blockchain that runs on the Arbitrum protocol. Arbitrum chains are EVM compatible, and use an underlying L1 (Ethereum) for settlement and for succinct fraud-proofs (as needed).  Arbitrum chains come in two forms: <a href="/dao-glossary#arbitrum-rollup-chain"><strong>Arbitrum Rollup Chain</strong></a>s and <a href="/dao-glossary#arbitrum-anytrust-chain"><strong>Arbitrum AnyTrust Chain</strong></a>s. </p>
 
 ### Arbitrum Chain owner {#arbitrum-chain-owner}
 <p>An entity with the affordance to upgrade Arbitrum core protocol contracts and set various system parameters. Arbitrum One has two chain owners: the Arbitrum DAO and the Security Council.</p>
@@ -50,7 +50,7 @@
 <p>The first <a href="/dao-glossary#arbitrum-anytrust-chain"><strong>Arbitrum AnyTrust Chain</strong></a> running on Ethereum mainnet. Introduces cheaper transactions; great for gaming and social use-cases. Implements the <a href="/dao-glossary#arbitrum-anytrust-protocol"><strong>Arbitrum AnyTrust Protocol</strong></a>, not the <a href="/dao-glossary#arbitrum-rollup-protocol"><strong>Arbitrum Rollup Protocol</strong></a> protocol. </p>
 
 ### Arbitrum One {#arbitrum-one}
-<p>The first <a href="/dao-glossary#arbitrum-rollup-chain"><strong>Arbitrum Rollup Chain</strong></a> running on Ethereum mainnet. Fully <a href="/dao-glossary#trustless">Trustless</a>; inherits Ethereum's base-layer security guarantees without introducing additional trust assumptions; great for decentralized finance and other use-cases that demand <a href="/dao-glossary#layer-1-l1">Layer 1 (L1)</a> trustlessness. </p>
+<p>The first <a href="/dao-glossary#arbitrum-rollup-chain"><strong>Arbitrum Rollup Chain</strong></a> running on Ethereum mainnet. Fully trustless; inherits Ethereum's base-layer security guarantees without introducing additional trust assumptions; great for decentralized finance and other use-cases that demand L1-level trustlessness.</p>
 
 ### **Arbitrum Rollup Chain** {#arbitrum-rollup-chain}
 <p>An <a href="/dao-glossary#arbitrum-chain">Arbitrum chain</a> that implements the <a href="/dao-glossary#arbitrum-rollup-protocol"><strong>Arbitrum Rollup Protocol</strong></a>.</p>
@@ -59,7 +59,7 @@
 <p>A <a href="/dao-glossary#trustless">Trustless</a>, permissionless Arbitrum <a href="/dao-glossary#layer-2-l2">Layer 2 (L2)</a> protocol that uses it's underlying base layer (i.e., Ethereum) for data availability and inherits its security. This protocol is implemented by our <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> chain. </p>
 
 ### Claimable airdrop period {#claimable-airdrop-period}
-<p>The time period in which eligible <a href="/dao-glossary#arb">$ARB</a> token recipients are able to claim their tokens. (TODO: dates / time)</p>
+<p>The time period in which eligible <a href="/dao-glossary#arb">$ARB</a> token recipients are able to claim their tokens.</p>
 
 ### Claimed airdrop tokens {#claimed-airdrop-tokens}
 <p><a href="/dao-glossary#arb">$ARB</a> tokens claimed from the <a href="/dao-glossary#token-distributor-contract">Token Distributor Contract</a> during the <a href="/dao-glossary#claimable-airdrop-period">Claimable airdrop period</a>.</p>
@@ -74,6 +74,8 @@
 
 ### **Data Availability Committee (DAC)** {#data-availability-committee-dac}
 <p>A permissioned set of parties responsible for enforcing data availability in an <a href="/dao-glossary#arbitrum-anytrust-protocol"><strong>Arbitrum AnyTrust Protocol</strong></a> chain. See <em><a href="https://medium.com/offchainlabs/introducing-anytrust-chains-cheaper-faster-l2-chains-with-minimal-trust-assumptions-31def59eb8d7">Introducing AnyTrust Chains: Cheaper, Faster L2 Chains with Minimal Trust Assumptions</a></em> to learn more.</p>
+
+<p></p>
 
 
 
@@ -93,7 +95,7 @@
 <p>Facilitates <a href="/dao-glossary#smart-contract">Smart contract</a> logic and execution for Ethereum's <a href="/dao-glossary#layer-1-l1">Layer 1 (L1)</a>  network. Powered by execution-layer clients like <a href="/dao-glossary#geth">Geth</a>, Nethermind, and Besu.</p>
 
 ### Geth {#geth}
-<p>An execution-layer client that defines the Ethereum State transition function and handles network-layer logic like transaction memory pooling. <a href="/dao-glossary#arbitrum-nitro">Arbitrum Nitro</a> utilizes a fork of Geth to implement Arbitrum's state transition function.</p>
+<p>An execution-layer client that defines the Ethereum state transition function and handles network-layer logic like transaction memory pooling. <a href="/dao-glossary#arbitrum-nitro">Arbitrum Nitro</a> utilizes a fork of Geth to implement Arbitrum's state transition function.</p>
 
 ### Governance {#governance}
 <p>The way that decisions get made. Governance of web2 technologies traditionally depends on a board of directors abiding by trusted social contracts, while governance of web3 technologies depends on Decentralized Autonomous Organizations (DAOs) governed through <a href="/dao-glossary#trustless">Trustless</a> <a href="/dao-glossary#smart-contract">Smart contract</a>s. </p>
@@ -163,7 +165,7 @@ The client software implements a protocol that stores transaction history within
 <p>Also known as an initial coin offering (ICO). Presales are fundraising events in which a new cryptocurrency project sells a portion of its tokens to early backers. <strong><em>Arbitrum DAO did not and will never engage in a presale.</em></strong></p>
 
 ### Progressive decentralization {#progressive-decentralization}
-<p>The process of gradually increasing the decentralization of a system over time. In the context of the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>, and decentrlizing <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> and <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a>, progressive decentralization refers to decentralizing the ownership of the chains, validators, sequencers, and the <a href="/dao-glossary#data-availability-committee-dac"><strong>Data Availability Committee (DAC)</strong></a>. Refer to The state of Arbitrum's progressive decentralization for more information (TODO Link).</p>
+<p>The process of gradually increasing the decentralization of a system over time. In the context of the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>, and decentrlizing <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> and <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a>, progressive decentralization refers to decentralizing the ownership of the chains, validators, sequencers, and the <a href="/dao-glossary#data-availability-committee-dac"><strong>Data Availability Committee (DAC)</strong></a>.</p>
 
 ### Proposal waiting period {#proposal-waiting-period}
 <p>A contract-enforced delay period of roughly two weeks that begins after a <a href="/dao-glossary#governance-proposal">Governance proposal</a> is accepted, and after which the proposal takes effect. The proposal waiting period is intended to give users the option of opting out (for example, by withdrawing their funds).</p>
@@ -172,10 +174,10 @@ The client software implements a protocol that stores transaction history within
 <p>A consensus-layer client that powers Ethereum <a href="/dao-glossary#layer-1-l1">Layer 1 (L1)</a>. Originally created by Prysmatic Labs; acquired by Offchain Labs in 2022.</p>
 
 ### Security Council {#security-council}
-<p>A 12-member council of publicly known entities who hold the private keys to a 12-member <a href="/dao-glossary#multisignature-wallet">Multisignature wallet</a>. Members of the council use this wallet to perform <a href="/dao-glossary#emergency-action">Emergency action</a>s and <a href="/dao-glossary#nonemergency-action">Non-emergency action</a>s.</p>
+<p>A 12-member council of entities who hold the private keys to a 12-member <a href="/dao-glossary#multisignature-wallet">Multisignature wallet</a>. Members of the council use this wallet to perform <a href="/dao-glossary#emergency-action">Emergency action</a>s and <a href="/dao-glossary#nonemergency-action">Non-emergency action</a>s.</p>
 
 ### Security Council election {#security-council-election}
-<p>A process by which the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> can reelect the members of the <a href="/dao-glossary#security-council">Security Council</a>. Happens twice a year.</p>
+<p>A process by which the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> can elect the members of the <a href="/dao-glossary#security-council">Security Council</a>. Happens twice a year.</p>
 
 ### Seed phrase {#seed-phrase}
 <p>Also referred to as "recovery phrase" or "backup phrase". A highly sensitive, deterministic sequence of words that you can use to recover your Ethereum wallet's private keys if you lose your credentials or device.</p>
@@ -184,7 +186,7 @@ The client software implements a protocol that stores transaction history within
 <p>Self-executing code that's stored and executed on the Ethereum blockchain - either on <a href="/dao-glossary#layer-1-l1">Layer 1 (L1)</a> or <a href="/dao-glossary#layer-2-l2">Layer 2 (L2)</a>. Smart contracts let you automate tasks and protocols in a <a href="/dao-glossary#trustless">Trustless</a> manner. The <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> uses smart contracts to trustlessly implement the protocol defined by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a>.</p>
 
 ### Snapshot poll {#snapshot-poll}
-<p>Mechanism by which <a href="/dao-glossary#delegate">Delegate</a>s can vote off-chain; used for temperature checks.</p>
+<p>Mechanism by which <a href="/dao-glossary#delegate">Delegate</a>s can vote off-chain; used for temperature checks in conjunction with the Arbitrum DAO governance forum.</p>
 
 ### Standard Token gateway {#standard-token-gateway}
 <p></p>
@@ -216,7 +218,7 @@ This is achieved through the use of cryptographic techniques and decentralized c
 
 
 ### Unclaimed airdrop tokens {#unclaimed-airdrop-tokens}
-<p>Claimable <a href="/dao-glossary#arb">$ARB</a> tokens in the <a href="/dao-glossary#token-distributor-contract">Token Distributor Contract</a> not claimed by their potential owners before. After TODO, all unclaimed tokens will be sent to the <a href="/dao-glossary#arbitrum-dao-treasury">Arbitrum DAO Treasury</a>.</p>
+<p>Claimable <a href="/dao-glossary#arb">$ARB</a> tokens in the <a href="/dao-glossary#token-distributor-contract">Token Distributor Contract</a> not claimed by their potential owners.</p>
 
 ### Votable tokens {#votable-tokens}
 <p><a href="/dao-glossary#arb">$ARB</a> tokens claimed through our <a href="/dao-glossary#airdrop">Airdrop</a>. More precisely, all $ARB tokens in existence, except for:</p>

@@ -3,10 +3,6 @@ id: resubmit-dao-proposal
 title: How to resubmit a DAO proposal
 sidebar_label: Resubmit a proposal
 description: Learn how to resubmit a proposal to the Arbitrum DAO that was previously rejected or did not reach quorum.
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 dao_author: symbolpunk
 dao_sme: amarrazza
 ---
@@ -31,4 +27,4 @@ Treat your revised proposal as a brand new proposal. Begin by conducting a new t
 
 If your proposal is rejected multiple times, it may be best to reconsider the proposal altogether or to engage more extensively with the community to gather feedback and build support.
 
-Resubmitting a proposal is an iterative process that requires patience, persistence, and an open mind. By working closely with the community to capture and integrate feedback, you can increase your chances of getting your proposal passed. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.io/) or [Discord](https://www.discord.gg/arbitrum).
+Resubmitting a proposal is an iterative process that requires patience, persistence, and an open mind. By working closely with the community to capture and integrate feedback, you can increase your chances of getting your proposal passed. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/) or [Discord](https://www.discord.gg/arbitrum).

@@ -3,10 +3,6 @@ id: select-delegate-voting-power
 title: "How to delegate your voting power: A guide for $ARB token holders"
 sidebar_label: Delegate your voting power
 description: Learn how to delegate your voting power to a values-aligned Arbitrum DAO delegate.
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 dao_author: symbolpunk
 dao_sme: amarrazza
 ---
@@ -38,4 +34,4 @@ When selecting a delegate, it's important to consider the following:
  - The delegate's level of engagement with the community and their willingness to listen and respond to feedback.
  - The delegate's level of technical expertise and their experience in the space.
 
-By following these steps and considering these factors, you can ensure that you're delegating your voting power to a trustworthy and competent delegate who will work to further the goals of the Arbitrum DAO and its community. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.io/) or [Discord](https://www.discord.gg/arbitrum).
+By following these steps and considering these factors, you can ensure that you're delegating your voting power to a trustworthy and competent delegate who will work to further the goals of the Arbitrum DAO and its community. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/) or [Discord](https://www.discord.gg/arbitrum).

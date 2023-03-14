@@ -3,10 +3,6 @@ id: create-submit-dao-proposal
 title: How to submit a DAO proposal
 sidebar_label: Submit a DAO proposal
 description: Learn how to submit a proposal to the Arbitrum DAO's governance forum by using Snapshot to conduct a temperature check, and then Tally to facilitate an on-chain vote.
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 dao_author: amarrazza
 dao_sme: amarrazza
 ---
@@ -16,15 +12,14 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 <DraftExpectationsPartial />
 
 ```
- - FINAL-TODO: link audit
- - FINAL-TODO: feedback nudged us to update "your" to "the" throughout - unless this has legal implications, recommend addressing reader directly
+ - FINAL-TODO: link audit for forum, tally, and snapshot bits - Matt/Austin?
 ```
 
 In this how-to, you'll learn how to submit an Arbitrum Improvement Proposal (AIP) to the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>. Familiarity with Arbitrum, DAOs, and Ethereum is expected. Otherwise, this how-to makes no assumptions about your experience with governance protocols.
 
 ### Prerequisites
 
-To submit a temperature check using <a data-quicklook-from='snapshot-poll'>Snapshot</a> you must have an Ethereum wallet address that represents at least 0.01% of votable tokens[^1]; to submit a proposal on-chain using [Tally](https://tally.xyz/gov/arbitrum), you must have an Ethereum wallet address that represents at least 5,000,000 tokens (about 0.1% of votable tokens).
+To submit a temperature check using a <a data-quicklook-from='snapshot-poll'>Snapshot poll</a>, you must have an Ethereum wallet address that represents at least 0.01% of votable tokens[^1]; to submit a proposal on-chain using [Tally](https://tally.xyz/gov/arbitrum), you must have an Ethereum wallet address that represents at least 5,000,000 tokens (about 0.1% of votable tokens).
 
 If you don't have enough voting power, consider delegating your votes to a delegate who can create a proposal on your behalf[^2]. Note that anyone holding $ARB (regardless of the amount) is able to vote on both Snapshot and Tally proposals.
 
@@ -40,21 +35,23 @@ See [Constitution](../dao-constitution.md) for further details.
 
 ### Proposal structure
 
-Although the proposal template is available [here](https://forum.arbitrum.io/t/delegation-submission-template/16) (FINAL-TODO)
-
-
 import AnatomyAIPPartial from '@site/docs/partials/_anatomy-aip-partial.md'; 
 
 <AnatomyAIPPartial />
 
+The proposal template is available [here](https://forum.arbitrum.foundation/t/delegation-submission-template/16) (FINAL-TODO).
 
+
+### Pre-proposal development
+
+Proposals that require code changes should include the code that will be executed when the proposal is passed. This code should handle the data structures, logic, executable data, and execution of the proposal. Refer to [Governance Proposal Lifecyle: Example](https://github.com/OffchainLabs/governance/blob/main/docs/proposal_lifecycle_example.md) for an example.
 
 ### Step 1: Conduct a formal temperature check with a Snapshot poll
 
-The [DAO governance forum](https://forum.arbitrum.io/) facilitates discussions about Arbitrum DAO and <a data-quicklook-from='governance-proposal'>governance proposals</a> that are submitted by eligible token-holders. To submit your proposal:
+The [DAO governance forum](https://forum.arbitrum.foundation/) facilitates discussions about Arbitrum DAO and <a data-quicklook-from='governance-proposal'>governance proposals</a> that are submitted by eligible token-holders. To submit your proposal:
 
-1. Go to the [DAO governance forum](https://forum.arbitrum.io/).
-2. Create a new post with your proposal using the template located [here](https://forum.arbitrum.io/t/delegation-submission-template/16). You can add additional fields to this template to provide more context for your proposal if you'd like.
+1. Go to the [DAO governance forum](https://forum.arbitrum.foundation/).
+2. Create a new post with your proposal using the template located [here](https://forum.arbitrum.foundation/t/delegation-submission-template/16). You can add additional fields to this template to provide more context for your proposal if you'd like.
 3. Allow at least one week for discussion and debate. Iterate on your proposal based on feedback from the community.
 4. Navigate to [Snapshot](https://snapshot.org/#/). This is where you can create a poll that will gauge the community's interest in your proposal.
 5. Connect your wallet.
@@ -92,7 +89,7 @@ If the proposal passes, congratulations! After a delay, the proposal’s actions
 
 If the proposal doesn’t pass, but there's interest in improving and resubmitting it, refer to [How to resubmit your proposal](./resubmit-dao-proposal).
 
-This protocol is in its early days and will likely evolve in response to your feedback. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.io/) or [Discord](https://www.discord.gg/arbitrum).
+This protocol is in its early days and will likely evolve in response to your feedback. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/) or [Discord](https://www.discord.gg/arbitrum).
 
 Welcome to the future of governance!
 

@@ -26,6 +26,10 @@ module.exports = {
       id: 'dao-constitution',
     },
     {
+      type: 'doc',
+      id: 'new-arb-chains',
+    },
+    {
       type: 'category',
       label: 'How-to guides',
       collapsed: false,

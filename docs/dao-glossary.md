@@ -3,10 +3,7 @@ id: dao-glossary
 title: Arbitrum DAO glossary
 sidebar_label: Glossary
 description: Review the Arbitrum DAO's key terms and definitions.
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
+
 toc_min_heading_level: 3
 ---
 

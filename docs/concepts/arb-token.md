@@ -3,10 +3,6 @@ id: arb-token
 title: "The $ARB token: A conceptual overview"
 sidebar_label: $ARB token
 description: Learn about the $ARB governance token, a special-purpose digital asset that gives its holders the ability to vote on on-chain proposals that affect the operation and evolution of the Arbitrum DAO and the technologies it governs.
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 dao_author: symbolpunk
 dao_sme: dzgoldman
 ---

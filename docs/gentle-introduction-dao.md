@@ -1,14 +1,10 @@
 ---
 id: gentle-intro-dao-governance
-title: A gentle introduction to Arbitrum DAO
+title: A gentle introduction to the Arbitrum DAO
 sidebar_label: A gentle introduction
 description: Learn about the Arbitrum DAO, the $ARB governance token, how to claim $ARB tokens as an eligible airdrop recipient, the role of delegates in the Arbitrum DAO, and more.
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 dao_author: symbolpunk
-dao_sme: dzgoldman
+dao_sme: symbolpunk
 ---
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
@@ -16,17 +12,15 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 <DraftExpectationsPartial />
 
 ```
- - FINAL-TODO: align on whether or not we want to use the term "democratic" to describe the governance model
- - FINAL-TODO: is there a deadline for determining eligibility? if so, what is it?
- - FINAL-TODO: do we want to advertise the planned airdrop date of February 28th?
- - FINAL-TODO: ok to include `dao_author` and `dao_sme` in frontmatter? thought -> issues can be auto-assigned to these two github ids via the "request an update" widget, and then we can auto-distribute / rotate sme ownership
+ - FINAL-TODO: is there a deadline for determining eligibility (see below)? if so, what is it? - Matt?
+ - FINAL-TODO: wen airdrop guidance (see below)? - Matt?
 ```
 
 
 **In a nutshell:**
 
 - <a data-quicklook-from='arbitrum-rollup-protocol'>Arbitrum Rollup</a> and <a data-quicklook-from='arbitrum-anytrust-protocol'>Arbitrum AnyTrust</a> are protocols that make Ethereum transactions faster and cheaper. Developers use Arbitrum One and Arbitrum Nova, the chains that implement these protocols, respectively, to build user-friendly <a data-quicklook-from='decentralized-apps-dapps'>decentralized apps</a>.
-- The distribution of the <a data-quicklook-from='arb'>$ARB</a> governance token decentralizes governance of these protocols and their respective chains.
+- The distribution of the <a data-quicklook-from='arb'>$ARB</a> governance token decentralizes governance of these protocols and their respective chains, as well any future chains the Arbitrum DAO authorizes.
 - $ARB tokens can be used to vote on Arbitrum DAO governance proposals, allowing $ARB holders to shape Arbitrum's future together.
 - Token holders will be able to delegate their voting power to <a data-quicklook-from='delegate'>delegates</a>.
 - **To determine your airdrop eligibility**, connect your wallet to the Arbitrum One network on [gov.arbitrum.foundation](http://gov.arbitrum.foundation) and follow the prompts. Do this by FINAL-TODO.
@@ -92,7 +86,7 @@ If you've used Arbitrum at any time before the the snapshot date (August 31st, 2
 
 Governance of the Arbitrum Rollup protocol is driven by two governing bodies: the <a data-quicklook-from='security-council'>Security Council</a> and the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>.
 
-- The **Security Council** is a 12-member council of publicly known entities elected by members of the Arbitrum DAO. This council is responsible for ensuring Arbitrum's security and performance through the selective application of <a data-quicklook-from='emergency-action'>emergency actions</a> if/when necessary. See [Delegates and delegation](./concepts/delegate-delegation) for a conceptual overview of Arbitrum DAO's delegation mechanics.
+- The **Security Council** is a 12-member council of entities elected by members of the Arbitrum DAO. This council is responsible for ensuring Arbitrum's security and performance through the selective application of <a data-quicklook-from='emergency-action'>emergency actions</a> if/when necessary. See [Delegates and delegation](./concepts/delegate-delegation) for a conceptual overview of Arbitrum DAO's delegation mechanics.
 - The **Arbitrum DAO** is the worldwide community of $ARB token holders and the <a data-quicklook-from='delegate'>delegates</a> that they select. The DAO is responsible for governing Arbitrum and its Security Council. The DAO can use constitutional proposals to modify the Security Council's powers, or even to eliminate the Security Council entirely. The Security Council's powers are delegated to the Security Council by the DAO, and are to be exercised in the best interests of the DAO. See [Arbitrum DAO](./concepts/arbitrum-dao) for an introductory overview of the DAO's various components.
 
 ### What sorts of decisions is Arbitrum’s governance system responsible for making?
@@ -103,6 +97,8 @@ Arbitrum's governance system is responsible for making many types of decisions. 
  2. An upgrade could fix a critical vulnerability. 
  3. An upgrade could address a non-critical decision that affects the Arbitrum ecosystem at large. 
 
+ The Arbitrum DAO is also responsible for authorization the creation of new L2 chains (see [New Chains](./new-arb-chains)).
+
 Refer to the [Constitution](./dao-constitution.md) for a precise overview of the scope of the DAO's decision-making responsibilities. See [Why governance?](./why-governance) to learn more about the importance of governance. See [Comprehension check](./dao-comprehension-check) to test your understanding of the Constitution's protocol.
 
 ### Who cares about this stuff?
@@ -110,7 +106,7 @@ Refer to the [Constitution](./dao-constitution.md) for a precise overview of the
 You can think of Arbitrum stakeholder groups as a stack of layers. The **web3 user layer** is at the top of the stack. All other layers work together to support the web3 user layer:
 
 - **Web3 user layer:** Includes decentralized app (dApp) users - users of web3 applications.
-- **Web3 app layer:** Includes all of the dreamers, hackers, and makers who are building decentralized apps and tooling to support dApp development.
+- **Web3 app layer:** Includes all of the developers, dreamers, and makers who are building decentralized apps and tooling to support dApp development.
 - **Layer 2 (L2):** Includes Arbitrum DAO, the Arbitrum community, node operators, sequencers, and other Layer-2 builders (including Offchain Labs) who are working hard to fulfill Ethereum's [rollup-centric roadmap](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698).
 - **Layer 1 (L1)**: Includes consensus & execution layers.
   - **Consensus layer (CL):** Includes Prysm and other consensus-layer teams who support Ethereum's beacon chain with consensus-layer client software.
@@ -137,7 +133,7 @@ Delegates are a critical component of Arbitrum's decentralization because they a
 1. **Select a delegate** to vote on your behalf. Choose this option if you're too busy to regularly vote on Arbitrum DAO proposals. See [Delegate your voting power](./how-tos/select-delegate-voting-power) for detailed instructions.
 2. **Self-delegate** to vote directly on DAO proposals. Great for studious fans of direct democracy. See [Vote on proposals](./how-tos/vote-dao-proposals) for detailed instructions.
 3. **Become a delegate** to vote on behalf of token holders who entrust you with their voting power. Great for the community's most passionate evangelists. See [Become a delegate](./how-tos/apply-become-delegate) for detailed instructions.
-4. **Participate in governance discussions** on the [Arbitrum DAO governance forum](https://forum.arbitrum.io/).
+4. **Participate in governance discussions** on the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/).
 5. **Join the community of Arbinauts** on [Discord](https://discord.gg/arbitrum).
 
 ### Why can't I claim my $ARB tokens right now?
@@ -150,9 +146,8 @@ To ensure that token recipients and DAO delegates have the best possible experie
 
 ### Wen airdrop?
 
-The $ARB airdrop is currently scheduled for February 28th (FINAL-TODO) - this is when you'll be able to claim your tokens on the [governance portal](http://gov.arbitrum.foundation) - the same portal used to check eligibility. You'll then be able to [select a delegate](./how-tos/select-delegate-voting-power.md) or [vote directly on proposals](./how-tos/vote-dao-proposals.md).
+You'll soon be able to claim your tokens on the [governance portal](http://gov.arbitrum.foundation) - the same portal used to check eligibility. You'll then be able to [select a delegate](./how-tos/select-delegate-voting-power.md) or [vote directly on proposals](./how-tos/vote-dao-proposals.md). Stay tuned on [Discord](https://discord.gg/arbitrum) and [Telegram](https://t.me/arbitrum) for updates.
 
-If this target date changes, this document will be updated.
 
 ### Where can I learn more?
 
@@ -166,6 +161,6 @@ You're in the right place! The following docs elaborate on the finer details of 
 
  - [Discord](https://discord.gg/arbitrum)
  - [Telegram](https://t.me/arbitrum)
- - [Arbitrum DAO governance forum](https://forum.arbitrum.io/)
+ - [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/)
 
 Welcome to the future of governance!

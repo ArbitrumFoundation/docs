@@ -3,10 +3,6 @@ id: airdrop-eligibility-distribution
 title: $ARB airdrop eligibility and distribution specifications
 sidebar_label: Airdrop eligibility and distribution
 description: Learn about the $ARB airdrop eligibility and distribution specifications.
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 dao_author: pearring
 dao_sme: pearring
 ---
@@ -16,9 +12,8 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 <DraftExpectationsPartial />
 
 ```
- - FINAL-TODO: strategy inputs
- - FINAL-TODO: hop protocol bounty program notes below
- - FINAL-TODO: point-to-token numbers
+ - FINAL-TODO: strategy inputs - Matt?
+ - FINAL-TODO: hop protocol bounty program notes below - Matt?
 ```
 
 
@@ -87,13 +82,13 @@ The only official website for the $ARB airdrop is [https://gov.arbitrum.foundati
         <td>Offchain Labs investors</td>
     </tr>
     <tr>
-        <td>5%</td>
-        <td>500 million</td>
+        <td>6.89%</td>
+        <td>689 million</td>
         <td><strong>Users</strong> of the Arbitrum platform (via airdrop to user wallet addresses)</td>
     </tr>
     <tr>
-        <td>3%</td>
-        <td>300 million</td>
+        <td>1.11%</td>
+        <td>111 million</td>
         <td><strong>DAOs</strong> building apps on Arbitrum (via airdrop to DAO treasury addresses)</td>
     </tr>
 </table>
@@ -138,43 +133,43 @@ A points systems was used to determine the number of tokens that airdrop recipie
     </tr>
     <tr>
         <td>3</td>
-        <td>FINAL-TODO</td>
+        <td>1,200</td>
     </tr>
     <tr>
         <td>4</td>
-        <td>FINAL-TODO</td>
+        <td>1,700</td>
     </tr>
     <tr>
         <td>5</td>
-        <td>FINAL-TODO</td>
+        <td>2,200</td>
     </tr>
     <tr>
         <td>6</td>
-        <td>FINAL-TODO</td>
+        <td>3,200</td>
     </tr>
     <tr>
         <td>7</td>
-        <td>FINAL-TODO</td>
+        <td>3,700</td>
     </tr>
     <tr>
         <td>8</td>
-        <td>FINAL-TODO</td>
+        <td>4,200</td>
     </tr>
     <tr>
         <td>9</td>
-        <td>FINAL-TODO</td>
+        <td>6,200</td>
     </tr>
     <tr>
         <td>10</td>
-        <td>FINAL-TODO</td>
+        <td>6,700</td>
     </tr>
     <tr>
         <td>11</td>
-        <td>FINAL-TODO</td>
+        <td>7,200</td>
     </tr>
     <tr>
         <td>12 or more</td>
-        <td>FINAL-TODO</td>
+        <td>10,200</td>
     </tr>
 </table>
 
@@ -189,4 +184,4 @@ To prevent bots from taking advantage of the airdrop, a number of anti-Sybil rul
  - If an airdrop recipient's wallet address has been identified as a Sybil address during the Hop protocol bounty program (FINAL-TODO: footnote), (FINAL-TODO: disqualified?). 
  - If an airdrop recipient's wallet address is part of a parent/children wallet arrangement whereby the parent has funded more than 25 children addresses, all addresses are collapsed into a single user wallet address. 
 
-Refer to [Arbitrum Sybil Hunting](https://github.com/OffchainLabs/arb-sybil/tree/master/v2) to learn more about our Sybil mitigation methodology. Refer to our [Sybil accounts](./concepts/sybil-account.md) concept document t for a conceptual introduction to Sybil accounts.
+Refer to [Arbitrum Sybil Hunting](https://github.com/OffchainLabs/arb-sybil/tree/master/v2) to learn more about our Sybil mitigation methodology. Refer to our [Sybil accounts](./concepts/sybil-account.md) concept document for a conceptual introduction to Sybil accounts.

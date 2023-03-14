@@ -3,10 +3,6 @@ id: delegate-delegation
 title: "Delegates and delegation: A conceptual overview"
 sidebar_label: Delegates and delegation
 description: Learn about the role of delegates and delegation within the context of the Arbitrum DAO.
-voice: Arbitrum DAO
-tone: Objective, succinct, precise.
-tense: Present - avoid present progressive. Past tense as needed.
-person: Second/third - address reader directly as "you" when appropriate, refer to the DAO as the DAO, not as "we".
 dao_author: symbolpunk
 dao_sme: dzgoldman
 ---
@@ -37,6 +33,6 @@ The Arbitrum DAO uses [Tally](https://tally.xyz/gov/arbitrum) to facilitate dele
 
 Note that through Tally, you can change or revoke your delegation at any time. You can also proportionally delegate your voting power to multiple delegates. For more detailed how-to guidance, see [How to delegate your voting power](../how-tos/select-delegate-voting-power).
 
-## Conclusion
+### Conclusion
 
 The Arbitrum DAO's delegation mechanism lets $ARB token holders passively participate in Arbitrum DAO's governance by facilitating the transfer of their token-weighted voting power to values-aligned representatives of the Arbitrum DAO's values, as defined by [The Constitution of the Arbitrum DAO](../dao-constitution.md). 
