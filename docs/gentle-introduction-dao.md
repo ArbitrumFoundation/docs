@@ -13,7 +13,6 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 ```
  - FINAL-TODO: is there a deadline for determining eligibility (see below)? if so, what is it? - Matt?
- - FINAL-TODO: wen airdrop guidance (see below)? - Matt?
 ```
 
 
@@ -23,7 +22,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 - The distribution of the <a data-quicklook-from='arb'>$ARB</a> governance token decentralizes governance of these protocols and their respective chains, as well any future chains the Arbitrum DAO authorizes.
 - $ARB tokens can be used to vote on Arbitrum DAO governance proposals, allowing $ARB holders to shape Arbitrum's future together.
 - Token holders will be able to delegate their voting power to <a data-quicklook-from='delegate'>delegates</a>.
-- **To determine your airdrop eligibility**, connect your wallet to the Arbitrum One network on [gov.arbitrum.foundation](http://gov.arbitrum.foundation) and follow the prompts. Do this by FINAL-TODO.
+- **To determine your airdrop eligibility**, connect your wallet to the Arbitrum One network on [gov.arbitrum.foundation](http://gov.arbitrum.foundation) and follow the prompts. Submit your application before March 22nd at 12PM ET to ensure that you're included in the initial claiming flow that airdrop recipients will go through. That page will continue to be updated after claiming is live, and generally delegation and viewing delegates can be done at tally.xyz/gov/arbitrum.
 - **To become an Arbitrum DAO delegate**, review the below material and then [submit your application](./how-tos/apply-become-delegate.md).
 - **To build decentralized apps on Arbitrum,** check out the [developer docs](https://developer.arbitrum.io/intro/).
 
