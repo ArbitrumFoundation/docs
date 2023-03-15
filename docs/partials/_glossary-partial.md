@@ -56,7 +56,7 @@
 <p>An <a href="/dao-glossary#arbitrum-chain">Arbitrum chain</a> that implements the <a href="/dao-glossary#arbitrum-rollup-protocol"><strong>Arbitrum Rollup Protocol</strong></a>.</p>
 
 ### **Arbitrum Rollup Protocol** {#arbitrum-rollup-protocol}
-<p>A <a href="/dao-glossary#trustless">Trustless</a>, permissionless Arbitrum <a href="/dao-glossary#layer-2-l2">Layer 2 (L2)</a> protocol that uses it's underlying base layer (i.e., Ethereum) for data availability and inherits its security. This protocol is implemented by our <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> chain. </p>
+<p>A trustless, permissionless Arbitrum <a href="/dao-glossary#layer-2-l2">Layer 2 (L2)</a> protocol that uses it's underlying base layer (i.e., Ethereum) for data availability and inherits its security. This protocol is implemented by our <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> chain. </p>
 
 ### Claimable airdrop period {#claimable-airdrop-period}
 <p>The time period in which eligible <a href="/dao-glossary#arb">$ARB</a> token recipients are able to claim their tokens.</p>
@@ -136,9 +136,7 @@ The client software implements a protocol that stores transaction history within
 <p>A wallet that requires multiple private keys to sign transactions. Used by the <a href="/dao-glossary#security-council">Security Council</a> to trigger <a href="/dao-glossary#emergency-action">Emergency action</a>s. Commonly referred to as "multi-sig wallets".</p>
 
 ### Node operator {#node-operator}
-<p>Anyone who operates a node in the Ethereum ecosystem. There are many types of nodes: execution-layer nodes, consensus-layer nodes, relayers, and sequencers. TODO (frame Arbitrum's node types) [DG: not so sure what to do w/ this one].</p>
-
-
+<p>Anyone who runs core protocol software in the Ethereum / Arbitrum ecosystem; e.g., Ethereum Nodes, Arbitrum One nodes, or Arbitrum Nova nodes.</p>
 
 ### Non-constitutional AIP {#nonconstitutional-aip}
 <p>One of two types of <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> <a href="/dao-glossary#governance-proposal">Governance proposal</a>s (the other being <a href="/dao-glossary#constitutional-aip">Constitutional AIP</a>). Non-constitutional AIPs are those that don't meet the criteria to be considered "constitutional".</p>
@@ -160,9 +158,6 @@ The client software implements a protocol that stores transaction history within
 
 ### Optimistic rollup protocol {#optimistic-rollup-protocol}
 <p>Optimistic rollup protocols are <a href="/dao-glossary#layer-2-l2">Layer 2 (L2)</a> protocols that are designed to extend the throughput of Ethereum's base layer by using the base later for data availability and offloading computation to off-chain nodes. <a href="/dao-glossary#arbitrum-rollup-protocol"><strong>Arbitrum Rollup Protocol</strong></a> is an optimistic rollup protocol that inherits Ethereum's base-layer security guarantees.</p>
-
-### Presale {#presale}
-<p>Also known as an initial coin offering (ICO). Presales are fundraising events in which a new cryptocurrency project sells a portion of its tokens to early backers. <strong><em>Arbitrum DAO did not and will never engage in a presale.</em></strong></p>
 
 ### Progressive decentralization {#progressive-decentralization}
 <p>The process of gradually increasing the decentralization of a system over time. In the context of the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>, and decentrlizing <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> and <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a>, progressive decentralization refers to decentralizing the ownership of the chains, validators, sequencers, and the <a href="/dao-glossary#data-availability-committee-dac"><strong>Data Availability Committee (DAC)</strong></a>.</p>
@@ -189,9 +184,7 @@ The client software implements a protocol that stores transaction history within
 <p>Mechanism by which <a href="/dao-glossary#delegate">Delegate</a>s can vote off-chain; used for temperature checks in conjunction with the Arbitrum DAO governance forum.</p>
 
 ### Standard Token gateway {#standard-token-gateway}
-<p></p>
-
-
+<p>A series of smart contracts responsible for bridging ERC20 tokens on Ethereum to Arbitrum chains like <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> or <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a> and back.  The standard gateway keeps the L1 token escrowed on Ethereum and mints/burns the L2 token representation upon deposits/withdrawals. </p>
 
 ### The Constitution of the Arbitrum DAO {#the-constitution-of-the-arbitrum-dao}
 <p>A formal document that lays out the rules, procedures, and community values by which the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> operates. The hash of the canonical constitution is stored at TODO and is updatable via governance. The protocol outlined by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a> is codified within the <a href="/dao-glossary#smart-contract">Smart contract</a>s that facilitate <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> governance.</p>

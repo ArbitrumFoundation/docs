@@ -83,12 +83,8 @@ const config = {
             ],
           },
           {
-            title: 'Community', // FINAL-TODO
+            title: 'Community',
             items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://ethereum.stackexchange.com/questions/tagged/arbitrum',
-              },
               {
                 label: 'Discord',
                 href: 'https://discord.gg/arbitrum',
@@ -97,25 +93,8 @@ const config = {
                 label: 'Twitter',
                 href: 'https://twitter.com/arbitrum',
               },
-              {
-                label: 'YouTube',
-                href: 'https://www.youtube.com/arbitrum',
-              },
-              {
-                label: 'Telegram',
-                href: 'https://t.me/arbitrum',
-              },
             ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus', // FINAL-TODO
-              },
-            ],
-          },
+          }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Arbitrum Foundation.`,
       },
@@ -123,7 +102,22 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      announcementBar: {
+        id: "banner",
+        content: `Arbitrum DAO has been officially announced. The airdrop won’t be live until 5/23. Apply to be a delegate <a rel="noopener noreferrer" href="https://forum.arbitrum.foundation/t/delegation-submission-template/16">here</a>.`,
+        backgroundColor: 'rgb(8 53 117)',
+        textColor: 'white',
+        isCloseable: false,
+      },
     }),
+  scripts: [
+    // Fathom Analytics
+    {
+      src: 'https://thirty-thirtyfour.arbitrum.foundation/script.js',
+      'data-site': 'QLNDABBR',
+      defer: true,
+    },
+  ],
 };
 
 module.exports = config;

@@ -74,7 +74,7 @@ The only official website for the $ARB airdrop is [https://gov.arbitrum.foundati
     <tr>
         <td>25%</td>
         <td>2.5 billion</td>
-        <td>Employees of Offchain Labs (the team that built the initial version of Arbitrum)</td>
+        <td>Current and future employees of Offchain Labs (the team that built the initial version of Arbitrum)</td>
     </tr>
     <tr>
         <td>19%</td>
@@ -180,7 +180,7 @@ A points systems was used to determine the number of tokens that airdrop recipie
 To prevent bots from taking advantage of the airdrop, a number of anti-Sybil rules were established:
 
  - If an airdrop recipient's wallet transactions have all occurred within a 48-hour period, **one point is subtracted**.
- - If an airdrop recipient's wallet balance is less than .01 ETH, **and** if the wallat hasn't interacted with more than one smart contract, **one point is subtracted**.
+ - If an airdrop recipient's wallet balance is less than .01 ETH, **and** if the wallet hasn't interacted with more than one smart contract, **one point is subtracted**.
  - If an airdrop recipient's wallet address has been identified as a Sybil address during the Hop protocol bounty program (FINAL-TODO: footnote), (FINAL-TODO: disqualified?). 
  - If an airdrop recipient's wallet address is part of a parent/children wallet arrangement whereby the parent has funded more than 25 children addresses, all addresses are collapsed into a single user wallet address. 
 
