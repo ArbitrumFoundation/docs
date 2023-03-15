@@ -1,8 +1,8 @@
 ---
 id: dao-constitution
-title: The Constitution of the ArbitrumDAO
-sidebar_label: The Constitution of the ArbitrumDAO
-description: Read "The Constitution of the ArbitrumDAO", the ultimate governing document of the Arbitrum DAO. Arbitrum DAO's smart contracts implement the protocols described in this document.
+title: The Constitution of the Arbitrum DAO
+sidebar_label: The Constitution of the ArbitrumD AO
+description: Read "The Constitution of the Arbitrum DAO", the ultimate governing document of the Arbitrum DAO. Arbitrum DAO's smart contracts implement the protocols described in this document.
 ---
 
 import ConstitutionPartial from '@site/docs/partials/_constitution-content-partial.md';
