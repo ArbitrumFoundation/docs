@@ -124,6 +124,14 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  scripts: [
+    // Fathom Analytics
+    {
+      src: 'https://thirty-thirtyfour.arbitrum.foundation/script.js',
+      'data-site': 'QLNDABBR',
+      defer: true,
+    },
+  ],
 };
 
 module.exports = config;
