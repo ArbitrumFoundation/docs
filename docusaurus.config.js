@@ -83,12 +83,8 @@ const config = {
             ],
           },
           {
-            title: 'Community', // FINAL-TODO
+            title: 'Community',
             items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://ethereum.stackexchange.com/questions/tagged/arbitrum',
-              },
               {
                 label: 'Discord',
                 href: 'https://discord.gg/arbitrum',
@@ -97,25 +93,8 @@ const config = {
                 label: 'Twitter',
                 href: 'https://twitter.com/arbitrum',
               },
-              {
-                label: 'YouTube',
-                href: 'https://www.youtube.com/arbitrum',
-              },
-              {
-                label: 'Telegram',
-                href: 'https://t.me/arbitrum',
-              },
             ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus', // FINAL-TODO
-              },
-            ],
-          },
+          }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Arbitrum Foundation.`,
       },
