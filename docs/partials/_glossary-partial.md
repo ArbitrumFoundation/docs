@@ -192,7 +192,7 @@ The client software implements a protocol that stores transaction history within
 
 
 ### The Constitution of the Arbitrum DAO {#the-constitution-of-the-arbitrum-dao}
-<p></p>
+<p>A formal document that lays out the rules, procedures, and community values by which the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> operates. The hash of the canonical constitution is stored at TODO and is updatable via governance. The protocol outlined by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a> is codified within the <a href="/dao-glossary#smart-contract">Smart contract</a>s that facilitate <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> governance.</p>
 
 ### Timelock contract {#timelock-contract}
 <p>A smart contract that restricts an action from taking place before a specified future time. Used at various stages in the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>'s governance proposal process.</p>
