@@ -53,9 +53,9 @@ The [DAO governance forum](https://forum.arbitrum.foundation/) facilitates discu
 1. Go to the [DAO governance forum](https://forum.arbitrum.foundation/).
 2. Create a new post with your proposal using the template located [here](https://forum.arbitrum.foundation/t/delegation-submission-template/16). You can add additional fields to this template to provide more context for your proposal if you'd like.
 3. Allow at least one week for discussion and debate. Iterate on your proposal based on feedback from the community.
-4. Navigate to [Snapshot](https://snapshot.org/#/). This is where you can create a poll that will gauge the community's interest in your proposal.
+4. Navigate to [Snapshot](https://snapshot.org/#/arbitrumfoundation.eth). This is where you can create a poll that will gauge the community's interest in your proposal.
 5. Connect your wallet.
-6. Open the Arbitrum DAO Snapshot space.
+6. Open the Arbitrum DAO [Snapshot space](https://snapshot.org/#/arbitrumfoundation.eth) if it isn't already open.
 7. Create a poll that points to your forum post. The poll should run for one week and should be decided by a simple majority.
 8. Navigate back to your forum post and share the link to your Snapshot poll with the community.
 

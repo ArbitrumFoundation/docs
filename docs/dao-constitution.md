@@ -1,40 +1,38 @@
 ---
 id: dao-constitution
-title: The Constitution of the Arbitrum DAO
-sidebar_label: The Constitution of the Arbitrum DAO
-description: Read the Constitution of the Arbitrum DAO, the ultimate governing document of the Arbitrum DAO. Arbitrum DAO's smart contracts implement the protocols described in this document.
+title: The Constitution of the ArbitrumDAO
+sidebar_label: The Constitution of the ArbitrumDAO
+description: Read the Constitution of the ArbitrumDAO, the ultimate governing document of the Arbitrum DAO. ArbitrumDAO's smart contracts implement the protocols described in this document.
 ---
 
 
 ```
- - FINAL-TODO: link to AIP-1 below - Matt?
- - FINAL-TODO: snapshot link below - Matt?
- - FINAL-TODO: hash of the constitutuon and procedure followed - Matt
+ - FINAL-TODO: hash of the constitutuon and procedure followed - DG
 ```
 
 <div id='constitution'>
-<p>This Constitution of the Arbitrum DAO takes effect on the date upon which AIP-1 is posted, located at <a href="https://forum.arbitrum.foundation/t/aip-1-arbitrum-improvement-proposal-framework/30">https://forum.arbitrum.foundation/t/aip-1-arbitrum-improvement-proposal-framework/30</a>.</p>
+<p>This Constitution of the ArbitrumDAO takes effect on the date upon which AIP-1 is posted, located at <a href="https://forum.arbitrum.foundation/t/aip-1-arbitrum-improvement-proposal-framework/30">https://forum.arbitrum.foundation/t/aip-1-arbitrum-improvement-proposal-framework/30</a>.</p>
 <p>Some of the rules and procedures of this Constitution will be enforced directly by smart contracts on a blockchain, and some will not. All rules are equally binding. Actions taken under this Constitution may be on-chain or off-chain actions. On-chain actions are those that are actuated directly by the governance smart contracts of the DAO as transactions on a blockchain. Off-chain actions are those that are actuated by other means.</p>
 <p>This Constitution also includes some &quot;recommended guidelines&quot; which are non-binding but strongly recommended as good governance practice.</p>
-<p>This Constitution describes the procedures by which it may be amended. For more information regarding the governance framework of the Arbitrum DAO and Arbitrum Foundation, please see AIP-1.</p>
+<p>This Constitution describes the procedures by which it may be amended. For more information regarding the governance framework of the ArbitrumDAO and Arbitrum Foundation, please see AIP-1.</p>
 <p><strong>Definitions</strong>:</p>
 <ul>
     <li><strong>AIP</strong>: An Arbitrum Improvement Proposal</li>
     <li><strong>AIP-1</strong>: Arbitrum Improvement Proposal - 1: Arbitrum Proposal Framework</li>
-    <li><strong>Arbitrum DAO-governed chains</strong>: The Arbitrum One and Arbitrum Nova chains and any additional chains authorized by the Arbitrum DAO</li>
-    <li><strong>DAO Treasury</strong>: All $ARB tokens held in a governance smart contract governed directly by the Arbitrum DAO and The Arbitrum Foundation via on-chain voting mechanisms.</li>
-    <li><strong>Governed Chains</strong>: Any Arbitrum DAO-approved chains that are governed by the $ARB token</li>
-    <li><strong>Non-Governed Chains</strong>: Any Arbitrum DAO-approved chains that are not governed by the $ARB token</li>
+    <li><strong>ArbitrumDAO-governed chains</strong>: The Arbitrum One and Arbitrum Nova chains and any additional chains authorized by the ArbitrumDAO</li>
+    <li><strong>DAO Treasury</strong>: All $ARB tokens held in a governance smart contract governed directly by the ArbitrumDAO and The Arbitrum Foundation via on-chain voting mechanisms.</li>
+    <li><strong>Governed Chains</strong>: Any ArbitrumDAO-approved chains that are governed by the $ARB token</li>
+    <li><strong>Non-Governed Chains</strong>: Any ArbitrumDAO-approved chains that are not governed by the $ARB token</li>
     <li><strong>Votable Tokens</strong>: All $ARB tokens in existence, excluding any tokens held by The Arbitrum Foundation and any unclaimed airdrops</li>
 </ul>
 <h3 id="section-1-chain-ownership-">Section 1: Chain &quot;ownership&quot;</h3>
-<p>This Constitution describes the decision-making framework for the Arbitrum DAO governance and/or authorization of the Arbitrum DAO-approved chains. The DAO may authorize the creation of additional Layer-2 chains that settle to Ethereum using the Arbitrum technology, but each such additional Layer-2 chain must be authorized by a corresponding AIP (i.e., no more than one chain may be authorized in each AIP). Any chain that is so authorized may be governed by the $ARB token and this Constitution and the procedures as described in AIP-1, in which case, such chain would be deemed a Governed Chain. Any chain that is authorized but not governed by the $ARB token will be deemed a Non-Governed Chain. For the avoidance of doubt, any Arbitrum DAO-approved chain (whether a Governed Chain or a Non-Governed Chain) must settle to or on Ethereum. Chains utilizing Arbitrum technology that settle to or on Arbitrum DAO-approved chains (i.e., as “layer 3s”) do not require Arbitrum DAO authorization.</p>
+<p>This Constitution describes the decision-making framework for the ArbitrumDAO governance and/or authorization of the ArbitrumDAO-approved chains. The DAO may authorize the creation of additional Layer-2 chains that settle to Ethereum using the Arbitrum technology, but each such additional Layer-2 chain must be authorized by a corresponding AIP (i.e., no more than one chain may be authorized in each AIP). Any chain that is so authorized may be governed by the $ARB token and this Constitution and the procedures as described in AIP-1, in which case, such chain would be deemed a Governed Chain. Any chain that is authorized but not governed by the $ARB token will be deemed a Non-Governed Chain. For the avoidance of doubt, any ArbitrumDAO-approved chain (whether a Governed Chain or a Non-Governed Chain) must settle to or on Ethereum. Chains utilizing Arbitrum technology that settle to or on ArbitrumDAO-approved chains (i.e., as “layer 3s”) do not require ArbitrumDAO authorization.</p>
 <p>The Arbitrum protocol allows each chain to have one or more &quot;chain owners&quot; who have the power to take administrative actions that change a chain&#39;s core protocol and code and/or alter any of its core parameters. The &quot;chain owner&quot; will also have the power to upgrade certain associated Layer 1 contracts. The &quot;chain owner&quot; will control affordances on the chain such as updating the contract implementation of any of Arbitrum&#39;s core protocol <a href="https://developer.arbitrum.io/useful-addresses">Transparent Upgradeable Proxy contracts</a>, and adjusting system parameters via, e.g., setter methods in the <a href="https://github.com/OffchainLabs/nitro/blob/master/contracts/src/precompiles/ArbOwner.sol">ArbOwner</a> precompile.</p>
-<p>With the $ARB token generation event and subsequent creation of the Arbitrum DAO having occurred, &quot;owner&quot; privileges on both the Arbitrum One and Arbitrum Nova chains have been given to both the Arbitrum DAO and the Security Council of The Arbitrum Foundation.</p>
+<p>With the $ARB token generation event and subsequent creation of the ArbitrumDAO having occurred, &quot;owner&quot; privileges on both the Arbitrum One and Arbitrum Nova chains have been given to both the ArbitrumDAO and the Security Council of The Arbitrum Foundation.</p>
 <h3 id="section-2-dao-proposals-and-voting-procedures">Section 2: DAO Proposals and Voting Procedures</h3>
-<p>The following process governs the rules and procedures by which the Arbitrum DAO may propose, vote on and implement Arbitrum Improvement Proposals (AIPs). No AIP may be in violation of applicable laws, in particular sanctions-related regulations.</p>
+<p>The following process governs the rules and procedures by which the ArbitrumDAO may propose, vote on and implement Arbitrum Improvement Proposals (AIPs). No AIP may be in violation of applicable laws, in particular sanctions-related regulations.</p>
 <ol>
-    <li><strong>Phase 1: Temperature Check (1 week) (Optional but Recommended):</strong> The AIP is suggested on the <a href='https://forum.arbitrum.foundation/'>public forum</a> and discussed/debated for <strong>1 week</strong>. The AIP should be accompanied by a <a href="#FINAL-TODO">Snapshot</a> poll or other method as determined pursuant to the governance process, which can only be submitted by an address that can vote at least 0.01% of the Votable Tokens. The Snapshot poll also runs for 1 week, and is decided by a simple majority with no required participation threshold. An AIP that fails the temperature check should not be submitted for a vote. If an AIP fails the temperature check, or has not undergone a temperature check, as a matter of good governance practice, it is recommended that voters strongly consider voting to reject it.</li>
+    <li><strong>Phase 1: Temperature Check (1 week) (Optional but Recommended):</strong> The AIP is suggested on the <a href='https://forum.arbitrum.foundation/'>public forum</a> and discussed/debated for <strong>1 week</strong>. The AIP should be accompanied by a <a href="https://snapshot.org/#/arbitrumfoundation.eth">Snapshot</a> poll or other method as determined pursuant to the governance process, which can only be submitted by an address that can vote at least 0.01% of the Votable Tokens. The Snapshot poll also runs for 1 week, and is decided by a simple majority with no required participation threshold. An AIP that fails the temperature check should not be submitted for a vote. If an AIP fails the temperature check, or has not undergone a temperature check, as a matter of good governance practice, it is recommended that voters strongly consider voting to reject it.</li>
     <li>
         <p><strong>Phase 2: Formal AIP and call for voting (3 days):</strong> The AIP is submitted via governance contracts on Arbitrum One, with a user interface available on <a href='https://tally.xyz/gov/arbitrum'>Tally</a>. The AIP proposer is required to have an address that contains or is delegated at least 5,000,000 Votable Tokens.</p>
         <p>After 3 days, a voter distribution snapshot will be taken and the voting period will begin; this gives interested parties time to discuss the AIP and gather votes before the voter distribution snapshot is taken.</p>
@@ -44,7 +42,7 @@ description: Read the Constitution of the Arbitrum DAO, the ultimate governing d
             <li><strong>Process</strong>: Modifies the text or procedures of this Constitution or AIP-1</li>
             <li><strong>Software update</strong>: Installs or modifies software on any chain</li>
             <li><strong>Core</strong>: Takes any action that requires &quot;chain owner&quot; permission on any chain</li>
-            <li><strong>New Chain Approval</strong>: Authorizes a new chain as approved by the Arbitrum DAO. This includes authorizing both Governed Chains and Non-Governed Chains</li>
+            <li><strong>New Chain Approval</strong>: Authorizes a new chain as approved by the ArbitrumDAO. This includes authorizing both Governed Chains and Non-Governed Chains</li>
         </ul>
         <p>Recommended guideline: DAO members should vote against any AIP that is incorrectly labeled.</p>
         <p>A Non-Constitutional AIP is one that is not considered a &quot;Constitutional AIP&quot; including:</p>
@@ -74,7 +72,7 @@ description: Read the Constitution of the Arbitrum DAO, the ultimate governing d
         </ul>
     </li>
     <li>
-        <p><strong>Phase 3: DAO votes on AIP, on Arbitrum One (14-16 days): During this Phase 3, the Arbitrum DAO will be able to vote directly on-chain on a submitted AIP.</strong></p>
+        <p><strong>Phase 3: DAO votes on AIP, on Arbitrum One (14-16 days): During this Phase 3, the ArbitrumDAO will be able to vote directly on-chain on a submitted AIP.</strong></p>
         <p>An AIP passes if the following 2 conditions are met:</p>
         <ol className="a-b-list">
             <li>More Votable Tokens have casted votes &quot;in favor&quot; than have casted votes &quot;against&quot; (&quot;<strong>Threshold 1</strong>&quot;); and</li>
@@ -103,15 +101,15 @@ description: Read the Constitution of the Arbitrum DAO, the ultimate governing d
 </ol>
 <p>This AIP process as specified will typically require 37 days from the beginning of the temperature check in Phase 1 until an AIP is finally executed in Phase 7 for a Constitutional AIP, or 27 days for a Non-Constitutional AIP. An AIP may optionally specify further delay before its implementation.</p>
 <h3 id="section-3-the-security-council">Section 3: The Security Council</h3>
-<p>The Security Council is a committee of <strong>12 members who are signers of a multi-sig wallet</strong>, which has powers to perform certain Emergency Actions and Non-Emergency Actions, as delegated to it by the Arbitrum DAO and Arbitrum Foundation, and is responsible for upholding this Arbitrum DAO Constitution. Through the submission, approval and implementation of a Constitutional AIP, the Arbitrum DAO is able to modify the Security Council&#39;s powers or to eliminate the Security Council entirely.</p>
-<p>Equivalent &quot;copies&quot; of the Security Council multi-sig contracts exist, one on Ethereum and another on each Arbitrum DAO-governed chain.</p>
+<p>The Security Council is a committee of <strong>12 members who are signers of a multi-sig wallet</strong>, which has powers to perform certain Emergency Actions and Non-Emergency Actions, as delegated to it by the ArbitrumDAO and Arbitrum Foundation, and is responsible for upholding this ArbitrumDAO Constitution. Through the submission, approval and implementation of a Constitutional AIP, the ArbitrumDAO is able to modify the Security Council&#39;s powers or to eliminate the Security Council entirely.</p>
+<p>Equivalent &quot;copies&quot; of the Security Council multi-sig contracts exist, one on Ethereum and another on each ArbitrumDAO-governed chain.</p>
 <p><strong>Emergency Actions</strong>:</p>
-<p>The Security Council has the power to execute any software upgrade or perform other required actions with no delay in order to respond to a security emergency, should one arise (such actions, &quot;<strong>Emergency Actions</strong>&quot;). Performing any Emergency Action requires a <strong>9-of-12 approval</strong> from the Security Council. The Security Council must not use its power to perform Emergency Actions except in a true security emergency, such as a critical vulnerability that could significantly compromise the integrity, confidentiality, or availability of a chain governed by the Arbitrum DAO.</p>
+<p>The Security Council has the power to execute any software upgrade or perform other required actions with no delay in order to respond to a security emergency, should one arise (such actions, &quot;<strong>Emergency Actions</strong>&quot;). Performing any Emergency Action requires a <strong>9-of-12 approval</strong> from the Security Council. The Security Council must not use its power to perform Emergency Actions except in a true security emergency, such as a critical vulnerability that could significantly compromise the integrity, confidentiality, or availability of a chain governed by the ArbitrumDAO.</p>
 <p>After performing any Emergency Action, the Security Council must issue a full transparency report (at an appropriate time after the security emergency has passed) to explain what was done and why such Emergency Action was justified.</p>
-<p>The Arbitrum DAO is able to curtail or eliminate the Security Council&#39;s power to perform Emergency Actions via approval and implementation of a Constitutional AIP.</p>
+<p>The ArbitrumDAO is able to curtail or eliminate the Security Council&#39;s power to perform Emergency Actions via approval and implementation of a Constitutional AIP.</p>
 <p><strong>Non-Emergency Actions</strong>:</p>
 <p>The Security Council may also approve and implement routine software upgrades, routine maintenance and other parameter adjustments in a non-emergency setting (such actions, &quot;<strong>Non-Emergency Actions</strong>&quot;), which require a <strong>7-of-12</strong> approval in order to take effect. Any Non-Emergency Action, after approval by the Security Council, will bypass Phases 1 to 3 of the AIP process and instead directly go through Phases 4 to 7 of the AIP process, to provide a delay before any Non-Emergency Action is deployed. The Security Council may optionally specify additional delays before deployment.</p>
-<p>The Arbitrum DAO is able to curtail or eliminate the Security Council&#39;s power to perform Non-Emergency Actions via approval and implementation of a Constitutional AIP.</p>
+<p>The ArbitrumDAO is able to curtail or eliminate the Security Council&#39;s power to perform Non-Emergency Actions via approval and implementation of a Constitutional AIP.</p>
 <h3 id="section-4-security-council-elections">Section 4: Security Council Elections</h3>
 <p>The Security Council has 12 members, who are divided into a September Cohort of 6 members, and a March Cohort of 6 members. Every year on September 15, 12:00 UTC, an election starts for the 6 September Cohort seats; and every year on March 15, 12:00 UTC, an election starts for the 6 March Cohort seats.</p>
 <p>This means that the initial September Cohort will serve an initial term of 6 months, whereas the initial March Cohort will serve an initial term of 1 year.</p>
@@ -124,7 +122,7 @@ description: Read the Constitution of the Arbitrum DAO, the ultimate governing d
 </ol>
 <p>Prior to the next Security Council election, The Arbitrum Foundation shall establish and set forth more detailed procedures and guidelines regarding the election process for the Security Council, which may include, but aren’t limited to, a candidate intake process in order to comply with Cayman Islands laws, a standard template for candidates to complete for purposes of their public nominations and other processes to ensure an orderly, fair and transparent election.</p>
 <p>As a matter of best practice for maintaining an independent Security Council, no single organization should be overly represented in the Security Council. In particular, there should not be more than 3 candidates associated with a single entity or group of entities being elected to the Security Council, thereby ensuring that there will be no single entity or group of entities able to control or even veto a Security Council vote.</p>
-<p>Furthermore, no candidate with conflicts of interest that would prevent them from acting in the best interests of the Arbitrum DAO, Governed Chains and/or The Arbitrum Foundation should be elected to the Security Council. Potential conflicts of interest could be, but are not limited to, affiliations with direct Arbitrum competitors, proven histories of exploiting projects and others.</p>
+<p>Furthermore, no candidate with conflicts of interest that would prevent them from acting in the best interests of the ArbitrumDAO, Governed Chains and/or The Arbitrum Foundation should be elected to the Security Council. Potential conflicts of interest could be, but are not limited to, affiliations with direct Arbitrum competitors, proven histories of exploiting projects and others.</p>
 <p>The DAO may approve and implement a Constitutional AIP to change the rules governing future Security Council elections, but the AIP process may not be used to intervene in an ongoing election.</p>
 <p>Security Council members may only be removed prior to the end of their terms under two conditions:</p>
 <ol>
@@ -133,9 +131,9 @@ description: Read the Constitution of the Arbitrum DAO, the ultimate governing d
 </ol>
 <p>The seats of Security Council members who have been removed prior to the end of their respective terms shall remain unfilled until the next election that such seats are up for appointment, unless otherwise replaced prior to such next election by a vote of at least 9 of the Security Council members, in which case such seat shall be up for appointment at the next such election.</p>
 <h3 id="section-5-community-values">Section 5: Community Values</h3>
-<p>As the guiding values of the Arbitrum DAO and The Arbitrum Foundation, Governed Chains, technology, and community should be:</p>
+<p>As the guiding values of the ArbitrumDAO and The Arbitrum Foundation, Governed Chains, technology, and community should be:</p>
 <ul>
-    <li><strong>Ethereum-aligned:</strong> Arbitrum is part of the Ethereum ecosystem, and the Arbitrum community is part of the Ethereum community. Although the Arbitrum DAO makes its own decisions and pursues its own goals, it is deeply aligned with Ethereum and sees itself as an active and constructive participant in the Ethereum community.</li>
+    <li><strong>Ethereum-aligned:</strong> Arbitrum is part of the Ethereum ecosystem, and the Arbitrum community is part of the Ethereum community. Although the ArbitrumDAO makes its own decisions and pursues its own goals, it is deeply aligned with Ethereum and sees itself as an active and constructive participant in the Ethereum community.</li>
     <li><strong>Sustainable:</strong> Arbitrum should be built and operated with an eye to the medium to long term. Decisions about technology, economics, and resource allocation should not value short-term optimization over the longer-term health and thriving of the Arbitrum protocol, technology and community.</li>
     <li><strong>Secure</strong>: Arbitrum is security minded, and safety of the system should be weighed heavily when considering any protocol changes. In particular, Arbitrum One is a proper L2 rollup chain, and as such, derives its security from Ethereum; any changes made to Arbitrum One should preserve this property.</li>
     <li><strong>Socially inclusive:</strong> The community should be open and welcoming to all people who wish to participate constructively. Differences in knowledge, resources, geography, language, and life experience should be seen as opportunities to learn and to grow the community.</li>

@@ -11,18 +11,13 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
-```
- - FINAL-TODO: is there a deadline for determining eligibility (see below)? if so, what is it? - Matt?
-```
-
-
 **In a nutshell:**
 
 - <a data-quicklook-from='arbitrum-rollup-protocol'>Arbitrum Rollup</a> and <a data-quicklook-from='arbitrum-anytrust-protocol'>Arbitrum AnyTrust</a> are protocols that make Ethereum transactions faster and cheaper. Developers use Arbitrum One and Arbitrum Nova, the chains that implement these protocols, respectively, to build user-friendly <a data-quicklook-from='decentralized-apps-dapps'>decentralized apps</a>.
 - The distribution of the <a data-quicklook-from='arb'>$ARB</a> governance token decentralizes governance of these protocols and their respective chains, as well any future chains the Arbitrum DAO authorizes.
 - $ARB tokens can be used to vote on Arbitrum DAO governance proposals, allowing $ARB holders to shape Arbitrum's future together.
 - Token holders will be able to delegate their voting power to <a data-quicklook-from='delegate'>delegates</a>.
-- **To determine your airdrop eligibility**, connect your wallet to the Arbitrum One network on [gov.arbitrum.foundation](http://gov.arbitrum.foundation) and follow the prompts. Submit your application before March 22nd at 12PM ET to ensure that you're included in the initial claiming flow that airdrop recipients will go through. That page will continue to be updated after claiming is live, and generally delegation and viewing delegates can be done at tally.xyz/gov/arbitrum.
+- **To determine your airdrop eligibility**, connect your wallet to the Arbitrum One network on [gov.arbitrum.foundation](http://gov.arbitrum.foundation) and follow the prompts. Submit your application before March 22nd at 12PM ET to ensure that airdrop recipients will be able to select you as a delegate when claiming their tokens. The token claiming page will be live soon, and will continue to be updated. You'll be able to view and select delegates here: [tally.xyz/gov/arbitrum](https://tally.xyz/gov/arbitrum).
 - **To become an Arbitrum DAO delegate**, review the below material and then [submit your application](./how-tos/apply-become-delegate.md).
 - **To build decentralized apps on Arbitrum,** check out the [developer docs](https://developer.arbitrum.io/intro/).
 

@@ -23,9 +23,9 @@ Proposals are first submitted to the [Arbitrum DAO governance forum](https://for
 
 The forum submission for any given proposal will usually include a link to a Snapshot poll that allows you to vote on the proposal:
 
-1. Navigate to [Snapshot](https://snapshot.org/#/).
+1. Navigate to [Snapshot](https://snapshot.org/#/arbitrumfoundation.eth).
 2. Connect your wallet.
-3. Open the Arbitrum DAO Snapshot space and locate the proposal you'd like to vote on (or click the Snapshot link in the forum submission).
+3. Open the [Arbitrum DAO Snapshot space](https://snapshot.org/#/arbitrumfoundation.eth) and locate the proposal you'd like to vote on (or click the Snapshot link in the forum submission).
 4. Cast your vote by following the prompts within Snapshot's UI.
 
 ### Proposals in the "on-chain vote" stage
