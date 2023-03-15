@@ -56,7 +56,7 @@
 <p>An <a href="/dao-glossary#arbitrum-chain">Arbitrum chain</a> that implements the <a href="/dao-glossary#arbitrum-rollup-protocol"><strong>Arbitrum Rollup Protocol</strong></a>.</p>
 
 ### **Arbitrum Rollup Protocol** {#arbitrum-rollup-protocol}
-<p>A <a href="/dao-glossary#trustless">Trustless</a>, permissionless Arbitrum <a href="/dao-glossary#layer-2-l2">Layer 2 (L2)</a> protocol that uses it's underlying base layer (i.e., Ethereum) for data availability and inherits its security. This protocol is implemented by our <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> chain. </p>
+<p>A trustless, permissionless Arbitrum <a href="/dao-glossary#layer-2-l2">Layer 2 (L2)</a> protocol that uses it's underlying base layer (i.e., Ethereum) for data availability and inherits its security. This protocol is implemented by our <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> chain. </p>
 
 ### Claimable airdrop period {#claimable-airdrop-period}
 <p>The time period in which eligible <a href="/dao-glossary#arb">$ARB</a> token recipients are able to claim their tokens.</p>
@@ -136,9 +136,7 @@ The client software implements a protocol that stores transaction history within
 <p>A wallet that requires multiple private keys to sign transactions. Used by the <a href="/dao-glossary#security-council">Security Council</a> to trigger <a href="/dao-glossary#emergency-action">Emergency action</a>s. Commonly referred to as "multi-sig wallets".</p>
 
 ### Node operator {#node-operator}
-<p>Anyone who operates a node in the Ethereum ecosystem. There are many types of nodes: execution-layer nodes, consensus-layer nodes, relayers, and sequencers. TODO (frame Arbitrum's node types) [DG: not so sure what to do w/ this one].</p>
-
-
+<p>Anyone who runs core protocol software in the Ethereum / Arbitrum ecosystem; e.g., Ethereum Nodes, Arbitrum One nodes, or Arbitrum Nova nodes.</p>
 
 ### Non-constitutional AIP {#nonconstitutional-aip}
 <p>One of two types of <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> <a href="/dao-glossary#governance-proposal">Governance proposal</a>s (the other being <a href="/dao-glossary#constitutional-aip">Constitutional AIP</a>). Non-constitutional AIPs are those that don't meet the criteria to be considered "constitutional".</p>
@@ -194,7 +192,7 @@ The client software implements a protocol that stores transaction history within
 
 
 ### The Constitution of the Arbitrum DAO {#the-constitution-of-the-arbitrum-dao}
-<p>A formal document that lays out the rules, procedures, and community values by which the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> operates. The hash of the canonical constitution is stored at TODO and is updatable via governance. The protocol outlined by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a> is codified within the <a href="/dao-glossary#smart-contract">Smart contract</a>s that facilitate <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> governance.</p>
+<p></p>
 
 ### Timelock contract {#timelock-contract}
 <p>A smart contract that restricts an action from taking place before a specified future time. Used at various stages in the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>'s governance proposal process.</p>
