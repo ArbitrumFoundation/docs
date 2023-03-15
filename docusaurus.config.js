@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Arbitrum DAO - Governance docs',
+  title: 'ArbitrumDAO - Governance docs',
   tagline: 'Decentralized governance is cool',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
@@ -56,9 +56,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Arbitrum DAO - Governance docs',
+        title: 'ArbitrumDAO - Governance docs',
         logo: {
-          alt: 'Arbitrum DAO',
+          alt: 'ArbitrumDAO',
           src: 'img/logo.svg',
           href: '/gentle-intro-dao-governance',
         },
@@ -104,7 +104,7 @@ const config = {
       },
       announcementBar: {
         id: "banner",
-        content: `Arbitrum DAO has been officially announced. The airdrop won’t be live until 5/23. Apply to be a delegate <a rel="noopener noreferrer" href="https://forum.arbitrum.foundation/t/delegation-submission-template/16">here</a>.`,
+        content: `ArbitrumDAO has been officially announced. The airdrop won’t be live until March 23rd. Apply to be a delegate <a rel="noopener noreferrer" href="https://forum.arbitrum.foundation/t/delegate-application-template/31">here</a>.`,
         backgroundColor: 'rgb(8 53 117)',
         textColor: 'white',
         isCloseable: false,
