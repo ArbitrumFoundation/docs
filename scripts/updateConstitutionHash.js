@@ -1,3 +1,5 @@
+// README: `node ./scripts/updateConstitutionHash`
+
 const fs = require('fs');
 
 const { pack, keccak256, sha256 } = require('@ethersproject/solidity');
