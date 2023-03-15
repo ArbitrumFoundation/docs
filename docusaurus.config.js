@@ -127,7 +127,7 @@ const config = {
   scripts: [
     // Fathom Analytics
     {
-      src: 'https://classy-fortunate.arbitrum.foundation/script.js',
+      src: 'https://thirty-thirtyfour.arbitrum.foundation/script.js',
       'data-site': 'QLNDABBR',
       defer: true,
     },
