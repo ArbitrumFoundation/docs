@@ -74,7 +74,7 @@ The only official website for the $ARB airdrop is [https://gov.arbitrum.foundati
     <tr>
         <td>25%</td>
         <td>2.5 billion</td>
-        <td>Employees of Offchain Labs (the team that built the initial version of Arbitrum)</td>
+        <td>Current and future employees of Offchain Labs (the team that built the initial version of Arbitrum)</td>
     </tr>
     <tr>
         <td>19%</td>
