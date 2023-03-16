@@ -68,8 +68,9 @@ Kind of! Let's compare them:
 
 Decentralization of Arbitrum's technology governance represents an important step towards community governance of Ethereum's scaling technologies, and further aligns the Arbitrum community's incentives with those of the Ethereum community at large. This is a big deal because it means that the Arbitrum DAO will be able to democratically make decisions that are in the best interest of the Arbitrum and Ethereum communities, rather than having faith in the good will of a small group of people.
 
-$ARB tokens represent stake in Arbitrum's - and by proxy, Ethereum's - decentralized future. You can use $ARB to collectively determine how we as a community scale Ethereum's infinite garden into the future.
-More generally, possession of $ARB tokens places you at the cutting edge of governance mechanism design. This is a new frontier with society-scale implications, and your voice matters. $ARB tokens give you an immutable voice!
+$ARB tokens represent stake in Arbitrum's - and by proxy, Ethereum's - decentralized future. You can use $ARB to collectively determine how we as a community scale Ethereum's [infinite garden](https://ethereum.foundation/infinitegarden) into the future.
+
+More generally, possession of $ARB tokens places you at the cutting edge of governance mechanism design. This is a new frontier with society-scale implications, and your voice matters. $ARB tokens give you an <a data-quicklook-from='immutable'>immutable</a> voice!
 
 See [State of decentralization](./state-of-progressive-decentralization) for a more in-depth overview of Arbitrum's decentralization journey.
 
