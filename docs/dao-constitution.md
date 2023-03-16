@@ -16,10 +16,4 @@ import { ConstitutionHash  } from '@site/src/components/ConstitutionHash'
 
 ### Constitution hash
 
-<code><b><ConstitutionHash/></b></code>
-
-<br/><br/>
-
-To compute this hash yourself, you can install [Node.js](https://nodejs.org/en/), clone the [ArbitrumFoundation/docs](https://github.com/ArbitrumFoundation/docs) repo, navigate to the `docs` folder, and run `node ./scripts/updateConstitutionHash.js`. 
-
-This will use the `keccak256` method from the [@ethersproject/solidity](https://github.com/ethers-io/ethers.js#readme) project to compute the hash of the Constitution by performing a Keccak256 hash of the Constitution's markdown source code, located in [`/ArbitrumFoundation/docs/blob/main/docs/partials/_constitution-content-partial.md`](https://github.com/ArbitrumFoundation/docs/blob/main/docs/partials/_constitution-content-partial.md).
+<b><ConstitutionHash/></b>
