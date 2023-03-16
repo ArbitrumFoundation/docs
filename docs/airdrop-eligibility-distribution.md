@@ -95,7 +95,13 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
 
 A points system was used to determine the number of tokens that airdrop recipients can claim. Points criteria was focused primarily on Arbitrum One; however, there was a small subset of criteria applied to activity on Arbitrum Nova. Points earned on Arbitrum Nova could either bring a user up to 4 points total, or give them one additional point if they had already scored 4 points or more on Arbitrum One. You earn maximum one point per qualifying action performed before the snapshot date. Point scores were capped at 15.
 
-Additionally, as the criteria and design of the airdrop as a whole was intentioned to reward early adopters, points scored (minimum of three) before Arbitrum Nitro was launched on Arbitrum One mainnet are worth twice as much as points scored after. Arbitrum Nitro launched on Arbitrum One mainnet at block #22207817.
+Additionally, as the criteria and design of the airdrop as a whole was intentended to reward early adopters, point to token allocations were halved after Arbitrum Nitro launched on mainnet. For example, a wallet address that was eligible for 3 points total pre-Nitro (1250 tokens) and 4 points total post-Nitro (1750) tokens, actually received 1500 tokens.
+
+
+
+
+
+
 
 **Qualifying actions:**
 
@@ -127,56 +133,7 @@ Points earned on Arbitrum Nova
 
 **Converting points to tokens:**
 
-<table className="small-table">
-    <tr>
-        <td><strong>Points earned</strong></td>
-        <td><strong>Airdrop entitlement</strong></td>
-    </tr>
-    <tr>
-        <td>Less than 3</td>
-        <td>Not eligible</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>1,250</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>1,750</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>2,250</td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>3,250</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>3,750</td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>4,250</td>
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>6,250</td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>6,750</td>
-    </tr>
-    <tr>
-        <td>11</td>
-        <td>7,250</td>
-    </tr>
-    <tr>
-        <td>12 or more</td>
-        <td>10,250</td>
-    </tr>
-</table>
+
 
 <br />
 
