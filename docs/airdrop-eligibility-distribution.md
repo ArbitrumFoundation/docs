@@ -93,7 +93,7 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
 
 ### User airdrop eligibility details
 
-A points system was used to determine the number of tokens that airdrop recipients can claim. Points criteria was focused primarily on Arbitrum One, however there was a small subset of criteria applied to activity on Arbitrum Nova. Points earned on Arbitrum Nova could either bring a user up to 4 points total, or give them one additional point if they had already scored 4 points or more on Arbitrum One. You earn maximum one point per qualifying action performed before the snapshot date. Point scores were capped at 15.
+A points system was used to determine the number of tokens that airdrop recipients can claim. Points criteria was focused primarily on Arbitrum One; however, there was a small subset of criteria applied to activity on Arbitrum Nova. Points earned on Arbitrum Nova could either bring a user up to 4 points total, or give them one additional point if they had already scored 4 points or more on Arbitrum One. You earn maximum one point per qualifying action performed before the snapshot date. Point scores were capped at 15.
 
 Additionally, as the criteria and design of the airdrop as a whole was intentioned to reward early adopters, points scored (minimum of three) before Arbitrum Nitro was launched on Arbitrum One mainnet are worth twice as much as points scored after. Arbitrum Nitro launched on Arbitrum One mainnet at block #22207817.
 
