@@ -52,7 +52,7 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
 </table>
 
 
-### Initial token allocation & airdrop distribution
+#### Initial token allocation & airdrop distribution
 
 <table className="small-table">
     <tr>
@@ -121,8 +121,7 @@ Qualifying actions on Arbitrum Nova:
 
 
 
-#### Point-to-token conversion table
-
+#### Points-to-tokens conversion table
 
 <table className="small-table">
     <tr>
@@ -181,7 +180,7 @@ Qualifying actions on Arbitrum Nova:
 
 ### Calculate your airdrop eligibility
 
-If you performed any of the above qualifying actions on the Arbitrum One chain *before* Arbitrum Nitro launched on Arbitrum One mainnet **block #22207817**, your tokens may be weighted. This pre-Nitro weighting is how we reward early adopters of Arbitrum One, but it only applies if you earned at least 3 points before Nitro was launched.
+If you performed any of the above qualifying actions on the Arbitrum One chain *before* Arbitrum Nitro launched on Arbitrum One mainnet (block **#22207817**), your tokens may be weighted. This pre-Nitro weighting is how we reward early adopters of Arbitrum One, but it only applies if you earned at least 3 points before Nitro was launched.
 
 To calculate the number of tokens that you're eligible to claim, first determine which of the following three scenarios describes your on-chain activity:
 
@@ -191,11 +190,10 @@ To calculate the number of tokens that you're eligible to claim, first determine
 
 Scroll to the section that describes your scenario and follow the instructions.
 
-
 #### Scenario 1: All of your qualifying actions occurred before Nitro was launched.
 
- 1. First, refer to the [qualifying actions section below](#qualifying-actions) to determine how many points you earned on Arbitrum One. Because Arbitrum Nova was launched after Arbitrum Nitro, you won't have any qualifying actions on Arbitrum Nova.
- 2. Next, refer to the [point-to-token conversion table below](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of points you earned.
+ 1. First, refer to the [qualifying actions section](#qualifying-actions) to determine how many points you earned on Arbitrum One. Because Arbitrum Nova was launched after Arbitrum Nitro, you won't have any qualifying actions on Arbitrum Nova.
+ 2. Next, refer to the [point-to-token conversion table](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of points you earned.
 
 **Examples:**
 
@@ -225,18 +223,16 @@ Scroll to the section that describes your scenario and follow the instructions.
 
 #### Scenario 3: You performed qualifying actions before and after Nitro was launched.
 
- 1. First, refer to the [qualifying actions section below](#qualifying-actions) to determine how many points you earned on Arbitrum One before Nitro launched. We'll refer to this as `OnePointsPre`.
- 2. Next, refer to the [point-to-token conversion table below](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of points you earned.
+ 1. First, refer to the [qualifying actions section](#qualifying-actions) to determine how many points you earned on Arbitrum One before Nitro launched. We'll refer to this as `OnePointsPre`.
+ 2. Next, refer to the [point-to-token conversion table](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of points you earned.
 
 todo
-
-
 
 
 <br />
 
 
-#### User protections
+### User protections
 
 To prevent bots from taking advantage of the airdrop, a number of anti-Sybil rules were established:
 
@@ -245,6 +241,7 @@ To prevent bots from taking advantage of the airdrop, a number of anti-Sybil rul
  - If an airdrop recipient's wallet address has been identified as a Sybil address during the Hop protocol bounty program **the recipient is disqualified**. 
 
 Refer to [Arbitrum Sybil Hunting](https://github.com/ArbitrumFoundation/sybil-detection) to learn more about the Sybil mitigation methodology. Refer to our [Sybil accounts](./concepts/sybil-account.md) concept document for a conceptual introduction to Sybil accounts.
+
 
 ### DAO airdrop criteria and distribution
 
@@ -256,6 +253,7 @@ More details will be added around individual DAO allocation shortly.
 ### Vesting and lockup details
 
 While the user and DAO airdrops will be available in one week, all investor and team tokens are subject to 4 year lockups, with the first unlocks happening in one year and then monthly unlocks for the remaining three years.
+
 
 ### Frequently asked questions
 
