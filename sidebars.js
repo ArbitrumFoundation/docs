@@ -104,12 +104,12 @@ module.exports = {
         {
           type: 'link',
           label: 'Sybil detection',
-          href: 'https://github.com/OffchainLabs/arb-sybil/tree/master/v2',
+          href: 'https://github.com/ArbitrumFoundation/sybil-detection',
         },
         {
           type: 'link',
           label: 'Smart contract architecture',
-          href: 'https://github.com/OffchainLabs/governance/blob/main/docs/overview.md',
+          href: 'https://github.com/ArbitrumFoundation/governance/blob/main/docs/overview.md',
         },
         {
           type: 'doc',
