@@ -165,9 +165,10 @@ Scroll to the section that describes your scenario and follow the instructions.
 
 #### Point-to-token conversion table
 
+
 <table className="small-table">
     <tr>
-        <td><strong>Points earned</strong></td>
+        <td><strong>Points scored (values represent points scored pre-Nitro)</strong></td>
         <td><strong>Airdrop entitlement</strong></td>
     </tr>
     <tr>
@@ -238,8 +239,6 @@ More details will be added around individual DAO allocation shortly.
 ### Vesting and lockup details
 
 While the user and DAO airdrops will be available in one week, all investor and team tokens are subject to 4 year lockups, with the first unlocks happening in one year and then monthly unlocks for the remaining three years.
-
-
 
 ### Frequently asked questions
 

@@ -16,9 +16,9 @@ In this how-to, you'll learn how to submit an Arbitrum Improvement Proposal (AIP
 
 ### Prerequisites
 
-To submit a temperature check using a <a data-quicklook-from='snapshot-poll'>Snapshot poll</a>, you must have an Ethereum wallet address that represents at least 0.01% of votable tokens[^1]; to submit a proposal on-chain using [Tally](https://tally.xyz/gov/arbitrum), you must have an Ethereum wallet address that represents at least 5,000,000 tokens (about 0.1% of votable tokens).
+To submit a temperature check using a <a data-quicklook-from='snapshot-poll'>Snapshot poll</a>, you must have an Ethereum wallet address that represents at least 0.01% of votable tokens[^1]; to submit a proposal on-chain using [Tally](https://tally.xyz/gov/arbitrum), you must have an Ethereum wallet address that represents at least 5,000,000 tokens (about 0.1% of votable tokens). 
 
-If you don't have enough voting power, consider delegating your votes to a delegate who can create a proposal on your behalf[^2]. Note that anyone holding $ARB (regardless of the amount) is able to vote on both Snapshot and Tally proposals.
+If you don't have enough voting power, consider delegating your votes to a delegate who can create a proposal on your behalf[^2].
 
 
 ### Proposal types
@@ -44,7 +44,7 @@ Proposals that require code changes should include the code that will be execute
 
 ### Step 1: Conduct a formal temperature check with a Snapshot poll
 
-The [DAO governance forum](https://forum.arbitrum.foundation/) facilitates discussions about Arbitrum DAO and <a data-quicklook-from='governance-proposal'>governance proposals</a> that are submitted by eligible token-holders. To submit your proposal:
+The [DAO governance forum](https://forum.arbitrum.foundation/) facilitates discussions about Arbitrum DAO and <a data-quicklook-from='governance-proposal'>governance proposals</a> that are submitted by eligible token delegates. To submit your proposal:
 
 1. Go to the [DAO governance forum](https://forum.arbitrum.foundation/).
 2. Create a new post with your proposal using the template located [here](./create-submit-dao-proposal#proposal-structure). You can add additional fields to this template to provide more context for your proposal if you'd like.
@@ -65,7 +65,7 @@ If your wallet can represent at least 5,000,000 tokens (about 0.1% of votable $A
 
 To submit your proposal on Tally:
 
- 1.	Log in to [Tally](https://tally.xyz/gov/arbitrum) using the wallet that holds your $ARB tokens.
+ 1.	Log in to [Tally](https://tally.xyz/gov/arbitrum) using the wallet that represents the $ARB tokens.
  2.	Navigate to the "explore DAOs" section or click on "My DAOs" within your Tally profile and select one of the following pages:
     - **Arbitrum Constitution**: For Constitutional Proposals
     - **Arbitrum Treasury**: For Non-Constitutional Proposals
@@ -97,6 +97,6 @@ Welcome to the future of governance!
  3. You can delegate your voting power[^2] to another address whether or not you have enough tokens to submit on-chain proposals. If you hold any $ARB tokens whatsoever, you can participate in Arbitrum DAO's governance.
 
 
-[^1]: When we say "an Ethereum wallet address that represents at least 0.01% of votable tokens", we mean that your address must be able to vote at least 0.01% of votable tokens. This voting power can be acquired either by holding $ARB tokens directly or by receiving delegated votes from other $ARB token holders who have decided to delegate their voting power to you.
+[^1]: When we say "an Ethereum wallet address that represents at least 0.01% of votable tokens", we mean that your address must be able to vote at least 0.01% of votable tokens. This voting power can be acquired by receiving delegated votes from other $ARB token holders who have decided to delegate their voting power to you or that you have delegated to yourself.
 [^2]: Learn how to delegate your votes by visiting [How to delegate your voting power](./select-delegate-voting-power).
 [^3]: Refer to [The Constitution of the Arbitrum DAO](../dao-constitution) for additional details and conditions.
