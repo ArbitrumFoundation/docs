@@ -190,10 +190,13 @@ To prevent bots from taking advantage of the airdrop, a number of anti-Sybil rul
 
 Refer to [Arbitrum Sybil Hunting](https://github.com/ArbitrumFoundation/sybil-detection) to learn more about the Sybil mitigation methodology. Refer to our [Sybil accounts](./concepts/sybil-account.md) concept document for a conceptual introduction to Sybil accounts.
 
-### DAO Airdrop Criteria and Distribution
-
-**DAO Airdrop Criteria:**
+### DAO airdrop criteria and distribution
 
 A separate distribution was allocated for DAOs that are building applications in the Arbitrum ecosystem, as well as the Protocol Guild, a collective of Ethereum contributors. The distribution of tokens to DAOs was weighted based on a variety of factors, including time projects have been on Arbitrum, TVL of assets on the chain, whether a project was Arbitrum native, and whether project operated with actual on-chain treasuries.
 
 More details will be added around individual DAO allocation shortly.
+
+
+### Vesting and lockup details
+
+While the user and DAO airdrops will be available in one week, all investor and team tokens are subject to 4 year lockups, with the first unlocks happening in one year and then monthly unlocks for the remaining three years.
