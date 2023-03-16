@@ -11,12 +11,6 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
-```
- - FINAL-TODO: strategy inputs - Matt?
- - FINAL-TODO: hop protocol bounty program notes below - Matt?
-```
-
-
 :::caution THERE IS NO PRESALE
 
 The only official website for the $ARB airdrop is [https://arbitrum.foundation](https://arbitrum.foundation). There is no presale. Don't ever share your seed phrase. When in doubt, [join the Discord](https://discord.gg/arbitrum) to ask for clarification.
