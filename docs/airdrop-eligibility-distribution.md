@@ -82,7 +82,7 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
     </tr>
     <tr>
         <td>1.08%</td>
-        <td>113 million</td>
+        <td>108 million</td>
         <td><strong>DAOs</strong> building apps on Arbitrum (via airdrop to DAO treasury addresses)</td>
     </tr>
 </table>
