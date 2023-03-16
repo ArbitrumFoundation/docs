@@ -27,7 +27,7 @@ To become a candidate for the Security Council, you must be a member of the Arbi
 
 No more than 3 candidates from the same organization should be elected into the Security Council. Also, candidates shouldn't have any conflicts of interest that would prevent them from acting in the best interests of the Arbitrum DAO.
 
-The rules for the Security Council elections can be changed by the members of the Arbitrum DAO, but these changes can't be made during an ongoing election. Security Council members can also be removed from their position prior to their term ending if at least 10% of all votable tokens participate in a removal vote, and at least 5/6 of the votes are in favor of removal. They can also be removed if at least 9 members of the Security Council vote in favor of removal.
+The rules for the Security Council elections can be changed by the members of the Arbitrum DAO, but these changes can't be made during an ongoing election. Security Council members can also be removed from their position prior to their term ending if at least 10% of all votable tokens participate in a removal vote, and at least 5/6 of the votes are in favor of removal. A member can also be removed if at least 9 members of the Security Council vote in favor of removal.
 
 Note that the [Constitution](../dao-constitution.md) is the most authoritative specification of the Arbitrum DAO's rules. If there are any discrepancies between this document and the Constitution, please feel free to submit an issue, and note that the Constitution takes precedence.
 
