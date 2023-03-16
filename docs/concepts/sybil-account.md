@@ -18,8 +18,7 @@ In the context of Arbitrum Governance, Sybil accounts are Arbitrum accounts cont
 
 ### How were Sybil accounts detected prior to the airdrop?
 
-A process called "Sybil hunting" was used to detect and remove Sybil accounts. The process involved creating a graph of all transactions that have taken place on <a data-quicklook-from='arbitrum-one'>Arbitrum One</a>, and then partitioning this graph into different subgraphs. The subgraphs that have a large number of nodes and a high degree of connectivity were considered to be likely Sybil clusters. The accounts within these clusters were collapsed into a single recipient account for the airdrop. Entities explicitly known to by Sybils were also removed; the dataset of these entities was created with help from our friends at [Nansen](https://www.nansen.ai/) and [Hop](https://hop.exchange/). See [Arbitrum Sybil Hunting](https://github.com/OffchainLabs/arb-sybil/tree/master/v2) for more information. 
-
+A process called "Sybil hunting" was used to detect and remove Sybil accounts. The process involved creating a graph of all transactions that have taken place on <a data-quicklook-from='arbitrum-one'>Arbitrum One</a>, and then partitioning this graph into different subgraphs. The subgraphs that have a large number of nodes and a high degree of connectivity were considered to be likely Sybil clusters. The accounts within these clusters were collapsed into a single recipient account for the airdrop. Entities explicitly known to by Sybils were also removed; the dataset of these entities was created with help from our friends at [Nansen](https://www.nansen.ai/) and [Hop](https://hop.exchange/). See [Arbitrum Sybil Hunting](https://github.com/ArbitrumFoundation/sybil-detection) for more information. 
 
 ### Why is it important to prevent Sybil accounts?
 
