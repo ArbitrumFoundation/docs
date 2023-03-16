@@ -9,7 +9,7 @@
 ### Airdrop {#airdrop}
 <p></p>
 
-<p>A mechanism that distributes tokens to qualifying wallet addresses, usually based on on-chain activity. The <a href="/dao-glossary#arbitrum-foundation">Arbitrum Foundation</a> airdrop will distribute <a href="/dao-glossary#arb">$ARB</a> tokens to eligible wallet addresses according to the airdrop eligibility and distribution criteria specified in our <a href='/airdrop-eligibility-distribution'>overview of airdrop eligibility and specifications</a>.</p>
+<p>A mechanism that distributes tokens to qualifying wallet addresses, usually based on on-chain activity. <a href="/dao-glossary#the-arbitrum-foundation">The Arbitrum Foundation</a> airdrop will distribute <a href="/dao-glossary#arb">$ARB</a> tokens to eligible wallet addresses according to the airdrop eligibility and distribution criteria specified in our <a href='/airdrop-eligibility-distribution'>overview of airdrop eligibility and specifications</a>.</p>
 
 
 
@@ -33,12 +33,6 @@
 
 ### Arbitrum DAO Treasury {#arbitrum-dao-treasury}
 <p>A smart contract on the <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> chain that contains tokens collectively controlled by the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>.</p>
-
-### The Arbitrum Foundation {#arbitrum-foundation}
-<p>A legal entity that is governed by the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>. Is bound to the rules articulated within <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a>.</p>
-
-### The Arbitrum Foundation tokens {#arbitrum-foundation-tokens}
-<p><a href="/dao-glossary#arb">$ARB</a> tokens owned by the <a href="/dao-glossary#arbitrum-dao-treasury">Arbitrum DAO Treasury</a>.</p>
 
 ### Arbitrum Improvement Proposal (AIP) {#arbitrum-improvement-proposal-aip}
 <p>A <a href="/dao-glossary#governance-proposal">Governance proposal</a> as defined by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a>. There are two types of AIPs: <a href="/dao-glossary#constitutional-aip">Constitutional AIP</a>s and <a href="/dao-glossary#nonconstitutional-aip">Non-constitutional AIP</a>s.</p>
@@ -106,10 +100,6 @@
 ### Governance token {#governance-token}
 <p>A particular type of token that allows token-holders to vote on governance proposals. <a href="/dao-glossary#arb">$ARB</a> is an example of a governance token; it allows token-holders to create and vote on <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> <a href="/dao-glossary#governance-proposal">Governance proposal</a>s.</p>
 
-<p></p>
-
-
-
 ### Immutable {#immutable}
 <p>In the context of Ethereum, immutability refers to the inability to change the data recorded in the blockchain. You can think of Ethereum's blockchain as a decentralized, distributed linked-list data structure that stores the entire history of transactions within a globally distributed network of computers running Ethereum client software.<br />
 <br />
@@ -145,7 +135,7 @@ The client software implements a protocol that stores transaction history within
 <p>As opposed to on-chain governance or <a href="/dao-glossary#smart-contract">Smart contract</a> governance. Off-chain governance is carried out through social consensus, and off-chain proposals. The Ethereum Foundation's EIP mechanism is an example of an off-chain governance protocol.</p>
 
 ### Off-chain governance action {#offchain-governance-action}
-<p>One of two types of governance actions allowed by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a>. Off-chain actions are actions that are executed without <a href="/dao-glossary#smart-contract">Smart contract</a>s. An example of an off-chain governance action is taking a "temperature check" on a proposal before submitted it to the <a href="/dao-glossary#governor-contract">Governor contract</a>.  </p>
+<p>One of two types of governance actions allowed by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a>. Off-chain actions are actions that are executed without <a href="/dao-glossary#smart-contract">Smart contract</a>s. An example of an off-chain governance action is taking a "temperature check" on a proposal before submitted it to the Governor contract.  </p>
 
 ### On-chain governance {#onchain-governance}
 <p>As opposed to off-chain governance, social governance, or pseudo governance. On-chain governance is governance implemented by <a href="/dao-glossary#smart-contract">Smart contract</a>s that allow DAO members to determine - through the use of <a href="/dao-glossary#governance-proposal">Governance proposal</a>s - how the DAO allocates its resources and updates its protocols. The <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> utilizes on-chain governance.</p>
@@ -183,6 +173,12 @@ The client software implements a protocol that stores transaction history within
 ### Standard Token gateway {#standard-token-gateway}
 <p>A series of smart contracts responsible for bridging ERC20 tokens on Ethereum to Arbitrum chains like <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> or <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a> and back.  The standard gateway keeps the L1 token escrowed on Ethereum and mints/burns the L2 token representation upon deposits/withdrawals. </p>
 
+### The Arbitrum Foundation {#the-arbitrum-foundation}
+<p>A legal entity that is governed by the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>. Is bound to the rules articulated within <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a>.</p>
+
+### The Arbitrum Foundation tokens {#the-arbitrum-foundation-tokens}
+<p><a href="/dao-glossary#arb">$ARB</a> tokens owned by the <a href="/dao-glossary#arbitrum-dao-treasury">Arbitrum DAO Treasury</a>.</p>
+
 ### The Constitution of the Arbitrum DAO {#the-constitution-of-the-arbitrum-dao}
 <p>A formal document that lays out the rules, procedures, and community values by which the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> operates. The hash of the canonical constitution is stored on chain and is updatable via governance. The protocol outlined by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a> is codified within the <a href="/dao-glossary#smart-contract">Smart contract</a>s that facilitate <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> governance.</p>
 
@@ -216,7 +212,7 @@ This is achieved through the use of cryptographic techniques and decentralized c
 <p></p>
 
 <ul><li>tokens owned by the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a></li>
-<li>tokens owned by The <a href="/dao-glossary#arbitrum-foundation">Arbitrum Foundation</a></li>
+<li>tokens owned by <a href="/dao-glossary#the-arbitrum-foundation">The Arbitrum Foundation</a></li>
 <li>airdrop tokens not yet claimed</li>
 </ul>
 <p><br />
