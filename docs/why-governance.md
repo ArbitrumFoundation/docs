@@ -84,4 +84,4 @@ These don't have easy answers and will continue to be the topic of lively discus
 With the DAO in control, decisions about how Arbitrum should evolve over time — including the governance process itself — are in the hands of the Arbitrum community.
 
 
-[^1]: Refer to [$ARB airdrop eligibility and distribution specifications](./airdrop-eligibility-distribution.md) to learn more about the airdrop specifications. Refer to [Arbitrum Sybil Hunting](https://github.com/OffchainLabs/arb-sybil/tree/master/v2) for an overview of our Sybil mitigation methodology.
+[^1]: Refer to [$ARB airdrop eligibility and distribution specifications](./airdrop-eligibility-distribution.md) to learn more about the airdrop specifications. Refer to [Arbitrum Sybil Hunting](https://github.com/ArbitrumFoundation/sybil-detection/) for an overview of our Sybil mitigation methodology.

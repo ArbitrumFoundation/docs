@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Arbitrum DAO - Governance docs',
   tagline: 'Decentralized governance is cool',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://docs.arbitrum.foundation',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -43,7 +43,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/', // FINAL-TODO
+            'https://github.com/ArbitrumFoundation/docs/edit/main/docs',
         },
         blog: false,
         theme: {
@@ -64,7 +64,7 @@ const config = {
         },
         items: [
           {
-            href: 'https://github.com/facebook/docusaurus', // FINAL-TODO
+            href: 'https://github.com/ArbitrumFoundation/docs',
             label: 'GitHub',
             position: 'right',
           },
