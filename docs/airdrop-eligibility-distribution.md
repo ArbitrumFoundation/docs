@@ -77,7 +77,7 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
     </tr>
     <tr>
         <td>11.67%</td>
-        <td>1.166 Billion</td>
+        <td>1.167 Billion</td>
         <td><strong>Users</strong> of the Arbitrum platform (via airdrop to user wallet addresses)</td>
     </tr>
     <tr>
