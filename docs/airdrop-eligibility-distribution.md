@@ -210,6 +210,7 @@ Scroll to the section that describes your scenario and follow the instructions.
     1. If `OnePoints` is 4 or more, the maximum value of `NovaPoints` can be 1.
     2. If `OnePoints` is less than 4, the maximum value of `NovaPoints` can be 4 *minus* `OnePoints`.
  3. Next, add `OnePoints` and `NovaPoints` together to determine your total number of points.
+ 4. Finally, refer to the [point-to-token conversion table](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the total number of eligible points you earned.
 
 
 **Examples:**
