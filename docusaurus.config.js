@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Arbitrum DAO - Governance docs',
   tagline: 'Decentralized governance is cool',
-  url: 'https://arbitrum.foundation',
+  url: 'https://docs.arbitrum.foundation',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
