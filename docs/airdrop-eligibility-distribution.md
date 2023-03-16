@@ -196,4 +196,4 @@ Refer to [Arbitrum Sybil Hunting](https://github.com/OffchainLabs/arb-sybil/tree
 
 A separate distribution was allocated for DAOs that are building applications in the Arbitrum ecosystem, as well as the Protocol Guild, a collective of Ethereum contributors. The distribution of tokens to DAOs was weighted based on a variety of factors, including time projects have been on Arbitrum, TVL of assets on the chain, whether a project was Arbitrum native, and whether project operated with actual on-chain treasuries.
 
-You can view the full list of eligible DAOs and individual allocations [here](bit.ly/3lk28pW).
+You can view the full list of eligible DAOs and individual allocations [here](https://bit.ly/3lk28pW).
