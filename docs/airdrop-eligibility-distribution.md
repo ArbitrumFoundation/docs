@@ -120,16 +120,66 @@ To calculate the number of tokens that you're eligible to claim, first determine
 Scroll to the section that describes your scenario and follow the instructions.
 
 
-
 #### Scenario 1: All of your qualifying actions occurred before Nitro was launched.
 
- 1. First, refer to the [qualifying actions section below](#qualifying-actions) to determine how many points you earned on Arbitrum One and Arbitrum Nova. We'll refer to these as `pointsOne` and `pointsNova` moving forward, respectively.
- 2. Next, we'll make an adjustment to `pointsNova` based on the value of `pointsOne`:
-    1. If `pointsOne` is 4 or more, the maximum value of `pointsNova` can be 1.
-    2. If `pointsOne` is less than 4, the maximum value of `pointsNova` can be 4 *minus* `pointsOne`.
- 3. Next, refer to the [point-to-token conversion table below](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the sum of `pointsOne` and `pointsNova`.
- 4. 
+ 1. First, refer to the [qualifying actions section below](#qualifying-actions) to determine how many points you earned on Arbitrum One. Because Arbitrum Nova was launched after Arbitrum Nitro, you won't have any qualifying actions on Arbitrum Nova.
+ 2. Next, refer to the [point-to-token conversion table below](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of points you earned.
 
+**Examples:**
+
+| Pre-Nitro points | Tokens |
+| ---------------- | ------ |
+| 9                | 6,250  |
+| 13               | 10,250 |
+
+
+
+#### Scenario 2: All of your qualifying actions occurred after Nitro was launched.
+
+ 1. First, refer to the [qualifying actions section below](#qualifying-actions) to determine how many points you earned on Arbitrum One and Arbitrum Nova. We'll refer to these as `OnePoints` and `NovaPoints` moving forward, respectively.
+ 2. Next, we'll make an adjustment to `NovaPoints` based on the value of `OnePoints`:
+    1. If `OnePoints` is 4 or more, the maximum value of `NovaPoints` can be 1.
+    2. If `OnePoints` is less than 4, the maximum value of `NovaPoints` can be 4 *minus* `OnePoints`.
+ 3. Next, add `OnePoints` and `NovaPoints` together to determine your total number of points.
+
+
+**Examples:**
+
+| Post-Nitro `OnePoints` | Post-Nitro `NovaPoints` | Post-Nitro points (total, eligible) | Tokens |
+| ---------------------- | ----------------------- | ----------------------------------- | ------ |
+| 5                      | 4  (gets cut to 1)      | 6                                   | 3,250  |
+| 2                      | 4  (gets cut to 2)      | 4                                   | 1,750  |
+| 10                     | 3 (gets cut to 1)       | 11                                  | 7,250  |
+
+
+
+
+
+#### Scenario 3: You performed qualifying actions before and after Nitro was launched.
+
+ 1. First, refer to the [qualifying actions section below](#qualifying-actions) to determine how many points you earned on Arbitrum One before Nitro launched. We'll refer to this as `OnePointsPre`.
+ 2. Next, refer to the [point-to-token conversion table below](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of points you earned.
+
+
+
+
+
+
+
+
+
+
+
+ 1. Next, refer to the [point-to-token conversion table below](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the sum of `pointsOne` and `pointsNova`.
+ 2. 
+
+
+```
+Example
+3 points before nitro
+10 points total
+you get 1200 + (6700-1200)/2 = 3950
+```
 
 
 
@@ -146,7 +196,7 @@ Scroll to the section that describes your scenario and follow the instructions.
 #### Scenario 2: All of your qualifying actions occurred after Nitro was launched.
 
 
-#### Scenario 3: You performed qualifying actions before and after Nitro was launched.
+
 
 
 
