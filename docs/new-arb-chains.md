@@ -23,7 +23,7 @@ This is true for several reasons:
 
 1. **Better Scalability** While Arbitrum chains help alleviate the scaling bottlenecks of Ethereum, Arbitrum chains themselves hit their own similar scaling bottlenecks (e.g. state grown and congestion limits).
    An ecosystem with multiple chains alleviates these bottlenecks by siloing activity into opt-in environments which manage their own resources separately.
-1. **Different Security Models** Different chains can experiment with different security models and take advantage of the trade-offs they offer. This can currently be seen, for example with, Arbitrum One and Arbitrum Nova, the former which offers stronger trust-minimization, and the later which offers lower fees.
+1. **Different Security Models** Different chains can experiment with different security models and take advantage of the trade-offs they offer. This can currently be seen, for example with, Arbitrum One and Arbitrum Nova, the former which offers stronger trust-minimization, and the latter which offers lower fees.
 1. **Different Execution Environments** Different chains can also experiment with different execution environments. Arbitrum chains are fully EVM compatible; app-specific chains can deliberately have more restrictive smart contract functionality to optimize for better performance.
 
 It's thus crucial that the Arbitrum ecosystem have a strategy for a multi-chain world.
@@ -34,7 +34,7 @@ For the purposes of this page: the term "layer 2" (or L2) will refer to any Arbi
 
 ### New L2s: Arbitrum DAO Authorized
 
-The Arbitrum DAO can authorize the creation of new L2 chains. New L2 chains are authorized via a constitutional [governance proposal](./how-tos/create-submit-dao-proposal.md); if the proposal passes, a new chain will be created. The DAO can authorize new chains to be among the chains governed by the Arbitrum DAO (i.e., such that the [DAO constitution](./dao-constitution.md) will apply to it as it does currently to Arbitrum One and Nova), or may authorize new chains to governed by other means.
+The Arbitrum DAO can authorize the creation of new L2 chains. New L2 chains are authorized via a constitutional [governance proposal](./how-tos/create-submit-dao-proposal.md); if the proposal passes, a new chain will be created. The DAO can authorize new chains to be among the chains governed by the Arbitrum DAO (i.e., such that the [DAO constitution](./dao-constitution.md) will apply to it as it does currently to Arbitrum One and Nova), or may authorize new chains to be governed by other means.
 
 ### New L3s: No Authorization Required
 
