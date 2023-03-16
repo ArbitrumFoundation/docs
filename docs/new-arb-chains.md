@@ -36,4 +36,4 @@ The Arbitrum DAO can authorize the creation of new L2 chains. New L2 chains are 
 
 For the creation of new _L3s_ that run on top of Arbitrum L2s, no authorization or approval is required at all — not from the Arbitrum DAO or anyone else. L3s (and L4s, L5s, etc.) can be deployed permissionlessly, like any other Arbitrum contracts. This includes L3 chains that use custom modifications to the Arbitrum Nitro codebase, chains that introduce their own novel governance structures, and so on.
 
-This architecture ensures that the community ha some control over how the Arbitrum tech stack is used, while still leaving room to foster the open, permissionless innovation expected from a vibrant web3 ecosystem.
+This architecture ensures that the community has some control over how the Arbitrum tech stack is used, while still leaving room to foster the open, permissionless innovation expected from a vibrant web3 ecosystem.
