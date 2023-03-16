@@ -66,18 +66,18 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
         <td>Arbitrum DAO treasury</td>
     </tr>
     <tr>
-        <td>25%</td>
-        <td>2.5 billion</td>
-        <td>Current and future employees of Offchain Labs (the team that built the initial version of Arbitrum)</td>
+        <td>26.94%</td>
+        <td>2.694 billion</td>
+        <td>Offchain Labs Team and Future Team + Advisors</td>
     </tr>
     <tr>
-        <td>19%</td>
-        <td>1.9 billion</td>
+        <td>17.53%</td>
+        <td>1.753 billion</td>
         <td>Offchain Labs investors</td>
     </tr>
     <tr>
         <td>11.63%</td>
-        <td>1.16 Billion</td>
+        <td>1.163 Billion</td>
         <td><strong>Users</strong> of the Arbitrum platform (via airdrop to user wallet addresses)</td>
     </tr>
     <tr>
