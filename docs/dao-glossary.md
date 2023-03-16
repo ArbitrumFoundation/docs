@@ -3,7 +3,6 @@ id: dao-glossary
 title: Arbitrum DAO glossary
 sidebar_label: Glossary
 description: Review the Arbitrum DAO's key terms and definitions.
-
 toc_min_heading_level: 3
 ---
 

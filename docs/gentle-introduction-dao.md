@@ -120,7 +120,7 @@ A delegate is like an elected representative. $ARB token holders can delegate th
 
 There are a lot of people who don't have time to actively participate in protocol governance. Delegates help these people by offering to vote on their behalf.
 
-Delegates are a critical component of Arbitrum's decentralization because they allow token holders to passively participate in the governance of our technology. Although becoming a delegate is a serious responsibility that requires a significant time commitment, it allows you to ensure that Ethereum's values (and those of the delegators who have entrusted you with their voting power) are forever enshrined within the DAO's decisions and decision-making protocols. See [How to become an early delegate](./how-tos/apply-become-delegate.md) to learn more about the delegate application process.
+Delegates are a critical component of Arbitrum's decentralization because they allow token holders to passively participate in the governance of our technology. Although becoming a delegate is a serious responsibility that requires a significant time commitment, it allows you to ensure that Ethereum's values (and those of the delegators who have entrusted you with their voting power) are forever enshrined within the DAO's decisions and decision-making protocols. See [How to become a listed delegate](./how-tos/apply-become-delegate.md) to learn more about the delegate application process.
 
 
 ### I'd like to participate! What are my options?

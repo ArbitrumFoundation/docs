@@ -1,9 +1,9 @@
 ---
 id: apply-become-delegate
-title: How to apply to become an early delegate
-sidebar_label: Become an early delegate
-description: Learn how to apply to become an early delegate for the Arbitrum DAO.
-dao_author: dzgoldman
+title: How to apply to become a listed delegate
+sidebar_label: Become a listed delegate
+description: Learn how to apply to become a listed delegate for the Arbitrum DAO.
+dao_author: symbolpunk
 dao_sme: pearring
 ---
 
@@ -15,7 +15,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 Arbitrum DAO's launch is currently in the **call for delegates** stage. Throughout this stage, prospective DAO delegates can submit <a data-quicklook-from='delegate'>delegate</a> applications on the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/t/delegate-application-template/31). After this stage, <a data-quicklook-from='airdrop'>airdop</a> recipients will be able to claim their $ARB governance tokens and optionally delegate the voting power[^1] of their tokens to eligible "early delegates". In this how-to, you'll learn how to apply to become one of these early delegates.
 
-### Apply to be an early delegate
+### Apply to be a listed delegate
 
 Before applying to become a delegate, it's important to understand the responsibilities and requirements of the role. Delegates are expected to actively participate in the decision-making process and to act in the best interests of the network. They should also be familiar with [The Constitution of the Arbitrum DAO](../dao-constitution) and each of the documents within this content set.
 
