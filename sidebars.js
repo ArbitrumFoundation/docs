@@ -104,7 +104,7 @@ module.exports = {
         {
           type: 'link',
           label: 'Sybil detection',
-          href: 'https://github.com/ArbitrumFoundation/arb-sybil/tree/master/v2', // TODO ensure this is correct after Harry N moves it
+          href: 'https://github.com/ArbitrumFoundation/sybil-detection',
         },
         {
           type: 'link',
