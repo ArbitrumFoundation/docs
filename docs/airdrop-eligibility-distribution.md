@@ -218,8 +218,8 @@ Scroll to the section that describes your scenario and follow the instructions.
 
 | Post-Nitro `OnePoints` | Post-Nitro `NovaPoints` | Post-Nitro points (total, eligible) | Tokens |
 | ---------------------- | ----------------------- | ----------------------------------- | ------ |
-| 5                      | 4  (gets cut to 1)      | 6                                   | 3,250  |
-| 2                      | 4  (gets cut to 2)      | 4                                   | 1,750  |
+| 5                      | 4 (gets cut to 1)       | 6                                   | 3,250  |
+| 2                      | 4 (gets cut to 2)       | 4                                   | 1,750  |
 | 10                     | 3 (gets cut to 1)       | 11                                  | 7,250  |
 
 
@@ -228,7 +228,7 @@ Scroll to the section that describes your scenario and follow the instructions.
  1. First, refer to the [qualifying actions section below](#qualifying-actions) to determine how many points you earned on Arbitrum One before Nitro launched. We'll refer to this as `OnePointsPre`.
  2. Next, refer to the [point-to-token conversion table below](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of points you earned.
 
-// todo
+todo
 
 
 
@@ -259,4 +259,4 @@ While the user and DAO airdrops will be available in one week, all investor and 
 
 ### Frequently asked questions
 
-// todo
+todo
