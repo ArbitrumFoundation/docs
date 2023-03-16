@@ -43,7 +43,8 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/', // FINAL-TODO
+            //'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/', // FINAL-TODO
+            'https://github.com/ArbitrumFoundation/docs'
         },
         blog: false,
         theme: {
@@ -64,7 +65,7 @@ const config = {
         },
         items: [
           {
-            href: 'https://github.com/facebook/docusaurus', // FINAL-TODO
+            href: 'https://github.com/ArbitrumFoundation/docs', // FINAL-TODO
             label: 'GitHub',
             position: 'right',
           },
@@ -104,7 +105,7 @@ const config = {
       },
       announcementBar: {
         id: "banner",
-        content: `ArbitrumDAO has been officially announced. The airdrop won’t be live until March 23rd. Apply to be a delegate <a rel="noopener noreferrer" href="https://forum.arbitrum.foundation/t/delegate-application-template/31">here</a>.`,
+        content: `Arbitrum DAO has been officially announced. The airdrop won’t be live until March 23rd. Apply to be a delegate <a rel="noopener noreferrer" href="https://forum.arbitrum.foundation/t/delegate-application-template/31">here</a>.`,
         backgroundColor: 'rgb(8 53 117)',
         textColor: 'white',
         isCloseable: false,
