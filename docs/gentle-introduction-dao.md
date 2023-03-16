@@ -75,7 +75,7 @@ See [State of decentralization](./state-of-progressive-decentralization) for a m
 
 ### Cool beans. Am I eligible for the airdrop?
 
-If you've used Arbitrum at any time before the the snapshot date (February 6th, 2023 - [block 58642080](https://arbiscan.io/block/58642080) on Arbitrum One), you're probably entitled to some $ARB tokens. The easiest way to find out if you're eligible is to visit [gov.arbitrum.foundation](http://gov.arbitrum.foundation/) and follow the prompts.
+If you've used Arbitrum at any time before the the snapshot date (February 6th, 2023 - [block 58642080](https://arbiscan.io/block/58642080) on Arbitrum One), you could be entitled to some $ARB tokens. The easiest way to find out if you're eligible is to visit [gov.arbitrum.foundation](http://gov.arbitrum.foundation/) and follow the prompts.
 
 ### How does Arbitrum's governance work?
 
