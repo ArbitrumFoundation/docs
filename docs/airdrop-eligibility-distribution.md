@@ -53,7 +53,7 @@ The only official website for the $ARB airdrop is [https://gov.arbitrum.foundati
     </tr>
     <tr>
         <td><strong>Airdrop snapshot</strong></td>
-        <td><a href='https://arbiscan.io/block/22207817'>Block 22207817</a> on Arbitrum One = August 31, 2022</td>
+        <td><a href='https://arbiscan.io/block/58642080'>Block 58642080</a> on Arbitrum One = February 6th, 2023</td>
     </tr>
 </table>
 
