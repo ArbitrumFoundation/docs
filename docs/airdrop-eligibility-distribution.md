@@ -160,7 +160,63 @@ Scroll to the section that describes your scenario and follow the instructions.
  1. First, refer to the [qualifying actions section below](#qualifying-actions) to determine how many points you earned on Arbitrum One before Nitro launched. We'll refer to this as `OnePointsPre`.
  2. Next, refer to the [point-to-token conversion table below](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of points you earned.
 
-// todo
+
+
+
+
+
+
+
+
+
+
+ 1. Next, refer to the [point-to-token conversion table below](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the sum of `pointsOne` and `pointsNova`.
+ 2. 
+
+
+```
+Example
+3 points before nitro
+10 points total
+you get 1200 + (6700-1200)/2 = 3950
+```
+
+
+
+
+ - every address is a row
+ - two cols with point totals on different days - pre vs post column
+   - pre
+   - 
+ - third cal - diff is divided by two and added to pre points 
+ - point totals are inclusive of Nova
+
+
+
+#### Scenario 2: All of your qualifying actions occurred after Nitro was launched.
+
+
+
+
+
+
+
+
+
+
+ 3. You can earn a maximum of 15 points total.
+ 4. 
+
+ 5. Actions performed before [block #22207817](todo) on Arbitrum One mainnet may be worth twice as much as actions performed after.
+
+ - Arb Nitro launch = $NITRO-DATE
+
+ - If you scored 4 or more points on One, you can earn maximum one additional point on Nova.
+ - If you scored fewer than 4 points on One, you can earn however many points brings you up to a total of 4 on Nova.
+- You earn maximum one point per qualifying action performed before the snapshot date.
+- In some cases, points earned before $NITRO-DATE are worth twice as much as points earned after
+  - if you earned fewer than three points before $NITRO-DATE, the multiplier doesn't apply.
+  - if you earned three or more points before $NITRO-DATE, the multiplier does apply.
 
 
 
@@ -273,8 +329,40 @@ While the user and DAO airdrops will be available in one week, all investor and 
 
 
 
+Two snapshots  - one in aug 31, then one in feb 6th - both chains
+ - block number on nova different than one
+ - two confusing things - 
+ - 1. points on nova impacting token eligibility - you can't get more than 15 points total, 
+   - two sets of criteria -  14 for One, 4 for Nova
+
+
+- simplest solution - examples
+  - I earned points pre-nitro only on One
+  - I earned points pre-nitro on both One and Nova
+  - I earned points post-nitro only on One
+  - I earned points post-nitro on both One and Nova
+  - I earned points both pre and post-nitro on One
+  - I earned points both pre and post-nitro on both One and Nova
+  - I earned points both pre and post-nitro on Nova
+  - 
+
+when and where they earned the points determines when the diff is applied
+
+the "double points" pre-Nitro is not working.
+I checked my wallet and I have 10 points. None of them have been doubled even if I have earned more than 3 points before Arbitrum Nitro launched.
+
+
+
+```
+if nova_points == 0:
+  summed_points = one_points
+
+elif (one_points+1) >= 4:
+  summed_points = one_points + 1
+
+else:
+  summed_points = min(4,max(0,one_points)+nova_points)
+```
+
 
 ### Frequently asked questions
-
-
-// todo
