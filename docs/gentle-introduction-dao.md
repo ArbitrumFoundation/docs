@@ -89,11 +89,11 @@ Governance of the Arbitrum Rollup protocol is driven by two governing bodies: th
 
 Arbitrum's governance system is responsible for making many types of decisions. One important responsibility is upgrading Arbitrum chains’ core contracts, which define and enforce the Arbitrum protocols. An upgrade like this could be motivated by any of the following reasons:
 
- 1. An upgrade could improve the system in some way, like increase its decentralization or optimize its performance and lower fees. 
- 2. An upgrade could fix a critical vulnerability. 
- 3. An upgrade could address a non-critical decision that affects the Arbitrum ecosystem at large. 
+ 1. An upgrade could improve the system in some way, like increase its decentralization or optimize its performance and lower fees.
+ 2. An upgrade could fix a critical vulnerability.
+ 3. An upgrade could address a non-critical decision that affects the Arbitrum ecosystem at large.
 
- The Arbitrum DAO is also responsible for authorization the creation of new L2 chains (see [New Chains](./new-arb-chains)).
+The Arbitrum DAO is also responsible for authorization the creation of new L2 chains (see [New Chains](./new-arb-chains)).
 
 Refer to the [Constitution](./dao-constitution.md) for a precise overview of the scope of the DAO's decision-making responsibilities. See [Why governance?](./why-governance) to learn more about the importance of governance. See [Comprehension check](./dao-comprehension-check) to test your understanding of the Constitution's protocol.
 
