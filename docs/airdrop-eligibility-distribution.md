@@ -95,7 +95,7 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
 
 A points system was used to determine the number of tokens that airdrop recipients can claim. Points criteria was focused primarily on Arbitrum One; however, there was a small subset of criteria applied to activity on Arbitrum Nova. Points earned on Arbitrum Nova could either bring a user up to 4 points total, or give them one additional point if they had already scored 4 points or more on Arbitrum One. You earn maximum one point per qualifying action performed before the snapshot date. Point scores were capped at 15.
 
-Additionally, as the criteria and design of the airdrop as a whole was intentioned to reward early adopters, points scored (minimum of three) before Arbitrum Nitro was launched on Arbitrum One mainnet are worth twice as much as points scored after. Arbitrum Nitro launched on Arbitrum One mainnet at block #22207817.
+Additionally, as the criteria and design of the airdrop as a whole was intentioned to reward early adopters, points scored (minimum of three) before Arbitrum Nitro was launched on Arbitrum One mainnet are worth twice as much as points scored after. Arbitrum Nitro launched on Arbitrum One mainnet at block #22207817 (Aug-31-2022 02:32:22 PM +UTC).
 
 **Qualifying actions:**
 
@@ -180,7 +180,7 @@ Points earned on Arbitrum Nova
 
 <br />
 
-As described earlier, points scored before and after Arbitrum Nitro was deployed on Arbitrum One mainnet were weighted differently. Points scored before Arbitrum Nitro were worth twice as much as points scored after -- as a result any points scored after Nitro resulted in half as much of an allocation per point shown in the table above. If an address only became fully eligible (minimum of three points) post-nitro, all points scored counted as post-nitro points. 
+As described earlier, points scored before and after Arbitrum Nitro was deployed on Arbitrum One mainnet were weighted differently. Points scored before Arbitrum Nitro were worth twice as much as points scored after -- as a result any points scored after Nitro resulted in half as much of an allocation per point shown in the table above. If an address only became fully eligible (minimum of three points) post-nitro, all points scored counted as post-nitro points. The minimum airdrop entitlement is 625 tokens. The maximum airdrop entitlement is 1250 tokens.
 
 **User protections:**
 
