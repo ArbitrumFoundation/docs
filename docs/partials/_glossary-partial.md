@@ -34,10 +34,10 @@
 ### Arbitrum DAO Treasury {#arbitrum-dao-treasury}
 <p>A smart contract on the <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> chain that contains tokens collectively controlled by the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>.</p>
 
-### Arbitrum Foundation {#arbitrum-foundation}
-<p>A legal entity that represents the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>. Is bound to the rules articulated within <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a>.</p>
+### The Arbitrum Foundation {#arbitrum-foundation}
+<p>A legal entity that is governed by the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>. Is bound to the rules articulated within <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a>.</p>
 
-### Arbitrum Foundation tokens {#arbitrum-foundation-tokens}
+### The Arbitrum Foundation tokens {#arbitrum-foundation-tokens}
 <p><a href="/dao-glossary#arb">$ARB</a> tokens owned by the <a href="/dao-glossary#arbitrum-dao-treasury">Arbitrum DAO Treasury</a>.</p>
 
 ### Arbitrum Improvement Proposal (AIP) {#arbitrum-improvement-proposal-aip}
@@ -98,16 +98,13 @@
 <p>An execution-layer client that defines the Ethereum state transition function and handles network-layer logic like transaction memory pooling. <a href="/dao-glossary#arbitrum-nitro">Arbitrum Nitro</a> utilizes a fork of Geth to implement Arbitrum's state transition function.</p>
 
 ### Governance {#governance}
-<p>The way that decisions get made. Governance of web2 technologies traditionally depends on a board of directors abiding by trusted social contracts, while governance of web3 technologies depends on Decentralized Autonomous Organizations (DAOs) governed through <a href="/dao-glossary#trustless">Trustless</a> <a href="/dao-glossary#smart-contract">Smart contract</a>s. </p>
+<p>The way that decisions get made. Governance of web2 technologies traditionally depends on a board of directors abiding by trusted social contracts, while governance of web3 technologies depends on Decentralized Autonomous Organizations (DAOs) using <a href="/dao-glossary#trustless">Trustless</a> <a href="/dao-glossary#smart-contract">Smart contract</a>s. </p>
 
 ### Governance proposal {#governance-proposal}
 <p>A proposal to change some aspect of <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>'s governance protocol. There are two types of Arbitrum DAO governance proposals: <a href="/dao-glossary#constitutional-aip">Constitutional AIP</a>s and <a href="/dao-glossary#nonconstitutional-aip">Non-constitutional AIP</a>s.</p>
 
 ### Governance token {#governance-token}
 <p>A particular type of token that allows token-holders to vote on governance proposals. <a href="/dao-glossary#arb">$ARB</a> is an example of a governance token; it allows token-holders to create and vote on <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> <a href="/dao-glossary#governance-proposal">Governance proposal</a>s.</p>
-
-### Governor contract {#governor-contract}
-<p>Internal only? Talking about the contract itself feels "implementation detail" to me</p>
 
 <p></p>
 
@@ -219,7 +216,7 @@ This is achieved through the use of cryptographic techniques and decentralized c
 <p></p>
 
 <ul><li>tokens owned by the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a></li>
-<li>tokens owned by the <a href="/dao-glossary#arbitrum-foundation">Arbitrum Foundation</a></li>
+<li>tokens owned by The <a href="/dao-glossary#arbitrum-foundation">Arbitrum Foundation</a></li>
 <li>airdrop tokens not yet claimed</li>
 </ul>
 <p><br />
