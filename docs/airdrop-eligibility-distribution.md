@@ -90,61 +90,36 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
 
 ### User airdrop eligibility details
 
-Airdrop eligibility is determined by the number of points earned by a user's wallet address. Points are earned by performing **qualifying actions** on the Arbitrum One and Arbitrum Nova rollup chains. 
-
-If you performed any of these qualifying actions on the Arbitrum One chain *before* Arbitrum Nitro launched on Arbitrum One mainnet [block #22207817](todo), your tokens may be weighted. This pre-Nitro weighting is how we reward early adopters of Arbitrum One, but it only applies if you earned at least 3 points before Nitro was launched.
-
-To calculate the number of tokens that you're eligible to claim, first determine which of the following three scenarios describes your on-chain activity:
-
- 1. All of your qualifying actions occurred **before** Nitro was launched.
- 2. All of your qualifying actions occurred **after** Nitro was launched.
- 3. You performed qualifying actions **before and after** Nitro was launched.
-
-Scroll to the section that describes your scenario and follow the instructions.
-
-#### Scenario 1: All of your qualifying actions occurred before Nitro was launched.
-
- 1. First, refer to the [qualifying actions section below](#qualifying-actions) to determine how many points you earned on Arbitrum One. Because Arbitrum Nova was launched after Arbitrum Nitro, you won't have any qualifying actions on Arbitrum Nova.
- 2. Next, refer to the [point-to-token conversion table below](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of points you earned.
-
-**Examples:**
-
-| Pre-Nitro points | Tokens |
-| ---------------- | ------ |
-| 9                | 6,250  |
-| 13               | 10,250 |
+Airdrop eligibility is determined by the number of points earned by a user's wallet address. Points are earned by performing **qualifying actions** on the Arbitrum One and Arbitrum Nova rollup chains:
 
 
-#### Scenario 2: All of your qualifying actions occurred after Nitro was launched.
+#### Qualifying actions
 
- 1. First, refer to the [qualifying actions section below](#qualifying-actions) to determine how many points you earned on Arbitrum One and Arbitrum Nova. We'll refer to these as `OnePoints` and `NovaPoints` moving forward, respectively.
- 2. Next, we'll make an adjustment to `NovaPoints` based on the value of `OnePoints`:
-    1. If `OnePoints` is 4 or more, the maximum value of `NovaPoints` can be 1.
-    2. If `OnePoints` is less than 4, the maximum value of `NovaPoints` can be 4 *minus* `OnePoints`.
- 3. Next, add `OnePoints` and `NovaPoints` together to determine your total number of points.
+Qualifying actions on Arbitrum One:
 
+ 1. Bridged funds into Arbitrum One
+ 2. Conducted transactions during two distinct months
+ 3. Conducted transactions during six distinct months
+ 4. Conducted transactions during nine months
+ 5. Conducted more than four transactions or interacted with more than four different smart contracts
+ 6. Conducted more than ten transactions or interacted with more than ten different smart contracts
+ 7. Conducted more than 25 transactions or interacted with more than 25 different smart contracts
+ 8. Conducted more than 100 transactions or interacted with more than 100 different smart contracts
+ 9. Conducted transactions exceeding in the aggregate $10,000 in value
+ 10. Conducted transactions exceeding in the aggregate $50,000 in value
+ 11. Conducted transactions exceeding in the aggregate $250,000 in value
+ 12. Deposited more than $10,000 of liquidity into Arbitrum 
+ 13. Deposited more than $50,000 of liquidity into Arbitrum
+ 14. Deposited more than $250,000 of liquidity into Arbitrum
 
-**Examples:**
+Qualifying actions on Arbitrum Nova: 
 
-| Post-Nitro `OnePoints` | Post-Nitro `NovaPoints` | Post-Nitro points (total, eligible) | Tokens |
-| ---------------------- | ----------------------- | ----------------------------------- | ------ |
-| 5                      | 4  (gets cut to 1)      | 6                                   | 3,250  |
-| 2                      | 4  (gets cut to 2)      | 4                                   | 1,750  |
-| 10                     | 3 (gets cut to 1)       | 11                                  | 7,250  |
-
-
-
-#### Scenario 3: You performed qualifying actions before and after Nitro was launched.
-
- 1. First, refer to the [qualifying actions section below](#qualifying-actions) to determine how many points you earned on Arbitrum One before Nitro launched. We'll refer to this as `OnePointsPre`.
- 2. Next, refer to the [point-to-token conversion table below](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of points you earned.
-
-// todo
-
-
+ 1. Bridged funds into Arbitrum Nova
+ 2. Conducted more than three transactions
+ 3. Conducted more than five transactions
+ 4. Conducted more than ten transactions
 
 
-<br />
 
 #### Point-to-token conversion table
 
@@ -201,6 +176,65 @@ Scroll to the section that describes your scenario and follow the instructions.
 </table>
 
 <br />
+
+
+
+### Calculate your airdrop eligibility
+
+If you performed any of the above qualifying actions on the Arbitrum One chain *before* Arbitrum Nitro launched on Arbitrum One mainnet [block #22207817](todo), your tokens may be weighted. This pre-Nitro weighting is how we reward early adopters of Arbitrum One, but it only applies if you earned at least 3 points before Nitro was launched.
+
+To calculate the number of tokens that you're eligible to claim, first determine which of the following three scenarios describes your on-chain activity:
+
+ 1. All of your qualifying actions occurred **before** Nitro was launched.
+ 2. All of your qualifying actions occurred **after** Nitro was launched.
+ 3. You performed qualifying actions **before and after** Nitro was launched.
+
+Scroll to the section that describes your scenario and follow the instructions.
+
+
+#### Scenario 1: All of your qualifying actions occurred before Nitro was launched.
+
+ 1. First, refer to the [qualifying actions section below](#qualifying-actions) to determine how many points you earned on Arbitrum One. Because Arbitrum Nova was launched after Arbitrum Nitro, you won't have any qualifying actions on Arbitrum Nova.
+ 2. Next, refer to the [point-to-token conversion table below](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of points you earned.
+
+**Examples:**
+
+| Pre-Nitro points | Tokens |
+| ---------------- | ------ |
+| 9                | 6,250  |
+| 13               | 10,250 |
+
+
+#### Scenario 2: All of your qualifying actions occurred after Nitro was launched.
+
+ 1. First, refer to the [qualifying actions section below](#qualifying-actions) to determine how many points you earned on Arbitrum One and Arbitrum Nova. We'll refer to these as `OnePoints` and `NovaPoints` moving forward, respectively.
+ 2. Next, we'll make an adjustment to `NovaPoints` based on the value of `OnePoints`:
+    1. If `OnePoints` is 4 or more, the maximum value of `NovaPoints` can be 1.
+    2. If `OnePoints` is less than 4, the maximum value of `NovaPoints` can be 4 *minus* `OnePoints`.
+ 3. Next, add `OnePoints` and `NovaPoints` together to determine your total number of points.
+
+
+**Examples:**
+
+| Post-Nitro `OnePoints` | Post-Nitro `NovaPoints` | Post-Nitro points (total, eligible) | Tokens |
+| ---------------------- | ----------------------- | ----------------------------------- | ------ |
+| 5                      | 4  (gets cut to 1)      | 6                                   | 3,250  |
+| 2                      | 4  (gets cut to 2)      | 4                                   | 1,750  |
+| 10                     | 3 (gets cut to 1)       | 11                                  | 7,250  |
+
+
+#### Scenario 3: You performed qualifying actions before and after Nitro was launched.
+
+ 1. First, refer to the [qualifying actions section below](#qualifying-actions) to determine how many points you earned on Arbitrum One before Nitro launched. We'll refer to this as `OnePointsPre`.
+ 2. Next, refer to the [point-to-token conversion table below](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of points you earned.
+
+// todo
+
+
+
+
+<br />
+
 
 #### User protections
 
