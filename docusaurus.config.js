@@ -104,7 +104,7 @@ const config = {
       },
       announcementBar: {
         id: "banner",
-        content: `Arbitrum DAO has been officially announced. The airdrop won’t be live until 5/23. Apply to be a delegate <a rel="noopener noreferrer" href="https://forum.arbitrum.foundation/t/delegation-submission-template/16">here</a>.`,
+        content: `ArbitrumDAO has been officially announced. The airdrop won’t be live until March 23rd. Apply to be a delegate <a rel="noopener noreferrer" href="https://forum.arbitrum.foundation/t/delegate-application-template/31">here</a>.`,
         backgroundColor: 'rgb(8 53 117)',
         textColor: 'white',
         isCloseable: false,
