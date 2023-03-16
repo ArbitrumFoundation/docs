@@ -186,7 +186,7 @@ The client software implements a protocol that stores transaction history within
 <p>A smart contract that restricts an action from taking place before a specified future time. Used at various stages in the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>'s governance proposal process.</p>
 
 ### Token Distributor Contract {#token-distributor-contract}
-<p><a href="/dao-glossary#smart-contract">Smart contract</a> responsible for holding and distribiting <a href="/dao-glossary#arb">$ARB</a> tokens for the initial <a href="/dao-glossary#airdrop">Airdrop</a>.</p>
+<p><a href="/dao-glossary#smart-contract">Smart contract</a> responsible for holding and distributing <a href="/dao-glossary#arb">$ARB</a> tokens for the initial <a href="/dao-glossary#airdrop">Airdrop</a>.</p>
 
 ### Token-weighted governance {#tokenweighted-governance}
 <p>A protocol governance system in which voting weight is proportional to ownership of a governance token. The <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> implements token-weighted governance.</p>
