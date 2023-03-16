@@ -47,7 +47,7 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
     </tr>
     <tr>
         <td><strong>Airdrop snapshot</strong></td>
-        <td><a href='https://arbiscan.io/block/58642080'>Block 58642080</a> on Arbitrum One = February 6th, 2023</td>
+        <td><a href='https://arbiscan.io/block/22207817'>Block 58642080</a> on Arbitrum One = February 6th, 2023</td>
     </tr>
 </table>
 
@@ -76,12 +76,12 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
         <td>Offchain Labs investors</td>
     </tr>
     <tr>
-        <td>11.62%</td>
-        <td>1.162 Billion</td>
+        <td>11.67%</td>
+        <td>1.166 Billion</td>
         <td><strong>Users</strong> of the Arbitrum platform (via airdrop to user wallet addresses)</td>
     </tr>
     <tr>
-        <td>1.13%</td>
+        <td>1.08%</td>
         <td>113 million</td>
         <td><strong>DAOs</strong> building apps on Arbitrum (via airdrop to DAO treasury addresses)</td>
     </tr>
@@ -188,7 +188,7 @@ To prevent bots from taking advantage of the airdrop, a number of anti-Sybil rul
  - If an airdrop recipient's wallet balance is less than .005 ETH, **and** if the wallet hasn't interacted with more than one smart contract, **one point is subtracted**.
  - If an airdrop recipient's wallet address has been identified as a Sybil address during the Hop protocol bounty program **the recipient is disqualified**. 
 
-Refer to [Arbitrum Sybil Hunting](https://github.com/ArbitrumFoundation/sybil-detection) to learn more about the Sybil mitigation methodology. Refer to our [Sybil accounts](./concepts/sybil-account.md) concept document for a conceptual introduction to Sybil accounts.
+Refer to [Arbitrum Sybil Hunting](https://github.com/ArbitrumFoundation/arb-sybil/tree/master/v2) to learn more about the Sybil mitigation methodology. Refer to our [Sybil accounts](./concepts/sybil-account.md) concept document for a conceptual introduction to Sybil accounts.
 
 ### DAO Airdrop Criteria and Distribution
 
