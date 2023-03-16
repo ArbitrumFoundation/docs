@@ -39,7 +39,6 @@ import AnatomyAIPPartial from '@site/docs/partials/_anatomy-aip-partial.md';
 
 <AnatomyAIPPartial />
 
-The proposal template is available [here](https://forum.arbitrum.foundation/t/delegation-submission-template/16) (FINAL-TODO).
 
 
 ### Pre-proposal development
@@ -51,7 +50,7 @@ Proposals that require code changes should include the code that will be execute
 The [DAO governance forum](https://forum.arbitrum.foundation/) facilitates discussions about Arbitrum DAO and <a data-quicklook-from='governance-proposal'>governance proposals</a> that are submitted by eligible token-holders. To submit your proposal:
 
 1. Go to the [DAO governance forum](https://forum.arbitrum.foundation/).
-2. Create a new post with your proposal using the template located [here](https://forum.arbitrum.foundation/t/delegation-submission-template/16). You can add additional fields to this template to provide more context for your proposal if you'd like.
+2. Create a new post with your proposal using the template located [here](./create-submit-dao-proposal#proposal-structure). You can add additional fields to this template to provide more context for your proposal if you'd like.
 3. Allow at least one week for discussion and debate. Iterate on your proposal based on feedback from the community.
 4. Navigate to [Snapshot](https://snapshot.org/#/arbitrumfoundation.eth). This is where you can create a poll that will gauge the community's interest in your proposal.
 5. Connect your wallet.
