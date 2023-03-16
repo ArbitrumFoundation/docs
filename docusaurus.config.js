@@ -64,7 +64,7 @@ const config = {
         },
         items: [
           {
-            href: 'https://github.com/facebook/docusaurus', // FINAL-TODO
+            href: 'https://github.com/ArbitrumFoundation/docs',
             label: 'GitHub',
             position: 'right',
           },
