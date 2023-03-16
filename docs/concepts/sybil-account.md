@@ -22,7 +22,7 @@ A process called "Sybil hunting" was used to detect and remove Sybil accounts. T
 
 ### Why is it important to prevent Sybil accounts?
 
-By receiving an outsized share of the $ARB aidrop, Sybil accounts can lead to concentration of voting power and undermine the decentralized nature of the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>. By preventing Sybil accounts, the Arbitrum DAO is able to ensure that the initial token distribution is as fair as possible.
+By receiving an outsized share of the $ARB airdrop, Sybil accounts can lead to concentration of voting power and undermine the decentralized nature of the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>. By preventing Sybil accounts, the Arbitrum DAO is able to ensure that the initial token distribution is as fair as possible.
 
 ### Why not use proof-of-personhood? 
 
