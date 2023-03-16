@@ -61,8 +61,8 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
         <td><strong>Allocated to</strong></td>
     </tr>
     <tr>
-        <td>43.25%</td>
-        <td>4.325 billion</td>
+        <td>42.77%</td>
+        <td>4.277 billion</td>
         <td>Arbitrum DAO treasury</td>
     </tr>
     <tr>
@@ -71,18 +71,18 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
         <td>Offchain Labs Team and Future Team + Advisors</td>
     </tr>
     <tr>
-        <td>17.53%</td>
-        <td>1.753 billion</td>
+        <td>17.54%</td>
+        <td>1.754 billion</td>
         <td>Offchain Labs investors</td>
     </tr>
     <tr>
-        <td>11.63%</td>
-        <td>1.163 Billion</td>
+        <td>11.67%</td>
+        <td>1.167 Billion</td>
         <td><strong>Users</strong> of the Arbitrum platform (via airdrop to user wallet addresses)</td>
     </tr>
     <tr>
-        <td>1.12%</td>
-        <td>112 million</td>
+        <td>1.08%</td>
+        <td>108 million</td>
         <td><strong>DAOs</strong> building apps on Arbitrum (via airdrop to DAO treasury addresses)</td>
     </tr>
 </table>
@@ -196,4 +196,4 @@ Refer to [Arbitrum Sybil Hunting](https://github.com/ArbitrumFoundation/sybil-de
 
 A separate distribution was allocated for DAOs that are building applications in the Arbitrum ecosystem, as well as the Protocol Guild, a collective of Ethereum contributors. The distribution of tokens to DAOs was weighted based on a variety of factors, including time projects have been on Arbitrum, TVL of assets on the chain, whether a project was Arbitrum native, and whether project operated with actual on-chain treasuries.
 
-You can view the full list of eligible DAOs and individual allocations [here](https://bit.ly/3lk28pW).
+More details will be added around individual DAO allocation shortly.
