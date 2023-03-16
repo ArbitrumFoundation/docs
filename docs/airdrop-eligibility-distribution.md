@@ -181,7 +181,7 @@ Qualifying actions on Arbitrum Nova:
 
 ### Calculate your airdrop eligibility
 
-If you performed any of the above qualifying actions on the Arbitrum One chain *before* Arbitrum Nitro launched on Arbitrum One mainnet [block #22207817](todo), your tokens may be weighted. This pre-Nitro weighting is how we reward early adopters of Arbitrum One, but it only applies if you earned at least 3 points before Nitro was launched.
+If you performed any of the above qualifying actions on the Arbitrum One chain *before* Arbitrum Nitro launched on Arbitrum One mainnet **block #22207817**, your tokens may be weighted. This pre-Nitro weighting is how we reward early adopters of Arbitrum One, but it only applies if you earned at least 3 points before Nitro was launched.
 
 To calculate the number of tokens that you're eligible to claim, first determine which of the following three scenarios describes your on-chain activity:
 
