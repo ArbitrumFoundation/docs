@@ -7,6 +7,10 @@ dao_author: dzgoldman
 dao_sme: dzgoldman
 ---
 
+import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+
+<DraftExpectationsPartial />
+
 This page will cover the creation of new mainnet Arbitrum Chains — chains beyond the currently-live <a data-quicklook-from='arbitrum-one'>Arbitrum One </a> and <a data-quicklook-from='arbitrum-nova'>Nova</a>. It will discuss how and why new chains may get created, and where the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a> fits in.
 
 ### Why Multiple Chains?
