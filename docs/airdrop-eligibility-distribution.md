@@ -125,11 +125,11 @@ Points earned on Arbitrum Nova
 
 <br />
 
-**Converting points to tokens:**
+**Converting Points to tokens:**
 
 <table className="small-table">
     <tr>
-        <td><strong>Points earned</strong></td>
+        <td><strong>Points scored (values represent points scored pre-Nitro)</strong></td>
         <td><strong>Airdrop entitlement</strong></td>
     </tr>
     <tr>
@@ -179,6 +179,8 @@ Points earned on Arbitrum Nova
 </table>
 
 <br />
+
+As described earlier, points scored before and after Arbitrum Nitro was deployed on Arbitrum One mainnet were weighted differently. Points scored before Arbitrum Nitro were worth twice as much as points scored after -- as a result any points scored after Nitro resulted in half as much of an allocation per point shown in the table above. If an address only became fully eligible (minimum of three points) post-nitro, all points scored counted as post-nitro points. 
 
 **User protections:**
 
