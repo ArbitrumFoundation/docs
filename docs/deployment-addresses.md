@@ -23,7 +23,7 @@ import { AddressExplorerLink as AEL } from '@site/src/components/AddressExplorer
 
 | Contract          | Chain | Address                                                                                     |
 | ----------------- | ----- | ------------------------------------------------------------------------------------------- |
-| Token Distributor | 42161 | <AEL   address  =  {"0x67a24ce4321ab3af51c2d0a4801c3e111d88c9d9"}   chainID  =  {42161}  />                                          |
+| Token Distributor | 42161 | <AEL   address  =  {"0x67a24ce4321ab3af51c2d0a4801c3e111d88c9d9"}   chainID  =  {42161}  /> |
 | DAO Treasury      | 42161 | <AEL   address  =  {"0xF3FC178157fb3c87548bAA86F9d24BA38E649B58"}   chainID  =  {42161}  /> |
 
 ### Token Bridging
