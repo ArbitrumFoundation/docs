@@ -138,43 +138,43 @@ Points earned on Arbitrum Nova
     </tr>
     <tr>
         <td>3</td>
-        <td>1,200</td>
+        <td>1,250</td>
     </tr>
     <tr>
         <td>4</td>
-        <td>1,700</td>
+        <td>1,750</td>
     </tr>
     <tr>
         <td>5</td>
-        <td>2,200</td>
+        <td>2,250</td>
     </tr>
     <tr>
         <td>6</td>
-        <td>3,200</td>
+        <td>3,250</td>
     </tr>
     <tr>
         <td>7</td>
-        <td>3,700</td>
+        <td>3,750</td>
     </tr>
     <tr>
         <td>8</td>
-        <td>4,200</td>
+        <td>4,250</td>
     </tr>
     <tr>
         <td>9</td>
-        <td>6,200</td>
+        <td>6,250</td>
     </tr>
     <tr>
         <td>10</td>
-        <td>6,700</td>
+        <td>6,750</td>
     </tr>
     <tr>
         <td>11</td>
-        <td>7,200</td>
+        <td>7,250</td>
     </tr>
     <tr>
         <td>12 or more</td>
-        <td>10,200</td>
+        <td>10,250</td>
     </tr>
 </table>
 
