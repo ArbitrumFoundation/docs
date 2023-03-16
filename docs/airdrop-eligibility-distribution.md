@@ -11,15 +11,9 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
-```
- - FINAL-TODO: strategy inputs - Matt?
- - FINAL-TODO: hop protocol bounty program notes below - Matt?
-```
-
-
 :::caution THERE IS NO PRESALE
 
-The only official website for the $ARB airdrop is [https://gov.arbitrum.foundation](https://gov.arbitrum.foundation). There is no presale. Don't ever share your seed phrase. When in doubt, [join the Discord](https://discord.gg/arbitrum) to ask for clarification.
+The only official website for the $ARB airdrop is [https://arbitrum.foundation](https://arbitrum.foundation). There is no presale. Don't ever share your seed phrase. When in doubt, [join the Discord](https://discord.gg/arbitrum) to ask for clarification.
 
 :::
 
@@ -67,28 +61,28 @@ The only official website for the $ARB airdrop is [https://gov.arbitrum.foundati
         <td><strong>Allocated to</strong></td>
     </tr>
     <tr>
-        <td>48%</td>
-        <td>4.8 billion</td>
+        <td>43.25%</td>
+        <td>4.325 billion</td>
         <td>Arbitrum DAO treasury</td>
     </tr>
     <tr>
-        <td>25%</td>
-        <td>2.5 billion</td>
-        <td>Current and future employees of Offchain Labs (the team that built the initial version of Arbitrum)</td>
+        <td>26.94%</td>
+        <td>2.694 billion</td>
+        <td>Offchain Labs Team and Future Team + Advisors</td>
     </tr>
     <tr>
-        <td>19%</td>
-        <td>1.9 billion</td>
+        <td>17.53%</td>
+        <td>1.753 billion</td>
         <td>Offchain Labs investors</td>
     </tr>
     <tr>
-        <td>6.89%</td>
-        <td>689 million</td>
+        <td>11.63%</td>
+        <td>1.163 Billion</td>
         <td><strong>Users</strong> of the Arbitrum platform (via airdrop to user wallet addresses)</td>
     </tr>
     <tr>
-        <td>1.11%</td>
-        <td>111 million</td>
+        <td>1.12%</td>
+        <td>112 million</td>
         <td><strong>DAOs</strong> building apps on Arbitrum (via airdrop to DAO treasury addresses)</td>
     </tr>
 </table>
@@ -99,9 +93,13 @@ The only official website for the $ARB airdrop is [https://gov.arbitrum.foundati
 
 ### User airdrop eligibility details
 
-A points systems was used to determine the number of tokens that airdrop recipients can claim. You earn maximum one point per qualifying action performed before the snapshot date. There were 14 total qualifying actions, so it was possible to earn up to 14 points.
+A points system was used to determine the number of tokens that airdrop recipients can claim. Points criteria was focused primarily on Arbitrum One; however, there was a small subset of criteria applied to activity on Arbitrum Nova. Points earned on Arbitrum Nova could either bring a user up to 4 points total, or give them one additional point if they had already scored 4 points or more on Arbitrum One. You earn maximum one point per qualifying action performed before the snapshot date. Point scores were capped at 15.
+
+Additionally, as the criteria and design of the airdrop as a whole was intentioned to reward early adopters, points scored (minimum of three) before Arbitrum Nitro was launched on Arbitrum One mainnet are worth twice as much as points scored after. Arbitrum Nitro launched on Arbitrum One mainnet at block #22207817.
 
 **Qualifying actions:**
+
+Points earned on Arbitrum One
 
  1. Bridged funds into Arbitrum One
  2. Conducted transactions during two distinct months
@@ -117,6 +115,13 @@ A points systems was used to determine the number of tokens that airdrop recipie
  12. Deposited more than $10,000 of liquidity into Arbitrum 
  13. Deposited more than $50,000 of liquidity into Arbitrum
  14. Deposited more than $250,000 of liquidity into Arbitrum
+
+Points earned on Arbitrum Nova  
+
+ 1. Bridged funds into Arbitrum Nova
+ 2. Conducted more than three transactions
+ 3. Conducted more than five transactions
+ 4. Conducted more than ten transactions
 
 <br />
 
@@ -180,8 +185,15 @@ A points systems was used to determine the number of tokens that airdrop recipie
 To prevent bots from taking advantage of the airdrop, a number of anti-Sybil rules were established:
 
  - If an airdrop recipient's wallet transactions have all occurred within a 48-hour period, **one point is subtracted**.
- - If an airdrop recipient's wallet balance is less than .01 ETH, **and** if the wallet hasn't interacted with more than one smart contract, **one point is subtracted**.
- - If an airdrop recipient's wallet address has been identified as a Sybil address during the Hop protocol bounty program (FINAL-TODO: footnote), (FINAL-TODO: disqualified?). 
- - If an airdrop recipient's wallet address is part of a parent/children wallet arrangement whereby the parent has funded more than 25 children addresses, all addresses are collapsed into a single user wallet address. 
+ - If an airdrop recipient's wallet balance is less than .005 ETH, **and** if the wallet hasn't interacted with more than one smart contract, **one point is subtracted**.
+ - If an airdrop recipient's wallet address has been identified as a Sybil address during the Hop protocol bounty program **the recipient is disqualified**. 
 
-Refer to [Arbitrum Sybil Hunting](https://github.com/OffchainLabs/arb-sybil/tree/master/v2) to learn more about our Sybil mitigation methodology. Refer to our [Sybil accounts](./concepts/sybil-account.md) concept document for a conceptual introduction to Sybil accounts.
+Refer to [Arbitrum Sybil Hunting](https://github.com/ArbitrumFoundation/arb-sybil/tree/master/v2) to learn more about the Sybil mitigation methodology. Refer to our [Sybil accounts](./concepts/sybil-account.md) concept document for a conceptual introduction to Sybil accounts.
+
+### DAO Airdrop Criteria and Distribution
+
+**DAO Airdrop Criteria:**
+
+A separate distribution was allocated for DAOs that are building applications in the Arbitrum ecosystem, as well as the Protocol Guild, a collective of Ethereum contributors. The distribution of tokens to DAOs was weighted based on a variety of factors, including time projects have been on Arbitrum, TVL of assets on the chain, whether a project was Arbitrum native, and whether project operated with actual on-chain treasuries.
+
+You can view the full list of eligible DAOs and individual allocations [here](https://bit.ly/3lk28pW).
