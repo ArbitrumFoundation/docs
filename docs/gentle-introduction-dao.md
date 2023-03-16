@@ -15,7 +15,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 **In a nutshell:**
 
 - <a data-quicklook-from='arbitrum-rollup-protocol'>Arbitrum Rollup</a> and <a data-quicklook-from='arbitrum-anytrust-protocol'>Arbitrum AnyTrust</a> are protocols that make Ethereum transactions faster and cheaper. Developers use Arbitrum One and Arbitrum Nova, the chains that implement these protocols, respectively, to build user-friendly <a data-quicklook-from='decentralized-apps-dapps'>decentralized apps</a>.
-- The distribution of the <a data-quicklook-from='arb'>$ARB</a> governance token decentralizes governance of these protocols and their respective chains, as well any future chains the Arbitrum DAO authorizes.
+- The distribution of the <a data-quicklook-from='arb'>$ARB</a> governance token decentralizes governance of these protocols and their respective chains, as well as any future chains the Arbitrum DAO authorizes.
 - $ARB tokens can be used to vote on Arbitrum DAO governance proposals, allowing $ARB holders to shape Arbitrum's future together.
 - Token holders will be able to delegate their voting power to <a data-quicklook-from='delegate'>delegates</a>.
 - **To determine your airdrop eligibility**, connect your wallet to the Arbitrum One network on [arbitrum.foundation](http://arbitrum.foundation) and follow the prompts. Claiming won't be live until March 23rd.
@@ -76,7 +76,7 @@ See [State of decentralization](./state-of-progressive-decentralization) for a m
 
 ### Cool beans. Am I eligible for the airdrop?
 
-If you've used Arbitrum at any time before the the snapshot date (February 6th, 2023 - [block 58642080](https://arbiscan.io/block/58642080) on Arbitrum One), you could be entitled to some $ARB tokens. The easiest way to find out if you're eligible is to visit [arbitrum.foundation](http://arbitrum.foundation/) and follow the prompts.
+If you've used Arbitrum at any time before the snapshot date (February 6th, 2023 - [block 58642080](https://arbiscan.io/block/58642080) on Arbitrum One), you could be entitled to some $ARB tokens. The easiest way to find out if you're eligible is to visit [arbitrum.foundation](http://arbitrum.foundation/) and follow the prompts.
 
 ### How does Arbitrum's governance work?
 
@@ -93,7 +93,7 @@ Arbitrum's governance system is responsible for making many types of decisions. 
  2. An upgrade could fix a critical vulnerability.
  3. An upgrade could address a non-critical decision that affects the Arbitrum ecosystem at large.
 
-The Arbitrum DAO is also responsible for authorization the creation of new L2 chains (see [New Chains](./new-arb-chains)).
+The Arbitrum DAO is also responsible for authorization of the creation of new L2 chains (see [New Chains](./new-arb-chains)).
 
 Refer to the [Constitution](./dao-constitution.md) for a precise overview of the scope of the DAO's decision-making responsibilities. See [Why governance?](./why-governance) to learn more about the importance of governance. See [Comprehension check](./dao-comprehension-check) to test your understanding of the Constitution's protocol.
 
