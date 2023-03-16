@@ -26,7 +26,7 @@ This procedure is referred to as the Temperature Check phase within the [Constit
 
 #### How can the DAO respond to the security emergency?
 
-The <a data-quicklook-from='security-council'>Security Council</a> is a committee of 12 democratically elected members who are signers of a multi-sig wallet. This committee is afforded by the Arbitrum DAO the power to perform <a data-quicklook-from='emergency-action'>emergency actions</a> and <a data-quicklook-from='nonemergency-action'>non-emergency actions</a>, as delegated to it by the Arbitrum DAO and Arbitrum Foundation, and is responsible for upholding the [Constitution of the Arbitrum DAO](dao-constitution.md). 
+The <a data-quicklook-from='security-council'>Security Council</a> is a committee of 12 democratically elected members who are signers of a multi-sig wallet. This committee is afforded by the Arbitrum DAO the power to perform <a data-quicklook-from='emergency-action'>emergency actions</a> and <a data-quicklook-from='nonemergency-action'>non-emergency actions</a>, as delegated to it by the Arbitrum DAO and The Arbitrum Foundation, and is responsible for upholding the [Constitution of the Arbitrum DAO](dao-constitution.md). 
 
 In this scenario, the Security Council should handle the emergency immediately by either implementing the required software upgrade or performing whatever other mitigating action is required in order to remedy the situation on behalf of the DAO and its members. This type of Security Council action is known as an emergency action and requires a 9-of-12 approval from the Security Council to execute. 
 
