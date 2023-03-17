@@ -252,7 +252,7 @@ Scroll to the section that describes your scenario and follow the instructions.
 | 2              | 2                 | 4           | 1,750       | 7               | 2 (gets cut to 1) | 8            | 4,250        | 3,000              |
 
 
-TODO - verify
+TODO - verify that the above is correct
 
 
 <br />
