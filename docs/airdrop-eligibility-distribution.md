@@ -191,7 +191,7 @@ If you performed any of the above qualifying actions on the Arbitrum One chain *
 
 Note that the minimum airdrop entitlement is **625** tokens; the maximum airdrop entitlement is **10,250** tokens. TODO - reconcile the difference between this statement and the above table.
 
-To calculate the number of tokens that you're eligible to claim, first determine which of the following three scenarios describes your on-chain activity:
+To calculate the number of tokens that you're eligible to claim, first determine which one of the following three scenarios describes your on-chain activity:
 
  1. All of your qualifying actions occurred **before** Nitro was launched.
  2. All of your qualifying actions occurred **after** Nitro was launched.
