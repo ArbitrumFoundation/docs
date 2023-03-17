@@ -241,15 +241,16 @@ Scroll to the section that describes your scenario and follow the instructions.
  6. If you performed any qualifying actions on Arbitrum Nova after Nitro was launched, reference the second step of `Scenario 2` above to determine `NovaPointsPost`.
  7. Next, TODO. We'll refer to this total as `PointsPost`.
  8. Use the [point-to-token conversion table](https://github.com/ArbitrumFoundation/docs/pull/204#point-to-token-conversion-table) to convert your `PointsPost` into tokens. We'll refer to this total as `TokensPost`.
- 9. Subtract `TokensPre` from `TokensPost`. If the result is a positive number, divide it by 2 and add it to `TokensPre`. This is your `TokenEntitlement` - the number of tokens that you're entitled to claim.
+ 9. Subtract `TokensPre` from `TokensPost`. Divide it by 2 and add it to `TokensPre`. Whatever number is larger between this number and `TokensPost` is your `TokenEntitlement` - the number of tokens that you're entitled to claim.
 
 
 **Examples:**
 
 | `OnePointsPre` | `NovaPointsPre`   | `PointsPre` | `TokensPre` | `OnePointsPost` | `NovaPointsPost`  | `PointsPost` | `TokensPost` | `TokenEntitlement` |
 | -------------- | ----------------- | ----------- | ----------- | --------------- | ----------------- | ------------ | ------------ | ------------------ |
-| 5              | 2 (gets cut to 1) | 6           | 3,250       | 5               | 2 (gets cut to 1) | 6            | 3,250        | 4,750              |
+| 5              | 2 (gets cut to 1) | 6           | 3,250       | 5               | 2 (gets cut to 1) | 6            | 3,250        | 3,250              |
 | 2              | 2                 | 4           | 1,750       | 7               | 2 (gets cut to 1) | 8            | 4,250        | 3,000              |
+
 
 
 TODO - verify that the above is correct
