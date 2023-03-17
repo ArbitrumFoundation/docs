@@ -49,6 +49,14 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
         <td><strong>Airdrop snapshot</strong></td>
         <td><a href='https://arbiscan.io/block/58642080'>Block 58642080</a> on Arbitrum One = February 6th, 2023</td>
     </tr>
+    <tr>
+        <td><strong>Claiming starts</strong></td>
+        <td><a href='https://etherscan.io/block/countdown/16890400'>Block 16890400</a> on Ethereum Mainnet = March 23rd, 2023</td>
+    </tr>
+    <tr>
+        <td><strong>Claiming ends</strong></td>
+        <td><a href='https://etherscan.io/block/countdown/18208000'>Block 18208000</a> on Ethereum Mainnet = September 23rd, 2023 (estimated)</td>
+    </tr>
 </table>
 
 
@@ -92,7 +100,6 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
 
 Airdrop eligibility is determined by the number of points earned by a user's wallet address. Points are earned by performing **qualifying actions** on the Arbitrum One and Arbitrum Nova rollup chains:
 
-
 #### Qualifying actions
 
 Qualifying actions on Arbitrum One:
@@ -123,10 +130,12 @@ Qualifying actions on Arbitrum Nova:
 
 #### Points-to-tokens conversion table
 
+We'll use this table to calculate the precise number of tokens that you're elibible to claim in the next section:
+
 <table className="small-table">
     <tr>
-        <td><strong>Points scored (values represent points scored pre-Nitro)</strong></td>
-        <td><strong>Airdrop entitlement</strong></td>
+        <td><strong>Points scored</strong></td>
+        <td><strong>Initial airdrop entitlement</strong></td>
     </tr>
     <tr>
         <td>Less than 3</td>
@@ -176,8 +185,6 @@ Qualifying actions on Arbitrum Nova:
 
 <br />
 
-
-
 ### Calculate your airdrop eligibility
 
 If you performed any of the above qualifying actions on the Arbitrum One chain *before* Arbitrum Nitro launched on Arbitrum One mainnet (block **#22207817**), your tokens may be weighted. This pre-Nitro weighting is how we reward early adopters of Arbitrum One, but it only applies if you earned at least 3 points before Nitro was launched.
@@ -224,11 +231,17 @@ Scroll to the section that describes your scenario and follow the instructions.
 
 #### Scenario 3: You performed qualifying actions before and after Nitro was launched.
 
- 1. First, refer to the [qualifying actions section](#qualifying-actions) to determine how many points you earned on Arbitrum One before Nitro launched. We'll refer to this as `OnePointsPre`.
+ 1. First, refer to the [qualifying actions section](#qualifying-actions) to determine how many points you earned before Arbitrum Nitro launched on Arbitrum One mainnet. We'll refer to this as `PointsPre`. When doing this calculation, reference `Scenario 2` to make sure that you are accounting for points earned on Arbitrum Nova correctly.
+  2. Next, refer to the [point-to-token conversion table](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of `PointsPre` you earned. 
+ 3. Then, refer to the [qualifying actions section](https://github.com/ArbitrumFoundation/docs/pull/204#qualifying-actions) to determine how many points you earned after Nitro launched on Arbitrum One. We'll refer to this as `PointsPost`, again referencing `Scenario 2` to make sure that you are accounting for points earned on Arbitrum Nova correctly.
+4. Next, refer to the [point-to-token conversion table](https://github.com/ArbitrumFoundation/docs/pull/204#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of `PointsPost` you earned. Convert those points into tokens.
+5. Now you should have token totals, calculated based on points scored before and after Nitro. Calculate the difference between the two token totals, halve that, and add it to the token total calculated based on `PointsPre`. This is your final amount of eligible tokens.
+6. In the case that your token total based on `PointsPost` was lower than the other total, you were awarded tokens solely based on `PointsPre`, as it was the higher amount.
  2. Next, refer to the [point-to-token conversion table](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of points you earned.
 
 todo
 
+Note that the minimum airdrop entitlement is **625** tokens; the maximum airdrop entitlement is **10,250** tokens.
 
 <br />
 
