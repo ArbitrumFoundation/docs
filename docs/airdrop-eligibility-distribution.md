@@ -39,11 +39,11 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
     </tr>
     <tr>
         <td><strong>Tokens launch on</strong></td>
-        <td>Arbitrum One</td>
+        <td><a data-quicklook-from="arbitrum-one">Arbitrum One</a></td>
     </tr>
     <tr>
         <td><strong>On-chain governance (voting) happens on</strong></td>
-        <td>Arbitrum One</td>
+        <td><a data-quicklook-from="arbitrum-one">Arbitrum One</a></td>
     </tr>
     <tr>
         <td><strong>Airdrop snapshot</strong></td>
