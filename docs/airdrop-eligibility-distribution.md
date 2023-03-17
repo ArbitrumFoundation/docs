@@ -40,11 +40,11 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
     </tr>
     <tr>
         <td><strong>Tokens launch on</strong></td>
-        <td>Arbitrum One</td>
+        <td><a data-quicklook-from="arbitrum-one">Arbitrum One</a></td>
     </tr>
     <tr>
         <td><strong>On-chain governance (voting) happens on</strong></td>
-        <td>Arbitrum One</td>
+        <td><a data-quicklook-from="arbitrum-one">Arbitrum One</a></td>
     </tr>
     <tr>
         <td><strong>Airdrop snapshot</strong></td>
@@ -52,13 +52,14 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
     </tr>
     <tr>
         <td><strong>Claiming starts</strong></td>
-        <td><a href='https://etherscan.io/block/countdown/16890400'>Block 16890400</a> on Ethereum Mainnet = March 23rd, 2023</td>
+        <td><a href='https://etherscan.io/block/countdown/16890400'>Block 16890400</a> on Ethereum Mainnet = March 23rd, 2023. Please note that $ARB cannot be minted or claimed on the Ethereum Mainnet; it is only minted and claimable on Arbitrum One.</td>
     </tr>
     <tr>
         <td><strong>Claiming ends</strong></td>
-        <td><a href='https://etherscan.io/block/countdown/18208000'>Block 18208000</a> on Ethereum Mainnet = September 23rd, 2023 (estimated)</td>
+        <td><a href='https://etherscan.io/block/countdown/18208000'>Block 18208000</a> on Ethereum Mainnet = September 23rd, 2023 (estimated). Please note that $ARB cannot be minted or claimed on the Ethereum Mainnet; it is only minted and claimable on Arbitrum One.</td>
     </tr>
 </table>
+
 
 
 ### Initial token allocation & airdrop distribution
