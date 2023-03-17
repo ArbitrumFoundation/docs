@@ -223,7 +223,12 @@ Scroll to the section that describes your scenario and follow the instructions.
 
 #### Scenario 3: You performed qualifying actions before and after Nitro was launched.
 
- 1. First, refer to the [qualifying actions section](#qualifying-actions) to determine how many points you earned on Arbitrum One before Nitro launched. We'll refer to this as `OnePointsPre`.
+ 1. First, refer to the [qualifying actions section](#qualifying-actions) to determine how many points you earned before Arbitrum Nitro launched on Arbitrum One mainnet. We'll refer to this as `PointsPre`. When doing this calculation, reference `Scenario 2` to make sure that you are accounting for points earned on Arbitrum Nova correctly.
+  2. Next, refer to the [point-to-token conversion table](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of `PointsPre` you earned. 
+ 3. Then, refer to the [qualifying actions section](https://github.com/ArbitrumFoundation/docs/pull/204#qualifying-actions) to determine how many points you earned after Nitro launched on Arbitrum One. We'll refer to this as `PointsPost`, again referencing `Scenario 2` to make sure that you are accounting for points earned on Arbitrum Nova correctly.
+4. Next, refer to the [point-to-token conversion table](https://github.com/ArbitrumFoundation/docs/pull/204#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of `PointsPost` you earned. Convert those points into tokens.
+5. Now you should have token totals, calculated based on points scored before and after Nitro. Calculate the difference between the two token totals, halve that, and add it to the token total calculated based on `PointsPre`. This is your final amount of eligible tokens.
+6. In the case that your token total based on `PointsPost` was lower than the other total, you were awarded tokens solely based on `PointsPre`, as it was the higher amount.
  2. Next, refer to the [point-to-token conversion table](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of points you earned.
 
 todo
