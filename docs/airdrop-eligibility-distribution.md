@@ -136,7 +136,7 @@ We'll use this table to calculate the precise number of tokens that you're eligi
 <table className="small-table">
     <tr>
         <td><strong>Points scored</strong></td>
-        <td><strong>Airdrop entitlement (will be used in the below calculations)</strong></td>
+        <td><strong>Baseline airdrop entitlement (will be used in the below calculations)</strong></td>
     </tr>
     <tr>
         <td>Less than 3</td>
