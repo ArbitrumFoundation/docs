@@ -130,7 +130,7 @@ Qualifying actions on Arbitrum Nova:
 
 #### Points-to-tokens conversion table
 
-We'll use this table to calculate the precise number of tokens that you're elibible to claim in the next section:
+We'll use this table to calculate the precise number of tokens that you're eligible to claim in the next section:
 
 <table className="small-table">
     <tr>
