@@ -8,6 +8,7 @@ dao_sme: pearring
 ---
 
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+import { PointToTokenCalculator } from '@site/src/components/PointToTokenCalculator/';
 
 <DraftExpectationsPartial />
 
@@ -110,81 +111,99 @@ Additionally, as the criteria and design of the airdrop as a whole was intention
 Points earned on Arbitrum One
 
  1. Bridged funds into Arbitrum One
- 2. Conducted transactions during two distinct months
- 3. Conducted transactions during six distinct months
- 4. Conducted transactions during nine months
- 5. Conducted more than four transactions or interacted with more than four different smart contracts
- 6. Conducted more than ten transactions or interacted with more than ten different smart contracts
- 7. Conducted more than 25 transactions or interacted with more than 25 different smart contracts
- 8. Conducted more than 100 transactions or interacted with more than 100 different smart contracts
- 9. Conducted transactions exceeding in the aggregate $10,000 in value
- 10. Conducted transactions exceeding in the aggregate $50,000 in value
- 11. Conducted transactions exceeding in the aggregate $250,000 in value
- 12. Deposited more than $10,000 of liquidity into Arbitrum 
- 13. Deposited more than $50,000 of liquidity into Arbitrum
- 14. Deposited more than $250,000 of liquidity into Arbitrum
+ 2. Conducted transactions during 2 distinct months
+ 3. Conducted transactions during 6 distinct months
+ 4. Conducted transactions during 9 months
+ 5. Conducted more than 4 transactions <b>or</b> interacted with more than 4 different smart contracts
+ 6. Conducted more than 10 transactions <b>or</b> interacted with more than 10 different smart contracts
+ 7. Conducted more than 25 transactions <b>or</b> interacted with more than 25 different smart contracts
+ 8. Conducted more than 100 transactions <b>or</b> interacted with more than 100 different smart contracts
+ 9. Conducted transactions exceeding $10,000 in aggregate value
+ 10. Conducted transactions exceeding $50,000 in aggregate value
+ 11. Conducted transactions exceeding $250,000 in aggregate value
+ 12. Bridged more than $10,000 of assets into Arbitrum One
+ 13. Bridged more than $50,000 of assets into Arbitrum One
+ 14. Bridged more than $250,000 of assets into Arbitrum One
 
 Points earned on Arbitrum Nova  
 
  1. Bridged funds into Arbitrum Nova
- 2. Conducted more than three transactions
- 3. Conducted more than five transactions
- 4. Conducted more than ten transactions
+ 2. Conducted more than 3 transactions
+ 3. Conducted more than 5 transactions
+ 4. Conducted more than 10 transactions
 
 <br />
 
 **Converting Points to tokens:**
 
-<table className="small-table">
-    <tr>
-        <td><strong>Points scored (values represent points scored pre-Nitro)</strong></td>
-        <td><strong>Airdrop entitlement</strong></td>
-    </tr>
-    <tr>
-        <td>Less than 3</td>
-        <td>Not eligible</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>1,250</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>1,750</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>2,250</td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>3,250</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>3,750</td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>4,250</td>
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>6,250</td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>6,750</td>
-    </tr>
-    <tr>
-        <td>11</td>
-        <td>7,250</td>
-    </tr>
-    <tr>
-        <td>12 or more</td>
-        <td>10,250</td>
-    </tr>
+<table className="small-table points-table">
+    <thead>
+        <tr>
+            <th><strong>Points scored</strong></th>
+            <th><strong>Airdrop entitlement<br/>(pre-Nitro points)</strong></th>
+            <th><strong>Airdrop entitlement<br/>(post-Nitro points)</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Less than 3</td>
+            <td>Not eligible</td>
+            <td>Not eligible</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>1,250</td>
+            <td>625</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>1,750</td>
+            <td>875</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>2,250</td>
+            <td>1,125</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>3,250</td>
+            <td>1,625</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>3,750</td>
+            <td>1,875</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>4,250</td>
+            <td>2,125</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>6,250</td>
+            <td>3,125</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>6,750</td>
+            <td>3,375</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>7,250</td>
+            <td>3,625</td>
+        </tr>
+        <tr>
+            <td>12 or more</td>
+            <td>10,250</td>
+            <td>5,125</td>
+        </tr>
+    </tbody>
 </table>
+
+<PointToTokenCalculator />
 
 <br />
 
