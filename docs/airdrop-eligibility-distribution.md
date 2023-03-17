@@ -189,6 +189,8 @@ We'll use this table to calculate the precise number of tokens that you're elibi
 
 If you performed any of the above qualifying actions on the Arbitrum One chain *before* Arbitrum Nitro launched on Arbitrum One mainnet (block **#22207817**), your tokens may be weighted. This pre-Nitro weighting is how we reward early adopters of Arbitrum One, but it only applies if you earned at least 3 points before Nitro was launched.
 
+Note that the minimum airdrop entitlement is **625** tokens; the maximum airdrop entitlement is **10,250** tokens.
+
 To calculate the number of tokens that you're eligible to claim, first determine which of the following three scenarios describes your on-chain activity:
 
  1. All of your qualifying actions occurred **before** Nitro was launched.
@@ -199,15 +201,15 @@ Scroll to the section that describes your scenario and follow the instructions.
 
 #### Scenario 1: All of your qualifying actions occurred before Nitro was launched.
 
- 1. First, refer to the [qualifying actions section](#qualifying-actions) to determine how many points you earned on Arbitrum One. Because Arbitrum Nova was launched after Arbitrum Nitro, you won't have any qualifying actions on Arbitrum Nova.
- 2. Next, refer to the [point-to-token conversion table](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of points you earned.
+ 1. First, refer to the [qualifying actions section](#qualifying-actions) to determine how many points you earned on Arbitrum One. We'll refer to this as Pre-Nitro `TotalPoints` moving forward.
+ 2. Use the [point-to-token conversion table](#point-to-token-conversion-table) to convert your `TotalPoints` into your `TokenEntitlement` - the number of tokens that you're entitled to claim.
 
 **Examples:**
 
-| Pre-Nitro points | Tokens |
-| ---------------- | ------ |
-| 9                | 6,250  |
-| 13               | 10,250 |
+| Pre-Nitro `TotalPoints` | `TokenEntitlement` |
+| ----------------------- | ------------------ |
+| 9                       | 6,250              |
+| 13                      | 10,250             |
 
 
 #### Scenario 2: All of your qualifying actions occurred after Nitro was launched.
@@ -216,32 +218,42 @@ Scroll to the section that describes your scenario and follow the instructions.
  2. Next, we'll make an adjustment to `NovaPoints` based on the value of `OnePoints`:
     1. If `OnePoints` is 4 or more, the maximum value of `NovaPoints` can be 1.
     2. If `OnePoints` is less than 4, the maximum value of `NovaPoints` can be 4 *minus* `OnePoints`.
- 3. Next, add `OnePoints` and `NovaPoints` together to determine your total number of points.
- 4. Finally, refer to the [point-to-token conversion table](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the total number of eligible points you earned.
+ 3. Next, add `OnePoints` and `NovaPoints` together to determine your total number of points. We'll refer to this as `TotalPoints`.
+ 4. Finally, use the [point-to-token conversion table](#point-to-token-conversion-table) to convert your `TotalPoints` into your `TokenEntitlement` - the number of tokens that you're entitled to claim.
 
 
 **Examples:**
 
-| Post-Nitro `OnePoints` | Post-Nitro `NovaPoints` | Post-Nitro points (total, eligible) | Tokens |
-| ---------------------- | ----------------------- | ----------------------------------- | ------ |
-| 5                      | 4 (gets cut to 1)       | 6                                   | 3,250  |
-| 2                      | 4 (gets cut to 2)       | 4                                   | 1,750  |
-| 10                     | 3 (gets cut to 1)       | 11                                  | 7,250  |
+| Post-Nitro `OnePoints` | Post-Nitro `NovaPoints` | Post-Nitro `TotalPoints` | `TokenEntitlement` |
+| ---------------------- | ----------------------- | ------------------------ | ------------------ |
+| 5                      | 4 (gets cut to 1)       | 6                        | 3,250              |
+| 2                      | 4 (gets cut to 2)       | 4                        | 1,750              |
+| 10                     | 3 (gets cut to 1)       | 11                       | 7,250              |
 
 
 #### Scenario 3: You performed qualifying actions before and after Nitro was launched.
 
- 1. First, refer to the [qualifying actions section](#qualifying-actions) to determine how many points you earned before Arbitrum Nitro launched on Arbitrum One mainnet. We'll refer to this as `PointsPre`. When doing this calculation, reference `Scenario 2` to make sure that you are accounting for points earned on Arbitrum Nova correctly.
-  2. Next, refer to the [point-to-token conversion table](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of `PointsPre` you earned. 
- 3. Then, refer to the [qualifying actions section](https://github.com/ArbitrumFoundation/docs/pull/204#qualifying-actions) to determine how many points you earned after Nitro launched on Arbitrum One. We'll refer to this as `PointsPost`, again referencing `Scenario 2` to make sure that you are accounting for points earned on Arbitrum Nova correctly.
-4. Next, refer to the [point-to-token conversion table](https://github.com/ArbitrumFoundation/docs/pull/204#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of `PointsPost` you earned. Convert those points into tokens.
-5. Now you should have token totals, calculated based on points scored before and after Nitro. Calculate the difference between the two token totals, halve that, and add it to the token total calculated based on `PointsPre`. This is your final amount of eligible tokens.
-6. In the case that your token total based on `PointsPost` was lower than the other total, you were awarded tokens solely based on `PointsPre`, as it was the higher amount.
- 2. Next, refer to the [point-to-token conversion table](#point-to-token-conversion-table) and determine how many tokens you're eligible to claim based on the number of points you earned.
+ 1. First, refer to the [qualifying actions section](#qualifying-actions) to determine how many points you earned **before** Arbitrum Nitro launched on Arbitrum One mainnet. We'll refer to this as `OnePointsPre`.
+ 2. If you performed any qualifying actions on Arbitrum Nova before Nitro was launched, reference the second step of `Scenario 2` above to determine `NovaPointsPre`.
+ 3. Next, TODO. We'll refer to this total as `PointsPre`.
+ 4. Use the [point-to-token conversion table](#point-to-token-conversion-table) to convert `PointsPre` into tokens. We'll refer to this total as `TokensPre`.
+ 5. Then, refer to the [qualifying actions section](https://github.com/ArbitrumFoundation/docs/pull/204#qualifying-actions) to determine how many points you earned **after** Nitro launched on Arbitrum One. We'll refer to this as `OnePointsPost`.
+ 6. If you performed any qualifying actions on Arbitrum Nova after Nitro was launched, reference the second step of `Scenario 2` above to determine `NovaPointsPost`.
+ 7. Next, TODO. We'll refer to this total as `PointsPost`.
+ 8. Use the [point-to-token conversion table](https://github.com/ArbitrumFoundation/docs/pull/204#point-to-token-conversion-table) to convert your `PointsPost` into tokens.
+ 9. Subtract `TokensPre` from `TokensPost`. If the result is a positive number, divide it by 2 and add it to `TokensPre`. This is your `TokenEntitlement` - the number of tokens that you're entitled to claim.
 
-todo
 
-Note that the minimum airdrop entitlement is **625** tokens; the maximum airdrop entitlement is **10,250** tokens.
+**Examples:**
+
+| `OnePointsPre` | `NovaPointsPre`   | `PointsPre` | `TokensPre` | `OnePointsPost` | `NovaPointsPost`  | `PointsPost` | `TokensPost` | `TokenEntitlement` |
+| -------------- | ----------------- | ----------- | ----------- | --------------- | ----------------- | ------------ | ------------ | ------------------ |
+| 5              | 2 (gets cut to 1) | 6           | 3,250       | 5               | 2 (gets cut to 1) | 6            | 3,250        | 4,750              |
+| 2              | 2                 | 4           | 1,750       | 7               | 2 (gets cut to 1) | 8            | 4,250        | 3,000              |
+
+
+TODO - verify
+
 
 <br />
 
@@ -271,4 +283,8 @@ While the user and DAO airdrops will be available in one week, all investor and 
 
 ### Frequently asked questions
 
-todo
+**Q: What if my calculated entitlement doesn't match the number of tokens the website says I'm entitled to claim?**
+TODO
+
+**Q: What if my wallet address is not eligible for the airdrop, but I believe it should be?**
+TODO
