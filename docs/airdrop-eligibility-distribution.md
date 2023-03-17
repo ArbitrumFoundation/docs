@@ -96,8 +96,6 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
 </table>
 
 
-TODO: clarify reader confusion about blocks
-
 
 ### User airdrop eligibility details
 
