@@ -49,6 +49,14 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
         <td><strong>Airdrop snapshot</strong></td>
         <td><a href='https://arbiscan.io/block/58642080'>Block 58642080</a> on Arbitrum One = February 6th, 2023</td>
     </tr>
+    <tr>
+        <td><strong>Claiming starts</strong></td>
+        <td><a href='https://etherscan.io/block/countdown/16890400'>Block 16890400</a> on Ethereum Mainnet = March 23rd, 2023</td>
+    </tr>
+    <tr>
+        <td><strong>Claiming ends</strong></td>
+        <td><a href='https://etherscan.io/block/countdown/18208000'>Block 18208000</a> on Ethereum Mainnet = September 23rd, 2023 (estimated)</td>
+    </tr>
 </table>
 
 
@@ -92,7 +100,6 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
 
 Airdrop eligibility is determined by the number of points earned by a user's wallet address. Points are earned by performing **qualifying actions** on the Arbitrum One and Arbitrum Nova rollup chains:
 
-
 #### Qualifying actions
 
 Qualifying actions on Arbitrum One:
@@ -123,10 +130,12 @@ Qualifying actions on Arbitrum Nova:
 
 #### Points-to-tokens conversion table
 
+We'll use this table to calculate the precise number of tokens that you're elibible to claim in the next section:
+
 <table className="small-table">
     <tr>
-        <td><strong>Points scored (values represent points scored pre-Nitro)</strong></td>
-        <td><strong>Airdrop entitlement</strong></td>
+        <td><strong>Points scored</strong></td>
+        <td><strong>Initial airdrop entitlement</strong></td>
     </tr>
     <tr>
         <td>Less than 3</td>
@@ -175,8 +184,6 @@ Qualifying actions on Arbitrum Nova:
 </table>
 
 <br />
-
-
 
 ### Calculate your airdrop eligibility
 
@@ -233,6 +240,7 @@ Scroll to the section that describes your scenario and follow the instructions.
 
 todo
 
+Note that the minimum airdrop entitlement is **625** tokens; the maximum airdrop entitlement is **10,250** tokens.
 
 <br />
 

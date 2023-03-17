@@ -37,7 +37,7 @@ If the proposal passes the temperature check, it will move on to an on-chain vot
 
 To vote on proposals in the "on-chain vote" stage:
 
-1. Log in to [Tally](https://tally.xyz/gov/arbitrum) using the wallet that holds your $ARB tokens.
+1. Log in to [Tally](https://tally.xyz/gov/arbitrum) using a wallet that has been delegated voting power. $ARB tokens must be delegated to the wallet address before the voting period beings to vote on the proposal.
 2. Navigate to the "explore DAOs" section or click on "My DAOs" within your Tally profile and select the page for either Constitutional or non-Constitutional AIPs.
 3. Locate the proposal you'd like to vote on and cast your vote.
 
