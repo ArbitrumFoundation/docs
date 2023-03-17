@@ -70,7 +70,7 @@ export const PointToTokenCalculator = () => {
     }
 
     setTokensEntitled(calculatedTokensEntitled);
-  }, [preNitroPts, postNitroPts, novaPts, finalNovaPts]);
+  }, [preNitroPts, postNitroPts, novaPts, finalNovaPts, arbOnePts]);
 
   return (
     <div className="points-tokens-calculator">
