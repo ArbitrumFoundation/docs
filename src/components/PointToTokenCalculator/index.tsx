@@ -55,19 +55,12 @@ export const PointToTokenCalculator = () => {
       preNitroPts + postNitroPts > 14 ? 14 - preNitroPts : postNitroPts
     );
 
-    let calculateWithArbOneTotalPoints = false;
-    if (preNitroPts < 3 && postNitroPts < 3 && arbOnePts >= 3) {
-      calculateWithArbOneTotalPoints = true;
-    }
+    const preNitroMultiplier = preNitroMultiplierEnabled ? 2 : 1;
 
-    let calculatedTokensEntitled = 0;
-    if (calculateWithArbOneTotalPoints) {
-      calculatedTokensEntitled = pointsToToken[arbOnePts + finalNovaPts];
-    } else {
-      calculatedTokensEntitled =
-        (preNitroMultiplierEnabled ? 2 : 1) * pointsToToken[preNitroPts] +
-        pointsToToken[postNitroPts + finalNovaPts];
-    }
+    const calculatedTokensEntitled =
+      pointsToToken[preNitroPts] * preNitroMultiplier +
+      (pointsToToken[preNitroPts + postNitroPts + finalNovaPts] -
+        pointsToToken[preNitroPts]);
 
     setTokensEntitled(calculatedTokensEntitled);
   }, [
