@@ -240,7 +240,7 @@ Scroll to the section that describes your scenario and follow the instructions.
  5. Then, refer to the [qualifying actions section](https://github.com/ArbitrumFoundation/docs/pull/204#qualifying-actions) to determine how many points you earned **after** Nitro launched on Arbitrum One. We'll refer to this as `OnePointsPost`.
  6. If you performed any qualifying actions on Arbitrum Nova after Nitro was launched, reference the second step of `Scenario 2` above to determine `NovaPointsPost`.
  7. Next, TODO. We'll refer to this total as `PointsPost`.
- 8. Use the [point-to-token conversion table](https://github.com/ArbitrumFoundation/docs/pull/204#point-to-token-conversion-table) to convert your `PointsPost` into tokens.
+ 8. Use the [point-to-token conversion table](https://github.com/ArbitrumFoundation/docs/pull/204#point-to-token-conversion-table) to convert your `PointsPost` into tokens. We'll refer to this total as `TokensPost`.
  9. Subtract `TokensPre` from `TokensPost`. If the result is a positive number, divide it by 2 and add it to `TokensPre`. This is your `TokenEntitlement` - the number of tokens that you're entitled to claim.
 
 
