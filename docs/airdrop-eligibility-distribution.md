@@ -96,6 +96,9 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
 </table>
 
 
+TODO: clarify reader confusion about blocks
+
+
 ### User airdrop eligibility details
 
 Airdrop eligibility is determined by the number of points earned by a user's wallet address. Points are earned by performing **qualifying actions** on the Arbitrum One and Arbitrum Nova rollup chains:
