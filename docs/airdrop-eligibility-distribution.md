@@ -51,11 +51,11 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
     </tr>
     <tr>
         <td><strong>Claiming starts</strong></td>
-        <td><a href='https://etherscan.io/block/countdown/16890400'>Block 16890400</a> on Ethereum Mainnet = March 23rd, 2023</td>
+        <td><a href='https://etherscan.io/block/countdown/16890400'>Block 16890400</a> on Ethereum Mainnet = March 23rd, 2023. Note that $ARB is not minted nor claimable on Ethereum mainnet - it's minted and claimable on Arbitrum One.</td>
     </tr>
     <tr>
         <td><strong>Claiming ends</strong></td>
-        <td><a href='https://etherscan.io/block/countdown/18208000'>Block 18208000</a> on Ethereum Mainnet = September 23rd, 2023 (estimated)</td>
+        <td><a href='https://etherscan.io/block/countdown/18208000'>Block 18208000</a> on Ethereum Mainnet = September 23rd, 2023 (estimated). Note that $ARB is not minted nor claimable on Ethereum mainnet - it's minted and claimable on Arbitrum One.</td>
     </tr>
 </table>
 
