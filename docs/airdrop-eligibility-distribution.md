@@ -249,7 +249,7 @@ Scroll to the section that describes your scenario and follow the instructions.
 | `OnePointsPre` | `NovaPointsPre`   | `PointsPre` | `TokensPre` | `OnePointsPost` | `NovaPointsPost`  | `PointsPost` | `TokensPost` | `TokenEntitlement` |
 | -------------- | ----------------- | ----------- | ----------- | --------------- | ----------------- | ------------ | ------------ | ------------------ |
 | 5              | 2 (gets cut to 1) | 6           | 3,250       | 5               | 2 (gets cut to 1) | 6            | 3,250        | 3,250              |
-| 2              | 2                 | 4           | 1,750       | 7               | 2 (gets cut to 1) | 8            | 4,250        | 3,000              |
+| 2              | 2                 | 4           | 1,750       | 7               | 2 (gets cut to 1) | 8            | 4,250        | 4,250              |
 
 
 
