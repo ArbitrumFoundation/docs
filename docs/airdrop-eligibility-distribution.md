@@ -189,7 +189,7 @@ We'll use this table to calculate the precise number of tokens that you're elibi
 
 If you performed any of the above qualifying actions on the Arbitrum One chain *before* Arbitrum Nitro launched on Arbitrum One mainnet (block **#22207817**), your tokens may be weighted. This pre-Nitro weighting is how we reward early adopters of Arbitrum One, but it only applies if you earned at least 3 points before Nitro was launched.
 
-Note that the minimum airdrop entitlement is **625** tokens; the maximum airdrop entitlement is **10,250** tokens.
+Note that the minimum airdrop entitlement is **625** tokens; the maximum airdrop entitlement is **10,250** tokens. TODO - reconcile the difference between this statement and the above table.
 
 To calculate the number of tokens that you're eligible to claim, first determine which of the following three scenarios describes your on-chain activity:
 
