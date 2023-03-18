@@ -13,11 +13,12 @@ import { AddressExplorerLink as AEL } from '@site/src/components/AddressExplorer
 
 ### Token
 
-| Contract             | Chain    | Address                                                                              |
-| -------------------- | -------- | ------------------------------------------------------------------------------------ |
-| $ARB Token           | Arb One  | <AEL   address = {"0x912CE59144191C1204E64559FE8253a0e49E6548"} chainID= {42161} />  |
-| $ARB Token (bridged) | Ethereum | <AEL   address = {"0xB50721BCf8d664c30412Cfbc6cf7a15145234ad1"} chainID = {1}  />    |
-| $ARB Token (bridged) | Nova     | <AEL   address = {"0xf823C3cD3CeBE0a1fA952ba88Dc9EEf8e0Bf46AD"} chainID= {42170}  /> |
+| Contract             | Chain      | Address                                                                              |
+| -------------------- | ---------- | ------------------------------------------------------------------------------------ |
+| $ARB Token           | Arb One    | <AEL   address = {"0x912CE59144191C1204E64559FE8253a0e49E6548"} chainID= {42161} />  |
+| $ARB Token (bridged) | Ethereum   | <AEL   address = {"0xB50721BCf8d664c30412Cfbc6cf7a15145234ad1"} chainID = {1}  />    |
+| $ARB Token (bridged) | Nova       | <AEL   address = {"0xf823C3cD3CeBE0a1fA952ba88Dc9EEf8e0Bf46AD"} chainID= {42170}  /> |
+| $ARB Token (testnet) | Arb Goerli | <AEL   address = {"0xF861378B543525ae0C47d33C90C954Dc774Ac1F9"} chainID= {421613} /> |
 
 ### Token Distribution
 
@@ -28,11 +29,13 @@ import { AddressExplorerLink as AEL } from '@site/src/components/AddressExplorer
 
 ### Token Bridging
 
-| Contract            | Chain    | Address                                                                            |
-| ------------------- | -------- | ---------------------------------------------------------------------------------- |
-| $ARB Gateway (Arb1) | Arb One  | <AEL address = {"0xCaD7828a19b363A2B44717AFB1786B5196974D8E"} chainID = {42161} /> |
-| $ARB Gateway (L1)   | Ethereum | <AEL address = {"0xbbcE8aA77782F13D4202a230d978F361B011dB27"} chainID = {1} />     |
-| $ARB Gateway (Nova) | Nova     | <AEL address = {"0xbf544970E6BD77b21C6492C281AB60d0770451F4"} chainID = {42170} /> |
+| Contract                  | Chain      | Address                                                                             |
+| ------------------------- | ---------- | ----------------------------------------------------------------------------------- |
+| $ARB Gateway (Arb1)       | Arb One    | <AEL address = {"0xCaD7828a19b363A2B44717AFB1786B5196974D8E"} chainID = {42161} />  |
+| $ARB Gateway (L1)         | Ethereum   | <AEL address = {"0xbbcE8aA77782F13D4202a230d978F361B011dB27"} chainID = {1} />      |
+| $ARB Gateway (Nova)       | Nova       | <AEL address = {"0xbf544970E6BD77b21C6492C281AB60d0770451F4"} chainID = {42170} />  |
+| $ARB Gateway (L2 testnet) | Arb Goerli | <AEL address = {"0x584d4D9bED1bEb39f02bb51dE07F493D3A5CdaA0"} chainID = {421613} /> |
+| $ARB Gateway (L1 testnet) | Goerli     | <AEL address = {"0x33A7991a70AD174822ddfa2618Df9C8f17c04563"} chainID = {5} />      |
 
 ### DAO Governance
 
