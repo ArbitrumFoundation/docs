@@ -203,9 +203,9 @@ Refer to [Arbitrum Sybil Hunting](https://github.com/ArbitrumFoundation/sybil-de
 
 ### DAO airdrop criteria and distribution
 
-A separate distribution was allocated for DAOs that are building applications in the Arbitrum ecosystem, as well as the Protocol Guild, a collective of Ethereum contributors. The distribution of tokens to DAOs was weighted based on a variety of factors, including time projects have been on Arbitrum, TVL of assets on the chain, whether a project was Arbitrum native, and whether project operated with actual on-chain treasuries.
+A separate distribution was allocated for DAOs that are building applications in the Arbitrum ecosystem, as well as the Protocol Guild, a collective of Ethereum contributors. In putting together this criteria we worked with Nansen and analyzed on-chain data to determine how many tokens each DAO community was granted. In doing so we took into account a variety of qualitative and quantitative metrics including when the protocol launched, whether it was native or multichain, how much TVL, activity, transaction volume, value of transactions it had, as well as the consistency of maintaining those metrics. The goal of using a broad variety of criteria was recognizing that Arbitrum is home to a diversity of projects that have different KPIs and user interactions.
 
-More details will be added around individual DAO allocation shortly.
+You can view the full list of DAOs and their allocations [here](https://docs.google.com/spreadsheets/d/1IuBGFY6EwtM7bEhzhvs_N1eZ3YGXSwsKYM8GVY6TwIk/).
 
 
 ### Vesting and lockup details
