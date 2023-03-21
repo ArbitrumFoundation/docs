@@ -121,9 +121,9 @@ Points earned on Arbitrum One
  9. Conducted transactions exceeding in the aggregate $10,000 in value
  10. Conducted transactions exceeding in the aggregate $50,000 in value
  11. Conducted transactions exceeding in the aggregate $250,000 in value
- 12. Deposited more than $10,000 of liquidity into Arbitrum 
- 13. Deposited more than $50,000 of liquidity into Arbitrum
- 14. Deposited more than $250,000 of liquidity into Arbitrum
+ 12. Bridged more than $10,000 of assets into Arbitrum One
+ 13. Bridged more than $50,000 of assets into Arbitrum One
+ 14. Bridged more than $250,000 of assets into Arbitrum One
 
 Points earned on Arbitrum Nova  
 
