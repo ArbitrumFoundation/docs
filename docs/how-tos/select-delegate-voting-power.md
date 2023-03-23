@@ -17,7 +17,7 @@ If you don't have the time or resources to actively participate in the DAO's gov
 
 ### Delegate your voting power on Tally
 
-:::info
+::: Looking for the Tally link?
 
 If you're familiar with the process of using Tally to delegate, visit the Arbitrum delegation page on [Tally](https://www.tally.xyz/gov/arbitrum/delegates). Otherwise, read on for a step-by-step guide.
 
