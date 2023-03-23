@@ -46,7 +46,7 @@ import { AddressExplorerLink as AEL } from '@site/src/components/AddressExplorer
 | Nova Upgrade Executor    | Nova     | <AEL address = {"0x86a02dD71363c440b21F4c0E5B2Ad01Ffe1A7482"} chainID = {42170} /> |
 | L1 Upgrade Executor      | Ethereum | <AEL address = {"0x3ffFbAdAF827559da092217e474760E2b2c3CeDd"} chainID = {1} />     |
 | L2 Core Timelock         | Arb One  | <AEL address = {"0x34d45e99f7D8c45ed05B5cA72D54bbD1fb3F98f0"} chainID = {42161} /> |
-| L2 Treasury Timelock     | Arb One  | <AEL address = {"0xbfc1feca8b09a5c5d3effe7429ebe24b9c09ef58"} chainID = {42161} /> |
+| L2 Treasury Timelock     | Arb One  | <AEL address = {"0xbFc1FECa8B09A5c5D3EFfE7429eBE24b9c09EF58"} chainID = {42161} /> |
 | L1 Timelock              | Ethereum | <AEL address = {"0xE6841D92B0C345144506576eC13ECf5103aC7f49"} chainID = {1} />     |
 
 ### Security Council
