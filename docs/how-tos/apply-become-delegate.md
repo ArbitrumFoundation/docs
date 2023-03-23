@@ -13,7 +13,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 ### Background
 
-Arbitrum DAO's launch has been announced, and the $ARB airdrop is live on [arbitrum.foundation](https://arbitrum.foundation/). Prospective DAO delegates can submit <a data-quicklook-from='delegate'>delegate</a> applications on the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/t/delegate-application-template/31). <a data-quicklook-from='airdrop'>Airdrop</a> recipients are now claiming their $ARB governance tokens, and may delegate the voting power[^1] of their tokens to delegates. In this how-to, you'll learn how to apply to become one of these delegates.
+Arbitrum DAO's launch [has been announced](https://arbitrumfoundation.medium.com/arbitrum-the-next-phase-of-decentralization-e7f8b37b5226) and the $ARB airdrop is live on [arbitrum.foundation](https://arbitrum.foundation/). Prospective DAO delegates can submit <a data-quicklook-from='delegate'>delegate</a> applications on the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/t/delegate-application-template/31). <a data-quicklook-from='airdrop'>Airdrop</a> recipients are now claiming their $ARB governance tokens, and may delegate the voting power[^1] of their tokens to delegates. In this how-to, you'll learn how to apply to become one of these delegates.
 
 ### Apply to be a listed delegate
 
