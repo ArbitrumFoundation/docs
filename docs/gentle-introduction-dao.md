@@ -18,7 +18,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 - The distribution of the <a data-quicklook-from='arb'>$ARB</a> governance token decentralizes governance of these protocols and their respective chains, as well as any future chains the Arbitrum DAO authorizes.
 - $ARB tokens can be used to vote on Arbitrum DAO governance proposals, allowing $ARB holders to shape Arbitrum's future together.
 - Token holders will be able to delegate their voting power to <a data-quicklook-from='delegate'>delegates</a>.
-- **To determine your airdrop eligibility**, connect your wallet to the Arbitrum One network on [arbitrum.foundation](http://arbitrum.foundation) and follow the prompts. Claiming won't be live until March 23rd.
+- **To determine your airdrop eligibility**, connect your wallet to the Arbitrum One network on [arbitrum.foundation](http://arbitrum.foundation) and follow the prompts. Claiming is live now.
 - **To become an Arbitrum DAO delegate**, review the below material and then [submit your application](./how-tos/apply-become-delegate.md). Submit your application before March 22nd at 12PM ET to ensure that airdrop recipients will be able to select you as a delegate when claiming their tokens.
 - **To build decentralized apps on Arbitrum,** check out the [developer docs](https://developer.arbitrum.io/intro/).
 

@@ -11,7 +11,18 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
-Delegating your voting power is an essential part of participating in the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>. As a token holder, you have the ability to vote on governance <a data-quicklook-from='arbitrum-improvement-proposal-aip'>proposals</a> and to elect members of the <a data-quicklook-from='security-council'>Security Council</a>. However, if you don't have the time or resources to actively participate in the DAO's governance, you can still make your voice heard by delegating your voting power to a <a data-quicklook-from='delegate'>delegate</a>. In this how-to, you'll learn how to evaluate and select a delegate.
+Delegating your voting power is an essential part of participating in the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>. As a token holder, you have the ability to vote on governance <a data-quicklook-from='arbitrum-improvement-proposal-aip'>proposals</a> and to elect members of the <a data-quicklook-from='security-council'>Security Council</a>. 
+
+If you don't have the time or resources to actively participate in the DAO's governance, you can still make your voice heard by delegating your voting power to a <a data-quicklook-from='delegate'>delegate</a>. This how-to will walk you through the process of evaluating and selecting a delegate.
+
+### Delegate your voting power on Tally
+
+
+:::info Looking for the Tally link?
+
+If you're familiar with the process of using Tally to delegate, visit the Arbitrum delegation page on [Tally](https://www.tally.xyz/gov/arbitrum/delegates). Otherwise, read on for a step-by-step guide.
+
+:::
 
 Before you delegate your voting power, it's important to understand that by delegating your voting power, you're entrusting someone else to vote on your behalf. So it's really important to choose a delegate who aligns with your values and who you trust to make decisions in the best interest of the Arbitrum DAO and its community.
 
