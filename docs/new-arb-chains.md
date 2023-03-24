@@ -23,7 +23,7 @@ An Ethereum multi-chain ecosystem is vital for several reasons:
 
 ### Terminology: L2s, L3s, and beyond
 
-In this document, "Layer 2 chain" refers to any Arbitrum chain settling directly onto Ethereum (chains with native bridge contracts on Ethereum <a data-quicklook-from='layer-1-l1'>Layer 1</a>), while "Layer 3 chain" refers to any Arbitrum chain that settle onto L2s. This definition can be extended into higher layers, e.g. "Layer 4 chain" refers to any chain that settles onto L3s.
+In this document, "Layer 2 chain" refers to any Arbitrum chain settling directly onto Ethereum (chains with native bridge contracts on Ethereum <a data-quicklook-from='layer-1-l1'>Layer 1</a>), while "Layer 3 chain" refers to any Arbitrum chain that settles onto L2s. This definition can be extended into higher layers, e.g. "Layer 4 chain" refers to any chain that settles onto L3s.
 
 ## New Arbitrum chains
 
