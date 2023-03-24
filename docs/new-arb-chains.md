@@ -29,7 +29,7 @@ In this document, "Layer 2 chain" refers to any Arbitrum chain settling directly
 
 ### Layer 2 (L2) chains: Authorized by Arbitrum DAO
 
-The Arbitrum DAO authorizes the creation of new L2 chains through the constitutional [governance proposal](./how-tos/create-submit-dao-proposal.md) mechanism. If a "new L2 chain" proposal passes, a new L2 chain is created. The DAO can authorize L2 chains that are governed by the Arbitrum DAO (these would be subject to [The Constitution of the Arbitrum DAO](./dao-constitution.md)), and those that are governed by other means.
+The Arbitrum DAO authorizes the creation of new L2 chains through the constitutional [governance proposal](./how-tos/create-submit-dao-proposal.md) mechanism. If a "new L2 chain" proposal passes, a new L2 chain is created. The DAO can authorize L2 chains that are governed by the Arbitrum DAO (these would be subject to [The Constitution of the Arbitrum DAO](./dao-constitution.md), like One and Nova), and those that are governed by other means.
 
 ### Layer 3 (L3) chains: No authorization required
 
