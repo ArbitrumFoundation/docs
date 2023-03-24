@@ -56,9 +56,15 @@ graph TD;
 
 #### Phase 1: Temperature check (optional but recommended)
 
-This is the first phase of the Arbitrum Improvement Proposal (AIP) process. In this phase, the proposed AIP is submitted following the procedure outlined within [How to submit a DAO proposal](../how-tos/create-submit-dao-proposal) and discussed/debated for one week. This is an optional step, but it's recommended as a due-diligence governance best practice.
+This is the first phase of the Arbitrum Improvement Proposal (AIP) process: 
 
-During this phase, the AIP should be accompanied by a Snapshot poll that helps gauge the interest of Arbitrum DAO members. This poll can only be submitted by an address that can represent at least 0.01% of the votable tokens. The Snapshot poll runs for 7 days and is decided by a simple majority with no required participation threshold. If an AIP fails this temperature check, the original AIP author is encouraged to refrain from proceeding, and voters are encouraged to reject it if the author proceeds. If an AIP proposer decides to skip this step, voters should consider this as a factor in their vote. This step is important as it will allow the community to reflect on its own sentiments towards a proposal before it's formally submitted for an on-chain vote via [Tally](https://tally.xyz/gov/arbitrum).
+ 1. The proposed AIP is submitted following the procedure outlined within [How to submit a DAO proposal](../how-tos/create-submit-dao-proposal).
+ 2. A discussion is initiated on the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/c/proposals/7).
+ 3. A Snapshot poll is created to help gauge the interest of Arbitrum DAO members - either at the same time as the forum post, or after the forum post has facilitated initial discussion. This poll can be initiated only by an address that can represent at least 0.01% of the votable tokens.
+ 4. The poll runs for 7 days and is decided by a simple majority with no required participation threshold.
+
+
+This is an optional step, but it's recommended as a due-diligence governance best practice. If an AIP fails this temperature check, the original AIP author is encouraged to refrain from proceeding, and voters are encouraged to reject it if the author proceeds. If an AIP proposer decides to skip this step, voters should consider this as a factor in their vote.
 
 
 #### Phase 2: Formal AIP and call for voting
