@@ -2,7 +2,7 @@
 id: new-arb-chains
 title: 'Creating new Arbitrum chains'
 sidebar_label: Creating new Arbitrum chains
-description: Understanding the creation and purpose of new Arbitrum chains
+description: Understanding how and why new Arbitrum chains will be created
 dao_author: dzgoldman
 dao_sme: dzgoldman
 ---
