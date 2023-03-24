@@ -104,7 +104,7 @@ const config = {
       },
       announcementBar: {
         id: "banner",
-        content: `Arbitrum DAO has been officially announced, and the $ARB airdrop is live. <a rel="noopener noreferrer" href="https://forum.arbitrum.foundation/t/delegate-application-template/31">Apply to become a delegate</a> and/or <a rel="noopener noreferrer" href='https://arbitrum.foundation/'>claim your $ARB</a>.`,
+        content: `Arbitrum DAO has been officially announced, and the $ARB airdrop is live. <a rel="noopener noreferrer" href='https://arbitrum.foundation/'>Claim your $ARB</a>.`,
         backgroundColor: 'rgb(8 53 117)',
         textColor: 'white',
         isCloseable: false,
