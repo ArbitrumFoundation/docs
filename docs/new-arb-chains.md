@@ -33,7 +33,7 @@ The Arbitrum DAO authorizes the creation of new L2 chains through the constituti
 
 ### Layer 3 (L3) chains: No authorization required
 
-Creating new L3s on top of Arbitrum L2s doesn't require authorization or approval. L3s (and L4s, L5s, etc.) can be deployed permissionlessly. This includes L3 chains that use custom modifications to the Arbitrum Nitro codebase, chains that introduce their own novel governance structures, and so on.
+Creating new L3s on top of Arbitrum L2s doesn't require authorization or approval. L3s (and L4s, L5s, etc.) can be deployed permissionlessly. This includes L3 chains that run on a customized fork of the Arbitrum Nitro codebase, chains that introduce their own novel governance structures, and so on.
 
 ## Conclusion
 
