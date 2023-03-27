@@ -30,7 +30,11 @@ import AnatomyAIPPartial from '@site/docs/partials/_anatomy-aip-partial.md';
 
 #### Technical overview
 
-For a technical lifecycle overview, visit [Governance Proposal Lifecyle: Example](https://github.com/ArbitrumFoundation/governance/blob/main/docs/proposal_lifecycle_example.md).
+For a technical overview of implementation details, visit the [Governance Repo](https://github.com/ArbitrumFoundation/governance/tree/main/docs):
+  - [Governance Action Contracts](https://github.com/ArbitrumFoundation/governance/blob/main/src/gov-action-contracts/README.md)
+  - [Arbitrum Governance: Technical Overview](https://github.com/ArbitrumFoundation/governance/blob/main/docs/overview.md)
+  - [Proposal Lifecycle Example](https://github.com/ArbitrumFoundation/governance/blob/main/docs/proposal_lifecycle_example.md)
+  - [Roundtrip Governance - Diagram](https://github.com/ArbitrumFoundation/governance/blob/main/docs/roundtrip-governance.png)
 
 
 #### High-level overview
