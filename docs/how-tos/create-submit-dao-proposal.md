@@ -66,13 +66,14 @@ If your wallet can represent at least 5,000,000 tokens (about 0.1% of votable $A
 To submit your proposal on Tally:
 
  1.	Log in to [Tally](https://tally.xyz/gov/arbitrum) using the wallet that represents the $ARB tokens.
- 2.	Navigate to the "explore DAOs" section or click on "My DAOs" within your Tally profile and select one of the following pages:
-    - **Arbitrum Constitution**: For Constitutional Proposals
-    - **Arbitrum Treasury**: For Non-Constitutional Proposals
-3.	Select "Create new proposal"
-4.	Give the proposal a name and description (preview image is optional). Ensure that you’re submitting the correct type of proposal to the right DAO page in Tally.
-5.	Add proposal actions to be executed if passed. For example, "transfer n ETH to 0x address".
-6.	Preview your proposal and either save as a draft or submit on-chain.
+ 2.	Navigate to the "explore DAOs" section or click on "My DAOs" within your Tally profile and select Arbitrum DAO's page.
+ 3.	Select "Create new proposal"
+ 4. Choose which governor you are targeting:
+    - **Arbitrum Core**: For <a data-quicklook-from="constitutional-aip">Constitutional</a> Proposals
+    - **Arbitrum Treasury**: For <a data-quicklook-from="nonconstitutional-aip">non-Constitutional</a> Proposals
+ 5.	Give the proposal a name and description (preview image is optional). Ensure that you’re submitting the correct type of proposal to the right DAO page in Tally.
+ 6.	Add proposal actions to be executed if passed. For example, "transfer n ETH to 0x address".
+ 7.	Preview your proposal and either save as a draft or submit on-chain.
 
 A proposal passes if two conditions are met: 
 
