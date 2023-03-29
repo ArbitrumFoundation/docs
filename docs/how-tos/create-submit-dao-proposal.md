@@ -70,7 +70,7 @@ To submit your proposal on Tally:
  3.	Select "Create new proposal"
  4.   Choose which governor you are targeting:
        - **Arbitrum Core**: For <a data-quicklook-from="constitutional-aip">Constitutional</a> Proposals
-    - **Arbitrum Treasury**: For <a data-quicklook-from="nonconstitutional-aip">non-Constitutional</a> Proposals
+       - **Arbitrum Treasury**: For <a data-quicklook-from="nonconstitutional-aip">non-Constitutional</a> Proposals
  5.	Give the proposal a name and description (preview image is optional). Ensure that you’re submitting the correct type of proposal to the right DAO page in Tally.
  6.	Add proposal actions to be executed if passed. For example, "transfer n ETH to 0x address".
  7.	Preview your proposal and either save as a draft or submit on-chain.
