@@ -1,6 +1,6 @@
 ---
 id: deployment-addresses
-title: DAO contracts deployment addresses
+title: DAO contract addresses
 sidebar_label: Contract addresses
 ---
 
