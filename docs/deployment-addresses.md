@@ -23,8 +23,8 @@ import { AddressExplorerLink as AEL } from '@site/src/components/AddressExplorer
 
 | Contract          | Chain | Address                                                                            |
 | ----------------- | ----- | ---------------------------------------------------------------------------------- |
-| Token Distributor | 42161 | <AEL address = {"0x67a24CE4321aB3aF51c2D0a4801c3E111D88C9d9"} chainID = {42161} /> |
-| DAO Treasury      | 42161 | <AEL address = {"0xF3FC178157fb3c87548bAA86F9d24BA38E649B58"} chainID = {42161} /> |
+| Token Distributor | Arb One | <AEL address = {"0x67a24CE4321aB3aF51c2D0a4801c3E111D88C9d9"} chainID = {42161} /> |
+| DAO Treasury      | Arb One | <AEL address = {"0xF3FC178157fb3c87548bAA86F9d24BA38E649B58"} chainID = {42161} /> |
 
 ### Token Bridging
 
@@ -62,12 +62,12 @@ import { AddressExplorerLink as AEL } from '@site/src/components/AddressExplorer
 
 | Contract          | Chain | Address                                                                            |
 | ----------------- | ----- | ---------------------------------------------------------------------------------- |
-| Constitution Hash | 42161 | <AEL address = {"0x1D62fFeB72e4c360CcBbacf7c965153b00260417"} chainID = {42161} /> |
+| Constitution Hash | Arb One | <AEL address = {"0x1D62fFeB72e4c360CcBbacf7c965153b00260417"} chainID = {42161} /> |
 
 ### Governance Contracts Proxy Admins
 
 | Contract            | Chain | Address                                                                            |
 | ------------------- | ----- | ---------------------------------------------------------------------------------- |
-| Arb One Proxy Admin | 42161 | <AEL address = {"0xdb216562328215E010F819B5aBe947bad4ca961e"} chainID = {42161} /> |
-| Nova Proxy Admin    | 42170 | <AEL address = {"0xf58eA15B20983116c21b05c876cc8e6CDAe5C2b9"} chainID = {42170} /> |
-| L1 Proxy Admin      | 1     | <AEL address = {"0x5613AF0474EB9c528A34701A5b1662E3C8FA0678"} chainID = {1} />     |
+| Arb One Proxy Admin | Arb One | <AEL address = {"0xdb216562328215E010F819B5aBe947bad4ca961e"} chainID = {42161} /> |
+| Nova Proxy Admin    | Nova | <AEL address = {"0xf58eA15B20983116c21b05c876cc8e6CDAe5C2b9"} chainID = {42170} /> |
+| L1 Proxy Admin      | Ethereum     | <AEL address = {"0x5613AF0474EB9c528A34701A5b1662E3C8FA0678"} chainID = {1} />     |
