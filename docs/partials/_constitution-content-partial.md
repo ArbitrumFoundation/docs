@@ -34,9 +34,7 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
         <p>Recommended guideline: DAO members should vote against any AIP that is incorrectly labeled.</p>
         <p>A Non-Constitutional AIP is one that is not considered a &quot;Constitutional AIP&quot; including:</p>
         <ul>
-            <li><strong>Funding</strong>: Requests funds/grants or otherwise propose how to spend or allocate funds from the DAO Treasury and, so long as The Arbitrum Foundation exists, 
-            the Administrative Budget Wallet as defined in the The Arbitrum Foundation’s Amended &
-            Restated Bylaws</li>
+            <li><strong>Funding</strong>: Requests funds/grants or otherwise propose how to spend or allocate funds from the DAO Treasury and, so long as The Arbitrum Foundation exists, the Administrative Budget Wallet as defined in the The Arbitrum Foundation’s Amended & Restated Bylaws</li>
             <li><strong>Informational</strong>: Provides general guidelines or information to the community but does not otherwise propose a new feature or update</li>
         </ul>
         <p>Each AIP must also clearly specify which Governed Chain(s) it will affect (this may be specified by code, data, or text, as appropriate for the specific AIP).</p>
