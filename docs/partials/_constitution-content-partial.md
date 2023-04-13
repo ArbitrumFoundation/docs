@@ -118,7 +118,7 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
 </ol>
 <p>The seats of Security Council members who have been removed prior to the end of their respective terms shall remain unfilled until the next election that such seats are up for appointment, unless otherwise replaced prior to such next election by a vote of at least 9 of the Security Council members, in which case such seat shall be up for appointment at the next such election.</p>
 
-<h3 id="section-5-community-values">Section 5: Data Availability Committee</h3>
+<h3 id="section-5-data-availability-committee">Section 5: Data Availability Committee</h3>
 
 <p>Transactions occurring on the Arbitrum Nova chain are settled on Ethereum mainnet, but, unlike transactions
 occurring on the Arbitrum One chain, the underlying transaction data batches are posted and stored by the members
