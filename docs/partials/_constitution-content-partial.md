@@ -100,7 +100,7 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
 <h3 id="section-4-security-council-elections">Section 4: Security Council Elections</h3>
 <p>The Security Council has 12 members, who are divided into a September Cohort of 6 members, and a March Cohort of 6 members. Every year on September 15, 12:00 UTC, an election starts for the 6 September Cohort seats; and every year on March 15, 12:00 UTC, an election starts for the 6 March Cohort seats.</p>
 <p>This means that the initial September Cohort will serve an initial term of 6 months, whereas the initial March Cohort will serve an initial term of 1 year.</p>
-<p>The initial Security Council Cohorts were determined by randomly splitting the 12 members into two 6-member cohorts - 6 members in the September Cohort and 6 members in the March Cohort. The members of the initial Security Council Cohorts are detailed in a transparency report <a href="https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup">here</a>.</p>
+<p>The initial Security Council Cohorts were determined by randomly splitting the 12 members into two 6-member cohorts - 6 members in the September Cohort and 6 members in the March Cohort. The members of the initial Security Council Cohorts are detailed in a transparency report <a href="https://ipfs.io/ipfs/Qmcny9xqHG9s9HduycwpooW4sV9VUMxYtVwU2eBts7vyYq">here</a>.</p>
 <p>The following timeline governs an election that starts at time T:</p>
 <ol>
     <li>From T until T+7 days: Any DAO member may declare their candidacy for the Security Council; provided that a current Security Council member in one cohort may not be a candidate for a seat in the other cohort. To the extent that there are more than six candidates, each eligible candidate must be supported by pledged votes representing at least 0.2% of all Votable Tokens. In the event that fewer than six candidates are supported by pledged votes representing at least 0.2% of all Votable Tokens, the current Security Council members whose seats are up for election may become candidates (as randomly selected out of their Cohort) until there are 6 candidates.</li>
@@ -124,7 +124,7 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
 occurring on the Arbitrum One chain, the underlying transaction data batches are posted and stored by the members
 of the Data Availability Committee on a Data Availability Server (and not on Ethereum mainnet).</p>
 
-<p>The members of the Data Availability Committee of the Nova chain are available in a transparency report <a href="https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup">here</a>.</p>
+<p>The members of the Data Availability Committee of the Nova chain are available in a transparency report <a href="https://ipfs.io/ipfs/Qmcny9xqHG9s9HduycwpooW4sV9VUMxYtVwU2eBts7vyYq">here</a>.</p>
 
 <p>Data Availability Committee members can be appointed and removed at any time pursuant to a Constitutional AIP
 approved by the ArbitrumDAO. In the event that a Data Availability Committee member is removed (and not
