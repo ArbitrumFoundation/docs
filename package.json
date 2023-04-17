@@ -15,7 +15,7 @@
     "typecheck": "tsc",
     "format": "prettier --write .",
     "verifyQuicklooks": "node scripts/verifyQuicklooks.js",
-    "update-constition-hash": "node scripts/updateConstitutionHash.js",
+    "update-constitution-hash": "node scripts/updateConstitutionHash.js",
     "verifyAndBuild": "yarn verifyQuicklooks && yarn build"
   },
   "dependencies": {
