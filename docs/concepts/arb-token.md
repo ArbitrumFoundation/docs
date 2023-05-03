@@ -21,6 +21,8 @@ When you vote on an on-chain proposal, you're using your $ARB tokens to signal y
 
 Note that $ARB tokens can be <a data-quicklook-from='delegate'>delegated</a> to other wallets. This means that you can vote using your own $ARB tokens (those in your own wallet), but you can also vote using someone else's $ARB tokens as long as the owner of those tokens has delegated their voting power to you. Delegation is useful for DAO members who don't have time to commit to reviewing and discussing DAO proposals on a regular basis[^1].
 
+$ARB was created with an initial supply of 10 billion. New $ARB can be minted at a rate of 2% its supply per year _at most_, with the first of these mints becoming eligible on March 15, 2024. $ARB minting events are performed by the DAO via a [constitutional](../dao-constitution.md) proposal. 
+
 In summary, the $ARB token is a special-purpose digital asset that gives its holders the ability to vote on on-chain proposals that affect the operation and evolution of the Arbitrum DAO and the technologies it governs. Holding $ARB tokens allows you democratically shape the future of the Arbitrum ecosystem alongside other values-aligned and incentives-aligned token holders.
 
 
