@@ -40,3 +40,11 @@ Creating new L3s on top of Arbitrum L2s doesn't require authorization or approva
 ## Conclusion
 
 The architecture supporting Arbitrum's chains ensures that the community enjoys control over how the Arbitrum tech stack is used, while still leaving room to foster the open, permissionless innovation expected from a vibrant web3 ecosystem.
+
+# L3 examples
+
+[MXC SupernodeV2](https://wannsee.mxc.com/docs/intro) is a fully decentralized, Ethereum-equivalent Type 1 ZK-EVM ZK-Rollup built on [Arbitrum](https://arbitrum.io/) using [Taiko ZK](https://taiko.xyz/). 
+
+MXC is a Web3 project aimed at being the Ethereum of IoT. Our team is composed of experienced developers and blockchain experts who have a deep understanding of the Web3 industry.
+
+The MXC token is built on Arbitrum now as an IoT scaling solution, which offers more IoT usabilities like parking and garbage collection telemetry for Korea and New York government. The token is designed to be the next Ethereum of IoT to support [sensor token offering](https://www.mxc.org/blog/introducing-initial-sensor-offering-iso) and [NFT issuance](https://medium.com/mxc/mxprotocol-enters-multi-billion-dollar-nfc-market-4bb4a4a3e382) for [real-world goods](https://hackmd.io/3PYPxJ0nQ7W_YvEqtBGqzQ).
