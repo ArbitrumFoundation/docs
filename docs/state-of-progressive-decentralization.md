@@ -36,7 +36,7 @@ Let's evaluate the current status of these components for both Arbitrum One and 
 ### 2. Validator ownership
 
 - **Description**: Validators are responsible for confirming the valid state of the <a data-quicklook-from='arbitrum-chain'>Arbitrum chains</a> back on L1.
-- **Current status**: **Permissioned** Validation on both Arbitrum One and Arbitrum Nova is currently allow-listed to a committee of public entities. You can see the list of validators [here](https://developer.arbitrum.io/useful-addresses#mainnet-arbitrum-one). Governance currently has the power to change this status.
+- **Current status**: **Permissioned** Validation on both Arbitrum One and Arbitrum Nova is currently allow-listed to a committee of public entities. You can see the list of validators [here](#allowlisted-validators). Governance currently has the power to change this status.
 - **Risks**: If there is not a single honest active validator, and a malicious validator proposes an invalid state update, the system's safety could be compromised.
 - **Changes to Current status**: The Arbitrum governance system (see #1) currently has the power to modify the Validator allow-list, such as by adding or removing members or removing the allow-list entirely.
 
@@ -56,6 +56,56 @@ This applies only to Arbitrum AnyTrust chains like Arbitrum Nova.
 :::
 
 - **Description**: AnyTrust chains like Arbitrum Nova rely on a permissioned committee to store the chain's data and provide it on demand.
-- **Current status**: 7-member committee. The Arbitrum Nova chain has a 7-party DAC, whose members can be seen [here](https://developer.arbitrum.io/public-chains#arbitrum-chains-summary). Governance has the ability to remove or add members to the committee.
+- **Current status**: 7-member committee. The Arbitrum Nova chain has a 7-party DAC, whose members can be seen [here](#data-availability-committee-members). Governance has the ability to remove or add members to the committee.
 - **Risks**: If 6 of the 7 committee members in conjunction with the Sequencer behave maliciously and collude, the safety of the system can be compromised.
 - **Changes to Current status**: The Arbitrum governance system (see #1) currently has the power to change the DAC, such as by adding or removing members or modifying the power it has over the system.
+
+### Allowlisted validators
+
+These are the current [allowlisted validators](#2-validator-ownership) for every public Arbitrum chain:
+
+#### Arbitrum One
+
+- [0x0fF813f6BD577c3D1cDbE435baC0621BE6aE34B4](https://etherscan.io/address/0x0fF813f6BD577c3D1cDbE435baC0621BE6aE34B4)
+- [0x54c0D3d6C101580dB3be8763A2aE2c6bb9dc840c](https://etherscan.io/address/0x54c0D3d6C101580dB3be8763A2aE2c6bb9dc840c)
+- [0x56D83349c2B8DCF74d7E92D5b6B33d0BADD52D78](https://etherscan.io/address/0x56D83349c2B8DCF74d7E92D5b6B33d0BADD52D78)
+- [0x610Aa279989F440820e14248BD3879B148717974](https://etherscan.io/address/0x610Aa279989F440820e14248BD3879B148717974)
+- [0x6Fb914de4653eC5592B7c15F4d9466Cbd03F2104](https://etherscan.io/address/0x6Fb914de4653eC5592B7c15F4d9466Cbd03F2104)
+- [0x758C6bB08B3ea5889B5cddbdeF9A45b3a983c398](https://etherscan.io/address/0x758C6bB08B3ea5889B5cddbdeF9A45b3a983c398)
+- [0x7CF3d537733F6Ba4183A833c9B021265716cE9d0](https://etherscan.io/address/0x7CF3d537733F6Ba4183A833c9B021265716cE9d0)
+- [0x83215480dB2C6A7E56f9E99EF93AB9B36F8A3DD5](https://etherscan.io/address/0x83215480dB2C6A7E56f9E99EF93AB9B36F8A3DD5)
+- [0xAB1A39332e934300eBCc57B5f95cA90631a347FF](https://etherscan.io/address/0xAB1A39332e934300eBCc57B5f95cA90631a347FF)
+- [0xB0CB1384e3f4a9a9b2447e39b05e10631E1D34B0](https://etherscan.io/address/0xB0CB1384e3f4a9a9b2447e39b05e10631E1D34B0)
+- [0xF8D3E1cF58386c92B27710C6a0D8A54c76BC6ab5](https://etherscan.io/address/0xF8D3E1cF58386c92B27710C6a0D8A54c76BC6ab5)
+- [0xdDf2F71Ab206C0138A8eceEb54386567D5abF01E](https://etherscan.io/address/0xdDf2F71Ab206C0138A8eceEb54386567D5abF01E)
+- [0xf59caf75e8A4bFBA4e6e07aD86C7E498E4d2519b](https://etherscan.io/address/0xf59caf75e8A4bFBA4e6e07aD86C7E498E4d2519b)
+
+#### Arbitrum Nova
+
+- [0x1732BE6738117e9d22A84181AF68C8d09Cd4FF23](https://etherscan.io/address/0x1732BE6738117e9d22A84181AF68C8d09Cd4FF23)
+- [0x24Ca61c31C7f9Af3ab104dB6B9A444F28e9071e3](https://etherscan.io/address/0x24Ca61c31C7f9Af3ab104dB6B9A444F28e9071e3)
+- [0x3B0369CAD35d257793F51c28213a4Cf4001397AC](https://etherscan.io/address/0x3B0369CAD35d257793F51c28213a4Cf4001397AC)
+- [0x54c0D3d6C101580dB3be8763A2aE2c6bb9dc840c](https://etherscan.io/address/0x54c0D3d6C101580dB3be8763A2aE2c6bb9dc840c)
+- [0x57004b440Cc4eb2FEd8c4d1865FaC907F9150C76](https://etherscan.io/address/0x57004b440Cc4eb2FEd8c4d1865FaC907F9150C76)
+- [0x658e8123722462F888b6fa01a7dbcEFe1D6DD709](https://etherscan.io/address/0x658e8123722462F888b6fa01a7dbcEFe1D6DD709)
+- [0xDfB23DFE9De7dcC974467195C8B7D5cd21C9d7cB](https://etherscan.io/address/0xDfB23DFE9De7dcC974467195C8B7D5cd21C9d7cB)
+- [0xE27d4Ed355e5273A3D4855c8e11BC4a8d3e39b87](https://etherscan.io/address/0xE27d4Ed355e5273A3D4855c8e11BC4a8d3e39b87)
+
+#### Arbitrum Goerli (testnet)
+
+- [0x3EABe7e5e3fcDdFB8fb8c5972EB151bF4fddf2ce](https://goerli.etherscan.io/address/0x3EABe7e5e3fcDdFB8fb8c5972EB151bF4fddf2ce)
+- [0x9549263185294a7FB24bf357b0050252d3653C74](https://goerli.etherscan.io/address/0x9549263185294a7FB24bf357b0050252d3653C74)
+- [0xAa01D5570E932a13eF9a06677eaf97d56a33393f](https://goerli.etherscan.io/address/0xAa01D5570E932a13eF9a06677eaf97d56a33393f)
+- [0xe08339b8Da134f1e39876b7523586c4D2a4173d8](https://goerli.etherscan.io/address/0xe08339b8Da134f1e39876b7523586c4D2a4173d8)
+
+### Data Availability Committee members
+
+These are the current members of the 6-of-7 [data availability committee (DAC)](#4-data-availability-committee-dac-ownership) in Arbitrum Nova:
+
+- Reddit, Inc.
+- ConsenSys Software Inc.
+- QuickNode, Inc.
+- P2P
+- Google Cloud
+- Offchain Labs, Inc.
+- Opensea Innovation Labs Private Limited
