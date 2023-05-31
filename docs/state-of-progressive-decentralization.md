@@ -96,10 +96,10 @@ These are the current [allowlisted validators](#2-validator-ownership) for every
 
 #### Arbitrum Goerli (testnet)
 
-- <AEL address={"0x3EABe7e5e3fcDdFB8fb8c5972EB151bF4fddf2ce"} chainID={1} />
-- <AEL address={"0x9549263185294a7FB24bf357b0050252d3653C74"} chainID={1} />
-- <AEL address={"0xAa01D5570E932a13eF9a06677eaf97d56a33393f"} chainID={1} />
-- <AEL address={"0xe08339b8Da134f1e39876b7523586c4D2a4173d8"} chainID={1} />
+- <AEL address={"0x3EABe7e5e3fcDdFB8fb8c5972EB151bF4fddf2ce"} chainID={5} />
+- <AEL address={"0x9549263185294a7FB24bf357b0050252d3653C74"} chainID={5} />
+- <AEL address={"0xAa01D5570E932a13eF9a06677eaf97d56a33393f"} chainID={5} />
+- <AEL address={"0xe08339b8Da134f1e39876b7523586c4D2a4173d8"} chainID={5} />
 
 ### Data Availability Committee members
 
