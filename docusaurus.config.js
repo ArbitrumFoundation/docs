@@ -113,7 +113,7 @@ const config = {
   scripts: [
     // Fathom Analytics
     {
-      src: 'https://thirty-thirtyfour.arbitrum.foundation/script.js',
+      src: 'https://cdn.usefathom.com/script.js',
       'data-site': 'QLNDABBR',
       defer: true,
     },

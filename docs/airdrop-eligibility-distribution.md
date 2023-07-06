@@ -210,4 +210,4 @@ You can view the full list of DAOs and their allocations [here](https://docs.goo
 
 ### Vesting and lockup details
 
-While the user and DAO airdrops will be available in one week, all investor and team tokens are subject to 4 year lockups, with the first unlocks happening in one year and then monthly unlocks for the remaining three years.
+While the user and DAO airdrops were available at the start of token distribution ([3/23/2023](https://etherscan.io/block/16890400)), all investor and team tokens are subject to 4 year lockups, with the first unlocks happening one year after the [token generation event (3/16/2023)](https://arbiscan.io/tx/0x9cdbb4672b549c26d97cac29f9cd73c1951656e0622ba4b9ed0abff2ee58698d) and then monthly unlocks for the remaining three years.
