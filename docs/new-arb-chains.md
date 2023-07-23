@@ -11,7 +11,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
-Ethereum Mainnet is a Layer 1 (L1) chain; <a data-quicklook-from='arbitrum-one'>Arbitrum One</a> and <a data-quicklook-from='arbitrum-nova'>Arbitrum Nova</a> are Layer 2 (L2) chains; Layer 3 (L3) chains are those that settle onto L2s. 
+Ethereum Mainnet is a Layer 1 (L1) chain; <a data-quicklook-from='arbitrum-one'>Arbitrum One</a> and <a data-quicklook-from='arbitrum-nova'>Arbitrum Nova</a> are Layer 2 (L2) chains; Orbit chain (L3) chains are those that settle onto L2s. 
 
 This document explains why the ability to create new L2/L3 chains is exciting, and how the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a> will be involved in the process of creating these new chains moving forward.
 
