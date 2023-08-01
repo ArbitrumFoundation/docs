@@ -100,7 +100,7 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
 <h3 id="section-4-security-council-elections">Section 4: Security Council Elections</h3>
 <p>The Security Council has 12 members, who are divided into two Cohorts of 6 members.</p>
 <p>The initial Security Council Cohorts were determined by randomly splitting the 12 members into two 6-member cohorts - 6 members in the ‘First Cohort’ and 6 members in the ‘Second Cohort’. The members of the initial Security Council Cohorts are detailed in a transparency report <a href="https://ipfs.io/ipfs/Qmcny9xqHG9s9HduycwpooW4sV9VUMxYtVwU2eBts7vyYq">here</a>.</p>
-<p>The first security election is scheduled to begin on the 15th September 2023 or the earliest possible date. The election can only begin upon the availability of an on-chain election process that was approved and installed by the Arbitrum DAO. This first election replaces the ‘First Cohort’.</p>
+<p>The first security election is scheduled to begin on the 15th September 2023 or the earliest possible date. The election can only begin upon the availability of an on-chain election process that was approved and installed by the Arbitrum DAO. This first election replaces the ‘First Cohort’. The next election replaces the ‘Second Cohort’ and so forth.</p>
 <p>The date chosen for the first election will form the basis for all future elections. Every election should begin 6 months after the previous election has started and it will replace its respective cohort of 6 members.</p>
 <p>All Security Council members are expected to serve their term until the election is complete and the new Security Council members are installed.</p>
 <p>The following timeline governs an election that starts at time T:</p>
