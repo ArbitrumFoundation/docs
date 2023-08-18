@@ -72,3 +72,19 @@ import { AddressExplorerLink as AEL } from '@site/src/components/AddressExplorer
 | Arb One Proxy Admin | Arb One  | <AEL address = {"0xdb216562328215E010F819B5aBe947bad4ca961e"} chainID = {42161} /> |
 | Nova Proxy Admin    | Nova     | <AEL address = {"0xf58eA15B20983116c21b05c876cc8e6CDAe5C2b9"} chainID = {42170} /> |
 | L1 Proxy Admin      | Ethereum | <AEL address = {"0x5613AF0474EB9c528A34701A5b1662E3C8FA0678"} chainID = {1} />     |
+
+### Fee Distribution
+
+| Contract       | Chain   | Address                                                                            |
+| -------------- | ------- | ---------------------------------------------------------------------------------- |
+| L1 Base Fee    | Arb One | <AEL address = {"0xE6ec2174539a849f9f3ec973C66b333eD08C0c18"} chainID = {42161} /> |
+| L1 Surplus Fee | Arb One | <AEL address = {"0x2E041280627800801E90E9Ac83532fadb6cAd99A"} chainID = {42161} /> |
+| L2 Base Fee    | Arb One | <AEL address = {"0xbF5041Fc07E1c866D15c749156657B8eEd0fb649"} chainID = {42161} /> |
+| L2 Surplus Fee | Arb One | <AEL address = {"0x32e7AF5A8151934F3787d0cD59EB6EDd0a736b1d"} chainID = {42161} /> |
+
+| Contract       | Chain | Address                                                                            |
+| -------------- | ----- | ---------------------------------------------------------------------------------- |
+| L1 Base Fee    | Nova  | <AEL address = {"0xc9722CfDDFbC6aF4E77023E8B5Bd87489EFEbf5F"} chainID = {42170} /> |
+| L1 Surplus Fee | Nova  | <AEL address = {"0x509386DbF5C0BE6fd68Df97A05fdB375136c32De"} chainID = {42170} /> |
+| L2 Base Fee    | Nova  | <AEL address = {"0x9fCB6F75D99029f28F6F4a1d277bae49c5CAC79f"} chainID = {42170} /> |
+| L2 Surplus Fee | Nova  | <AEL address = {"0x3B68a689c929327224dBfCe31C1bf72Ffd2559Ce"} chainID = {42170} /> |
