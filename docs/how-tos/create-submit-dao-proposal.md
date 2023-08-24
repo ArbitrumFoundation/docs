@@ -16,7 +16,7 @@ In this how-to, you'll learn how to submit an Arbitrum Improvement Proposal (AIP
 
 ### Prerequisites
 
-To submit a temperature check using a <a data-quicklook-from='snapshot-poll'>Snapshot poll</a>, you must have an Ethereum wallet address that represents at least 0.01% of votable tokens[^1]; to submit a proposal on-chain using [Tally](https://tally.xyz/gov/arbitrum), you must have an Ethereum wallet address that represents at least 5,000,000 tokens (about 0.1% of votable tokens). 
+To submit a temperature check using a <a data-quicklook-from='snapshot-poll'>Snapshot poll</a>, you must have an Ethereum wallet address that represents at least 0.01% of votable tokens[^1]; to submit a proposal on-chain using [Tally](https://tally.xyz/gov/arbitrum), you must have an Ethereum wallet address that represents at least 1,000,000 tokens (about 0.1% of votable tokens). 
 
 If you don't have enough voting power, consider delegating your votes to a delegate who can create a proposal on your behalf[^2].
 
@@ -61,7 +61,7 @@ If your proposal passes the temperature check, then you can move to the second a
 
 ### Step 2: Submit your on-chain proposal using Tally
 
-If your wallet can represent at least 5,000,000 tokens (about 0.1% of votable $ARB tokens), you can create an on-chain proposal using [Tally](https://tally.xyz/gov/arbitrum). 
+If your wallet can represent at least 1,000,000 tokens (about 0.1% of votable $ARB tokens), you can create an on-chain proposal using [Tally](https://tally.xyz/gov/arbitrum). 
 
 To submit your proposal on Tally:
 
