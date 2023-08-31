@@ -73,7 +73,7 @@ This is an optional step, but it's recommended as a due-diligence governance bes
 
 #### Phase 2: Formal AIP and call for voting
 
-In this phase, the AIP is officially submitted via governance smart contracts on the Arbitrum One chain. The proposer of the AIP must have an address that can represent at least 5,000,000 votable tokens. After the AIP is submitted, there's a 3-day period for interested parties to discuss the proposal and gather votes before a voter distribution snapshot is taken. During this phase, the AIP must be labeled as either <a data-quicklook-from='constitutional-aip'>Constitutional</a> or <a data-quicklook-from='nonconstitutional-aip'>Non-Constitutional</a>. Additionally, the AIP must clearly specify which Arbitrum DAO-governed chain(s) it will affect. This phase is important as it defines a clear, formal protocol for proposing and voting on AIPs.
+In this phase, the AIP is officially submitted via governance smart contracts on the Arbitrum One chain. The proposer of the AIP must have an address that can represent at least 1,000,000 votable tokens. After the AIP is submitted, there's a 3-day period for interested parties to discuss the proposal and gather votes before a voter distribution snapshot is taken. During this phase, the AIP must be labeled as either <a data-quicklook-from='constitutional-aip'>Constitutional</a> or <a data-quicklook-from='nonconstitutional-aip'>Non-Constitutional</a>. Additionally, the AIP must clearly specify which Arbitrum DAO-governed chain(s) it will affect. This phase is important as it defines a clear, formal protocol for proposing and voting on AIPs.
 
 
 #### Phase 3: On-chain DAO vote
