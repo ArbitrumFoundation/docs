@@ -113,6 +113,10 @@ module.exports = {
         },
         {
           type: 'doc',
+          id: 'fee-distribution'
+        },
+        {
+          type: 'doc',
           id: 'deployment-addresses'
         }
       ],
