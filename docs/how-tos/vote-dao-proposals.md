@@ -7,7 +7,7 @@ dao_author: symbolpunk
 dao_sme: amarrazza
 ---
 
-import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+import DraftExpectationsPartial from '@site/docs/partials/\_draft-expectations-partial.md';
 
 <DraftExpectationsPartial />
 
@@ -32,8 +32,8 @@ The forum submission for any given proposal will usually include a link to a Sna
 
 If the proposal passes the temperature check, it will move on to an on-chain vote facilitated by [Tally](https://tally.xyz/gov/arbitrum). To pass this stage, the proposal must meet two thresholds:
 
-   1. The proposal must receive more votes in favor than against; and
-   2. <a data-quicklook-from='constitutional-aip'>Constitutional AIPs</a> must receive votes from at least 5% of votable tokens; <a data-quicklook-from='nonconstitutional-aip'>non-Constitutional AIPs</a> must receive votes from at least 3% of votable tokens.
+1.  The proposal must receive more votes in favor than against; and
+2.  <a data-quicklook-from='constitutional-aip'>Constitutional AIPs</a> must receive votes from at least 5% of votable tokens; <a data-quicklook-from='nonconstitutional-aip'>non-Constitutional AIPs</a> must receive votes from at least 3% of votable tokens.
 
 To vote on proposals in the "on-chain vote" stage:
 
@@ -41,16 +41,13 @@ To vote on proposals in the "on-chain vote" stage:
 2. Navigate to the "explore DAOs" section or click on "My DAOs" within your Tally profile and select the page for either Constitutional or non-Constitutional AIPs.
 3. Locate the proposal you'd like to vote on and cast your vote.
 
-
 ### On proposal evaluation
 
 It's important to evaluate proposals based on their alignment with the values and goals of the Arbitrum DAO as outlined in the [Constitution](../dao-constitution.md). Remember that the ultimate goal of the DAO is to create a decentralized and transparent platform that benefits all members, including those who aren't yet members.
 
-
 ### On delegation
 
 You can grant your voting power to a <a data-quicklook-from='delegate'>delegate</a> if you don't have the time to actively participate in the governance process. If you decide to delegate your voting power to someone else, be sure to select a delegate who demonstrates the values enshrined within the [Constitution](../dao-constitution). If you're looking for guidance on how to delegate, or how to select a delegate, refer to [How to delegate your voting power](./select-delegate-voting-power).
-
 
 ### Conclusion
 

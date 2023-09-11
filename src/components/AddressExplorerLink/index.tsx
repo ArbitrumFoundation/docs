@@ -10,7 +10,7 @@ const chainIDToExplorerUrlRoot: {
   5: 'https://goerli.etherscan.io/address',
   42161: 'https://arbiscan.io/address',
   42170: 'https://nova.arbiscan.io/address',
-  
+
   421613: 'https://goerli.arbiscan.io/address',
 };
 
@@ -24,8 +24,8 @@ export const AddressExplorerLink = (props: {
     throw new Error(`Error: no root url set for chain id ${chainID} `);
 
   if (address === 503) {
-      return <span>soon™️</span>;
-    }
+    return <span>soon™️</span>;
+  }
   if (!isAddress(address))
     throw new Error(`Error ${address} is not an address`);
   if (getAddress(address) != address)

@@ -1,13 +1,13 @@
 ---
 id: security-council
-title: "Security Council: A conceptual overview"
+title: 'Security Council: A conceptual overview'
 sidebar_label: Security Council
 description: Learn about the Security Council, a group of individuals who are responsible for managing the risk of the Arbitrum ecosystem through the selective application of emergency actions.
 dao_author: symbolpunk
 dao_sme: dzgoldman
 ---
 
-import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+import DraftExpectationsPartial from '@site/docs/partials/\_draft-expectations-partial.md';
 
 <DraftExpectationsPartial />
 
@@ -23,7 +23,7 @@ The Security Council is a 12-member council divided into two groups. Every six m
 
 Every elected Security Council member’s term lasts one year, excluding the first cohort’s member terms, which are truncated by the amount of time between the date of the first election specified in the Constitution and the date of the DAO's launch.
 
-To become a candidate for the Security Council, you must be a member of the Arbitrum DAO. You must also have support from at least 0.2% of all votable tokens. Once the candidates have been chosen, all members of the Arbitrum DAO can vote for the candidates. The 6 candidates who receive the most votes will be elected to the Security Council.  Additionally, the Arbitrum Foundation may set forth further guidelines and procedures for ensuring a fair, transparent and effective elections process.
+To become a candidate for the Security Council, you must be a member of the Arbitrum DAO. You must also have support from at least 0.2% of all votable tokens. Once the candidates have been chosen, all members of the Arbitrum DAO can vote for the candidates. The 6 candidates who receive the most votes will be elected to the Security Council. Additionally, the Arbitrum Foundation may set forth further guidelines and procedures for ensuring a fair, transparent and effective elections process.
 
 No more than 3 candidates from the same organization should be elected into the Security Council. Also, candidates shouldn't have any conflicts of interest that would prevent them from acting in the best interests of the Arbitrum DAO.
 
@@ -31,13 +31,11 @@ The rules for the Security Council elections can be changed by the members of th
 
 Note that the [Constitution](../dao-constitution.md) is the most authoritative specification of the Arbitrum DAO's rules. If there are any discrepancies between this document and the Constitution, please feel free to submit an issue, and note that the Constitution takes precedence.
 
-
 ### Why elections are important
 
 The Security Council elections are important because they democratically determine who will be responsible for being vigilant about the security and integrity of the Arbitrum DAO. By holding regular elections, the community can ensure that the Council is made up of members who truly represent the values enshrined within [The Constitution of the Arbitrum DAO](../dao-constitution).
 
 In addition, the election process allows for the removal of Council members who are not acting in the best interests of the DAO. This helps to ensure that the Council always has the best interests of the network in mind.
-
 
 ### Conclusion
 

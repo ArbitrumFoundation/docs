@@ -7,7 +7,7 @@ dao_author: symbolpunk
 dao_sme: amarrazza
 ---
 
-import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+import DraftExpectationsPartial from '@site/docs/partials/\_draft-expectations-partial.md';
 
 <DraftExpectationsPartial />
 

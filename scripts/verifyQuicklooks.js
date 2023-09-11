@@ -2,8 +2,7 @@ const fs = require('fs');
 const glob = require('glob');
 const quicklookKeysJSON = require('../static/glossary.json');
 
-
-const QUICKLOOKS_PREFIX = 'data-quicklook-from='
+const QUICKLOOKS_PREFIX = 'data-quicklook-from=';
 
 function findQuotedTextAfter(string, input) {
   const regex = new RegExp(`${string}[\\s]*(['"])(.*?)\\1`, 'g');

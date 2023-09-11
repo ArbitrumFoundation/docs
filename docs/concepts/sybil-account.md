@@ -1,16 +1,15 @@
 ---
 id: sybil-account
-title: "Sybil accounts: A conceptual overview"
+title: 'Sybil accounts: A conceptual overview'
 sidebar_label: Sybil accounts
 description: Learn about Sybil accounts and how they were detected prior to the $ARB airdrop.
 dao_author: dzgoldman
 dao_sme: dzgoldman
 ---
 
-import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+import DraftExpectationsPartial from '@site/docs/partials/\_draft-expectations-partial.md';
 
 <DraftExpectationsPartial />
-
 
 ### What are Sybil accounts?
 
@@ -18,13 +17,12 @@ In the context of Arbitrum Governance, Sybil accounts are Arbitrum accounts cont
 
 ### How were Sybil accounts detected prior to the airdrop?
 
-A process called "Sybil hunting" was used to detect and remove Sybil accounts. The process involved creating a graph of all transactions that have taken place on <a data-quicklook-from='arbitrum-one'>Arbitrum One</a>, and then partitioning this graph into different subgraphs. The subgraphs that have a large number of nodes and a high degree of connectivity were considered to be likely Sybil clusters. The accounts within these clusters were collapsed into a single recipient account for the airdrop. Entities explicitly known to by Sybils were also removed; the dataset of these entities was created with help from our friends at [Nansen](https://www.nansen.ai/) and [Hop](https://hop.exchange/). See [Arbitrum Sybil Hunting](https://github.com/ArbitrumFoundation/sybil-detection) for more information. 
+A process called "Sybil hunting" was used to detect and remove Sybil accounts. The process involved creating a graph of all transactions that have taken place on <a data-quicklook-from='arbitrum-one'>Arbitrum One</a>, and then partitioning this graph into different subgraphs. The subgraphs that have a large number of nodes and a high degree of connectivity were considered to be likely Sybil clusters. The accounts within these clusters were collapsed into a single recipient account for the airdrop. Entities explicitly known to by Sybils were also removed; the dataset of these entities was created with help from our friends at [Nansen](https://www.nansen.ai/) and [Hop](https://hop.exchange/). See [Arbitrum Sybil Hunting](https://github.com/ArbitrumFoundation/sybil-detection) for more information.
 
 ### Why is it important to prevent Sybil accounts?
 
 By receiving an outsized share of the $ARB airdrop, Sybil accounts can lead to concentration of voting power and undermine the decentralized nature of the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>. By preventing Sybil accounts, the Arbitrum DAO is able to ensure that the initial token distribution is as fair as possible.
 
-### Why not use proof-of-personhood? 
+### Why not use proof-of-personhood?
 
 Criteria for allotment of the $ARB airdrop involves on-chain activity. The ability for users to interact with Arbitrum One permissionlessly and pseudonymously is a fundamental property of the system. Requiring some sort of identity verification for airdrop-qualification would undermine this core value, and thus wasn't considered.
-

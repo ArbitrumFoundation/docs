@@ -7,12 +7,11 @@ dao_author: symbolpunk
 dao_sme: amarrazza
 ---
 
-import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+import DraftExpectationsPartial from '@site/docs/partials/\_draft-expectations-partial.md';
 
 <DraftExpectationsPartial />
 
 As a delegate of the Arbitrum DAO, you play a vital role in the governance and decision-making process used to govern both the DAO's protocol and its technologies. Your role is to represent the interests of token holders who have delegated their voting power to you, and to make informed decisions on their behalf. Whether you're a first-time delegate or a seasoned pro, building a strong delegate platform that's aligned with the interests and values of Ethereum at large is of critical importance. The following tips will help you build a strong, incentives-aligned delegate platform:
-
 
 ### Tip 1: Understand the Constitution
 

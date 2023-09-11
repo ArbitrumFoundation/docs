@@ -1,22 +1,21 @@
 ---
 id: select-delegate-voting-power
-title: "How to delegate your voting power: A guide for $ARB token holders"
+title: 'How to delegate your voting power: A guide for $ARB token holders'
 sidebar_label: Delegate your voting power
 description: Learn how to delegate your voting power to a values-aligned Arbitrum DAO delegate.
 dao_author: symbolpunk
 dao_sme: amarrazza
 ---
 
-import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+import DraftExpectationsPartial from '@site/docs/partials/\_draft-expectations-partial.md';
 
 <DraftExpectationsPartial />
 
-Delegating your voting power is an essential part of participating in the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>. As a token holder, you have the ability to vote on governance <a data-quicklook-from='arbitrum-improvement-proposal-aip'>proposals</a> and to elect members of the <a data-quicklook-from='security-council'>Security Council</a>. 
+Delegating your voting power is an essential part of participating in the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>. As a token holder, you have the ability to vote on governance <a data-quicklook-from='arbitrum-improvement-proposal-aip'>proposals</a> and to elect members of the <a data-quicklook-from='security-council'>Security Council</a>.
 
 If you don't have the time or resources to actively participate in the DAO's governance, you can still make your voice heard by delegating your voting power to a <a data-quicklook-from='delegate'>delegate</a>. This how-to will walk you through the process of evaluating and selecting a delegate.
 
 ### Delegate your voting power on Tally
-
 
 :::info Looking for the Tally link?
 
@@ -40,9 +39,9 @@ Once your transaction is confirmed, your voting power will be transferred to the
 
 When selecting a delegate, it's important to consider the following:
 
- - The delegate's values, as outlined in the [Constitution](../dao-constitution.md) and their position on the proposals.
- - The delegate's track record, if they have one.
- - The delegate's level of engagement with the community and their willingness to listen and respond to feedback.
- - The delegate's level of technical expertise and their experience in the space.
+- The delegate's values, as outlined in the [Constitution](../dao-constitution.md) and their position on the proposals.
+- The delegate's track record, if they have one.
+- The delegate's level of engagement with the community and their willingness to listen and respond to feedback.
+- The delegate's level of technical expertise and their experience in the space.
 
 By following these steps and considering these factors, you can ensure that you're delegating your voting power to a trustworthy and competent delegate who will work to further the goals of the Arbitrum DAO and its community. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/) or [Discord](https://www.discord.gg/arbitrum).

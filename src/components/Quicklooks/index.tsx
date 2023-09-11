@@ -4,7 +4,7 @@ import { useLocation } from '@docusaurus/router';
 import Tippy from 'tippy.js';
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/themes/light-border.css';
-import glossary from '../../../static/glossary.json'
+import glossary from '../../../static/glossary.json';
 
 export const Quicklooks = () => {
   // todo:qqq - document usage of this component for nontechnical content contributors
@@ -24,12 +24,14 @@ export const Quicklooks = () => {
       content: (reference) => {
         reference.setAttribute('data-quicklook-enabled', 'true');
         let contentSourceKey = reference.getAttribute('data-quicklook-from');
-        let termItem = glossary[contentSourceKey]
+        let termItem = glossary[contentSourceKey];
         if (!termItem) {
-          console.warn(`WARNING: No quicklook entry found for ${contentSourceKey}`);
-          return undefined
+          console.warn(
+            `WARNING: No quicklook entry found for ${contentSourceKey}`
+          );
+          return undefined;
         }
-        return termItem.text
+        return termItem.text;
       },
     });
     // re-render tippys when location (page) changes

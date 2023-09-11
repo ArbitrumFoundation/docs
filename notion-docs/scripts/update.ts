@@ -11,7 +11,11 @@ import {
 } from '@offchainlabs/notion-docs-generator'
 import dotenv from 'dotenv'
 
-import type { KnowledgeItem, LinkableTerms, LinkValidity } from '@offchainlabs/notion-docs-generator'
+import type {
+  KnowledgeItem,
+  LinkableTerms,
+  LinkValidity,
+} from '@offchainlabs/notion-docs-generator'
 
 import fs from 'fs'
 

@@ -7,10 +7,9 @@ dao_author: symbolpunk
 dao_sme: symbolpunk
 ---
 
-import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+import DraftExpectationsPartial from '@site/docs/partials/\_draft-expectations-partial.md';
 
 <DraftExpectationsPartial />
-
 
 **In a nutshell:**
 
@@ -23,7 +22,6 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 - **To build decentralized apps on Arbitrum,** check out the [developer docs](https://developer.arbitrum.io/intro/).
 
 <br />
-
 
 ### Hello! What's Arbitrum again?
 
@@ -41,7 +39,7 @@ Governance is the way that decisions get made. To understand what this means, le
 
 When a corporate decision needs to be made, members of the board meet and vote. The board's decision-making protocols aren't always visible to shareholders. Although the board has a fiduciary duty to its shareholders, shareholders must trust the board. This is a sort of _social contract_ expressed as _corporate legalese_ and enforced by _law_.
 
-**Web3 technologies** (like Arbitrum's protocols and chains) are often built *initially* by corporations governed by a board of directors. Once these technologies achieve product-market fit and a community of users and stakeholders develops, decision-making authority can be gradually decentralized. This is called **progressive decentralization**, and it's what Arbitrum is doing. Progressive decentralization is usually facilitated by three key ingredients:
+**Web3 technologies** (like Arbitrum's protocols and chains) are often built _initially_ by corporations governed by a board of directors. Once these technologies achieve product-market fit and a community of users and stakeholders develops, decision-making authority can be gradually decentralized. This is called **progressive decentralization**, and it's what Arbitrum is doing. Progressive decentralization is usually facilitated by three key ingredients:
 
 1. **DAO formation**: The <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a> (decentralized autonomous organization) is a new entity with decision-making authority over the Arbitrum One and Arbitrum Nova chains, along with their underlying protocols. This DAO is governed by [The Constitution of the Arbitrum DAO](./dao-constitution), which is a set of rules that describe how the DAO will operate. The Constitution is enshrined within a number of social contracts that are used by the Arbitrum DAO to govern itself and its technologies.
 2. **Governance token launch**: Ownership of governance tokens represents membership within the DAO. Token holders can vote on DAO proposals. Arbitrum's governance token is **$ARB**, and will be distributed to eligible wallet addresses via an upcoming airdrop.
@@ -89,9 +87,9 @@ Governance of the Arbitrum Rollup protocol is driven by two governing bodies: th
 
 Arbitrum's governance system is responsible for making many types of decisions. One important responsibility is upgrading Arbitrum chains’ core contracts, which define and enforce the Arbitrum protocols. An upgrade like this could be motivated by any of the following reasons:
 
- 1. An upgrade could improve the system in some way, like increase its decentralization or optimize its performance and lower fees.
- 2. An upgrade could fix a critical vulnerability.
- 3. An upgrade could address a non-critical decision that affects the Arbitrum ecosystem at large.
+1.  An upgrade could improve the system in some way, like increase its decentralization or optimize its performance and lower fees.
+2.  An upgrade could fix a critical vulnerability.
+3.  An upgrade could address a non-critical decision that affects the Arbitrum ecosystem at large.
 
 The Arbitrum DAO is also responsible for authorization of the creation of new L2 chains (see [New Chains](./new-arb-chains)).
 
@@ -123,7 +121,6 @@ There are a lot of people who don't have time to actively participate in protoco
 
 Delegates are a critical component of Arbitrum's decentralization because they allow token holders to passively participate in the governance of our technology. Although becoming a delegate is a serious responsibility that requires a significant time commitment, it allows you to ensure that Ethereum's values (and those of the delegators who have entrusted you with their voting power) are forever enshrined within the DAO's decisions and decision-making protocols. See [How to become a listed delegate](./how-tos/apply-become-delegate.md) to learn more about the delegate application process.
 
-
 ### I'd like to participate! What are my options?
 
 1. **Select a delegate** to vote on your behalf. Choose this option if you're too busy to regularly vote on Arbitrum DAO proposals. See [Delegate your voting power](./how-tos/select-delegate-voting-power) for detailed instructions.
@@ -139,11 +136,9 @@ To ensure that token recipients and DAO delegates have the best possible experie
 1. **Call for delegates**. This is the current step. As delegates are onboarded, we'll get closer to the second, more exciting step…
 2. **$ARB airdrop**. At this point, you'll be able to claim $ARB tokens via the [token website](https://arbitrum.foundation/eligibility) and then use your voting power to shape Arbitrum's future.
 
-
 ### Wen airdrop?
 
 You'll soon be able to claim your tokens on the [governance portal](http://arbitrum.foundation) - the same portal used to check eligibility. You'll then be able to [select a delegate](./how-tos/select-delegate-voting-power.md) or [vote directly on proposals](./how-tos/vote-dao-proposals.md). Stay tuned on [Discord](https://discord.gg/arbitrum) and [Telegram](https://t.me/arbitrum) for updates.
-
 
 ### Where can I learn more?
 
@@ -155,8 +150,8 @@ You're in the right place! The following docs elaborate on the finer details of 
 
 ### Where can I ask for help?
 
- - [Discord](https://discord.gg/arbitrum)
- - [Telegram](https://t.me/arbitrum)
- - [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/)
+- [Discord](https://discord.gg/arbitrum)
+- [Telegram](https://t.me/arbitrum)
+- [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/)
 
 Welcome to the future of governance!

@@ -7,7 +7,7 @@ dao_author: pearring
 dao_sme: pearring
 ---
 
-import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+import DraftExpectationsPartial from '@site/docs/partials/\_draft-expectations-partial.md';
 
 <DraftExpectationsPartial />
 
@@ -18,7 +18,6 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
 :::
 
 <a data-quicklook-from='arb'>$ARB</a> is an ERC-20 <a data-quicklook-from='governance-token'>governance token</a> native to the <a data-quicklook-from='arbitrum-one'>Arbitrum One</a> rollup chain. Token properties at launch:
-
 
 <table className="small-table">
     <tr>
@@ -59,8 +58,6 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
     </tr>
 </table>
 
-
-
 ### Initial token allocation & airdrop distribution
 
 <table className="small-table">
@@ -96,10 +93,6 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
     </tr>
 </table>
 
-
-
-
-
 ### User airdrop eligibility details
 
 A points system was used to determine the number of tokens that airdrop recipients can claim. Points criteria was focused primarily on Arbitrum One; however, there was a small subset of criteria applied to activity on Arbitrum Nova. Points earned on Arbitrum Nova could either bring a user up to 4 points total, or give them one additional point if they had already scored 4 points or more on Arbitrum One. You earn maximum one point per qualifying action performed before the snapshot date. Point scores were capped at 15.
@@ -110,27 +103,27 @@ Additionally, as the criteria and design of the airdrop as a whole was intention
 
 Points earned on Arbitrum One
 
- 1. Bridged funds into Arbitrum One
- 2. Conducted transactions during two distinct months
- 3. Conducted transactions during six distinct months
- 4. Conducted transactions during nine months
- 5. Conducted more than four transactions or interacted with more than four different smart contracts
- 6. Conducted more than ten transactions or interacted with more than ten different smart contracts
- 7. Conducted more than 25 transactions or interacted with more than 25 different smart contracts
- 8. Conducted more than 100 transactions or interacted with more than 100 different smart contracts
- 9. Conducted transactions exceeding in the aggregate $10,000 in value
- 10. Conducted transactions exceeding in the aggregate $50,000 in value
- 11. Conducted transactions exceeding in the aggregate $250,000 in value
- 12. Bridged more than $10,000 of assets into Arbitrum One
- 13. Bridged more than $50,000 of assets into Arbitrum One
- 14. Bridged more than $250,000 of assets into Arbitrum One
+1.  Bridged funds into Arbitrum One
+2.  Conducted transactions during two distinct months
+3.  Conducted transactions during six distinct months
+4.  Conducted transactions during nine months
+5.  Conducted more than four transactions or interacted with more than four different smart contracts
+6.  Conducted more than ten transactions or interacted with more than ten different smart contracts
+7.  Conducted more than 25 transactions or interacted with more than 25 different smart contracts
+8.  Conducted more than 100 transactions or interacted with more than 100 different smart contracts
+9.  Conducted transactions exceeding in the aggregate $10,000 in value
+10. Conducted transactions exceeding in the aggregate $50,000 in value
+11. Conducted transactions exceeding in the aggregate $250,000 in value
+12. Bridged more than $10,000 of assets into Arbitrum One
+13. Bridged more than $50,000 of assets into Arbitrum One
+14. Bridged more than $250,000 of assets into Arbitrum One
 
-Points earned on Arbitrum Nova  
+Points earned on Arbitrum Nova
 
- 1. Bridged funds into Arbitrum Nova
- 2. Conducted more than three transactions
- 3. Conducted more than five transactions
- 4. Conducted more than ten transactions
+1.  Bridged funds into Arbitrum Nova
+2.  Conducted more than three transactions
+3.  Conducted more than five transactions
+4.  Conducted more than ten transactions
 
 <br />
 
@@ -195,9 +188,9 @@ As described earlier, points scored before and after Arbitrum Nitro was deployed
 
 To prevent bots from taking advantage of the airdrop, a number of anti-Sybil rules were established:
 
- - If an airdrop recipient's wallet transactions have all occurred within a 48-hour period, **one point is subtracted**.
- - If an airdrop recipient's wallet balance is less than .005 ETH, **and** if the wallet hasn't interacted with more than one smart contract, **one point is subtracted**.
- - If an airdrop recipient's wallet address has been identified as a Sybil address during the Hop protocol bounty program **the recipient is disqualified**. 
+- If an airdrop recipient's wallet transactions have all occurred within a 48-hour period, **one point is subtracted**.
+- If an airdrop recipient's wallet balance is less than .005 ETH, **and** if the wallet hasn't interacted with more than one smart contract, **one point is subtracted**.
+- If an airdrop recipient's wallet address has been identified as a Sybil address during the Hop protocol bounty program **the recipient is disqualified**.
 
 Refer to [Arbitrum Sybil Hunting](https://github.com/ArbitrumFoundation/sybil-detection) to learn more about the Sybil mitigation methodology. Refer to our [Sybil accounts](./concepts/sybil-account.md) concept document for a conceptual introduction to Sybil accounts.
 
@@ -206,7 +199,6 @@ Refer to [Arbitrum Sybil Hunting](https://github.com/ArbitrumFoundation/sybil-de
 A separate distribution was allocated for DAOs that are building applications in the Arbitrum ecosystem, as well as the Protocol Guild, a collective of Ethereum contributors. In putting together this criteria we worked with Nansen and analyzed on-chain data to determine how many tokens each DAO community was granted. In doing so we took into account a variety of qualitative and quantitative metrics including when the protocol launched, whether it was native or multichain, how much TVL, activity, transaction volume, value of transactions it had, as well as the consistency of maintaining those metrics. The goal of using a broad variety of criteria was recognizing that Arbitrum is home to a diversity of projects that have different KPIs and user interactions.
 
 You can view the full list of DAOs and their allocations [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vSSAzkIIJqw4WGKCF9gXFUkQojTt6weQTExZYmp3YRIR2TUjir9N8nh8xg7gQ2wuPA8mJKL2neL--to/pubhtml).
-
 
 ### Vesting and lockup details
 

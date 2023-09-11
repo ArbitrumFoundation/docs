@@ -1,13 +1,13 @@
 ---
 id: dao-vote
-title: "Arbitrum DAO votes: A conceptual overview"
+title: 'Arbitrum DAO votes: A conceptual overview'
 sidebar_label: DAO vote
 description: Learn about the different types of votes that take place in the Arbitrum DAO.
 dao_author: symbolpunk
 dao_sme: dzgoldman
 ---
 
-import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+import DraftExpectationsPartial from '@site/docs/partials/\_draft-expectations-partial.md';
 
 <DraftExpectationsPartial />
 

@@ -14,7 +14,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   markdown: {
-    mermaid: true
+    mermaid: true,
   },
   themes: ['@docusaurus/theme-mermaid'],
   // Even if you don't use internalization, you can use this field to set useful
@@ -24,9 +24,15 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  plugins: ["docusaurus-plugin-less", [require.resolve('docusaurus-lunr-search'), {
-    indexBaseUrl: true
-  }]],
+  plugins: [
+    'docusaurus-plugin-less',
+    [
+      require.resolve('docusaurus-lunr-search'),
+      {
+        indexBaseUrl: true,
+      },
+    ],
+  ],
   presets: [
     [
       'classic',
@@ -42,8 +48,7 @@ const config = {
           breadcrumbs: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/ArbitrumFoundation/docs/edit/main/',
+          editUrl: 'https://github.com/ArbitrumFoundation/docs/edit/main/',
         },
         blog: false,
         theme: {
@@ -94,7 +99,7 @@ const config = {
                 href: 'https://twitter.com/arbitrum',
               },
             ],
-          }
+          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Arbitrum Foundation.`,
       },
@@ -103,7 +108,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       announcementBar: {
-        id: "banner",
+        id: 'banner',
         content: `Arbitrum DAO has been officially announced, and the $ARB airdrop is live. <a rel="noopener noreferrer" href='https://arbitrum.foundation/'>Claim your $ARB</a>.`,
         backgroundColor: 'rgb(8 53 117)',
         textColor: 'white',

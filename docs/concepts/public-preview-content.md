@@ -1,13 +1,13 @@
 ---
 id: public-preview-content
-title: "Public preview content"
+title: 'Public preview content'
 sidebar_label: Public preview content
 description: Learn about the public preview content pattern used by the Arbitrum DAO.
 dao_author: symbolpunk
 dao_sme: symbolpunk
 ---
 
-import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+import DraftExpectationsPartial from '@site/docs/partials/\_draft-expectations-partial.md';
 
 Every Arbitrum DAO governance document (excluding the [Constitution](../dao-constitution)) is initially published with the following "public preview" disclaimer:
 
@@ -19,13 +19,12 @@ This disclaimer is used to **set expectations** and to **invite feedback** from 
 
 This pattern applies to all Arbitrum DAO governance documents that are published here on the Arbitrum DAO docs portal, excluding [The Constitution of the Arbitrum DAO](../dao-constitution.md). Examples include:
 
- - Conceptual documentation
-   - [Delegates and delegation](./delegate-delegation.md)
-   - [Lifecycle and anatomy of an AIP](./lifecycle-anatomy-aip-proposal.md)
- - How-to documentation
-   - [Apply to become a delegate](../how-tos/apply-become-delegate.md)
-   - [Submit an AIP](../how-tos/create-submit-dao-proposal.md)
-
+- Conceptual documentation
+  - [Delegates and delegation](./delegate-delegation.md)
+  - [Lifecycle and anatomy of an AIP](./lifecycle-anatomy-aip-proposal.md)
+- How-to documentation
+  - [Apply to become a delegate](../how-tos/apply-become-delegate.md)
+  - [Submit an AIP](../how-tos/create-submit-dao-proposal.md)
 
 ### How do you know when a public preview document is ready to have its disclaimer lifted?
 
@@ -43,9 +42,8 @@ Readers generally interpret drafts as "not ready for public consumption". Arbitr
 
 No. The Arbitrum DAO is committed to its governance docs, just not in exactly the same way that it's committed to the Constitution:
 
- - **The Constitution** is the Arbitrum DAO's highest-order governance document. It's the only document that's subject to the formal governance proposal mechanism. In order for the Constitution to change, a proposal must be submitted to the Arbitrum DAO and approved by a majority of the Arbitrum DAO's voting power. This is a formal process that only the Arbitrum DAO can initiate and execute.
- - **Other governance documents** are derived from a combination of 1) the Constitution and 2) reader feedback. These docs frequently change via traditional pull requests issued against the governance docs repository. This is an informal, continuous, iterative process that anyone can participate in.
-
+- **The Constitution** is the Arbitrum DAO's highest-order governance document. It's the only document that's subject to the formal governance proposal mechanism. In order for the Constitution to change, a proposal must be submitted to the Arbitrum DAO and approved by a majority of the Arbitrum DAO's voting power. This is a formal process that only the Arbitrum DAO can initiate and execute.
+- **Other governance documents** are derived from a combination of 1) the Constitution and 2) reader feedback. These docs frequently change via traditional pull requests issued against the governance docs repository. This is an informal, continuous, iterative process that anyone can participate in.
 
 ### Is the governance protocol itself in public preview?
 

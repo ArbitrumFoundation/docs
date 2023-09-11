@@ -1,13 +1,13 @@
 ---
 id: arbitrum-dao
-title: "Arbitrum DAO: A conceptual overview"
+title: 'Arbitrum DAO: A conceptual overview'
 sidebar_label: Arbitrum DAO
 description: Learn about the Arbitrum DAO, its governance token, and its built-in treasury and security mechanisms.
 dao_author: symbolpunk
 dao_sme: dzgoldman
 ---
 
-import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+import DraftExpectationsPartial from '@site/docs/partials/\_draft-expectations-partial.md';
 
 <DraftExpectationsPartial />
 

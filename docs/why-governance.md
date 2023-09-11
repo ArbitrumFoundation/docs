@@ -7,10 +7,9 @@ dao_author: dzgoldman
 dao_sme: dzgoldman
 ---
 
-import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+import DraftExpectationsPartial from '@site/docs/partials/\_draft-expectations-partial.md';
 
 <DraftExpectationsPartial />
-
 
 <a data-quicklook-from="arb">$ARB</a> is the governance token for the Arbitrum ecosystem. This document aims to explain the rationale behind introducing the $ARB <a data-quicklook-from="governance-token">governance token</a>, and how it plays a necessary role in the <a data-quicklook-from="progressive-decentralization">progressive decentralization</a> of the Arbitrum protocol.
 
@@ -28,7 +27,7 @@ Given the potential vector for centralization that chain ownership introduces, i
 
 Here though, there's a crucial difference between Ethereum and Arbitrum: Ethereum is a <a data-quicklook-from='layer-1-l1'>Layer 1 (L1)</a> protocol, and L1 protocols (and in turn, changes to L1 protocols) are ultimately defined by <a data-quicklook-from='offchain-governance'>social consensus</a>. When the community wants to upgrade Ethereum, those running the Ethereum node software install the software upgrade, and if the community at large agrees that the new change represents the "real Ethereum," then it implicitly, inherently, is so. Everyone chooses for themselves whether to adopt the change, and the choice that has critical mass becomes canonical.
 
-<a data-quicklook-from='layer-2-l2'>Layer 2 (L2) </a>protocols like Arbitrum One, however, are fundamentally different in that their rules are ultimately *not* governed implicitly by social consensus, but rather explicitly by L1 smart contracts. For Arbitrum One to upgrade, it isn't enough to simply upgrade the Arbitrum node software; its contracts must upgrade as well, which are controlled not by the social consensus of the Arbitrum community, but by Ethereum itself.
+<a data-quicklook-from='layer-2-l2'>Layer 2 (L2) </a>protocols like Arbitrum One, however, are fundamentally different in that their rules are ultimately _not_ governed implicitly by social consensus, but rather explicitly by L1 smart contracts. For Arbitrum One to upgrade, it isn't enough to simply upgrade the Arbitrum node software; its contracts must upgrade as well, which are controlled not by the social consensus of the Arbitrum community, but by Ethereum itself.
 
 The upshot is that the consensus to upgrade Ethereum can be an informal and off-chain process, whereas the consensus to upgrade Arbitrum must operate through a formal decision making process governed by on-chain contracts. In other words, governance.
 
@@ -38,14 +37,11 @@ While it's possible that Ethereum's L2s eventually become enshrined in this way,
 
 So given that there's a need for a path towards protocol upgrades, and that enshrined rollups are (at least currently) off the table, the only viable option remaining, then, is explicit on-chain governance.
 
-
-
-
 ### Enter $ARB governance token for decentralized governance
 
 The introduction of the $ARB governance token provides the ability to propose and carry out protocol upgrades in a decentralized manner.
 
-Tokens were initially <a data-quicklook-from='airdrop'>airdropped</a> via transparent criteria meant to be as fair as possible[^1]. The goal was to spread out ownership to a large set of parties with stake in the Arbitrum ecosystem who are geographically distributed and have diverse backgrounds and affiliations. The chain ownership role is given to this <a data-quicklook-from='arbitrum-dao'>“Arbitrum DAO”</a>, a shorthand for the collective of all holders of the ARB token (and those delegated voting rights by token holders). 
+Tokens were initially <a data-quicklook-from='airdrop'>airdropped</a> via transparent criteria meant to be as fair as possible[^1]. The goal was to spread out ownership to a large set of parties with stake in the Arbitrum ecosystem who are geographically distributed and have diverse backgrounds and affiliations. The chain ownership role is given to this <a data-quicklook-from='arbitrum-dao'>“Arbitrum DAO”</a>, a shorthand for the collective of all holders of the ARB token (and those delegated voting rights by token holders).
 
 There are two paths through which a protocol upgrade can take place. The first is a **decentralized** upgrade path that allows the DAO (and only the DAO) to carry out every step in the process: proposing an upgrade, publicly debating it, voting on it, and ultimately activating it.
 
@@ -54,7 +50,6 @@ Several important properties are preserved in a decentralized upgrade process, a
 - No permissioned parties are required at any step; the DAO itself can carry out the entire process.
 - The DAO is given time to view a proposal before voting on it and, if it gets to that stage, given sufficient time to vote on it.
 - Once a proposal passes, Arbitrum users are given time to withdraw assets from the system, should they disagree with the direction and prefer to opt out.
-
 
 ### Security Council
 
@@ -71,7 +66,6 @@ The Security Council can also trigger non-emergency upgrades, such as routine so
 
 To learn more about the Security Council, refer to the [Security Council](./concepts/security-council.md) concept doc. For a formal articulation of the Security Council's role within Arbitrum DAO's governance process, refer to [The Constitution of the Arbitrum DAO](./dao-constitution).
 
-
 ### The future of Arbitrum governance
 
 The initial governance launch provides the community with the tools it needs: a means of decentralized governance, along with a faster, permissioned upgrade path to ensure the system remains safe in case of emergencies. As for how this system will change moving forward, many open questions remain:
@@ -79,9 +73,8 @@ The initial governance launch provides the community with the tools it needs: a 
 - Can the governance process be further decentralized?
 - How and when can the Security Council's power be further minimized, or eliminated entirely?
 
-These don't have easy answers and will continue to be the topic of lively discussion within the community as the Arbitrum technology continues to mature, and as the perceived risk profiles of various states of decentralization change along with it. But crucially, the Arbitrum governance system controls *all* aspects of the Arbitrum protocol, including the governance process itself.
+These don't have easy answers and will continue to be the topic of lively discussion within the community as the Arbitrum technology continues to mature, and as the perceived risk profiles of various states of decentralization change along with it. But crucially, the Arbitrum governance system controls _all_ aspects of the Arbitrum protocol, including the governance process itself.
 
 With the DAO in control, decisions about how Arbitrum should evolve over time — including the governance process itself — are in the hands of the Arbitrum community.
-
 
 [^1]: Refer to [$ARB airdrop eligibility and distribution specifications](./airdrop-eligibility-distribution.md) to learn more about the airdrop specifications. Refer to [Arbitrum Sybil Hunting](https://github.com/ArbitrumFoundation/sybil-detection/) for an overview of our Sybil mitigation methodology.

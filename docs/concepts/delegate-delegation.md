@@ -1,13 +1,13 @@
 ---
 id: delegate-delegation
-title: "Delegates and delegation: A conceptual overview"
+title: 'Delegates and delegation: A conceptual overview'
 sidebar_label: Delegates and delegation
 description: Learn about the role of delegates and delegation within the context of the Arbitrum DAO.
 dao_author: symbolpunk
 dao_sme: dzgoldman
 ---
 
-import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
+import DraftExpectationsPartial from '@site/docs/partials/\_draft-expectations-partial.md';
 
 <DraftExpectationsPartial />
 
@@ -35,4 +35,4 @@ Note that through Tally, you can change or revoke your delegation at any time. Y
 
 ### Conclusion
 
-The Arbitrum DAO's delegation mechanism lets $ARB token holders passively participate in Arbitrum DAO's governance by facilitating the transfer of their token-weighted voting power to values-aligned representatives of the Arbitrum DAO's values, as defined by [The Constitution of the Arbitrum DAO](../dao-constitution.md). 
+The Arbitrum DAO's delegation mechanism lets $ARB token holders passively participate in Arbitrum DAO's governance by facilitating the transfer of their token-weighted voting power to values-aligned representatives of the Arbitrum DAO's values, as defined by [The Constitution of the Arbitrum DAO](../dao-constitution.md).
