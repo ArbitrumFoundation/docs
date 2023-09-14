@@ -7,8 +7,10 @@ description: Read "The Constitution of the Arbitrum DAO", the ultimate governing
 
 import ConstitutionPartial from '@site/docs/partials/_constitution-content-partial.md';
 import { ConstitutionHash  } from '@site/src/components/ConstitutionHash'
+import { PendingConstitutionNotice  } from '@site/src/components/PendingConstitutionNotice'
 
 
+<PendingConstitutionNotice/>
 <div id='constitution'>
 <ConstitutionPartial/>
 </div>
