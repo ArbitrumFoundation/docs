@@ -10,13 +10,14 @@ import { ConstitutionHash  } from '@site/src/components/ConstitutionHash'
 import { PendingConstitutionNotice  } from '@site/src/components/PendingConstitutionNotice'
 
 
-<PendingConstitutionNotice/>
 <div id='constitution'>
 <ConstitutionPartial/>
 </div>
 
 
 ### Constitution hash
+<PendingConstitutionNotice/>
+<br/>
 
 <code><b><ConstitutionHash/></b></code>
 
