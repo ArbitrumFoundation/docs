@@ -54,10 +54,23 @@ import { AddressExplorerLink as AEL } from '@site/src/components/AddressExplorer
 
 | Contract                            | Chain    | Address                                                                            |
 | ----------------------------------- | -------- | ---------------------------------------------------------------------------------- |
-| Security Council (Arb One, 9 of 12) | Arb One  | <AEL address = {"0x3568A44b3E72F5B17a0E14E53fdB7366B3B7Ad13"} chainID = {42161} /> |
-| Security Council (Arb One, 7 of 12) | Arb One  | <AEL address = {"0x895c9fc6bcf06e553b54A9fE11D948D67a9B76FA"} chainID = {42161} /> |
-| Security Council (L1, 9 of 12)      | Ethereum | <AEL address = {"0x3666a60ff589873ced457a9a8a0aA6F83D708767"} chainID = {1} />     |
-| Security Council (Nova, 9 of 12)    | Nova     | <AEL address = {"0x3cA27a792C64a3a81417499AA53786A41812B2cd"} chainID = {42170} /> |
+| Security Council (Arb One, 9 of 12) | Arb One  | <AEL address = {"0x423552c0F05baCCac5Bfa91C6dCF1dc53a0A1641"} chainID = {42161} /> |
+| Security Council (Arb One, 7 of 12) | Arb One  | <AEL address = {"0xADd68bCb0f66878aB9D37a447C7b9067C5dfa941"} chainID = {42161} /> |
+| Security Council (L1, 9 of 12)      | Ethereum | <AEL address = {"0xF06E95eF589D9c38af242a8AAee8375f14023F85"} chainID = {1} />     |
+| Security Council (Nova, 9 of 12)    | Nova     | <AEL address = {"0xc232ee726E3C51B86778BB4dBe61C52cC07A60F3"} chainID = {42170} /> |
+
+### Security Council Elections
+
+| Contract                   | Chain    | Address                                                                            |
+| -------------------------- | -------- | ---------------------------------------------------------------------------------- |
+| Nominee Election Governor  | Arb One  | <AEL address = {"0x8a1cDA8dee421cD06023470608605934c16A05a0"} chainID = {42161} /> |
+| Member Election Governor   | Arb One  | <AEL address = {"0x467923B9AE90BDB36BA88eCA11604D45F13b712C"} chainID = {42161} /> |
+| Manager                    | Arb One  | <AEL address = {"0xD509E5f5aEe2A205F554f36E8a7d56094494eDFC"} chainID = {42161} /> |
+| Upgrade Exec Route Builder | Arb One  | <AEL address = {"0x7481716f05E315Fc4C4a64E56DcD9bc1D6F24C0a"} chainID = {42161} /> |
+| Member Removal Governor    | Arb One  | <AEL address = {"0x6f3a242cA91A119F872f0073BC14BC8a74a315Ad"} chainID = {42161} /> |
+| Member Sync Action         | Arb One  | <AEL address = {"0x9BF7b8884Fa381a45f8CB2525905fb36C996297a"} chainID = {42161} /> |
+| Member Sync Action         | Ethereum | <AEL address = {"0x9BF7b8884Fa381a45f8CB2525905fb36C996297a"} chainID = {1} />     |
+| Member Sync Action         | Nova     | <AEL address = {"0x9BF7b8884Fa381a45f8CB2525905fb36C996297a"} chainID = {42170} /> |
 
 ### DAO Constitution
 
