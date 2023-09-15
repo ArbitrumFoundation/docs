@@ -27,7 +27,7 @@
 
 
 
-### Will there ever be more than the two current Arbitrum DAO governed chains (Arbitrum DAO and Nova)? {#will-there-ever-be-more-than-the-two-current-arbitrum-dao-governed-chains-arbitrum-dao-and-nova}
+### Will there ever be more than the two current Arbitrum DAO governed chains (Arbitrum One and Nova)? {#will-there-ever-be-more-than-the-two-current-arbitrum-dao-governed-chains-arbitrum-one-and-nova}
 <p>It's up to the DAO; the DAO has license to deploy new governed L2 chains via a core <a href="/dao-glossary#governance-proposal">Governance proposal</a>.  </p>
 
 <p></p>
@@ -40,7 +40,7 @@
 
 
 ### Why can't the Arbitrum DAO use social forms of governance like Ethereum? Why does L2 governance need to be on-chain? {#why-cant-the-arbitrum-dao-use-social-forms-of-governance-like-ethereum-why-does-l2-governance-need-to-be-onchain}
-<p>Layer 1 chain like Ethereum are ultimately governed by social consensus. L2's like Arbitrum One, by contrast, derive their security from smart contracts on L1; thus, changes to the core system need to made explicitly via on-chain smart contract upgrade. See "<a href="https://docs.arbitrum.foundation/why-governance">Why Governance</a>" for more.</p>
+<p>Layer 1 chains like Ethereum are ultimately governed by social consensus. L2s like Arbitrum One, by contrast, derive their security from smart contracts on L1; thus, changes to the core system need to made explicitly via on-chain smart contract upgrade. See "<a href="https://docs.arbitrum.foundation/why-governance">Why Governance</a>" for more.</p>
 
 <p></p>
 
@@ -64,7 +64,7 @@
 <p><a href="/dao-glossary#onchain-governance-action">On-chain governance action</a>s are actions that are actuated directly by the governance smart contracts of the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> as transactions on a blockchain. <a href="/dao-glossary#offchain-governance-action">Off-chain governance action</a>s are actions that are actuated by other means, i.e., updating node software (not smart contracts).</p>
 
 ### What does it mean for an ARB voter to "exclude" their votes? Why is this functionality beneficial?   {#what-does-it-mean-for-an-arb-voter-to-exclude-their-votes-why-is-this-functionality-beneficial--}
-<p>An $ARB holder can exclude their votes by delegating to a special exclude address (<a href="https://arbiscan.io/address/0x00000000000000000000000000000000000a4b86">0x00000000000000000000000000000000000a4b86</a>). This means their tokens' votes count in the denominator for <a href="/dao-glossary#quorum">Quorum</a>  calculation (5% of votable tokens for the <a href="/dao-glossary#core-governor">Core Governor</a>, 3% for the <a href="/dao-glossary#treasury-governor">Treasury Governor</a>). This is useful to prevent "artificially" inflating the quorum requirement for token holder that can't or don't plan on voting. The primary user case for the exclude address is the <a href="/dao-glossary#arbitrum-dao-treasury">Arbitrum DAO Treasury</a>, which is currently the largest single holder of ARB and is delegated to the exclude address, but any address capable of delegating can opt to delegate to the exclude address as well.</p>
+<p>An $ARB holder can exclude their votes by delegating to a special exclude address (<a href="https://arbiscan.io/address/0x00000000000000000000000000000000000a4b86">0x00000000000000000000000000000000000a4b86</a>). This means their tokens' votes won't count in the denominator for <a href="/dao-glossary#quorum">Quorum</a>  calculation (5% of votable tokens for the <a href="/dao-glossary#core-governor">Core Governor</a>, 3% for the <a href="/dao-glossary#treasury-governor">Treasury Governor</a>). This is useful to prevent "artificially" inflating the quorum requirement for token holder that can't or don't plan on voting. The primary user case for the exclude address is the <a href="/dao-glossary#arbitrum-dao-treasury">Arbitrum DAO Treasury</a>, which is currently the largest single holder of $ARB and is delegated to the exclude address, but any address capable of delegating can opt to delegate to the exclude address as well.</p>
 
 <p></p>
 
@@ -73,11 +73,11 @@
 ## $ARB token and airdrop
 
 ### When does the $ARB airdrop end? {#when-does-the-arb-airdrop-end}
-<p>The $ARB airdrop ends at L1 Ethereum block <a href="https://etherscan.io/block/countdown/18208000">18208000</a> (estimated to be 9/24/23.</p>
+<p>The $ARB airdrop ends at L1 Ethereum block <a href="https://etherscan.io/block/countdown/18208000">18208000</a> (estimated to be 9/24/23).</p>
 
 
 
-### What happens to all of the ARB tokens that don't get claimed in the airdrop? {#what-happens-to-all-of-the-arb-tokens-that-dont-get-claimed-in-the-airdrop}
+### What happens to all of the $ARB tokens that don't get claimed in the airdrop? {#what-happens-to-all-of-the-arb-tokens-that-dont-get-claimed-in-the-airdrop}
 <p>After the end of the airdrop, unclaimed $ARB tokens gets sent to the DAO; i.e., they get transferred to the <a href="/dao-glossary#arbitrum-dao-treasury">Arbitrum DAO Treasury</a>. </p>
 
 <p></p>
@@ -121,13 +121,11 @@
 
 
 ### What's the difference between Security Council Emergency Actions and Non-Emergency Actions? {#whats-the-difference-between-security-council-emergency-actions-and-nonemergency-actions}
-<p><a href="/dao-glossary#emergency-action">Emergency action</a>s are actions taken by the <a href="/dao-glossary#security-council">Security Council</a> in response to a security emergency, such as a critical vulnerability that could significantly compromise the integrity, confidentiality, or availability of a chain governed by the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>. They require 9 of the 12 Security Council members to sign, and the are executed immediately.  At the appropriate time, are to be followed by a <a href="/dao-glossary#transparency-report">Transparency report</a>. </p>
+<p><a href="/dao-glossary#emergency-action">Emergency action</a>s are actions taken by the <a href="/dao-glossary#security-council">Security Council</a> in response to a security emergency, such as a critical vulnerability that could significantly compromise the integrity, confidentiality, or availability of a chain governed by the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>. They require 9 of the 12 Security Council members to sign, and the are executed immediately.  At the appropriate time, emergency actions are to be followed by a <a href="/dao-glossary#transparency-report">Transparency report</a>. </p>
 
 <p></p>
 
-<p></p>
-
-<p> <a href="/dao-glossary#nonemergency-action">Non-emergency action</a>s are routine actions taken by the Security Council, such as software upgrades and maintenance. They require signatures from 7 of 12 Security Council members. They take effect after a delay of at least 13 days, ensuring users can withdraw their funds prior to exection.</p>
+<p> <a href="/dao-glossary#nonemergency-action">Non-emergency action</a>s are routine actions taken by the Security Council, such as software upgrades and maintenance. They require signatures from 7 of 12 Security Council members. They take effect after a delay of at least 13 days, ensuring users can withdraw their funds prior to execution.</p>
 
 <p>Information about non-emergency actions is to be provided by the Security Council prior to the action being submitted on chain.</p>
 
@@ -196,5 +194,5 @@
 
 
 ### Can I delegate my voting power to more than one delegate? {#can-i-delegate-my-voting-power-to-more-than-one-delegate}
-<p>Yes; voting power can be split between any number of delegtes.</p>
+<p>Yes; voting power can be split between any number of delegates.</p>
 
