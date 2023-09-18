@@ -108,7 +108,7 @@ These are the current members of the 6-of-7 [data availability committee (DAC)](
 - Reddit, Inc.
 - ConsenSys Software Inc.
 - QuickNode, Inc.
-- P2P
+- P2P.org
 - Google Cloud
 - Offchain Labs, Inc.
 - Opensea Innovation Labs Private Limited
