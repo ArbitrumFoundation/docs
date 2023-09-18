@@ -120,7 +120,7 @@ The initial members of the Data Availability Committee of the Nova chain are aut
 - Reddit, Inc.
 - ConsenSys Software Inc.
 - QuickNode, Inc.
-- P2P
+- P2P.org
 - Google Cloud
 - Offchain Labs, Inc.
 - Opensea Innovation Labs Private Limited
