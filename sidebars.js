@@ -148,6 +148,10 @@ module.exports = {
     {
       type: 'doc',
       id: 'dao-glossary',
+    },
+    {
+      type: 'doc',
+      id: 'dao-faqs',
     }
   ],
 };
