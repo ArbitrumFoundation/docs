@@ -61,40 +61,7 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
 
 
 
-### Initial token allocation & airdrop distribution
-
-<table className="small-table">
-    <tr>
-        <td><strong>Percentage of initial supply</strong></td>
-        <td><strong>Number of tokens</strong></td>
-        <td><strong>Allocated to</strong></td>
-    </tr>
-    <tr>
-        <td>42.78%</td>
-        <td>4.278 billion</td>
-        <td>Arbitrum DAO treasury</td>
-    </tr>
-    <tr>
-        <td>26.94%</td>
-        <td>2.694 billion</td>
-        <td>Offchain Labs Team and Future Team + Advisors</td>
-    </tr>
-    <tr>
-        <td>17.53%</td>
-        <td>1.753 billion</td>
-        <td>Offchain Labs investors</td>
-    </tr>
-    <tr>
-        <td>11.62%</td>
-        <td>1.162 Billion</td>
-        <td><strong>Users</strong> of the Arbitrum platform (via airdrop to user wallet addresses)</td>
-    </tr>
-    <tr>
-        <td>1.13%</td>
-        <td>113 million</td>
-        <td><strong>DAOs</strong> building apps on Arbitrum (via airdrop to DAO treasury addresses)</td>
-    </tr>
-</table>
+### Token allocation & airdrop distribution
 
 The passing of [AIPs 1.1](https://www.tally.xyz/gov/arbitrum/proposal/70545629960586317780628692755032548222173912190231545322320044688071893662480) and [1.2](https://www.tally.xyz/gov/arbitrum/proposal/77049969659962393408182308518930939247285848107346513112985531885924337078488) codified the role of the Arbitrum Foundation and established a grant to the Foundation's Administrative Budget Vesting Wallet. The distribution as of the passing of these two AIPs was as follows:
 ### Distribution Post AIPs 1.1 and 1.2
@@ -104,7 +71,7 @@ The passing of [AIPs 1.1](https://www.tally.xyz/gov/arbitrum/proposal/7054562996
         <td><strong>Number of tokens</strong></td>
         <td><strong>Allocated to</strong></td>
     </tr>
-    <tr className="highlighted-row">
+    <tr>
         <td>35.28%</td>
         <td>3.528 billion</td>
         <td>Arbitrum DAO treasury</td>
@@ -124,7 +91,7 @@ The passing of [AIPs 1.1](https://www.tally.xyz/gov/arbitrum/proposal/7054562996
         <td>1.162 Billion</td>
         <td><strong>Users</strong> of the Arbitrum platform (via airdrop to user wallet addresses)</td>
     </tr>
-        <tr className="highlighted-row">
+        <tr>
         <td>7.5%</td>
         <td>750 million</td>
         <td>Arbitrum Foundation </td>
