@@ -8,23 +8,82 @@ import {
   renderGlossary,
   renderGlossaryJSON,
   renderFAQs,
+  FAQ,
 } from '@offchainlabs/notion-docs-generator'
 import dotenv from 'dotenv'
 
-import type { KnowledgeItem, LinkableTerms, LinkValidity } from '@offchainlabs/notion-docs-generator'
+import type {
+  KnowledgeItem,
+  LinkableTerms,
+  LinkValidity,
+} from '@offchainlabs/notion-docs-generator'
 
 import fs from 'fs'
 
 dotenv.config()
 
+const RETRY_TIME_SECONDS = 15
+const SLEEP_TIME_SECONDS = 3
+
+const tryLookupFaqs = async (
+  notion: Client,
+  query: any,
+  retries = 3
+): Promise<FAQ[]> => {
+  try {
+    return await lookupFAQs(notion, query)
+  } catch (err: any) {
+    if (err.status === 502) {
+      console.log('502 FAQ error')
+      const retriesLeft = retries - 1
+      if (retriesLeft <= 0)
+        throw new Error('Error looking up FAQs: no more retries')
+      console.log(
+        `Waiting ${RETRY_TIME_SECONDS} seconds and retrying; ${retriesLeft} retries left`
+      )
+      await sleep(RETRY_TIME_SECONDS * 1000)
+      console.log('Retrying:')
+      return tryLookupFaqs(notion, query, retriesLeft)
+    }
+    throw err
+  }
+}
+
+const tryLookupGlossary = async (
+  notion: Client,
+  query: any,
+  retries = 3
+): Promise<KnowledgeItem[]> => {
+  try {
+    return await lookupGlossaryTerms(notion, query)
+  } catch (err: any) {
+    if (err.status === 502) {
+      console.log('502 Glossary error')
+      const retriesLeft = retries - 1
+      if (retriesLeft <= 0)
+        throw new Error('Error looking up Glossary: no more retries')
+      console.log(
+        `Waiting ${RETRY_TIME_SECONDS} seconds and retrying; ${retriesLeft} retries left`
+      )
+      await sleep(RETRY_TIME_SECONDS * 1000)
+      console.log('Retrying:')
+      return tryLookupGlossary(notion, query, retriesLeft)
+    }
+    throw err
+  }
+}
 const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 })
+const sleep = (delay: number) =>
+  new Promise(resolve => setTimeout(resolve, delay))
 
 async function generateFiles() {
+  console.log('Looking up project')
   const governanceProject = await lookupProject(notion, 'Governance docs')
+  await sleep(SLEEP_TIME_SECONDS * 1000)
   console.log('Looking up FAQs')
-  const faqs = await lookupFAQs(notion, {
+  const faqs = await tryLookupFaqs(notion, {
     filter: {
       and: [
         {
@@ -42,8 +101,18 @@ async function generateFiles() {
       ],
     },
   })
+
+  await sleep(SLEEP_TIME_SECONDS * 1000)
   console.log('Looking up Glossary')
-  const definitions = await lookupGlossaryTerms(notion, {})
+  const definitions = await tryLookupGlossary(notion, {
+    filter: {
+      property: 'Publishable?',
+      select: {
+        equals: 'Publishable',
+      },
+    },
+  })
+
   console.log('Rendering contents')
   const linkableTerms: LinkableTerms = {}
   const validity = (item: KnowledgeItem): LinkValidity => {
