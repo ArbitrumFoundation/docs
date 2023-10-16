@@ -30,7 +30,7 @@ For both Arbitrum One and Nova, any of the fee recipients can be updated by the 
 
 ### Implementation Details
 
-Fees for each of the four fee-components initially accrue at a distinct [Reward Distributor contract](https://github.com/OffchainLabs/dac-rewards); at any point, the fees can be distributed to their target recipients by any party via a permissionless contract call. This design allows for ease of distributing fees to multiple parties at different proportions, as well as a means for the DAO to easily change fee recipients.
+Fees for each of the four fee-components initially accrue at a distinct [Reward Distributor contract](https://github.com/OffchainLabs/fund-distribution-contracts); at any point, the fees can be distributed to their target recipients by any party via a permissionless contract call. This design allows for ease of distributing fees to multiple parties at different proportions, as well as a means for the DAO to easily change fee recipients.
 
 On Arbitrum One, the fee recipient for "the DAO" is the [Treasury Timelock](https://arbiscan.io/address/0xbfc1feca8b09a5c5d3effe7429ebe24b9c09ef58); the DAO can spend these funds via a [treasury governance proposal](./how-tos/create-submit-dao-proposal.md). For Nova, the DAO's fee recipient is an address accessible via cross-chain messages from a core governance proposal.
 
