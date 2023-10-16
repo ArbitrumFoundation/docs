@@ -54,15 +54,17 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
         <td><a href='https://etherscan.io/block/countdown/16890400'>Block 16890400</a> on Ethereum Mainnet = March 23rd, 2023. Please note that $ARB cannot be minted or claimed on the Ethereum Mainnet; it is only minted and claimable on Arbitrum One.</td>
     </tr>
     <tr>
-        <td><strong>Claiming ends</strong></td>
-        <td><a href='https://etherscan.io/block/countdown/18208000'>Block 18208000</a> on Ethereum Mainnet = September 23rd, 2023 (estimated). Please note that $ARB cannot be minted or claimed on the Ethereum Mainnet; it is only minted and claimable on Arbitrum One.</td>
+        <td><strong>Claiming ended</strong></td>
+        <td><a href='https://etherscan.io/block/countdown/18208000'>Block 18208000</a> on Ethereum Mainnet = September 24th, 2023. Please note that $ARB is no longer claimable.</td>
     </tr>
 </table>
 
 
 
-### Initial token allocation & airdrop distribution
+### Token allocation & airdrop distribution
 
+The passing of [AIPs 1.1](https://www.tally.xyz/gov/arbitrum/proposal/70545629960586317780628692755032548222173912190231545322320044688071893662480) and [1.2](https://www.tally.xyz/gov/arbitrum/proposal/77049969659962393408182308518930939247285848107346513112985531885924337078488) codified the role of the Arbitrum Foundation and established a grant to the Foundation's Administrative Budget Vesting Wallet. The distribution as of the passing of these two AIPs was as follows:
+### Distribution Post AIPs 1.1 and 1.2
 <table className="small-table">
     <tr>
         <td><strong>Percentage of initial supply</strong></td>
@@ -70,8 +72,8 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
         <td><strong>Allocated to</strong></td>
     </tr>
     <tr>
-        <td>42.78%</td>
-        <td>4.278 billion</td>
+        <td>35.28%</td>
+        <td>3.528 billion</td>
         <td>Arbitrum DAO treasury</td>
     </tr>
     <tr>
@@ -89,12 +91,19 @@ The only official website for the $ARB airdrop is [https://arbitrum.foundation](
         <td>1.162 Billion</td>
         <td><strong>Users</strong> of the Arbitrum platform (via airdrop to user wallet addresses)</td>
     </tr>
+        <tr>
+        <td>7.5%</td>
+        <td>750 million</td>
+        <td>Arbitrum Foundation </td>
+    </tr>
     <tr>
         <td>1.13%</td>
         <td>113 million</td>
         <td><strong>DAOs</strong> building apps on Arbitrum (via airdrop to DAO treasury addresses)</td>
     </tr>
 </table>
+
+
 
 
 
@@ -210,4 +219,4 @@ You can view the full list of DAOs and their allocations [here](https://docs.goo
 
 ### Vesting and lockup details
 
-While the user and DAO airdrops were available at the start of token distribution ([3/23/2023](https://etherscan.io/block/16890400)), all investor and team tokens are subject to 4 year lockups, with the first unlocks happening one year after the [token generation event (3/16/2023)](https://arbiscan.io/tx/0x9cdbb4672b549c26d97cac29f9cd73c1951656e0622ba4b9ed0abff2ee58698d) and then monthly unlocks for the remaining three years.
+While the user and DAO airdrops were available at the start of token distribution ([3/23/2023](https://etherscan.io/block/16890400)), all investor and team tokens are subject to 4 year lockups, with the first unlocks happening one year after the [token generation event (3/16/2023)](https://arbiscan.io/tx/0x9cdbb4672b549c26d97cac29f9cd73c1951656e0622ba4b9ed0abff2ee58698d) and then monthly unlocks for the remaining three years. The Arbitrum Foundation's allocation is subject to a lockup that began on 4/17/2023 and linearly unlocks over the course of four years; this is enforced by the [Arbitrum Foundation Vesting Budget Smart Contract Wallet](https://arbiscan.io/address/0x15533b77981cDa0F85c4F9a485237DF4285D6844).
