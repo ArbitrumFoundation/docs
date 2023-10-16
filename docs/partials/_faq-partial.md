@@ -72,13 +72,15 @@
 
 ## $ARB token and airdrop
 
-### When does the $ARB airdrop end? {#when-does-the-arb-airdrop-end}
-<p>The $ARB airdrop ends at L1 Ethereum block <a href="https://etherscan.io/block/countdown/18208000">18208000</a> (estimated to be 9/24/23).</p>
+### Is the $ARB airdrop still live? {#is-the-arb-airdrop-still-live}
+<p>No; the $ARB airdrop ended at L1 Ethereum block <a href="https://etherscan.io/block/countdown/18208000">18208000</a> (9/24/23).</p>
+
+<p></p>
 
 
 
-### What happens to all of the $ARB tokens that don't get claimed in the airdrop? {#what-happens-to-all-of-the-arb-tokens-that-dont-get-claimed-in-the-airdrop}
-<p>After the end of the airdrop, unclaimed $ARB tokens gets sent to the DAO; i.e., they get transferred to the <a href="/dao-glossary#arbitrum-dao-treasury">Arbitrum DAO Treasury</a>. </p>
+### What happened to all of the $ARB tokens that didn't get claimed in the airdrop? {#what-happened-to-all-of-the-arb-tokens-that-didnt-get-claimed-in-the-airdrop}
+<p>After the end of the airdrop, unclaimed $ARB tokens were sent to the DAO; i.e., they were <a href="https://arbiscan.io/tx/0xa2477f2f1d7824501520a88b50835ad283e7472e0fa5e67005452528bf740175">transferred</a> to the <a href="/dao-glossary#arbitrum-dao-treasury">Arbitrum DAO Treasury</a>. </p>
 
 <p></p>
 
@@ -195,4 +197,6 @@
 
 ### Can I delegate my voting power to more than one delegate? {#can-i-delegate-my-voting-power-to-more-than-one-delegate}
 <p>Yes; voting power can be split between any number of delegates.</p>
+
+
 

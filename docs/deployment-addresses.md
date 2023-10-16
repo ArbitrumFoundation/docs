@@ -23,9 +23,10 @@ import { AddressExplorerLink as AEL } from '@site/src/components/AddressExplorer
 
 | Contract                         | Chain   | Address                                                                            |
 | -------------------------------- | ------- | ---------------------------------------------------------------------------------- |
-| Token Distributor                | Arb One | <AEL address = {"0x67a24CE4321aB3aF51c2D0a4801c3E111D88C9d9"} chainID = {42161} /> |
+| Token Distributor*                | Arb One | <AEL address = {"0x67a24CE4321aB3aF51c2D0a4801c3E111D88C9d9"} chainID = {42161} /> |
 | DAO Treasury                     | Arb One | <AEL address = {"0xF3FC178157fb3c87548bAA86F9d24BA38E649B58"} chainID = {42161} /> |
 | Foundation Vesting Budget Wallet | Arb One | <AEL address = {"0x15533b77981cDa0F85c4F9a485237DF4285D6844"} chainID = {42161} /> |
+_*Note: the Token Distributor contract was [self-destructed](https://arbiscan.io/tx/0xa2477f2f1d7824501520a88b50835ad283e7472e0fa5e67005452528bf740175) after the end of the aidrop claiming period._ 
 
 ### Token Bridging
 

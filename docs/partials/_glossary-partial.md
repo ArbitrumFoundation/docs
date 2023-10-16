@@ -12,7 +12,7 @@
 ### Airdrop {#airdrop}
 <p></p>
 
-<p>A mechanism that distributes tokens to qualifying wallet addresses, usually based on on-chain activity. <a href="/dao-glossary#the-arbitrum-foundation">The Arbitrum Foundation</a> airdrop will distribute <a href="/dao-glossary#arb">$ARB</a> tokens to eligible wallet addresses according to the airdrop eligibility and distribution criteria specified in our <a href='/airdrop-eligibility-distribution'>overview of airdrop eligibility and specifications</a>.</p>
+<p>A mechanism that distributes tokens to qualifying wallet addresses, usually based on on-chain activity. <a href="/dao-glossary#the-arbitrum-foundation">The Arbitrum Foundation</a> airdrop distributed <a href="/dao-glossary#arb">$ARB</a> tokens to eligible wallet addresses according to the airdrop eligibility and distribution criteria specified in our <a href='/airdrop-eligibility-distribution'>overview of airdrop eligibility and specifications</a>.</p>
 
 
 
@@ -59,7 +59,7 @@
 <p>An Arbitrum Chain that settles to an underlying <a href="/dao-glossary#parent-chain">Parent chain</a> . For example, Arbitrum One and Arbitrum Nova are child chains of Ethereum.</p>
 
 ### Claimable airdrop period {#claimable-airdrop-period}
-<p>The time period in which eligible <a href="/dao-glossary#arb">$ARB</a> token recipients are able to claim their tokens.</p>
+<p>The time period in which eligible <a href="/dao-glossary#arb">$ARB</a> token recipients were able to claim their tokens.</p>
 
 ### Claimed airdrop tokens {#claimed-airdrop-tokens}
 <p><a href="/dao-glossary#arb">$ARB</a> tokens claimed from the <a href="/dao-glossary#token-distributor-contract">Token Distributor Contract</a> during the <a href="/dao-glossary#claimable-airdrop-period">Claimable airdrop period</a>.</p>
@@ -228,7 +228,9 @@ The client software implements a protocol that stores transaction history within
 <p>A series of smart contracts responsible for bridging ERC20 tokens on Ethereum to Arbitrum chains like <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> or <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a> and back.  The standard gateway keeps the L1 token escrowed on Ethereum and mints/burns the L2 token representation upon deposits/withdrawals. </p>
 
 ### Tally {#tally}
-<p>Web interface that can be used to interact with Arbitrum Governance contracts, including viewing, submitting, and voting on <a href="/dao-glossary#governance-proposal">Governance proposal</a>s. (<a href="https://www.tally.xyz/gov/arbitrum">link</a>) </p>
+<p></p>
+
+
 
 ### The Arbitrum Foundation {#the-arbitrum-foundation}
 <p>A legal entity that is governed by the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>. Is bound to the rules articulated within <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a>.</p>
@@ -243,7 +245,7 @@ The client software implements a protocol that stores transaction history within
 <p>A smart contract that restricts an action from taking place before a specified future time. Used at various stages in the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>'s governance proposal process.</p>
 
 ### Token Distributor Contract {#token-distributor-contract}
-<p><a href="/dao-glossary#smart-contract">Smart contract</a> responsible for holding and distributing <a href="/dao-glossary#arb">$ARB</a> tokens for the initial <a href="/dao-glossary#airdrop">Airdrop</a>.</p>
+<p><a href="/dao-glossary#smart-contract">Smart contract</a> that was responsible for holding and distributing <a href="/dao-glossary#arb">$ARB</a> tokens for the <a href="/dao-glossary#airdrop">Airdrop</a>. The airdrop ended 9/24/23.</p>
 
 ### Token-weighted governance {#tokenweighted-governance}
 <p>A protocol governance system in which voting weight is proportional to ownership of a governance token. The <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> implements token-weighted governance.</p>
@@ -264,16 +266,13 @@ This is achieved through the use of cryptographic techniques and decentralized c
 
 
 ### Unclaimed airdrop tokens {#unclaimed-airdrop-tokens}
-<p>Claimable <a href="/dao-glossary#arb">$ARB</a> tokens in the <a href="/dao-glossary#token-distributor-contract">Token Distributor Contract</a> not claimed by their potential owners.</p>
+<p>Claimable <a href="/dao-glossary#arb">$ARB</a> tokens in the <a href="/dao-glossary#token-distributor-contract">Token Distributor Contract</a> not claimed by their potential owners. Unclaimed airdrop tokens were [transferred[(<a href="https://arbiscan.io/tx/0xa2477f2f1d7824501520a88b50835ad283e7472e0fa5e67005452528bf740175">https://arbiscan.io/tx/0xa2477f2f1d7824501520a88b50835ad283e7472e0fa5e67005452528bf740175</a>) to the DAO Treasury after the airdrop ended.</p>
 
 ### Votable tokens {#votable-tokens}
-<p><a href="/dao-glossary#arb">$ARB</a> tokens claimed through our <a href="/dao-glossary#airdrop">Airdrop</a>. More precisely, all $ARB tokens in existence, except for:</p>
-
-<p></p>
+<p>All $ARB tokens in existence except for:</p>
 
 <ul><li>tokens owned by the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a></li>
 <li>tokens owned by <a href="/dao-glossary#the-arbitrum-foundation">The Arbitrum Foundation</a></li>
-<li>airdrop tokens not yet claimed</li>
 </ul>
 <p><br />
 Votable tokens give their holders voting power in direct proportion to the quantity of tokens held. More $ARB == more voting power.</p>

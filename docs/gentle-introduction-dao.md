@@ -2,7 +2,7 @@
 id: gentle-intro-dao-governance
 title: A gentle introduction to the Arbitrum DAO
 sidebar_label: A gentle introduction
-description: Learn about the Arbitrum DAO, the $ARB governance token, how to claim $ARB tokens as an eligible airdrop recipient, the role of delegates in the Arbitrum DAO, and more.
+description: Learn about the Arbitrum DAO, the $ARB governance token, the initial $ARB distribution, the role of delegates in the Arbitrum DAO, and more.
 dao_author: symbolpunk
 dao_sme: symbolpunk
 ---
@@ -18,8 +18,8 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 - The distribution of the <a data-quicklook-from='arb'>$ARB</a> governance token decentralizes governance of these protocols and their respective chains, as well as any future chains the Arbitrum DAO authorizes.
 - $ARB tokens can be used to vote on Arbitrum DAO governance proposals, allowing $ARB holders to shape Arbitrum's future together.
 - Token holders will be able to delegate their voting power to <a data-quicklook-from='delegate'>delegates</a>.
-- **To determine your airdrop eligibility**, connect your wallet to the Arbitrum One network on [arbitrum.foundation](http://arbitrum.foundation) and follow the prompts. Claiming is live now.
-- **To become an Arbitrum DAO delegate**, review the below material and then [submit your application](./how-tos/apply-become-delegate.md). Submit your application before March 22nd at 12PM ET to ensure that airdrop recipients will be able to select you as a delegate when claiming their tokens.
+- The $ARB airdrop began on 3/23/2023 and ended on 9/24/2023.
+- **You can become an Arbitrum DAO delegate** by engaging with the Arbitrum community and convincing $ARB holders to delegate their votes to you, or by holding $ARB yourself.
 - **To build decentralized apps on Arbitrum,** check out the [developer docs](https://developer.arbitrum.io/intro/).
 
 <br />
@@ -74,9 +74,8 @@ More generally, possession of $ARB tokens places you at the cutting edge of gove
 
 See [State of decentralization](./state-of-progressive-decentralization) for a more in-depth overview of Arbitrum's decentralization journey.
 
-### Cool beans. Am I eligible for the airdrop?
-
-If you've used Arbitrum at any time before the snapshot date (February 6th, 2023 - [block 58642080](https://arbiscan.io/block/58642080) on Arbitrum One), you could be entitled to some $ARB tokens. The easiest way to find out if you're eligible is to visit [arbitrum.foundation](http://arbitrum.foundation/) and follow the prompts.
+### Cool beans. Was there an airdrop?
+The airdrop ended on 9/24/23; claiming is no longer live. See [Airdrop eligibility and token distribution details](./airdrop-eligibility-distribution) for more information.
 
 ### How does Arbitrum's governance work?
 
@@ -121,7 +120,7 @@ A delegate is like an elected representative. $ARB token holders can delegate th
 
 There are a lot of people who don't have time to actively participate in protocol governance. Delegates help these people by offering to vote on their behalf.
 
-Delegates are a critical component of Arbitrum's decentralization because they allow token holders to passively participate in the governance of our technology. Although becoming a delegate is a serious responsibility that requires a significant time commitment, it allows you to ensure that Ethereum's values (and those of the delegators who have entrusted you with their voting power) are forever enshrined within the DAO's decisions and decision-making protocols. See [How to become a listed delegate](./how-tos/apply-become-delegate.md) to learn more about the delegate application process.
+Delegates are a critical component of Arbitrum's decentralization because they allow token holders to passively participate in the governance of our technology. Although becoming a delegate is a serious responsibility that requires a significant time commitment, it allows you to ensure that Ethereum's values (and those of the delegators who have entrusted you with their voting power) are forever enshrined within the DAO's decisions and decision-making protocols. See [How to become a listed delegate](./how-tos/apply-become-delegate.md) to learn more.
 
 
 ### I'd like to participate! What are my options?
@@ -132,24 +131,11 @@ Delegates are a critical component of Arbitrum's decentralization because they a
 4. **Participate in governance discussions** on the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/).
 5. **Join the community of Arbinauts** on [Discord](https://discord.gg/arbitrum).
 
-### Why can't I claim my $ARB tokens right now?
-
-To ensure that token recipients and DAO delegates have the best possible experience, a two-step process is being used:
-
-1. **Call for delegates**. This is the current step. As delegates are onboarded, we'll get closer to the second, more exciting step…
-2. **$ARB airdrop**. At this point, you'll be able to claim $ARB tokens via the [token website](https://arbitrum.foundation/eligibility) and then use your voting power to shape Arbitrum's future.
-
-
-### Wen airdrop?
-
-You'll soon be able to claim your tokens on the [governance portal](http://arbitrum.foundation) - the same portal used to check eligibility. You'll then be able to [select a delegate](./how-tos/select-delegate-voting-power.md) or [vote directly on proposals](./how-tos/vote-dao-proposals.md). Stay tuned on [Discord](https://discord.gg/arbitrum) and [Telegram](https://t.me/arbitrum) for updates.
-
-
 ### Where can I learn more?
 
 You're in the right place! The following docs elaborate on the finer details of Arbitrum DAO and its underlying governance mechanisms:
 
-- [Airdrop eligibility and token distribution details](./airdrop-eligibility-distribution): Tells you how $ARB eligibility is determined, and how $ARB tokens are being distributed.
+- [Airdrop eligibility and token distribution details](./airdrop-eligibility-distribution): Tells you how $ARB eligibility was determined, and how $ARB tokens were initially distributed.
 - [The Constitution of the Arbitrum DAO](./dao-constitution): The human-readable governance protocol that the DAO's smart contracts implement.
 - [Arbitrum DAO Glossary](./dao-glossary): An index of governance terms and definitions.
 

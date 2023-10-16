@@ -13,7 +13,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 ### Background
 
-Arbitrum DAO's launch [has been announced](https://arbitrumfoundation.medium.com/arbitrum-the-next-phase-of-decentralization-e7f8b37b5226) and the $ARB airdrop is live on [arbitrum.foundation](https://arbitrum.foundation/). $ARB token-holders are now able to delegate the voting power of their tokens to delegates of the Arbitrum DAO[^1].
+Arbitrum DAO's launch [was announced in March of 2023](https://arbitrumfoundation.medium.com/arbitrum-the-next-phase-of-decentralization-e7f8b37b5226) and the $ARB airdrop took place fron 3/23/23 to 9/24/23. $ARB token-holders are able to delegate the voting power of their tokens to delegates of the Arbitrum DAO[^1].
 
 To become a <a data-quicklook-from='delegate'>delegate</a>, create a profile on [Tally](https://tally.xyz/gov/arbitrum) and begin [building your delegate platform](./build-strong-delegate-platform). To make it easy for voters to learn more about you, submit a delegate statement using the template on the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/t/delegate-application-template/31).
 
