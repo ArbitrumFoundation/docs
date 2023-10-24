@@ -196,6 +196,8 @@ The client software implements a protocol that stores transaction history within
 <p>A 12-member council of entities who hold the private keys to a 12-member <a href="/dao-glossary#multisignature-wallet">Multisignature wallet</a>. Members of the council use this wallet to perform <a href="/dao-glossary#emergency-action">Emergency action</a>s and <a href="/dao-glossary#nonemergency-action">Non-emergency action</a>s.</p>
 
 ### Security Council Cohort {#security-council-cohort}
+<p>The 12 members of the <a href="/dao-glossary#security-council">Security Council</a> are split into two six-member cohorts; during a <a href="/dao-glossary#security-council-election">Security Council election</a>, the six seats in one the two cohorts seats are up election. </p>
+
 <p></p>
 
 
