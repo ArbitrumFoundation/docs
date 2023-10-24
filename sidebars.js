@@ -102,6 +102,10 @@ module.exports = {
       label: 'Governance architecture',
       items: [
         {
+          type: 'doc',
+          id: 'security-council-members',
+        },
+        {
           type: 'link',
           label: 'Sybil detection',
           href: 'https://github.com/ArbitrumFoundation/sybil-detection',
