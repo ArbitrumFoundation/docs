@@ -132,7 +132,7 @@ module.exports = {
         {
           type: 'link',
           label: 'Foundation bylaws',
-          href: 'https://drive.google.com/file/d/1TOLXm_NOUwxUaYLqrORubt8a47GvlmS-/view',
+          href: 'https://drive.google.com/file/d/1_ESEja08Z_QgIBQD-27A42UHuFDRrw5r/view',
         },
         {
           type: 'link',
