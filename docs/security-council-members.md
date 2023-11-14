@@ -21,7 +21,7 @@ i. September Cohort
     - `0x8f10e3413586c4a8dcfce19d009872b19e9cd8e3`
 5.  [John Morrow](https://twitter.com/jmo_mx)
     - `0x3e286452b1c66abb08eb5494c3894f40ab5a59af`
-6.  [omer](https://twitter.com/omeragoldberg)
+6.  [Omer](https://twitter.com/omeragoldberg)
     - `0xb07dc9103328a51128bc6cc1049d1137035f5e28`
 
 ii. March Cohort
