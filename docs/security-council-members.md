@@ -36,5 +36,5 @@ ii. March Cohort
     - `0x566a07C3c932aE6AF74d77c29e5c30D8B1853710`
 5.  [Yoav Weiss](https://twitter.com/yoavw) is a security researcher at the Ethereum Foundation and has been building in the Ethereum space since 2017, working on account abstraction (ERC-4337), OpenGSN, L2 security, etc. Yoav brings over 25 years of experience and has developed security technologies used by industry leading companies.
     - `0x475816ca2a31D601B4e336f5c2418A67978aBf09`
-6.  [Patricio Worthalter](https://www.linkedin.com/in/worthalter/?originalSubdomain=ar) has been working full time in the Ethereum space since 2015. In 2018 he founded POAP, a web3 native public good that mints digital collectibles for the preservation of memories.
+6.  [Patricio Worthalter](https://www.linkedin.com/in/worthalter/) has been working full time in the Ethereum space since 2015. In 2018 he founded POAP, a web3 native public good that mints digital collectibles for the preservation of memories.
     - `0xf6B6F07862A02C85628B3A9688beae07fEA9C863`
