@@ -30,7 +30,7 @@ ii. March Cohort
     - `0x5A1FD562271aAC2Dadb51BAAb7760b949D9D81dF`
 2.  [Justin Drake](https://www.linkedin.com/in/drakefjustin) has been a researcher at the Ethereum Foundation since 2017. He focuses on Ethereum consensus layer upgrades.
     - `0x5280406912EB8Ec677Df66C326BE48f938DC2e44`
-3.  [Bartek Kiepuszewski](https://www.linkedin.com/in/bartek-kiepuszewski-b3a299/?originalSubdomain=pl) has been a blockchain architect at MakerDAO since 2017. He also co-founded [l2beat.com](http://l2beat.com/) and TokenFlow Insights. Bartek holds a PhD in computer science from Queensland University of Technology.
+3.  [Bartek Kiepuszewski](https://twitter.com/bkiepuszewski) has been a blockchain architect at MakerDAO since 2017. He also co-founded [l2beat.com](http://l2beat.com/) and TokenFlow Insights. Bartek holds a PhD in computer science from Queensland University of Technology.
     - `0x0275b3D54a5dDbf8205A75984796eFE8b7357Bae`
 4.  [Patrick McNab](https://twitter.com/pat_mcnab) Is a Co-founder of Mycelium which has been developing and deploying decentralised financial infrastructure since 2018. Mycelium (previously Tracer DAO) were one of the first protocols deployed on Arbitrum in 2021 and support the Arbitrum ecosystem through running validators and Chainlink nodes.
     - `0x566a07C3c932aE6AF74d77c29e5c30D8B1853710`
