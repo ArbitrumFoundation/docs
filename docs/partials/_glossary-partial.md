@@ -196,6 +196,8 @@ The client software implements a protocol that stores transaction history within
 <p>A 12-member council of entities who hold the private keys to a 12-member <a href="/dao-glossary#multisignature-wallet">Multisignature wallet</a>. Members of the council use this wallet to perform <a href="/dao-glossary#emergency-action">Emergency action</a>s and <a href="/dao-glossary#nonemergency-action">Non-emergency action</a>s.</p>
 
 ### Security Council Cohort {#security-council-cohort}
+<p>The 12 members of the <a href="/dao-glossary#security-council">Security Council</a> are split into two six-member cohorts; during a <a href="/dao-glossary#security-council-election">Security Council election</a>, the six seats in one the two cohorts seats are up election. </p>
+
 <p></p>
 
 
@@ -228,6 +230,8 @@ The client software implements a protocol that stores transaction history within
 <p>A series of smart contracts responsible for bridging ERC20 tokens on Ethereum to Arbitrum chains like <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> or <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a> and back.  The standard gateway keeps the L1 token escrowed on Ethereum and mints/burns the L2 token representation upon deposits/withdrawals. </p>
 
 ### Tally {#tally}
+<p>Web interface that can be used to interact with Arbitrum Governance contracts, including viewing, submitting, and voting on <a href="/dao-glossary#governance-proposal">Governance proposal</a>s. <a href="https://www.tally.xyz/gov/arbitrum">Link</a></p>
+
 <p></p>
 
 
