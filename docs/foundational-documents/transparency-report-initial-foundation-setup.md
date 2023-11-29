@@ -119,6 +119,8 @@ Transactions occurring on the Arbitrum Nova chain are settled on Ethereum mainne
 
 The initial members of the Data Availability Committee of the Nova chain are authorised representatives of the following parties:
 
+_NOTE: The members list below represents the initial comittee members, which are not necessarily the current members; for the list of current members, see [State of Decentralization](../../state-of-progressive-decentralization)._
+
 - Reddit, Inc.
 - ConsenSys Software Inc.
 - QuickNode, Inc.

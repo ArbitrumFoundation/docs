@@ -105,10 +105,9 @@ These are the current [allowlisted validators](#2-validator-ownership) for every
 
 These are the current members of the 6-of-7 [data availability committee (DAC)](#4-data-availability-committee-dac-ownership) in Arbitrum Nova:
 
-- Reddit, Inc.
+- Offchain Labs, Inc. (2 keys)
 - ConsenSys Software Inc.
 - QuickNode, Inc.
 - P2P.org
 - Google Cloud
-- Offchain Labs, Inc.
 - Opensea Innovation Labs Private Limited
