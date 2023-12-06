@@ -127,6 +127,7 @@ module.exports = {
     },
     {
       type: 'doc',
+      label: 'Foundational documents',
       id: 'foundation-documents'
     },
     {
