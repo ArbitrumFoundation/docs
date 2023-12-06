@@ -136,12 +136,12 @@ module.exports = {
         {
           type: 'link',
           label: 'Foundation bylaws',
-          href: require("./assets/The Arbitrum Foundation Bylaws 20 July 2023.pdf"),
+          href: "foundation-documents"
         },
         {
           type: 'link',
           label: 'Foundation M&A',
-          href: require("./assets/The Arbitrum Foundation M&A - 20 July 2023.pdf"),
+          href: "foundation-documents",
         }
       ],
     },
