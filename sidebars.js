@@ -126,24 +126,8 @@ module.exports = {
       ],
     },
     {
-      type: 'category',
-      label: 'Foundational documents',
-      items: [
-        {
-          type: 'doc',
-          id: 'foundational-documents/transparency-report-initial-foundation-setup' // SEO
-        },
-        {
-          type: 'link',
-          label: 'Foundation bylaws',
-          href: "foundation-documents"
-        },
-        {
-          type: 'link',
-          label: 'Foundation M&A',
-          href: "foundation-documents",
-        }
-      ],
+      type: 'doc',
+      id: 'foundation-documents'
     },
     {
       type: 'doc',
