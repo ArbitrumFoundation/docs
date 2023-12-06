@@ -103,7 +103,7 @@ These are the current [allowlisted validators](#2-validator-ownership) for every
 
 ### Nova Data Availability Committee members
 
-As Reddit exits Nova's DAC, two (similar) sets of members can currently act as the data availability to ensure a smooth transition (see [here](https://forum.arbitrum.foundation/t/non-emergency-security-council-action-update-arbitrum-nova-dac-keyset/19379) for more info).
+As Reddit exits Nova's DAC, two (similar) sets of members can currently act as the data availability committee to ensure a smooth transition (see [here](https://forum.arbitrum.foundation/t/non-emergency-security-council-action-update-arbitrum-nova-dac-keyset/19379) for more info).
 
 **Committee Members Set 1: 5 of 6 threshold (latest):**
 
