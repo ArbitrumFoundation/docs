@@ -102,13 +102,13 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-      announcementBar: {
-        id: "banner",
-        content: `Arbitrum DAO has been officially announced, and the $ARB airdrop is live. <a rel="noopener noreferrer" href='https://arbitrum.foundation/'>Claim your $ARB</a>.`,
-        backgroundColor: 'rgb(8 53 117)',
-        textColor: 'white',
-        isCloseable: false,
-      },
+      // announcementBar: {
+      //   id: "banner",
+      //   content: `Arbitrum DAO has been officially announced, and the $ARB airdrop is live. <a rel="noopener noreferrer" href='https://arbitrum.foundation/'>Claim your $ARB</a>.`,
+      //   backgroundColor: 'rgb(8 53 117)',
+      //   textColor: 'white',
+      //   isCloseable: false,
+      // },
     }),
   scripts: [
     // Fathom Analytics
