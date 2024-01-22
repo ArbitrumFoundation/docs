@@ -66,8 +66,8 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
             <li>
                In the case of a:
                <ul>
-                     <li>Constitutional AIP, at least 5% of all Votable Tokens have casted votes &quot;in favor&quot;; or</li>
-                     <li>Non-Constitutional AIP, at least 3% of all Votable Tokens have casted votes &quot;in favor&quot; (collectively, &quot;<strong>Threshold 2</strong>&quot;).</li>
+                     <li>Constitutional AIP, at least 5% of all Votable Tokens have casted votes either &quot;in favor&quot; or &quot;abstain&quot;; or</li>
+                     <li>Non-Constitutional AIP, at least 3% of all Votable Tokens have casted votes either &quot;in favor&quot; or &quot;abstain&quot; (collectively, &quot;<strong>Threshold 2</strong>&quot;).</li>
                </ul>
             </li>
         </ol>
@@ -117,7 +117,7 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
 <p>The DAO may approve and implement a Constitutional AIP to change the rules governing future Security Council elections, but the AIP process may not be used to intervene in an ongoing election.</p>
 <p>Security Council members may only be removed prior to the end of their terms under two conditions:</p>
 <ol>
-    <li>At least 10% of all Votable Tokens have casted votes &quot;in favor&quot; of removal and at least 5/6 (83.33%) of all casted votes are &quot;in favor&quot; of removal; or</li>
+    <li>At least 10% of all Votable Tokens have casted votes either &quot;in favor&quot; of removal or &quot;abstain&quot;, and at least 5/6 (83.33%) of all casted votes are &quot;in favor&quot; of removal; or</li>
     <li>At least 9 of the Security Council members vote in favor of removal.</li>
 </ol>
 <p>The seats of Security Council members who have been removed prior to the end of their respective terms shall remain unfilled until the next election that such seats are up for appointment, unless otherwise replaced prior to such next election by a vote of at least 9 of the Security Council members, in which case such seat shall be up for appointment at the next such election. The Security Council may not re-appoint a removed member and they can only be re-elected via the election voting system.</p>
