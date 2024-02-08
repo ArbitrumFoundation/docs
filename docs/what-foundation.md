@@ -7,7 +7,7 @@ dao_author: fred
 dao_sme: wat-dis
 ---
 
-### Overview of the Arbitrum Foundation
+### Overview of The Arbitrum Foundation
 The Arbitrum Foundation is a Cayman Islands foundation company that is tasked with developing and nurturing the Arbitrum ecosystem. The Foundation operates as a neutral steward in order to support the ArbitrumDAO, the continuous innovation of the Arbitrum technology and the development and education of the Arbitrum community.
 
 
