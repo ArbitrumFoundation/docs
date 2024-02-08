@@ -14,6 +14,10 @@ module.exports = {
     },
     {
       type: 'doc',
+      id: 'what-foundation',
+    },
+    {
+      type: 'doc',
       id: 'airdrop-eligibility-distribution',
     },
     {
