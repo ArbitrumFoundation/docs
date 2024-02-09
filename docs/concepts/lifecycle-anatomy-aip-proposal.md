@@ -115,6 +115,6 @@ To ensure that the owners of these downstream dependencies have enough time to a
 
 ### Conclusion
 
-The entire AIP voting process, including all seven phases, typically takes 34 days to complete for Constitutional AIPs, or 21 days for Non-Constitutional AIPs, from the start of the temperature check in Phase 1. This process is designed to allow for thorough consideration and voting, ensuring that everyone has a fair chance to voice their opinions and concerns.
+The entire AIP voting process, including all seven phases, typically takes 37 days to complete for Constitutional AIPs, or 27 days for Non-Constitutional AIPs, from the start of the temperature check in Phase 1. This process is designed to allow for thorough consideration and voting, ensuring that everyone has a fair chance to voice their opinions and concerns.
 
 This conceptual overview presents a beginner-friendly elaboration upon the AIP process detailed within [The Constitution of the Arbitrum DAO](../dao-constitution.md). This process is designed to ensure that proposed changes align with the Arbitrum community's mission and guiding values, and that the community's various stakeholders have the opportunity to discuss, debate, vote on, and prepare for proposed changes before they're ultimately implemented.
