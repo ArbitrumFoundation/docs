@@ -13,5 +13,9 @@ In this page you may find a collection of documents relating to The Arbitrum Fou
 
  - [Bylaws](../assets/The%20Arbitrum%20Foundation%20Bylaws%2020%20July%202023.pdf)
  - [M&A](../assets/The%20Arbitrum%20Foundation%20M&A%20-%2020%20July%202023.pdf)
- - [Transparency Report](./foundational-documents/transparency-report-initial-foundation-setup.md)
  - [Standard Grant Agreement](../assets/The%20Arbitrum%20Foundation%20-%20Boilerplate%20Grant%20Agreement.pdf)
+ - [Arbitrum Expansion Program](../assets/Arbitrum%20Expansion%20Program%20Jan182024.pdf)
+
+#### Transparency Reports
+ - [Initial Setup Transparency Report](./foundational-documents/transparency-report-initial-foundation-setup.md)
+ - [2023 Transparency Report](../assets/ArbitrumFoundationTransparencyReport2023.pdf)
