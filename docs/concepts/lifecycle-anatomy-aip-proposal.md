@@ -76,7 +76,7 @@ This is an optional step, but it's recommended as a due-diligence governance bes
 In this phase, the AIP is officially submitted via governance smart contracts on the Arbitrum One chain. The proposer of the AIP must have an address that can represent at least 1,000,000 votable tokens. After the AIP is submitted, there's a 3-day period for interested parties to discuss the proposal and gather votes before a voter distribution snapshot is taken. During this phase, the AIP must be labeled as either <a data-quicklook-from='constitutional-aip'>Constitutional</a> or <a data-quicklook-from='nonconstitutional-aip'>Non-Constitutional</a>. Additionally, the AIP must clearly specify which Arbitrum DAO-governed chain(s) it will affect. This phase is important as it defines a clear, formal protocol for proposing and voting on AIPs.
 
 
-#### Phase 3: On-chain DAO vote - 14 days in duration
+#### Phase 3: On-chain DAO vote - 14-16 days in duration
 
 During this phase, members of the Arbitrum DAO can vote directly on-chain for (or against) a submitted AIP. For the AIP to pass, more Votable Tokens must vote in favor than against, and a certain percentage of all Votable Tokens must vote in favor. This percentage is 5% for Constitutional AIPs and 3% for Non-Constitutional AIPs, and is referred to as "Threshold 2" within the [Constitution](../dao-constitution.md).
 
@@ -88,7 +88,7 @@ After an AIP passes Phase 3 of the voting process, there is a 3-day waiting peri
 
 Once the 3-day waiting period is over, the AIP will move on to the next phase of the voting process, as long as no major issues arise. This waiting period is important because it ensures that everyone has an opportunity to voice their concerns and recalibrate their participation before the AIP is finalized.
 
-#### Phase 5: L2-to-L1 message - roughly 1 week in duration
+#### Phase 5: L2-to-L1 message - typically 1 week in duration
 
 Once the 3-day waiting period of Phase 4 has passed and an AIP has been approved, Phase 5 of the voting process begins. In this phase, an [L2-to-L1 message](https://developer.arbitrum.io/arbos/l2-to-l1-messaging) is sent indicating that the AIP has passed. This message is sent to L1, which is the main Ethereum blockchain. Once the message is finalized on L1 (this takes at least 1 week), anyone can redeem it to complete this step and move on to the next step of the process. This ensures that the completion of the L2 waiting period will be recognized on L1 after any withdrawals initiated during or soon after the voting period have been recognized on L1. Note that this could take longer if there is an on-going challenge to a assertion made by an Arbitrum validator.
 
