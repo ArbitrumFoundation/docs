@@ -33,6 +33,10 @@ module.exports = {
       id: 'new-arb-chains',
     },
     {
+      type: 'doc',
+      id: 'network-upgrades',
+    },
+    {
       type: 'category',
       label: 'How-to guides',
       collapsed: false,
