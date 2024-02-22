@@ -21,7 +21,7 @@ Visit [Inside Arbitrum Nitro](https://docs.arbitrum.io/inside-arbitrum-nitro/) t
 | ArbOS 20 "Atlas"                                                      | [vote on-going](https://www.tally.xyz/gov/arbitrum/proposal/46905320292877192134536823079608810426433248493109520384601548724615383601450?chart=bubble)  | TBD | TBD | TBD |
 | [ArbOS 11](https://github.com/OffchainLabs/nitro/releases/tag/v2.2.0) | [approved & executed](https://www.tally.xyz/gov/arbitrum/proposal/77069694702187027448745871790562515795432836429094222862498991082283032976814)  | Tues, 2024-01-30 at 17:00:00 UTC | Thu, 2024-02-24 at 20:01:13 UTC (`1706817673`) | Thu, 2024-02-24 at 20:01:13 UTC (`1706817673`) |
 
-### Stay up to date with the latest information on the status of network upgrades
+### Stay up to date
 To stay up to date with proposals, timelines, and statuses of network upgrades to Arbitrum One and Nova:
 - Subscribe to the [Arbitrum Node Upgrade Announcement channel on Telegram](https://t.me/arbitrumnodeupgrade)
 - Join both the `#dev-announcements` and `#node-runners` Discord channels in the [Arbitrum Discord server](https://discord.gg/arbitrum)
