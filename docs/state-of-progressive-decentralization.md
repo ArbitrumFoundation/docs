@@ -101,14 +101,26 @@ These are the current [allowlisted validators](#2-validator-ownership) for every
 - <AEL address={"0xAa01D5570E932a13eF9a06677eaf97d56a33393f"} chainID={5} />
 - <AEL address={"0xe08339b8Da134f1e39876b7523586c4D2a4173d8"} chainID={5} />
 
-### Data Availability Committee members
+### Nova Data Availability Committee members
 
-These are the current members of the 6-of-7 [data availability committee (DAC)](#4-data-availability-committee-dac-ownership) in Arbitrum Nova:
+As Reddit exits Nova's DAC, two (similar) sets of members can currently act as the data availability committee to ensure a smooth transition (see [here](https://forum.arbitrum.foundation/t/non-emergency-security-council-action-update-arbitrum-nova-dac-keyset/19379) for more info).
 
-- Reddit, Inc.
-- ConsenSys Software Inc.
-- QuickNode, Inc.
-- P2P.org
-- Google Cloud
-- Offchain Labs, Inc.
-- Opensea Innovation Labs Private Limited
+**Committee Members Set 1: 5 of 6 threshold (latest):**
+
+1. Offchain Labs, Inc.
+1. ConsenSys Software Inc.
+1. QuickNode, Inc.
+1. P2P.org
+1. Google Cloud
+1. Opensea Innovation Labs Private Limited
+
+**Committee Members Set 2: 7 of 8 threshold (old but still enabled on chain):**
+
+1. Offchain Labs, Inc. (key #1)
+1. Offchain Labs, Inc. (key #2)
+1. Reddit
+1. ConsenSys Software Inc.
+1. QuickNode, Inc.
+1. P2P.org
+1. Google Cloud
+1. Opensea Innovation Labs Private Limited
