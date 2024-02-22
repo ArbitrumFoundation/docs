@@ -4,11 +4,11 @@ title: Network upgrades
 sidebar_label: Network upgrades
 ---
 
-:::info PUBLIC PREVIEW DOCUMENT
+import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
 
-This document is currently in **<a href='/concepts/public-preview-content'>public preview</a>** and may change significantly as feedback is captured from readers like you. Click the *Request an update* button at the top of this document or [join the Arbitrum Discord](https://discord.gg/arbitrum) to share your feedback.
+<DraftExpectationsPartial />
 
-:::
+
 
 This page has information on the state and timelines of major software updates to Arbitrum One and Arbitrum Nova. Software updates that alter an Arbitrum chain's ability to produce valid Arbitrum blocks are referred to as ArbOS upgrades and, as outlined in the [Arbitrum DAO Constitution](./dao-constitution.md), will always require a Constiutional AIP to pass for DAO-governed chains.
 
