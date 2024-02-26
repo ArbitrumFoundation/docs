@@ -14,15 +14,16 @@ This page has information on the state and timelines of major software updates t
 
 Visit [Inside Arbitrum Nitro](https://docs.arbitrum.io/inside-arbitrum-nitro/) to learn more about Nitro's architecture; more information about ArbOS software releases is available on the [Arbitrum DAO forum](https://forum.arbitrum.foundation/t/arbitrum-arbos-upgrades/19695).
 
-## Activations
+## Network activation statuses
 
-| Upgrade                 | Governance Approval Status | Arbitrum Sepolia                                 | Arbitrum One                                    | Arbitrum Nova                                      |
-| -------------------------- | ------------------- | ---------------------------------------------- | ---------------------------------------------- | ---------------------------------------------- |
-| ArbOS 20 "Atlas"                                                      | [vote on-going](https://www.tally.xyz/gov/arbitrum/proposal/46905320292877192134536823079608810426433248493109520384601548724615383601450?chart=bubble)  | TBD | TBD | TBD |
-| [ArbOS 11](https://github.com/OffchainLabs/nitro/releases/tag/v2.2.0) | [approved & executed](https://www.tally.xyz/gov/arbitrum/proposal/77069694702187027448745871790562515795432836429094222862498991082283032976814)  | Tues, 2024-01-30 at 17:00:00 UTC | Thu, 2024-02-24 at 20:01:13 UTC (`1706817673`) | Thu, 2024-02-24 at 20:01:13 UTC (`1706817673`) |
+| Upgrade                                                                     | Governance Approval Status | Link to most recent governance stage                                                                                                                          | Arbitrum Sepolia (YYYY-MM-DD)                 | Arbitrum One (YYYY-MM-DD)                                    | Arbitrum Nova     (YYYY-MM-DD)                              |
+|-----------------------------------------------------------------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|------------------------------------------------|------------------------------------------------|
+| [ArbOS 20 Atlas](https://github.com/OffchainLabs/nitro/releases/tag/v2.3.0) | Vote on-going              | [On-chain Tally vote](https://www.tally.xyz/gov/arbitrum/proposal/46905320292877192134536823079608810426433248493109520384601548724615383601450?chart=bubble) | Thu, 2024-02-29 at 18:00:00 UTC  | TBD, pending governance vote                                           | TBD, pending governance vote                                              |
+| [ArbOS 11](https://github.com/OffchainLabs/nitro/releases/tag/v2.2.0)       | Approved & executed        | [On-chain Tally vote](https://www.tally.xyz/gov/arbitrum/proposal/77069694702187027448745871790562515795432836429094222862498991082283032976814)              | Tues, 2024-01-30 at 17:00:00 UTC | Thu, 2024-02-24 at 20:01:13 UTC | Thu, 2024-02-24 at 20:01:13 UTC |
+
 
 ### Stay up to date
 To stay up to date with proposals, timelines, and statuses of network upgrades to Arbitrum One and Nova:
-- Subscribe to the [Arbitrum Node Upgrade Announcement channel on Telegram](https://t.me/arbitrumnodeupgrade)
+- Subscribe to the [Arbitrum Node Upgrade Announcement channel](https://t.me/arbitrumnodeupgrade) on Telegram
 - Join both the `#dev-announcements` and `#node-runners` Discord channels in the [Arbitrum Discord server](https://discord.gg/arbitrum)
-- Follow the official Arbitrum ([`@Arbitrum`](https://twitter.com/arbitrum)) and Arbitrum Developers ([`@ArbitrumDevs`](https://twitter.com/ArbitrumDevs)) X accounts, formerly Twitter.
+- Follow the official Arbitrum ([`@Arbitrum`](https://twitter.com/arbitrum)) and Arbitrum Developers ([`@ArbitrumDevs`](https://twitter.com/ArbitrumDevs)) _X_ accounts, formerly Twitter.
