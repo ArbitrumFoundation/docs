@@ -37,6 +37,10 @@ module.exports = {
       id: 'network-upgrades',
     },
     {
+      type: 'doc',
+      id: 'security-council',
+    },
+    {
       type: 'category',
       label: 'How-to guides',
       collapsed: false,
@@ -91,10 +95,10 @@ module.exports = {
           type: 'doc',
           id: 'concepts/dao-vote',
         },
-        {
-          type: 'doc',
-          id: 'concepts/security-council',
-        },
+        // {
+        //   type: 'doc',
+        //   id: 'security-council',
+        // },
         {
           type: 'doc',
           id: 'concepts/lifecycle-anatomy-aip-proposal',
@@ -109,10 +113,6 @@ module.exports = {
       type: 'category',
       label: 'Governance architecture',
       items: [
-        {
-          type: 'doc',
-          id: 'security-council-members',
-        },
         {
           type: 'link',
           label: 'Sybil detection',
