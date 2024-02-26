@@ -78,7 +78,7 @@ In addition, the election process allows for the removal of Council members who 
 
 To participate in a given cohort's election, candidates are invited to present themselves to the community by [creating a topic in the Governance Forums](https://forum.arbitrum.foundation/c/security-council-elections/12).
 
-Candidates should also engage with the community and delegates on whichever platforms they feel confortable in. During election cycles, The Arbitrum Foundation will be hosting numerous events, feel free to contact `sc-elections@arbitrum.foundation` to get more information.
+Candidates should also engage with the community and delegates on whichever platforms they feel confortable in. During election cycles, The Arbitrum Foundation will be hosting numerous events, feel free to contact `scelection@arbitrum.foundation` to get more information.
 
 Cohorts are elections start on 15 March and 15 September each year, and candidates have a week to sign-up onchain to run for the given cohort. The [Tally Governance UI](https://www.tally.xyz/gov/arbitrum/council/security-council) has support to help candidates sign up for the elections.
 
