@@ -69,7 +69,7 @@ The Security Council was required to be operational at the time the DAO launched
 
 The initial Security Council members, split by cohort, are as follows:
 
-_NOTE: The members list below represents the initial security council members, which are not necessarily the current members; for the list of current members, see [Security Council Members](../../security-council-members)._
+_NOTE: The members list below represents the initial security council members, which are not necessarily the current members; for the list of current members, see [Security Council Members](../security-council)._
 
 i. September Cohort
 

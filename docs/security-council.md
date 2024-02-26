@@ -11,7 +11,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
-[The Constitution of the Arbitrum DAO](../dao-constitution) outlines the process for electing members to the <a data-quicklook-from='security-council'>Security Council</a>, a group of individuals who are responsible for addressing risks to the Arbitrum ecosystem through the selective application of <a data-quicklook-from='emergency-action'>emergency actions</a> and <a data-quicklook-from='nonemergency-action'>non-emergency actions</a>. The Security Council is made up of 12 members who are elected by the members of the Arbitrum DAO through a democratic process. See [here](../security-council-members) for the current members of the Security Council.
+[The Constitution of the Arbitrum DAO](./dao-constitution) outlines the process for electing members to the <a data-quicklook-from='security-council'>Security Council</a>, a group of individuals who are responsible for addressing risks to the Arbitrum ecosystem through the selective application of <a data-quicklook-from='emergency-action'>emergency actions</a> and <a data-quicklook-from='nonemergency-action'>non-emergency actions</a>. The Security Council is made up of 12 members who are elected by the members of the Arbitrum DAO through a democratic process. See [here](./security-council#current-security-council-members) for the current members of the Security Council.
 
 
 ### Current Security Council members
@@ -65,12 +65,12 @@ No more than 3 candidates from the same organization should be elected into the 
 
 The rules for the Security Council elections can be changed by the members of the Arbitrum DAO, but these changes can't be made during an ongoing election. Security Council members can also be removed from their position prior to their term ending if at least 10% of all votable tokens participate in a removal vote, and at least 5/6 of the votes are in favor of removal. A member can also be removed if at least 9 members of the Security Council vote in favor of removal.
 
-Note that the [Constitution](../dao-constitution.md) is the most authoritative specification of the Arbitrum DAO's rules. If there are any discrepancies between this document and the Constitution, please feel free to submit an issue, and note that the Constitution takes precedence.
+Note that the [Constitution](./dao-constitution.md) is the most authoritative specification of the Arbitrum DAO's rules. If there are any discrepancies between this document and the Constitution, please feel free to submit an issue, and note that the Constitution takes precedence.
 
 
 ### Why elections are important
 
-The Security Council elections are important because they democratically determine who will be responsible for being vigilant about the security and integrity of the Arbitrum DAO. By holding regular elections, the community can ensure that the Council is made up of members who truly represent the values enshrined within [The Constitution of the Arbitrum DAO](../dao-constitution).
+The Security Council elections are important because they democratically determine who will be responsible for being vigilant about the security and integrity of the Arbitrum DAO. By holding regular elections, the community can ensure that the Council is made up of members who truly represent the values enshrined within [The Constitution of the Arbitrum DAO](./dao-constitution).
 
 In addition, the election process allows for the removal of Council members who are not acting in the best interests of the DAO. This helps to ensure that the Council always has the best interests of the network in mind.
 
