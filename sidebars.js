@@ -14,6 +14,10 @@ module.exports = {
     },
     {
       type: 'doc',
+      id: 'what-foundation',
+    },
+    {
+      type: 'doc',
       id: 'airdrop-eligibility-distribution',
     },
     {
@@ -27,6 +31,10 @@ module.exports = {
     {
       type: 'doc',
       id: 'new-arb-chains',
+    },
+    {
+      type: 'doc',
+      id: 'network-upgrades',
     },
     {
       type: 'category',
