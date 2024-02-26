@@ -55,10 +55,10 @@ _*Note: the Token Distributor contract was [self-destructed](https://arbiscan.io
 
 | Contract                            | Chain    | Address                                                                            |
 | ----------------------------------- | -------- | ---------------------------------------------------------------------------------- |
-| Security Council (Arb One, 9 of 12) | Arb One  | <AEL address = {"0x423552c0F05baCCac5Bfa91C6dCF1dc53a0A1641"} chainID = {42161} /> |
-| Security Council (Arb One, 7 of 12) | Arb One  | <AEL address = {"0xADd68bCb0f66878aB9D37a447C7b9067C5dfa941"} chainID = {42161} /> |
-| Security Council (L1, 9 of 12)      | Ethereum | <AEL address = {"0xF06E95eF589D9c38af242a8AAee8375f14023F85"} chainID = {1} />     |
-| Security Council (Nova, 9 of 12)    | Nova     | <AEL address = {"0xc232ee726E3C51B86778BB4dBe61C52cC07A60F3"} chainID = {42170} /> |
+| Security Council (Arb One, emergency) | Arb One  | <AEL address = {"0x423552c0F05baCCac5Bfa91C6dCF1dc53a0A1641"} chainID = {42161} /> |
+| Security Council (Arb One, non emergency) | Arb One  | <AEL address = {"0xADd68bCb0f66878aB9D37a447C7b9067C5dfa941"} chainID = {42161} /> |
+| Security Council (L1, emergency)      | Ethereum | <AEL address = {"0xF06E95eF589D9c38af242a8AAee8375f14023F85"} chainID = {1} />     |
+| Security Council (Nova, emergency)    | Nova     | <AEL address = {"0xc232ee726E3C51B86778BB4dBe61C52cC07A60F3"} chainID = {42170} /> |
 
 _Note: See ["Security Council Members"](./security-council-members) for addresses of the current members of the Security Council._
 
