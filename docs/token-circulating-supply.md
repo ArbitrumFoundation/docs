@@ -37,13 +37,13 @@ Circulating Supply = 10 billion - 3.471 billion - 2.694 billion - 1.753 billion 
 
 
 
-On March 16 2024 it is expected that following the above formula the total circulating supply will be
+On March 17 2024 it is expected that following the above formula the total circulating supply will be
 
 ```
-OCL Team Tokens in Circulation = 1/48 * 11 * 2.694 billion = 617.375 million
-OCL Investor Tokens in Circulation = 1/48 * 11 * 1.753 billion = 401.729 million
-Arbitrum Foundation Tokens in Circulation = 50 million + 1/48 * 10 * 700 million = 195.83 million
+OCL Team Tokens in Circulation = 1/48 * 12 * 2.694 billion = 673.5 million
+OCL Investor Tokens in Circulation = 1/48 * 12 * 1.753 billion = 438.25 million
+Arbitrum Foundation Tokens in Circulation = 50 million + 1/48 * 11 * 700 million = 210.416 million
 
-Circulating Supply = 10 billion - 3.471 billion - 2.694 billion - 1.753 billion - 750m + 617.375m + 401.729m + 195.83 million = 2.546 billion
+Circulating Supply = 10 billion - 3.471 billion - 2.694 billion - 1.753 billion - 750 million + 673.5 million + 438.25 million + 210.416 million = 2.654 billion
 ```
 
