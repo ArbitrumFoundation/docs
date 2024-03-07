@@ -26,7 +26,7 @@ Circulating Supply = Total Tokens - Arbitrum DAO Treasury - OCL Team Tokens - OC
 
 ### What is the current circulating supply
 
-As of March 7 2024, the above formula results in the following total circulating supply
+As of March 7 2024, the above formula results in 1.527 billion tokens total circulating supply
 ```
 OCL Team Tokens in Circulation = 0
 OCL Investor Tokens in Circulation = 0
@@ -37,7 +37,7 @@ Circulating Supply = 10 billion - 3.471 billion - 2.694 billion - 1.753 billion 
 
 
 
-On March 17 2024 it is expected that following the above formula the total circulating supply will be
+On March 17 2024 it is expected that following the above formula the total circulating supply will be 2.654 billion tokens
 
 ```
 OCL Team Tokens in Circulation = 1/48 * 12 * 2.694 billion = 673.5 million
