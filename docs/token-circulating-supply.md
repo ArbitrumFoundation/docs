@@ -17,8 +17,8 @@ The circulating supply is based on the [initial distribution](airdrop-eligibilit
 You can calculate the Arbitrum token's current circulating supply with the following formula:
 
 ```
-OCL Team Tokens in Circulation = if (today > 16 march 2024) 1/48 * (months since 16 march 2023) * (2.694 billion) else 0
-OCL Investor Tokens in Circulation = if (today > 16 march 2024) 1/48 * (months since 16 march 2023) * (1.753 billion) else 0
+OCL Team Tokens in Circulation = if (today > 16 march 2024) 1/48 * (months since 16 March 2023) * (2.694 billion) else 0
+OCL Investor Tokens in Circulation = if (today > 16 march 2024) 1/48 * (months since 16 March 2023) * (1.753 billion) else 0
 Arbitrum Foundation Tokens in Circulation = 50 million + 1/48 * (months since 17 April 2023) * 700 million
 
 Circulating Supply = Total Tokens - Arbitrum DAO Treasury - OCL Team Tokens - OCL Investor Tokens - Arbitrum Foundation Tokens + OCL Team Tokens in Circulation + OCL Investor Tokens in Circulation + Arbitrum Foundation Tokens in Circulation
