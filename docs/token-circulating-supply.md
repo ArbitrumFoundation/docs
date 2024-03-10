@@ -24,7 +24,7 @@ Arbitrum Foundation Tokens in Circulation = 50 million + 1/126230400 * (seconds 
 Circulating Supply = Total Tokens - Arbitrum DAO Treasury - Team and Contributor Tokens - Investor Tokens - Arbitrum Foundation Tokens + Team and Contributor Tokens in Circulation + Investor Tokens in Circulation + Arbitrum Foundation Tokens in Circulation
 ```
 
-**Note that the amount vested by the Arbitrum Foundation is a function of the number of seconds since its start date on 17 April 2023, linearly releasing tokens every second for 4 years (126230400 seconds). The team and investor tokens are also vested linearly but calculated as the number seconds in a year divided by 12 from March 16.**
+_Note that the amount vested by the Arbitrum Foundation is a function of the number of seconds since its start date on 17 April 2023, linearly releasing tokens every second for 4 years (126230400 seconds). The team and investor tokens are also vested linearly but calculated as the number seconds in a year divided by 12 from March 16._
 
 ### What is the current circulating supply
 
