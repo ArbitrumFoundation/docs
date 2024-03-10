@@ -19,20 +19,22 @@ You can calculate the Arbitrum token's current circulating supply with the follo
 ```
 Team and Contributor Tokens in Circulation = if (today > 16 march 2024) 1/48 * (months since 16 March 2023) * (2.694 billion) else 0
 Investor Tokens in Circulation = if (today > 16 march 2024) 1/48 * (months since 16 March 2023) * (1.753 billion) else 0
-Arbitrum Foundation Tokens in Circulation = 50 million + 1/48 * (months since 17 April 2023) * 700 million
+Arbitrum Foundation Tokens in Circulation = 50 million + 1/126230400 * (seconds since 17 April 2023) * 700 million
 
 Circulating Supply = Total Tokens - Arbitrum DAO Treasury - Team and Contributor Tokens - Investor Tokens - Arbitrum Foundation Tokens + Team and Contributor Tokens in Circulation + Investor Tokens in Circulation + Arbitrum Foundation Tokens in Circulation
 ```
 
+**Note that the amount vested by the Arbitrum Foundation is a function of the number of seconds since its start date on 17 April 2023, linearly releasing tokens every second for 4 years (126230400 seconds). The team and investor tokens are also vested linearly but calculated as the number seconds in a year divided by 12 from March 16.**
+
 ### What is the current circulating supply
 
-As of March 7 2024, the above formula results in 1.527 billion tokens total circulating supply
+As of March 7 2024, the above formula results in 1.538 billion tokens total circulating supply
 ```
 Team and Contributor Tokens in Circulation = 0
 Investor Tokens in Circulation = 0
-Arbitrum Foundation Tokens in Circulation = 50 million + 1/48 * 10 * 700 million = 195.83 million
+Arbitrum Foundation Tokens in Circulation = 50 million + 1/126230400 * 28080000 * 700 million = 205.715 million
 
-Circulating Supply = 10 billion - 3.471 billion - 2.694 billion - 1.753 billion - 750m + 0 + 0 + 195.83 million = 1.527 billion
+Circulating Supply = 10 billion - 3.471 billion - 2.694 billion - 1.753 billion - 750 million + 0 + 0 + 205.715 million = 1.538 billion
 ```
 
 
@@ -42,8 +44,8 @@ On March 17 2024 it is expected that following the above formula the total circu
 ```
 Team and Contributor Tokens in Circulation = 1/48 * 12 * 2.694 billion = 673.5 million
 Investor Tokens in Circulation = 1/48 * 12 * 1.753 billion = 438.25 million
-Arbitrum Foundation Tokens in Circulation = 50 million + 1/48 * 11 * 700 million = 210.416 million
+Arbitrum Foundation Tokens in Circulation = 50 million + 1/126230400 * 28944000 * 700 million = 210.507 million
 
-Circulating Supply = 10 billion - 3.471 billion - 2.694 billion - 1.753 billion - 750 million + 673.5 million + 438.25 million + 210.416 million = 2.654 billion
+Circulating Supply = 10 billion - 3.471 billion - 2.694 billion - 1.753 billion - 750 million + 673.5 million + 438.25 million + 210.507 million = 2.654 billion
 ```
 
