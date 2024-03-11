@@ -16,36 +16,41 @@ A token's circulating supply is the amount of coins that are currently available
 The circulating supply is based on the [initial distribution](airdrop-eligibility-distribution#distribution-post-aips-11-and-12) and the [unlock schedule](airdrop-eligibility-distribution#vesting-and-lockup-details) of the team and investors.
 You can calculate the Arbitrum token's current circulating supply with the following formula:
 
-```
-Team and Contributor Tokens in Circulation = if (today > 16 march 2024) 1/48 * (months since 16 March 2023) * (2.694 billion) else 0
-Investor Tokens in Circulation = if (today > 16 march 2024) 1/48 * (months since 16 March 2023) * (1.753 billion) else 0
-Arbitrum Foundation Tokens in Circulation = 50 million + 1/126230400 * (seconds since 17 April 2023) * 700 million
+The team, contributor, and investor tokens unlock over a 4 year period, starting from 16 March 2023.
+The first unlock starts on 16 March 2024, and continue to unlock on a monthly cadence.
 
-Circulating Supply = Total Tokens - Arbitrum DAO Treasury - Team and Contributor Tokens - Investor Tokens - Arbitrum Foundation Tokens + Team and Contributor Tokens in Circulation + Investor Tokens in Circulation + Arbitrum Foundation Tokens in Circulation
-```
+The Arbitrum Foundation tokens also unlock over a 4 year period, starting from 17 April 2023.
+The first unlock starts on 17 April 2023, and continue to unlock every second.
 
-_Note that the amount unlocked by the Arbitrum Foundation is a function of the number of seconds since its start date on 17 April 2023, linearly releasing tokens every second for 4 years (126230400 seconds). The team and investor tokens are also unlocked linearly but calculated as the number seconds in a year divided by 12 from March 16 2024._
+
+_Note that the amount unlocked by the Arbitrum Foundation is based on the 700 million tokens, with another 50 million tokens that were previously held. The team and investor tokens unlocked are calculated as the number seconds in a year divided by 12 from March 16 2024._
 
 ### What is the current circulating supply
 
-As of March 7 2024, the above formula results in 1.538 billion tokens total circulating supply
-```
-Team and Contributor Tokens in Circulation = 0
-Investor Tokens in Circulation = 0
-Arbitrum Foundation Tokens in Circulation = 50 million + 1/126230400 * 28080000 * 700 million = 205.715 million
+As of March 7 2024, the above formula results in 1.538 billion tokens total circulating supply.
 
-Circulating Supply = 10 billion - 3.471 billion - 2.694 billion - 1.753 billion - 750 million + 0 + 0 + 205.715 million = 1.538 billion
-```
+| Allocated to              | Tokens Allocated | In circulation at March 7 2024|
+| ------------------------- | ---------------- | -------------- |
+| ArbitrumDAO Treasury      | 3,528,000,000.00 | 56,682,881.54 |
+| Team and collaborators    | 2,694,000,000.00 | 0.00 |
+| Investors                 | 1,753,000,000.00 | 0.00 |
+| Users of platform (via airdrop)        | 1,162,000,000.00 | 1,162,000,000.00 |
+| Arbitrum Foundation                | 750,000,000.00   | 205,715,263.52 |
+| DAOs building on Arbitrum (via airdrop) | 113,000,000.00   | 113,000,000.00 |
+|                           |                  |                 |
+| Totals                    | 10,000,000,000.00 | 1,527,516,214.88 |
 
 
 
-On March 17 2024 it is expected that following the above formula the total circulating supply will be 2.654 billion tokens
+On March 17 2024 it is expected that following the above formula the total circulating supply will be 2.654 billion tokens.
 
-```
-Team and Contributor Tokens in Circulation = 1/48 * 12 * 2.694 billion = 673.5 million
-Investor Tokens in Circulation = 1/48 * 12 * 1.753 billion = 438.25 million
-Arbitrum Foundation Tokens in Circulation = 50 million + 1/126230400 * 28944000 * 700 million = 210.507 million
-
-Circulating Supply = 10 billion - 3.471 billion - 2.694 billion - 1.753 billion - 750 million + 673.5 million + 438.25 million + 210.507 million = 2.654 billion
-```
-
+| Allocated to              | Tokens Allocated | In circulation at March 17 2024 |
+| ------------------------- | ---------------- | -------------- |
+| ArbitrumDAO Treasury      | 3,528,000,000.00 | 56,682,881.54  |
+| Team and collaborators    | 2,694,000,000.00 | 673,500,000.00 |
+| Investors                 | 1,753,000,000.00 | 438,250,000.00 |
+| Users of platform (via airdrop)        | 1,162,000,000.00 | 1,162,000,000.00 |
+| Arbitrum Foundation                | 750,000,000.00   | 210,506,502.40  |
+| DAOs building on Arbitrum (via airdrop) | 113,000,000.00   | 113,000,000.00  |
+|                           |                  |                 |
+| Totals                    | 10,000,000,000.00 | 2,653,939,383.94 |
