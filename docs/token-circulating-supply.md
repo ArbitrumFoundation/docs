@@ -25,7 +25,7 @@ The first unlock starts on 17 April 2023, and continue to unlock every second.
 
 ### What is the current circulating supply
 
-As of March 7 2024, the above formula results in 1.538 billion tokens total circulating supply.
+As of March 7 2024, the above formula results in 1.537 billion tokens total circulating supply.
 
 | Allocated to              | Tokens Allocated | In circulation at March 7 2024|
 | ------------------------- | ---------------- | -------------- |
