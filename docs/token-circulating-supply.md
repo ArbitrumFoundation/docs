@@ -38,6 +38,8 @@ As of March 7 2024, the above formula results in 1.538 billion tokens total circ
 |                           |                  |                 |
 | Totals                    | 10,000,000,000 | 1,537,398,145 |
 
+_Note that numbers are rounded for presentation._
+
 
 
 On March 17 2024 it is expected that following the above formula the total circulating supply will be 2.654 billion tokens.
