@@ -60,5 +60,5 @@ _Note that numbers are rounded for presentation._
 
 [^1] The amount unlocked by the Arbitrum Foundation is based on the 700 million tokens in the vesting contract, plus the 50 million tokens that were initially distributed.
 
-[^2] The team and investor tokens unlocked are calculated as the number seconds in a year divided by 12 from March 16 2024._
+[^2] The team and investor tokens unlocked are calculated as the number seconds in a year divided by 12 from March 16 2024.
 
