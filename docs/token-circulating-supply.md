@@ -29,11 +29,11 @@ As of March 7 2024, the above formula results in 1.537 billion tokens total circ
 
 | Allocated to              | Tokens Allocated | In circulation at March 7 2024|
 | ------------------------- | ---------------- | -------------- |
-| ArbitrumDAO Treasury [^3]      | 3,528,000,000 | 56,682,882 |
+| ArbitrumDAO Treasury [^1]      | 3,528,000,000 | 126,131,267 |
 | Team and collaborators    | 2,694,000,000 | 0 |
 | Investors                 | 1,753,000,000 | 0 |
-| Users of platform (via airdrop)    | 1,162,000,000 | 1,162,000,000 |
-| Arbitrum Foundation                | 750,000,000   | 205,715,264[^1] |
+| Users of platform (via airdrop)    | 1,162,000,000 | 1,092,551,615 [^2] |
+| Arbitrum Foundation                | 750,000,000   | 205,715,264 [^3] |
 | DAOs building on Arbitrum (via airdrop) | 113,000,000   | 113,000,000 |
 |                           |                  |                 |
 | Totals                    | 10,000,000,000 | 1,537,398,145 |
@@ -46,11 +46,11 @@ On March 17 2024 it is expected that following the above formula the total circu
 
 | Allocated to              | Tokens Allocated | In circulation at March 17 2024 |
 | ------------------------- | ---------------- | -------------- |
-| ArbitrumDAO Treasury [^3]      | 3,528,000,000 | 56,682,882  |
-| Team and collaborators    | 2,694,000,000 | 673,500,000 [^2] |
-| Investors                 | 1,753,000,000 | 438,250,000 [^2] |
-| Users of platform (via airdrop)        | 1,162,000,000 | 1,162,000,000 |
-| Arbitrum Foundation                | 750,000,000   | 210,506,502 [^1]  |
+| ArbitrumDAO Treasury [^1]      | 3,528,000,000 | 126,131,267  |
+| Team and collaborators    | 2,694,000,000 | 673,500,000 [^4] |
+| Investors                 | 1,753,000,000 | 438,250,000 [^4] |
+| Users of platform (via airdrop)        | 1,162,000,000 | 1,092,551,615 [^2] |
+| Arbitrum Foundation                | 750,000,000   | 210,506,502 [^3]  |
 | DAOs building on Arbitrum (via airdrop) | 113,000,000   | 113,000,000  |
 |                           |                  |                 |
 | Totals                    | 10,000,000,000 | 2,653,939,384 |
@@ -58,9 +58,10 @@ On March 17 2024 it is expected that following the above formula the total circu
 
 _Note that numbers are rounded for presentation._
 
-[^1] The amount unlocked by the Arbitrum Foundation is based on the 700 million tokens in the vesting contract, plus the 50 million tokens that were initially distributed.
+[^1] The Arbitrum DAO treasury is calculated as of March 7 2024 and can be viewed in https://arbiscan.io/token/0x912ce59144191c1204e64559fe8253a0e49e6548?a=0xF3FC178157fb3c87548bAA86F9d24BA38E649B58. The DAO treasury's circulating supply is based on tokens deployed by the DAO delegates in governance proposals.
 
-[^2] The team and investor tokens unlocked are calculated as the number seconds in a year divided by 12 from March 16 2024.
+[^2] Tokens that were not claimed during the airdrop period were sent to the DAO treasury. They are now part of the treasury but here they are presented as tokens in circulation in the User section, for the presentation to consisently show the amount of tokens deployed by the DAO delegates in governance proposals.
 
-[^3] The Arbitrum DAO treasury is calculated as of March 7 2024 and can be viewed in https://arbiscan.io/token/0x912ce59144191c1204e64559fe8253a0e49e6548?a=0xF3FC178157fb3c87548bAA86F9d24BA38E649B58. The DAO treasury's circulating supply is based on tokens deployed by the DAO delegates in governance proposals.
+[^3] The amount unlocked by the Arbitrum Foundation is based on the 700 million tokens in the vesting contract, plus the 50 million tokens that were initially distributed.
 
+[^4] The team and investor tokens unlocked are calculated as the number seconds in a year divided by 12 from March 16 2024.
