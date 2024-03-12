@@ -65,3 +65,5 @@ _Note that numbers are rounded for presentation._
 [^3] The amount unlocked by the Arbitrum Foundation is based on the 700 million tokens in the vesting contract, plus the 50 million tokens that were initially distributed.
 
 [^4] The team, investor, and contributor tokens unlocked are calculated as the number seconds in a year divided by 12 from March 16 2024.
+
+_**Disclaimer:** The total circulating supply of tokens displayed is the best estimate as of March 17, 2024, based on publicly available information. It may not always reflect the actual circulating supply due to factors such as additional distributions from the ArbitrumDAO Treasury or the unlocking of vesting contracts. This page will undergo regular updates to ensure alignment with the most accurate representation of the total circulating supply._
