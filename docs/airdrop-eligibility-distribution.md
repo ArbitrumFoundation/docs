@@ -79,12 +79,12 @@ The passing of [AIPs 1.1](https://www.tally.xyz/gov/arbitrum/proposal/7054562996
     <tr>
         <td>26.94%</td>
         <td>2.694 billion</td>
-        <td>Offchain Labs Team and Future Team + Advisors</td>
+        <td>Team and Contributors + Advisors</td>
     </tr>
     <tr>
         <td>17.53%</td>
         <td>1.753 billion</td>
-        <td>Offchain Labs investors</td>
+        <td>Investors</td>
     </tr>
     <tr>
         <td>11.62%</td>

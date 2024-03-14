@@ -22,6 +22,10 @@ module.exports = {
     },
     {
       type: 'doc',
+      id: 'token-supply',
+    },
+    {
+      type: 'doc',
       id: 'state-of-progressive-decentralization',
     },
     {

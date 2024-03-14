@@ -66,8 +66,8 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
             <li>
                In the case of a:
                <ul>
-                     <li>Constitutional AIP, at least 5% of all Votable Tokens have casted votes &quot;in favor&quot;; or</li>
-                     <li>Non-Constitutional AIP, at least 3% of all Votable Tokens have casted votes &quot;in favor&quot; (collectively, &quot;<strong>Threshold 2</strong>&quot;).</li>
+                     <li>Constitutional AIP, at least 5% of all Votable Tokens have casted votes either &quot;in favor&quot; or &quot;abstain&quot;; or</li>
+                     <li>Non-Constitutional AIP, at least 3% of all Votable Tokens have casted votes either &quot;in favor&quot; or &quot;abstain&quot; (collectively, &quot;<strong>Threshold 2</strong>&quot;).</li>
                </ul>
             </li>
         </ol>
@@ -104,11 +104,12 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
 <p>The date chosen for the first election will form the basis for all future elections. Every election should begin 6 months after the previous election has started and it will replace its respective cohort of 6 members.</p>
 <p>All Security Council members are expected to serve their term until the election is complete and the new Security Council members are installed.</p>
 <p>The following timeline governs an election that starts at time T:</p>
-<ol>
-    <li>Nominee selection (T until T+7 days): Any DAO member may declare their candidacy for the Security Council; provided that a current Security Council member in one cohort may not be a candidate for a seat in the other cohort. To the extent that there are more than six candidates, each eligible candidate must be supported by pledged votes representing at least 0.2% of all Votable Tokens.</li>
-    <li>Compliance process (T+7 until T+21 days): All candidates will cooperate with the Arbitrum Foundation and complete the compliance process. The Arbitrum Foundation is responsible for removing any candidates that fail the compliance process. In the event that fewer than six candidates are supported by pledged votes representing at least 0.2% of all Votable Tokens, the current Security Council members whose seats are up for election may become candidates (as randomly selected out of their Cohort) until there are 6 candidates.</li>
-    <li>Member election (T+21 until T+42 days): Each DAO member or delegate may vote for any declared candidate. Each token may be cast for one candidate. Votes cast before T+14 days will have 100% weight. Votes cast between T+21 days and T+35 days will have weight based on the time of casting, decreasing linearly with time, with 100% weight at T+21 days, decreasing linearly to 0% weight at T+42 days.</li>
-    <li>At T+42 days: The process for replacing the cohort of security council members with the 6 candidates who received the most votes will be activated. The installation process must be executed via the on-chain governance smart contracts and it may take several days until the new security council members are installed.</li>
+<ol>  
+    <li>Contender submission (T until T+7 days): Any DAO member may declare their candidacy for the Security Council, provided that a current Security Council member in one cohort may not be a candidate for a seat in the other cohort.</li>
+    <li>Nominee selection (T+7 until T+14 days): Each DAO member or delegate may vote for their declared contender. Each token may be cast for one contender. To the extent that there are more than six contenders, each eligible contender must be supported by pledged votes representing at least 0.2% of all Votable Tokens.</li>
+    <li>Compliance process (T+14 until T+28 days): All candidates will cooperate with the Arbitrum Foundation and complete the compliance process. The Arbitrum Foundation is responsible for removing any candidates that fail the compliance process. In the event that fewer than six candidates are supported by pledged votes representing at least 0.2% of all Votable Tokens, the current Security Council members whose seats are up for election may become candidates (as randomly selected out of their Cohort) until there are 6 candidates.</li>
+    <li>Member election (T+28 until T+49 days): Each DAO member or delegate may vote for any declared candidate. Each token may be cast for one candidate. Votes cast before T+35 days will have 100% weight. Votes cast between T+35 days and T+49 days will have weight based on the time of casting, decreasing linearly with time, with 100% weight at T+35 days, decreasing linearly to 0% weight at T+49 days.</li>
+    <li>At T+49 days: The process for replacing the cohort of security council members with the 6 candidates who received the most votes will be activated. The installation process must be executed via the on-chain governance smart contracts and it may take several days until the new security council members are installed.</li>
 </ol>
 <p>The Arbitrum Foundation is allocated 14 days for the Compliance process and it should be executed between the Nominee selection and Member election. The Arbitrum Foundation has flexibility to update its compliance policy for every new election. This is required to allow The Arbitrum Foundation to comply with Cayman Island laws. Furthermore, The Arbitrum Foundation maintains the right to issue new procedures and guidelines for off-chain components of the Security Council election. All efforts should be made by The Arbitrum Foundation to ensure an orderly, fair, and transparent election.</p>
 <p>As a matter of best practice for maintaining an independent Security Council, no single organization should be overly represented in the Security Council. In particular, there should not be more than 3 candidates associated with a single entity or group of entities being elected to the Security Council, thereby ensuring that there will be no single entity or group of entities able to control or even veto a Security Council vote.</p>
@@ -116,7 +117,7 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
 <p>The DAO may approve and implement a Constitutional AIP to change the rules governing future Security Council elections, but the AIP process may not be used to intervene in an ongoing election.</p>
 <p>Security Council members may only be removed prior to the end of their terms under two conditions:</p>
 <ol>
-    <li>At least 10% of all Votable Tokens have casted votes &quot;in favor&quot; of removal and at least 5/6 (83.33%) of all casted votes are &quot;in favor&quot; of removal; or</li>
+    <li>At least 10% of all Votable Tokens have casted votes either &quot;in favor&quot; of removal or &quot;abstain&quot;, and at least 5/6 (83.33%) of all casted votes are &quot;in favor&quot; of removal; or</li>
     <li>At least 9 of the Security Council members vote in favor of removal.</li>
 </ol>
 <p>The seats of Security Council members who have been removed prior to the end of their respective terms shall remain unfilled until the next election that such seats are up for appointment, unless otherwise replaced prior to such next election by a vote of at least 9 of the Security Council members, in which case such seat shall be up for appointment at the next such election. The Security Council may not re-appoint a removed member and they can only be re-elected via the election voting system.</p>
