@@ -19,3 +19,4 @@ In this page you may find a collection of documents relating to The Arbitrum Fou
 #### Transparency Reports
  - [Initial Setup Transparency Report](./foundational-documents/transparency-report-initial-foundation-setup.md)
  - [2023 Transparency Report](../assets/ArbitrumFoundationTransparencyReport2023.pdf)
+ - [Captive Insurance Product](../assets//ArbitrumFoundationCaptiveInsuranceProduct.pdf)
