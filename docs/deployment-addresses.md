@@ -61,7 +61,7 @@ _\*Note: the Token Distributor contract was [self-destructed](https://arbiscan.i
 | Security Council (L1, 9 of 12)      | Ethereum | <AEL address = {"0xF06E95eF589D9c38af242a8AAee8375f14023F85"} chainID = {1} />     |
 | Security Council (Nova, 9 of 12)    | Nova     | <AEL address = {"0xc232ee726E3C51B86778BB4dBe61C52cC07A60F3"} chainID = {42170} /> |
 
-_Note: See ["Security Council Members"](./security-council-members) for addresses of the current members of the Security Council._
+_Note: See ["Security Council Members"](./security-council#current-security-council-members) for addresses of the current members of the Security Council._
 
 ### Security Council Elections
 

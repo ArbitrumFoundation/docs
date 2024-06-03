@@ -69,7 +69,7 @@ The Security Council is bound by [The Constitution of the Arbitrum DAO](./dao-co
 
 The Security Council can also trigger non-emergency upgrades, such as routine software upgrades and maintenance. These upgrades don't require a DAO vote to pass; they instead go through a delay period before taking effect, giving users time to opt out by withdrawing (as with decentralized DAO upgrades).
 
-To learn more about the Security Council, refer to the [Security Council](./concepts/security-council.md) concept doc. For a formal articulation of the Security Council's role within Arbitrum DAO's governance process, refer to [The Constitution of the Arbitrum DAO](./dao-constitution).
+To learn more about the Security Council, refer to the [Security Council](./security-council) concept doc. For a formal articulation of the Security Council's role within Arbitrum DAO's governance process, refer to [The Constitution of the Arbitrum DAO](./dao-constitution).
 
 
 ### The future of Arbitrum governance
