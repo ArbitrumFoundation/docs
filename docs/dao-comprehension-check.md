@@ -34,8 +34,8 @@ The Security Council shouldn't use its power to perform emergency actions except
 
 - The Arbitrum DAO is able to modify the Security Council's powers or to eliminate the Security Council entirely through the submission, approval and implementation of a <a data-quicklook-from='constitutional-aip'>Constitutional AIP</a>.
 - The Arbitrum DAO is able to curtail or eliminate the Security Council's power to perform emergency actions via approval and implementation of a Constitutional AIP.
-- The Security Council may also approve and implement routine software upgrades, routine maintenance and other parameter adjustments in a non-emergency setting (such actions are referred to as "non-emergency actions"), which require a 7-of-12 approval in order to take effect.
-- Equivalent "copies" of the Security Council multi-sig contracts (7-of-12, in the case of non-emergency actions, and 9-of-12, in the case of emergency actions) exist, one on Ethereum and another on each Arbitrum DAO-governed chain.
+- The Security Council may also approve and implement routine software upgrades, routine maintenance and other parameter adjustments in a non-emergency setting (such actions are referred to as "non-emergency actions"), which require a 9-of-12 approval in order to take effect.
+- Equivalent "copies" of the Security Council multi-sig contracts (non-emergency actions & emergency actions) exist, one on Ethereum and another on each Arbitrum DAO-governed chain.
 - Any non-emergency action, after approval by the Security Council, will bypass Phases 1 to 3 of the AIP process and instead directly go through Phases 4 to 7 of the AIP process, to provide a delay before any non-emergency action is deployed. The Security Council may optionally specify additional delays before deployment.
 
 
@@ -57,7 +57,7 @@ Note that the Security Council may also approve and implement routine software u
 
 #### What process should be followed to implement this change?
 
-The process for proposing and implementing changes to the Constitution is as described in the Constitution itself. It involves submitting the proposal as an AIP, and then going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority (see: [Constitution](dao-constitution.md)) of votable tokens being voted in favor of the change. Changes to the Constitution must also be ratified by the Security Council with a 7-of-12 approval in order to take effect.
+The process for proposing and implementing changes to the Constitution is as described in the Constitution itself. It involves submitting the proposal as an AIP, and then going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority (see: [Constitution](dao-constitution.md)) of votable tokens being voted in favor of the change. Changes to the Constitution must also be ratified by the Security Council with a 9-of-12 approval in order to take effect.
 
 
 ### Scenario 5: You want to become a member of the Security Council
@@ -70,7 +70,7 @@ The Security Council has 12 members, who are divided into two cohorts of 6 membe
 
 #### What process should be followed to execute this upgrade?
 
-The process for upgrading the Arbitrum One chain involves submitting a proposal as an AIP and going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority (see: [Constitution](dao-constitution.md)) of votable tokens being voted in favor of the change. The upgrade must also be approved by the Security Council with a 7-of-12 approval in order to take effect. The chain owner(s) will then perform the upgrade by updating the contract implementation of any of Arbitrum's core protocol [Transparent Upgradeable Proxy contracts](https://developer.arbitrum.io/useful-addresses), and adjusting system parameters (for example: through `setter` methods in the [ArbOwner precompile](https://github.com/OffchainLabs/nitro/blob/master/contracts/src/precompiles/ArbOwner.sol)).
+The process for upgrading the Arbitrum One chain involves submitting a proposal as an AIP and going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority (see: [Constitution](dao-constitution.md)) of votable tokens being voted in favor of the change. The upgrade must also be approved by the Security Council with a 9-of-12 approval in order to take effect. The chain owner(s) will then perform the upgrade by updating the contract implementation of any of Arbitrum's core protocol [Transparent Upgradeable Proxy contracts](https://developer.arbitrum.io/useful-addresses), and adjusting system parameters (for example: through `setter` methods in the [ArbOwner precompile](https://github.com/OffchainLabs/nitro/blob/master/contracts/src/precompiles/ArbOwner.sol)).
 
 It's important to note that the upgrade should be thoroughly tested and reviewed by the community and experts in the field before being proposed and implemented. Any upgrade should also be compliant with the applicable laws, in particular sanctions-related regulations.
 
@@ -108,7 +108,7 @@ While participating in governance is an important aspect of being a DAO member, 
 
 #### What's the process for proposing and implementing this change?
 
-The process for proposing and implementing changes to the distribution of unclaimed airdropped $ARB tokens involves submitting a proposal as an AIP and going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority of votable tokens being voted in favor of the change. Additionally, the change must also be approved by the Security Council with a 7-of-12 approval in order to take effect. The distribution of unclaimed airdropped $ARB tokens should be thoroughly evaluated and reviewed by the community and experts in the field before being proposed and implemented.
+The process for proposing and implementing changes to the distribution of unclaimed airdropped $ARB tokens involves submitting a proposal as an AIP and going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority of votable tokens being voted in favor of the change. Additionally, the change must also be approved by the Security Council with a 9-of-12 approval in order to take effect. The distribution of unclaimed airdropped $ARB tokens should be thoroughly evaluated and reviewed by the community and experts in the field before being proposed and implemented.
 
 
 ### Scenario 11: A governance proposal passes that you voted against.
