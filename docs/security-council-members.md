@@ -26,15 +26,15 @@ i. September Cohort
 
 ii. March Cohort
 
-1.  [Bartek Kiepuszewski](https://twitter.com/bkiepuszewski) has been a blockchain architect at MakerDAO since 2017. He also co-founded [l2beat.com](http://l2beat.com/) and TokenFlow Insights. Bartek holds a PhD in computer science from Queensland University of Technology.
-    - `0x0275b3d54a5ddbf8205a75984796efe8b7357bae`
-2.  [Zellic](https://twitter.com/zellic_io)  is a vulnerability research firm with deep expertise in blockchain security (having audited several leading protocols on Arbitrum); as well as a founding member of the [Security Alliance](https://twitter.com/_SEAL_Org), an industry effort to raise the bar for blockchain security. Organization represented by Stephen Tong.
-    - `0xa0683d725420e2F75415806352Cd9c3fE10Fa960`
-3.  [Yoav Weiss](https://twitter.com/yoavw) is a security researcher at the Ethereum Foundation and has been building in the Ethereum space since 2017, working on account abstraction (ERC-4337), OpenGSN, L2 security, etc. Yoav brings over 25 years of experience and has developed security technologies used by industry leading companies.
+1.  [Rachel Bousfield](https://github.com/rachel-bousfield) has been a software engineer at Offchain Labs since 2021. She is currently leading the development of Stylus.
+    - `0x5A1FD562271aAC2Dadb51BAAb7760b949D9D81dF`
+2.  [Justin Drake](https://www.linkedin.com/in/drakefjustin) has been a researcher at the Ethereum Foundation since 2017. He focuses on Ethereum consensus layer upgrades.
+    - `0x5280406912EB8Ec677Df66C326BE48f938DC2e44`
+3.  [Bartek Kiepuszewski](https://twitter.com/bkiepuszewski) has been a blockchain architect at MakerDAO since 2017. He also co-founded [l2beat.com](http://l2beat.com/) and TokenFlow Insights. Bartek holds a PhD in computer science from Queensland University of Technology.
+    - `0x0275b3D54a5dDbf8205A75984796eFE8b7357Bae`
+4.  [Patrick McNab](https://twitter.com/pat_mcnab) Is a Co-founder of Mycelium which has been developing and deploying decentralised financial infrastructure since 2018. Mycelium (previously Tracer DAO) were one of the first protocols deployed on Arbitrum in 2021 and support the Arbitrum ecosystem through running validators and Chainlink nodes.
+    - `0x566a07C3c932aE6AF74d77c29e5c30D8B1853710`
+5.  [Yoav Weiss](https://twitter.com/yoavw) is a security researcher at the Ethereum Foundation and has been building in the Ethereum space since 2017, working on account abstraction (ERC-4337), OpenGSN, L2 security, etc. Yoav brings over 25 years of experience and has developed security technologies used by industry leading companies.
     - `0x475816ca2a31D601B4e336f5c2418A67978aBf09`
-4.  [fred](https://twitter.com/0x66726564) is the former Tech Lead at both Offchain Labs and the Arbitrum Foundation and cares about the long-term success and security of the Arbitrum ecosystem. They have read the entire Arbitrum codebase multiple times, written significant parts of it, and has worked on countless engagements (i.e. audits) with security professionals across the industry.
-    - `0xee7Fb91D5b776C326a728dc70e917F82d6809E3C`
-5.  [Certora](https://twitter.com/CertoraInc) are experts in smart contract formal verification and have formally verified the EVM bytecode of a range of applications for whom security is paramount, Certora is motivated to contribute to developing safe digital and financial infrastructure built on Arbitrum. Organization represented by Derek Sorensen.
-    - `0xB3b60932E598fe946169EC209A197184Bad760B7`
-6.  [OpenZeppelin](https://twitter.com/OpenZeppelin)'s mission is to secure the decentralized web. By combining their vast experience across DAOs and protocols, comprehensive security solutions, and a community-first approach, OpenZeppelin is uniquely positioned to contribute significantly to Arbitrum's security and governance. Organization represented by Michael Lewellen.
-    - `0xe40D80Bd58CEE55DCC2598724d7F1e03E206581D`
+6.  [Patricio Worthalter](https://www.linkedin.com/in/worthalter/) has been working full time in the Ethereum space since 2015. In 2018 he founded POAP, a web3 native public good that mints digital collectibles for the preservation of memories.
+    - `0xf6B6F07862A02C85628B3A9688beae07fEA9C863`
