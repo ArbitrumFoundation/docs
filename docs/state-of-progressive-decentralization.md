@@ -56,8 +56,8 @@ This applies only to Arbitrum AnyTrust chains like Arbitrum Nova.
 :::
 
 - **Description**: AnyTrust chains like Arbitrum Nova rely on a permissioned committee to store the chain's data and provide it on demand.
-- **Current status**: 7-member committee. The Arbitrum Nova chain has a 7-party DAC, whose members can be seen [here](#data-availability-committee-members). Governance has the ability to remove or add members to the committee.
-- **Risks**: If 6 of the 7 committee members in conjunction with the Sequencer behave maliciously and collude, the safety of the system can be compromised.
+- **Current status**: 6-member committee. The Arbitrum Nova chain has a 6-party DAC, whose members can be seen [here](#data-availability-committee-members). Governance has the ability to remove or add members to the committee.
+- **Risks**: If 5 of the 6 committee members in conjunction with the Sequencer behave maliciously and collude, the safety of the system can be compromised.
 - **Changes to Current status**: The Arbitrum governance system (see #1) currently has the power to change the DAC, such as by adding or removing members or modifying the power it has over the system.
 
 ### Allowlisted validators
@@ -103,9 +103,8 @@ These are the current [allowlisted validators](#2-validator-ownership) for every
 
 ### Data Availability Committee members
 
-These are the current members of the 6-of-7 [data availability committee (DAC)](#4-data-availability-committee-dac-ownership) in Arbitrum Nova:
+These are the current members of the 5-of-6 [data availability committee (DAC)](#4-data-availability-committee-dac-ownership) in Arbitrum Nova:
 
-- Reddit, Inc.
 - ConsenSys Software Inc.
 - QuickNode, Inc.
 - P2P.org

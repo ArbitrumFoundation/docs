@@ -23,10 +23,11 @@ import { AddressExplorerLink as AEL } from '@site/src/components/AddressExplorer
 
 | Contract                         | Chain   | Address                                                                            |
 | -------------------------------- | ------- | ---------------------------------------------------------------------------------- |
-| Token Distributor*                | Arb One | <AEL address = {"0x67a24CE4321aB3aF51c2D0a4801c3E111D88C9d9"} chainID = {42161} /> |
+| Token Distributor\*              | Arb One | <AEL address = {"0x67a24CE4321aB3aF51c2D0a4801c3E111D88C9d9"} chainID = {42161} /> |
 | DAO Treasury                     | Arb One | <AEL address = {"0xF3FC178157fb3c87548bAA86F9d24BA38E649B58"} chainID = {42161} /> |
 | Foundation Vesting Budget Wallet | Arb One | <AEL address = {"0x15533b77981cDa0F85c4F9a485237DF4285D6844"} chainID = {42161} /> |
-_*Note: the Token Distributor contract was [self-destructed](https://arbiscan.io/tx/0xa2477f2f1d7824501520a88b50835ad283e7472e0fa5e67005452528bf740175) after the end of the aidrop claiming period._ 
+
+_\*Note: the Token Distributor contract was [self-destructed](https://arbiscan.io/tx/0xa2477f2f1d7824501520a88b50835ad283e7472e0fa5e67005452528bf740175) after the end of the aidrop claiming period._
 
 ### Token Bridging
 
@@ -40,16 +41,16 @@ _*Note: the Token Distributor contract was [self-destructed](https://arbiscan.io
 
 ### DAO Governance
 
-| Contract                 | Chain    | Address                                                                            |
-| ------------------------ | -------- | ---------------------------------------------------------------------------------- |
-| Core Governor            | Arb One  | <AEL address = {"0xf07DeD9dC292157749B6Fd268E37DF6EA38395B9"} chainID = {42161} /> |
-| Treasury Governor        | Arb One  | <AEL address = {"0x789fC99093B09aD01C34DC7251D0C89ce743e5a4"} chainID = {42161} /> |
-| Arb One Upgrade Executor | Arb One  | <AEL address = {"0xCF57572261c7c2BCF21ffD220ea7d1a27D40A827"} chainID = {42161} /> |
-| Nova Upgrade Executor    | Nova     | <AEL address = {"0x86a02dD71363c440b21F4c0E5B2Ad01Ffe1A7482"} chainID = {42170} /> |
-| L1 Upgrade Executor      | Ethereum | <AEL address = {"0x3ffFbAdAF827559da092217e474760E2b2c3CeDd"} chainID = {1} />     |
-| L2 Core Timelock         | Arb One  | <AEL address = {"0x34d45e99f7D8c45ed05B5cA72D54bbD1fb3F98f0"} chainID = {42161} /> |
-| L2 Treasury Timelock     | Arb One  | <AEL address = {"0xbFc1FECa8B09A5c5D3EFfE7429eBE24b9c09EF58"} chainID = {42161} /> |
-| L1 Timelock              | Ethereum | <AEL address = {"0xE6841D92B0C345144506576eC13ECf5103aC7f49"} chainID = {1} />     |
+| Contract                            | Chain    | Address                                                                            |
+| ----------------------------------- | -------- | ---------------------------------------------------------------------------------- |
+| Core Governor                       | Arb One  | <AEL address = {"0xf07DeD9dC292157749B6Fd268E37DF6EA38395B9"} chainID = {42161} /> |
+| Treasury Governor                   | Arb One  | <AEL address = {"0x789fC99093B09aD01C34DC7251D0C89ce743e5a4"} chainID = {42161} /> |
+| Arb One Upgrade Executor            | Arb One  | <AEL address = {"0xCF57572261c7c2BCF21ffD220ea7d1a27D40A827"} chainID = {42161} /> |
+| Nova Upgrade Executor               | Nova     | <AEL address = {"0x86a02dD71363c440b21F4c0E5B2Ad01Ffe1A7482"} chainID = {42170} /> |
+| L1 Upgrade Executor                 | Ethereum | <AEL address = {"0x3ffFbAdAF827559da092217e474760E2b2c3CeDd"} chainID = {1} />     |
+| L2 Core Timelock                    | Arb One  | <AEL address = {"0x34d45e99f7D8c45ed05B5cA72D54bbD1fb3F98f0"} chainID = {42161} /> |
+| L2 Treasury Timelock (ETH treasury) | Arb One  | <AEL address = {"0xbFc1FECa8B09A5c5D3EFfE7429eBE24b9c09EF58"} chainID = {42161} /> |
+| L1 Timelock                         | Ethereum | <AEL address = {"0xE6841D92B0C345144506576eC13ECf5103aC7f49"} chainID = {1} />     |
 
 ### Security Council
 
