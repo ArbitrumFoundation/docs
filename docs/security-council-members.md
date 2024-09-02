@@ -29,12 +29,12 @@ ii. March Cohort
 1.  [Bartek Kiepuszewski](https://twitter.com/bkiepuszewski) has been a blockchain architect at MakerDAO since 2017. He also co-founded [l2beat.com](http://l2beat.com/) and TokenFlow Insights. Bartek holds a PhD in computer science from Queensland University of Technology.
     - `0x0275b3d54a5ddbf8205a75984796efe8b7357bae`
 2.  [Zellic](https://twitter.com/zellic_io)  is a vulnerability research firm with deep expertise in blockchain security (having audited several leading protocols on Arbitrum); as well as a founding member of the [Security Alliance](https://twitter.com/_SEAL_Org), an industry effort to raise the bar for blockchain security. Organization represented by Stephen Tong.
-    - `0xa0683d725420e2F75415806352Cd9c3fE10Fa960`
+    - `0x5a09A94eE8198D3c474d723337aa58023810022C`
 3.  [Yoav Weiss](https://twitter.com/yoavw) is a security researcher at the Ethereum Foundation and has been building in the Ethereum space since 2017, working on account abstraction (ERC-4337), OpenGSN, L2 security, etc. Yoav brings over 25 years of experience and has developed security technologies used by industry leading companies.
     - `0x475816ca2a31D601B4e336f5c2418A67978aBf09`
 4.  [fred](https://twitter.com/0x66726564) is the former Tech Lead at both Offchain Labs and the Arbitrum Foundation and cares about the long-term success and security of the Arbitrum ecosystem. They have read the entire Arbitrum codebase multiple times, written significant parts of it, and has worked on countless engagements (i.e. audits) with security professionals across the industry.
-    - `0xee7Fb91D5b776C326a728dc70e917F82d6809E3C`
+    - `0x5DD2205C3aac13E592F0a3D85188c948D1781df1`
 5.  [Certora](https://twitter.com/CertoraInc) are experts in smart contract formal verification and have formally verified the EVM bytecode of a range of applications for whom security is paramount, Certora is motivated to contribute to developing safe digital and financial infrastructure built on Arbitrum. Organization represented by Derek Sorensen.
-    - `0xB3b60932E598fe946169EC209A197184Bad760B7`
-6.  [OpenZeppelin](https://twitter.com/OpenZeppelin)'s mission is to secure the decentralized web. By combining their vast experience across DAOs and protocols, comprehensive security solutions, and a community-first approach, OpenZeppelin is uniquely positioned to contribute significantly to Arbitrum's security and governance. Organization represented by Michael Lewellen.
-    - `0xe40D80Bd58CEE55DCC2598724d7F1e03E206581D`
+    - `0x70C006fC86A392c16D7E085cefc0Ad1FF7de6C75`
+6.  [OpenZeppelin](https://twitter.com/OpenZeppelin)'s mission is to secure the decentralized web. By combining their vast experience across DAOs and protocols, comprehensive security solutions, and a community-first approach, OpenZeppelin is uniquely positioned to contribute significantly to Arbitrum's security and governance. Organization represented by Omer Greisman. 
+    - `0xA821c8c245d1F3A257e3B0DEC99268cA05144422`
