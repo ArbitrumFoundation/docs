@@ -11,15 +11,13 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
-
 In this how-to, you'll learn how to submit an Arbitrum Improvement Proposal (AIP) to the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>. Familiarity with Arbitrum, DAOs, and Ethereum is expected. Otherwise, this how-to makes no assumptions about your experience with governance protocols.
 
 ### Prerequisites
 
-To submit a temperature check using a <a data-quicklook-from='snapshot-poll'>Snapshot poll</a>, you must have an Ethereum wallet address that represents at least 0.01% of votable tokens[^1]; to submit a proposal on-chain using [Tally](https://tally.xyz/gov/arbitrum), you must have an Ethereum wallet address that represents at least 1,000,000 tokens (about 0.1% of votable tokens). 
+To submit a temperature check using a <a data-quicklook-from='snapshot-poll'>Snapshot poll</a>, you must have an Ethereum wallet address with 500,000 votable tokens[^1]; to submit a proposal on-chain using [Tally](https://tally.xyz/gov/arbitrum), you must have an Ethereum wallet address that represents at least 1,000,000 votable tokens. 
 
 If you don't have enough voting power, consider delegating your votes to a delegate who can create a proposal on your behalf[^2].
-
 
 ### Proposal types
 
@@ -35,8 +33,6 @@ See [Constitution](../dao-constitution.md) for further details.
 import AnatomyAIPPartial from '@site/docs/partials/_anatomy-aip-partial.md'; 
 
 <AnatomyAIPPartial />
-
-
 
 ### Pre-proposal development
 
@@ -61,7 +57,7 @@ If your proposal passes the temperature check, then you can move to the second a
 
 ### Step 2: Submit your on-chain proposal using Tally
 
-If your wallet can represent at least 1,000,000 tokens (about 0.1% of votable $ARB tokens), you can create an on-chain proposal using [Tally](https://tally.xyz/gov/arbitrum). 
+If your wallet can represent at least 1,000,000 tokens, you can create an on-chain proposal using [Tally](https://tally.xyz/gov/arbitrum). 
 
 To submit your proposal on Tally:
 
@@ -98,6 +94,6 @@ Welcome to the future of governance!
  3. You can delegate your voting power[^2] to another address whether or not you have enough tokens to submit on-chain proposals. If you hold any $ARB tokens whatsoever, you can participate in Arbitrum DAO's governance.
 
 
-[^1]: When we say "an Ethereum wallet address that represents at least 0.01% of votable tokens", we mean that your address must be able to vote at least 0.01% of votable tokens. This voting power can be acquired by receiving delegated votes from other $ARB token holders who have decided to delegate their voting power to you or that you have delegated to yourself.
+[^1]: When we say "an Ethereum wallet address with at least 500,000 votable tokens", we mean that 500,000 or more tokens are delegated to this address. You can delegate the tokens to your own address and other $ARB token holders can delegate to you.
 [^2]: Learn how to delegate your votes by visiting [How to delegate your voting power](./select-delegate-voting-power).
 [^3]: Refer to [The Constitution of the Arbitrum DAO](../dao-constitution) for additional details and conditions.
