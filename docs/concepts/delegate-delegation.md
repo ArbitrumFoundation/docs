@@ -31,7 +31,7 @@ The Arbitrum DAO uses [Tally](https://tally.xyz/gov/arbitrum) to facilitate dele
 2. Select the "delegate" button.
 3. Search for the delegate you'd like to delegate your voting power to and confirm the delegation by following Tally's prompts.
 
-Note that through Tally, you can change or revoke your delegation at any time. You can also proportionally delegate your voting power to multiple delegates. For more detailed how-to guidance, see [How to delegate your voting power](../how-tos/select-delegate-voting-power).
+Note that through Tally, you can change or revoke your delegation at any time. If you wish to delegate to multiple delegates, then you will need an address per delegate. For more detailed how-to guidance, see [How to delegate your voting power](../how-tos/select-delegate-voting-power).
 
 ### Conclusion
 

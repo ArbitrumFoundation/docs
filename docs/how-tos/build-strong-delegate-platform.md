@@ -34,6 +34,10 @@ Transparency and accountability are crucial for building a strong delegate platf
 
 Building a strong support system is essential for success as a delegate. This can include building relationships with key members of the community and developing a team to assist you with research, analysis, and decision-making. A strong support system can help you stay informed, make better decisions, and build a more effective delegate platform.
 
+### Tip 6: Subit a delegate statement
+
+Submit a delegate statement using the template posted in the [delegate application template thread](https://forum.arbitrum.foundation/t/delegate-statement-template). Although delegate applications aren't required, the application template gives community members a standardized way to learn more about your qualifications and platform.
+
 ### Conclusion
 
 As a delegate, you play a vital role in the governance and decision-making process of the DAO; a strong platform can help you be more effective in that role. Remember to stay informed, be transparent and accountable, and build a strong support system. And always try to stay in touch with your voters so you can meet their needs. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/) or [Discord](https://www.discord.gg/arbitrum).
