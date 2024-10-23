@@ -11,32 +11,44 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
-Ethereum Mainnet is a Layer 1 (L1) chain; <a data-quicklook-from='arbitrum-one'>Arbitrum One</a> and <a data-quicklook-from='arbitrum-nova'>Arbitrum Nova</a> are Layer 2 (L2) chains; Orbit chain (L3) chains are those that settle onto L2s. 
+# Creating New Arbitrum Chains
+Rollup is the new server. 
 
-This document explains why the ability to create new L2/L3 chains is exciting, and how the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a> will be involved in the process of creating these new chains moving forward.
+In line with the rollup-centric roadmap of Ethereum, we anticipate the emergence of hundreds and thousands of rollups, dedicated to protecting users and their assets when interacting with an online service. 
 
-## Why multiple chains?
+The following section covers the basics on Arbitrum Orbit and the Arbitrum Expansion program, that enables projects to easily adopt the Arbitrum technology stack when deploying their own chain. 
 
-An Ethereum multi-chain ecosystem is vital for several reasons:
+## Arbitrum Orbit 
 
-1. **Scalability** - Multiple chains help overcome scaling bottlenecks by dividing activity into opt-in environments with separate resource management.
-2. **Security models** - Different chains can experiment with various security models, allowing for trade-offs. For example: Arbitrum One and Arbitrum Nova are both L2 chains, with Arbitrum Nova giving developers the ability to optimize for lower fees.
-3. **Execution environments** - Different chains can experiment with more-or-less restrictive execution environments that allow for trade-offs. For example, although Arbitrum chains are fully EVM compatible, app-specific chains may restrict smart contract functionality to optimize for performance.
+Arbitrum Orbit represents our strategy for enabling projects seeking to adopt the Arbitrum technology stack when deciding to deploy their own chain.
 
-### Terminology: L2s, L3s, and beyond
+There are many reasons why a project will decide to launch their chain using Arbitrum Orbit:
 
-In this document, "Layer 2 chain" refers to any Arbitrum chain settling directly onto Ethereum (chains with native bridge contracts on Ethereum <a data-quicklook-from='layer-1-l1'>Layer 1</a>), while "Layer 3 chain" refers to any Arbitrum chain that settles onto L2s. This definition can be extended into higher layers, e.g. "Layer 4 chain" refers to any chain that settles onto L3s.
+- **Dedicated blockspace.** Gain independence from chain usage by other applications.
+- **Custom gas token.** Choose which token is used for chain fees allowing you to create native economies and utility incentives.
+- **Low latency.** Orbit chains have demonstrated the ability to sustain ~100ms block times. 
+- **Data availability layer choices.** AnyTrust, Celestia, and more data availability solutions are already integrated into Arbiturm Orbit.
+- **No governance constraints.** Control your own destiny; no need to submit to shared governance.
+- **Stage 1 rollup.** External validation that the Arbitrum technology stack is amongst the best of all rollup implementations. 
 
-## New Arbitrum chains
+In fact, Arbitrum One and Arbitrum Nova, can be considered the first Orbit Chains, to demonstrate the capability of the technology. The proven track record of the technology has led to an explosion of projects adopting the technology stack. 
 
-### Layer 2 (L2) chains: Authorized by Arbitrum DAO
+To learn more, please visit the [Arbitrum Orbit website which includes developer documentation.](https://arbitrum.io/orbit)
 
-The Arbitrum DAO authorizes the creation of new L2 chains through the constitutional [governance proposal](./how-tos/create-submit-dao-proposal.md) mechanism. If a "new L2 chain" proposal passes, a new L2 chain is created. The DAO can authorize L2 chains that are governed by the Arbitrum DAO (these would be subject to [The Constitution of the Arbitrum DAO](./dao-constitution.md), like One and Nova), and those that are governed by other means.
 
-### Layer 3 (L3) chains: No authorization required
+## Arbitrum Expansion Program (AEP) 
+The Arbitrum Foundation, in consultation with the ArbitrumDAO [[1](https://forum.arbitrum.foundation/t/request-for-feedback-when-and-how-should-the-arbitrum-foundation-issue-a-licence-for-the-arbitrum-technology-stack-to-a-new-strategic-partner/15758),[2](https://forum.arbitrum.foundation/t/the-arbitrum-expansion-program-and-developer-guild/20722),[3](https://forum.arbitrum.foundation/t/temperature-check-change-arbitrum-expansion-program-to-allow-deployments-of-new-orbit-chains-on-any-blockchain/23280)], put together the Arbitrum Expansion Program to help enable projects to deploy and operate their own chain using the Arbitrum technology stack. 
 
-Creating new L3s on top of Arbitrum L2s doesn't require authorization or approval. L3s (and L4s, L5s, etc.) can be deployed permissionlessly. This includes L3 chains that run on a customized fork of the Arbitrum Nitro codebase, chains that introduce their own novel governance structures, and so on.
+The [Arbitrum Expansion Program](https://docs.arbitrum.foundation/aep/ArbitrumExpansionProgramTerms.pdf) is designed to be a self-service path for any project seeking to adopt the Arbitrum Technology stack. It allows the project to fork the code and modify it according to their business needs alongside to deploy on any blockchain network. In return, the project is required to pay 10% of their chain’s profit back to the ArbitrumDAO with 8% distributed to the ArbitrumDAO’s treasury and 2% to a Arbitrum Protocol Developer guild. 
 
-## Conclusion
+Our program is designed with the following spirit in mind:
 
-The architecture supporting Arbitrum's chains ensures that the community enjoys control over how the Arbitrum tech stack is used, while still leaving room to foster the open, permissionless innovation expected from a vibrant web3 ecosystem.
+- **Permissionless.** Any project can deploy a chain using the Arbitrum technology stack as long as they agree to opt-in to the Arbitrum Expansion Program. There is no need to contact the Arbitrum Foundation. 
+- **Deploy on any chain.** Projects are allowed to deploy an Orbit Chain on any blockchain network including Ethereum, Bitcoin, other L2s, etc. 
+- **Modify & fork.** Projects can modify the Arbitrum technology stack to suit their business needs.
+- **Value accrual.** Support the Arbitrum ecosystem by sending a portion of the chain’s revenue back to the ArbitrumDAO and the Arbitrum Developer guild.
+- **Community enablement.** Additional community-run features, alongside the software license, that will act as a supportive cornerstone for projects that adopt the Arbitrum technology stack.
+- **Freedom to innovate.** There is no limitation on how a chain governs itself such as a requirement to submit to shared governance or other similar constraining structures.
+
+Put another way, you are free to adopt the Arbitrum technology stack, deploy your chain, expand the Ethereum ecosystem, and ultimately serve your users. In regards to the fee collection, we will update our documentation will further information shortly. 
+
