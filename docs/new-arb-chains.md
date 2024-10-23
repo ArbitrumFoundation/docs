@@ -11,7 +11,6 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
-# Creating New Arbitrum Chains
 Rollup is the new server. 
 
 In line with the rollup-centric roadmap of Ethereum, we anticipate the emergence of hundreds and thousands of rollups, dedicated to protecting users and their assets when interacting with an online service. 
