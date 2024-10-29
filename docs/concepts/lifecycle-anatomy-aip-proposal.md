@@ -49,7 +49,7 @@ graph TD;
   B["<a href='#phase-1-temperature-check-optional-but-recommended' style='text-decoration:none;'><b>Phase 1: Temperature check</b></a><br/><span style='font-size:smaller'>(1 week)</span>"];
   B -->|"<span style='padding: 3px;'>Passes</span>"| C["<a href='#phase-2-formal-aip-and-call-for-voting' style='text-decoration:none;'><b>Phase 2: Formal AIP and call for voting</b></a><br/><span style='font-size:smaller'>(3 days)</span>"];
   C -->|"<span style='padding: 3px;'>Passes</span>"| D["<a href='#phase-3-on-chain-dao-vote' style='text-decoration:none;'><b>Phase 3: On-chain DAO vote</b></a><br/><span style='font-size:smaller'>(14 days, extendable by 2 days)</span>"];
-  D -->|"<span style='padding: 3px;'>Passes, Constitutional AIP</span>"| E["<a href='#phase-4-l2-waiting-period' style='text-decoration:none;'><b>Phase 4: L2 waiting period</b></a><br/><span style='font-size:smaller'>(3 days)</span>"];
+  D -->|"<span style='padding: 3px;'>Passes, Constitutional AIP</span>"| E["<a href='#phase-4-l2-waiting-period' style='text-decoration:none;'><b>Phase 4: L2 waiting period</b></a><br/><span style='font-size:smaller'>(8 days)</span>"];
   E --> F["<a href='#phase-5-l2-to-l1-message' style='text-decoration:none;'><b>Phase 5: L2-to-L1 message</b></a><br/><span style='font-size:smaller'>(~1 week)</span>"];
   F --> G["<a href='#phase-6-l1-waiting-period' style='text-decoration:none;'><b>Phase 6: L1 waiting period</b></a><br/><span style='font-size:smaller'>(3 days)</span>"];
   G --> H["<a href='#additional-waiting-periods-optional' style='text-decoration:none;'><b>Optional waiting period</b></a>"];
@@ -82,15 +82,13 @@ During this phase, members of the Arbitrum DAO can vote directly on-chain for (o
 
 The voting period for an AIP ends 14 days after it starts. However, if Threshold 2 is reached within the last 2 days of the voting period, the voting period is extended by 2 days. If the AIP fails to pass, the process ends after this Phase 3. If it does pass, Constitutional AIPs move on to Phases 4 through 7, while Non-Constitutional AIPs skip Phases 4 through 6 and go straight to Phase 7.
 
-#### Phase 4: L2 waiting period - 3 days in duration
+#### Phase 4: L2 waiting period - 8 days 
 
-After an AIP passes Phase 3 of the voting process, there is a 3-day waiting period known as Phase 4. During this time, people who do not agree with the AIP have the chance to withdraw their funds or take other action on L2. This period is meant to give everyone time to consider the decision and make any necessary adjustments to their investments or actions.
+After an AIP has passed Phase 3 of the voting process, there is a 8 day waiting period known as Phase 4. This waiting period is intended to give users, who object to the AIP, time to initiate withdrawal of their funds or take other action on L2. Once the 8-day waiting period is over, the AIP will move on to the next phase of the voting process, as long as no major issues arise. This waiting period is important because it ensures that everyone has an opportunity to voice their concerns and recalibrate their participation before the AIP is finalized.
 
-Once the 3-day waiting period is over, the AIP will move on to the next phase of the voting process, as long as no major issues arise. This waiting period is important because it ensures that everyone has an opportunity to voice their concerns and recalibrate their participation before the AIP is finalized.
+#### Phase 5: Initiate and Finalize an L2-to-L1 Message - typically ~6.4 days (at least 1 challenge period of the rollup protocol)
 
-#### Phase 5: L2-to-L1 message - typically 1 week in duration
-
-Once the 3-day waiting period of Phase 4 has passed and an AIP has been approved, Phase 5 of the voting process begins. In this phase, an [L2-to-L1 message](https://developer.arbitrum.io/arbos/l2-to-l1-messaging) is sent indicating that the AIP has passed. This message is sent to L1, which is the main Ethereum blockchain. Once the message is finalized on L1 (this takes at least 1 week), anyone can redeem it to complete this step and move on to the next step of the process. This ensures that the completion of the L2 waiting period will be recognized on L1 after any withdrawals initiated during or soon after the voting period have been recognized on L1. Note that this could take longer if there is an on-going challenge to a assertion made by an Arbitrum validator.
+Once the 8-day waiting period of Phase 4 has passed and an AIP has been approved, Phase 5 of the voting process begins. In this phase, an [L2-to-L1 message](https://developer.arbitrum.io/arbos/l2-to-l1-messaging) is sent indicating that the AIP has passed. This message is sent to L1, which is the main Ethereum blockchain. Once the message is finalized on L1 (this takes at least 1 week), anyone can redeem it to complete this step and move on to the next step of the process. This ensures that the completion of the L2 waiting period will be recognized on L1 after any withdrawals initiated during or soon after the voting period have been recognized on L1. Note that this could take longer if there is an on-going challenge to a assertion made by an Arbitrum validator.
 
 This phase is important because it connects the Arbitrum blockchain, which is a Layer 2 (or L2) blockchain, to the main Ethereum blockchain, which is the L1 chain. This connection gives DAO members a guarantee that the DAO's decision (and its members' votes) is immutably recorded. This is an important step in the process of decentralized decision-making because it ensures that everyone can trust-but-verify the outcome of the voting process.
 
