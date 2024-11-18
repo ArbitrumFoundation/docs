@@ -160,7 +160,7 @@ The client software implements a protocol that stores transaction history within
 <p>One of two types of <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> <a href="/dao-glossary#governance-proposal">Governance proposal</a>s (the other being <a href="/dao-glossary#constitutional-aip">Constitutional AIP</a>). Non-constitutional AIPs are those that don't meet the criteria to be considered "constitutional".</p>
 
 ### Non-emergency action {#nonemergency-action}
-<p>Routine actions taken by the <a href="/dao-glossary#security-council">Security Council</a>, such as software upgrades and maintenance. Emergency actions are activated only after a delay, as opposed to <a href="/dao-glossary#emergency-action">Emergency action</a>.</p>
+<p>Routine actions taken by the <a href="/dao-glossary#security-council">Security Council</a>, such as software upgrades and maintenance. Non-emergency actions are activated only after a delay, as opposed to <a href="/dao-glossary#emergency-action">Emergency action</a>.</p>
 
 ### Off-chain governance {#offchain-governance}
 <p>As opposed to on-chain governance or <a href="/dao-glossary#smart-contract">Smart contract</a> governance. Off-chain governance is carried out through social consensus, and off-chain proposals. The Ethereum Foundation's EIP mechanism is an example of an off-chain governance protocol.</p>
