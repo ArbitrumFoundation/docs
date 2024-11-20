@@ -49,7 +49,7 @@ graph TD;
   B["<a href='#phase-1-temperature-check-optional-but-recommended' style='text-decoration:none;'><b>Phase 1: Temperature check</b></a><br/><span style='font-size:smaller'>(1 week)</span>"];
   B -->|"<span style='padding: 3px;'>Passes</span>"| C["<a href='#phase-2-formal-aip-and-call-for-voting' style='text-decoration:none;'><b>Phase 2: Formal AIP and call for voting</b></a><br/><span style='font-size:smaller'>(3 days)</span>"];
   C -->|"<span style='padding: 3px;'>Passes</span>"| D["<a href='#phase-3-on-chain-dao-vote' style='text-decoration:none;'><b>Phase 3: On-chain DAO vote</b></a><br/><span style='font-size:smaller'>(14 days, extendable by 2 days)</span>"];
-  D -->|"<span style='padding: 3px;'>Passes, Constitutional AIP</span>"| E["<a href='#phase-4-l2-waiting-period' style='text-decoration:none;'><b>Phase 4: L2 waiting period</b></a><br/><span style='font-size:smaller'>(8 days)</span>"];
+  D -->|"<span style='padding: 3px;'>Passes, Constitutional AIP</span>"| E["<a href='#phase-4-l2-waiting-period' style='text-decoration:none;'><b>Phase 4: L2 waiting period</b></a><br/><span style='font-size:smaller'>(3 days)</span>"];
   E --> F["<a href='#phase-5-l2-to-l1-message' style='text-decoration:none;'><b>Phase 5: L2-to-L1 message</b></a><br/><span style='font-size:smaller'>(~1 week)</span>"];
   F --> G["<a href='#phase-6-l1-waiting-period' style='text-decoration:none;'><b>Phase 6: L1 waiting period</b></a><br/><span style='font-size:smaller'>(3 days)</span>"];
   G --> H["<a href='#additional-waiting-periods-optional' style='text-decoration:none;'><b>Optional waiting period</b></a>"];
@@ -82,9 +82,11 @@ During this phase, members of the Arbitrum DAO can vote directly on-chain for (o
 
 The voting period for an AIP ends 14 days after it starts. However, if Threshold 2 is reached within the last 2 days of the voting period, the voting period is extended by 2 days. If the AIP fails to pass, the process ends after this Phase 3. If it does pass, Constitutional AIPs move on to Phases 4 through 7, while Non-Constitutional AIPs skip Phases 4 through 6 and go straight to Phase 7.
 
-#### Phase 4: L2 Waiting Period (3 days for Non-constitutional or 8 days for Constitutional): 
+#### Phase 4: L2 waiting period - 3 days in duration
 
-After an AIP has passed Phase 3, there is a 3 day waiting period for spending from the treasury and an 8 day waiting period for upgrades to the smart contracts. During this time, people who do not agree with the AIP have the chance to withdraw their funds or take other action on L2. This period is meant to give everyone time to consider the decision and make any necessary adjustments to their investments or actions.
+After an AIP passes Phase 3 of the voting process, there is a 3-day waiting period known as Phase 4. During this time, people who do not agree with the AIP have the chance to withdraw their funds or take other action on L2. This period is meant to give everyone time to consider the decision and make any necessary adjustments to their investments or actions.
+
+Once the 3-day waiting period is over, the AIP will move on to the next phase of the voting process, as long as no major issues arise. This waiting period is important because it ensures that everyone has an opportunity to voice their concerns and recalibrate their participation before the AIP is finalized.
 
 #### Phase 5: L2-to-L1 message - typically 1 week in duration
 
