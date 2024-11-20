@@ -127,7 +127,7 @@
 
 <p></p>
 
-<p> <a href="/dao-glossary#nonemergency-action">Non-emergency action</a>s are routine actions taken by the Security Council, such as software upgrades and maintenance. They require signatures from 7 of 12 Security Council members. They take effect after a delay of at least 13 days, ensuring users can withdraw their funds prior to execution.</p>
+<p> <a href="/dao-glossary#nonemergency-action">Non-emergency action</a>s are routine actions taken by the Security Council, such as software upgrades and maintenance. They require signatures from 9 of 12 Security Council members. They take effect after a delay of at least 13 days, ensuring users can withdraw their funds prior to execution.</p>
 
 <p>Information about non-emergency actions is to be provided by the Security Council prior to the action being submitted on chain.</p>
 
