@@ -11,18 +11,18 @@ The following are the current members of the Security Council; for information a
 
 i. September Cohort
 
-1.  [0xhombre](https://twitter.com/0xhombre)
-    - `0xb71ca4ffbb7b58d75ba29891ab45e9dc12b444ed`
-2.  [Matt Fiebach](https://twitter.com/MattFiebach)
-    - `0x3bd8e2ac65ad6f0f094ba6766cbd9484ab49ef23`
-3.  [Harry Kalodner](https://www.linkedin.com/in/hkalodner/) is Co-Founder and CTO at Offchain Labs. Harry started working on building Arbitrum while studying at Princeton University.
-    - `0xf8e1492255d9428c2Fc20A98A1DeB1215C8ffEfd`
-4.  [Patrick McCorry](https://twitter.com/stonecoldpat0) has spent most of his adult life working on cryptocurrencies and his time was split across academic research and industry. Before working at the Arbitrum Foundation, he has worked on transaction delivery, layer-2 protocols, atomic swaps, consensus protocols, and applied cryptography. In a past life, he was an Assistant Professor at King’s College London and an accomplished researcher at UCL, UIUC and NCL.
-    - `0x8f10e3413586c4a8dcfce19d009872b19e9cd8e3`
-5.  [John Morrow](https://twitter.com/jmo_mx)
-    - `0x3e286452b1c66abb08eb5494c3894f40ab5a59af`
-6.  [Omer](https://twitter.com/omeragoldberg)
-    - `0xb07dc9103328a51128bc6cc1049d1137035f5e28`
+1.  [gzeon](https://x.com/gzeon) is an experienced smart-contract developer at OffchainLabs.
+    - `0xe2e9d5B97d8C0457B1cf80BC93802bce4DF03e33`
+2.  [John Morrow](https://x.com/jmo_mx) worked in DeFi for the past 5 years, published peer-reviewed research on DeFi risks and is co-founder at Gauntlet.
+    - `0x3E286452b1C66abB08Eb5494c3894F40aB5a59AF`
+3.  [Emiliano Bonassi](https://x.com/emilianobonassi) is the Rollup Product Lead at Conduit RaaS.
+    - `0x33ddb82e68940f0e4C1050885BcE8faF5Ddd1b93`
+4.  [Immunefi](https://x.com/immunefi) is a bug-bounty platform.
+    - `0x1716C1C037e4968D5A06d4d080904F9B7a6508f2`
+5.  [Dennison Bertram](https://x.com/DennisonBertram) is the CEO of Tally, a governance service provider and an early team member at OpenZeppelin, a smart contract security firm.
+    - `0xeA4A4A886aCA47DD0167B4aEE5B1345e18D20Ee5`
+6.  [Griff Green](https://x.com/thegrifft) is the founder of Giveth and a member of the White Hat Group that responded to the TheDAO hack.
+    - `0x882c6FCb3D358b9d70B97c6999159cea64168B6F`
 
 ii. March Cohort
 
@@ -36,5 +36,5 @@ ii. March Cohort
     - `0x5DD2205C3aac13E592F0a3D85188c948D1781df1`
 5.  [Certora](https://twitter.com/CertoraInc) are experts in smart contract formal verification and have formally verified the EVM bytecode of a range of applications for whom security is paramount, Certora is motivated to contribute to developing safe digital and financial infrastructure built on Arbitrum. Organization represented by Derek Sorensen.
     - `0x70C006fC86A392c16D7E085cefc0Ad1FF7de6C75`
-6.  [OpenZeppelin](https://twitter.com/OpenZeppelin)'s mission is to secure the decentralized web. By combining their vast experience across DAOs and protocols, comprehensive security solutions, and a community-first approach, OpenZeppelin is uniquely positioned to contribute significantly to Arbitrum's security and governance. Organization represented by Omer Greisman. 
-    - `0xA821c8c245d1F3A257e3B0DEC99268cA05144422`
+6.  [OpenZeppelin](https://twitter.com/OpenZeppelin)'s mission is to secure the decentralized web. By combining their vast experience across DAOs and protocols, comprehensive security solutions, and a community-first approach, OpenZeppelin is uniquely positioned to contribute significantly to Arbitrum's security and governance. Organization represented by Steven Thornton. 
+    - `0x9316ca66f5f936E3239e4fD2AAAEA5C7b6f3C4cC`
