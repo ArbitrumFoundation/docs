@@ -14,13 +14,13 @@ i. September Cohort
 1.  [gzeon](https://x.com/gzeon) is an experienced smart-contract developer at OffchainLabs.
     - `0xe2e9d5B97d8C0457B1cf80BC93802bce4DF03e33`
 2.  [John Morrow](https://x.com/jmo_mx) worked in DeFi for the past 5 years, published peer-reviewed research on DeFi risks and is co-founder at Gauntlet.
-    - `0x3E286452b1C66abB08Eb5494c3894F40aB5a59AF`
+    - `0x78bb97d2f3811256d7f0041e81aaf4b426ef3b67`
 3.  [Emiliano Bonassi](https://x.com/emilianobonassi) is the Rollup Product Lead at Conduit RaaS.
     - `0x33ddb82e68940f0e4C1050885BcE8faF5Ddd1b93`
 4.  [Immunefi](https://x.com/immunefi) is a bug-bounty platform.
-    - `0x1716C1C037e4968D5A06d4d080904F9B7a6508f2`
+    - `0x9A301de96b15Db3aB778E2969Bf6cAa909cA56E8`
 5.  [Dennison Bertram](https://x.com/DennisonBertram) is the CEO of Tally, a governance service provider and an early team member at OpenZeppelin, a smart contract security firm.
-    - `0xeA4A4A886aCA47DD0167B4aEE5B1345e18D20Ee5`
+    - `0x59c8535419bbcb8adffdb3c835435e907e3b183b`
 6.  [Griff Green](https://x.com/thegrifft) is the founder of Giveth and a member of the White Hat Group that responded to the TheDAO hack.
     - `0x882c6FCb3D358b9d70B97c6999159cea64168B6F`
 
@@ -35,6 +35,6 @@ ii. March Cohort
 4.  [fred](https://twitter.com/0x66726564) is the former Tech Lead at both Offchain Labs and the Arbitrum Foundation and cares about the long-term success and security of the Arbitrum ecosystem. They have read the entire Arbitrum codebase multiple times, written significant parts of it, and has worked on countless engagements (i.e. audits) with security professionals across the industry.
     - `0x5DD2205C3aac13E592F0a3D85188c948D1781df1`
 5.  [Certora](https://twitter.com/CertoraInc) are experts in smart contract formal verification and have formally verified the EVM bytecode of a range of applications for whom security is paramount, Certora is motivated to contribute to developing safe digital and financial infrastructure built on Arbitrum. Organization represented by Derek Sorensen.
-    - `0x70C006fC86A392c16D7E085cefc0Ad1FF7de6C75`
+    - `0x444EDf8B90763bE7015F1F099a0dA0ef10250c71`
 6.  [OpenZeppelin](https://twitter.com/OpenZeppelin)'s mission is to secure the decentralized web. By combining their vast experience across DAOs and protocols, comprehensive security solutions, and a community-first approach, OpenZeppelin is uniquely positioned to contribute significantly to Arbitrum's security and governance. Organization represented by Steven Thornton. 
     - `0x9316ca66f5f936E3239e4fD2AAAEA5C7b6f3C4cC`
