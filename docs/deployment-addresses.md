@@ -17,7 +17,7 @@ import { AddressExplorerLink as AEL } from '@site/src/components/AddressExplorer
 | $ARB Token           | Arb One    | <AEL address = {"0x912CE59144191C1204E64559FE8253a0e49E6548"} chainID= {42161} />  |
 | $ARB Token (bridged) | Ethereum   | <AEL address = {"0xB50721BCf8d664c30412Cfbc6cf7a15145234ad1"} chainID = {1} />     |
 | $ARB Token (bridged) | Nova       | <AEL address = {"0xf823C3cD3CeBE0a1fA952ba88Dc9EEf8e0Bf46AD"} chainID= {42170} />  |
-| $ARB Token (testnet) | Arb Sepolia| <AEL address = {"0xF861378B543525ae0C47d33C90C954Dc774Ac1F9"} chainID= {421614} /> |
+| $ARB Token (testnet) | Arb Sepolia| <AEL address = {"0xc275B23C035a9d4EC8867b47f55427E0bDCe14cB"} chainID= {421614} /> |
 
 ### Token Distribution
 
