@@ -37,7 +37,7 @@ _\*Note: the Token Distributor contract was [self-destructed](https://arbiscan.i
 | $ARB Gateway (L1)         | Ethereum   | <AEL address = {"0xbbcE8aA77782F13D4202a230d978F361B011dB27"} chainID = {1} />      |
 | $ARB Gateway (Nova)       | Nova       | <AEL address = {"0xbf544970E6BD77b21C6492C281AB60d0770451F4"} chainID = {42170} />  |
 | $ARB Gateway (L2 testnet) | Arb Sepolia| <AEL address = {"0x6e244cD02BBB8a6dbd7F626f05B2ef82151Ab502"} chainID = {421614} /> |
-| $ARB Gateway (L1 testnet) | Sepolia    | <AEL address = {"0x98431ddc27633f7315aa2c153233529bb241445a"} chainID = {11155111} />      |
+| $ARB Gateway (L1 testnet) | Sepolia    | <AEL address = {"0x98431DDc27633f7315Aa2c153233529bb241445a"} chainID = {11155111} />      |
 
 ### DAO Governance
 
