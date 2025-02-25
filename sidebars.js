@@ -42,6 +42,25 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Arbitrum BoLD economics guides',
+      collapsed: true,
+      items: [
+        {
+          type: 'doc',
+          id: 'arbitrum-bold-economics/bold-reimbursing-service-fees',
+        },
+        {
+          type: 'doc',
+          id: 'arbitrum-bold-economics/bold-reimbursing-gas-costs',
+        },
+        {
+          type: 'doc',
+          id: 'arbitrum-bold-economics/bold-reimbursing-challenge-bonds',
+        },
+      ]
+    },
+    {
+      type: 'category',
       label: 'How-to guides',
       collapsed: false,
       items: [
