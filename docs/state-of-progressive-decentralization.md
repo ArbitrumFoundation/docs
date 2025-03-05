@@ -94,12 +94,12 @@ These are the current [allowlisted validators](#2-validator-ownership) for every
 - <AEL address={"0xE27d4Ed355e5273A3D4855c8e11BC4a8d3e39b87"} chainID={1} />
 - <AEL address={"0xB51EDdfc9A945e2B909905e4F242C4796Ac0C61d"} chainID={1} />
 
-#### Arbitrum Goerli (testnet)
+#### Arbitrum Sepolia (testnet)
 
-- <AEL address={"0x3EABe7e5e3fcDdFB8fb8c5972EB151bF4fddf2ce"} chainID={5} />
-- <AEL address={"0x9549263185294a7FB24bf357b0050252d3653C74"} chainID={5} />
-- <AEL address={"0xAa01D5570E932a13eF9a06677eaf97d56a33393f"} chainID={5} />
-- <AEL address={"0xe08339b8Da134f1e39876b7523586c4D2a4173d8"} chainID={5} />
+- <AEL address={"0x8a8f0a24d7e58a76FC8F77bb68C7c902b91e182e"} chainID={11155111} />
+- <AEL address={"0x87630025E63A30eCf9Ca9d580d9D95922Fea6aF0"} chainID={11155111} />
+- <AEL address={"0xC32B93e581db6EBc50C08ce381143A259B92f1ED"} chainID={11155111} />
+- <AEL address={"0x88888Aa374dBDe60d26433E275aD700B65872063"} chainID={11155111} />
 
 ### Data Availability Committee members
 
