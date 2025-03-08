@@ -4,6 +4,10 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+// for LaTeX support
+const math = require('remark-math');
+const katex = require('rehype-katex');
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Arbitrum DAO - Governance docs',
@@ -44,6 +48,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/ArbitrumFoundation/docs/edit/main/',
+          remarkPlugins : [math],
+          rehypePlugins : [katex],
         },
         blog: false,
         theme: {
@@ -110,6 +116,17 @@ const config = {
       //   isCloseable: false,
       // },
     }),
+    
+    // also needed for math stuff.
+    // see https://docusaurus.io/docs/2.x/markdown-features/math-equations
+    stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
+  ],
   scripts: [
     // Fathom Analytics
     {
