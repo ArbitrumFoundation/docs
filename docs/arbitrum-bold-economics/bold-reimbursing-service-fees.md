@@ -30,16 +30,16 @@ We deal in notional “time units” $u$ here, which are likely in practice to b
 How service fees get calculated:
 
 - Take a time range $[t_{initial}, t_{final})$. This corresponds to the period of time we are going to consider; we will pay out only service fees accrued during this time.
-    - $t_{final}$ must be some time in the past from the current time $t_{current}$. This is so that we can know “once and for all” which assertions were honest (from BoLD’s viewpoint) and which were not. How far in the past? The worst case is where the last assertion proposed before $t_{final}$ resulted in a challenge, which could take up to $2 * p$ to resolve ($p$ being a challenge period).
-    - We might be able to get away with less that $2*p$ if we are doing this offchain, since an offchain user can determine which assertions are honest before BoLD knows. These calculated honest assertions could then be used in the DAO proposal. However, we would still require at least that the assertions up to $t_{final}$ have gained finality on the parent chain before $t_{current}$.
+    - $t_{final}$ must be some time in the past from the current time $t_{current}$. This is so that we can know “once and for all” which assertions were honest (from BoLD’s viewpoint) and which were not. How far in the past? The worst case is where the last assertion proposed before $t_{final}$ resulted in a challenge, which could take up to $2 \cdot p$ to resolve ($p$ being a challenge period).
+    - We might be able to get away with less that $2 \cdot p$ if we are doing this offchain, since an offchain user can determine which assertions are honest before BoLD knows. These calculated honest assertions could then be used in the DAO proposal. However, we would still require at least that the assertions up to $t_{final}$ have gained finality on the parent chain before $t_{current}$.
 - Make a list $L$ of all honest assertions that were proposed between $t_{initial}$ and $t_{final}$. For each such honest assertion $A$, collect the following information:
     - $T(A)$, the time between the creation of $A$ and its honest successor assertion (measured in units $u$)
     - $Addr(A)$, the address of the bonder who bonded on $A$
 - For each $A$ in $L$:
     - For generality, let $B$ be the bond amount, and let $R$ be the APY used to determine the service fee.
-    - Compute the payment amount $M = T(A) * \frac{1}{\theta} * B * R$
+    - Compute the payment amount $M = T(A) \cdot \frac{1}{\theta} \cdot B \cdot R$
         - Example: the parameters described above, using hours as our time unit $u$ (so $\theta = \frac{8760\ \text{hour}}{\text{year}}$, ignoring leap years) this would be:
-        - $M = \frac{T(A) * 3600\text{ETH} * \frac{.05}{year}}{8760 \frac{\text{hour}}{\text{year}}} = .002055 \text{ETH} * T(A) * \frac{1}{\text{hour}}$ (remember that we defined $T(A)$ so that it includes its unit ($\text{hour}$))
+        - $M = \frac{T(A) \cdot 3600\text{ETH} \cdot \frac{.05}{year}}{8760 \frac{\text{hour}}{\text{year}}} = .002055 \text{ETH} \cdot T(A) \cdot \frac{1}{\text{hour}}$ (remember that we defined $T(A)$ so that it includes its unit ($\text{hour}$))
     - Pay $M(A)$ to $Addr(A)$
 
 Of course, care must be taken to ensure that this procedure is not called on overlapping time ranges. This would result in paying out the service fees twice for any honest assertion falling into the overlap.
@@ -48,7 +48,7 @@ Of course, care must be taken to ensure that this procedure is not called on ove
 
 It’s natural to ask how much this mechanism is going to cost the Arbitrum DAO. First, we imagine that the common case might be that the Arbitrum Foundation's proposer is usually the one who proposes blocks. In this case, there is only one proposer (assuming the Arbitrum Foundation is honest and there are no challengers). This is actually one reason we don’t want to make the service fees for proposing blocks too high: we don’t want unnecessary competition between honest proposers trying to make a profit by earning service fees. In this “happy case” (with only Arbitrum Foundation proposing), no service fees need to be paid out.
 
-On the other hand, it could (in the worst case) happen that the Arbitrum Foundation proposer never gets a chance to propose. In this case, other honest parties would be earning 3% APY on their bonds 100% of the time. So, over a year, we would have to pay out 3% * 3600 = 108 `ETH`.
+On the other hand, it could (in the worst case) happen that the Arbitrum Foundation proposer never gets a chance to propose. In this case, other honest parties would be earning 3% APY on their bonds 100% of the time. So, over a year, we would have to pay out 3% \cdot 3600 = 108 `ETH`.
 
 This example is truly the worst case: we are *guaranteed never to have to pay more than the staking rate that the parent chain Ethereum validators get paid for the same period*. 
 
