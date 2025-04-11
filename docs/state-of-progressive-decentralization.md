@@ -39,8 +39,8 @@ Let's evaluate the current status of these components for both Arbitrum One and 
 
 | Chain                  | Decentralization&nbsp;Status | Description                                                                                                                                                                                                                                     |
 |------------------------|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Arbitrum&nbsp;One**  | **Permissionless**           | Validation on Arbitrum One now follows the BoLD protocol, any node implementing the BoLD protocol can join. You can learn more about BoLD in this [introduction to BoLD](https://docs.arbitrum.io/how-arbitrum-works/bold/gentle-introduction). |
-| **Arbitrum&nbsp;Nova** | **Permissioned**             | Arbitrum Nova remains permissioned as its Data Availability committee is a trusted one.                                                                                                                                                        |
+| **Arbitrum&nbsp;One**  | **Permissionless**           | Validation on Arbitrum One now follows the BoLD protocol, any node implementing the BoLD protocol can join. You can learn more about BoLD in this [introduction to BoLD](https://docs.arbitrum.io/how-arbitrum-works/bold/gentle-introduction) |
+| **Arbitrum&nbsp;Nova** | **Permissioned**             | Arbitrum Nova remains permissioned as its Data Availability committee is a trusted one                                                                                                                                                         |
 
 - **Risks**: If there is not a single honest active validator, and a malicious validator proposes an invalid state update, the system's safety could be compromised.
 
