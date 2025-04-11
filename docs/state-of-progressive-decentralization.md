@@ -18,7 +18,7 @@ import DraftExpectationsPartial from '@site/docs/partials/\_draft-expectations-p
 The following components determine the degree of decentralization for Arbitrum One and Arbitrum Nova:
 
 1. [**Chain ownership**](#1-chain-ownership)
-2. [**Validator ownership**](#2-validator-ownership)
+2. [**Validation decentralization status**](#2-validation-decentralization-status)
 3. [**Sequencer ownership**](#3-sequencer-ownership)
 4. [**Data Availability Committee ownership**](#4-data-availability-committee-ownership)
 
@@ -27,17 +27,40 @@ Let's evaluate the current status of these components for both Arbitrum One and 
 ### 1. Chain ownership
 
 - **Description**: A chain's "owner" has the ability to change the protocol in various ways, including upgrading the core smart contracts, setting system parameters, and pausing the system.
-- **Current status**: **Governed by Arbitrum DAO**. Chain ownership of both Arbitrum One and Arbitrum Nova is under the control of the Arbitrum governance system. The Arbitrum Decentralized Autonomous Organization (DAO), made up of <a data-quicklook-from='arb'>$ARB</a> token-holders and <a data-quicklook-from='delegate'>delegates</a>, can carry out chain-owner operations through governance votes. The <a data-quicklook-from='security-council'>Security Council </a> can also carry out chain-owner operations; it can act quickly through a 9 of 12 <a data-quicklook-from='multisignature-wallet'>multisig wallet</a>, but only in critical emergency situations. The Security Council can also act slowly through a 9 of 12 multisig wallet in non-emergency situations to carry out routine and minor upgrades, such as minor bug fixes. The members of the Security Council (split by cohort) are <a data-quicklook-from='security-council-election'>elected</a> every six months by the Arbitrum DAO.
+- **Current status**: **Governed by Arbitrum DAO**. Chain ownership of both Arbitrum One and Arbitrum Nova is under the control of the Arbitrum governance system. The Arbitrum Decentralized Autonomous Organization (DAO), made up of <a data-quicklook-from='arb'>`$ARB`</a> token-holders and <a data-quicklook-from='delegate'>delegates</a>, can carry out chain-owner operations through governance votes. The <a data-quicklook-from='security-council'>Security Council </a> can also carry out chain-owner operations; it can act quickly through a 9 of 12 <a data-quicklook-from='multisignature-wallet'>multisig wallet</a>, but only in critical emergency situations. The Security Council can also act slowly through a 9 of 12 multisig wallet in non-emergency situations to carry out routine and minor upgrades, such as minor bug fixes. The members of the Security Council (split by cohort) are <a data-quicklook-from='security-council-election'>elected</a> every six months by the Arbitrum DAO.
 - **Risks**:
   - If 9 of the Security Council members are compromised or behave maliciously, the system and users' funds could be compromised.
   - If a malicious proposal is successfully put through DAO governance, or if 9 of the Security Council members are compromised or behave maliciously, the system's safety could be compromised. In either of these cases, users will have several weeks to withdraw their funds back to Ethereum before the proposal takes effect.
 - **Changes To Current Status**: The governance system currently has the ability to alter governance itself.
 
-### 2. Validator ownership
+### 2. Validation decentralization status
 
 - **Description**: Validators are responsible for confirming the valid state of the <a data-quicklook-from='arbitrum-chain'>Arbitrum chains</a> back on L1.
-- **Current status**: **Permissionless** Validation on both Arbitrum One and Arbitrum Nova now follows the BoLD protocol. You can learn more about BoLD in this [introduction to BoLD](https://docs.arbitrum.io/how-arbitrum-works/bold/gentle-introduction) .
+
+| Chain                  | Decentralization&nbsp;Status | Description                                                                                                                                                                                                                                     |
+|------------------------|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Arbitrum&nbsp;One**  | **Permissionless**           | Validation on Arbitrum One now follows the BoLD protocol, any node implementing the BoLD protocol can join. You can learn more about BoLD in this [introduction to BoLD](https://docs.arbitrum.io/how-arbitrum-works/bold/gentle-introduction). |
+| **Arbitrum&nbsp;Nova** | **Permissioned**             | Arbitrum Nova remains permissioned as its Data Availability committee is a trusted one.                                                                                                                                                        |
+
 - **Risks**: If there is not a single honest active validator, and a malicious validator proposes an invalid state update, the system's safety could be compromised.
+
+### Allowlisted validators
+
+import { AddressExplorerLink as AEL } from '@site/src/components/AddressExplorerLink'
+
+These are the current [allowlisted validators](#2-validator-ownership) for Arbitrum One:
+
+#### Arbitrum Nova
+
+- <AEL address={"0x1732BE6738117e9d22A84181AF68C8d09Cd4FF23"} chainID={1} />
+- <AEL address={"0x24Ca61c31C7f9Af3ab104dB6B9A444F28e9071e3"} chainID={1} />
+- <AEL address={"0x3B0369CAD35d257793F51c28213a4Cf4001397AC"} chainID={1} />
+- <AEL address={"0x54c0D3d6C101580dB3be8763A2aE2c6bb9dc840c"} chainID={1} />
+- <AEL address={"0x57004b440Cc4eb2FEd8c4d1865FaC907F9150C76"} chainID={1} />
+- <AEL address={"0x658e8123722462F888b6fa01a7dbcEFe1D6DD709"} chainID={1} />
+- <AEL address={"0xDfB23DFE9De7dcC974467195C8B7D5cd21C9d7cB"} chainID={1} />
+- <AEL address={"0xE27d4Ed355e5273A3D4855c8e11BC4a8d3e39b87"} chainID={1} />
+- <AEL address={"0xB51EDdfc9A945e2B909905e4F242C4796Ac0C61d"} chainID={1} />
 
 ### 3. Sequencer ownership
 
