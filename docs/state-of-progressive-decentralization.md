@@ -44,24 +44,6 @@ Let's evaluate the current status of these components for both Arbitrum One and 
 
 - **Risks**: If there is not a single honest active validator, and a malicious validator proposes an invalid state update, the system's safety could be compromised.
 
-### Allowlisted validators
-
-import { AddressExplorerLink as AEL } from '@site/src/components/AddressExplorerLink'
-
-These are the current [allowlisted validators](#2-validator-ownership) for Arbitrum One:
-
-#### Arbitrum Nova
-
-- <AEL address={"0x1732BE6738117e9d22A84181AF68C8d09Cd4FF23"} chainID={1} />
-- <AEL address={"0x24Ca61c31C7f9Af3ab104dB6B9A444F28e9071e3"} chainID={1} />
-- <AEL address={"0x3B0369CAD35d257793F51c28213a4Cf4001397AC"} chainID={1} />
-- <AEL address={"0x54c0D3d6C101580dB3be8763A2aE2c6bb9dc840c"} chainID={1} />
-- <AEL address={"0x57004b440Cc4eb2FEd8c4d1865FaC907F9150C76"} chainID={1} />
-- <AEL address={"0x658e8123722462F888b6fa01a7dbcEFe1D6DD709"} chainID={1} />
-- <AEL address={"0xDfB23DFE9De7dcC974467195C8B7D5cd21C9d7cB"} chainID={1} />
-- <AEL address={"0xE27d4Ed355e5273A3D4855c8e11BC4a8d3e39b87"} chainID={1} />
-- <AEL address={"0xB51EDdfc9A945e2B909905e4F242C4796Ac0C61d"} chainID={1} />
-
 ### 3. Sequencer ownership
 
 - **Description**: The Sequencer is typically responsible for collecting and ordering users' transactions.
