@@ -34,7 +34,7 @@ ii. March Cohort
     - `0x475816ca2a31D601B4e336f5c2418A67978aBf09`
 4.  [fred](https://twitter.com/0x66726564) is the former Tech Lead at both Offchain Labs and the Arbitrum Foundation and cares about the long-term success and security of the Arbitrum ecosystem. They have read the entire Arbitrum codebase multiple times, written significant parts of it, and has worked on countless engagements (i.e. audits) with security professionals across the industry.
     - `0xD8D4cEC103c0B6d7166405F0EbD7087C75a1528E`
-5.  [Certora](https://twitter.com/CertoraInc) are experts in smart contract formal verification and have formally verified the EVM bytecode of a range of applications for whom security is paramount, Certora is motivated to contribute to developing safe digital and financial infrastructure built on Arbitrum. Organization represented by Elad Erdheim).
+5.  [Certora](https://twitter.com/CertoraInc) are experts in smart contract formal verification and have formally verified the EVM bytecode of a range of applications for whom security is paramount, Certora is motivated to contribute to developing safe digital and financial infrastructure built on Arbitrum. Organization represented by Elad Erdheim.
     - `0xeEe3Fb3B792C7DDbB6aEF0C440FBC621f4d6fe2D`
 6.  [OpenZeppelin](https://twitter.com/OpenZeppelin)'s mission is to secure the decentralized web. By combining their vast experience across DAOs and protocols, comprehensive security solutions, and a community-first approach, OpenZeppelin is uniquely positioned to contribute significantly to Arbitrum's security and governance. Organization represented by Steven Thornton. 
     - `0x9316ca66f5f936E3239e4fD2AAAEA5C7b6f3C4cC`
