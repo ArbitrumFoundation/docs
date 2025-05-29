@@ -28,13 +28,13 @@ ii. March Cohort
 
 1.  [Bartek Kiepuszewski](https://twitter.com/bkiepuszewski) has been a blockchain architect at MakerDAO since 2017. He also co-founded [l2beat.com](http://l2beat.com/) and TokenFlow Insights. Bartek holds a PhD in computer science from Queensland University of Technology.
     - `0x0275b3d54a5ddbf8205a75984796efe8b7357bae`
-2.  [Zellic](https://twitter.com/zellic_io)  is a vulnerability research firm with deep expertise in blockchain security (having audited several leading protocols on Arbitrum); as well as a founding member of the [Security Alliance](https://twitter.com/_SEAL_Org), an industry effort to raise the bar for blockchain security. Organization represented by Stephen Tong.
-    - `0x5a09A94eE8198D3c474d723337aa58023810022C`
+2.  [Michael Lewellen](https://x.com/LewellenMichael) has security expertise in smart contracts, governance and incident response, and is currently the Head of Solutions Engineering at Blockaid. They co-authored the Security Council Best Practices guide and managed high-profile audits during his time at OpenZeppelin, and continues to develop Web3 security standards.
+    - `0xBBD2E01eFB88ce00F8f5b6B9a696966070089392`
 3.  [Yoav Weiss](https://twitter.com/yoavw) is a security researcher at the Ethereum Foundation and has been building in the Ethereum space since 2017, working on account abstraction (ERC-4337), OpenGSN, L2 security, etc. Yoav brings over 25 years of experience and has developed security technologies used by industry leading companies.
     - `0x475816ca2a31D601B4e336f5c2418A67978aBf09`
 4.  [fred](https://twitter.com/0x66726564) is the former Tech Lead at both Offchain Labs and the Arbitrum Foundation and cares about the long-term success and security of the Arbitrum ecosystem. They have read the entire Arbitrum codebase multiple times, written significant parts of it, and has worked on countless engagements (i.e. audits) with security professionals across the industry.
-    - `0x5DD2205C3aac13E592F0a3D85188c948D1781df1`
-5.  [Certora](https://twitter.com/CertoraInc) are experts in smart contract formal verification and have formally verified the EVM bytecode of a range of applications for whom security is paramount, Certora is motivated to contribute to developing safe digital and financial infrastructure built on Arbitrum. Organization represented by Derek Sorensen.
-    - `0x444EDf8B90763bE7015F1F099a0dA0ef10250c71`
+    - `0xD8D4cEC103c0B6d7166405F0EbD7087C75a1528E`
+5.  [Certora](https://twitter.com/CertoraInc) are experts in smart contract formal verification and have formally verified the EVM bytecode of a range of applications for whom security is paramount, Certora is motivated to contribute to developing safe digital and financial infrastructure built on Arbitrum. Organization represented by Elad Erdheim).
+    - `0xeEe3Fb3B792C7DDbB6aEF0C440FBC621f4d6fe2D`
 6.  [OpenZeppelin](https://twitter.com/OpenZeppelin)'s mission is to secure the decentralized web. By combining their vast experience across DAOs and protocols, comprehensive security solutions, and a community-first approach, OpenZeppelin is uniquely positioned to contribute significantly to Arbitrum's security and governance. Organization represented by Steven Thornton. 
     - `0x9316ca66f5f936E3239e4fD2AAAEA5C7b6f3C4cC`
