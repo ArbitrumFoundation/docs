@@ -22,6 +22,7 @@ The first unlock starts on 16 March 2024, and continue to unlock on a monthly ca
 The Arbitrum Foundation tokens also unlock over a 4 year period, starting from 17 April 2023.
 The first unlock starts on 17 April 2023, and continue to unlock every second.
 
+The current circulating supply is also available as a [JSON file](../assets/circulating-supply.json) and is updated periodically with the latest best estimate.
 
 ### What is the current circulating supply
 
