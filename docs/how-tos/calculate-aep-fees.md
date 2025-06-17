@@ -1,10 +1,11 @@
 ---
-id: calculate-aep-fees
-title: How to calculate AEP fees
-sidebar_label: Calculate AEP fees
-description: Learn how to calculate your Arbitrum chains revenue and license fees.
-dao_author: petevielhaber
-dao_sme: Midroni
+title: 'Calculating AEP license fees'
+sidebar_label: 'Calculating AEP license fees'
+description: 'Learn how to calculate your Arbitrum chains revenue and license fees.'
+author: Midroni
+sme: Midroni
+user_story: As a current Arbitrum chain owner, I need to understand how my Arbitrum chain revenue and AEP license fees are calculated.
+content_type: how-to
 ---
 
 This document will help you calculate your Arbitrum chain’s _Protocol Net Revenue_ and AEP license fees.
@@ -17,19 +18,19 @@ In a vanilla Arbitrum chain (a chain without customizations, transaction orderin
 
 - `l2BaseFee`: fees paid to execute a transaction on the Arbitrum chain (Orbit).
 - `l2SurplusFee`: surplus fees are charged in addition to the base fee when an Arbitrum chain (Orbit) is congested.
-- `l1BaseFee`: fees paid to cover the cost of an Arbitrum chain (Orbit) posting its settlement transaction to the parent chain.
 - `l1SurplusFee`: an additional surplus fee that can be configured to award extra fees to the batch poster.
 
-Based on the above, we interpret that an Arbitrum chain’s revenue sources include all fee components: `l2BaseFee`, `l2SurplusFee`, `l1BaseFee`, and `l1SurplusFee`. However, one of these fee components is also a cost, `l1BaseFee`, as it is used to pay for parent chain settlement.
-From here on, we will refer to the three onchain components (security, execution, protocol) since AEP excludes the L1 Base Fee.
+Based on the above, we interpret that an Arbitrum chain’s revenue sources include all fee components: `l2BaseFee`, `l2SurplusFee`, and `l1SurplusFee`.
+
+From here on, we will refer to the three onchain components (security, execution, protocol).
 
 ### Additional revenue sources
 
 As the Arbitrum chain (Orbit) license allows chain owners to customize their Rollup, the AEP license accounts for revenue sources that could arise out of innovations. As such, it’s worth noting that the total calculation of revenue will also include:
 
-- Revenue from transaction ordering policies.
-- Revenue earned through fees on top of the bridge.
-- Broadly, any revenue earned in connection with your use of Arbitrum Nitro.
+- Revenue from transaction ordering policies
+- Revenue earned through fees on top of the bridge's
+- Broadly, any revenue earned in connection with your use of Arbitrum Nitro
 
 You can read the relevant legal terminology in Section 2 of the [AEP Terms](https://docs.arbitrum.foundation/aep/ArbitrumExpansionProgramTerms.pdf).
 
@@ -37,23 +38,17 @@ You can read the relevant legal terminology in Section 2 of the [AEP Terms](http
 
 We are now in a place where we can precisely define AEP fees. An Arbitrum chain’s obligation for AEP license is 10% of a chain’s **Net Protocol Revenue**. Net Protocol Revenue is broadly the difference between (i) gross revenue and (ii) settlement costs.
 
-:::info
-
-As of June 6th, Assertion Costs have been removed from the AEP formula calculation.
-
-:::
-
 Based on our understanding above, we can calculate AEP fees as follows.
 
 ```jsx
 AEP_FEES = [(gross revenue) - (settlement costs)]*0.1
 AEP_FEES = [(sequencing revenue + additional revenue) - (settlement costs)]*0.1
-AEP_FEES = [(l2BaseFee + l2SurplusFee + l1BaseFee + l1SurplusFee) - (l1BaseFee)]*0.1
+AEP_FEES = [(l2BaseFee + l2SurplusFee + l1SurplusFee)]*0.1
 ```
 
 :::info
 
-If you're looking to configure the AEP fee router, refer to the document [here](https://docs.arbitrum.io/launch-arbitrum-chain/configure-your-chain/advanced-configurations/aep-fee-router/set-up-aep-fee-router).
+As of June 6th, Assertion Costs have been removed from the AEP formula calculation.
 
 :::
 
