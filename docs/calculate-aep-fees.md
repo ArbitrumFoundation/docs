@@ -9,7 +9,7 @@ dao_sme: stonecoldpat
 
 # Fee Calculation for Arbitrum Expansion Program
 
-All blockchains, including Arbitrum Chains, allow users to create a transaction, pay a fee, and perform some execution on the network. 
+All blockchains, including Arbitrum Chains, enable users to create transactions, pay fees, and perform executions on the network. 
 
 ## Fees in Arbitrum Chains
 In Arbitrum, the chain collects all fees paid by users and each fee paid is split up to cover different costs associated with the chain. This split includes: 
