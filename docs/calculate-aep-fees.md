@@ -25,7 +25,7 @@ Note that all transaction fees on Arbitrum Chains are deterministic, based on th
 
 The Arbitrum Expansion Program requires an Arbitrum Chain to return 10% of a chain's **Net Protocol Revenue** back to the Arbitrum ecosystem including the ArbitrumDAO and the Arbitrum Protocol Guild. 
 
-Net Protocol Revenue is broadly the difference between (i) gross revenue and (ii) settlement costs, or put another way, the remaining fees after the covering the cost to settle transactions on the Arbitrum chain:
+The Net Protocol Revenue is broadly the difference between (i) gross revenue and (ii) settlement costs, or put another way, the remaining fees after covering the cost to settle transactions on the Arbitrum chain:
 
 ```python
 AEP_FEES = [(gross revenue) - (settlement costs)]*0.1
