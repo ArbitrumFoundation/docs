@@ -12,7 +12,7 @@ dao_sme: stonecoldpat
 All blockchains, including Arbitrum Chains, enable users to create transactions, pay fees, and perform executions on the network. 
 
 ## Fees in Arbitrum Chains
-In Arbitrum, the chain collects all fees paid by users and each fee paid is split up to cover different costs associated with the chain. This split includes: 
+In Arbitrum, the chain collects all fees paid by users, and each fee paid is split up to cover different costs associated with the chain. This split includes: 
 
 - ``L1BaseFee``: Fees collected to cover the cost to settle the rollup's transactions on the parent chain (i.e., blob data). 
 - ``L1SurplusFee``: Surplus funds after covering the cost to settle transactions on the parent chain. 
