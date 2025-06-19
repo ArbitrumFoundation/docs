@@ -45,7 +45,7 @@ AEP_FEES = [(l2BaseFee + l2SurplusFee + l1BaseFee + l1SurplusFee) - (l1BaseFee)]
 
 The motivation is that the `L1BaseFee` represents the only on-chain liability for the Arbitrum chain, as it covers the cost of publishing data blobs on the parent chain. 
 
-All other costs including ```L2BaseFee```, ```L2SurplusFee```, and ```L1SurplusFee``` represents the net revenue for the chain and the AEP aims to capture 10% of the fees collected. 
+All other costs, including `L2BaseFee`, `L2SurplusFee`, and `L1SurplusFee`, represent the net revenue for the chain. The AEP aims to capture 10% of the fees collected. 
 
 ## Additional Revenue Sources
 
