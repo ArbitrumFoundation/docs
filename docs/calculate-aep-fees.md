@@ -31,7 +31,7 @@ The Net Protocol Revenue is broadly the difference between (i) gross revenue and
 AEP_FEES = [(gross revenue) - (settlement costs)]*0.1
 ```
 
-As mentioned earlier, we need to split up the costs for consuming L2 gas to execute transactions on the Arbitrum Chain ('chain fees') and the settlement costs for data blobs published on the parent chain ('settlement fees'):
+As mentioned earlier, we need to split up the costs for consuming L2 gas to execute transactions on the Arbitrum Chain ("chain fees") and the settlement costs for data blobs published on the parent chain ("settlement fees"):
 
 ```python
 AEP_FEES = [(sequencing revenue + additional revenue) - (settlement costs)]*0.1
