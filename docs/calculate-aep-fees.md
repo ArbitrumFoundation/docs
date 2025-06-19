@@ -51,6 +51,6 @@ All other costs, including `L2BaseFee`, `L2SurplusFee`, and `L1SurplusFee`, repr
 
 The Arbitrum Expansion Program allows projects to customize their Arbitrum chains to suit their business needs. 
 
-These changes may allow projects to generate other sources of revenue. For example, extracting value via transaction ordering policies, collecting fees when users deposit onto the Chain, and other methods that are not necessarily captured by transaction fees on the network. 
+These changes may allow projects to generate other sources of revenue. For example, extracting value via transaction ordering policies, collecting fees when users deposit onto the chain, and other methods that are not necessarily captured by transaction fees on the network. 
 
 The AEP is sufficiently broad to take into account other revenue sources as they arise in the Arbitrum Chain. If your project is seeking non-traditional methods for capturing revenue, then please speak with the Arbitrum Foundation to ensure it is captured appropriate by the Arbitrum Expansion Program.
