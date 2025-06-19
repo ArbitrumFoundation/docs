@@ -19,7 +19,7 @@ In Arbitrum, the chain collects all fees paid by users, and each fee paid is spl
 - `L2BaseFee`: Fees collected to cover the cost of executing transactions based on the L2 gas consumed. 
 - `L2SurplusFee`: Surplus fees collected when an Arbitrum chain is congested. 
 
-Note, all transactions fees on Arbitrum Chains are deterministic, based on its initial configuration, activity on the chain, and congestion of the parent chain. The Sequencer cannot tweak or impact the fees in real-time. 
+Note that all transaction fees on Arbitrum Chains are deterministic, based on their initial configuration, activity on the chain, and congestion of the parent chain. The Sequencer cannot tweak or impact the fees in real-time. 
 
 ## Calculating Arbitrum Expansion Program fees
 
