@@ -49,7 +49,7 @@ All other costs, including `L2BaseFee`, `L2SurplusFee`, and `L1SurplusFee`, repr
 
 ## Additional Revenue Sources
 
-The Arbitrum Expansion Program allows projects to customize their Arbitrum Chain to suit their business needs. 
+The Arbitrum Expansion Program allows projects to customize their Arbitrum chains to suit their business needs. 
 
 These changes may allow projects to generate other sources of revenue. For example, extracting value via transaction ordering policies, collecting fees when users deposit onto the Chain, and other methods that are not necessarily captured by transaction fees on the network. 
 
