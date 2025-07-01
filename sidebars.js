@@ -38,6 +38,10 @@ module.exports = {
     },
     {
       type: 'doc',
+      id: 'calculate-aep-fees',
+    },
+    {
+      type: 'doc',
       id: 'network-upgrades',
     },
     {
