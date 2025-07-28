@@ -75,7 +75,7 @@ A proposal passes if two conditions are met:
 
   1. More votes are cast in favor than against
   2. The total number of votes cast in favor is at least the following percentage of the votable tokens:
-     1. **5%**, for a <a data-quicklook-from="constitutional-aip">Constitutional AIP</a>
+     1. **4.5%**, for a <a data-quicklook-from="constitutional-aip">Constitutional AIP</a>
      2. **3%**, for a <a data-quicklook-from="nonconstitutional-aip">non-Constitutional AIP</a>
 
 If the proposal passes, congratulations! After a delay, the proposal’s actions will be executed on-chain[^3].
