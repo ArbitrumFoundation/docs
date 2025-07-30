@@ -190,7 +190,7 @@ The client software implements a protocol that stores transaction history within
 <p>A consensus-layer client that powers Ethereum <a href="/dao-glossary#layer-1-l1">Layer 1 (L1)</a>. Originally created by Prysmatic Labs; acquired by Offchain Labs in 2022.</p>
 
 ### Quorum {#quorum}
-<p>Minimum votes required for a <a href="/dao-glossary#governance-proposal">Governance proposal</a> to pass. For each governor's proposals, the quorum is a percentage of the non-excluded votes at the time that voting on the proposal begins (5% for the <a href="/dao-glossary#core-governor">Core Governor</a> and 3% for the <a href="/dao-glossary#treasury-governor">Treasury Governor</a>.</p>
+<p>Minimum votes required for a <a href="/dao-glossary#governance-proposal">Governance proposal</a> to pass. For each governor's proposals, the quorum is a percentage of the non-excluded votes at the time that voting on the proposal begins (4.5% for the <a href="/dao-glossary#core-governor">Core Governor</a> and 3% for the <a href="/dao-glossary#treasury-governor">Treasury Governor</a>.</p>
 
 ### Security Council {#security-council}
 <p>A 12-member council of entities who hold the private keys to a 12-member <a href="/dao-glossary#multisignature-wallet">Multisignature wallet</a>. Members of the council use this wallet to perform <a href="/dao-glossary#emergency-action">Emergency action</a>s and <a href="/dao-glossary#nonemergency-action">Non-emergency action</a>s.</p>
