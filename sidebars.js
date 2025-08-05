@@ -91,6 +91,10 @@ module.exports = {
         {
           type: 'doc',
           id: 'how-tos/vote-dao-proposals',
+        },
+        {
+          type: 'doc',
+          id: 'how-tos/calculate-aep-fees',
         }
       ],
     },
