@@ -66,7 +66,7 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
             <li>
                In the case of a:
                <ul>
-                     <li>Constitutional AIP, at least 5% of all Votable Tokens have casted votes either &quot;in favor&quot; or &quot;abstain&quot;; or</li>
+                     <li>Constitutional AIP, at least 4.5% of all Votable Tokens have casted votes either &quot;in favor&quot; or &quot;abstain&quot;; or</li>
                      <li>Non-Constitutional AIP, at least 3% of all Votable Tokens have casted votes either &quot;in favor&quot; or &quot;abstain&quot; (collectively, &quot;<strong>Threshold 2</strong>&quot;).</li>
                </ul>
             </li>
