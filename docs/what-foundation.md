@@ -1,7 +1,7 @@
 ---
 id: what-foundation
-title: What is The Arbitrum Foundation?
-sidebar_label: What is The Arbitrum Foundation?
+title: The Arbitrum Foundation
+sidebar_label: The Arbitrum Foundation
 description: Learn about The Arbitrum Foundation is and what it is responsible for within the ecosystem
 dao_author: fred
 dao_sme: wat-dis

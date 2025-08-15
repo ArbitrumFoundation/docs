@@ -11,10 +11,20 @@ module.exports = {
     {
       type: 'doc',
       id: 'why-governance',
-    },
+    },    
     {
-      type: 'doc',
-      id: 'what-foundation',
+      type: 'category',
+      label: 'Arbitrum Aligned Entities',
+      items: [
+        {
+          type: 'doc',
+          id: 'what-foundation',
+        },
+        {
+          type: 'doc',
+          id: 'what-opco',
+        },
+      ],
     },
     {
       type: 'doc',
