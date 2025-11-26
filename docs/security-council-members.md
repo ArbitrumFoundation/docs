@@ -15,7 +15,7 @@ i. September Cohort
     - `0xe2e9d5B97d8C0457B1cf80BC93802bce4DF03e33`
 2.  [Gauntlet](https://x.com/gauntlet_xyz) is a DeFi quantitative research firm, represented by Ryan Wegner (Head of Security). Gauntlet specializes in data-driven treasury and risk management, mechanism design, vulnerability analysis, proactive threat identification, and incident response. Gauntlet also serves on the Security Councils for Scroll and Polygon.
     - `0xf8d47784EE7F3eBD40Bd83CB822e3161742B1988`
-3.  [Emiliano Bonassi](https://x.com/emilianobonassi) is the Rollup Product Lead at Conduit RaaS.
+3.  [Emiliano Bonassi](https://x.com/emilianobonassi) is the Rollup Engineering Lead at Conduit. Emiliano has identified and responded to multiple security emergencies, and developed open-source security tools. Emiliano also serves on the Optimism Security Council, the Sherlock Protocol Claims Committee, and is a founding member of Seal911.
     - `0x33ddb82e68940f0e4C1050885BcE8faF5Ddd1b93`
 4.  [Immunefi](https://x.com/immunefi) is a blockchain security firm and Web3 bug bounty platform, represented by Alejandro Munoz-McDonald (Senior Security Researcher). Immunefi has run more than 500 bug bounty programs—including an Arbitrum bug bounty program since August 2021—and has prevented over $25B in potential hacks across more than 300 projects.
     - `0x0cd9e52891A0a48d45b0C61A31086be8361Ef157`
