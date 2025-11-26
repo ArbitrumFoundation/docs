@@ -11,17 +11,17 @@ The following are the current members of the Security Council; for information a
 
 i. September Cohort
 
-1.  [gzeon](https://x.com/gzeon) is an experienced smart-contract developer at OffchainLabs.
+1.  [gzeon](https://x.com/gzeon) is a smart contract engineer at Offchain Labs and a leaderboard warden and judge at Code4rena. gzeon has developed and maintained major components of the Arbitrum smart contract codebase and has contributed to resolving critical blockchain security incidents.
     - `0xe2e9d5B97d8C0457B1cf80BC93802bce4DF03e33`
-2.  [John Morrow](https://x.com/jmo_mx) worked in DeFi for the past 5 years, published peer-reviewed research on DeFi risks and is co-founder at Gauntlet.
-    - `0x78bb97d2f3811256d7f0041e81aaf4b426ef3b67`
+2.  [Gauntlet](https://x.com/gauntlet_xyz) is a DeFi quantitative research firm, represented by Ryan Wegner (Head of Security). Gauntlet specializes in data-driven treasury and risk management, mechanism design, vulnerability analysis, proactive threat identification, and incident response. Gauntlet also serves on the Security Councils for Scroll and Polygon.
+    - `0xf8d47784EE7F3eBD40Bd83CB822e3161742B1988`
 3.  [Emiliano Bonassi](https://x.com/emilianobonassi) is the Rollup Product Lead at Conduit RaaS.
     - `0x33ddb82e68940f0e4C1050885BcE8faF5Ddd1b93`
-4.  [Immunefi](https://x.com/immunefi) is a bug-bounty platform.
-    - `0x9A301de96b15Db3aB778E2969Bf6cAa909cA56E8`
-5.  [Dennison Bertram](https://x.com/DennisonBertram) is the CEO of Tally, a governance service provider and an early team member at OpenZeppelin, a smart contract security firm.
-    - `0x59c8535419bbcb8adffdb3c835435e907e3b183b`
-6.  [Griff Green](https://x.com/thegrifft) is the founder of Giveth and a member of the White Hat Group that responded to the TheDAO hack.
+4.  [Immunefi](https://x.com/immunefi) is a blockchain security firm and Web3 bug bounty platform, represented by Alejandro Munoz-McDonald (Senior Security Researcher). Immunefi has run more than 500 bug bounty programs—including an Arbitrum bug bounty program since August 2021—and has prevented over $25B in potential hacks across more than 300 projects.
+    - `0x0cd9e52891A0a48d45b0C61A31086be8361Ef157`
+5.  [zachxbt](https://x.com/zachxbt) is an independent researcher, a Paradigm incident response advisor, and a member of the Polygon Protocol Council. zachxbt has recovered more than $250M for victims of cybercrime through investigations and on-chain forensics across smart contract exploits.
+    - `0x875573B973F7E9Ca54eb34a59180C70eE1128208`
+6.  [Griff Green](https://x.com/thegrifft) is the founder of Giveth, the White Hat Group, and several other Ethereum public goods platforms. Griff has extensive experience in blockchain crisis response, including helping remediate The DAO and Parity multisig incidents. Griff also serves on the ENS Security Council and the Gnosis Bridge multisig.
     - `0x882c6FCb3D358b9d70B97c6999159cea64168B6F`
 
 ii. March Cohort
