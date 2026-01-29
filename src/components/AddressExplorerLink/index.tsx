@@ -9,7 +9,7 @@ const chainIDToExplorerUrlRoot: {
   1: 'https://etherscan.io/address',
   11155111: 'https://sepolia.etherscan.io/address',
   42161: 'https://arbiscan.io/address',
-  42170: 'https://nova.arbiscan.io/address',
+  42170: 'https://arbitrum-nova.blockscout.com/address',
   421614: 'https://sepolia.arbiscan.io/address',
 };
 
