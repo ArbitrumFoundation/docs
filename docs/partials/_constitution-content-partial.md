@@ -7,11 +7,11 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
 <ul>
     <li><strong>AIP</strong>: An Arbitrum Improvement Proposal</li>
     <li><strong>ArbitrumDAO-governed chains</strong>: The Arbitrum One and Arbitrum Nova chains and any additional chains authorized by the ArbitrumDAO</li>
-    <li><strong>DAO Treasury</strong>: All $ARB tokens held in a governance smart contract governed directly by the ArbitrumDAO and/or the Security Council of The Arbitrum Foundation via on-chain voting mechanisms.</li>
+    <li><strong>DAO Treasury</strong>: All $ARB tokens held in a governance smart contract governed directly by the ArbitrumDAO and/or the Security Council of The Arbitrum Foundation via on-chain voting mechanisms</li>
+    <li><strong>Delegated Votable Tokens</strong>: The number of all Votable Tokens that have been delegated and eligible to vote on AIPs</li>
     <li><strong>Governed Chains</strong>: Any ArbitrumDAO-approved chains that are governed by the $ARB token</li>
     <li><strong>Non-Governed Chains</strong>: Any ArbitrumDAO-approved chains that are not governed by the $ARB token</li>
     <li><strong>Votable Tokens</strong>: All $ARB tokens in existence, excluding any tokens held by The Arbitrum Foundation and any unclaimed airdrops</li>
-    <li><strong>Delegated Votable Tokens</strong>: The sum of Votable Tokens currently delegated and eligible for governance participation</li>
 </ul>
 <h3 id="section-1-chain-ownership-">Section 1: Chain &quot;ownership&quot;</h3>
 <p>This Constitution describes the decision-making framework for the ArbitrumDAO governance and/or authorization of the ArbitrumDAO-approved chains. The DAO may authorize the creation of additional Layer-2 chains that settle to Ethereum using the Arbitrum technology, but each such additional Layer-2 chain must be authorized by a corresponding AIP (i.e., no more than one chain may be authorized in each AIP). Any chain that is so authorized may be governed by the $ARB token and this Constitution, in which case, such chain would be deemed a Governed Chain. Any chain that is authorized but not governed by the $ARB token will be deemed a Non-Governed Chain. For the avoidance of doubt, any ArbitrumDAO-approved chain (whether a Governed Chain or a Non-Governed Chain) must settle to or on Ethereum. Chains utilizing Arbitrum technology that settle to or on ArbitrumDAO-approved chains (i.e., as “layer 3s”) do not require ArbitrumDAO authorization.</p>
@@ -65,10 +65,31 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
         <ol className="a-b-list">
             <li>More Votable Tokens have cast votes &quot;in favor&quot; than have cast votes &quot;against&quot; (&quot;<strong>Threshold 1</strong>&quot;); and</li>
             <li>
-               In the case of a:
+               (&quot;<strong>Threshold 2</strong>&quot;) In the case of a:
                <ul>
-                     <li>Constitutional AIP, at least 50% of all Delegated Votable Tokens, as well as a minimum of 150 million $ARB and a maximum of 450 million $ARB, have cast votes either &quot;in favor&quot; or &quot;abstain&quot;; or</li>
-                     <li>Non-Constitutional AIP, at least 40% of all Delegated Votable Tokens, as well as a minimum of 100 million $ARB and a maximum of 300 million $ARB, have cast votes either &quot;in favor&quot; or &quot;abstain&quot; (collectively, &quot;<strong>Threshold 2</strong>&quot;).</li>
+                     <li>Constitutional AIP, at least a number of all Delegated Votable Tokens have cast votes either &quot;in favor&quot; or &quot;abstain&quot;, determined in accordance with the below formula: 
+                     <ul>
+                        <li>
+                            If the product of 0.5 and the Delegated Votable Tokens (&quot;<strong>Preliminary Constitutional Quorum Value</strong>&quot;) is less than 150,000,000, then 150,000,000 applies; or
+                        </li>
+                        <li>
+                            If the Preliminary Constitutional Quorum Value is greater than 150,000,000, but less than 450,000,000, then the Preliminary Constitutional Quorum Value applies; or
+                        </li>
+                        <li>
+                            If the Preliminary Non-Constitutional Quorum Value is greater than 450,000,000, then 450,000,000 applies.
+                        </li>
+                     </ul>
+                     <li>Non-Constitutional AIP, at least a number of all Delegated Votable Tokens have cast votes either &quot;in favor&quot; or &quot;abstain&quot;, determined in accordance with the below formula:
+                     <ul>
+                        <li>
+                            If the product of 0.4 and the Delegated Votable Tokens (&quot;<strong>Preliminary Non-Constitutional Quorum Value</strong>&quot;) is less than 100,000,000, then 100,000,000 applies; or
+                        </li>
+                        <li>
+                            If the Preliminary Non-Constitutional Quorum Value is greater than 100,000,000, but less than 300,000,000, then the Preliminary Non-Constitutional Quorum Value applies; or
+                        </li>
+                        <li>
+                            If the Non-Preliminary Constitutional Quorum Value is greater than 300,000,000, then 300,000,000 applies.
+                        </li>
                </ul>
             </li>
         </ol>
