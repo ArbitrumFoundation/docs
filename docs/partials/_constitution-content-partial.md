@@ -76,7 +76,7 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
                             If the Preliminary Constitutional Quorum Value is greater than 150,000,000, but less than 450,000,000, then the Preliminary Constitutional Quorum Value applies; or
                         </li>
                         <li>
-                            If the Preliminary Non-Constitutional Quorum Value is greater than 450,000,000, then 450,000,000 applies.
+                            If the Preliminary Constitutional Quorum Value is greater than 450,000,000, then 450,000,000 applies.
                         </li>
                      </ul>
                      <li>Non-Constitutional AIP, at least a number of all Delegated Votable Tokens have cast votes either &quot;in favor&quot; or &quot;abstain&quot;, determined in accordance with the below formula:
