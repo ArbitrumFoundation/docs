@@ -88,7 +88,7 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
                             If the Preliminary Non-Constitutional Quorum Value is greater than 100,000,000, but less than 300,000,000, then the Preliminary Non-Constitutional Quorum Value applies; or
                         </li>
                         <li>
-                            If the Non-Preliminary Constitutional Quorum Value is greater than 300,000,000, then 300,000,000 applies.
+                            If the Preliminary Non-Constitutional Quorum Value is greater than 300,000,000, then 300,000,000 applies.
                         </li>
                </ul>
             </li>
