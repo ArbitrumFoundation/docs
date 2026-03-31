@@ -7,7 +7,8 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
 <ul>
     <li><strong>AIP</strong>: An Arbitrum Improvement Proposal</li>
     <li><strong>ArbitrumDAO-governed chains</strong>: The Arbitrum One and Arbitrum Nova chains and any additional chains authorized by the ArbitrumDAO</li>
-    <li><strong>DAO Treasury</strong>: All $ARB tokens held in a governance smart contract governed directly by the ArbitrumDAO and/or the Security Council of The Arbitrum Foundation via on-chain voting mechanisms.</li>
+    <li><strong>DAO Treasury</strong>: All $ARB tokens held in a governance smart contract governed directly by the ArbitrumDAO and/or the Security Council of The Arbitrum Foundation via on-chain voting mechanisms</li>
+    <li><strong>Delegated Votable Tokens</strong>: The number of all Votable Tokens that have been delegated and eligible to vote on AIPs</li>
     <li><strong>Governed Chains</strong>: Any ArbitrumDAO-approved chains that are governed by the $ARB token</li>
     <li><strong>Non-Governed Chains</strong>: Any ArbitrumDAO-approved chains that are not governed by the $ARB token</li>
     <li><strong>Votable Tokens</strong>: All $ARB tokens in existence, excluding any tokens held by The Arbitrum Foundation and any unclaimed airdrops</li>
@@ -34,7 +35,7 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
         <p>Recommended guideline: DAO members should vote against any AIP that is incorrectly labeled.</p>
         <p>A Non-Constitutional AIP is one that is not considered a &quot;Constitutional AIP&quot; including:</p>
         <ul>
-            <li><strong>Funding</strong>: Requests funds/grants or otherwise propose how to spend or allocate funds from the DAO Treasury and, so long as The Arbitrum Foundation exists, the Administrative Budget Wallet as defined in the The Arbitrum Foundation’s Amended & Restated Bylaws</li>
+            <li><strong>Funding</strong>: Requests funds/grants or otherwise propose how to spend or allocate funds from the DAO Treasury and, so long as The Arbitrum Foundation exists, the Administrative Budget Wallet as defined in The Arbitrum Foundation’s Amended & Restated Bylaws</li>
             <li><strong>Informational</strong>: Provides general guidelines or information to the community but does not otherwise propose a new feature or update</li>
         </ul>
         <p>Each AIP must also clearly specify which Governed Chain(s) it will affect (this may be specified by code, data, or text, as appropriate for the specific AIP).</p>
@@ -62,12 +63,38 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
         <p><strong>Phase 3: DAO votes on AIP, on Arbitrum One (14-16 days): During this Phase 3, the ArbitrumDAO will be able to vote directly on-chain on a submitted AIP.</strong></p>
         <p>An AIP passes if the following 2 conditions are met:</p>
         <ol className="a-b-list">
-            <li>More Votable Tokens have casted votes &quot;in favor&quot; than have casted votes &quot;against&quot; (&quot;<strong>Threshold 1</strong>&quot;); and</li>
+            <li>More Votable Tokens have cast votes &quot;in favor&quot; than have cast votes &quot;against&quot; (&quot;<strong>Threshold 1</strong>&quot;); and</li>
             <li>
-               In the case of a:
+               (&quot;<strong>Threshold 2</strong>&quot;) In the case of a:
                <ul>
-                     <li>Constitutional AIP, at least 4.5% of all Votable Tokens have casted votes either &quot;in favor&quot; or &quot;abstain&quot;; or</li>
-                     <li>Non-Constitutional AIP, at least 3% of all Votable Tokens have casted votes either &quot;in favor&quot; or &quot;abstain&quot; (collectively, &quot;<strong>Threshold 2</strong>&quot;).</li>
+                     <li>
+                     Constitutional AIP, at least a number of all Delegated Votable Tokens have cast votes either &quot;in favor&quot; or &quot;abstain&quot;, determined in accordance with the below formula:
+                     <ul>
+                        <li>
+                            If the product of 0.5 and the Delegated Votable Tokens (&quot;<strong>Preliminary Constitutional Quorum Value</strong>&quot;) is less than 150,000,000, then 150,000,000 applies; or
+                        </li>
+                        <li>
+                            If the Preliminary Constitutional Quorum Value is greater than 150,000,000, but less than 450,000,000, then the Preliminary Constitutional Quorum Value applies; or
+                        </li>
+                        <li>
+                            If the Preliminary Constitutional Quorum Value is greater than 450,000,000, then 450,000,000 applies.
+                        </li>
+                     </ul>
+                     </li>
+                     <li>
+                     Non-Constitutional AIP, at least a number of all Delegated Votable Tokens have cast votes either &quot;in favor&quot; or &quot;abstain&quot;, determined in accordance with the below formula:
+                     <ul>
+                        <li>
+                            If the product of 0.4 and the Delegated Votable Tokens (&quot;<strong>Preliminary Non-Constitutional Quorum Value</strong>&quot;) is less than 100,000,000, then 100,000,000 applies; or
+                        </li>
+                        <li>
+                            If the Preliminary Non-Constitutional Quorum Value is greater than 100,000,000, but less than 300,000,000, then the Preliminary Non-Constitutional Quorum Value applies; or
+                        </li>
+                        <li>
+                            If the Preliminary Non-Constitutional Quorum Value is greater than 300,000,000, then 300,000,000 applies.
+                        </li>
+                     </ul>
+                     </li>
                </ul>
             </li>
         </ol>
@@ -117,7 +144,7 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
 <p>The DAO may approve and implement a Constitutional AIP to change the rules governing future Security Council elections, but the AIP process may not be used to intervene in an ongoing election.</p>
 <p>Security Council members may only be removed prior to the end of their terms under two conditions:</p>
 <ol>
-    <li>At least 10% of all Votable Tokens have casted votes either &quot;in favor&quot; of removal or &quot;abstain&quot;, and at least 5/6 (83.33%) of all casted votes are &quot;in favor&quot; of removal; or</li>
+    <li>At least 10% of all Votable Tokens have cast votes either &quot;in favor&quot; of removal or &quot;abstain&quot;, and at least 5/6 (83.33%) of all cast votes are &quot;in favor&quot; of removal; or</li>
     <li>At least 9 of the Security Council members vote in favor of removal.</li>
 </ol>
 <p>The seats of Security Council members who have been removed prior to the end of their respective terms shall remain unfilled until the next election that such seats are up for appointment, unless otherwise replaced prior to such next election by a vote of at least 9 of the Security Council members, in which case such seat shall be up for appointment at the next such election. The Security Council may not re-appoint a removed member and they can only be re-elected via the election voting system.</p>
