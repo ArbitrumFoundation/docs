@@ -5,7 +5,7 @@ const fs = require('fs');
 const { pack, keccak256, sha256 } = require('@ethersproject/solidity');
 const main = async () => {
   const data = await fs.readFileSync(
-    './docs/partials/_constitution-content-partial.md',
+    './docs/partials/_constitution-content-partial.mdx',
     'utf8'
   );
   const constitutionHash = keccak256(['string'], [data]);
