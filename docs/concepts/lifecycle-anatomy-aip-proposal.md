@@ -36,6 +36,9 @@ For a technical overview of implementation details, visit the [Governance Repo](
   - [Proposal Lifecycle Example](https://github.com/ArbitrumFoundation/governance/blob/main/docs/proposal_lifecycle_example.md)
   - [Roundtrip Governance - Diagram](https://github.com/ArbitrumFoundation/governance/blob/main/docs/roundtrip-governance.png)
 
+For common, recurring proposal types, Offchain Labs publishes standardized action contract templates that simplify both authoring and review:
+  - [Register a custom gateway token via Arbitrum DAO governance](https://docs.arbitrum.io/build-decentralized-apps/token-bridging/configure-token-bridging/register-via-dao-governance) — issuer-facing how-to for the `RegisterAndSetArbCustomGatewayAction` template, including the calldata generator script and Tally submission flow.
+
 
 #### High-level overview
 
