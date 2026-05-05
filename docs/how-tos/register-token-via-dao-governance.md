@@ -3,7 +3,7 @@ id: register-token-via-dao-governance
 title: How to register a custom gateway token via Arbitrum DAO governance
 sidebar_label: Register a token via DAO governance
 description: Learn how to use the standardized RegisterAndSetArbCustomGatewayAction template to author or evaluate a token registration AIP.
-dao_author: gaelblanchemain
+dao_author: anegg0
 dao_sme: TBD
 ---
 
@@ -13,7 +13,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 Registering a custom token in Arbitrum's [generic-custom gateway](https://docs.arbitrum.io/build-decentralized-apps/token-bridging/configure-token-bridging/setup-generic-custom-gateway) usually requires the parent chain token contract to call `registerCustomL2Token` and `setGateway` itself. When the parent chain token is non-upgradeable or otherwise can't make those calls, registration must go through Arbitrum DAO governance using the privileged `forceRegisterTokenToL2` and `setGateways` paths.
 
-The Arbitrum Foundation publishes a [standardized action contract template](https://forum.arbitrum.foundation/t/announcement-of-standardized-token-registrations-template/29764) — `RegisterAndSetArbCustomGatewayAction` — that wraps both calls in a single privileged action. Using the template is **a helpful utility, not a requirement**, but it gives proposers a known-safe shape and gives delegates a familiar artifact to verify.
+The Arbitrum Foundation publishes a [standardized action contract template](https://forum.arbitrum.foundation/t/announcement-of-standardized-token-registrations-template/29764) — `RegisterAndSetArbCustomGatewayAction` — that wraps both calls in a single privileged action. Using the template is **a helpful utility, not a requirement**, but it gives proposals a known-safe shape and gives delegates a familiar artifact to verify.
 
 ## Audience
 
