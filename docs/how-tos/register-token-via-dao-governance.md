@@ -13,7 +13,7 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 Registering a custom token in Arbitrum's [generic-custom gateway](https://docs.arbitrum.io/build-decentralized-apps/token-bridging/configure-token-bridging/setup-generic-custom-gateway) usually requires the parent chain token contract to call `registerCustomL2Token` and `setGateway` itself. When the parent chain token is non-upgradeable or otherwise can't make those calls, registration must go through Arbitrum DAO governance using the privileged `forceRegisterTokenToL2` and `setGateways` paths.
 
-The Arbitrum Foundation publishes a [standardized action contract template](https://forum.arbitrum.foundation/t/announcement-of-standardized-token-registrations-template/29764) — `RegisterAndSetArbCustomGatewayAction` — that wraps both calls in a single privileged action. Using the template is **a helpful utility, not a requirement**, but it gives proposals a known-safe shape and gives delegates a familiar artifact to verify.
+The Arbitrum Foundation publishes a standardized action contract template: `RegisterAndSetArbCustomGatewayAction`, that wraps both calls in a single privileged action. Using the template is **a helpful utility, not a requirement**, but it gives proposals a known-safe shape and gives delegates a familiar artifact to verify.
 
 ## Audience
 
@@ -22,7 +22,6 @@ This how-to serves two participants in the <a data-quicklook-from="arbitrum-impr
 - **Proposers** — token issuers preparing an AIP to register their token.
 - **Delegates and voters** — anyone evaluating a token-registration proposal that appears on [Tally](https://tally.xyz/gov/arbitrum).
 
-For step-by-step issuer-side implementation (deployment dependencies, deposit flows, post-registration validation), see the [companion how-to in the Arbitrum technical docs](https://docs.arbitrum.io/build-decentralized-apps/token-bridging/configure-token-bridging/register-via-dao-governance).
 
 ## When this template applies
 
