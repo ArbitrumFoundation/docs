@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Arbitrum Governance Docs CMS</title>
+    <link rel="icon" href="/img/favicon.ico" />
+    <style>
+      :root {
+        --arb-blue: #12AAFF;
+        --arb-dark: #213147;
+        --arb-light-blue: #9DCCED;
+        --arb-link: #007bdd;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      }
+
+      #nc-root > section {
+        background: var(--arb-dark) !important;
+      }
+
+      #nc-root > section > span > img {
+        max-width: 200px !important;
+        display: block !important;
+        margin: 0 auto !important;
+      }
+
+      #nc-root > section button {
+        background: var(--arb-blue) !important;
+        color: #fff !important;
+        border: none !important;
+        border-radius: 2px !important;
+        font-weight: 600 !important;
+        padding: 12px 32px !important;
+        font-size: 15px !important;
+        transition: opacity 0.2s !important;
+      }
+
+      #nc-root > section button:hover {
+        opacity: 0.9 !important;
+      }
+
+      header {
+        background: var(--arb-dark) !important;
+      }
+
+      header a {
+        color: #fff !important;
+      }
+
+      header [class*="AppHeader"] {
+        background: var(--arb-dark) !important;
+      }
+
+      [class*="ToolbarButton"]:not([class*="Published"]) {
+        color: var(--arb-dark) !important;
+      }
+
+      a[href="#/collections"],
+      a[href="#/workflow"],
+      a[href="#/media"] {
+        color: var(--arb-light-blue) !important;
+        font-weight: 600 !important;
+      }
+
+      a[href="#/collections"]:hover,
+      a[href="#/workflow"]:hover,
+      a[href="#/media"]:hover {
+        color: #fff !important;
+      }
+
+      [class*="SidebarNavList"] a {
+        color: var(--arb-dark) !important;
+      }
+
+      [class*="SidebarNavList"] a:hover,
+      [class*="SidebarNavList"] a[class*="active"] {
+        color: var(--arb-blue) !important;
+        font-weight: 600 !important;
+      }
+
+      button[class*="PublishButton"],
+      button[class*="ToolbarButton"] {
+        background: var(--arb-blue) !important;
+        color: #fff !important;
+        border: none !important;
+        border-radius: 2px !important;
+      }
+
+      button[class*="SaveButton"],
+      button[class*="PublishButton"]:hover {
+        opacity: 0.9 !important;
+      }
+
+      [class*="EntryListing"] a {
+        border-left: 3px solid transparent !important;
+      }
+
+      [class*="EntryListing"] a:hover {
+        border-left-color: var(--arb-blue) !important;
+      }
+
+      [class*="SearchInput"] {
+        border-radius: 2px !important;
+      }
+
+      [class*="SearchInput"]:focus {
+        border-color: var(--arb-blue) !important;
+      }
+    </style>
+    <script src="https://unpkg.com/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+  </head>
+  <body>
+    <script>window.CMS_MANUAL_INIT = true;</script>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      fetch("/admin/config.yml")
+        .then(function(r) { return r.text(); })
+        .then(function(yml) {
+          var config = window.jsyaml.load(yml);
+          config.backend.base_url = window.location.origin;
+          config.load_config_file = false;
+          window.CMS.init({ config: config });
+        });
+    </script>
+  </body>
+</html>
