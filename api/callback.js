@@ -74,6 +74,11 @@ module.exports = async (req, res) => {
 </body>
 </html>`;
 
+    res.setHeader("Content-Type", "text/html; charset=utf-8");
+    res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
+    res.setHeader("Pragma", "no-cache");
+    res.setHeader("Expires", "0");
+    res.setHeader("X-Content-Type-Options", "nosniff");
     res.status(200).send(body);
   } catch (err) {
     res.status(500).json({ error: err.message });
