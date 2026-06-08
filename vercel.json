@@ -4,10 +4,5 @@
       "source": "/",
       "destination": "/gentle-intro-dao-governance"
     }
-  ],
-  "functions": {
-    "api/*.js": {
-      "memory": 128
-    }
-  }
+  ]
 }
