@@ -15,7 +15,6 @@ i. September Cohort
    * `0xe2e9d5B97d8C0457B1cf80BC93802bce4DF03e33`
 2. [Gauntlet](https://x.com/gauntlet_xyz) is a DeFi quantitative research firm, represented by John Morrow. Gauntlet specializes in data-driven treasury and risk management, mechanism design, vulnerability analysis, proactive threat identification, and incident response. Gauntlet also serves on the Security Councils for Scroll and Polygon.
 
-
    * `0x78bB97d2F3811256D7F0041E81Aaf4B426eF3b67`
 3. [Emiliano Bonassi](https://x.com/emilianobonassi) is the Rollup Engineering Lead at Conduit. Emiliano has identified and responded to multiple security emergencies, and developed open-source security tools. Emiliano also serves on the Optimism Security Council, the Sherlock Protocol Claims Committee, and is a founding member of Seal911.
 
@@ -41,7 +40,7 @@ ii. March Cohort
 3. [Yoav Weiss](https://twitter.com/yoavw) is a security researcher at the Ethereum Foundation and has been building in the Ethereum space since 2017, working on account abstraction (ERC-4337), OpenGSN, L2 security, etc. Yoav brings over 25 years of experience and has developed security technologies used by industry leading companies.
 
    * `0x475816ca2a31D601B4e336f5c2418A67978aBf09`
-4. [Dzack23](https://x.com/DZack23) is a former Senior Blockchain Engineer at Offchain Labs, technical researcher and an ArbitrumDAO delegate. Dzack23 Led the design and implementation of Arbitrum smart contract components.
+4. [Dzack23](https://x.com/DZack23) is a former Senior Blockchain Engineer at Offchain, technical researcher and an ArbitrumDAO delegate. Dzack23 Led the design and implementation of Arbitrum smart contract components.
 
    * `0x09BDaf6Be43CD6ff378E9CC785CD7A667B64668D`
 5. [Certora](https://twitter.com/CertoraInc) are experts in smart contract formal verification and have formally verified the EVM bytecode of a range of applications for whom security is paramount, Certora is motivated to contribute to developing safe digital and financial infrastructure built on Arbitrum. Organization represented by Elad Erdheim.
