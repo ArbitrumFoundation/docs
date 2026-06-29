@@ -156,11 +156,9 @@
             if (oy === "auto" || oy === "scroll") return el;
             el = el.parentElement;
           }
-          return (
-            document.querySelector('[class*="ControlPaneContainer"]') ||
-            document.querySelector('[class*="EditorContainer"]') ||
-            document.getElementById("nc-root")
-          );
+          // only the real scrollable editing column; never fall back to
+          // #nc-root, which the absolutely-positioned editor covers
+          return document.querySelector('[class*="ControlPaneContainer"]') || null;
         }
 
         function ensureFlowBanner() {
@@ -168,13 +166,16 @@
           var inEditor = /\/collections\/[^/]+\/(entries\/|new)/.test(hash);
           var existing = document.getElementById("af-flow-banner");
           if (!inEditor) {
-            if (existing) existing.parentNode.removeChild(existing);
+            if (existing && existing.parentNode) existing.parentNode.removeChild(existing);
             return;
           }
-          if (existing) return;
 
           var pane = findEditPane();
           if (!pane) return;
+          if (existing) {
+            if (existing.parentNode === pane) return;
+            if (existing.parentNode) existing.parentNode.removeChild(existing);
+          }
 
           var banner = document.createElement("div");
           banner.id = "af-flow-banner";
