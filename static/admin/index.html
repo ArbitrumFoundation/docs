@@ -93,10 +93,6 @@
         opacity: 0.9 !important;
       }
 
-      [class*="PublishButton"] {
-        display: none !important;
-      }
-
       [class*="EntryListing"] a {
         border-left: 3px solid transparent !important;
       }
@@ -130,23 +126,46 @@
     </script>
     <script>
       (function () {
+        // hide the publish / republish control in the editorial-workflow toolbar.
+        // decap renders publish, status and save as the same styled component, so
+        // we discriminate by visible label: hide "publish" / "published" actions,
+        // never "save" or "status: ...". scoped to the toolbar so banner copy is safe.
         function hidePublishControl() {
-          var byClass = document.querySelectorAll('[class*="PublishButton"]');
-          for (var i = 0; i < byClass.length; i++) {
-            byClass[i].style.display = "none";
-          }
-          var buttons = document.querySelectorAll("#nc-root button");
-          for (var j = 0; j < buttons.length; j++) {
-            var label = (buttons[j].textContent || "").trim().toLowerCase();
-            if (label.indexOf("unpublish") === -1 && label.indexOf("publish") === 0) {
-              buttons[j].style.display = "none";
+          var toolbar = document.querySelector('[class*="ToolbarContainer"]');
+          if (!toolbar) return;
+          var controls = toolbar.querySelectorAll('[class*="StyledDropdownButton"], button');
+          for (var i = 0; i < controls.length; i++) {
+            var label = (controls[i].textContent || "").trim().toLowerCase();
+            if (label.indexOf("publish") === 0) {
+              var wrap =
+                controls[i].closest('[class*="ToolbarDropdown"]') ||
+                controls[i].closest('[class*="StyledWrapper"]') ||
+                controls[i];
+              wrap.style.display = "none";
             }
           }
         }
 
+        function findEditPane() {
+          var anchor = document.querySelector(
+            '#nc-root input, #nc-root textarea, #nc-root [data-slate-editor]',
+          );
+          var el = anchor;
+          while (el && el !== document.body) {
+            var oy = getComputedStyle(el).overflowY;
+            if (oy === "auto" || oy === "scroll") return el;
+            el = el.parentElement;
+          }
+          return (
+            document.querySelector('[class*="ControlPaneContainer"]') ||
+            document.querySelector('[class*="EditorContainer"]') ||
+            document.getElementById("nc-root")
+          );
+        }
+
         function ensureFlowBanner() {
           var hash = window.location.hash || "";
-          var inEditor = /\/collections\/.+\/entries\//.test(hash);
+          var inEditor = /\/collections\/[^/]+\/(entries\/|new)/.test(hash);
           var existing = document.getElementById("af-flow-banner");
           if (!inEditor) {
             if (existing) existing.parentNode.removeChild(existing);
@@ -154,11 +173,14 @@
           }
           if (existing) return;
 
+          var pane = findEditPane();
+          if (!pane) return;
+
           var banner = document.createElement("div");
           banner.id = "af-flow-banner";
           banner.style.cssText =
             "background:#213147;color:#fff;border-left:4px solid #12AAFF;" +
-            "border-radius:2px;padding:16px 20px;margin:16px;font-size:14px;line-height:1.5;";
+            "border-radius:2px;padding:16px 20px;margin:16px 0;font-size:14px;line-height:1.5;";
           banner.innerHTML =
             "<strong>how publishing works here</strong>" +
             "<ol style='margin:8px 0 8px 18px;padding:0;'>" +
@@ -168,13 +190,7 @@
             "</ol>" +
             "<em>there is no publish button by design, publishing happens after approval</em>";
 
-          var toolbar = document.querySelector('[class*="EditorToolbar"]');
-          var root = document.getElementById("nc-root");
-          if (toolbar && toolbar.parentNode) {
-            toolbar.parentNode.insertBefore(banner, toolbar.nextSibling);
-          } else if (root) {
-            root.insertBefore(banner, root.firstChild);
-          }
+          pane.insertBefore(banner, pane.firstChild);
         }
 
         var observer = new MutationObserver(function () {
