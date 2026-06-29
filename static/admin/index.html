@@ -144,11 +144,47 @@
           }
         }
 
+        function ensureFlowBanner() {
+          var hash = window.location.hash || "";
+          var inEditor = /\/collections\/.+\/entries\//.test(hash);
+          var existing = document.getElementById("af-flow-banner");
+          if (!inEditor) {
+            if (existing) existing.parentNode.removeChild(existing);
+            return;
+          }
+          if (existing) return;
+
+          var banner = document.createElement("div");
+          banner.id = "af-flow-banner";
+          banner.style.cssText =
+            "background:#213147;color:#fff;border-left:4px solid #12AAFF;" +
+            "border-radius:2px;padding:16px 20px;margin:16px;font-size:14px;line-height:1.5;";
+          banner.innerHTML =
+            "<strong>how publishing works here</strong>" +
+            "<ol style='margin:8px 0 8px 18px;padding:0;'>" +
+            "<li>edit your page and click <strong>save</strong> so your change is saved automatically as a pull request</li>" +
+            "<li>use the <strong>status</strong> menu to move it from <strong>draft</strong> to <strong>in review</strong> for team feedback then to <strong>ready</strong></li>" +
+            "<li>marking it <strong>ready</strong> submits it for approval and a maintainer reviews and publishes it so you are done</li>" +
+            "</ol>" +
+            "<em>there is no publish button by design, publishing happens after approval</em>";
+
+          var toolbar = document.querySelector('[class*="EditorToolbar"]');
+          var root = document.getElementById("nc-root");
+          if (toolbar && toolbar.parentNode) {
+            toolbar.parentNode.insertBefore(banner, toolbar.nextSibling);
+          } else if (root) {
+            root.insertBefore(banner, root.firstChild);
+          }
+        }
+
         var observer = new MutationObserver(function () {
           hidePublishControl();
+          ensureFlowBanner();
         });
         observer.observe(document.body, { childList: true, subtree: true });
+        window.addEventListener("hashchange", ensureFlowBanner);
         hidePublishControl();
+        ensureFlowBanner();
       })();
     </script>
   </body>
