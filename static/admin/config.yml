@@ -1,0 +1,84 @@
+backend:
+  name: github
+  repo: ArbitrumFoundation/docs
+  branch: main
+  auth_endpoint: /api/auth
+
+logo_url: /img/AF_vertical_stack.png
+publish_mode: editorial_workflow
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: governance-pages
+    label: Governance Pages
+    folder: docs
+    create: true
+    extension: md
+    slug: "{{slug}}"
+    fields:
+      - { name: id, label: ID, widget: string }
+      - { name: title, label: Title, widget: string }
+      - { name: sidebar_label, label: Sidebar Label, widget: string }
+      - { name: description, label: Description, widget: text }
+      - { name: dao_author, label: Author, widget: string, required: false }
+      - { name: dao_sme, label: Subject Matter Expert, widget: string, required: false }
+      - { name: body, label: Body, widget: markdown }
+
+  - name: how-tos
+    label: How-to Guides
+    folder: docs/how-tos
+    create: true
+    extension: md
+    slug: "{{slug}}"
+    fields:
+      - { name: id, label: ID, widget: string }
+      - { name: title, label: Title, widget: string }
+      - { name: sidebar_label, label: Sidebar Label, widget: string }
+      - { name: description, label: Description, widget: text }
+      - { name: dao_author, label: Author, widget: string, required: false }
+      - { name: dao_sme, label: Subject Matter Expert, widget: string, required: false }
+      - { name: body, label: Body, widget: markdown }
+
+  - name: concepts
+    label: Governance Concepts
+    folder: docs/concepts
+    create: true
+    extension: md
+    slug: "{{slug}}"
+    fields:
+      - { name: id, label: ID, widget: string }
+      - { name: title, label: Title, widget: string }
+      - { name: sidebar_label, label: Sidebar Label, widget: string }
+      - { name: description, label: Description, widget: text }
+      - { name: dao_author, label: Author, widget: string, required: false }
+      - { name: dao_sme, label: Subject Matter Expert, widget: string, required: false }
+      - { name: body, label: Body, widget: markdown }
+
+  - name: bold-economics
+    label: BoLD Economics Guides
+    folder: docs/arbitrum-bold-economics
+    create: true
+    extension: md
+    slug: "{{slug}}"
+    fields:
+      - { name: id, label: ID, widget: string }
+      - { name: title, label: Title, widget: string }
+      - { name: sidebar_label, label: Sidebar Label, widget: string }
+      - { name: description, label: Description, widget: text }
+      - { name: dao_author, label: Author, widget: string, required: false }
+      - { name: dao_sme, label: Subject Matter Expert, widget: string, required: false }
+      - { name: body, label: Body, widget: markdown }
+
+  - name: foundational-documents
+    label: Foundational Documents
+    folder: docs/foundational-documents
+    create: true
+    extension: md
+    slug: "{{slug}}"
+    fields:
+      - { name: id, label: ID, widget: string }
+      - { name: title, label: Title, widget: string }
+      - { name: sidebar_label, label: Sidebar Label, widget: string, required: false }
+      - { name: description, label: Description, widget: text, required: false }
+      - { name: body, label: Body, widget: markdown }
