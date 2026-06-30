@@ -31,7 +31,7 @@ The template is appropriate when **all** of the following hold:
 - The child chain token contract — implementing [`IArbToken`](https://github.com/OffchainLabs/token-bridge-contracts/blob/main/contracts/tokenbridge/arbitrum/IArbToken.sol) — is already deployed.
 - The proposer is willing to author and shepherd a <a data-quicklook-from="constitutional-aip">Constitutional AIP</a> (this action requires "chain owner" permission).
 
-If the parent chain token can be upgraded, the [self-service registration path](https://docs.arbitrum.io/build-decentralized-apps/token-bridging/configure-token-bridging/setup-generic-custom-gateway) is faster and doesn't need a DAO vote.
+If the parent chain token can be upgraded, the [self-service registration path](https://docs.arbitrum.io/build-decentralized-apps/token-bridging/configure-token-bridging/setup-generic-custom-gateway) is faster and doesn't need a DAO vote. Wrapping the existing token and registering the wrapper is another non-governance alternative.
 
 ## What the action contract does
 
@@ -96,11 +96,20 @@ Source: [`RegisterAndSetArbCustomGatewayAction.sol`](https://github.com/Arbitrum
 
 Each of the two calls emits a retryable ticket from the parent chain to the child chain. Both retryables are auto-redeemed when the action contract supplies enough submission cost, after which the token is fully registered on both chains.
 
+## Prerequisites
+
+Before generating proposal calldata, confirm:
+
+- The parent chain ERC-20 token is **already deployed**.
+- The child chain token contract implementing [`IArbToken`](https://github.com/OffchainLabs/token-bridge-contracts/blob/main/contracts/tokenbridge/arbitrum/IArbToken.sol) is **already deployed**.
+- Both addresses are final and immutable — registration is one-time and irreversible per parent chain token address.
+- [Foundry](https://book.getfoundry.sh/getting-started/installation) is installed locally (the payload generator uses `cast`).
+
 ## How a proposal is constructed
 
 The proposer generates the proposal calldata using [Foundry's `cast`](https://book.getfoundry.sh/getting-started/installation). Save the following as `reg-arb-custom.sh`, set the L1 and L2 token addresses, and run it:
 
-```bash
+```shell
 #!/usr/bin/env bash
 set -euo pipefail
 
@@ -167,7 +176,7 @@ For a fully worked example, see the [BORING token registration payload gist](htt
 
 Once the calldata is generated, the rest of the AIP submission process follows the standard flow described in [How to submit a DAO proposal](./create-submit-dao-proposal.md):
 
-1. Forum post for off-chain discussion
+1. Forum post for off-chain discussion — token registrations have historically passed without controversy, but the forum review step catches encoding mistakes before they reach a vote
 2. Snapshot poll for temperature check
 3. Tally on-chain proposal targeting `ArbSys.sendTxToL1(destination, data)` with the values from the script
 4. Standard voting period and timelock delays as described in the [AIP lifecycle](../concepts/lifecycle-anatomy-aip-proposal.md)
