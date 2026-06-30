@@ -113,17 +113,26 @@ The proposer generates the proposal calldata using [Foundry's `cast`](https://bo
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Token addresses (modify these)
+# This script generate the payload of force-registering a custom pair of token on L1 and L2(Arb1)
+# to the Arb [standard/generic] Custom Gateway and Gateway Router.
+
+# Configuration
+# -----------------------------------------------------------------------------
+# Token addresses (modify these as needed)
 L1_TOKEN_ADDRESS="0x000000000000000000000000000000000000dead"
 L2_TOKEN_ADDRESS="0x000000000000000000000000000000000000dead"
 
-# Governance constants (do not modify)
+# Other Constants (DO NOT MODIFY)
 readonly L1_ACTION_ADDRESS="0x997668Ee3C575dC060F80B06db0a8B04C9558969"
 readonly L1_UPGRADE_EXECUTOR="0x3ffFbAdAF827559da092217e474760E2b2c3CeDd"
 readonly L1_TIMELOCK="0xE6841D92B0C345144506576eC13ECf5103aC7f49"
 readonly MAX_SUBMISSION_FEE="0.0005"
 readonly TOTAL_VALUE="0.001"
 readonly DELAY_SECONDS=259200
+
+echo "L1 Token: $L1_TOKEN_ADDRESS"
+echo "L2 Token: $L2_TOKEN_ADDRESS"
+echo ""
 
 L1CALL=$(cast calldata \
     "perform(address[],address[],uint256,uint256,uint256,uint256,uint256,uint256)" \
