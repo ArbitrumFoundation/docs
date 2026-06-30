@@ -211,7 +211,12 @@ When evaluating a token-registration proposal that uses this template, check the
 - **Action contract address** matches `0x997668Ee3C575dC060F80B06db0a8B04C9558969` (or the currently published canonical address — confirm against the [Foundation announcement](https://forum.arbitrum.foundation/t/announcement-of-standardized-token-registrations-template/29764)).
 - **Upgrade Executor and L1 Timelock** match the canonical Arbitrum DAO addresses (`0x3ffFbAdAF827559da092217e474760E2b2c3CeDd` and `0xE6841D92B0C345144506576eC13ECf5103aC7f49` respectively).
 - **`DELAY_SECONDS`** is `259200` (3 days). Lower delays should be flagged.
-- **`PREDECESSOR`** is `bytes32(0)` and **`SALT`** is computed from the standard scheme (as in the script).
+- **`PREDECESSOR`** is `bytes32(0)`.
+- **`SALT`** is `0x199cf2835a4ba9c254e909f49a72bc7287813e2331bf64a7574f8ec969a4627f`. This value is deterministic for the canonical action address — it is `keccak(abi.encode([1], [0x997668Ee3C575dC060F80B06db0a8B04C9558969]))` and does not vary per proposal. Recompute it with:
+
+  ```bash
+  cast keccak "$(cast abi-encode "a(uint256[],address[])" "[1]" "[0x997668Ee3C575dC060F80B06db0a8B04C9558969]")"
+  ```
 - **The forum thread** has had at least one week of off-chain discussion with no unresolved technical concerns.
 
 ## Frequently asked questions
