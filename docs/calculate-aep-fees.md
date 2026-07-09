@@ -54,3 +54,23 @@ The Arbitrum Expansion Program allows projects to customize their Arbitrum chain
 These changes may allow projects to generate other sources of revenue. For example, extracting value via transaction ordering policies, collecting fees when users deposit onto the chain, and other methods that are not necessarily captured by transaction fees on the network. 
 
 The AEP is sufficiently broad to take into account other revenue sources as they arise in the Arbitrum chain. If your project is seeking non-traditional methods for generating revenue, please consult with the Arbitrum Foundation to ensure the Arbitrum Expansion Program accurately captures it.
+
+## Special cases and exceptions
+
+Certain Arbitrum chain configurations and customizations require special handling of AEP fees. The following is a non-exhaustive list of applicable scenarios and how to ensure AEP compliance. If any of the following cases apply, the recommended approach for fee handling will require manual handling of a portion of or all AEP Fees.
+
+### L2-based custom gas tokens
+
+If you are an L3 or higher chain with a custom gas token, your custom gas token contract might be deployed on L2. If this L2 is not an Arbitrum chain, then the L2 token can't be transferred via the AEP Fee Router, as this would first require bridging down to Ethereum (impossible for L2-based tokens). In this instance, we recommend your chain pay fees in **ETH** by manually sending fees to an **ETH**-configured routing system.
+
+### Non-Ethereum L1
+
+If your Arbitrum chain is deployed on a non-Ethereum L1 (e.g., Solana, BNB Chain), your fees must be manually transferred to a Foundation-controlled address.
+
+### Novel fee-earning customizations
+
+As discussed above in Additional revenue sources, if you have customized your Arbitrum chain to earn revenue through any enshrined component, this revenue must be calculated as part of the AEP fees. In such cases, we recommend engaging with the AF to agree on a revenue model and reporting cadence and then manually send additional fees into the routing system as required.
+
+### Other cases
+
+If you are still determining if your Arbitrum chain configuration applies to the listed or unlisted special cases, we recommend engaging with the Arbitrum Foundation.

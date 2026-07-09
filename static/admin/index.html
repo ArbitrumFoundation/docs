@@ -82,7 +82,6 @@
         font-weight: 600 !important;
       }
 
-      button[class*="PublishButton"],
       button[class*="ToolbarButton"] {
         background: var(--arb-blue) !important;
         color: #fff !important;
@@ -90,8 +89,7 @@
         border-radius: 2px !important;
       }
 
-      button[class*="SaveButton"],
-      button[class*="PublishButton"]:hover {
+      button[class*="SaveButton"]:hover {
         opacity: 0.9 !important;
       }
 
@@ -125,6 +123,86 @@
           config.load_config_file = false;
           window.CMS.init({ config: config });
         });
+    </script>
+    <script>
+      (function () {
+        // hide the publish / republish control in the editorial-workflow toolbar.
+        // decap renders publish, status and save as the same styled component, so
+        // we discriminate by visible label: hide "publish" / "published" actions,
+        // never "save" or "status: ...". scoped to the toolbar so banner copy is safe.
+        function hidePublishControl() {
+          var toolbar = document.querySelector('[class*="ToolbarContainer"]');
+          if (!toolbar) return;
+          var controls = toolbar.querySelectorAll('[class*="StyledDropdownButton"], button');
+          for (var i = 0; i < controls.length; i++) {
+            var label = (controls[i].textContent || "").trim().toLowerCase();
+            if (label.indexOf("publish") === 0) {
+              var wrap =
+                controls[i].closest('[class*="ToolbarDropdown"]') ||
+                controls[i].closest('[class*="StyledWrapper"]') ||
+                controls[i];
+              wrap.style.display = "none";
+            }
+          }
+        }
+
+        function findEditPane() {
+          var anchor = document.querySelector(
+            '#nc-root input, #nc-root textarea, #nc-root [data-slate-editor]',
+          );
+          var el = anchor;
+          while (el && el !== document.body) {
+            var oy = getComputedStyle(el).overflowY;
+            if (oy === "auto" || oy === "scroll") return el;
+            el = el.parentElement;
+          }
+          // only the real scrollable editing column; never fall back to
+          // #nc-root, which the absolutely-positioned editor covers
+          return document.querySelector('[class*="ControlPaneContainer"]') || null;
+        }
+
+        function ensureFlowBanner() {
+          var hash = window.location.hash || "";
+          var inEditor = /\/collections\/[^/]+\/(entries\/|new)/.test(hash);
+          var existing = document.getElementById("af-flow-banner");
+          if (!inEditor) {
+            if (existing && existing.parentNode) existing.parentNode.removeChild(existing);
+            return;
+          }
+
+          var pane = findEditPane();
+          if (!pane) return;
+          if (existing) {
+            if (existing.parentNode === pane) return;
+            if (existing.parentNode) existing.parentNode.removeChild(existing);
+          }
+
+          var banner = document.createElement("div");
+          banner.id = "af-flow-banner";
+          banner.style.cssText =
+            "background:#213147;color:#fff;border-left:4px solid #12AAFF;" +
+            "border-radius:2px;padding:16px 20px;margin:16px 0;font-size:14px;line-height:1.5;";
+          banner.innerHTML =
+            "<strong>how publishing works here</strong>" +
+            "<ol style='margin:8px 0 8px 18px;padding:0;'>" +
+            "<li>edit your page and click <strong>save</strong> to save your change as a pull request</li>" +
+            "<li><strong>after saving</strong>, a <strong>status</strong> menu appears, use it to move from <strong>draft</strong> to <strong>in review</strong> for team feedback then to <strong>ready</strong></li>" +
+            "<li>marking it <strong>ready</strong> submits it for approval and a maintainer reviews and publishes it so you are done</li>" +
+            "</ol>" +
+            "<em>there is no publish button by design, publishing happens after approval</em>";
+
+          pane.insertBefore(banner, pane.firstChild);
+        }
+
+        var observer = new MutationObserver(function () {
+          hidePublishControl();
+          ensureFlowBanner();
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
+        window.addEventListener("hashchange", ensureFlowBanner);
+        hidePublishControl();
+        ensureFlowBanner();
+      })();
     </script>
   </body>
 </html>
