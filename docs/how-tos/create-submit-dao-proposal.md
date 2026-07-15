@@ -3,8 +3,8 @@ id: create-submit-dao-proposal
 title: How to submit a DAO proposal
 sidebar_label: Submit a DAO proposal
 description: Learn how to submit a proposal to the ArbitrumDAO's governance
-  forum by using Snapshot to conduct a temperature check, and then Tally to
-  facilitate an on-chain vote.
+  forum by using the off-chain governance UI to conduct a temperature check, and
+  then to the on-chain governance UI to facilitate an on-chain vote.
 dao_author: amarrazza
 dao_sme: amarrazza
 ---
@@ -53,8 +53,6 @@ The [DAO governance forum](https://forum.arbitrum.foundation/) facilitates discu
 4. Allow at least one week for discussion and debate. Iterate on your proposal based on feedback from the community.
 
 If your proposal passes the temperature check, then you can move to the second and final step: an on-chain vote facilitated by the [on-chain governance UI](https://alt.gov.arbitrum.foundation/). Ensure that you've incorporated feedback brought up during relevant forum discussions and temperature checks before proceeding.
-
-If your proposal passes the temperature check, then you can move to the second and final step: an on-chain vote facilitated by Tally. Ensure that you've incorporated feedback brought up during relevant forum discussions and temperature checks before proceeding. 
 
 ### Step 2: Submit your on-chain proposal
 
