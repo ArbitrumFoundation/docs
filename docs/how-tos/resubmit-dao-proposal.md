@@ -23,7 +23,7 @@ Incorporate the community's feedback into a revised proposal. Consider using you
 
 ### Step 3: Resubmit the proposal
 
-Treat your revised proposal as a brand new proposal. Begin by conducting a new temperature check on the governance forum by following the [Submit a proposal](./create-submit-dao-proposal.md) procedure. Pay close attention to the guidance within the proposal structure section of this procedure; you'll want to include additional information that explicitly addresses the concerns that were raised during the previous submission.
+Treat your revised proposal as a brand new proposal. Begin by conducting a new temperature check on the governance forum by following the [Submit a proposal](https://docs.arbitrum.foundation/how-tos/create-submit-dao-proposal) procedure. Pay close attention to the guidance within the proposal structure section of this procedure; you'll want to include additional information that explicitly addresses the concerns that were raised during the previous submission.
 
 If your proposal is rejected multiple times, it may be best to reconsider the proposal altogether or to engage more extensively with the community to gather feedback and build support.
 
