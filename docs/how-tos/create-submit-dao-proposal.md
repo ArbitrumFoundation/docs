@@ -27,7 +27,7 @@ There are two types of AIPs: <a data-quicklook-from="constitutional-aip">Constit
 * **Constitutional AIPs** are those that modify the text or procedures of the Constitution or AIP-1, install or modify software on any chain, or take any action that requires "chain owner" permission on any chain. 
 * **Non-Constitutional AIPs** are all other AIPs, such as those that request funds/grants or provide general guidelines or information to the community.
 
-See [Constitution](../dao-constitution.md) for further details.
+See [Constitution](../dao-constitution) for further details.
 
 ### Proposal structure
 
