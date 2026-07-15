@@ -27,7 +27,6 @@ To delegate your voting power, you'll need an Ethereum wallet that holds <a data
 4. Search for the delegate you'd like to delegate your voting power to and select their profile.
 5. Once you have read the profile, select the “Delegate to this address” button, and confirm the delegation by following the prompts.
 6. Wait for the transaction to be confirmed on the Arbitrum One network.
-7. Wait for the transaction to be confirmed on the Arbitrum One network.
 
 Once your transaction is confirmed, your voting power will be assigned to the delegate you've chosen. You can also check your delegation by going to the "My Delegation" tab and looking for the delegate you've chosen.
 
