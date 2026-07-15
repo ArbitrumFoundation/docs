@@ -2,15 +2,15 @@
 id: why-governance
 title: Why decentralize Arbitrum governance with $ARB?
 sidebar_label: Why decentralize governance?
-description: Learn about the rationale behind introducing the $ARB governance token, and the important role it plays in the progressive decentralization of the Arbitrum protocol.
+description: Learn about the rationale behind introducing the $ARB governance
+  token, and the important role it plays in the progressive decentralization of
+  the Arbitrum protocol.
 dao_author: dzgoldman
 dao_sme: dzgoldman
 ---
-
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
 
 <DraftExpectationsPartial />
-
 
 <a data-quicklook-from="arb">$ARB</a> is the governance token for the Arbitrum ecosystem. This document aims to explain the rationale behind introducing the $ARB <a data-quicklook-from="governance-token">governance token</a>, and how it plays a necessary role in the <a data-quicklook-from="progressive-decentralization">progressive decentralization</a> of the Arbitrum protocol.
 
@@ -38,23 +38,19 @@ While it's possible that Ethereum's L2s eventually become enshrined in this way,
 
 So given that there's a need for a path towards protocol upgrades, and that enshrined rollups are (at least currently) off the table, the only viable option remaining, then, is explicit on-chain governance.
 
-
-
-
 ### Enter $ARB governance token for decentralized governance
 
 The introduction of the $ARB governance token provides the ability to propose and carry out protocol upgrades in a decentralized manner.
 
-Tokens were initially <a data-quicklook-from='airdrop'>airdropped</a> via transparent criteria meant to be as fair as possible[^1]. The goal was to spread out ownership to a large set of parties with stake in the Arbitrum ecosystem who are geographically distributed and have diverse backgrounds and affiliations. The chain ownership role is given to this <a data-quicklook-from='arbitrum-dao'>“Arbitrum DAO”</a>, a shorthand for the collective of all holders of the ARB token (and those delegated voting rights by token holders). 
+Tokens were initially <a data-quicklook-from='airdrop'>airdropped</a> via transparent criteria meant to be as fair as possible[^1]. The goal was to spread out ownership to a large set of parties with stake in the Arbitrum ecosystem who are geographically distributed and have diverse backgrounds and affiliations. The chain ownership role is given to this <a data-quicklook-from='arbitrum-dao'>“ArbitrumDAO”</a>, a shorthand for the collective of all holders of the ARB token (and those delegated voting rights by token holders). 
 
 There are two paths through which a protocol upgrade can take place. The first is a **decentralized** upgrade path that allows the DAO (and only the DAO) to carry out every step in the process: proposing an upgrade, publicly debating it, voting on it, and ultimately activating it.
 
 Several important properties are preserved in a decentralized upgrade process, all of which are enforced at the smart contract level:
 
-- No permissioned parties are required at any step; the DAO itself can carry out the entire process.
-- The DAO is given time to view a proposal before voting on it and, if it gets to that stage, given sufficient time to vote on it.
-- Once a proposal passes, Arbitrum users are given time to withdraw assets from the system, should they disagree with the direction and prefer to opt out.
-
+* No permissioned parties are required at any step; the DAO itself can carry out the entire process.
+* The DAO is given time to view a proposal before voting on it and, if it gets to that stage, given sufficient time to vote on it.
+* Once a proposal passes, Arbitrum users are given time to withdraw assets from the system, should they disagree with the direction and prefer to opt out.
 
 ### Security Council
 
@@ -65,23 +61,21 @@ This is a critically necessary role to protect against emergencies like the disc
 1. If there's a critical vulnerability that can be exploited, it's counterproductive to broadcast it on the public governance forum before it has been mitigated.
 2. The fix to such a vulnerability should go into effect immediately and not have the several weeks' delay of typical governance changes.
 
-The Security Council is bound by [The Constitution of the Arbitrum DAO](./dao-constitution.md) to only use its powers when necessary for these sorts of emergencies, and to issue a <a data-quicklook-from='transparency-report'>transparency report</a> when appropriate whenever its powers are used. To keep the Security Council in check, the DAO votes in semi-annual elections (split by cohorts) for the Security Council's members.
+The Security Council is bound by [The Constitution of the ArbitrumDAO](./dao-constitution.md) to only use its powers when necessary for these sorts of emergencies, and to issue a <a data-quicklook-from='transparency-report'>transparency report</a> when appropriate whenever its powers are used. To keep the Security Council in check, the DAO votes in semi-annual elections (split by cohorts) for the Security Council's members.
 
 The Security Council can also trigger non-emergency upgrades, such as routine software upgrades and maintenance. These upgrades don't require a DAO vote to pass; they instead go through a delay period before taking effect, giving users time to opt out by withdrawing (as with decentralized DAO upgrades).
 
-To learn more about the Security Council, refer to the [Security Council](./concepts/security-council.md) concept doc. For a formal articulation of the Security Council's role within Arbitrum DAO's governance process, refer to [The Constitution of the Arbitrum DAO](./dao-constitution).
-
+To learn more about the Security Council, refer to the [Security Council](./concepts/security-council.md) concept doc. For a formal articulation of the Security Council's role within ArbitrumDAO's governance process, refer to [The Constitution of the ArbitrumDAO](./dao-constitution).
 
 ### The future of Arbitrum governance
 
 The initial governance launch provides the community with the tools it needs: a means of decentralized governance, along with a faster, permissioned upgrade path to ensure the system remains safe in case of emergencies. As for how this system will change moving forward, many open questions remain:
 
-- Can the governance process be further decentralized?
-- How and when can the Security Council's power be further minimized, or eliminated entirely?
+* Can the governance process be further decentralized?
+* How and when can the Security Council's power be further minimized, or eliminated entirely?
 
 These don't have easy answers and will continue to be the topic of lively discussion within the community as the Arbitrum technology continues to mature, and as the perceived risk profiles of various states of decentralization change along with it. But crucially, the Arbitrum governance system controls *all* aspects of the Arbitrum protocol, including the governance process itself.
 
 With the DAO in control, decisions about how Arbitrum should evolve over time — including the governance process itself — are in the hands of the Arbitrum community.
-
 
 [^1]: Refer to [$ARB airdrop eligibility and distribution specifications](./airdrop-eligibility-distribution.md) to learn more about the airdrop specifications. Refer to [Arbitrum Sybil Hunting](https://github.com/ArbitrumFoundation/sybil-detection/) for an overview of our Sybil mitigation methodology.
