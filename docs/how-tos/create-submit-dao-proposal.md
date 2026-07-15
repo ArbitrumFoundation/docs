@@ -44,7 +44,7 @@ Proposals that require code changes should include the code that will be execute
 The [DAO governance forum](https://forum.arbitrum.foundation/) facilitates discussions about ArbitrumDAO and <a data-quicklook-from='governance-proposal'>governance proposals</a> that are submitted by eligible token delegates. To submit your proposal:
 
 1. Go to the [DAO governance forum](https://forum.arbitrum.foundation/).
-2. Create a new post with your proposal using the template located [here](./create-submit-dao-proposal#proposal-structure). You can add additional fields to this template to provide more context for your proposal if you'd like.
+2. Create a new post with your proposal using the template located [here](https://docs.arbitrum.foundation/how-tos/create-submit-dao-proposal#proposal-structure). You can add additional fields to this template to provide more context for your proposal if you'd like.
 3. After at least 7 days, navigate to the [off-chain governance UI](https://snapshot.org/#/s:arbitrumfoundation.eth) to create a poll that will gauge the community's interest in your proposal.
 
    * Connect your wallet.
