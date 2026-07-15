@@ -49,7 +49,7 @@ The [DAO governance forum](https://forum.arbitrum.foundation/) facilitates discu
 
    * Connect your wallet.
    * Create a poll that points to your forum post. The poll should run for one week and should be decided by a simple majority.
-   * Navigate back to your forum post and share the link to your Snapshot poll with the community.
+   * Navigate back to your forum post and share the link to your poll with the community.
 4. Allow at least one week for discussion and debate. Iterate on your proposal based on feedback from the community.
 
 If your proposal passes the temperature check, then you can move to the second and final step: an on-chain vote facilitated by the [on-chain governance UI](https://alt.gov.arbitrum.foundation/). Ensure that you've incorporated feedback brought up during relevant forum discussions and temperature checks before proceeding.
