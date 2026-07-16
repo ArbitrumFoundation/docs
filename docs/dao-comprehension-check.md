@@ -17,7 +17,7 @@ Review the following scenarios to test your comprehension of the different compo
 
 #### What's the first step you should take?
 
-The first step is to submit the idea as an <a data-quicklook-from='arbitrum-improvement-proposal-aip'>Arbitrum Improvement Proposal (AIP)</a> on the public [ArbitrumDAO governance forum](https://forum.arbitrum.foundation/). This discussion should be accompanied by an informal temperature check poll using Snapshot. This poll will run for 1 week while the AIP is discussed/debated. You'll then perform a more formal temperature check on [Tally](https://tally.xyz/gov/arbitrum).
+The first step is to submit the idea as an <a data-quicklook-from='arbitrum-improvement-proposal-aip'>Arbitrum Improvement Proposal (AIP)</a> on the public [ArbitrumDAO governance forum](https://forum.arbitrum.foundation/). After a week of discussion, it should be accompanied by an informal temperature check poll using the [off-chain governance UI](https://snapshot.org/#/s:arbitrumfoundation.eth). This poll will run for 1 week while the AIP is discussed/debated. You'll then perform a more formal vote on the [on-chain governance UI](https://alt.gov.arbitrum.foundation/).
 
 This procedure is referred to as the Temperature Check phase within the [Constitution](dao-constitution.md) and is technically optional, but it's strongly recommended as a due-diligence governance best practice. Although the process for submitting an AIP to the governance forum isn't explicitly outlined in the Constitution, the Constitution does specify that the DAO may approve and implement AIPs to change the rules governing the system. See [How to submit a DAO proposal](./how-tos/create-submit-dao-proposal) for more detailed instructions on how to submit an AIP.
 
@@ -54,7 +54,7 @@ Note that the Security Council may also approve and implement routine software u
 
 #### What process should be followed to implement this change?
 
-The process for proposing and implementing changes to the Constitution is as described in the Constitution itself. It involves submitting the proposal as an AIP, and then going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority (see: [Constitution](dao-constitution.md)) of votable tokens being voted in favor of the change. Changes to the Constitution must also be ratified by the Security Council with a 9-of-12 approval in order to take effect.
+The process for proposing and implementing changes to the Constitution is as described in the Constitution itself. It involves submitting the proposal as an AIP, and then going through the same voting and delay phases as any other proposal. The proposal must receive more votes in favor of the change and must reach its respective quorum threshold (see: [Constitution](dao-constitution.md)).
 
 ### Scenario 5: You want to become a member of the Security Council
 
@@ -66,25 +66,11 @@ The Security Council has 12 members, who are divided into two cohorts of 6 membe
 
 #### What process should be followed to execute this upgrade?
 
-The process for upgrading the Arbitrum One chain involves submitting a proposal as an AIP and going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority (see: [Constitution](dao-constitution.md)) of votable tokens being voted in favor of the change. The upgrade must also be approved by the Security Council with a 9-of-12 approval in order to take effect. The chain owner(s) will then perform the upgrade by updating the contract implementation of any of Arbitrum's core protocol [Transparent Upgradeable Proxy contracts](https://developer.arbitrum.io/useful-addresses), and adjusting system parameters (for example: through `setter` methods in the [ArbOwner precompile](https://github.com/OffchainLabs/nitro/blob/master/contracts/src/precompiles/ArbOwner.sol)).
+The process for upgrading the Arbitrum One chain involves submitting a proposal as an AIP and going through the same voting and delay phases as any other proposal. The proposal must receive more votes in favor of the change and must reach its respective quorum threshold (see: [Constitution](dao-constitution.md)). The chain owner(s) contract will then perform the upgrade by updating the contract implementation of any of Arbitrum's core protocol [Transparent Upgradeable Proxy contracts](https://developer.arbitrum.io/useful-addresses), and adjusting system parameters (for example: through `setter` methods in the [ArbOwner precompile](https://github.com/OffchainLabs/nitro/blob/master/contracts/src/precompiles/ArbOwner.sol)).
 
 It's important to note that the upgrade should be thoroughly tested and reviewed by the community and experts in the field before being proposed and implemented. Any upgrade should also be compliant with the applicable laws, in particular sanctions-related regulations.
 
-### Scenario 7: You want to create a new Arbitrum chain.
-
-#### What do you need to do next?
-
-It depends! If you want to create a new L3 chain, you can simply go ahead and deploy it. If you want to create a new L2 chain, you need to [submit a proposal](./how-tos/create-submit-dao-proposal) to have the chain approved & authorized the ArbitrumDAO. (See [New Chains](new-arb-chains.md).)
-
-### Scenario 8: The ArbitrumDAO experiences a season of voter apathy.
-
-#### Will this prevent work from being done on the chains that the ArbitrumDAO owns?
-
- No, voter apathy won't prevent work from being done on the chains that the ArbitrumDAO owns. The Constitution allows for <a data-quicklook-from='nonemergency-action'>non-emergency actions</a> to be taken, which don't require the approval of token holders. The Security Council has the power to perform emergency actions with a 9-of-12 approval, which can be used to address critical issues that cannot wait for voter approval. While voter participation is important for the proper functioning of the DAO, the Constitution has built-in mechanisms to ensure that work can continue to be done even in the event of low voter turnout.
-
-Note that voter apathy could have an impact on the governance of the DAO, and certain decisions and actions might not be as representative of the community's collective will if voter turnout is low.
-
-### Scenario 9: You've claimed $ARB tokens, but you don't have time to actively participate in ArbitrumDAO's governance.
+### Scenario 7: You've claimed $ARB tokens, but you don't have time to actively participate in ArbitrumDAO's governance.
 
 #### What options do you have?
 
@@ -96,13 +82,7 @@ If you've claimed $ARB tokens but don't have time to actively participate in the
 
 While participating in governance is an important aspect of being a DAO member, it's not mandatory. As long as you hold $ARB tokens, you can participate in the ArbitrumDAO's governance protocol, but there aren't any consequences if you decide to not participate.
 
-### Scenario 10: You want to propose a change to the way that unclaimed airdropped $ARB tokens are distributed
-
-#### What's the process for proposing and implementing this change?
-
-The process for proposing and implementing changes to the distribution of unclaimed airdropped $ARB tokens involves submitting a proposal as an AIP and going through the same voting and delay phases as any other proposal. The proposal must pass with a supermajority of votable tokens being voted in favor of the change. Additionally, the change must also be approved by the Security Council with a 9-of-12 approval in order to take effect. The distribution of unclaimed airdropped $ARB tokens should be thoroughly evaluated and reviewed by the community and experts in the field before being proposed and implemented.
-
-### Scenario 11: A governance proposal passes that you voted against.
+### Scenario 8: A governance proposal passes that you voted against.
 
 #### What options do you have?
 
