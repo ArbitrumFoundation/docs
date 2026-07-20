@@ -13,9 +13,9 @@ i. September Cohort
 1. [gzeon](https://x.com/gzeon) is a smart contract engineer at Offchain and a leaderboard warden and judge at Code4rena. gzeon has developed and maintained major components of the Arbitrum smart contract codebase and has contributed to resolving critical blockchain security incidents.
 
    * `0xe2e9d5B97d8C0457B1cf80BC93802bce4DF03e33`
-2. [Gauntlet](https://x.com/gauntlet_xyz) is a DeFi quantitative research firm, represented by John Morrow. Gauntlet specializes in data-driven treasury and risk management, mechanism design, vulnerability analysis, proactive threat identification, and incident response. Gauntlet also serves on the Security Councils for Scroll and Polygon.
+2. [Cyfrin](https://x.com/cyfrin) is a Web3 security and education firm, represented by Patrick Collins. Cyfrin specializes in open-source tooling, has helped secure over $40B and serves as a whitelisted auditor as part of the Arbitrum Audit Program. Cyfin also serves on the Security Councils for zkSync, Abstract and Optimism.
 
-   * `0x78bB97d2F3811256D7F0041E81Aaf4B426eF3b67`
+   * `0xeeb8886c48490355d6473901e2c1ea03f9cc8398`
 3. [Emiliano Bonassi](https://x.com/emilianobonassi) is the Rollup Engineering Lead at Conduit. Emiliano has identified and responded to multiple security emergencies, and developed open-source security tools. Emiliano also serves on the Optimism Security Council, the Sherlock Protocol Claims Committee, and is a founding member of Seal911.
 
    * `0x33ddb82e68940f0e4C1050885BcE8faF5Ddd1b93`
@@ -43,9 +43,9 @@ ii. March Cohort
 4. [Dzack23](https://x.com/DZack23) is a former Senior Blockchain Engineer at Offchain, technical researcher and an ArbitrumDAO delegate. Dzack23 Led the design and implementation of Arbitrum smart contract components.
 
    * `0x09BDaf6Be43CD6ff378E9CC785CD7A667B64668D`
-5. [Certora](https://twitter.com/CertoraInc) are experts in smart contract formal verification and have formally verified the EVM bytecode of a range of applications for whom security is paramount, Certora is motivated to contribute to developing safe digital and financial infrastructure built on Arbitrum. Organization represented by Elad Erdheim.
+5. [Certora](https://twitter.com/CertoraInc) are experts in smart contract formal verification and have formally verified the EVM bytecode of a range of applications for whom security is paramount, Certora is motivated to contribute to developing safe digital and financial infrastructure built on Arbitrum. Organization represented by Tigran.
 
-   * `0xeEe3Fb3B792C7DDbB6aEF0C440FBC621f4d6fe2D`
+   * `0xeeffd9041f8c4411c3ad90310e61add65e0b7c1e`
 6. [Pablo Sabbatella](https://x.com/PabloSabbatella) is the Founder of Opsek, a Web3 security researcher and educator, a member of SEAL 911 and has 25+ years of experience in cybersecurity.
 
    * `0x913af9a61d1a59aa5d21ce9bbf7fd44ed61db4ce`
