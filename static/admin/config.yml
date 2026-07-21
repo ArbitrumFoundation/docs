@@ -12,6 +12,12 @@ public_folder: /img
 collections:
   - name: governance-pages
     label: Governance Pages
+    description: >-
+      Top-level governance documentation pages. A few entries here (FAQs,
+      Glossary, Constitution) are "wrapper" pages whose body only contains
+      import statements. Their real content lives in "Shared Content
+      (Partials)" further down the sidebar. If you open a page and the body
+      shows only import lines, go edit it in Partials instead.
     folder: docs
     create: true
     extension: md
@@ -23,7 +29,13 @@ collections:
       - { name: description, label: Description, widget: text }
       - { name: dao_author, label: Author, widget: string, required: false }
       - { name: dao_sme, label: Subject Matter Expert, widget: string, required: false }
-      - { name: body, label: Body, widget: markdown }
+      - name: body
+        label: Body
+        widget: markdown
+        hint: >-
+          The main content of the page. If you only see import lines and
+          <XPartial /> tags here, this is a wrapper page. Edit the real
+          content in "Shared Content (Partials)" instead.
 
   - name: how-tos
     label: How-to Guides
@@ -82,3 +94,57 @@ collections:
       - { name: sidebar_label, label: Sidebar Label, widget: string, required: false }
       - { name: description, label: Description, widget: text, required: false }
       - { name: body, label: Body, widget: markdown }
+
+  - name: partials
+    label: Shared Content (Partials)
+    description: >-
+      Reusable content imported into multiple pages (FAQs, Glossary, etc.).
+      Editing a partial updates every page that imports it. Raw-markdown mode
+      is enforced because these files contain HTML and MDX heading anchors
+      that the rich-text editor can mangle on save.
+    files:
+      - name: faq
+        label: FAQs
+        file: docs/partials/_faq-partial.md
+        fields:
+          - name: body
+            label: Body
+            widget: markdown
+            modes: ["raw"]
+            hint: Edits here update every page that imports FAQs.
+      - name: glossary
+        label: Glossary
+        file: docs/partials/_glossary-partial.md
+        fields:
+          - name: body
+            label: Body
+            widget: markdown
+            modes: ["raw"]
+            hint: Edits here update every page that imports the Glossary.
+      - name: draft-expectations
+        label: Draft / Public Preview Notice
+        file: docs/partials/_draft-expectations-partial.md
+        fields:
+          - name: body
+            label: Body
+            widget: markdown
+            modes: ["raw"]
+            hint: The "PUBLIC PREVIEW DOCUMENT" notice that appears at the top of many pages.
+      - name: anatomy-aip
+        label: Anatomy of an AIP
+        file: docs/partials/_anatomy-aip-partial.md
+        fields:
+          - name: body
+            label: Body
+            widget: markdown
+            modes: ["raw"]
+            hint: The list of recommended AIP sections (Abstract, Motivation, Rationale, etc.).
+      - name: constitution-content
+        label: Constitution Content
+        file: docs/partials/_constitution-content-partial.mdx
+        fields:
+          - name: body
+            label: Body
+            widget: markdown
+            modes: ["raw"]
+            hint: The full text of the DAO Constitution. Changes here change the published Constitution.
