@@ -40,7 +40,7 @@ For a technical overview of implementation details, visit the [Governance Repo](
 
 The proposal submission process starts with a temperature check, where the AIP is suggested on the ArbitrumDAO governance forum, discussed for at least 7 days, followed by a temperature check that runs for another 7 days. If the AIP passes the temperature check, it moves on to the next phase, which is the formal AIP and call for voting. In this phase, the AIP is submitted via governance contracts on Arbitrum One via the [on-chain governance UI](https://alt.gov.arbitrum.foundation/). After 3 days, a voter distribution snapshot is taken and the voting period begins.
 
-Each AIP must be labeled as Constitutional or non-Constitutional, and must also clearly specify which ArbitrumDAO-governed chain(s) it will affect. If the AIP passes, it moves through a series of phases that include L2 and L1 waiting periods, and eventually, the implementation of the proposal. This process typically takes 42 days for a Constitutional AIP or 27 days for a Non-Constitutional AIP, but may take longer if specified by the AIP.
+Each AIP must be labeled as Constitutional or non-Constitutional, and must also clearly specify which ArbitrumDAO-governed chain(s) it will affect. If the AIP passes, it moves through a series of phases that include L2 and L1 waiting periods, and eventually, the implementation of the proposal. This process typically takes at least 42 days from the beginning of the temperature check in Phase 1 until an AIP is finally executed in Phase 7 for a Constitutional AIP, or at least 27 days for a Non-Constitutional AIP (but may take longer if specified by the AIP).
 
 ```mermaid
 graph TD;
@@ -55,14 +55,17 @@ graph TD;
   H --> I["<a href='#phase-7-implementation' style='text-decoration:none;'><b>Phase 7: Implementation</b></a>"];
 ```
 
-#### Phase 1: Temperature check (optional but recommended) - 7 days in duration
+#### Phase 0: Forum post (optional but recommended) - 7 days in duration
 
 This is the first phase of the Arbitrum Improvement Proposal (AIP) process: 
 
-1. The proposed AIP is submitted following the procedure outlined within [How to submit a DAO proposal](../how-tos/create-submit-dao-proposal).
-2. A discussion is initiated on the [ArbitrumDAO governance forum](https://forum.arbitrum.foundation/c/proposals/7) for at least 7 days.
-3. A temperature check poll is created to help gauge the interest of ArbitrumDAO members - either at the same time as the forum post, or after the forum post has facilitated initial discussion. This poll can be initiated only by an address that can represent at least 500,000 votable tokens.
-4. The poll runs for 7 days and is decided by a simple majority with no required participation threshold.
+1. The proposed AIP is submitted following the procedure outlined within How to submit a DAO proposal.
+2. A discussion is initiated on the ArbitrumDAO governance forum for at least 7 days.
+
+#### Phase 1: Temperature check (optional but recommended) - 7 days in duration
+
+1. A temperature check poll is created to help gauge the interest of ArbitrumDAO members, after the forum post has facilitated initial discussion. This poll can be initiated only by an address that can represent at least 500,000 votable tokens.
+2. The poll runs for 7 days and is decided by a simple majority with no required participation threshold.
 
 This is an optional step, but it's recommended as a due-diligence governance best practice. If an AIP fails this temperature check, the original AIP author is encouraged to refrain from proceeding, and voters are encouraged to reject it if the author proceeds. If an AIP proposer decides to skip this step, voters should consider this as a factor in their vote.
 
