@@ -6,14 +6,13 @@ description: Learn how fees collected on DAO-governed chains are distributed
 dao_author: dzgoldman
 dao_sme: dzgoldman
 ---
-
 ### Overview
 
 Users pay fees when transacting on <a data-quicklook-from='arbitrum-one'>Arbitrum One</a> and <a data-quicklook-from='arbitrum-nova'>Arbitrum Nova</a> in the chains' native currency, Ether. Fees exist as a spam / denial-of-service prevention measure, as well as a way to pay for the chains' operational and maintenance costs.
 
 Several different things are accounted for when computing a user's transaction fee, as discussed below. One portion of a transaction fee — "the L1 Base Fee" — goes to the entity controlling the chain's Sequencer, which for both chains is the Arbitrum Foundation. This portion of the fee compensates the Sequencer for the costs it pays to post users' transactions on layer 1; i.e., by receiving this fee, the Sequencer / the Arbitrum Foundation breaks even over time, but does not generate profit.
 
-On Arbitrum One, the remainder of a transaction's fee goes directly to the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>. On Arbitrum Nova, the remainder goes mostly to the DAO, while a portion goes to various third parties running the chain's critial infrastructure (see below).
+On Arbitrum One, the remainder of a transaction's fee goes directly to the <a data-quicklook-from='arbitrum-dao'>ArbitrumDAO</a>. On Arbitrum Nova, the remainder goes mostly to the DAO, while a portion goes to various third parties running the chain's critial infrastructure (see below).
 
 ### Fee Breakdown
 
