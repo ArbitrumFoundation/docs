@@ -270,7 +270,7 @@ This is achieved through the use of cryptographic techniques and decentralized c
 
 
 ### Unclaimed airdrop tokens {#unclaimed-airdrop-tokens}
-<p>Claimable <a href="/dao-glossary#arb">$ARB</a> tokens in the <a href="/dao-glossary#token-distributor-contract">Token Distributor Contract</a> not claimed by their potential owners. Unclaimed airdrop tokens were [transferred](<a href="https://arbiscan.io/tx/0xa2477f2f1d7824501520a88b50835ad283e7472e0fa5e67005452528bf740175">https://arbiscan.io/tx/0xa2477f2f1d7824501520a88b50835ad283e7472e0fa5e67005452528bf740175</a>) to the DAO Treasury after the airdrop ended.</p>
+<p>Claimable <a href="/dao-glossary#arb">$ARB</a> tokens in the <a href="/dao-glossary#token-distributor-contract">Token Distributor Contract</a> not claimed by their potential owners. Unclaimed airdrop tokens were (<a href="https://arbiscan.io/tx/0xa2477f2f1d7824501520a88b50835ad283e7472e0fa5e67005452528bf740175">transferred</a>) to the DAO Treasury after the airdrop ended.</p>
 
 ### Votable tokens {#votable-tokens}
 <p>All $ARB tokens in existence except for:</p>
