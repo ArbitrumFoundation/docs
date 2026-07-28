@@ -96,7 +96,7 @@
 <p>Facilitates <a href="/dao-glossary#smart-contract">Smart contract</a> logic and execution for Ethereum's <a href="/dao-glossary#layer-1-l1">Layer 1 (L1)</a>  network. Powered by execution-layer clients like <a href="/dao-glossary#geth">Geth</a>, Nethermind, and Besu.</p>
 
 ### Exclude Address {#exclude-address}
-<p>Special address (<a href="https://arbiscan.io/address/0x00000000000000000000000000000000000a4b86">0x00000000000000000000000000000000000a4b86</a>) that ARB holders can delegate their votes to, so not to be included in qualification threshold calculation in the Nominee Selection phase of the Security Council election process. Notably, the Arbitrum DAO treasury has its votes excluded.</p>
+<p>Special address (<a href="https://arbiscan.io/address/0x00000000000000000000000000000000000a4b86">0x00000000000000000000000000000000000a4b86</a>) that ARB holders can delegate their votes to, so not to be included in the qualification threshold calculation for the Nominee Selection phase of the Security Council election process. Notably, the Arbitrum DAO treasury has its votes excluded.</p>
 
 ### Foundation Vesting Wallet {#foundation-vesting-wallet}
 <p>Smart contract wallet that stores the <a href="/dao-glossary#the-arbitrum-foundation">The Arbitrum Foundation</a>'s tokens; tokens vest linearly over the course of 4 years, as specified [AIP 1.1](<a href="https://alt.gov.arbitrum.foundation/proposal/70545629960586317780628692755032548222173912190231545322320044688071893662480">https://alt.gov.arbitrum.foundation/proposal/70545629960586317780628692755032548222173912190231545322320044688071893662480</a>)</p>
