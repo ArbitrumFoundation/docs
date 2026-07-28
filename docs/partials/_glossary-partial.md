@@ -227,7 +227,7 @@ In other words, for non-constitutional proposals, quorum is 40% of total DVP, bu
 <p>Final phase of a <a href="/dao-glossary#security-council-election">Security Council election</a>, after which the six nominees who received the most votes become members of the <a href="/dao-glossary#security-council">Security Council</a>.   </p>
 
 ### Security Council Nominee Selection {#security-council-nominee-selection}
-<p>First phase of a <a href="/dao-glossary#security-council-election">Security Council election</a>, in which candidates who meet a minimum threshold of votes advance. </p>
+<p>First phase of a <a href="/dao-glossary#security-council-election">Security Council election</a>, in which candidates who meet a minimum threshold of votes to advance. </p>
 
 ### Seed phrase {#seed-phrase}
 <p>Also referred to as "recovery phrase" or "backup phrase". A highly sensitive, deterministic sequence of words that you can use to recover your Ethereum wallet's private keys if you lose your credentials or device.</p>
