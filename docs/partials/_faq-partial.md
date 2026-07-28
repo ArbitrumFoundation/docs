@@ -186,7 +186,7 @@
 <p>Generally no, but it depends. It’s worth checking whether there is an active Delegate Incentive Program being run by the DAO, and whether you would qualify.</p>
 
 ### How do I assign my voting power to a delegate? {#how-do-i-assign-my-voting-power-to-a-delegate}
-<p>Visit <a href="https://alt.gov.arbitrum.foundation/delegates/my-delegation">this page</a>, find the delegate you want to have to represent you, and follow the prompts!
+<p>Visit <a href="https://alt.gov.arbitrum.foundation/delegates/my-delegation">this page</a>, find the delegate you want to have represent you, and follow the prompts!
 
 ### What are the requirements for being a delegate? {#what-are-the-requirements-for-being-a-delegate}
 <p>There are none (technically)! You just have to own <a href="/dao-glossary#arb">$ARB</a> and/or appeal to the community on why they should choose you to represent them when voting on proposals in governance.</p>
