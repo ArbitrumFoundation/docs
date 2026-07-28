@@ -1,4 +1,4 @@
-The Constitution of the Arbitrum DAO encourages proposers to include the following sections within Arbitrum Improvement Proposals:
+The Constitution of the ArbitrumDAO encourages proposers to include the following sections within Arbitrum Improvement Proposals:
 
 - **Abstract** - Two or three sentences that summarize the AIP.
 - **Motivation** - A statement on why the Arbitrum community should implement the AIP.
@@ -8,6 +8,7 @@ The Constitution of the Arbitrum DAO encourages proposers to include the followi
 - **Steps to Implement** - The steps to implement the AIP, including associated costs, manpower, and other resources for each step where applicable. AIPs that involve transactions with third parties (such as grants) will need to ensure that applicable legal documentation and procedures are also included.
 - **Timeline** - Relevant timing details, including but not limited to start date, milestones, and completion dates.
 - **Overall Cost** - The total cost to implement the AIP. The overall cost section should include a breakdown of the total cost of the AIP, including any associated costs for each step where applicable. Consider both fixed costs and recurring costs.
+- **Conflicts of Interest** - The nature and extent of any direct or indirect conflict of interest that may exist for proposal authors regarding the proposal.
 
 Sometimes, AIPs aren't passed on the first try. If an AIP is not passed, the proposer may resubmit the AIP after addressing the concerns of the community. The proposer should include the following additional sections in the resubmitted AIP:
 
