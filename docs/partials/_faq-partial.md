@@ -116,7 +116,7 @@
 
 
 ### How are members of the Security Council elected? {#how-are-members-of-the-security-council-elected}
-<p>Members of the <a href="/dao-glossary#security-council">Security Council</a> are split into two six-member cohorts, one of which is up for on-chain election every six months.</p>
+<p>Members of the <a href="/dao-glossary#security-council">Security Council</a> are split into two six-member cohorts, one of which is up for on-chain election every twelve months.</p>
 
 <p>See <a href="https://arbitrumfoundation.medium.com/security-council-elections-101-3cbdee20ca82">here</a> for more info.</p>
 
@@ -136,7 +136,7 @@
 ### If a member of the Security Council isn't fulfilling their duties, what options does the DAO have?  {#if-a-member-of-the-security-council-isnt-fulfilling-their-duties-what-options-does-the-dao-have-}
 <p>If the DAO deems that a member of the <a href="/dao-glossary#security-council">Security Council</a>  isn't adequately fulfilling their duties and needs to be replaced, there are several options, in increasing order of urgency of the situation:</p>
 
-<ol><li>Each seat in the Security Council is up for election once a year; the DAO can wait until the next appropriate election vote the member out then.</li>
+<ol><li>Each seat in the Security Council is up for election once in two years; the DAO can wait until the next appropriate election to vote the member out then.</li>
 <li>At any time, the DAO can submit a proposal to remove a member of the Security Council.</li>
 <li>A threshold of 9 members of the Security Council can remove a member without an additional vote or delay.</li>
 </ol>
