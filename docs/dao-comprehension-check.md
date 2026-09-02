@@ -60,7 +60,7 @@ The process for proposing and implementing changes to the Constitution is as des
 
 #### How can you become a member of the Security Council?
 
-The Security Council has 12 members, who are divided into two cohorts of 6 members each. Every 6 months, an election occurs. Refer to the [Constitution](dao-constitution.md) for more details on the election process.
+The Security Council has 12 members, who are divided into two cohorts of 6 members each. Every 12 months, an election occurs. Refer to the [Constitution](dao-constitution.md) for more details on the election process.
 
 ### Scenario 6: You want to upgrade the Arbitrum One chain
 
