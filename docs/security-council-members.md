@@ -8,7 +8,7 @@ dao_sme: dzgoldman
 ---
 The following are the current members of the Security Council; for information about the Security Council, see ["Security Council Overview"](./concepts/security-council).
 
-i. September Cohort
+i. September 2025 Cohort
 
 1. [gzeon](https://x.com/gzeon) is a smart contract engineer at Offchain and a leaderboard warden and judge at Code4rena. gzeon has developed and maintained major components of the Arbitrum smart contract codebase and has contributed to resolving critical blockchain security incidents.
 
@@ -29,7 +29,7 @@ i. September Cohort
 
    * `0x882c6FCb3D358b9d70B97c6999159cea64168B6F`
 
-ii. March Cohort
+ii. March 2026 Cohort
 
 1. [Bartek Kiepuszewski](https://twitter.com/bkiepuszewski) has been a blockchain architect at MakerDAO since 2017. He also co-founded [l2beat.com](http://l2beat.com/) and TokenFlow Insights. Bartek holds a PhD in computer science from Queensland University of Technology.
 
