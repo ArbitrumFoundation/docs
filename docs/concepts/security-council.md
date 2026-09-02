@@ -20,15 +20,15 @@ The primary role of the Security Council is to address critical risks associated
 
 ### How the elections work
 
-The Security Council is a 12-member council divided into two groups. Every six months, there are elections to fill the seats in these two groups, respectively.
+The Security Council is a 12-member council divided into two groups. Every year, there are elections to fill the seats in these two groups, respectively.
 
-Every elected Security Council member’s term lasts one year, excluding the first cohort’s member terms, which are truncated by the amount of time between the date of the first election specified in the Constitution and the date of the DAO's launch.
+In August 2026, the ArbitrumDAO voted to extend the duration of Security Council cohort terms from one year to two years. This means that from the March 2026 cohort onwards, every elected Security Council member's term will last two years.
 
-To become a candidate for the Security Council, you must be a member of the ArbitrumDAO. You must also have support from at least 0.2% of all votable tokens. Once the candidates have been chosen, all members of the ArbitrumDAO can vote for the candidates. The 6 candidates who receive the most votes will be elected to the Security Council.  Additionally, the Arbitrum Foundation may set forth further guidelines and procedures for ensuring a fair, transparent and effective elections process.
+To become a candidate for the Security Council, you must be a member of the ArbitrumDAO. You must also have support from at least 0.1% of all votable tokens. Once the candidates have been chosen, all members of the ArbitrumDAO can vote for the candidates. The 6 candidates who receive the most votes will be elected to the Security Council.  Additionally, the Arbitrum Foundation may set forth further guidelines and procedures for ensuring a fair, transparent and effective elections process.
 
 No more than 3 candidates from the same organization should be elected into the Security Council. Also, candidates shouldn't have any conflicts of interest that would prevent them from acting in the best interests of the ArbitrumDAO.
 
-The rules for the Security Council elections can be changed by the members of the ArbitrumDAO, but these changes can't be made during an ongoing election. Security Council members can also be removed from their position prior to their term ending if at least 10% of all votable tokens participate in a removal vote, and at least 5/6 of the votes are in favor of removal. A member can also be removed if at least 9 members of the Security Council vote in favor of removal.
+The rules for the Security Council elections can be changed by the members of the ArbitrumDAO (as was the case in August 2026 when the DAO voted to introduce[ improvements to the Security Council election process](https://alt.gov.arbitrum.foundation/proposal/99505320587245662570748490045867467578602042886347829693486500764737017017943?govId=eip155:42161:0xf07ded9dc292157749b6fd268e37df6ea38395b9)), but these changes can't be made during an ongoing election. Security Council members can also be removed from their position prior to their term ending if at least 10% of all votable tokens participate in a removal vote, and at least 5/6 of the votes are in favor of removal. A member can also be removed if at least 9 members of the Security Council vote in favor of removal.
 
 Note that the [Constitution](../dao-constitution.md) is the most authoritative specification of the ArbitrumDAO's rules. If there are any discrepancies between this document and the Constitution, please feel free to submit an issue, and note that the Constitution takes precedence.
 
