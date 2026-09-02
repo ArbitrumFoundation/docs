@@ -61,7 +61,7 @@ This is a critically necessary role to protect against emergencies like the disc
 1. If there's a critical vulnerability that can be exploited, it's counterproductive to broadcast it on the public governance forum before it has been mitigated.
 2. The fix to such a vulnerability should go into effect immediately and not have the several weeks' delay of typical governance changes.
 
-The Security Council is bound by [The Constitution of the ArbitrumDAO](./dao-constitution.md) to only use its powers when necessary for these sorts of emergencies, and to issue a <a data-quicklook-from='transparency-report'>transparency report</a> when appropriate whenever its powers are used. To keep the Security Council in check, the DAO votes in semi-annual elections (split by cohorts) for the Security Council's members.
+The Security Council is bound by [The Constitution of the ArbitrumDAO](./dao-constitution.md) to only use its powers when necessary for these sorts of emergencies, and to issue a <a data-quicklook-from='transparency-report'>transparency report</a> when appropriate whenever its powers are used. To keep the Security Council in check, the DAO votes in annual elections (split by cohorts) for the Security Council's members.
 
 The Security Council can also trigger non-emergency upgrades, such as routine software upgrades and maintenance. These upgrades don't require a DAO vote to pass; they instead go through a delay period before taking effect, giving users time to opt out by withdrawing (as with decentralized DAO upgrades).
 
