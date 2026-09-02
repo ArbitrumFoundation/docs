@@ -218,7 +218,7 @@ In other words, for non-constitutional proposals, quorum is 40% of total DVP, bu
 
 
 ### Security Council election {#security-council-election}
-<p>A process by which the <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a> can elect the members of the <a href="/dao-glossary#security-council">Security Council</a>. Happens twice a year.</p>
+<p>A process by which the <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a> can elect the members of the <a href="/dao-glossary#security-council">Security Council</a>. Happens once a year.</p>
 
 ### Security Council Election Compliance {#security-council-election-compliance}
 <p>Second phase of a <a href="/dao-glossary#security-council-election">Security Council election</a>, in which <a href="/dao-glossary#the-arbitrum-foundation">The Arbitrum Foundation</a> ensures nominees have passed the requisite compliance checks in order to become <a href="/dao-glossary#security-council">Security Council</a> members.</p>
