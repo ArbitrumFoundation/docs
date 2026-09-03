@@ -101,6 +101,10 @@ module.exports = {
         {
           type: 'doc',
           id: 'how-tos/vote-dao-proposals',
+        },
+        {
+          type: 'doc',
+          id: 'how-tos/register-token-via-dao-governance',
         }
       ],
     },
