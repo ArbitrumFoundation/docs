@@ -1,8 +1,8 @@
 ---
 id: dao-glossary
-title: Arbitrum DAO glossary
+title: ArbitrumDAO glossary
 sidebar_label: Glossary
-description: Review the Arbitrum DAO's key terms and definitions.
+description: Review the ArbitrumDAO's key terms and definitions.
 toc_min_heading_level: 3
 ---
 
