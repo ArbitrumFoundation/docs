@@ -1,8 +1,8 @@
 ---
 id: dao-faqs
-title: Arbitrum DAO FAQs
+title: ArbitrumDAO FAQs
 sidebar_label: FAQs
-description: FAQs about the Arbitrum DAO.
+description: FAQs about the ArbitrumDAO.
 toc_min_heading_level: 3
 ---
 
