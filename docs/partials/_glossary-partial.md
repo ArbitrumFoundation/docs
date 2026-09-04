@@ -1,7 +1,7 @@
 
 
 ### $ARB {#arb}
-<p>Arbitrum's governance token, an ERC-20 token native to the <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> chain. Owning $ARB makes you a member of the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> and allows you to participate in Arbitrum's on-chain governance.</p>
+<p>Arbitrum's governance token, an ERC-20 token native to the <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> chain. Owning $ARB makes you a member of the <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a> and allows you to participate in Arbitrum's on-chain governance.</p>
 
 ### $ARB reverse gateway {#arb-reverse-gateway}
 <p>A series of smart contracts responsible for bridging <a href="/dao-glossary#arb">$ARB</a> between <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> and Ethereum. The $ARB token is native to Arbitrum One, meaning it's minted within a smart contract that lives on the Arbitrum One chain. The "reverse" gateway keeps the full $ARB supply escrowed in Arbitrum One, and mints or burns the <a href="/dao-glossary#layer-1-l1">Layer 1 (L1)</a> token representation upon deposits/withdrawals. The reverse gateway is often compared to the <a href="/dao-glossary#standard-token-gateway">Standard Token gateway</a>", which mints/burns on <a href="/dao-glossary#layer-2-l2">Layer 2 (L2)</a>.</p>
@@ -26,19 +26,19 @@
 <p>A blockchain that runs on the Arbitrum protocol. Arbitrum chains are EVM compatible, and use an underlying EVM chain (e.g., Ethereum) for settlement and for succinct fraud-proofs (as needed).  Arbitrum chains come in two forms: <a href="/dao-glossary#arbitrum-rollup-chain">Arbitrum Rollup Chain</a>s and <a href="/dao-glossary#arbitrum-anytrust-chain">Arbitrum AnyTrust Chain</a>s. </p>
 
 ### Arbitrum Chain owner {#arbitrum-chain-owner}
-<p>An entity with the affordance to upgrade Arbitrum core protocol contracts and set various system parameters. Arbitrum One has two chain owners: the Arbitrum DAO and the Security Council.</p>
+<p>An entity with the affordance to upgrade Arbitrum core protocol contracts and set various system parameters. Arbitrum One has two chain owners: the ArbitrumDAO and the Security Council.</p>
 
-### Arbitrum DAO {#arbitrum-dao}
-<p>The worldwide community of <a href="/dao-glossary#arb">$ARB</a> token holders and <a href="/dao-glossary#delegate">Delegate</a>s. Governs the <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> chain, the <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a> chain, <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a>, and the <a href="/dao-glossary#security-council">Security Council</a>.</p>
+### ArbitrumDAO {#arbitrum-dao}
+<p>The worldwide community of <a href="/dao-glossary#arb">$ARB</a> token holders and <a href="/dao-glossary#delegate">Delegate</a>s. Governs the <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> chain, the <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a> chain, <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the ArbitrumDAO</a>, and the <a href="/dao-glossary#security-council">Security Council</a>.</p>
 
-### Arbitrum DAO governance forum {#arbitrum-dao-governance-forum}
+### ArbitrumDAO governance forum {#arbitrum-dao-governance-forum}
 <p>Public forum for viewing and discussing <a href="/dao-glossary#arbitrum-improvement-proposal-aip">Arbitrum Improvement Proposal (AIP)</a>s and other governance-related topics.</p>
 
-### Arbitrum DAO Treasury {#arbitrum-dao-treasury}
-<p>A smart contract on the <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> chain that contains tokens collectively controlled by the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>.</p>
+### ArbitrumDAO Treasury {#arbitrum-dao-treasury}
+<p>A smart contract on the <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> chain that contains tokens collectively controlled by the <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a>.</p>
 
 ### Arbitrum Improvement Proposal (AIP) {#arbitrum-improvement-proposal-aip}
-<p>A <a href="/dao-glossary#governance-proposal">Governance proposal</a> as defined by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a>. There are two types of AIPs: <a href="/dao-glossary#constitutional-aip">Constitutional AIP</a>s and <a href="/dao-glossary#nonconstitutional-aip">Non-constitutional AIP</a>s.</p>
+<p>A <a href="/dao-glossary#governance-proposal">Governance proposal</a> as defined by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the ArbitrumDAO</a>. There are two types of AIPs: <a href="/dao-glossary#constitutional-aip">Constitutional AIP</a>s and <a href="/dao-glossary#nonconstitutional-aip">Non-constitutional AIP</a>s.</p>
 
 ### Arbitrum Nitro {#arbitrum-nitro}
 <p>Current Arbitrum tech stack; runs a fork of <a href="/dao-glossary#geth">Geth</a> and uses WebAssembly as its underlying VM for fraud proofs.</p>
@@ -65,7 +65,7 @@
 <p><a href="/dao-glossary#arb">$ARB</a> tokens claimed from the <a href="/dao-glossary#token-distributor-contract">Token Distributor Contract</a> during the <a href="/dao-glossary#claimable-airdrop-period">Claimable airdrop period</a>.</p>
 
 ### Constitutional AIP {#constitutional-aip}
-<p>As opposed to <a href="/dao-glossary#nonconstitutional-aip">Non-constitutional AIP</a>. The stricter of the two types of proposals. Constitution proposals requires a longer delay before effectuation. Refer to The Constitution of the Arbitrum DAO for a more precise definition. </p>
+<p>As opposed to <a href="/dao-glossary#nonconstitutional-aip">Non-constitutional AIP</a>. The stricter of the two types of proposals. Constitution proposals requires a longer delay before effectuation. Refer to The Constitution of the ArbitrumDAO for a more precise definition. </p>
 
 ### Core Governor {#core-governor}
 <p>Governance contract responsible for creating <a href="/dao-glossary#constitutional-aip">Constitutional AIP</a>s, aka "core proposals." </p>
@@ -96,10 +96,10 @@
 <p>Facilitates <a href="/dao-glossary#smart-contract">Smart contract</a> logic and execution for Ethereum's <a href="/dao-glossary#layer-1-l1">Layer 1 (L1)</a>  network. Powered by execution-layer clients like <a href="/dao-glossary#geth">Geth</a>, Nethermind, and Besu.</p>
 
 ### Exclude Address {#exclude-address}
-<p>Special address (<a href="https://arbiscan.io/address/0x00000000000000000000000000000000000a4b86">0x00000000000000000000000000000000000a4b86</a>) that ARB holders can delegates can their votes to so-as not to be included in proposals' quorum calculation. Notable, the Arbitrum DAO treasury has its votes excluded.</p>
+<p>Special address (<a href="https://arbiscan.io/address/0x00000000000000000000000000000000000a4b86">0x00000000000000000000000000000000000a4b86</a>) that ARB holders can delegate their votes to, so not to be included in the qualification threshold calculation for the Nominee Selection phase of the Security Council election process. Notably, the Arbitrum DAO treasury has its votes excluded.</p>
 
 ### Foundation Vesting Wallet {#foundation-vesting-wallet}
-<p>Smart contract wallet that stores the <a href="/dao-glossary#the-arbitrum-foundation">The Arbitrum Foundation</a>'s tokens; tokens vest linearly over the course of 4 years, as specified [AIP 1.1](<a href="https://www.tally.xyz/gov/arbitrum/proposal/70545629960586317780628692755032548222173912190231545322320044688071893662480">https://www.tally.xyz/gov/arbitrum/proposal/70545629960586317780628692755032548222173912190231545322320044688071893662480</a>)</p>
+<p>Smart contract wallet that stores the <a href="/dao-glossary#the-arbitrum-foundation">The Arbitrum Foundation</a>'s tokens; tokens vest linearly over the course of 4 years, as specified [AIP 1.1](<a href="https://alt.gov.arbitrum.foundation/proposal/70545629960586317780628692755032548222173912190231545322320044688071893662480">https://alt.gov.arbitrum.foundation/proposal/70545629960586317780628692755032548222173912190231545322320044688071893662480</a>)</p>
 
 ### Geth {#geth}
 <p>An execution-layer client that defines the Ethereum state transition function and handles network-layer logic like transaction memory pooling. <a href="/dao-glossary#arbitrum-nitro">Arbitrum Nitro</a> utilizes a fork of Geth to implement Arbitrum's state transition function.</p>
@@ -111,10 +111,10 @@
 <p>Contract with the logic to be used for the execution of a <a href="/dao-glossary#governance-proposal">Governance proposal</a>; see <a href="https://github.com/OffchainLabs/governance/blob/main/docs/proposal_lifecycle_example.md#pre-governance-steps">governance contracts docs</a> for details.</p>
 
 ### Governance proposal {#governance-proposal}
-<p>A proposal to change some aspect of <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>'s governance protocol. There are two types of Arbitrum DAO governance proposals: <a href="/dao-glossary#constitutional-aip">Constitutional AIP</a>s and <a href="/dao-glossary#nonconstitutional-aip">Non-constitutional AIP</a>s.</p>
+<p>A proposal to change some aspect of <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a>'s governance protocol. There are two types of ArbitrumDAO governance proposals: <a href="/dao-glossary#constitutional-aip">Constitutional AIP</a>s and <a href="/dao-glossary#nonconstitutional-aip">Non-constitutional AIP</a>s.</p>
 
 ### Governance token {#governance-token}
-<p>A particular type of token that allows token-holders to vote on governance proposals. <a href="/dao-glossary#arb">$ARB</a> is an example of a governance token; it allows token-holders to create and vote on <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> <a href="/dao-glossary#governance-proposal">Governance proposal</a>s.</p>
+<p>A particular type of token that allows token-holders to vote on governance proposals. <a href="/dao-glossary#arb">$ARB</a> is an example of a governance token; it allows token-holders to create and vote on <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a> <a href="/dao-glossary#governance-proposal">Governance proposal</a>s.</p>
 
 ### Immutable {#immutable}
 <p>In the context of Ethereum, immutability refers to the inability to change the data recorded in the blockchain. You can think of Ethereum's blockchain as a decentralized, distributed linked-list data structure that stores the entire history of transactions within a globally distributed network of computers running Ethereum client software.<br />
@@ -130,13 +130,13 @@ The client software implements a protocol that stores transaction history within
 <p>Transaction fee component paid by a user to a chain's <a href="/dao-glossary#sequencer">Sequencer</a> to refund the Sequencer for its batch-posting fees.</p>
 
 ### L1 Surplus Fee {#l1-surplus-fee}
-<p>Transaction fee component charged as proportion of L1 base fee, beyond, e.g., the amount strictly necessary for the Sequencer to break even; collected by the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>.</p>
+<p>Transaction fee component charged as proportion of L1 base fee, beyond, e.g., the amount strictly necessary for the Sequencer to break even; collected by the <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a>.</p>
 
 ### L2 Base Fee {#l2-base-fee}
-<p>Transaction fee component that covers the minimum cost of Arbitrum transaction execution; collection by the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> on <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> and by the DAO + the <a href="/dao-glossary#data-availability-committee-dac">Data Availability Committee (DAC)</a> on <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a>. </p>
+<p>Transaction fee component that covers the minimum cost of Arbitrum transaction execution; collection by the <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a> on <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> and by the DAO + the <a href="/dao-glossary#data-availability-committee-dac">Data Availability Committee (DAC)</a> on <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a>. </p>
 
 ### L2 Surplus Fee {#l2-surplus-fee}
-<p>Transaction fee component that covers the cost beyond that covered by the <a href="/dao-glossary#l2-base-fee">L2 Base Fee</a>  during chain congestion; collection by the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>. </p>
+<p>Transaction fee component that covers the cost beyond that covered by the <a href="/dao-glossary#l2-base-fee">L2 Base Fee</a>  during chain congestion; collection by the <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a>. </p>
 
 ### Late quorum extension {#late-quorum-extension}
 <p>An extension of the a <a href="/dao-glossary#governance-proposal">Governance proposal</a>'s voting period by at most two days if <a href="/dao-glossary#quorum">Quorum</a> is reached late, such that there are at least two days of voting after quorum is reached. With late-quorum extension logic, it follows that a proposal's voting period is at least 14 days and at most 16 days.</p>
@@ -157,7 +157,7 @@ The client software implements a protocol that stores transaction history within
 <p>Anyone who runs core protocol software in the Ethereum / Arbitrum ecosystem; e.g., Ethereum Nodes, Arbitrum One nodes, or Arbitrum Nova nodes.</p>
 
 ### Non-constitutional AIP {#nonconstitutional-aip}
-<p>One of two types of <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> <a href="/dao-glossary#governance-proposal">Governance proposal</a>s (the other being <a href="/dao-glossary#constitutional-aip">Constitutional AIP</a>). Non-constitutional AIPs are those that don't meet the criteria to be considered "constitutional".</p>
+<p>One of two types of <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a> <a href="/dao-glossary#governance-proposal">Governance proposal</a>s (the other being <a href="/dao-glossary#constitutional-aip">Constitutional AIP</a>). Non-constitutional AIPs are those that don't meet the criteria to be considered "constitutional".</p>
 
 ### Non-emergency action {#nonemergency-action}
 <p>Routine actions taken by the <a href="/dao-glossary#security-council">Security Council</a>, such as software upgrades and maintenance. Emergency actions are activated only after a delay, as opposed to <a href="/dao-glossary#emergency-action">Emergency action</a>.</p>
@@ -166,13 +166,13 @@ The client software implements a protocol that stores transaction history within
 <p>As opposed to on-chain governance or <a href="/dao-glossary#smart-contract">Smart contract</a> governance. Off-chain governance is carried out through social consensus, and off-chain proposals. The Ethereum Foundation's EIP mechanism is an example of an off-chain governance protocol.</p>
 
 ### Off-chain governance action {#offchain-governance-action}
-<p>One of two types of governance actions allowed by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a>. Off-chain actions are actions that are executed without <a href="/dao-glossary#smart-contract">Smart contract</a>s. An example of an off-chain governance action is taking a "temperature check" on a proposal before submitting it to the governor contract.</p>
+<p>One of two types of governance actions allowed by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the ArbitrumDAO</a>. Off-chain actions are actions that are executed without <a href="/dao-glossary#smart-contract">Smart contract</a>s. An example of an off-chain governance action is taking a "temperature check" on a proposal before submitting it to the governor contract.</p>
 
 ### On-chain governance {#onchain-governance}
-<p>As opposed to off-chain governance, social governance, or pseudo governance. On-chain governance is governance implemented by <a href="/dao-glossary#smart-contract">Smart contract</a>s that allow DAO members to determine - through the use of <a href="/dao-glossary#governance-proposal">Governance proposal</a>s - how the DAO allocates its resources and updates its protocols. The <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> utilizes on-chain governance.</p>
+<p>As opposed to off-chain governance, social governance, or pseudo governance. On-chain governance is governance implemented by <a href="/dao-glossary#smart-contract">Smart contract</a>s that allow DAO members to determine - through the use of <a href="/dao-glossary#governance-proposal">Governance proposal</a>s - how the DAO allocates its resources and updates its protocols. The <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a> utilizes on-chain governance.</p>
 
 ### On-chain governance action {#onchain-governance-action}
-<p>One of two types of governance actions allowed by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a>. On-chain actions are executed as transactions submitted to the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>'s governance smart contracts. Updating the rate of <a href="/dao-glossary#arb">$ARB</a>  inflation is an example of an on-chain governance action.</p>
+<p>One of two types of governance actions allowed by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the ArbitrumDAO</a>. On-chain actions are executed as transactions submitted to the <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a>'s governance smart contracts. Updating the rate of <a href="/dao-glossary#arb">$ARB</a>  inflation is an example of an on-chain governance action.</p>
 
 ### Optimistic rollup protocol {#optimistic-rollup-protocol}
 <p>Optimistic rollup protocols are <a href="/dao-glossary#layer-2-l2">Layer 2 (L2)</a> protocols that are designed to extend the throughput of Ethereum's base layer by using the base later for data availability and offloading computation to off-chain nodes. <a href="/dao-glossary#arbitrum-rollup-protocol">Arbitrum Rollup Protocol</a> is an optimistic rollup protocol that inherits Ethereum's base-layer security guarantees.</p>
@@ -181,29 +181,44 @@ The client software implements a protocol that stores transaction history within
 <p>EVM compatible chain that acts as the settlement layer for one or more Arbitrum Chains (aka <a href="/dao-glossary#child-chain">Child chain</a>  ). E.g., Ethereum is the parent chain of both Arbitrum One and Arbitrum Nova. Parent chain is synonymous with "underlying chain." </p>
 
 ### Progressive decentralization {#progressive-decentralization}
-<p>The process of gradually increasing the decentralization of a system over time. In the context of the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>, and decentralizing <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> and <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a>, progressive decentralization refers to decentralizing the ownership of the chains, validators, sequencers, and the <a href="/dao-glossary#data-availability-committee-dac">Data Availability Committee (DAC)</a>.</p>
+<p>The process of gradually increasing the decentralization of a system over time. In the context of the <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a>, and decentralizing <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> and <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a>, progressive decentralization refers to decentralizing the ownership of the chains, validators, sequencers, and the <a href="/dao-glossary#data-availability-committee-dac">Data Availability Committee (DAC)</a>.</p>
 
 ### Proposal waiting period {#proposal-waiting-period}
 <p>A contract-enforced delay period of roughly two weeks that begins after a <a href="/dao-glossary#governance-proposal">Governance proposal</a> is accepted, and after which the proposal takes effect. The proposal waiting period is intended to give users the option of opting out (for example, by withdrawing their funds).</p>
 
 ### Prysm {#prysm}
-<p>A consensus-layer client that powers Ethereum <a href="/dao-glossary#layer-1-l1">Layer 1 (L1)</a>. Originally created by Prysmatic Labs; acquired by Offchain Labs in 2022.</p>
+<p>A consensus-layer client that powers Ethereum <a href="/dao-glossary#layer-1-l1">Layer 1 (L1)</a>. Originally created by Prysmatic Labs; acquired by Offchain in 2022.</p>
 
 ### Quorum {#quorum}
-<p>Minimum votes required for a <a href="/dao-glossary#governance-proposal">Governance proposal</a> to pass. For each governor's proposals, the quorum is a percentage of the non-excluded votes at the time that voting on the proposal begins (4.5% for the <a href="/dao-glossary#core-governor">Core Governor</a> and 3% for the <a href="/dao-glossary#treasury-governor">Treasury Governor</a>.</p>
+<p>Minimum ‘For’ and/or ‘Abstain’ votes required for a <a href="/dao-glossary#governance-proposal">Governance proposal</a> to pass. For each governor's proposals, the quorum is a fixed percentage of the total Delegated Voting Power (DVP). Furthermore, there are fixed lower and upper bound quorum thresholds to ensure that quorum remains robust yet achievable.
+
+Quorum = min{max quorum, max{ɑ*DVP, baseline quorum}} where ɑ, baseline quorum, and max quorum are constants.
+
+#### For constitutional proposals:
+<ul><li>{ɑ = 0.5; baseline quorum = 150m ARB; max quorum = 450m ARB}
+</li>
+</ul>
+In other words, for constitutional proposals, quorum is 50% of total DVP, but cannot be less than 150m $ARB nor more than 450m $ARB.
+
+#### For non-constitutional proposals:
+
+<ul><li>{ɑ = 0.4; baseline quorum = 100m $ARB; max quorum = 300m $ARB}
+</li>
+</ul>
+In other words, for non-constitutional proposals, quorum is 40% of total DVP, but cannot be less than 100m $ARB nor more than 300m $ARB. To learn more about quorum, refer to the <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the ArbitrumDAO</a>.</p>
 
 ### Security Council {#security-council}
 <p>A 12-member council of entities who hold the private keys to a 12-member <a href="/dao-glossary#multisignature-wallet">Multisignature wallet</a>. Members of the council use this wallet to perform <a href="/dao-glossary#emergency-action">Emergency action</a>s and <a href="/dao-glossary#nonemergency-action">Non-emergency action</a>s.</p>
 
 ### Security Council Cohort {#security-council-cohort}
-<p>The 12 members of the <a href="/dao-glossary#security-council">Security Council</a> are split into two six-member cohorts; during a <a href="/dao-glossary#security-council-election">Security Council election</a>, the six seats in one the two cohorts seats are up election. </p>
+<p>The 12 members of the <a href="/dao-glossary#security-council">Security Council</a> are split into two six-member cohorts; during a <a href="/dao-glossary#security-council-election">Security Council election</a>, the six seats in one of the two cohorts seats are up for election. </p>
 
 <p></p>
 
 
 
 ### Security Council election {#security-council-election}
-<p>A process by which the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> can elect the members of the <a href="/dao-glossary#security-council">Security Council</a>. Happens twice a year.</p>
+<p>A process by which the <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a> can elect the members of the <a href="/dao-glossary#security-council">Security Council</a>. Happens once a year.</p>
 
 ### Security Council Election Compliance {#security-council-election-compliance}
 <p>Second phase of a <a href="/dao-glossary#security-council-election">Security Council election</a>, in which <a href="/dao-glossary#the-arbitrum-foundation">The Arbitrum Foundation</a> ensures nominees have passed the requisite compliance checks in order to become <a href="/dao-glossary#security-council">Security Council</a> members.</p>
@@ -212,7 +227,7 @@ The client software implements a protocol that stores transaction history within
 <p>Final phase of a <a href="/dao-glossary#security-council-election">Security Council election</a>, after which the six nominees who received the most votes become members of the <a href="/dao-glossary#security-council">Security Council</a>.   </p>
 
 ### Security Council Nominee Selection {#security-council-nominee-selection}
-<p>First phase of a <a href="/dao-glossary#security-council-election">Security Council election</a>, in which candidates who meet a minimum threshold of votes advance. </p>
+<p>First phase of a <a href="/dao-glossary#security-council-election">Security Council election</a>, in which candidates who meet a minimum threshold of votes to advance. </p>
 
 ### Seed phrase {#seed-phrase}
 <p>Also referred to as "recovery phrase" or "backup phrase". A highly sensitive, deterministic sequence of words that you can use to recover your Ethereum wallet's private keys if you lose your credentials or device.</p>
@@ -221,44 +236,47 @@ The client software implements a protocol that stores transaction history within
 <p>An entity (currently a single-party on Arbitrum One) given rights to reorder transactions in the Fast Inbox  over a fixed window of time, who can thus give clients sub-blocktime Soft Confirmations. (Not to be confused with a Validator).</p>
 
 ### Smart contract {#smart-contract}
-<p>Self-executing code that's stored and executed on the Ethereum blockchain - either on <a href="/dao-glossary#layer-1-l1">Layer 1 (L1)</a> or <a href="/dao-glossary#layer-2-l2">Layer 2 (L2)</a>. Smart contracts let you automate tasks and protocols in a <a href="/dao-glossary#trustless">Trustless</a> manner. The <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> uses smart contracts to trustlessly implement the protocol defined by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a>.</p>
+<p>Self-executing code that's stored and executed on the Ethereum blockchain - either on <a href="/dao-glossary#layer-1-l1">Layer 1 (L1)</a> or <a href="/dao-glossary#layer-2-l2">Layer 2 (L2)</a>. Smart contracts let you automate tasks and protocols in a <a href="/dao-glossary#trustless">Trustless</a> manner. The <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a> uses smart contracts to trustlessly implement the protocol defined by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the ArbitrumDAO</a>.</p>
 
-### Snapshot poll {#snapshot-poll}
-<p>Mechanism by which <a href="/dao-glossary#delegate">Delegate</a>s can vote off-chain; used for temperature checks in conjunction with the Arbitrum DAO governance forum.</p>
+### Off-chain Governance UI  {#offchain-governance-ui}
+<p>Web interface that can be used to raise off-chain proposals and cast off-chain votes; typically used for temperature checks in conjunction with the ArbitrumDAO governance forum.</p>
 
 ### Standard Token gateway {#standard-token-gateway}
 <p>A series of smart contracts responsible for bridging ERC20 tokens on Ethereum to Arbitrum chains like <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> or <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a> and back.  The standard gateway keeps the L1 token escrowed on Ethereum and mints/burns the L2 token representation upon deposits/withdrawals. </p>
 
-### Tally {#tally}
-<p>Web interface that can be used to interact with Arbitrum Governance contracts, including viewing, submitting, and voting on <a href="/dao-glossary#governance-proposal">Governance proposal</a>s. <a href="https://www.tally.xyz/gov/arbitrum">Link</a></p>
+### On-chain Governance UI {#onchain-governance-ui}
+<p>Web interface that can be used to interact with Arbitrum Governance contracts, including viewing, submitting, and voting on <a href="/dao-glossary#governance-proposal">Governance proposals</a>:
 
-<p></p>
+<ul><li><a href="https://alt.gov.arbitrum.foundation/">Primary governance UI</a> (maintained by Offchain)</a>
+</li>
+<li><a href="https://snapshot.box/#/org/arbitrum">Backup governance UI</a> (maintained by Snapshot)</a></li>
+</ul>
 
 
 
 ### The Arbitrum Foundation {#the-arbitrum-foundation}
-<p>A legal entity that is governed by the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>. Is bound to the rules articulated within <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a>.</p>
+<p>A legal entity that is governed by the <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a>. Is bound to the rules articulated within <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the ArbitrumDAO</a>.</p>
 
 ### The Arbitrum Treasury tokens {#the-arbitrum-treasury-tokens}
-<p><a href="/dao-glossary#arb">$ARB</a> tokens owned by the <a href="/dao-glossary#arbitrum-dao-treasury">Arbitrum DAO Treasury</a>.</p>
+<p><a href="/dao-glossary#arb">$ARB</a> tokens owned by the <a href="/dao-glossary#arbitrum-dao-treasury">ArbitrumDAO Treasury</a>.</p>
 
-### The Constitution of the Arbitrum DAO {#the-constitution-of-the-arbitrum-dao}
-<p>A formal document that lays out the rules, procedures, and community values by which the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> operates. The hash of the canonical constitution is stored on chain and is updatable via governance. The protocol outlined by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the Arbitrum DAO</a> is codified within the <a href="/dao-glossary#smart-contract">Smart contract</a>s that facilitate <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> governance.</p>
+### The Constitution of the ArbitrumDAO {#the-constitution-of-the-arbitrum-dao}
+<p>A formal document that lays out the rules, procedures, and community values by which the <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a> operates. The hash of the canonical constitution is stored on chain and is updatable via governance. The protocol outlined by <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the ArbitrumDAO</a> is codified within the <a href="/dao-glossary#smart-contract">Smart contract</a>s that facilitate <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a> governance.</p>
 
 ### Timelock contract {#timelock-contract}
-<p>A smart contract that restricts an action from taking place before a specified future time. Used at various stages in the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a>'s governance proposal process.</p>
+<p>A smart contract that restricts an action from taking place before a specified future time. Used at various stages in the <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a>'s governance proposal process.</p>
 
 ### Token Distributor Contract {#token-distributor-contract}
 <p><a href="/dao-glossary#smart-contract">Smart contract</a> that was responsible for holding and distributing <a href="/dao-glossary#arb">$ARB</a> tokens for the <a href="/dao-glossary#airdrop">Airdrop</a>. The airdrop ended 9/24/23.</p>
 
 ### Token-weighted governance {#tokenweighted-governance}
-<p>A protocol governance system in which voting weight is proportional to ownership of a governance token. The <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> implements token-weighted governance.</p>
+<p>A protocol governance system in which voting weight is proportional to ownership of a governance token. The <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a> implements token-weighted governance.</p>
 
 ### Transparency report {#transparency-report}
 <p>A report that explains what actions were taken and why, especially after <a href="/dao-glossary#emergency-action">Emergency action</a>s executed by the <a href="/dao-glossary#security-council">Security Council</a>.</p>
 
 ### Treasury Governor {#treasury-governor}
-<p>Governance contract responsible for creating <a href="/dao-glossary#nonconstitutional-aip">Non-constitutional AIP</a>s, or "treasury proposals", e.g., transferring founds out of the <a href="/dao-glossary#arbitrum-dao-treasury">Arbitrum DAO Treasury</a>.  </p>
+<p>Governance contract responsible for creating <a href="/dao-glossary#nonconstitutional-aip">Non-constitutional AIP</a>s, or "treasury proposals", e.g., transferring founds out of the <a href="/dao-glossary#arbitrum-dao-treasury">ArbitrumDAO Treasury</a>.  </p>
 
 ### Trustless {#trustless}
 <p>In the context of Ethereum, trustless refers to the ability of a system to operate without reliance on a central authority or intermediary. Instead, users place their trust in math and protocols.<br />
@@ -275,16 +293,18 @@ This is achieved through the use of cryptographic techniques and decentralized c
 ### Votable tokens {#votable-tokens}
 <p>All $ARB tokens in existence except for:</p>
 
-<ul><li>tokens owned by the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a></li>
-<li>tokens owned by <a href="/dao-glossary#the-arbitrum-foundation">The Arbitrum Foundation</a></li>
+<ul><li>tokens owned by the <a href="/dao-glossary#arbitrum-dao-treasury">ArbitrumDAO Treasury</a>
+</li>
+<li>tokens owned by <a href="/dao-glossary#the-arbitrum-foundation">The Arbitrum Foundation</a>
+</li>
+<li>tokens delegated to the <a href="https://arbiscan.io/address/0x00000000000000000000000000000000000a4b86">exclude address</a></li>
 </ul>
-<p><br />
 Votable tokens give their holders voting power in direct proportion to the quantity of tokens held. More $ARB == more voting power.</p>
 
 
 
 ### Voting period {#voting-period}
-<p>14-16 days after an <a href="/dao-glossary#arbitrum-improvement-proposal-aip">Arbitrum Improvement Proposal (AIP)</a> is successfully submitted during which members of the <a href="/dao-glossary#arbitrum-dao">Arbitrum DAO</a> can vote for or against.<br />
+<p>14-16 days after an <a href="/dao-glossary#arbitrum-improvement-proposal-aip">Arbitrum Improvement Proposal (AIP)</a> is successfully submitted during which members of the <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a> can vote for, against or abstain.<br />
 </p>
 
 
