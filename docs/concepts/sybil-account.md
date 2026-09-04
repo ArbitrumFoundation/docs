@@ -2,15 +2,14 @@
 id: sybil-account
 title: "Sybil accounts: A conceptual overview"
 sidebar_label: Sybil accounts
-description: Learn about Sybil accounts and how they were detected prior to the $ARB airdrop.
+description: Learn about Sybil accounts and how they were detected prior to the
+  $ARB airdrop.
 dao_author: dzgoldman
 dao_sme: dzgoldman
 ---
-
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
 
 <DraftExpectationsPartial />
-
 
 ### What are Sybil accounts?
 
@@ -22,9 +21,8 @@ A process called "Sybil hunting" was used to detect and remove Sybil accounts. T
 
 ### Why is it important to prevent Sybil accounts?
 
-By receiving an outsized share of the $ARB airdrop, Sybil accounts can lead to concentration of voting power and undermine the decentralized nature of the <a data-quicklook-from='arbitrum-dao'>Arbitrum DAO</a>. By preventing Sybil accounts, the Arbitrum DAO is able to ensure that the initial token distribution is as fair as possible.
+By receiving an outsized share of the $ARB airdrop, Sybil accounts can lead to concentration of voting power and undermine the decentralized nature of the <a data-quicklook-from='arbitrum-dao'>ArbitrumDAO</a>. By preventing Sybil accounts, the ArbitrumDAO is able to ensure that the initial token distribution is as fair as possible.
 
-### Why not use proof-of-personhood? 
+### Why not use proof-of-personhood?
 
 Criteria for allotment of the $ARB airdrop involves on-chain activity. The ability for users to interact with Arbitrum One permissionlessly and pseudonymously is a fundamental property of the system. Requiring some sort of identity verification for airdrop-qualification would undermine this core value, and thus wasn't considered.
-
