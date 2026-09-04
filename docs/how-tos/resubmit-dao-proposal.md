@@ -2,16 +2,16 @@
 id: resubmit-dao-proposal
 title: How to resubmit a DAO proposal
 sidebar_label: Resubmit a proposal
-description: Learn how to resubmit a proposal to the Arbitrum DAO that was previously rejected or did not reach quorum.
+description: Learn how to resubmit a proposal to the ArbitrumDAO that was
+  previously rejected or did not reach quorum.
 dao_author: symbolpunk
 dao_sme: amarrazza
 ---
-
 import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-partial.md'; 
 
 <DraftExpectationsPartial />
 
-In this how-to, you'll learn how to resubmit a proposal to the Arbitrum DAO that was previously rejected or did not reach quorum.
+In this how-to, you'll learn how to resubmit a proposal to the ArbitrumDAO that was previously rejected or did not reach quorum.
 
 ### Step 1: Review the feedback from the previous proposal
 
@@ -23,8 +23,8 @@ Incorporate the community's feedback into a revised proposal. Consider using you
 
 ### Step 3: Resubmit the proposal
 
-Treat your revised proposal as a brand new proposal. Begin by conducting a new temperature check on the governance forum by following the [Submit a proposal](./create-submit-dao-proposal.md) procedure. Pay close attention to the guidance within the proposal structure section of this procedure; you'll want to include additional information that explicitly addresses the concerns that were raised during the previous submission.
+Treat your revised proposal as a brand new proposal. Begin by conducting a new temperature check on the governance forum by following the [Submit a proposal](https://docs.arbitrum.foundation/how-tos/create-submit-dao-proposal) procedure. Pay close attention to the guidance within the proposal structure section of this procedure; you'll want to include additional information that explicitly addresses the concerns that were raised during the previous submission.
 
 If your proposal is rejected multiple times, it may be best to reconsider the proposal altogether or to engage more extensively with the community to gather feedback and build support.
 
-Resubmitting a proposal is an iterative process that requires patience, persistence, and an open mind. By working closely with the community to capture and integrate feedback, you can increase your chances of getting your proposal passed. If you have any questions or concerns, visit the [Arbitrum DAO governance forum](https://forum.arbitrum.foundation/) or [Discord](https://www.discord.gg/arbitrum).
+Resubmitting a proposal is an iterative process that requires patience, persistence, and an open mind. By working closely with the community to capture and integrate feedback, you can increase your chances of getting your proposal passed. If you have any questions or concerns, visit the [ArbitrumDAO governance forum](https://forum.arbitrum.foundation/).
