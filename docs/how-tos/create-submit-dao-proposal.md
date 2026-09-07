@@ -2,9 +2,7 @@
 id: create-submit-dao-proposal
 title: How to submit a DAO proposal
 sidebar_label: Submit a DAO proposal
-description: Learn how to submit a proposal to the ArbitrumDAO's governance
-  forum by using the off-chain governance UI to conduct a temperature check, and
-  then to the on-chain governance UI to facilitate an on-chain vote.
+description: Learn how to submit a proposal to the ArbitrumDAO
 dao_author: amarrazza
 dao_sme: amarrazza
 ---
