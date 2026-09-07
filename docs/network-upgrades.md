@@ -9,9 +9,9 @@ import DraftExpectationsPartial from '@site/docs/partials/_draft-expectations-pa
 
 <DraftExpectationsPartial />
 
-This page has information on the state and timelines of major software updates to Arbitrum One and Arbitrum Nova. Software updates that alter an Arbitrum chain's ability to produce valid Arbitrum blocks are referred to as ArbOS upgrades and, as outlined in the [Arbitrum DAO Constitution](./dao-constitution.md), will always require a Constiutional AIP to pass for DAO-governed chains.
+This page has information on the state and timelines of major software updates to Arbitrum One and Arbitrum Nova. Software updates that alter an Arbitrum chain's ability to produce valid Arbitrum blocks are referred to as ArbOS upgrades and, as outlined in the [ArbitrumDAO Constitution](./dao-constitution.md), will always require a Constiutional AIP to pass for DAO-governed chains.
 
-Visit [Inside Arbitrum Nitro](https://docs.arbitrum.io/inside-arbitrum-nitro/) to learn more about Nitro's architecture; more information about ArbOS software releases is available on the [Arbitrum DAO forum](https://forum.arbitrum.foundation/t/arbitrum-arbos-upgrades/19695) as well as in the documentation for the [overview of ArbOS software releases](https://docs.arbitrum.io/node-running/reference/arbos-software-releases/overview).
+Visit [Inside Arbitrum Nitro](https://docs.arbitrum.io/inside-arbitrum-nitro/) to learn more about Nitro's architecture; more information about ArbOS software releases is available on the [ArbitrumDAO forum](https://forum.arbitrum.foundation/t/arbitrum-arbos-upgrades/19695) as well as in the documentation for the [overview of ArbOS software releases](https://docs.arbitrum.io/node-running/reference/arbos-software-releases/overview).
 
 ## Network activation statuses
 
