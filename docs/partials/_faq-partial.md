@@ -53,8 +53,8 @@
 
 
 
-### What is the relationship between Orbit chains and the Arbitrum DAO?  {#what-is-the-relationship-between-orbit-chains-and-the-arbitrum-dao-}
-<p><a href="https://docs.arbitrum.io/launch-orbit-chain/orbit-gentle-introduction">Orbit chains</a> are Arbitrum chains that run on Arbitrum Nitro software as <a href="/dao-glossary#child-chain">Child chain</a>s on top of other chains. Orbit chains themselves can be deployed permissionlessly, but should follow the Arbitrum Orbit license.</p>
+### What is the relationship between Arbitrum chains and the Arbitrum DAO?  {#what-is-the-relationship-between-arbitrum-chains-and-the-arbitrum-dao-}
+<p><a href="https://docs.arbitrum.io/launch-arbitrum-chain/overview/introduction">Arbitrum chains</a> are Arbitrum chains that run on Arbitrum Nitro software as <a href="/dao-glossary#child-chain">Child chain</a>s on top of other chains. Arbitrum chains themselves can be deployed permissionlessly, but should follow the Arbitrum chains license.</p>
 
 <p></p>
 
