@@ -26,7 +26,7 @@
     text-decoration: underline;
   }
 
-  a[data-quicklook-from] {
+  a[href^='/dao-glossary#'] {
     text-decoration: underline dotted;
     text-underline-offset: 3px;
     cursor: help;
@@ -42,10 +42,6 @@
 
   .a-b-list {
     list-style-type: lower-alpha;
-  }
-
-  .small-table {
-    font-size: 12px;
   }
 
   .definition-list dt {
