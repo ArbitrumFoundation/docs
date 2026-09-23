@@ -10,8 +10,16 @@ export const sessionMaxAge = 60 * 60 * 8;
 
 export const secureCookie = process.env.NODE_ENV === 'production';
 
+// local development can skip oauth by setting a personal token, never used in production
+const devToken =
+  process.env.NODE_ENV === 'production' ? undefined : process.env.CMS_DEV_GITHUB_TOKEN;
+
+export async function getGitHubToken(): Promise<string | undefined> {
+  return (await cookies()).get(tokenCookie)?.value ?? devToken;
+}
+
 export async function getGitHubClient(): Promise<GitHubClient | null> {
-  const token = (await cookies()).get(tokenCookie)?.value;
+  const token = await getGitHubToken();
   return token ? createGitHubClient(token) : null;
 }
 

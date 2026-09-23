@@ -30,7 +30,8 @@ The site runs at http://localhost:3000.
 
 ## Writing content
 
-- Link to other pages with root relative URLs, for example `[the constitution](/dao-constitution#section-1-chain-ownership-)`.
+- Link to other pages with root relative URLs, for example `[the constitution](/dao-constitution#section-1-chain-ownership-)`, or with a relative path to the mdx file.
+- Link to a glossary term with `[term](/dao-glossary#term-id)`. Every glossary link shows the definition as a tooltip.
 - Set a stable heading anchor with `## Heading [#anchor-id]`.
 - Use `<Callout type="info" title="Title">` for notes and warnings.
 - Wrap math in double dollar signs, for example `$$x^2$$`. Single dollar signs are plain text so `$ARB` is never parsed as math.
@@ -45,13 +46,19 @@ pnpm test
 pnpm build
 ```
 
-`pnpm build` runs `check-links`, which fails on broken internal links and heading anchors, and `verify-quicklooks`, which fails when a `data-quicklook-from` key is missing from `public/glossary.json`.
+`pnpm build` runs `check-links`, which fails on broken internal links and heading anchors, and `verify-quicklooks`, which fails when a glossary link points at a term missing from `public/glossary.json`. `check-links` also fails when two files resolve to the same URL.
 
 ## Docs editor
 
-`/admin` opens a visual MDX editor powered by [Fumadocs Editor](https://editor.fumadocs.dev). Editors sign in with GitHub, and each saved page is committed to a `cms/<page>` branch with a pull request against `main` for review. Saving the constitution partial also updates `lib/constitution-hash.json` on the same branch.
+`/admin` opens a visual MDX editor powered by [Fumadocs Editor](https://editor.fumadocs.dev). Editors sign in with GitHub, and each saved page is committed to a `cms/<page>` branch with a pull request against `main` for review.
 
-The editor needs a GitHub OAuth app whose callback URL is `<deployment-url>/api/callback`. See `.env.example` for the environment variables.
+- Page details (title, sidebar label, description, author, expert) are form fields. Only changed lines are rewritten.
+- Every save is checked on the server (`lib/cms/validate.ts`): mdx syntax, blocks the site cannot render, links and anchors, shared content paths, a heading 1 in the body and duplicate web addresses. Nothing is committed until the page passes.
+- Images and PDFs upload from the browser straight to the draft branch, so files up to 70 MB work despite the serverless request limit.
+- When Vercel builds the draft branch, the editor shows a preview link.
+- Saving the constitution partial also updates `lib/constitution-hash.json` on the same branch.
+
+The editor needs a GitHub OAuth app whose callback URL is `<deployment-url>/api/callback`. See `.env.example` for the environment variables. For local work without OAuth, set `CMS_DEV_GITHUB_TOKEN` in `.env.local`; it is ignored in production.
 
 ## Constitution hash
 

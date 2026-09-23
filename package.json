@@ -2,6 +2,7 @@
   "name": "docs",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "packageManager": "pnpm@10.13.1",
   "engines": {
     "node": ">=22.0.0",
@@ -9,9 +10,9 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "pnpm check-links && pnpm verify-quicklooks && next build",
+    "build": "pnpm check-links && pnpm verify-quicklooks && node scripts/generate-anchors.mjs && next build",
     "start": "next start",
-    "postinstall": "fumadocs-mdx",
+    "postinstall": "fumadocs-mdx && node scripts/generate-anchors.mjs",
     "lint": "eslint .",
     "types:check": "fumadocs-mdx && next typegen && tsc --noEmit",
     "format": "prettier --write .",
@@ -19,7 +20,8 @@
     "check-links": "node scripts/check-links.mjs",
     "verify-quicklooks": "node scripts/verify-quicklooks.mjs",
     "update-constitution-hash": "node scripts/update-constitution-hash.mjs",
-    "test": "node --test \"scripts/**/*.test.mjs\""
+    "test": "node --test \"scripts/**/*.test.mjs\" \"lib/**/*.test.ts\" \"components/**/*.test.ts\"",
+    "generate-anchors": "node scripts/generate-anchors.mjs"
   },
   "dependencies": {
     "@ethersproject/address": "5.8.0",
@@ -28,18 +30,26 @@
     "fumadocs-core": "16.15.13",
     "fumadocs-mdx": "15.4.3",
     "fumadocs-ui": "16.15.13",
+    "github-slugger": "2.0.0",
     "gray-matter": "4.0.3",
     "katex": "0.18.7",
     "lucide-react": "1.47.0",
+    "mdast-util-to-string": "4.0.0",
     "mermaid": "11.17.2",
     "next": "16.3.6",
     "next-themes": "0.4.6",
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "rehype-katex": "7.0.1",
+    "remark-gfm": "4.0.1",
     "remark-math": "6.0.0",
+    "remark-mdx": "3.1.1",
+    "remark-parse": "11.0.0",
     "server-only": "0.0.1",
     "tippy.js": "6.3.7",
+    "unified": "11.0.5",
+    "unist-util-visit": "5.1.0",
+    "yaml": "2.9.1",
     "zod": "4.6.5"
   },
   "devDependencies": {
@@ -51,12 +61,10 @@
     "@types/react-dom": "19.3.0",
     "eslint": "9.39.5",
     "eslint-config-next": "16.3.6",
-    "github-slugger": "2.0.0",
     "postcss": "8.5.28",
     "prettier": "3.9.9",
     "tailwindcss": "4.3.3",
-    "typescript": "6.0.3",
-    "unist-util-visit": "5.1.0"
+    "typescript": "6.0.3"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

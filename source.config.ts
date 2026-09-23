@@ -1,22 +1,15 @@
 import { remarkMdxMermaid } from 'fumadocs-core/mdx-plugins';
-import { metaSchema, pageSchema } from 'fumadocs-core/source/schema';
+import { metaSchema } from 'fumadocs-core/source/schema';
 import { defineConfig, defineDocs } from 'fumadocs-mdx/config';
 import rehypeKatex from 'rehype-katex';
 import remarkMath from 'remark-math';
-import { z } from 'zod';
-
+import { docsPageSchema } from './lib/frontmatter-schema';
 import { remarkUnnestLinks } from './lib/remark-unnest-links';
 
 export const docs = defineDocs({
   dir: 'content/docs',
   docs: {
-    schema: pageSchema.extend({
-      description: z.string().optional(),
-      sidebar_label: z.string().optional(),
-      dao_author: z.string().optional(),
-      dao_sme: z.string().optional(),
-      toc_min_heading_level: z.number().int().min(2).max(6).optional(),
-    }),
+    schema: docsPageSchema,
   },
   meta: {
     schema: metaSchema,

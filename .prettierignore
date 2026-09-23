@@ -8,3 +8,4 @@ public
 notion-docs
 postmortems
 **/*.mdx
+.generated

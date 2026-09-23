@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   tabWidth: 2,
   useTabs: false,
   semi: true,
@@ -8,3 +8,5 @@ module.exports = {
   trailingComma: 'es5',
   printWidth: 100,
 };
+
+export default config;

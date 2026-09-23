@@ -2,22 +2,59 @@
 
 import '@fumadocs-editor/ui/styles.css';
 
-import { MdxEditor, type MediaProvider } from '@fumadocs-editor/ui';
-import { ExternalLink, FilePlus, GitPullRequest, LogOut, Save } from 'lucide-react';
+import { MdxEditor, type MdxEditorRef, type MediaProvider } from '@fumadocs-editor/ui';
+import { Check, Copy, ExternalLink, FileUp, GitPullRequest, LogOut, Save, X } from 'lucide-react';
 import Image from 'next/image';
-import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 
-import { cmsConfig, collections } from '@/lib/cms/config';
+import { cmsConfig, collectionFor } from '@/lib/cms/config';
+import { pageUrlFromPath, splitFrontmatter } from '@/lib/cms/paths';
+import { siteUrl } from '@/lib/site';
+import glossary from '@/public/glossary.json';
 
 import { ApiError, cmsApi, type CmsDocument, type CmsFile, type Viewer } from './api';
-import { NewPageForm } from './new-page-form';
+import { createFileProvider, editorComponents } from './editor-config';
+import { readDetails, writeDetails, type DetailKey, type Details } from './frontmatter';
+import { uploadToDraft } from './github-upload';
+import { nameBareLinks, relativizeSiteLinks } from './link-titles';
+import { NewPageDialog } from './new-page-dialog';
+import { PageDetails } from './page-details';
+import { PageList } from './page-list';
+import { PreviewButton } from './preview-button';
 
 type SessionState =
   { status: 'loading' } | { status: 'signed-out' } | { status: 'ready'; viewer: Viewer };
 
-type SaveState = { status: 'idle' | 'saving' | 'saved' } | { status: 'error'; message: string };
+type SaveState =
+  | { status: 'idle' | 'saving' | 'saved' }
+  | { status: 'error'; message: string; problems: string[] };
 
-const rawBase = `https://raw.githubusercontent.com/${cmsConfig.owner}/${cmsConfig.repo}`;
+type Notice = { tone: 'info' | 'warn'; title: string; body: ReactNode };
+
+type OpenDocument = CmsDocument & {
+  body: string;
+  frontmatter: string | null;
+  frontmatterRaw: string;
+  details: Details;
+  detailsError?: string;
+  version: number;
+};
+
+const imageTypes = new Set(['image/png', 'image/jpeg', 'image/gif', 'image/webp']);
+
+function toOpenDocument(document: CmsDocument, version: number): OpenDocument {
+  const { frontmatter, raw, body } = splitFrontmatter(document.content);
+  const { details, error } = frontmatter === null ? readDetails('') : readDetails(frontmatter);
+  return {
+    ...document,
+    body,
+    frontmatter,
+    frontmatterRaw: raw,
+    details,
+    detailsError: error,
+    version,
+  };
+}
 
 export function CmsApp() {
   const [session, setSession] = useState<SessionState>({ status: 'loading' });
@@ -30,18 +67,14 @@ export function CmsApp() {
   }, []);
 
   if (session.status === 'loading') {
-    return <CenteredMessage>Loading the docs editor…</CenteredMessage>;
+    return (
+      <main className="flex min-h-screen items-center justify-center p-6 text-fd-muted-foreground">
+        Loading the docs editor…
+      </main>
+    );
   }
   if (session.status === 'signed-out') return <SignIn />;
   return <Workspace viewer={session.viewer} />;
-}
-
-function CenteredMessage({ children }: { children: React.ReactNode }) {
-  return (
-    <main className="flex min-h-screen items-center justify-center p-6 text-fd-muted-foreground">
-      {children}
-    </main>
-  );
 }
 
 function SignIn() {
@@ -59,8 +92,7 @@ function SignIn() {
         <div className="space-y-2">
           <h1 className="text-xl font-semibold">Governance docs editor</h1>
           <p className="text-sm text-fd-muted-foreground">
-            Sign in with a GitHub account that has write access to {cmsConfig.owner}/
-            {cmsConfig.repo}.
+            Sign in with a GitHub account that can edit the governance docs.
           </p>
         </div>
         <form action="/api/auth" method="get" className="w-full">
@@ -77,21 +109,38 @@ function SignIn() {
 }
 
 function Workspace({ viewer }: { viewer: Viewer }) {
+  const { repository } = viewer;
   const [files, setFiles] = useState<CmsFile[]>([]);
+  const [repoPaths, setRepoPaths] = useState<string[]>([]);
   const [listError, setListError] = useState<string>();
   const [activePath, setActivePath] = useState<string>();
-  const [document, setDocument] = useState<CmsDocument>();
+  const [document, setDocument] = useState<OpenDocument>();
   const [loadError, setLoadError] = useState<string>();
   const [creatingIn, setCreatingIn] = useState<string>();
-  const [dirty, setDirty] = useState(false);
+  const [details, setDetails] = useState<Details>();
+  const [bodyDirty, setBodyDirty] = useState(false);
   const [saveState, setSaveState] = useState<SaveState>({ status: 'idle' });
-  const draft = useRef('');
+  const [notice, setNotice] = useState<Notice>();
+  const [uploading, setUploading] = useState(false);
+  const body = useRef('');
+  const editor = useRef<MdxEditorRef>(null);
+  const pdfInput = useRef<HTMLInputElement>(null);
+
+  const detailsDirty = Boolean(
+    document &&
+    details &&
+    Object.entries(details).some(
+      ([key, value]) => value.trim() !== document.details[key as DetailKey].trim()
+    )
+  );
+  const dirty = bodyDirty || detailsDirty;
 
   const refreshFiles = useCallback(
     () =>
       cmsApi.files().then(
         (result) => {
           setFiles(result.files);
+          setRepoPaths(result.files.map((file) => file.path));
           setListError(undefined);
         },
         (error: unknown) => {
@@ -113,17 +162,20 @@ function Workspace({ viewer }: { viewer: Viewer }) {
   }, [dirty]);
 
   const openFile = useCallback(
-    async (path: string) => {
-      if (dirty && !window.confirm('You have unsaved changes. Discard them?')) return;
+    async (path: string, { force = false }: { force?: boolean } = {}) => {
+      if (!force && dirty && !window.confirm('You have unsaved changes. Discard them?')) return;
       setActivePath(path);
       setDocument(undefined);
+      setDetails(undefined);
       setLoadError(undefined);
-      setDirty(false);
+      setBodyDirty(false);
       setSaveState({ status: 'idle' });
+      setNotice(undefined);
       try {
-        const loaded = await cmsApi.file(path);
-        draft.current = loaded.content;
+        const loaded = toOpenDocument(await cmsApi.file(path), Date.now());
+        body.current = loaded.body;
         setDocument(loaded);
+        setDetails(loaded.details);
       } catch (error) {
         setLoadError(error instanceof Error ? error.message : 'could not load this page');
       }
@@ -131,29 +183,93 @@ function Workspace({ viewer }: { viewer: Viewer }) {
     [dirty]
   );
 
-  const save = useCallback(async () => {
-    if (!document) return;
-    setSaveState({ status: 'saving' });
-    try {
-      const result = await cmsApi.save({
-        path: document.path,
-        content: draft.current,
-        sha: document.sha,
+  const composeContent = useCallback(() => {
+    if (!document || !details) return '';
+    const frontmatter =
+      document.frontmatter !== null && detailsDirty
+        ? writeDetails(document.frontmatter, details, document.details)
+        : document.frontmatterRaw;
+    return frontmatter + body.current;
+  }, [document, details, detailsDirty]);
+
+  // a colleague saved first: merge their version under the open edits instead of discarding them
+  const mergeLatest = useCallback(
+    async (latest: { content: string; sha: string }) => {
+      if (!document) return;
+      const incoming = toOpenDocument({ ...document, ...latest }, document.version);
+      const conflicts = (await editor.current?.applyExternalMarkdown(incoming.body)) ?? [];
+      const keepDetails = detailsDirty ? details : incoming.details;
+      setDocument({ ...incoming, content: latest.content });
+      setDetails(keepDetails);
+      setBodyDirty(true);
+      setSaveState({ status: 'idle' });
+      setNotice({
+        tone: 'warn',
+        title: 'Someone else saved this page while you were editing',
+        body:
+          conflicts.length > 0
+            ? 'Their changes were added to yours. Where you both changed the same paragraph, your version was kept. Review the page, then save again.'
+            : 'Their changes were added to yours. Review the page, then save again.',
       });
-      setDocument({ ...document, ...result, content: draft.current });
-      setDirty(false);
+    },
+    [document, details, detailsDirty]
+  );
+
+  const linkTitles = useMemo(() => {
+    const titles = new Map<string, string>();
+    for (const file of files) {
+      const url = pageUrlFromPath(file.path);
+      if (url) titles.set(url, file.label);
+    }
+    for (const [key, term] of Object.entries(glossary as Record<string, { title: string }>)) {
+      titles.set(`/dao-glossary#${key}`, term.title);
+    }
+    return titles;
+  }, [files]);
+
+  const save = useCallback(async () => {
+    if (!document || !details) return;
+    const named = nameBareLinks(relativizeSiteLinks(body.current, siteUrl), linkTitles);
+    const renamedLinks = named !== body.current;
+    body.current = named;
+    if (!details.title.trim() && document.frontmatter !== null) {
+      setSaveState({ status: 'error', message: 'Add a title before saving.', problems: [] });
+      return;
+    }
+    setSaveState({ status: 'saving' });
+    const content = composeContent();
+    try {
+      const result = await cmsApi.save({ path: document.path, content, sha: document.sha });
+      const saved = toOpenDocument({ ...document, ...result, content }, document.version);
+      setDocument({ ...saved, version: document.version });
+      setDetails(saved.details);
+      body.current = saved.body;
+      if (renamedLinks) await editor.current?.setMarkdown(saved.body);
+      editor.current?.markSaved(saved.body);
+      setBodyDirty(false);
+      setNotice(undefined);
       setSaveState({ status: 'saved' });
-      void refreshFiles();
+      refreshFiles();
     } catch (error) {
+      if (error instanceof ApiError && error.status === 409 && error.latest) {
+        await mergeLatest(error.latest);
+        return;
+      }
       const message =
         error instanceof ApiError && error.status === 401
-          ? 'your session expired, sign in again'
-          : error instanceof Error
-            ? error.message
-            : 'save failed';
-      setSaveState({ status: 'error', message });
+          ? 'Your session expired. Sign in again to save.'
+          : error instanceof ApiError && error.problems.length > 0
+            ? 'This page has problems to fix before it can be saved:'
+            : error instanceof Error
+              ? error.message
+              : 'Saving failed.';
+      setSaveState({
+        status: 'error',
+        message,
+        problems: error instanceof ApiError ? error.problems : [],
+      });
     }
-  }, [document, refreshFiles]);
+  }, [document, details, composeContent, mergeLatest, refreshFiles, linkTitles]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -168,24 +284,107 @@ function Workspace({ viewer }: { viewer: Viewer }) {
 
   const createPage = useCallback(
     async (path: string, content: string) => {
-      await cmsApi.save({ path, content, create: true });
+      if (dirty && !window.confirm('The open page has unsaved changes. Discard them?')) {
+        throw new Error('Save the open page first, then create the new one.');
+      }
+      let result;
+      try {
+        result = await cmsApi.save({ path, content, create: true });
+      } catch (error) {
+        if (error instanceof ApiError && error.problems.length > 0) {
+          throw new Error(error.problems.join(' '));
+        }
+        throw error;
+      }
+      // open the new page from what was just saved instead of fetching it again
+      const created = toOpenDocument({ path, content, ...result }, Date.now());
+      const title = created.details.title || path;
+      setFiles((current) => [
+        ...current,
+        {
+          path,
+          collection: collectionFor(path)?.id ?? '',
+          title,
+          label: created.details.sidebar_label || title,
+          hasDraft: true,
+          isNew: true,
+        },
+      ]);
+      setRepoPaths((current) => [...current, path]);
       setCreatingIn(undefined);
-      await refreshFiles();
-      await openFile(path);
+      setActivePath(path);
+      setLoadError(undefined);
+      setBodyDirty(false);
+      setNotice(undefined);
+      setSaveState({ status: 'idle' });
+      body.current = created.body;
+      setDocument(created);
+      setDetails(created.details);
+      refreshFiles();
     },
-    [openFile, refreshFiles]
+    [dirty, refreshFiles]
   );
 
   const media = useMemo<MediaProvider | undefined>(() => {
     if (!document) return undefined;
     return {
-      upload: async (file) => (await cmsApi.upload(document.path, file)).src,
+      upload: async (file) => {
+        if (!imageTypes.has(file.type)) {
+          throw new Error('only png, jpeg, gif and webp images can be added');
+        }
+        const { src, branch } = await uploadToDraft({
+          repository,
+          page: document.path,
+          directory: cmsConfig.uploadDir,
+          file,
+        });
+        setDocument((current) => (current ? { ...current, ref: branch } : current));
+        return src;
+      },
       resolve: (src) =>
         src.startsWith('/img/uploads/')
-          ? `${rawBase}/${encodeURIComponent(document.ref)}/public${src}`
+          ? `https://raw.githubusercontent.com/${repository.owner}/${repository.repo}/${encodeURIComponent(document.ref)}/public${src}`
           : src,
     };
-  }, [document]);
+  }, [document, repository]);
+
+  const fileProvider = useMemo(() => createFileProvider(repoPaths), [repoPaths]);
+
+  const attachPdf = async (file: File) => {
+    if (!document) return;
+    if (file.type !== 'application/pdf') {
+      setNotice({ tone: 'warn', title: 'Only PDF files can be attached', body: file.name });
+      return;
+    }
+    setUploading(true);
+    setNotice({
+      tone: 'info',
+      title: `Uploading ${file.name}…`,
+      body: 'Large reports can take a minute.',
+    });
+    try {
+      const { src, branch } = await uploadToDraft({
+        repository,
+        page: document.path,
+        directory: 'public/assets',
+        file,
+      });
+      setDocument((current) => (current ? { ...current, ref: branch } : current));
+      setNotice({
+        tone: 'info',
+        title: 'PDF uploaded to this draft',
+        body: <PdfLink src={src} />,
+      });
+    } catch (error) {
+      setNotice({
+        tone: 'warn',
+        title: 'The PDF could not be uploaded',
+        body: error instanceof Error ? error.message : 'Try again.',
+      });
+    } finally {
+      setUploading(false);
+    }
+  };
 
   const signOut = async () => {
     if (dirty && !window.confirm('You have unsaved changes. Sign out anyway?')) return;
@@ -193,11 +392,14 @@ function Workspace({ viewer }: { viewer: Viewer }) {
     window.location.reload();
   };
 
+  const activeFile = files.find((file) => file.path === document?.path);
+  const pageUrl = document ? pageUrlFromPath(document.path) : null;
+  const isPartial = document?.path.startsWith('content/partials/');
   const isConstitution = document?.path === cmsConfig.constitutionPath;
 
   return (
-    <div style={{ '--fde-page-inset': '19rem' } as CSSProperties}>
-      <aside className="fixed inset-y-0 left-0 z-20 flex w-72 flex-col border-r bg-fd-card">
+    <div className="min-h-screen">
+      <aside className="fixed inset-y-0 left-0 z-30 flex w-72 flex-col border-r bg-fd-card">
         <div className="flex items-center gap-3 border-b p-4">
           <Image src="/img/logo.svg" alt="" width={28} height={28} />
           <div className="min-w-0 flex-1">
@@ -215,134 +417,263 @@ function Workspace({ viewer }: { viewer: Viewer }) {
         </div>
         {!viewer.canWrite ? (
           <p className="border-b bg-fd-muted p-3 text-xs text-fd-muted-foreground">
-            Your account can read but not save. Ask a maintainer for write access to{' '}
-            {cmsConfig.owner}/{cmsConfig.repo}.
+            Your account can read but not save. Ask a docs maintainer for write access to{' '}
+            {repository.owner}/{repository.repo}.
           </p>
         ) : null}
-        <nav className="flex-1 overflow-y-auto p-2">
-          {listError ? <p className="p-2 text-sm text-red-600">{listError}</p> : null}
-          {collections.map((collection) => {
-            const entries = files.filter((file) => file.collection === collection.id);
-            return (
-              <section key={collection.id} className="mb-3">
-                <div className="flex items-center justify-between px-2 py-1">
-                  <h2 className="text-xs font-semibold uppercase tracking-wide text-fd-muted-foreground">
-                    {collection.label}
-                  </h2>
-                  {collection.allowCreate && viewer.canWrite ? (
-                    <button
-                      type="button"
-                      title={`New page in ${collection.label}`}
-                      onClick={() => setCreatingIn(collection.id)}
-                      className="rounded-sm p-1 text-fd-muted-foreground hover:bg-fd-accent hover:text-fd-foreground"
-                    >
-                      <FilePlus className="size-3.5" />
-                    </button>
-                  ) : null}
-                </div>
-                {creatingIn === collection.id ? (
-                  <NewPageForm
-                    collection={collection}
-                    existing={entries.map((file) => file.path)}
-                    onCancel={() => setCreatingIn(undefined)}
-                    onCreate={createPage}
-                  />
-                ) : null}
-                <ul>
-                  {entries.map((file) => (
-                    <li key={file.path}>
-                      <button
-                        type="button"
-                        onClick={() => openFile(file.path)}
-                        className={`flex w-full items-center gap-2 rounded-sm px-2 py-1.5 text-left text-sm hover:bg-fd-accent ${
-                          file.path === activePath ? 'bg-fd-accent font-medium text-fd-primary' : ''
-                        }`}
-                      >
-                        <span className="min-w-0 flex-1 truncate">{file.title}</span>
-                        {file.hasDraft ? (
-                          <span className="shrink-0 rounded-sm bg-amber-500/15 px-1.5 text-[10px] font-medium text-amber-700 dark:text-amber-400">
-                            draft
-                          </span>
-                        ) : null}
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            );
-          })}
-        </nav>
+        {listError ? <p className="p-3 text-sm text-red-600">{listError}</p> : null}
+        <PageList
+          files={files}
+          activePath={activePath}
+          canWrite={viewer.canWrite}
+          onOpen={(path) => void openFile(path)}
+          onStartCreate={setCreatingIn}
+        />
       </aside>
 
-      {!activePath ? (
-        <main className="flex min-h-screen items-center justify-center pl-72 text-fd-muted-foreground">
-          <p>Select a page on the left to start editing.</p>
-        </main>
-      ) : loadError ? (
-        <main className="flex min-h-screen items-center justify-center pl-72 text-red-600">
-          <p>{loadError}</p>
-        </main>
-      ) : !document ? (
-        <main className="flex min-h-screen items-center justify-center pl-72 text-fd-muted-foreground">
-          <p>Loading page…</p>
-        </main>
-      ) : (
-        <MdxEditor
-          key={`${document.path}:${document.ref}`}
-          variant="page"
-          defaultValue={document.content}
-          editable={viewer.canWrite}
-          media={media}
-          onChange={(markdown) => {
-            draft.current = markdown;
-            setDirty(markdown !== document.content);
-            if (saveState.status === 'saved') setSaveState({ status: 'idle' });
-          }}
-          header={{
-            start: (
-              <div className="flex min-w-0 items-center gap-2 text-sm">
-                <span className="truncate font-medium">{document.path}</span>
-                <StatusChip document={document} dirty={dirty} saveState={saveState} />
-                {isConstitution ? (
-                  <span
-                    title="Saving the Constitution also updates its published hash. Only change it to reflect an executed AIP."
-                    className="shrink-0 rounded-sm bg-red-500/15 px-1.5 py-0.5 text-[11px] font-medium text-red-700 dark:text-red-400"
-                  >
-                    Updates constitution hash
-                  </span>
-                ) : null}
+      {creatingIn ? (
+        <NewPageDialog
+          initialCollection={creatingIn}
+          allPaths={repoPaths}
+          onCancel={() => setCreatingIn(undefined)}
+          onCreate={createPage}
+        />
+      ) : null}
+
+      <main className="pl-72">
+        {!activePath ? (
+          <Placeholder>Select a page on the left to start editing.</Placeholder>
+        ) : loadError ? (
+          <Placeholder tone="error">{loadError}</Placeholder>
+        ) : !document || !details ? (
+          <Placeholder>Loading page…</Placeholder>
+        ) : (
+          <>
+            <header className="sticky top-0 z-20 flex items-center gap-3 border-b bg-fd-background/95 px-6 py-2.5 backdrop-blur">
+              <div className="min-w-0 flex-1">
+                <div className="flex items-center gap-2">
+                  <h1 className="truncate text-sm font-semibold">
+                    {activeFile?.label ?? details.title ?? document.path}
+                  </h1>
+                  <StatusChip document={document} dirty={dirty} saveState={saveState} />
+                  {isConstitution ? (
+                    <span className="shrink-0 rounded-sm bg-red-500/15 px-1.5 py-0.5 text-[11px] font-medium text-red-700 dark:text-red-400">
+                      Saving updates the constitution hash
+                    </span>
+                  ) : null}
+                </div>
+                <p className="truncate font-mono text-[11px] text-fd-muted-foreground">
+                  {document.path}
+                </p>
               </div>
-            ),
-            end: (
-              <div className="flex items-center gap-2">
-                {document.pullRequestUrl ? (
+              <div className="flex shrink-0 items-center gap-2">
+                {document.isDraft && !isPartial ? (
+                  <PreviewButton path={document.path} pageUrl={pageUrl} revision={document.sha} />
+                ) : null}
+                {pageUrl && !activeFile?.isNew ? (
                   <a
-                    href={document.pullRequestUrl}
+                    href={pageUrl}
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center gap-1.5 rounded-sm border px-2.5 py-1.5 text-xs hover:bg-fd-accent"
                   >
-                    <GitPullRequest className="size-3.5" />
-                    Review request
+                    View live page
                     <ExternalLink className="size-3" />
                   </a>
                 ) : null}
+                <a
+                  href={document.pullRequestUrl ?? undefined}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-hidden={!document.pullRequestUrl}
+                  tabIndex={document.pullRequestUrl ? undefined : -1}
+                  className={`inline-flex items-center gap-1.5 rounded-sm border px-2.5 py-1.5 text-xs hover:bg-fd-accent ${
+                    document.pullRequestUrl ? '' : 'invisible'
+                  }`}
+                >
+                  <GitPullRequest className="size-3.5" />
+                  Review on GitHub
+                </a>
                 {viewer.canWrite ? (
-                  <button
-                    type="button"
-                    onClick={save}
-                    disabled={!dirty || saveState.status === 'saving'}
-                    className="inline-flex items-center gap-1.5 rounded-sm bg-fd-primary px-3 py-1.5 text-xs font-medium text-fd-primary-foreground hover:opacity-90 disabled:opacity-50"
-                  >
-                    <Save className="size-3.5" />
-                    {saveState.status === 'saving' ? 'Saving…' : 'Save draft'}
-                  </button>
+                  <>
+                    <button
+                      type="button"
+                      disabled={uploading}
+                      onClick={() => pdfInput.current?.click()}
+                      className="inline-flex items-center gap-1.5 rounded-sm border px-2.5 py-1.5 text-xs hover:bg-fd-accent disabled:opacity-50"
+                    >
+                      <FileUp className="size-3.5" />
+                      Attach PDF
+                    </button>
+                    <input
+                      ref={pdfInput}
+                      type="file"
+                      accept="application/pdf"
+                      hidden
+                      onChange={(event) => {
+                        const file = event.target.files?.[0];
+                        event.target.value = '';
+                        if (file) void attachPdf(file);
+                      }}
+                    />
+                    <button
+                      type="button"
+                      onClick={save}
+                      disabled={!dirty || saveState.status === 'saving'}
+                      className="inline-flex w-28 items-center justify-center gap-1.5 rounded-sm bg-fd-primary px-3 py-1.5 text-xs font-medium text-fd-primary-foreground hover:opacity-90 disabled:opacity-50"
+                    >
+                      <Save className="size-3.5" />
+                      {saveState.status === 'saving' ? 'Saving…' : 'Save draft'}
+                    </button>
+                  </>
                 ) : null}
               </div>
-            ),
+            </header>
+
+            <div className="mx-auto max-w-4xl space-y-4 px-6 py-6">
+              {saveState.status === 'error' ? (
+                <Banner
+                  tone="warn"
+                  title={saveState.message}
+                  onClose={() => setSaveState({ status: 'idle' })}
+                >
+                  {saveState.problems.length > 0 ? (
+                    <ul className="list-disc space-y-1 pl-5">
+                      {saveState.problems.map((problem) => (
+                        <li key={problem}>{problem}</li>
+                      ))}
+                    </ul>
+                  ) : null}
+                </Banner>
+              ) : null}
+              {saveState.status === 'saved' ? (
+                <Banner
+                  tone="info"
+                  title="Draft saved"
+                  onClose={() => setSaveState({ status: 'idle' })}
+                >
+                  Your change is waiting for review. A docs maintainer checks it and publishes it to
+                  the live site.
+                </Banner>
+              ) : null}
+              {notice ? (
+                <Banner
+                  tone={notice.tone}
+                  title={notice.title}
+                  onClose={() => setNotice(undefined)}
+                >
+                  {notice.body}
+                </Banner>
+              ) : null}
+
+              {isPartial ? (
+                <p className="rounded-sm border bg-fd-muted px-4 py-2.5 text-sm text-fd-muted-foreground">
+                  This is shared content. Changes appear on every page that includes it.
+                </p>
+              ) : (
+                <PageDetails
+                  details={details}
+                  error={document.detailsError}
+                  disabled={!viewer.canWrite}
+                  onChange={(key, value) => {
+                    setDetails((current) => (current ? { ...current, [key]: value } : current));
+                    if (saveState.status === 'saved') setSaveState({ status: 'idle' });
+                  }}
+                />
+              )}
+
+              <MdxEditor
+                ref={editor}
+                key={`${document.path}:${document.version}`}
+                defaultValue={document.body}
+                editable={viewer.canWrite}
+                components={editorComponents}
+                media={media}
+                files={fileProvider}
+                onChange={(markdown) => {
+                  body.current = markdown;
+                  setBodyDirty(markdown !== document.body);
+                  if (saveState.status === 'saved') setSaveState({ status: 'idle' });
+                }}
+              />
+              <p className="text-xs text-fd-muted-foreground">
+                Tips: type <kbd className="rounded-sm border px-1">/</kbd> to add a block, and{' '}
+                <kbd className="rounded-sm border px-1">[[</kbd> to link to another page or a
+                glossary term (the link shows its address until you save, then takes the page name).
+                Press <kbd className="rounded-sm border px-1">⌘S</kbd> to save.
+              </p>
+            </div>
+          </>
+        )}
+      </main>
+    </div>
+  );
+}
+
+function Placeholder({ children, tone }: { children: ReactNode; tone?: 'error' }) {
+  return (
+    <div
+      className={`flex min-h-screen items-center justify-center p-6 ${
+        tone === 'error' ? 'text-red-600' : 'text-fd-muted-foreground'
+      }`}
+    >
+      <p>{children}</p>
+    </div>
+  );
+}
+
+function Banner({
+  tone,
+  title,
+  children,
+  onClose,
+}: {
+  tone: 'info' | 'warn';
+  title: string;
+  children?: ReactNode;
+  onClose: () => void;
+}) {
+  const colors =
+    tone === 'warn'
+      ? 'border-amber-500/40 bg-amber-500/10 text-amber-900 dark:text-amber-200'
+      : 'border-fd-primary/30 bg-fd-primary/10 text-fd-foreground';
+  return (
+    <div role="status" className={`relative rounded-sm border px-4 py-3 text-sm ${colors}`}>
+      <button
+        type="button"
+        onClick={onClose}
+        title="Dismiss"
+        className="absolute right-2 top-2 rounded-sm p-1 opacity-70 hover:opacity-100"
+      >
+        <X className="size-3.5" />
+      </button>
+      <p className="pr-6 font-medium">{title}</p>
+      {children ? <div className="mt-1">{children}</div> : null}
+    </div>
+  );
+}
+
+function PdfLink({ src }: { src: string }) {
+  const [copied, setCopied] = useState(false);
+  return (
+    <div className="space-y-2">
+      <div className="flex items-center gap-2">
+        <code className="rounded-sm bg-fd-background px-1.5 py-0.5 text-xs">{src}</code>
+        <button
+          type="button"
+          onClick={() => {
+            void navigator.clipboard.writeText(src).then(() => setCopied(true));
           }}
-        />
-      )}
+          className="inline-flex items-center gap-1 rounded-sm border px-2 py-0.5 text-xs hover:bg-fd-accent"
+        >
+          {copied ? <Check className="size-3" /> : <Copy className="size-3" />}
+          {copied ? 'Copied' : 'Copy link'}
+        </button>
+      </div>
+      <p className="text-xs">
+        To link to it, select the words in the page, click the link button in the toolbar, and
+        paste. The file goes live when this draft is published.
+      </p>
     </div>
   );
 }
@@ -356,19 +687,16 @@ function StatusChip({
   dirty: boolean;
   saveState: SaveState;
 }) {
-  if (saveState.status === 'error') {
-    return <span className="truncate text-xs text-red-600">{saveState.message}</span>;
-  }
   const label = dirty
     ? 'Unsaved changes'
     : saveState.status === 'saved'
-      ? 'Saved to draft'
+      ? 'Saved, waiting for review'
       : document.isDraft
-        ? 'Draft in review'
-        : 'Published';
+        ? 'Draft waiting for review'
+        : 'Same as the live page';
   const tone = dirty
     ? 'bg-fd-muted text-fd-muted-foreground'
-    : document.isDraft
+    : document.isDraft || saveState.status === 'saved'
       ? 'bg-amber-500/15 text-amber-700 dark:text-amber-400'
       : 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-400';
   return (

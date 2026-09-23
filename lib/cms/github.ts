@@ -19,6 +19,12 @@ type RequestOptions = {
   allow404?: boolean;
 };
 
+type Viewer = { login: string; name: string | null; avatarUrl: string; canWrite: boolean };
+
+// permission lookups cost two github calls, so remember them briefly per token
+const viewerCache = new Map<string, { viewer: Viewer; expires: number }>();
+const viewerTtl = 5 * 60 * 1000;
+
 export function createGitHubClient(token: string) {
   const repoPath = `/repos/${cmsConfig.owner}/${cmsConfig.repo}`;
 
@@ -52,17 +58,21 @@ export function createGitHubClient(token: string) {
   }
 
   return {
-    async getViewer() {
-      const user = await request<{ login: string; avatar_url: string; name: string | null }>(
-        '/user'
-      );
-      const repo = await request<{ permissions?: { push?: boolean } }>(repoPath);
-      return {
+    async getViewer(): Promise<Viewer> {
+      const cached = viewerCache.get(token);
+      if (cached && cached.expires > Date.now()) return cached.viewer;
+      const [user, repo] = await Promise.all([
+        request<{ login: string; avatar_url: string; name: string | null }>('/user'),
+        request<{ permissions?: { push?: boolean } }>(repoPath),
+      ]);
+      const viewer = {
         login: user!.login,
         name: user!.name,
         avatarUrl: user!.avatar_url,
         canWrite: repo?.permissions?.push === true,
       };
+      viewerCache.set(token, { viewer, expires: Date.now() + viewerTtl });
+      return viewer;
     },
 
     async listFiles(ref: string) {
@@ -81,6 +91,15 @@ export function createGitHubClient(token: string) {
 
     getBranchSha,
 
+    async listAddedFiles(base: string, head: string) {
+      const comparison = await request<{ files?: { filename: string; status: string }[] }>(
+        `${repoPath}/compare/${encodeURIComponent(base)}...${encodeURIComponent(head)}`
+      );
+      return (comparison?.files ?? [])
+        .filter((file) => file.status === 'added')
+        .map((file) => file.filename);
+    },
+
     async getFile(path: string, ref: string) {
       const file = await request<{ content: string; sha: string }>(
         `${repoPath}/contents/${encodeURI(path)}?ref=${encodeURIComponent(ref)}`,
@@ -90,8 +109,8 @@ export function createGitHubClient(token: string) {
       return { content: Buffer.from(file.content, 'base64').toString('utf8'), sha: file.sha };
     },
 
-    async ensureBranch(branch: string) {
-      const existing = await getBranchSha(branch);
+    async ensureBranch(branch: string, knownMissing = false) {
+      const existing = knownMissing ? null : await getBranchSha(branch);
       if (existing) return existing;
       const base = await getBranchSha(cmsConfig.baseBranch);
       if (!base) throw new GitHubError(`base branch ${cmsConfig.baseBranch} not found`, 404);
@@ -122,6 +141,25 @@ export function createGitHubClient(token: string) {
         }
       );
       return result!.content.sha;
+    },
+
+    // vercel reports each branch build as a github deployment with the preview url as its environment url
+    async getPreview(branch: string) {
+      const deployments = await request<{ id: number }[]>(
+        `${repoPath}/deployments?ref=${encodeURIComponent(branch)}&per_page=1`
+      );
+      const latest = deployments?.[0];
+      if (!latest) return { state: 'none' as const, url: null };
+      const statuses = await request<
+        { state: string; environment_url?: string; target_url?: string }[]
+      >(`${repoPath}/deployments/${latest.id}/statuses?per_page=1`);
+      const status = statuses?.[0];
+      if (!status || ['pending', 'queued', 'in_progress'].includes(status.state)) {
+        return { state: 'building' as const, url: null };
+      }
+      if (status.state !== 'success')
+        return { state: 'failed' as const, url: status.target_url ?? null };
+      return { state: 'ready' as const, url: status.environment_url ?? status.target_url ?? null };
     },
 
     async findOpenPullRequest(branch: string) {

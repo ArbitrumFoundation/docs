@@ -114,6 +114,8 @@ export function extractLinks(source) {
 export function buildIndex(repoRoot) {
   const docsRoot = path.join(repoRoot, contentDir);
   const pages = new Map();
+  const files = new Map();
+  const duplicates = [];
   const units = [];
   const partials = new Map();
   for (const relative of listContentFiles(docsRoot)) {
@@ -123,8 +125,11 @@ export function buildIndex(repoRoot) {
     const expanded = expandIncludes(raw, repoRoot, file, new Set(), (partial) => {
       if (!partials.has(partial)) partials.set(partial, url);
     });
+    const rel = toPosix(path.relative(repoRoot, file));
+    if (files.has(url)) duplicates.push({ url, files: [files.get(url), rel] });
+    files.set(url, rel);
     pages.set(url, { anchors: collectAnchors(expanded) });
-    units.push({ rel: toPosix(path.relative(repoRoot, file)), raw, pageUrl: url });
+    units.push({ rel, raw, pageUrl: url });
   }
   for (const [file, pageUrl] of partials) {
     units.push({
@@ -133,7 +138,13 @@ export function buildIndex(repoRoot) {
       pageUrl,
     });
   }
-  return { repoRoot, pages, units };
+  return {
+    repoRoot,
+    pages,
+    units,
+    duplicates,
+    urlByFile: new Map([...files].map(([url, rel]) => [rel, url])),
+  };
 }
 
 function isExternal(url) {
@@ -159,11 +170,21 @@ export function findBrokenLinks(index) {
       const anchor = hashAt < 0 ? '' : decodeURIComponent(url.slice(hashAt + 1));
       const report = (reason) => broken.push({ rel: unit.rel, line, url, reason });
 
+      let targetUrl = pathname ? pathname.replace(/\/$/, '') || '/' : unit.pageUrl;
       if (pathname && !pathname.startsWith('/')) {
-        report('use a root relative url such as /dao-constitution');
-        continue;
+        // relative links to mdx files are resolved by fumadocs at render time
+        const file = /\.mdx?$/.test(pathname)
+          ? path.posix.join(path.posix.dirname(unit.rel), decodeURIComponent(pathname))
+          : null;
+        const resolved = file ? index.urlByFile.get(file) : undefined;
+        if (!resolved) {
+          report(
+            'use a root relative url such as /dao-constitution, or a relative path to an mdx file'
+          );
+          continue;
+        }
+        targetUrl = resolved;
       }
-      const targetUrl = pathname ? pathname.replace(/\/$/, '') || '/' : unit.pageUrl;
       const target = index.pages.get(targetUrl);
       if (!target) {
         if (!resolvesToPublicAsset(pathname, index.repoRoot)) report('no page or file at this url');

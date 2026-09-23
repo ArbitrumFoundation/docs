@@ -50,12 +50,12 @@ test('missing pages, anchors and assets are reported', () => {
   assert.deepEqual(brokenUrls(root), ['/missing', '/a#nope', '/assets/missing.pdf']);
 });
 
-test('relative links are reported', () => {
+test('relative links resolve only when they point at an mdx file', () => {
   const root = fixture({
-    'content/docs/a.mdx': '[x](./b) [y](../b.md)\n',
+    'content/docs/a.mdx': '[x](./b) [y](../b.md) [z](./b.mdx#b) [w](./b.mdx#nope)\n',
     'content/docs/b.mdx': '## B\n',
   });
-  assert.deepEqual(brokenUrls(root), ['./b', '../b.md']);
+  assert.deepEqual(brokenUrls(root), ['./b', '../b.md', './b.mdx#nope']);
 });
 
 test('links in code are ignored', () => {
@@ -63,4 +63,15 @@ test('links in code are ignored', () => {
     'content/docs/a.mdx': '```md\n[x](/missing)\n```\n\n`[y](/missing)`\n',
   });
   assert.deepEqual(brokenUrls(root), []);
+});
+
+test('two files with the same url are reported', () => {
+  const root = fixture({
+    'content/docs/fee-distribution.mdx': '## A\n',
+    'content/docs/(group)/fee-distribution.mdx': '## B\n',
+  });
+  assert.deepEqual(
+    buildIndex(root).duplicates.map((duplicate) => duplicate.url),
+    ['/fee-distribution']
+  );
 });
