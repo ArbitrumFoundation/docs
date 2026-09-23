@@ -1,8 +1,5 @@
 {
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/gentle-intro-dao-governance"
-    }
-  ]
+  "framework": "nextjs",
+  "installCommand": "pnpm install",
+  "buildCommand": "pnpm build"
 }

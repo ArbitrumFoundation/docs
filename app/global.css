@@ -1,0 +1,168 @@
+@import 'tailwindcss';
+@import 'fumadocs-ui/css/neutral.css';
+@import 'fumadocs-ui/css/preset.css';
+
+@theme {
+  --color-fd-primary: #007bdd;
+  --color-fd-primary-foreground: #ffffff;
+  --color-fd-ring: #007bdd;
+  --color-af-navy: #213147;
+  --color-af-blue: #12aaff;
+  --color-af-light-blue: #9dcced;
+  --radius-fd: 2px;
+}
+
+.dark {
+  --color-fd-primary: #28a0f0;
+  --color-fd-primary-foreground: #0b1320;
+  --color-fd-ring: #28a0f0;
+}
+
+.prose {
+  --tw-prose-links: var(--color-fd-primary);
+
+  a:not([data-card]):not(.not-prose a) {
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  a[href^='/dao-glossary#'] {
+    text-decoration: underline dotted;
+    text-underline-offset: 3px;
+    cursor: help;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  li li {
+    margin-top: 4px;
+  }
+
+  .a-b-list {
+    list-style-type: lower-alpha;
+  }
+
+  .definition-list dt {
+    font-weight: 700;
+    margin-top: 20px;
+  }
+
+  .definition-list dd {
+    margin-left: 0;
+  }
+}
+
+.header-badges {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 4px;
+}
+
+.header-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 20px;
+  background-color: var(--color-fd-muted);
+  color: var(--color-fd-muted-foreground);
+  padding: 3px 16px 3px 10px;
+  font-size: 13px;
+  line-height: 24px;
+  white-space: nowrap;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+
+  &:hover {
+    background-color: var(--color-fd-accent);
+    color: var(--color-fd-foreground);
+  }
+}
+
+#constitution {
+  display: block;
+  max-width: 100%;
+  overflow: auto;
+  margin-bottom: 1.6em;
+  padding: 50px;
+  border: 1px solid var(--color-fd-border);
+  border-left: 2px solid #28a0f0;
+  background: var(--color-fd-muted);
+  color: var(--color-fd-muted-foreground);
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+
+  h3 {
+    margin-top: 40px;
+    font-family: inherit;
+  }
+}
+
+#pending-constitution-notice {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.mermaid-container {
+  display: flex;
+  justify-content: center;
+  margin: 1.5em 0;
+
+  svg,
+  foreignObject {
+    overflow: visible;
+  }
+
+  /* mermaid hard codes a 200px cap on edge labels */
+  .edgeLabel foreignObject > div {
+    max-width: none !important;
+  }
+}
+
+.tippy-box {
+  padding: 8px;
+  max-width: 420px;
+}
+
+.tippy-content p:last-child {
+  margin-bottom: 0;
+}
+
+.site-footer {
+  background-color: var(--color-af-navy);
+  color: #ebedf0;
+  padding: 2rem 1.5rem;
+  font-size: 0.9rem;
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.site-footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  max-width: 80rem;
+  margin: 0 auto;
+
+  ul {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
+
+.site-footer-title {
+  font-weight: 700;
+}
+
+.site-footer-copyright {
+  margin-top: 2rem;
+  text-align: center;
+}

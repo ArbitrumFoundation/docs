@@ -1,0 +1,10 @@
+{
+  "title": "Arbitrum BoLD economics guides",
+  "defaultOpen": false,
+  "pages": [
+    "bold-reimbursing-service-fees",
+    "bold-reimbursing-gas-costs",
+    "bold-reimbursing-challenge-bonds",
+    "..."
+  ]
+}
