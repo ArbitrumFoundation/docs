@@ -1,0 +1,10 @@
+node_modules
+.next
+.source
+.vercel
+next-env.d.ts
+pnpm-lock.yaml
+public
+notion-docs
+postmortems
+**/*.mdx

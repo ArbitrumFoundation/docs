@@ -1,0 +1,13 @@
+{
+  "title": "How-to guides",
+  "defaultOpen": true,
+  "pages": [
+    "create-submit-dao-proposal",
+    "resubmit-dao-proposal",
+    "select-delegate-voting-power",
+    "apply-become-delegate",
+    "build-strong-delegate-platform",
+    "vote-dao-proposals",
+    "..."
+  ]
+}

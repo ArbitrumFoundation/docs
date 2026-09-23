@@ -1,8 +1,3 @@
 {
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/gentle-intro-dao-governance"
-    }
-  ]
+  "framework": "nextjs"
 }

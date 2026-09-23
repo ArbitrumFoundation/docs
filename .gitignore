@@ -1,26 +1,18 @@
-# Dependencies
+# dependencies
 /node_modules
 
-# Production
-/build
+# next and fumadocs build output
+/.next
+/.source
+/out
+next-env.d.ts
+*.tsbuildinfo
 
-# Generated files
-.docusaurus
-.cache-loader
-
-# Bundled CMS assets (populated by scripts/copyAdminAssets.js)
-/static/admin/decap-cms/
-/static/admin/js-yaml.min.js
-
-# Misc
+# misc
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env*.local
 
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+pnpm-debug.log*
 .vscode/settings.json
 .vercel

@@ -15,6 +15,8 @@ import type { KnowledgeItem, LinkableTerms, LinkValidity } from '@offchainlabs/n
 
 import fs from 'fs'
 
+import { toMdxCompatible } from './mdx-compat'
+
 dotenv.config()
 
 const notion = new Client({
@@ -65,7 +67,7 @@ async function generateFiles() {
   }
 
   addItems(definitions, '/dao-glossary')
-  addItems(faqs, '/dao-faq')
+  addItems(faqs, '/dao-faqs')
   const publishedFAQs = faqs.filter(isValid)
   const publishedDefinitions = definitions.filter(isValid)
   const definitionsHTML = `\n\n${renderGlossary(
@@ -73,11 +75,14 @@ async function generateFiles() {
     linkableTerms
   )}\n`
   const glossaryJSON = renderGlossaryJSON(publishedDefinitions, linkableTerms)
-  fs.writeFileSync('../docs/partials/_glossary-partial.md', definitionsHTML)
-  fs.writeFileSync('../static/glossary.json', glossaryJSON)
   fs.writeFileSync(
-    '../docs/partials/_faq-partial.md',
-    renderFAQs(publishedFAQs, linkableTerms)
+    '../content/partials/_glossary-partial.mdx',
+    toMdxCompatible(definitionsHTML)
+  )
+  fs.writeFileSync('../public/glossary.json', glossaryJSON)
+  fs.writeFileSync(
+    '../content/partials/_faq-partial.mdx',
+    toMdxCompatible(renderFAQs(publishedFAQs, linkableTerms))
   )
 }
 

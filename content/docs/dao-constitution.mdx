@@ -1,0 +1,23 @@
+---
+title: The Amended Constitution of the ArbitrumDAO
+sidebar_label: The Constitution of the ArbitrumDAO
+description: Read "The Constitution of the ArbitrumDAO", the ultimate governing
+  document of the ArbitrumDAO. ArbitrumDAO's smart contracts implement the
+  protocols described in this document.
+---
+
+<div id='constitution'>
+<include cwd>content/partials/_constitution-content-partial.mdx</include>
+</div>
+
+### Constitution hash
+<PendingConstitutionNotice/>
+<br/>
+
+<code><b><ConstitutionHash/></b></code>
+
+<br/><br/>
+
+To compute this hash yourself, you can clone [ArbitrumFoundation/docs](https://github.com/ArbitrumFoundation/docs) to your local machine and run `pnpm install` and then `pnpm update-constitution-hash` from the root directory of the repo. Alternatively, you can install [Node.js](https://nodejs.org/en/), navigate to the root directory of the repo, and run `node ./scripts/update-constitution-hash.mjs` after installing dependencies.
+
+This will use the `keccak256` method from the [@ethersproject/solidity](https://github.com/ethers-io/ethers.js#readme) project to compute the hash of the Constitution's markdown source code, located in [`/ArbitrumFoundation/docs/blob/main/content/partials/_constitution-content-partial.mdx`](https://github.com/ArbitrumFoundation/docs/blob/main/content/partials/_constitution-content-partial.mdx).
