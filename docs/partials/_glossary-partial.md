@@ -195,7 +195,7 @@ The client software implements a protocol that stores transaction history within
 Quorum = min{max quorum, max{ɑ*DVP, baseline quorum}} where ɑ, baseline quorum, and max quorum are constants.
 
 #### For constitutional proposals:
-<ul><li>{ɑ = 0.5; baseline quorum = 150m ARB; max quorum = 450m ARB}
+<ul><li>&#123;ɑ = 0.5; baseline quorum = 150m ARB; max quorum = 450m ARB&#125;
 </li>
 </ul>
 In other words, for constitutional proposals, quorum is 50% of total DVP, but cannot be less than 150m $ARB nor more than 450m $ARB.
