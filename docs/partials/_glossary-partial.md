@@ -202,7 +202,7 @@ In other words, for constitutional proposals, quorum is 50% of total DVP, but ca
 
 #### For non-constitutional proposals:
 
-<ul><li>{ɑ = 0.4; baseline quorum = 100m $ARB; max quorum = 300m $ARB}
+<ul><li>&#123;ɑ = 0.4; baseline quorum = 100m $ARB; max quorum = 300m $ARB&#125;
 </li>
 </ul>
 In other words, for non-constitutional proposals, quorum is 40% of total DVP, but cannot be less than 100m $ARB nor more than 300m $ARB. To learn more about quorum, refer to the <a href="/dao-glossary#the-constitution-of-the-arbitrum-dao">The Constitution of the ArbitrumDAO</a>.</p>
