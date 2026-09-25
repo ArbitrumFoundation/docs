@@ -247,9 +247,9 @@ In other words, for non-constitutional proposals, quorum is 40% of total DVP, bu
 ### On-chain Governance UI {#onchain-governance-ui}
 <p>Web interface that can be used to interact with Arbitrum Governance contracts, including viewing, submitting, and voting on <a href="/dao-glossary#governance-proposal">Governance proposals</a>:
 
-<ul><li><a href="https://alt.gov.arbitrum.foundation/">Primary governance UI</a> (maintained by Offchain)</a>
+<ul><li><a href="https://alt.gov.arbitrum.foundation/">Primary governance UI</a> (maintained by Offchain)
 </li>
-<li><a href="https://snapshot.box/#/org/arbitrum">Backup governance UI</a> (maintained by Snapshot)</a></li>
+<li><a href="https://snapshot.box/#/org/arbitrum">Backup governance UI</a> (maintained by Snapshot)</li>
 </ul>
 
 
