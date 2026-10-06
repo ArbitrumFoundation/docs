@@ -51,6 +51,8 @@ _\*Note: the Token Distributor contract was [self-destructed](https://arbiscan.i
 | L2 Core Timelock                    | Arb One  | <AEL address = {"0x34d45e99f7D8c45ed05B5cA72D54bbD1fb3F98f0"} chainID = {42161} /> |
 | L2 Treasury Timelock (ETH treasury) | Arb One  | <AEL address = {"0xbFc1FECa8B09A5c5D3EFfE7429eBE24b9c09EF58"} chainID = {42161} /> |
 | L1 Timelock                         | Ethereum | <AEL address = {"0xE6841D92B0C345144506576eC13ECf5103aC7f49"} chainID = {1} />     |
+| Pause Executor                      | Ethereum | <AEL address = {"0x30668ee252A28986EE6dc21b26E4018Ac0e339b9"} chainID = {1} />     |
+| One Step Proof Soundness Guard      | Ethereum | <AEL address = {"0x6DEf0F0Ffb4d77347785036ea4Cd2320a3f3A17c"} chainID = {1} />     |
 
 ### Security Council
 
