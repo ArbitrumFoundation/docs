@@ -13,11 +13,7 @@
 
 
 ### Who gets the transaction fees on Arbitrum One and Nova? {#who-gets-the-transaction-fees-on-arbitrum-one-and-nova}
-<p>On Arbitrum One, all fee profits are collected by the ArbitrumDAO; a portion of fees are sent to the <a href="/dao-glossary#sequencer">Sequencer</a>, but only to refund the Sequencer the price it pays for posting batches on L1.</p>
-
-<p></p>
-
-<p>Arbitrum Nova works similarly, except a portion of the profits are sent to the <a href="/dao-glossary#data-availability-committee-dac">Data Availability Committee (DAC)</a>. </p>
+<p>On Arbitrum One and Arbitrum Nova, all fee profits are collected by the ArbitrumDAO; a portion of fees are sent to the <a href="/dao-glossary#sequencer">Sequencer</a>, but only to refund the Sequencer the price it pays for posting batches on L1.</p>
 
 <p></p>
 
