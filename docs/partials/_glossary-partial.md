@@ -20,7 +20,7 @@
 <p>An <a href="/dao-glossary#arbitrum-chain">Arbitrum chain</a> that implements the <a href="/dao-glossary#arbitrum-anytrust-protocol">Arbitrum AnyTrust Protocol</a>.</p>
 
 ### Arbitrum AnyTrust Protocol {#arbitrum-anytrust-protocol}
-<p>An Arbitrum protocol that manages data availability with a permissioned set of parties known as the <a href="/dao-glossary#data-availability-committee-dac">Data Availability Committee (DAC)</a>. This protocol reduces transaction fees by introducing an additional trust assumption for data availability in lieu of Ethereum's <a href="/dao-glossary#trustless">Trustless</a> data availability mechanism. <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a> is an example of an AnyTrust chain; <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> is an alternative chain that implements the purely trustless (and more L1-gas intensive) <a href="/dao-glossary#arbitrum-rollup-protocol">Arbitrum Rollup Protocol</a>.</p>
+<p>An Arbitrum protocol that manages data availability with a permissioned set of parties known as the <a href="/dao-glossary#data-availability-committee-dac">Data Availability Committee (DAC)</a>. This protocol reduces transaction fees by introducing an additional trust assumption for data availability in lieu of Ethereum's <a href="/dao-glossary#trustless">Trustless</a> data availability mechanism. <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a> and <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> are alternative chains that implement the purely trustless (and more L1-gas intensive) <a href="/dao-glossary#arbitrum-rollup-protocol">Arbitrum Rollup Protocol</a>.</p>
 
 ### Arbitrum chain {#arbitrum-chain}
 <p>A blockchain that runs on the Arbitrum protocol. Arbitrum chains are EVM compatible, and use an underlying EVM chain (e.g., Ethereum) for settlement and for succinct fraud-proofs (as needed).  Arbitrum chains come in two forms: <a href="/dao-glossary#arbitrum-rollup-chain">Arbitrum Rollup Chain</a>s and <a href="/dao-glossary#arbitrum-anytrust-chain">Arbitrum AnyTrust Chain</a>s. </p>
@@ -44,7 +44,7 @@
 <p>Current Arbitrum tech stack; runs a fork of <a href="/dao-glossary#geth">Geth</a> and uses WebAssembly as its underlying VM for fraud proofs.</p>
 
 ### Arbitrum Nova {#arbitrum-nova}
-<p>The first <a href="/dao-glossary#arbitrum-anytrust-chain">Arbitrum AnyTrust Chain</a> running on Ethereum mainnet. Introduces cheaper transactions; great for gaming and social use-cases. Implements the <a href="/dao-glossary#arbitrum-anytrust-protocol">Arbitrum AnyTrust Protocol</a>, not the <a href="/dao-glossary#arbitrum-rollup-protocol">Arbitrum Rollup Protocol</a> protocol.</p>
+<p>The first <a href="/dao-glossary#arbitrum-anytrust-chain">Arbitrum AnyTrust Chain</a> running on Ethereum mainnet. Introduced cheaper transactions. It was transitioned to an L2 Rollup and now implements the <a href="/dao-glossary#arbitrum-rollup-protocol">Arbitrum Rollup Protocol</a>.</p>
 
 ### Arbitrum One {#arbitrum-one}
 <p>The first <a href="/dao-glossary#arbitrum-rollup-chain">Arbitrum Rollup Chain</a> running on Ethereum mainnet. Fully trustless; inherits Ethereum's base-layer security guarantees without introducing additional trust assumptions; great for decentralized finance and other use-cases that demand L1-level trustlessness.</p>
@@ -133,7 +133,7 @@ The client software implements a protocol that stores transaction history within
 <p>Transaction fee component charged as proportion of L1 base fee, beyond, e.g., the amount strictly necessary for the Sequencer to break even; collected by the <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a>.</p>
 
 ### L2 Base Fee {#l2-base-fee}
-<p>Transaction fee component that covers the minimum cost of Arbitrum transaction execution; collection by the <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a> on <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> and by the DAO + the <a href="/dao-glossary#data-availability-committee-dac">Data Availability Committee (DAC)</a> on <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a>. </p>
+<p>Transaction fee component that covers the minimum cost of Arbitrum transaction execution; collection by the <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a> on <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> and <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a>. </p>
 
 ### L2 Surplus Fee {#l2-surplus-fee}
 <p>Transaction fee component that covers the cost beyond that covered by the <a href="/dao-glossary#l2-base-fee">L2 Base Fee</a>  during chain congestion; collection by the <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a>. </p>
@@ -181,7 +181,7 @@ The client software implements a protocol that stores transaction history within
 <p>EVM compatible chain that acts as the settlement layer for one or more Arbitrum Chains (aka <a href="/dao-glossary#child-chain">Child chain</a>  ). E.g., Ethereum is the parent chain of both Arbitrum One and Arbitrum Nova. Parent chain is synonymous with "underlying chain." </p>
 
 ### Progressive decentralization {#progressive-decentralization}
-<p>The process of gradually increasing the decentralization of a system over time. In the context of the <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a>, and decentralizing <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> and <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a>, progressive decentralization refers to decentralizing the ownership of the chains, validators, sequencers, and the <a href="/dao-glossary#data-availability-committee-dac">Data Availability Committee (DAC)</a>.</p>
+<p>The process of gradually increasing the decentralization of a system over time. In the context of the <a href="/dao-glossary#arbitrum-dao">ArbitrumDAO</a>, and decentralizing <a href="/dao-glossary#arbitrum-one">Arbitrum One</a> and <a href="/dao-glossary#arbitrum-nova">Arbitrum Nova</a>, progressive decentralization refers to decentralizing the ownership of the chains, validators and sequencers.</p>
 
 ### Proposal waiting period {#proposal-waiting-period}
 <p>A contract-enforced delay period of roughly two weeks that begins after a <a href="/dao-glossary#governance-proposal">Governance proposal</a> is accepted, and after which the proposal takes effect. The proposal waiting period is intended to give users the option of opting out (for example, by withdrawing their funds).</p>
