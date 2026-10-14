@@ -17,8 +17,9 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 24.x
           cache: 'yarn'
+          cache-dependency-path: notion-docs/yarn.lock
       - run: npm i -g yarn
       - run: yarn
       - name: Create .env file
