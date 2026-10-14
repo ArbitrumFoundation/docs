@@ -1,0 +1,11 @@
+{
+  "title": "Governance architecture",
+  "pages": [
+    "security-council-members",
+    "[Sybil detection](https://github.com/ArbitrumFoundation/sybil-detection)",
+    "[Smart contract architecture](https://github.com/ArbitrumFoundation/governance/blob/main/docs/overview.md)",
+    "fee-distribution",
+    "deployment-addresses",
+    "..."
+  ]
+}
