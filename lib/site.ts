@@ -1,6 +1,8 @@
 export const siteName = 'Arbitrum DAO - Governance docs';
 export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://docs.arbitrum.foundation';
 
+export const supportUrl = 'https://support.arbitrum.io/hc/en-gb/requests/new';
+
 export const gitConfig = {
   user: 'ArbitrumFoundation',
   repo: 'docs',

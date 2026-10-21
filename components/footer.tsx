@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import { supportUrl } from '@/lib/site';
+
 const columns = [
   {
     title: 'Docs',
@@ -11,6 +13,10 @@ const columns = [
       { label: 'Discord', href: 'https://discord.gg/arbitrum' },
       { label: 'Twitter', href: 'https://twitter.com/arbitrum' },
     ],
+  },
+  {
+    title: 'Help',
+    links: [{ label: 'Support', href: supportUrl }],
   },
 ];
 
