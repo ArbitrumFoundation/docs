@@ -18,13 +18,13 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
 <p>The Arbitrum protocol allows each chain to have one or more &quot;chain owners&quot; who have the power to take administrative actions that change a chain&#39;s core protocol and code and/or alter any of its core parameters. The &quot;chain owner&quot; will also have the power to upgrade certain associated Layer 1 contracts. The &quot;chain owner&quot; will control affordances on the chain such as updating the contract implementation of any of Arbitrum&#39;s core protocol <a href="https://developer.arbitrum.io/useful-addresses">Transparent Upgradeable Proxy contracts</a>, and adjusting system parameters via, e.g., setter methods in the <a href="https://github.com/OffchainLabs/nitro/blob/master/contracts/src/precompiles/ArbOwner.sol">ArbOwner</a> precompile.</p>
 <p>With the $ARB token generation event and subsequent creation of the ArbitrumDAO having occurred, &quot;owner&quot; privileges on both the Arbitrum One and Arbitrum Nova chains have been given to both the ArbitrumDAO and the Security Council of The Arbitrum Foundation.</p>
 <h3 id="section-2-dao-proposals-and-voting-procedures">Section 2: DAO Proposals and Voting Procedures</h3>
-<p>The following process governs the rules and procedures by which the ArbitrumDAO may propose, vote on and implement Arbitrum Improvement Proposals (AIPs). No AIP may be in violation of applicable laws, in particular sanctions-related regulations.</p>
+<p>The following process governs the rules and procedures by which the ArbitrumDAO may propose, vote on and implement Arbitrum Improvement Proposals (AIPs). For AIPs submitted through the L1 Voting Procedure described below, the rules and procedures in this Section apply except where expressly modified by the L1 Voting Procedure. No AIP may be in violation of applicable laws, in particular sanctions-related regulations.</p>
 <ol>
     <li><strong>Phase 0: Forum Post (1 week) (Optional but Recommended):</strong> The AIP is suggested on the public forum and discussed/debated for 1 week.</li>
     <li><strong>Phase 1: Temperature Check (1 week) (Optional but Recommended):</strong> The AIP should be accompanied by an off-chain temperature check poll or other method as determined pursuant to the governance process, which can only be submitted by an address that can vote at least 500,000 of the Votable Tokens. The off-chain temperature check runs for 1 week, and is decided by a simple majority with no required participation threshold. An AIP that fails the temperature check should not be submitted for a vote. If an AIP fails the temperature check, or has not undergone a temperature check, as a matter of good governance practice, it is recommended that voters strongly consider voting to reject it.</li>
     <li>
         <p><strong>Phase 2: Formal AIP and call for voting (3 days):</strong> The AIP is submitted via governance contracts on Arbitrum One, with a user interface available on https://alt.gov.arbitrum.foundation/. The AIP proposer is required to have an address that is delegated at least 1,000,000 Votable Tokens.</p>
-        <p>After 3 days, a voter distribution snapshot will be taken and the voting period will begin; this gives interested parties time to discuss the AIP and gather votes before the voter distribution snapshot is taken.</p>
+        <p>After 3 days, a voter distribution snapshot will be taken and the voting period will begin; this gives interested parties time to discuss the AIP and gather votes before the voter distribution snapshot is taken.</p><p>For an AIP submitted through the L1 Voting Procedure, the requirements in the preceding two paragraphs concerning submission, the proposer threshold, the voter distribution snapshot and the start of voting are replaced by the corresponding requirements of the L1 Voting Procedure. The remaining provisions of this Phase 2, including those concerning labeling and classification of AIPs, specification of affected Governed Chains, and the recommended AIP contents, apply to an AIP submitted through the L1 Voting Procedure.</p>
         <p>Each AIP must be labeled as Constitutional or non-Constitutional.</p>
         <p>A Constitutional AIP is one that:</p>
         <ul>
@@ -61,7 +61,7 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
         </ul>
     </li>
     <li>
-        <p><strong>Phase 3: DAO votes on AIP, on Arbitrum One (14-16 days): During this Phase 3, the ArbitrumDAO will be able to vote directly on-chain on a submitted AIP.</strong></p>
+        <p><strong>Phase 3: DAO votes on AIP, on Arbitrum One (14-16 days): During this Phase 3, the ArbitrumDAO will be able to vote directly on-chain on a submitted AIP, unless the AIP was submitted through the L1 Voting Procedure in which case voting takes place as provided in the L1 Voting Procedure. Threshold 1 and Threshold 2, as set out below, apply to every AIP, including an AIP submitted through the L1 Voting Procedure.</strong></p>
         <p>An AIP passes if the following 2 conditions are met:</p>
         <ol className="a-b-list">
             <li>More Votable Tokens have cast votes &quot;in favor&quot; than have cast votes &quot;against&quot; (&quot;<strong>Threshold 1</strong>&quot;); and</li>
@@ -115,7 +115,31 @@ the ArbitrumDAO took effect on the date upon which AIP-1 was posted, located at 
     <li><p><strong>Phase 7: Implementation:</strong> The AIP is fully executed and implemented. This may happen on L1 or via a transaction sent from L1 to one or more Governed Chains.</p></li>
 </ol>
 <p>This AIP process as specified will typically require at least 42 days from the beginning of the temperature check in Phase 1 until an AIP is finally executed in Phase 7 for a Constitutional AIP, or at least 27 days for a Non-Constitutional AIP. An AIP may optionally specify further delay before its implementation.</p>
-<h3 id="section-3-the-security-council">Section 3: The Security Council</h3>
+<p><strong>L1 Voting Procedure</strong></p>
+
+<p>In addition to the AIP process described above, the ArbitrumDAO may propose, vote on, approve, and implement AIPs through governance smart contracts deployed on Ethereum.</p>
+
+<p>Voting power under this procedure must be derived from Votable Tokens delegated on Arbitrum One and proven on Ethereum against a confirmed Arbitrum One assertion.</p>
+
+<p>The AIP proposer is required to have an address on Arbitrum One that is delegated at least 1,000,000 Votable Tokens, or an Ethereum address registered as the L1 voting address for such an address, in each case as proven against a confirmed Arbitrum One assertion.</p>
+
+<p>Following submission of an AIP through the L1 Voting Procedure, voting will begin after 17 days. This comprises 3 days for delegates to gather voting power or register their L1 voting addresses, plus up to 14 days for assertion confirmation.</p>
+
+<p>After the voting delay, the ArbitrumDAO will be able to vote directly on-chain through the governance smart contracts deployed on Ethereum. Before the first vote is cast, the voter distribution snapshot must be fixed to a confirmed Arbitrum One block.</p>
+
+<p>The voting period ends 21 days after the start of voting. However, if Threshold 2 was reached within the last 2 days of the 21-day voting period, the voting period will be extended to end 2 days after Threshold 2 was reached.</p>
+
+<p>An AIP submitted through the L1 Voting Procedure passes if Threshold 1 and the Constitutional AIP requirements under Threshold 2 are satisfied. Voting power and Delegated Votable Tokens will be determined using Arbitrum One state proven on Ethereum against the confirmed assertion used for the voter distribution snapshot.</p>
+
+<p>If the AIP passes, it will be queued in the <code>L1VotingTimelock</code>, a governance timelock smart contract deployed on Ethereum, for a minimum period of 25 days. Following that period, the AIP may be implemented through the relevant upgrade executor or executors.</p>
+
+<p>The provisions of Phases 2 and 3 identified above as replaced, and phases 4 through 7 of the ordinary AIP process, do not apply to an AIP submitted through the L1 Voting Procedure. Instead, the 17-day voting delay, 21-day voting period, applicable late-quorum extension, and 25-day L1 timelock govern its submission, voting, approval, and implementation.</p>
+
+<p>The provisions of this Section concerning forum discussion, temperature checks, AIP labeling and classification, affected Governed Chains, recommended AIP contents, voting options, Threshold 1, and Threshold 2 apply to AIPs submitted through the L1 Voting Procedure, except that Threshold 2 applies as provided above.</p>
+
+<p>An AIP may not be submitted through the L1 Voting Procedure while another AIP proposing the same or conflicting actions is pending under the ordinary AIP process, and an AIP may not be submitted under the ordinary AIP process while another AIP proposing the same or conflicting actions is pending under the L1 Voting Procedure. An AIP is pending from its submission until it fails to pass or is implemented. As a recommended guideline, DAO members should vote against any AIP submitted in violation of this paragraph.</p>
+
+<p>The L1 Voting Procedure does not replace or modify the ordinary AIP process. It does not modify the Security Council’s powers under Section 3 of this Constitution.</p><h3 id="section-3-the-security-council">Section 3: The Security Council</h3>
 <p>The Security Council is a committee of <strong>12 members who are signers of a multi-sig wallet</strong>, which has powers to perform certain Emergency Actions and Non-Emergency Actions, as delegated to it by the ArbitrumDAO and The Arbitrum Foundation, and is responsible for upholding this ArbitrumDAO Constitution. Through the submission, approval and implementation of a Constitutional AIP, the ArbitrumDAO is able to modify the Security Council&#39;s powers or to eliminate the Security Council entirely.</p>
 <p>Equivalent &quot;copies&quot; of the Security Council multi-sig contracts exist, one on Ethereum and another on each ArbitrumDAO-governed chain. A Security Council Member can independently rotate their signing key in the multi-sigs, but the rotation must go through Phases 4 to 7 of the AIP process. In Phase 4, it adheres to the waiting time for an L2 to L1 message.</p>
 <p><strong>Emergency Actions</strong>:</p>
