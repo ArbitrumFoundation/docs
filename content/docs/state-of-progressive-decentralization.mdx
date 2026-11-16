@@ -37,8 +37,8 @@ Let's evaluate the current status of these components for both Arbitrum One and 
 
 | Chain                  | Decentralization&nbsp;Status | Description                                                                                                                                                                                                                                    |
 | ---------------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Arbitrum&nbsp;One**  | **Permissionless**           | Validation on Arbitrum One now follows the BoLD protocol, any node implementing the BoLD protocol can join. You can learn more about BoLD in this [introduction to BoLD](https://docs.arbitrum.io/how-arbitrum-works/bold/gentle-introduction) |
-| **Arbitrum&nbsp;Nova** | **Permissioned**             | Arbitrum Nova remains permissioned as its Data Availability committee is a trusted one                                                                                                                                                         |
+| **Arbitrum One**  | **Permissionless**           | Validation on Arbitrum One now follows the BoLD protocol, any node implementing the BoLD protocol can join. You can learn more about BoLD in this [introduction to BoLD](https://docs.arbitrum.io/how-arbitrum-works/bold/gentle-introduction) |
+| **Arbitrum Nova** | **Permissionless**             | Validation on Arbitrum Nova now follows the BoLD protocol, any node implementing the BoLD protocol can join. You can learn more about BoLD in this [introduction to BoLD](https://docs.arbitrum.io/how-arbitrum-works/bold/gentle-introduction).                                                                                                                                                         |
 
 * **Risks**: If there is not a single honest active validator, and a malicious validator proposes an invalid state update, the system's safety could be compromised.
 
@@ -51,19 +51,18 @@ Let's evaluate the current status of these components for both Arbitrum One and 
 
 ### 4. Data Availability Committee ownership
 
-DACs apply only to [Arbitrum AnyTrust](/dao-glossary#arbitrum-anytrust-protocol) chains like Arbitrum Nova
+DACs apply only to [Arbitrum AnyTrust](/dao-glossary#arbitrum-anytrust-protocol) chains.
 <Callout type="info">
-This applies only to Arbitrum AnyTrust chains like Arbitrum Nova.
+NOTE: Arbitrum Nova was launched as an AnyTrust chain and [transitioned into L1 blob posting](https://snapshot.org/#/s:arbitrumfoundation.eth/proposal/0x002b8264f83d19f88d17dc48a92d1e92638285a6592c491255fa7b14c955da81). Nova still has DAC members configured but they are now dormant.
 </Callout>
 
-* **Description**: AnyTrust chains like Arbitrum Nova rely on a permissioned committee to store the chain's data and provide it on demand.
-* **Current status**: 6-member committee. The Arbitrum Nova chain has a 6-party DAC, whose members can be seen [here](#data-availability-committee-members). Governance has the ability to remove or add members to the committee.
-* **Risks**: If 5 of the 6 committee members in conjunction with the Sequencer behave maliciously and collude, the safety of the system can be compromised.
+* **Description**: AnyTrust chains rely on a permissioned committee to store the chain's data and provide it on demand.
+* **Current status**: The Arbitrum Nova chain has a dormant 6-party DAC, whose members can be seen [here](#data-availability-committee-members).
 * **Changes to Current status**: The Arbitrum governance system (see #1) currently has the power to change the DAC, such as by adding or removing members or modifying the power it has over the system.
 
 ### Data Availability Committee members
 
-These are the current members of the 5-of-6 [data availability committee (DAC)](#4-data-availability-committee-ownership) in Arbitrum Nova:
+These are the currently dormant members of the 5-of-6 [data availability committee (DAC)](#4-data-availability-committee-ownership) in Arbitrum Nova:
 
 * ConsenSys Software Inc.
 * QuickNode, Inc.
