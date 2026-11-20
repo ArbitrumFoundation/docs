@@ -2,11 +2,7 @@
 
 import type { ReactNode } from 'react';
 
-declare global {
-  interface Window {
-    fathom?: { trackEvent: (name: string) => void };
-  }
-}
+import { trackEvent } from '@/lib/analytics';
 
 type TrackedLinkProps = {
   href: string;
@@ -19,7 +15,7 @@ export function TrackedLink({ href, trackedEvent, children }: TrackedLinkProps) 
     <a
       href={href}
       onClick={() => {
-        if (trackedEvent) window.fathom?.trackEvent(trackedEvent);
+        if (trackedEvent) trackEvent('tracked_link_clicked', { name: trackedEvent, href });
       }}
     >
       {children}

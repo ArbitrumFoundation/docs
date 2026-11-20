@@ -60,6 +60,20 @@ pnpm build
 
 The editor needs a GitHub OAuth app whose callback URL is `<deployment-url>/api/callback`. See `.env.example` for the environment variables. For local work without OAuth, set `CMS_DEV_GITHUB_TOKEN` in `.env.local`; it is ignored in production.
 
+## Analytics
+
+The site sends page views to [PostHog](https://posthog.com) in cookieless mode (`lib/analytics.ts`). It stores nothing in cookies, localStorage or sessionStorage, creates no person profiles, and strips device, browser, OS, screen, language and timezone properties before an event leaves the browser. `/admin` is not tracked.
+
+- `NEXT_PUBLIC_POSTHOG_KEY` is the PostHog project API key. Without it, analytics stays off.
+- `NEXT_PUBLIC_POSTHOG_HOST` is optional and defaults to `https://us.i.posthog.com`.
+
+Two settings must be switched on in the PostHog project by hand:
+
+1. Web analytics > "Cookieless server hash mode". PostHog drops every event without it.
+2. Data capture > "Discard client IP data".
+
+The analytics tests are `lib/*.spec.ts` and run on vitest. Every other test is a `*.test.ts` file run by `node --test`. `pnpm test` runs both.
+
 ## Constitution hash
 
 `pnpm update-constitution-hash` recomputes `lib/constitution-hash.json` from `content/partials/_constitution-content-partial.mdx`.
