@@ -164,26 +164,24 @@ export const trackEvent = (
   eventName: AnalyticsEventType,
   properties?: Record<string, string | number | boolean | null | undefined>
 ) => {
-  if (typeof window !== 'undefined' && posthog) {
+  if (typeof window !== 'undefined') {
     posthog.capture(eventName, properties);
   }
 };
 
-/**
- * Track page views
- */
-export const trackPageView = (properties?: Record<string, unknown>) => {
-  if (typeof window !== 'undefined' && posthog) {
-    posthog.capture('$pageview', {
-      $current_url: window.location.href,
-      ...properties,
-    });
-  }
-};
+/** The CMS editor is staff-only, so its sessions stay out of reader analytics. */
+export const isUntrackedPath = (pathname: string): boolean =>
+  pathname === '/admin' || pathname.startsWith('/admin/');
 
 /**
- * Check if analytics is enabled
+ * Track page views.
+ *
+ * Takes no properties on purpose. The SDK reads the URL itself and masks ad click
+ * IDs in it; a caller-supplied $current_url or query string would override that
+ * masking and send the raw values.
  */
-export const isAnalyticsEnabled = (): boolean => {
-  return typeof window !== 'undefined' && !!process.env.NEXT_PUBLIC_POSTHOG_KEY && !!posthog;
+export const trackPageView = () => {
+  if (typeof window !== 'undefined') {
+    posthog.capture('$pageview');
+  }
 };

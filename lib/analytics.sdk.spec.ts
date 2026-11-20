@@ -2,7 +2,7 @@
 /**
  * Runs the real posthog-js SDK against the production config, with the network
  * stubbed out, and inspects the final payloads after `before_send`. The unit
- * tests in analytics.test.ts mock the SDK, so they cannot catch properties the
+ * tests in analytics.spec.ts mock the SDK, so they cannot catch properties the
  * SDK adds on its own (page-leave scroll depth, for example).
  */
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';

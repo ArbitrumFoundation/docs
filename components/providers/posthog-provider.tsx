@@ -3,11 +3,7 @@
 import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 
-import { initializePostHog, trackPageView } from '@/lib/analytics';
-
-/** The CMS editor is staff-only, so its sessions stay out of reader analytics. */
-const isUntrackedPath = (pathname: string): boolean =>
-  pathname === '/admin' || pathname.startsWith('/admin/');
+import { initializePostHog, isUntrackedPath, trackPageView } from '@/lib/analytics';
 
 /**
  * Initializes PostHog and sends a $pageview on every route change.
@@ -29,12 +25,9 @@ export function PostHogPageView() {
     // then moves to the docs is still initialized.
     initializePostHog();
 
-    const search = searchParams?.toString();
-    trackPageView({
-      url: search ? `${pathname}?${search}` : pathname,
-      pathname,
-      search_params: searchParams ? Object.fromEntries(searchParams.entries()) : {},
-    });
+    // searchParams is a dependency only so a query-string change counts as a new
+    // pageview. The SDK reads the URL itself, with ad click IDs masked.
+    trackPageView();
   }, [pathname, searchParams]);
 
   return null;

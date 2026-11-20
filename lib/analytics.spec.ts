@@ -76,7 +76,7 @@ describe('PostHog privacy configuration', () => {
     expect(POSTHOG_DEVICE_PROPERTY_PATTERN.test('$raw_user_agent')).toBe(false);
   });
 
-  it("uses the portal's sanitizer and masking options", () => {
+  it('uses the sanitizer and masking options', () => {
     expect(POSTHOG_CONFIG.before_send).toBe(sanitizePostHogEvent);
     expect(POSTHOG_CONFIG.disableDeviceModel).toBe(true);
     expect(POSTHOG_CONFIG.mask_personal_data_properties).toBe(true);
