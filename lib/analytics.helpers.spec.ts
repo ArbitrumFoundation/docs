@@ -1,5 +1,5 @@
 // @vitest-environment jsdom
-// @vitest-environment-options {"url": "https://docs.arbitrum.foundation/foundation-documents?gclid=CLICKID123&fbclid=FB456&q=hello"}
+// @vitest-environment-options {"url": "https://docs.arbitrum.foundation/foundation-documents?gclid=CLICKID123&fbclid=FB456&q=hello", "referrer": "https://example.com/landing?gclid=REFCLICK999&x=1#top"}
 /**
  * Runs the helpers the site calls (initializePostHog, trackPageView, trackEvent)
  * against the real posthog-js SDK and inspects the events after `before_send`.
@@ -12,7 +12,7 @@ import posthog from 'posthog-js';
 import type { CaptureResult } from 'posthog-js';
 import { initializePostHog, isUntrackedPath, trackEvent, trackPageView } from './analytics';
 
-const RAW_CLICK_IDS = ['CLICKID123', 'FB456'];
+const RAW_CLICK_IDS = ['CLICKID123', 'FB456', 'REFCLICK999'];
 
 const createStorage = () => {
   const store = new Map<string, string>();
@@ -64,6 +64,9 @@ describe('analytics helpers with the real SDK', () => {
     expect(properties.$current_url).toContain('fbclid=<masked>');
     // Other query parameters stay readable.
     expect(properties.$current_url).toContain('q=hello');
+    // The SDK does not mask $referrer, so the sanitizer drops its query string.
+    expect(properties.$referrer).toBe('https://example.com/landing');
+    expect(properties.$referring_domain).toBe('example.com');
 
     const payload = JSON.stringify(properties);
     for (const id of RAW_CLICK_IDS) {

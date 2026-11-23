@@ -9,8 +9,9 @@
  * - No person profiles are created and identify() is intentionally not exposed.
  * - Device, browser, OS, screen, timezone and language properties are stripped both
  *   via `property_denylist` and a `before_send` filter.
- * - User-Agent Client Hints are not requested (`disableDeviceModel`), and ad-network
- *   click IDs are masked out of captured URLs (`mask_personal_data_properties`).
+ * - User-Agent Client Hints are not requested (`disableDeviceModel`). Ad-network
+ *   click IDs are masked out of the page URL (`mask_personal_data_properties`), and
+ *   the referrer is sent without its query string (`before_send`).
  * - Scroll-depth measurement is off: its raw pixel values include the scrolling
  *   element's clientHeight, which would disclose the viewport height on $pageleave.
  * - GeoIP enrichment is disabled per event via `$geoip_disable`.
@@ -94,6 +95,13 @@ export const sanitizePostHogEvent: BeforeSendFn = (event) => {
     }
   }
 
+  // mask_personal_data_properties covers $current_url but not $referrer, so the
+  // referrer keeps only its origin and path. "$direct" has neither and is unchanged.
+  const referrer = event.properties.$referrer;
+  if (typeof referrer === 'string') {
+    event.properties.$referrer = referrer.split(/[?#]/)[0];
+  }
+
   return event;
 };
 
@@ -115,7 +123,8 @@ export const POSTHOG_CONFIG: Partial<PostHogConfig> = {
   before_send: sanitizePostHogEvent,
   // Do not request User-Agent Client Hints, which the SDK uses to derive $device_model.
   disableDeviceModel: true,
-  // Mask ad-network click IDs (gclid, fbclid, ...) inside captured URLs.
+  // Mask ad-network click IDs (gclid, fbclid, ...) in the page URL. The SDK leaves
+  // $referrer alone; sanitizePostHogEvent handles that one.
   mask_personal_data_properties: true,
 
   // Manual, explicit tracking only.

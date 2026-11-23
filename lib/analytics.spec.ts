@@ -163,6 +163,18 @@ describe('sanitizePostHogEvent', () => {
     expect(result?.properties).toEqual(properties);
   });
 
+  it('drops the query string and hash from the referrer', () => {
+    const strip = ($referrer: unknown) =>
+      sanitizePostHogEvent(makeEvent({ $referrer }))?.properties.$referrer;
+
+    expect(strip('https://example.com/landing?gclid=RAW&x=1')).toBe('https://example.com/landing');
+    expect(strip('https://example.com/landing#gclid=RAW')).toBe('https://example.com/landing');
+    expect(strip('https://example.com/landing')).toBe('https://example.com/landing');
+    // The SDK's value for a visit with no referrer.
+    expect(strip('$direct')).toBe('$direct');
+    expect(strip(undefined)).toBeUndefined();
+  });
+
   it('returns the input unchanged when there is nothing to sanitize', () => {
     // The SDK's type says the event is never null; the sanitizer tolerates it anyway.
     expect(sanitizePostHogEvent(null as unknown as CaptureResult)).toBeNull();
