@@ -71,6 +71,19 @@ describe('analytics helpers with the real SDK', () => {
     }
   });
 
+  it('stays quiet when a route change initializes again', () => {
+    // posthog-js answers a repeat init on the default instance with a bare
+    // console.warn, and PostHogPageView calls initializePostHog on every route change.
+    const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
+
+    initializePostHog();
+    trackPageView();
+
+    expect(warn).not.toHaveBeenCalled();
+    expect(sent.filter((event) => event.event === '$pageview')).toHaveLength(1);
+    warn.mockRestore();
+  });
+
   it('sends tracked_link_clicked with the link name and href', () => {
     trackEvent('tracked_link_clicked', {
       name: 'download 2025 Transparency Report',

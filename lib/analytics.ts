@@ -148,11 +148,12 @@ export const POSTHOG_CONFIG: Partial<PostHogConfig> = {
 };
 
 /**
- * Initialize the PostHog client. Called by PostHogPageView before the first
- * pageview; posthog-js ignores repeat calls on the default instance.
+ * Initialize the PostHog client. PostHogPageView calls this on every route
+ * change, so it must be a no-op once the SDK is loaded: posthog-js answers a
+ * repeat init on the default instance with a console.warn.
  */
 export const initializePostHog = () => {
-  if (typeof window !== 'undefined' && process.env.NEXT_PUBLIC_POSTHOG_KEY) {
+  if (typeof window !== 'undefined' && process.env.NEXT_PUBLIC_POSTHOG_KEY && !posthog.__loaded) {
     posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, POSTHOG_CONFIG);
   }
 };
