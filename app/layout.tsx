@@ -1,9 +1,9 @@
 import { RootProvider } from 'fumadocs-ui/provider/next';
 import 'katex/dist/katex.css';
 import type { Metadata } from 'next';
-import Script from 'next/script';
-import type { ReactNode } from 'react';
+import { Suspense, type ReactNode } from 'react';
 
+import { PostHogPageView } from '@/components/providers/posthog-provider';
 import { siteName, siteUrl } from '@/lib/site';
 
 import './global.css';
@@ -24,11 +24,9 @@ export default function Layout({ children }: { children: ReactNode }) {
     <html lang="en" suppressHydrationWarning>
       <body className="flex min-h-screen flex-col">
         <RootProvider theme={{ hotKey: false }}>{children}</RootProvider>
-        <Script
-          src="https://cdn.usefathom.com/script.js"
-          data-site="QLNDABBR"
-          strategy="afterInteractive"
-        />
+        <Suspense fallback={null}>
+          <PostHogPageView />
+        </Suspense>
       </body>
     </html>
   );
